@@ -1,0 +1,821 @@
+﻿[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5082_1.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Introduction and overview of aetiologies",
+"tocnametree":"Introduction and overview of aetiologies",
+"htmlpage":"ENAS5082_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Pericardial syndromes",
+"tocnametree":"Pericardial syndromes",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.1.0.0",
+"id":"4",
+"nametree":"Definition",
+"tocnametree":"Definition",
+"htmlpage":"ENAS5082_3.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.0.0",
+"id":"5",
+"nametree":"Acute pericarditis",
+"tocnametree":"Acute pericarditis",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.1.0",
+"id":"6",
+"nametree":"Definition and diagnostic criteria",
+"tocnametree":"Definition and diagnostic criteria",
+"htmlpage":"ENAS5082_3.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.2.0",
+"id":"7",
+"nametree":"Clinical diagnosis",
+"tocnametree":"Clinical diagnosis",
+"htmlpage":"ENAS5082_3.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.3.0",
+"id":"8",
+"nametree":"Clinical mgmt. and therapy",
+"tocnametree":"Clinical mgmt. and therapy",
+"htmlpage":"ENAS5082_3.2.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.4.0",
+"id":"9",
+"nametree":"Proposed triage",
+"tocnametree":"Proposed triage",
+"htmlpage":"ENAS5082_3.2.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.5.0",
+"id":"10",
+"nametree":"Management of acute pericarditis",
+"tocnametree":"Management of acute pericarditis",
+"htmlpage":"ENAS5082_3.2.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.6.0",
+"id":"11",
+"nametree":"Anti-inflammatory therapy",
+"tocnametree":"Anti-inflammatory therapy",
+"htmlpage":"ENAS5082_3.2.6.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.7.0",
+"id":"12",
+"nametree":"Treatment of acute pericarditis",
+"tocnametree":"Treatment of acute pericarditis",
+"htmlpage":"ENAS5082_3.2.7.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.8.0",
+"id":"13",
+"nametree":"Prognosis",
+"tocnametree":"Prognosis",
+"htmlpage":"ENAS5082_3.2.8.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.3.0.0",
+"id":"14",
+"nametree":"Recurrent pericarditis",
+"tocnametree":"Recurrent pericarditis",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.3.1.0",
+"id":"15",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5082_3.3.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.3.2.0",
+"id":"16",
+"nametree":"Anti-inflammatory therapies",
+"tocnametree":"Anti-inflammatory therapies",
+"htmlpage":"ENAS5082_3.3.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.3.3.0",
+"id":"17",
+"nametree":"Tapering of corticosteroids",
+"tocnametree":"Tapering of corticosteroids",
+"htmlpage":"ENAS5082_3.3.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.3.4.0",
+"id":"18",
+"nametree":"Immunosuppresant and biological drugs",
+"tocnametree":"Immunosuppresant and biological drugs",
+"htmlpage":"ENAS5082_3.3.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.3.5.0",
+"id":"19",
+"nametree":"Management of recurrent pericarditis",
+"tocnametree":"Management of recurrent pericarditis",
+"htmlpage":"ENAS5082_3.3.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.4.0.0",
+"id":"20",
+"nametree":"Therapeutic algorithm for pericarditis",
+"tocnametree":"Therapeutic algorithm for pericarditis",
+"htmlpage":"ENAS5082_3.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.5.0.0",
+"id":"21",
+"nametree":"Myopericarditis",
+"tocnametree":"Myopericarditis",
+"htmlpage":"ENAS5082_3.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.0.0",
+"id":"22",
+"nametree":"Pericardial effusion",
+"tocnametree":"Pericardial effusion",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.1.0",
+"id":"23",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5082_3.6.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.2.0",
+"id":"24",
+"nametree":"Pressure/volume curve",
+"tocnametree":"Pressure/volume curve",
+"htmlpage":"ENAS5082_3.6.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.3.0",
+"id":"25",
+"nametree":"Echo. assessment of size",
+"tocnametree":"Echo. assessment of size",
+"htmlpage":"ENAS5082_3.6.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.4.0",
+"id":"26",
+"nametree":"Diagnosis of pericardial effusion",
+"tocnametree":"Diagnosis of pericardial effusion",
+"htmlpage":"ENAS5082_3.6.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.5.0",
+"id":"27",
+"nametree":"Triage and mgmt.",
+"tocnametree":"Triage and mgmt.",
+"htmlpage":"ENAS5082_3.6.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.6.0",
+"id":"28",
+"nametree":"Initial mgmt. of pericardial effusion",
+"tocnametree":"Initial mgmt. of pericardial effusion",
+"htmlpage":"ENAS5082_3.6.6.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.7.0",
+"id":"29",
+"nametree":"Therapy",
+"tocnametree":"Therapy",
+"htmlpage":"ENAS5082_3.6.7.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.8.0",
+"id":"30",
+"nametree":"Prognosis",
+"tocnametree":"Prognosis",
+"htmlpage":"ENAS5082_3.6.8.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.7.0.0",
+"id":"31",
+"nametree":"Cardiac tamponade",
+"tocnametree":"Cardiac tamponade",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.7.1.0",
+"id":"32",
+"nametree":"Definition",
+"tocnametree":"Definition",
+"htmlpage":"ENAS5082_3.7.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.7.2.0",
+"id":"33",
+"nametree":"Causes of cardiac tamponade",
+"tocnametree":"Causes of cardiac tamponade",
+"htmlpage":"ENAS5082_3.7.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.7.3.0",
+"id":"34",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"ENAS5082_3.7.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.8.0.0",
+"id":"35",
+"nametree":"Constrictive pericarditis",
+"tocnametree":"Constrictive pericarditis",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.8.1.0",
+"id":"36",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5082_3.8.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.8.2.0",
+"id":"37",
+"nametree":"Const. pericarditis vs. restrictive CM",
+"tocnametree":"Const. pericarditis vs. restrictive cardiomyopathy",
+"htmlpage":"ENAS5082_3.8.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.8.3.0",
+"id":"38",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"ENAS5082_3.8.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.8.4.0",
+"id":"39",
+"nametree":"Therapy overview",
+"tocnametree":"Therapy overview",
+"htmlpage":"ENAS5082_3.8.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.8.5.0",
+"id":"40",
+"nametree":"Main const. pericardial synd.: def. and therapy",
+"tocnametree":"Main const. pericardial synd.: def. and therapy",
+"htmlpage":"ENAS5082_3.8.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.8.6.0",
+"id":"41",
+"nametree":"Recommendations for therapy",
+"tocnametree":"Recommendations for therapy",
+"htmlpage":"ENAS5082_3.8.6.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"42",
+"nametree":"Imaging and diagnostic work-up",
+"tocnametree":"Imaging and diagnostic work-up",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"43",
+"nametree":"Multimodality imaging",
+"tocnametree":"Multimodality imaging",
+"htmlpage":"ENAS5082_4.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.0.0",
+"id":"44",
+"nametree":"General diagnostic work-up",
+"tocnametree":"General diagnostic work-up",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.1.0",
+"id":"45",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5082_4.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.2.0",
+"id":"46",
+"nametree":"High risk patients: clinical predictors",
+"tocnametree":"High risk patients: clinical predictors",
+"htmlpage":"ENAS5082_4.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.3.0",
+"id":"47",
+"nametree":"General diag. work-up",
+"tocnametree":"General diag. work-up",
+"htmlpage":"ENAS5082_4.2.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.4.0",
+"id":"48",
+"nametree":"First level and second level investigations",
+"tocnametree":"First level and second level investigations",
+"htmlpage":"ENAS5082_4.2.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.5.0",
+"id":"49",
+"nametree":"Main analyses on pericardial fluid",
+"tocnametree":"Main analyses on pericardial fluid",
+"htmlpage":"ENAS5082_4.2.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.6.0",
+"id":"50",
+"nametree":"High risk Pts.: diagnostic flowchart",
+"tocnametree":"High risk PTS.: suggested diagonstic flowchart",
+"htmlpage":"ENAS5082_4.2.6.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"51",
+"nametree":"Specific aetiologies",
+"tocnametree":"Specific aetiologies",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"52",
+"nametree":"Viral pericarditis",
+"tocnametree":"Viral pericarditis",
+"htmlpage":"ENAS5082_5.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"53",
+"nametree":"Bacterial pericarditis",
+"tocnametree":"Bacterial pericarditis",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.1.0",
+"id":"54",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5082_5.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.2.0",
+"id":"55",
+"nametree":"Tuberculous pericarditis",
+"tocnametree":"Tuberculous pericarditis",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.2.1",
+"id":"56",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5082_5.2.2.1",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.2.2",
+"id":"57",
+"nametree":"Protocol for evaluation",
+"tocnametree":"Protocol for evaluation",
+"htmlpage":"ENAS5082_5.2.2.2",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.2.3",
+"id":"58",
+"nametree":"Management",
+"tocnametree":"Management",
+"htmlpage":"ENAS5082_5.2.2.3",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.3.0",
+"id":"59",
+"nametree":"Purulent pericarditis",
+"tocnametree":"Purulent pericarditis",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.3.1",
+"id":"60",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5082_5.2.3.1",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.3.2",
+"id":"61",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"ENAS5082_5.2.3.2",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.3.3",
+"id":"62",
+"nametree":"Therapy",
+"tocnametree":"Therapy",
+"htmlpage":"ENAS5082_5.2.3.3",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.0.0",
+"id":"63",
+"nametree":"Pericarditis in renal failure",
+"tocnametree":"Pericarditis in renal failure",
+"htmlpage":"ENAS5082_5.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.0.0",
+"id":"64",
+"nametree":"Syst. autoimmune and autoinflamm. diseases",
+"tocnametree":"Syst. autoimmune and autoinflamm. diseases",
+"htmlpage":"ENAS5082_5.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.5.0.0",
+"id":"65",
+"nametree":"Post-cardiac injury syndromes",
+"tocnametree":"Post-cardiac injury syndromes",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.5.1.0",
+"id":"66",
+"nametree":"Definition and diagnosis",
+"tocnametree":"Definition and diagnosis",
+"htmlpage":"ENAS5082_5.5.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.5.2.0",
+"id":"67",
+"nametree":"Diagnosis, mgmt. and treatment",
+"tocnametree":"Diagnosis, mgmt. and treatment",
+"htmlpage":"ENAS5082_5.5.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.6.0.0",
+"id":"68",
+"nametree":"Traumatic pe and haemopericardium",
+"tocnametree":"Traumatic pericard. effusion and haemopericard.",
+"htmlpage":"ENAS5082_5.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.7.0.0",
+"id":"69",
+"nametree":"Pericardial involvement in neoplastic disease",
+"tocnametree":"Pericardial involvement in neoplastic disease",
+"htmlpage":"ENAS5082_5.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.8.0.0",
+"id":"70",
+"nametree":"Other forms of pericardial disease",
+"tocnametree":"Other forms of pericardial disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.8.1.0",
+"id":"71",
+"nametree":"Radiation pericarditis",
+"tocnametree":"Radiation pericarditis",
+"htmlpage":"ENAS5082_5.8.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.8.2.0",
+"id":"72",
+"nametree":"Chylopericardium",
+"tocnametree":"Chylopericardium",
+"htmlpage":"ENAS5082_5.8.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.8.3.0",
+"id":"73",
+"nametree":"Drug-related pericarditis and pericardial effusion",
+"tocnametree":"Drug-related pericarditis and pericardial effusion",
+"htmlpage":"ENAS5082_5.8.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.8.4.0",
+"id":"74",
+"nametree":"Effusion in metab. & endocrine disorders",
+"tocnametree":"Pericard. effusion in metab. and endocrine disorders",
+"htmlpage":"ENAS5082_5.8.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.8.5.0",
+"id":"75",
+"nametree":"Pericardial involvement in PAH",
+"tocnametree":"Pericardial involvement in PAH",
+"htmlpage":"ENAS5082_5.8.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.8.6.0",
+"id":"76",
+"nametree":"Pericardial cysts",
+"tocnametree":"Pericardial cysts",
+"htmlpage":"ENAS5082_5.8.6.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"77",
+"nametree":"Age and gender issues in pericardial diseases",
+"tocnametree":"Age and gender issues in pericardial diseases",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"78",
+"nametree":"Paediatric setting",
+"tocnametree":"Paediatric setting",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.1.0",
+"id":"79",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5082_6.1.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.2.0",
+"id":"80",
+"nametree":"Regimens in children",
+"tocnametree":"Regimens in children",
+"htmlpage":"ENAS5082_6.1.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.3.0",
+"id":"81",
+"nametree":"Therapy",
+"tocnametree":"Therapy",
+"htmlpage":"ENAS5082_6.1.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"82",
+"nametree":"Pregnancy, lact. and reproductive issues",
+"tocnametree":"Pregnancy, lact. and reproductive issues",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.1.0",
+"id":"83",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5082_6.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.2.0",
+"id":"84",
+"nametree":"Treatment scheme during pregnancy",
+"tocnametree":"Treatment scheme during pregnancy",
+"htmlpage":"ENAS5082_6.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.0.0",
+"id":"85",
+"nametree":"The elderly",
+"tocnametree":"The elderly",
+"htmlpage":"ENAS5082_6.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"86",
+"nametree":"Interventional pericardiology and surgery",
+"tocnametree":"Interventional pericardiology and surgery",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"87",
+"nametree":"Pericardiocentesis and pericardial drainage",
+"tocnametree":"Pericardiocentesis and pericardial drainage",
+"htmlpage":"ENAS5082_7.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.0.0",
+"id":"88",
+"nametree":"Surgery for pericardial diseases",
+"tocnametree":"Surgery for pericardial diseases",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.1.0",
+"id":"89",
+"nametree":"Pericardial window",
+"tocnametree":"Pericardial window",
+"htmlpage":"ENAS5082_7.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.2.0",
+"id":"90",
+"nametree":"Pericardiectomy",
+"tocnametree":"Pericardiectomy",
+"htmlpage":"ENAS5082_7.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"91",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS5082_8.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

@@ -1,0 +1,641 @@
+﻿[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Essential messages",
+"tocnametree":"Essential messages",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.1.0.0",
+"id":"2",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS259_1.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.2.0.0",
+"id":"3",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS259_1.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.3.0.0",
+"id":"4",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS259_1.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"5",
+"nametree":"Summary Card",
+"tocnametree":"Summary cards",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.1.0.0",
+"id":"6",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS259_63",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.2.0.0",
+"id":"7",
+"nametree":"Patients with persistent bradycardia",
+"tocnametree":"Patients with persistent bradycardia",
+"htmlpage":"ENAS259_64",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.3.0.0",
+"id":"8",
+"nametree":"Patients with intermit. document. bradycardia",
+"tocnametree":"Patients with intermit. document. bradycardia",
+"htmlpage":"ENAS259_65",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.4.0.0",
+"id":"9",
+"nametree":"Pats. with syncope and suspected bradycardia",
+"tocnametree":"Pats. with syncope and suspected bradycardia",
+"htmlpage":"ENAS259_66",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.5.0.0",
+"id":"10",
+"nametree":"Indications for CRT in pat. with HF or low EF",
+"tocnametree":"Indications for CRT in pat. with HF or low EF",
+"htmlpage":"ENAS259_67",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.6.0.0",
+"id":"11",
+"nametree":"Key evidence supporting recs.",
+"tocnametree":"Key evidence supporting recs.",
+"htmlpage":"ENAS259_68",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.7.0.0",
+"id":"12",
+"nametree":"CRT indi. in Pat. W HF & low EF in sinus rhythm",
+"tocnametree":"CRT indi. in Pat. W HF & low EF in sinus rhythm",
+"htmlpage":"ENAS259_69",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.8.0.0",
+"id":"13",
+"nametree":"Indications for CRT in patients in AF",
+"tocnametree":"Indications for CRT in patients in AF",
+"htmlpage":"ENAS259_70",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.9.0.0",
+"id":"14",
+"nametree":"Indi. for upgraded or “de novo” CRT",
+"tocnametree":"Indi. for upgraded or “de novo” CRT",
+"htmlpage":"ENAS259_71",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.10.0.0",
+"id":"15",
+"nametree":"Choice of CRT-P or CRT-D in prim. prevention",
+"tocnametree":"Choice of CRT-P or CRT-D in prim. prevention",
+"htmlpage":"ENAS259_72",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"16",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS259_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"17",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS259_3.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"18",
+"nametree":"Indications for pacing",
+"tocnametree":"Indications for pacing",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"19",
+"nametree":"Bradyarrhythmia",
+"tocnametree":"Bradyarrhythmia",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.1.0",
+"id":"20",
+"nametree":"Epidemiology",
+"tocnametree":"Epidemiology",
+"htmlpage":"ENAS259_4.1.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.2.0",
+"id":"21",
+"nametree":"Clinical presentation",
+"tocnametree":"Clinical presentation",
+"htmlpage":"ENAS259_4.1.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.3.0",
+"id":"22",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"ENAS259_4.1.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"23",
+"nametree":"Persistent bradycardia",
+"tocnametree":"Persistent bradycardia",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.1.0",
+"id":"24",
+"nametree":"Indication for pacing",
+"tocnametree":"Indication for pacing",
+"htmlpage":"ENAS259_4.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.2.0",
+"id":"25",
+"nametree":"Clinical perspectives",
+"tocnametree":"Clinical perspectives",
+"htmlpage":"ENAS259_4.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.3.0",
+"id":"26",
+"nametree":"Optimal pacing mode",
+"tocnametree":"Optimal pacing mode",
+"htmlpage":"ENAS259_4.2.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.0.0",
+"id":"27",
+"nametree":"Intermittent bradycardia",
+"tocnametree":"Intermittent bradycardia",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.1.0",
+"id":"28",
+"nametree":"Indication for pacing",
+"tocnametree":"Indication for pacing",
+"htmlpage":"ENAS259_4.3.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.2.0",
+"id":"29",
+"nametree":"Clinical perspectives",
+"tocnametree":"Clinical perspectives",
+"htmlpage":"ENAS259_4.3.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.0.0",
+"id":"30",
+"nametree":"Suspected bradycardia",
+"tocnametree":"Suspected bradycardia",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.1.0",
+"id":"31",
+"nametree":"Bundle branch block",
+"tocnametree":"Bundle branch block",
+"htmlpage":"ENAS259_4.4.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.2.0",
+"id":"32",
+"nametree":"Reflex syncope",
+"tocnametree":"Reflex syncope",
+"htmlpage":"ENAS259_4.4.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.3.0",
+"id":"33",
+"nametree":"Unexplained syncope",
+"tocnametree":"Unexplained syncope",
+"htmlpage":"ENAS259_4.4.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"34",
+"nametree":"Indications for CRT",
+"tocnametree":"Indications for CRT",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"35",
+"nametree":"Epidem. and prognosis of HF suitable for CRT",
+"tocnametree":"Epidem. and prognosis of HF suitable for CRT",
+"htmlpage":"ENAS259_5.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"36",
+"nametree":"Patients in sinus rhythm",
+"tocnametree":"Patients in sinus rhythm",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.1.0",
+"id":"37",
+"nametree":"Key evidence supporting CRT",
+"tocnametree":"Key evidence supporting CRT",
+"htmlpage":"ENAS259_5.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.2.0",
+"id":"38",
+"nametree":"Indications for CRT",
+"tocnametree":"Indications for CRT",
+"htmlpage":"ENAS259_5.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.3.0",
+"id":"39",
+"nametree":"Clinical perspectives",
+"tocnametree":"Clinical perspectives",
+"htmlpage":"ENAS259_5.2.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.4.0",
+"id":"40",
+"nametree":"Current evidence for CRT optimization",
+"tocnametree":"Current evidence for CRT optimization",
+"htmlpage":"ENAS259_5.2.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.0.0",
+"id":"41",
+"nametree":"Patients in atrial fibrillation",
+"tocnametree":"Patients in atrial fibrillation",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.1.0",
+"id":"42",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS259_5.3.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.2.0",
+"id":"43",
+"nametree":"Indications for AVJ",
+"tocnametree":"Indications for AVJ",
+"htmlpage":"ENAS259_5.3.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.3.0",
+"id":"44",
+"nametree":"Indications for CRT",
+"tocnametree":"Indications for CRT",
+"htmlpage":"ENAS259_5.3.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.4.0.0",
+"id":"45",
+"nametree":"HF and conventional pacemaker indications",
+"tocnametree":"HF and conventional pacemaker indications",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.4.1.0",
+"id":"46",
+"nametree":"Indications",
+"tocnametree":"Indications",
+"htmlpage":"ENAS259_5.4.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.4.2.0",
+"id":"47",
+"nametree":"Clinical perspectives",
+"tocnametree":"Clinical perspectives",
+"htmlpage":"ENAS259_5.4.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.5.0.0",
+"id":"48",
+"nametree":"Backup ICD in patients indicated for CRT",
+"tocnametree":"Backup ICD in patients indicated for CRT",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.5.1.0",
+"id":"49",
+"nametree":"Indications",
+"tocnametree":"Indications",
+"htmlpage":"ENAS259_5.5.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.5.2.0",
+"id":"50",
+"nametree":"Clinical perspectives",
+"tocnametree":"Clinical perspectives",
+"htmlpage":"ENAS259_5.5.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"51",
+"nametree":"Indications for pacing in specific conditions",
+"tocnametree":"Indications for pacing in specific conditions",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"52",
+"nametree":"Acute myocardial infarction",
+"tocnametree":"Acute myocardial infarction",
+"htmlpage":"ENAS259_6.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.0.0",
+"id":"53",
+"nametree":"Cardiac surgery, TAVI and heart transplant",
+"tocnametree":"Cardiac surgery, TAVI and heart transplant",
+"htmlpage":"ENAS259_6.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.0.0",
+"id":"54",
+"nametree":"Children and congenital heart disease",
+"tocnametree":"Children and congenital heart disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.1.0",
+"id":"55",
+"nametree":"Indication and clinical perspectives",
+"tocnametree":"Indication and clinical perspectives",
+"htmlpage":"ENAS259_6.3.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.2.0",
+"id":"56",
+"nametree":"CRT in CHD",
+"tocnametree":"CRT in CHD",
+"htmlpage":"ENAS259_6.3.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.4.0.0",
+"id":"57",
+"nametree":"Hypertrophic cardiomyopathy",
+"tocnametree":"Hypertrophic cardiomyopathy",
+"htmlpage":"ENAS259_6.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.5.0.0",
+"id":"58",
+"nametree":"Rare diseases",
+"tocnametree":"Rare diseases",
+"htmlpage":"ENAS259_6.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.6.0.0",
+"id":"59",
+"nametree":"Pregnancy",
+"tocnametree":"Pregnancy",
+"htmlpage":"ENAS259_6.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.7.0.0",
+"id":"60",
+"nametree":"For first degree AV block",
+"tocnametree":"For first degree AV block",
+"htmlpage":"ENAS259_6.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.8.0.0",
+"id":"61",
+"nametree":"Prevention/termination of atrial arrhythmias",
+"tocnametree":"Prevention/termination of atrial arrhythmias",
+"htmlpage":"ENAS259_6.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"62",
+"nametree":"Complications of pacing and CRT",
+"tocnametree":"Complications of pacing and CRT",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.1.0.0",
+"id":"63",
+"nametree":"Most frequent/important complications",
+"tocnametree":"Most frequent/important complications",
+"htmlpage":"ENAS259_7.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.2.0.0",
+"id":"64",
+"nametree":"Hematomas/Infections",
+"tocnametree":"Hematomas/Infections",
+"htmlpage":"ENAS259_7.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"65",
+"nametree":"Management considerations",
+"tocnametree":"Management considerations",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.1.0.0",
+"id":"66",
+"nametree":"Pacing from alternative RV sites",
+"tocnametree":"Pacing from alternative RV sites",
+"htmlpage":"ENAS259_8.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.2.0.0",
+"id":"67",
+"nametree":"Reimplantation of pacemaker/CRT",
+"tocnametree":"Reimplantation of pacemaker/CRT",
+"htmlpage":"ENAS259_8.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.3.0.0",
+"id":"68",
+"nametree":"MRI in pts. with imp. cardiac devices",
+"tocnametree":"MRI in pts. with imp. cardiac devices",
+"htmlpage":"ENAS259_8.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.4.0.0",
+"id":"69",
+"nametree":"Emergency temporary pacing",
+"tocnametree":"Emergency temporary pacing",
+"htmlpage":"ENAS259_8.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.5.0.0",
+"id":"70",
+"nametree":"Remote management of arrhythmias and device",
+"tocnametree":"Remote management of arrhythmias and device",
+"htmlpage":"ENAS259_8.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"71",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS259_9.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

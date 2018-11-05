@@ -1,0 +1,353 @@
+﻿[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and Publication",
+"tocnametree":"Authors and Publication",
+"htmlpage":"ENAS5532_1.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Preamble",
+"tocnametree":"Preamble",
+"htmlpage":"ENAS5532_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5532_3.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"4",
+"nametree":"Diagnostic tools to guide MR",
+"tocnametree":"Diagnostic tools to guide MR",
+"htmlpage":"ENAS5532_4.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"5",
+"nametree":"Decision making and patient information",
+"tocnametree":"Decision making and patient information",
+"htmlpage":"ENAS5532_5.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"6",
+"nametree":"Revascularization for SCAD",
+"tocnametree":"Revascularization for SCAD",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"7",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5532_6.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"8",
+"nametree":"Decision-making in elective setting",
+"tocnametree":"Decision-making in elective setting",
+"htmlpage":"ENAS5532_6.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.0.0",
+"id":"9",
+"nametree":"Risk scores",
+"tocnametree":"Risk scores",
+"htmlpage":"ENAS5532_6.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.4.0.0",
+"id":"10",
+"nametree":"SYNTAX score",
+"tocnametree":"SYNTAX score",
+"htmlpage":"ENAS5532_6.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.5.0.0",
+"id":"11",
+"nametree":"PCI or CABG in SCAD",
+"tocnametree":"PCI or CABG in SCAD",
+"htmlpage":"ENAS5532_6.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.6.0.0",
+"id":"12",
+"nametree":"Heart Team",
+"tocnametree":"Heart Team",
+"htmlpage":"ENAS5532_6.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"13",
+"nametree":"Revascularization in NSTE-ACS",
+"tocnametree":"Revascularization in NSTE-ACS",
+"htmlpage":"ENAS5532_7.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"14",
+"nametree":"Revascularization in STEMI",
+"tocnametree":"Revascularization in STEMI",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.1.0.0",
+"id":"15",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5532_8.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.2.0.0",
+"id":"16",
+"nametree":"Primary PCI: indications & logistics",
+"tocnametree":"Primary PCI: indications and logistics",
+"htmlpage":"ENAS5532_8.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.3.0.0",
+"id":"17",
+"nametree":"Primary PCI: procedural aspects",
+"tocnametree":"Primary PCI: procedural aspects",
+"htmlpage":"ENAS5532_8.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"18",
+"nametree":"Revascularization in heart failure",
+"tocnametree":"Revascularization in heart failure",
+"htmlpage":"ENAS5532_9.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"19",
+"nametree":"Revascularization in diabetics",
+"tocnametree":"Revascularization in diabetics",
+"htmlpage":"ENAS5532_10.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"20",
+"nametree":"Revascularization in CKD",
+"tocnametree":"Revascularization in CKD",
+"htmlpage":"ENAS5532_11.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.0.0.0",
+"id":"21",
+"nametree":"Revascularization and valve interventions",
+"tocnametree":"Revascularization and valve interventions",
+"htmlpage":"ENAS5532_12.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.0.0.0",
+"id":"22",
+"nametree":"Associated peripheral artery diseases",
+"tocnametree":"Associated peripheral artery diseases",
+"htmlpage":"ENAS5532_13.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.0.0.0",
+"id":"23",
+"nametree":"Repeat revascularization procedures",
+"tocnametree":"Repeat revascularization procedures",
+"htmlpage":"ENAS5532_14.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.0.0.0",
+"id":"24",
+"nametree":"Arrhythmias",
+"tocnametree":"Arrhythmias",
+"htmlpage":"ENAS5532_15.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"16.0.0.0",
+"id":"25",
+"nametree":"Procedural aspects of CABG",
+"tocnametree":"Procedural aspects of CABG",
+"htmlpage":"ENAS5532_16.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"17.0.0.0",
+"id":"26",
+"nametree":"Procedural aspects of PCI",
+"tocnametree":"Procedural aspects of PCI",
+"htmlpage":"ENAS5532_17.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.0.0.0",
+"id":"27",
+"nametree":"Antithrombotic treatments",
+"tocnametree":"Antithrombotic treatments",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.1.0.0",
+"id":"28",
+"nametree":"Antithrombotic drugs",
+"tocnametree":"Antithrombotic drugs",
+"htmlpage":"ENAS5532_18.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.2.0.0",
+"id":"29",
+"nametree":"Treatment in SCAD undergoing PCI",
+"tocnametree":"Treatment in SCAD undergoing PCI",
+"htmlpage":"ENAS5532_18.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.3.0.0",
+"id":"30",
+"nametree":"Treatment in NSTE-ACS undergoing PCI",
+"tocnametree":"Treatment in NSTE-ACS undergoing PCI",
+"htmlpage":"ENAS5532_18.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.4.0.0",
+"id":"31",
+"nametree":"Treatment after PCI for ACS",
+"tocnametree":"Treatment after PCI for NSTE-ACS and STEMI",
+"htmlpage":"ENAS5532_18.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.5.0.0",
+"id":"32",
+"nametree":"Treatment in STEMI undergoing PCI",
+"tocnametree":"Treatment in STEMI undergoing PCI",
+"htmlpage":"ENAS5532_18.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.6.0.0",
+"id":"33",
+"nametree":"Algorithm in patients undergoing PCI",
+"tocnametree":"Algorithm in patients undergoing PCI",
+"htmlpage":"ENAS5532_18.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.7.0.0",
+"id":"34",
+"nametree":"DAPT in cardiac surgery",
+"tocnametree":"DAPT in cardiac surgery",
+"htmlpage":"ENAS5532_18.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.8.0.0",
+"id":"35",
+"nametree":"Indication for anticoagulation in PCI",
+"tocnametree":"Indication for anticoagulation in PCI",
+"htmlpage":"ENAS5532_18.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.9.0.0",
+"id":"36",
+"nametree":"DAPT with indication for OAC",
+"tocnametree":"DAPT with indication for OAC",
+"htmlpage":"ENAS5532_18.9.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"19.0.0.0",
+"id":"37",
+"nametree":"Volume–outcome relationship",
+"tocnametree":"Volume–outcome relationship",
+"htmlpage":"ENAS5532_19.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"20.0.0.0",
+"id":"38",
+"nametree":"Prevention and follow-up",
+"tocnametree":"Prevention and follow-up",
+"htmlpage":"ENAS5532_20.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"21.0.0.0",
+"id":"39",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS5532_21.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

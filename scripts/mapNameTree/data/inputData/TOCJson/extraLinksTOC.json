@@ -1,0 +1,481 @@
+[{
+        "guidelineID": 2,
+        "itemID": 1000,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": -1,
+        "isDownloaded": false,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 3,
+        "itemID": 1001,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": -1,
+        "isDownloaded": false,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 4,
+        "itemID": 1002,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": -1,
+        "isDownloaded": false,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 6,
+        "itemID": 1003,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": -1,
+        "isDownloaded": false,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 7,
+        "itemID": 1004,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": -1,
+        "isDownloaded": false,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 8,
+        "itemID": 1005,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": -1,
+        "isDownloaded": false,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 9,
+        "itemID": 1006,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 11,
+        "itemID": 1007,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 13,
+        "itemID": 1008,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 14,
+        "itemID": 1009,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 16,
+        "itemID": 1010,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 17,
+        "itemID": 1011,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 18,
+        "itemID": 1012,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 19,
+        "itemID": 1013,
+        "itemName": "Essential messages",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50001,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "extraLinks_icon_1"
+    },
+    {
+        "guidelineID": 2,
+        "itemID": 1014,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": -1,
+        "isDownloaded": false,
+        "onClick": {
+            "viewID": 50002,
+            "extraParameter": "2.1.0.0"
+        },
+        "iconName": "summary_cards_icon_2"
+    },
+    {
+        "guidelineID": 11,
+        "itemID": 1015,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 2,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50002,
+            "extraParameter": "2.1.0.0"
+        },
+        "iconName": "summary_cards_icon_11"
+    },
+    {
+        "guidelineID": 13,
+        "itemID": 1016,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 2,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50002,
+            "extraParameter": "2.1.0.0"
+        },
+        "iconName": "summary_cards_icon_13"
+    },
+    {
+        "guidelineID": 14,
+        "itemID": 1017,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 2,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50002,
+            "extraParameter": "2.1.0.0"
+        },
+        "iconName": "summary_cards_icon_14"
+    },
+    {
+        "guidelineID": 17,
+        "itemID": 1018,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 2,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50002,
+            "extraParameter": "2.1.0.0"
+        },
+        "iconName": "summary_cards_icon_17"
+    },
+    {
+        "guidelineID": 25,
+        "itemID": 1019,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 5,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "5.1.0.0"
+        },
+        "iconName": "summary_cards_icon_11"
+    },
+    {
+        "guidelineID": 25,
+        "itemID": 1020,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 6,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "6.1.0.0"
+        },
+        "iconName": "summary_cards_icon_17"
+    },
+    {
+        "guidelineID": 25,
+        "itemID": 1021,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": -1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "7.1.0.0"
+        },
+        "iconName": "summary_cards_icon_14"
+    },
+    {
+        "guidelineID": 25,
+        "itemID": 1022,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 8,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "8.1.0.0"
+        },
+        "iconName": "summary_cards_icon_13"
+    },
+    {
+        "guidelineID": 25,
+        "itemID": 1023,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": -1,
+        "isDownloaded": false,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "9.1.0.0"
+        },
+        "iconName": "summary_cards_icon_2"
+    },
+    {
+        "guidelineID": 25,
+        "itemID": 1024,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 4,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "4.1.0.0"
+        },
+        "iconName": "summary_cards_icon_26"
+    },
+    {
+        "guidelineID": 25,
+        "itemID": 1025,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "summary_cards_icon_27"
+    },
+    {
+        "guidelineID": 25,
+        "itemID": 1026,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 2,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "2.1.0.0"
+        },
+        "iconName": "summary_cards_icon_28"
+    },
+    {
+        "guidelineID": 25,
+        "itemID": 1027,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 3,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "3.1.0.0"
+        },
+        "iconName": "summary_cards_icon_29"
+    },
+    {
+        "guidelineID": 26,
+        "itemID": 1028,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50002,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "summary_cards_icon_26"
+    },
+    {
+        "guidelineID": 27,
+        "itemID": 1029,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50002,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "summary_cards_icon_27"
+    },
+    {
+        "guidelineID": 28,
+        "itemID": 1030,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50002,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "summary_cards_icon_28"
+    },
+    {
+        "guidelineID": 29,
+        "itemID": 1031,
+        "itemName": "Summary Cards",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 50002,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "summary_cards_icon_29"
+    },
+    {
+        "guidelineID": 35,
+        "itemID": 1032,
+        "itemName": "Essential Messages From PE",
+        "positionOnHomeScreen": 1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "1.1.0.0"
+        },
+        "iconName": "essential_messages_icon_16"
+    },
+    {
+        "guidelineID": 35,
+        "itemID": 1033,
+        "itemName": "Essential Messages From AORTA",
+        "positionOnHomeScreen": 2,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "2.1.0.0"
+        },
+        "iconName": "essential_messages_icon_18"
+    },
+    {
+        "guidelineID": 35,
+        "itemID": 1034,
+        "itemName": "Essential Messages From HCM",
+        "positionOnHomeScreen": 3,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "3.1.0.0"
+        },
+        "iconName": "essential_messages_icon_17"
+    },
+    {
+        "guidelineID": 35,
+        "itemID": 1035,
+        "itemName": "Essential Messages From MR",
+        "positionOnHomeScreen": -1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "4.1.0.0"
+        },
+        "iconName": "essential_messages_icon_19"
+    },
+    {
+        "guidelineID": 35,
+        "itemID": 1036,
+        "itemName": "Essential Messages From Pacing",
+        "positionOnHomeScreen": 5,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "5.1.0.0"
+        },
+        "iconName": "essential_messages_icon_13"
+    },
+    {
+        "guidelineID": 35,
+        "itemID": 1037,
+        "itemName": "Essential Messages From HTN",
+        "positionOnHomeScreen": -1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "6.1.0.0"
+        },
+        "iconName": "essential_messages_icon_14"
+    },
+    {
+        "guidelineID": 35,
+        "itemID": 1038,
+        "itemName": "Essential Messages From DM",
+        "positionOnHomeScreen": 7,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "7.1.0.0"
+        },
+        "iconName": "essential_messages_icon_11"
+    },
+    {
+        "guidelineID": 35,
+        "itemID": 1039,
+        "itemName": "Essential Messages From CVD Preg",
+        "positionOnHomeScreen": -1,
+        "isDownloaded": true,
+        "onClick": {
+            "viewID": 2,
+            "extraParameter": "8.1.0.0"
+        },
+        "iconName": "essential_messages_icon_9"
+    }
+]

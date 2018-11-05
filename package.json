@@ -1,0 +1,19 @@
+{
+    "name": "node-monsoon",
+    "version": "1.0.0",
+    "description": "This is a BBI utility tool(node js based) similar to the monsoon(php based). ",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^1.18.5"
+    },
+    "dependencies": {
+        "express": "^4.16.4",
+        "utf8": "^3.0.0"
+    }
+}

@@ -1,0 +1,442 @@
+﻿[
+{
+"old_id":"1",
+"old_nametree":"Authors and legal information",
+"old_numtree":"1.0.0.0",
+"old_htmlpage":"ENAS261_1.0.0.0",
+"new_id":"1",
+"new_nametree":"Authors and legal information",
+"new_numtree":"1.0.0.0",
+"new_htmlpage":"ENAS261_1.0.0.0"
+},
+{
+"old_id":"2",
+"old_nametree":"Table of recommendations and levels of evidence",
+"old_numtree":"2.0.0.0",
+"old_htmlpage":"ENAS261_2.0.0.0",
+"new_id":"2",
+"new_nametree":"Table of recommendations and levels of evidence",
+"new_numtree":"2.0.0.0",
+"new_htmlpage":"ENAS261_2.0.0.0"
+},
+{
+"old_id":"3",
+"old_nametree":"Introduction",
+"old_numtree":"3.0.0.0",
+"old_htmlpage":"ENAS261_3.0.0.0",
+"new_id":"3",
+"new_nametree":"Introduction",
+"new_numtree":"3.0.0.0",
+"new_htmlpage":"ENAS261_3.0.0.0"
+},
+{
+"old_id":"4",
+"old_nametree":"Pre-operative cardiac risk assessment",
+"old_numtree":"4.0.0.0",
+"old_htmlpage":"null",
+"new_id":"4",
+"new_nametree":"Pre-operative cardiac risk assessment",
+"new_numtree":"4.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"5",
+"old_nametree":"Introduction",
+"old_numtree":"4.1.0.0",
+"old_htmlpage":"ENAS261_4.1.0.0",
+"new_id":"5",
+"new_nametree":"Introduction",
+"new_numtree":"4.1.0.0",
+"new_htmlpage":"ENAS261_4.1.0.0"
+},
+{
+"old_id":"6",
+"old_nametree":"Step 1",
+"old_numtree":"4.2.0.0",
+"old_htmlpage":"ENAS261_4.2.0.0",
+"new_id":"6",
+"new_nametree":"Step 1",
+"new_numtree":"4.2.0.0",
+"new_htmlpage":"ENAS261_4.2.0.0"
+},
+{
+"old_id":"7",
+"old_nametree":"Step 2",
+"old_numtree":"4.3.0.0",
+"old_htmlpage":"ENAS261_4.3.0.0",
+"new_id":"7",
+"new_nametree":"Step 2",
+"new_numtree":"4.3.0.0",
+"new_htmlpage":"ENAS261_4.3.0.0"
+},
+{
+"old_id":"8",
+"old_nametree":"Step 3",
+"old_numtree":"4.4.0.0",
+"old_htmlpage":"ENAS261_4.4.0.0",
+"new_id":"8",
+"new_nametree":"Step 3",
+"new_numtree":"4.4.0.0",
+"new_htmlpage":"ENAS261_4.4.0.0"
+},
+{
+"old_id":"9",
+"old_nametree":"Step 4",
+"old_numtree":"4.5.0.0",
+"old_htmlpage":"ENAS261_4.5.0.0",
+"new_id":"9",
+"new_nametree":"Step 4",
+"new_numtree":"4.5.0.0",
+"new_htmlpage":"ENAS261_4.5.0.0"
+},
+{
+"old_id":"10",
+"old_nametree":"Step 5",
+"old_numtree":"4.6.0.0",
+"old_htmlpage":"ENAS261_4.6.0.0",
+"new_id":"10",
+"new_nametree":"Step 5",
+"new_numtree":"4.6.0.0",
+"new_htmlpage":"ENAS261_4.6.0.0"
+},
+{
+"old_id":"11",
+"old_nametree":"Step 6",
+"old_numtree":"4.7.0.0",
+"old_htmlpage":"ENAS261_4.7.0.0",
+"new_id":"11",
+"new_nametree":"Step 6",
+"new_numtree":"4.7.0.0",
+"new_htmlpage":"ENAS261_4.7.0.0"
+},
+{
+"old_id":"12",
+"old_nametree":"Step 7",
+"old_numtree":"4.8.0.0",
+"old_htmlpage":"ENAS261_4.8.0.0",
+"new_id":"12",
+"new_nametree":"Step 7",
+"new_numtree":"4.8.0.0",
+"new_htmlpage":"ENAS261_4.8.0.0"
+},
+{
+"old_id":"13",
+"old_nametree":"Type of surgery",
+"old_numtree":"5.0.0.0",
+"old_htmlpage":"ENAS261_5.0.0.0",
+"new_id":"13",
+"new_nametree":"Type of surgery",
+"new_numtree":"5.0.0.0",
+"new_htmlpage":"ENAS261_5.0.0.0"
+},
+{
+"old_id":"14",
+"old_nametree":"Pre-operative evaluation",
+"old_numtree":"6.0.0.0",
+"old_htmlpage":"null",
+"new_id":"14",
+"new_nametree":"Pre-operative evaluation",
+"new_numtree":"6.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"15",
+"old_nametree":"Risk indices",
+"old_numtree":"6.1.0.0",
+"old_htmlpage":"ENAS261_6.1.0.0",
+"new_id":"15",
+"new_nametree":"Risk indices",
+"new_numtree":"6.1.0.0",
+"new_htmlpage":"ENAS261_6.1.0.0"
+},
+{
+"old_id":"16",
+"old_nametree":"Electrocardiography",
+"old_numtree":"6.2.0.0",
+"old_htmlpage":"ENAS261_6.2.0.0",
+"new_id":"16",
+"new_nametree":"Electrocardiography",
+"new_numtree":"6.2.0.0",
+"new_htmlpage":"ENAS261_6.2.0.0"
+},
+{
+"old_id":"17",
+"old_nametree":"Non-invasive assessment",
+"old_numtree":"6.3.0.0",
+"old_htmlpage":"ENAS261_6.3.0.0",
+"new_id":"17",
+"new_nametree":"Non-invasive assessment",
+"new_numtree":"6.3.0.0",
+"new_htmlpage":"ENAS261_6.3.0.0"
+},
+{
+"old_id":"18",
+"old_nametree":"Invasive coronary angiography",
+"old_numtree":"6.4.0.0",
+"old_htmlpage":"ENAS261_6.4.0.0",
+"new_id":"18",
+"new_nametree":"Invasive coronary angiography",
+"new_numtree":"6.4.0.0",
+"new_htmlpage":"ENAS261_6.4.0.0"
+},
+{
+"old_id":"19",
+"old_nametree":"Risk reduction strategies",
+"old_numtree":"7.0.0.0",
+"old_htmlpage":"null",
+"new_id":"19",
+"new_nametree":"Risk reduction strategies",
+"new_numtree":"7.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"20",
+"old_nametree":"Beta-blockers",
+"old_numtree":"7.1.0.0",
+"old_htmlpage":"ENAS261_7.1.0.0",
+"new_id":"20",
+"new_nametree":"Beta-blockers",
+"new_numtree":"7.1.0.0",
+"new_htmlpage":"ENAS261_7.1.0.0"
+},
+{
+"old_id":"21",
+"old_nametree":"Statins",
+"old_numtree":"7.2.0.0",
+"old_htmlpage":"ENAS261_7.2.0.0",
+"new_id":"21",
+"new_nametree":"Statins",
+"new_numtree":"7.2.0.0",
+"new_htmlpage":"ENAS261_7.2.0.0"
+},
+{
+"old_id":"22",
+"old_nametree":"Angiotensin-converting enzyme inhibitors",
+"old_numtree":"7.3.0.0",
+"old_htmlpage":"ENAS261_7.3.0.0",
+"new_id":"22",
+"new_nametree":"Angiotensin-converting enzyme inhibitors",
+"new_numtree":"7.3.0.0",
+"new_htmlpage":"ENAS261_7.3.0.0"
+},
+{
+"old_id":"23",
+"old_nametree":"CCBs, alpha2 receptor agonists and diuretics",
+"old_numtree":"7.4.0.0",
+"old_htmlpage":"ENAS261_7.4.0.0",
+"new_id":"23",
+"new_nametree":"CCBs, alpha2 receptor agonists and diuretics",
+"new_numtree":"7.4.0.0",
+"new_htmlpage":"ENAS261_7.4.0.0"
+},
+{
+"old_id":"24",
+"old_nametree":"Antiplatelet agents and anticoagulants",
+"old_numtree":"7.5.0.0",
+"old_htmlpage":"ENAS261_7.5.0.0",
+"new_id":"24",
+"new_nametree":"Antiplatelet agents and anticoagulants",
+"new_numtree":"7.5.0.0",
+"new_htmlpage":"ENAS261_7.5.0.0"
+},
+{
+"old_id":"25",
+"old_nametree":"Revascularisation",
+"old_numtree":"7.6.0.0",
+"old_htmlpage":"ENAS261_7.6.0.0",
+"new_id":"25",
+"new_nametree":"Revascularisation",
+"new_numtree":"7.6.0.0",
+"new_htmlpage":"ENAS261_7.6.0.0"
+},
+{
+"old_id":"26",
+"old_nametree":"Specific diseases",
+"old_numtree":"8.0.0.0",
+"old_htmlpage":"null",
+"new_id":"26",
+"new_nametree":"Specific diseases",
+"new_numtree":"8.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"27",
+"old_nametree":"Chronic heart failure (CHF)",
+"old_numtree":"8.1.0.0",
+"old_htmlpage":"ENAS261_8.1.0.0",
+"new_id":"27",
+"new_nametree":"Chronic heart failure (CHF)",
+"new_numtree":"8.1.0.0",
+"new_htmlpage":"ENAS261_8.1.0.0"
+},
+{
+"old_id":"28",
+"old_nametree":"Arterial hypertension",
+"old_numtree":"8.2.0.0",
+"old_htmlpage":"ENAS261_8.2.0.0",
+"new_id":"28",
+"new_nametree":"Arterial hypertension",
+"new_numtree":"8.2.0.0",
+"new_htmlpage":"ENAS261_8.2.0.0"
+},
+{
+"old_id":"29",
+"old_nametree":"Valvular heart disease (VHD)",
+"old_numtree":"8.3.0.0",
+"old_htmlpage":"ENAS261_8.3.0.0",
+"new_id":"29",
+"new_nametree":"Valvular heart disease (VHD)",
+"new_numtree":"8.3.0.0",
+"new_htmlpage":"ENAS261_8.3.0.0"
+},
+{
+"old_id":"30",
+"old_nametree":"Arrhythmias",
+"old_numtree":"8.4.0.0",
+"old_htmlpage":"ENAS261_8.4.0.0",
+"new_id":"30",
+"new_nametree":"Arrhythmias",
+"new_numtree":"8.4.0.0",
+"new_htmlpage":"ENAS261_8.4.0.0"
+},
+{
+"old_id":"31",
+"old_nametree":"Renal disease",
+"old_numtree":"8.5.0.0",
+"old_htmlpage":"ENAS261_8.5.0.0",
+"new_id":"31",
+"new_nametree":"Renal disease",
+"new_numtree":"8.5.0.0",
+"new_htmlpage":"ENAS261_8.5.0.0"
+},
+{
+"old_id":"32",
+"old_nametree":"Cerebrovascular disease",
+"old_numtree":"8.6.0.0",
+"old_htmlpage":"ENAS261_8.6.0.0",
+"new_id":"32",
+"new_nametree":"Cerebrovascular disease",
+"new_numtree":"8.6.0.0",
+"new_htmlpage":"ENAS261_8.6.0.0"
+},
+{
+"old_id":"33",
+"old_nametree":"Peripheral artery disease",
+"old_numtree":"8.7.0.0",
+"old_htmlpage":"ENAS261_8.7.0.0",
+"new_id":"33",
+"new_nametree":"Peripheral artery disease",
+"new_numtree":"8.7.0.0",
+"new_htmlpage":"ENAS261_8.7.0.0"
+},
+{
+"old_id":"34",
+"old_nametree":"Pulmonary disease",
+"old_numtree":"8.8.0.0",
+"old_htmlpage":"ENAS261_8.8.0.0",
+"new_id":"34",
+"new_nametree":"Pulmonary disease",
+"new_numtree":"8.8.0.0",
+"new_htmlpage":"ENAS261_8.8.0.0"
+},
+{
+"old_id":"35",
+"old_nametree":"Congenital heart disease",
+"old_numtree":"8.9.0.0",
+"old_htmlpage":"ENAS261_8.9.0.0",
+"new_id":"35",
+"new_nametree":"Congenital heart disease",
+"new_numtree":"8.9.0.0",
+"new_htmlpage":"ENAS261_8.9.0.0"
+},
+{
+"old_id":"36",
+"old_nametree":"Peri-operative cardiac monitoring",
+"old_numtree":"9.0.0.0",
+"old_htmlpage":"null",
+"new_id":"36",
+"new_nametree":"Peri-operative cardiac monitoring",
+"new_numtree":"9.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"37",
+"old_nametree":"Electrocardiography",
+"old_numtree":"9.1.0.0",
+"old_htmlpage":"ENAS261_9.1.0.0",
+"new_id":"37",
+"new_nametree":"Electrocardiography",
+"new_numtree":"9.1.0.0",
+"new_htmlpage":"ENAS261_9.1.0.0"
+},
+{
+"old_id":"38",
+"old_nametree":"Transoesophageal echocardiography",
+"old_numtree":"9.2.0.0",
+"old_htmlpage":"ENAS261_9.2.0.0",
+"new_id":"38",
+"new_nametree":"Transoesophageal echocardiography",
+"new_numtree":"9.2.0.0",
+"new_htmlpage":"ENAS261_9.2.0.0"
+},
+{
+"old_id":"39",
+"old_nametree":"Disturbed glucose metabolism",
+"old_numtree":"9.3.0.0",
+"old_htmlpage":"ENAS261_9.3.0.0",
+"new_id":"39",
+"new_nametree":"Disturbed glucose metabolism",
+"new_numtree":"9.3.0.0",
+"new_htmlpage":"ENAS261_9.3.0.0"
+},
+{
+"old_id":"40",
+"old_nametree":"Anaesthesia",
+"old_numtree":"10.0.0.0",
+"old_htmlpage":"ENAS261_10.0.0.0",
+"new_id":"40",
+"new_nametree":"Anaesthesia",
+"new_numtree":"10.0.0.0",
+"new_htmlpage":"ENAS261_10.0.0.0"
+},
+{
+"old_id":"41",
+"old_nametree":"Pre-op cardiac risk evaluation",
+"old_numtree":"11.0.0.0",
+"old_htmlpage":"ENAS261_11.0.0.0",
+"new_id":"41",
+"new_nametree":"Pre-op cardiac risk evaluation",
+"new_numtree":"11.0.0.0",
+"new_htmlpage":"ENAS261_11.0.0.0"
+},
+{
+"old_id":"42",
+"old_nametree":"Summary of pre-op cardiac risk evaluation",
+"old_numtree":"12.0.0.0",
+"old_htmlpage":"ENAS261_12.0.0.0",
+"new_id":"42",
+"new_nametree":"Summary of pre-op cardiac risk evaluation",
+"new_numtree":"12.0.0.0",
+"new_htmlpage":"ENAS261_12.0.0.0"
+},
+{
+"old_id":"43",
+"old_nametree":"References",
+"old_numtree":"13.0.0.0",
+"old_htmlpage":"ENAS261_13.0.0.0",
+"new_id":"43",
+"new_nametree":"References",
+"new_numtree":"13.0.0.0",
+"new_htmlpage":"ENAS261_13.0.0.0"
+},
+{
+"old_id":"44",
+"old_nametree":"Abbreviations and acronyms",
+"old_numtree":"14.0.0.0",
+"old_htmlpage":"ENAS261_14.0.0.0",
+"new_id":"44",
+"new_nametree":"Abbreviations and acronyms",
+"new_numtree":"14.0.0.0",
+"new_htmlpage":"ENAS261_14.0.0.0"
+}
+]

@@ -1,0 +1,596 @@
+﻿[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Essential messages",
+"tocnametree":"Essential messages",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.1.0.0",
+"id":"2",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS260_1.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.2.0.0",
+"id":"3",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS260_1.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.3.0.0",
+"id":"4",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS260_1.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"5",
+"nametree":"Summary Cards",
+"tocnametree":"Summary cards",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.1.0.0",
+"id":"6",
+"nametree":"Why is prevention & treat. of HTN imp.?",
+"tocnametree":"Why is prevention & treat. of HTN imp.?",
+"htmlpage":"ENAS260_59",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.2.0.0",
+"id":"7",
+"nametree":"How to diagnose hypertension?",
+"tocnametree":"How to diagnose hypertension?",
+"htmlpage":"ENAS260_60",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.3.0.0",
+"id":"8",
+"nametree":"Other measurements to be performed",
+"tocnametree":"Other measurements to be performed",
+"htmlpage":"ENAS260_61",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.4.0.0",
+"id":"9",
+"nametree":"When to initiate anti-HTN treatment?",
+"tocnametree":"When to initiate anti-HTN treatment?",
+"htmlpage":"ENAS260_62",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.5.0.0",
+"id":"10",
+"nametree":"Target BP during anti-HTN treatment",
+"tocnametree":"Target BP during anti-HTN treatment",
+"htmlpage":"ENAS260_63",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.6.0.0",
+"id":"11",
+"nametree":"Which anti-HTN drugs to choose?",
+"tocnametree":"Which anti-HTN drugs to choose?",
+"htmlpage":"ENAS260_64",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.7.0.0",
+"id":"12",
+"nametree":"Treating associated risk factors",
+"tocnametree":"Treating associated risk factors",
+"htmlpage":"ENAS260_65",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.8.0.0",
+"id":"13",
+"nametree":"Follow-up patients with HTN in GP",
+"tocnametree":"Follow-up patients with HTN in GP",
+"htmlpage":"ENAS260_66",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"14",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS260_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"15",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"16",
+"nametree":"Principles",
+"tocnametree":"Principles",
+"htmlpage":"ENAS260_3.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.0.0",
+"id":"17",
+"nametree":"New aspects",
+"tocnametree":"New aspects",
+"htmlpage":"ENAS260_3.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"18",
+"nametree":"Epidemiological aspects",
+"tocnametree":"Epidemiological aspects",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"19",
+"nametree":"Relationship of BP to CV and renal damage",
+"tocnametree":"Relationship of BP to CV and renal damage",
+"htmlpage":"ENAS260_4.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"20",
+"nametree":"Definition and classification of HTN",
+"tocnametree":"Definition and classification of HTN",
+"htmlpage":"ENAS260_4.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.0.0",
+"id":"21",
+"nametree":"Prevalence of hypertension",
+"tocnametree":"Prevalence of hypertension",
+"htmlpage":"ENAS260_4.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.0.0",
+"id":"22",
+"nametree":"HTN and total CV risk",
+"tocnametree":"HTN and total CV risk",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.1.0",
+"id":"23",
+"nametree":"Total CV risk assessment",
+"tocnametree":"Total CV risk assessment",
+"htmlpage":"ENAS260_4.4.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.2.0",
+"id":"24",
+"nametree":"Stratification of total CV risk in categories",
+"tocnametree":"Stratification of total CV risk in categories",
+"htmlpage":"ENAS260_4.4.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.3.0",
+"id":"25",
+"nametree":"Other influencing factors in prognosis",
+"tocnametree":"Other influencing factors in prognosis",
+"htmlpage":"ENAS260_4.4.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"26",
+"nametree":"Diagnostic evaluation",
+"tocnametree":"Diagnostic evaluation",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"27",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS260_5.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"28",
+"nametree":"Blood pressure measurement",
+"tocnametree":"Blood pressure measurement",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.1.0",
+"id":"29",
+"nametree":"Office blood pressure",
+"tocnametree":"Office blood pressure",
+"htmlpage":"ENAS260_5.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.2.0",
+"id":"30",
+"nametree":"Out-of-office blood pressure",
+"tocnametree":"Out-of-office blood pressure",
+"htmlpage":"ENAS260_5.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.3.0",
+"id":"31",
+"nametree":"Clinical indications for out-of-office BP",
+"tocnametree":"Clinical indications for out-of-office BP",
+"htmlpage":"ENAS260_5.2.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.0.0",
+"id":"32",
+"nametree":"Medical history",
+"tocnametree":"Medical history",
+"htmlpage":"ENAS260_5.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.4.0.0",
+"id":"33",
+"nametree":"Physical examination",
+"tocnametree":"Physical examination",
+"htmlpage":"ENAS260_5.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.5.0.0",
+"id":"34",
+"nametree":"Summary of previously mentioned rec.",
+"tocnametree":"Summary of previously mentioned rec.",
+"htmlpage":"ENAS260_5.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.6.0.0",
+"id":"35",
+"nametree":"Laboratory investigations",
+"tocnametree":"Laboratory investigations",
+"htmlpage":"ENAS260_5.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.7.0.0",
+"id":"36",
+"nametree":"Genetics",
+"tocnametree":"Genetics",
+"htmlpage":"ENAS260_5.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.8.0.0",
+"id":"37",
+"nametree":"Searching for asympt. organ damage",
+"tocnametree":"Searching for asympt. organ damage",
+"htmlpage":"ENAS260_5.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.9.0.0",
+"id":"38",
+"nametree":"Searching for secondary forms of HTN",
+"tocnametree":"Searching for secondary forms of HTN",
+"htmlpage":"ENAS260_5.9.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"39",
+"nametree":"Treatment approach",
+"tocnametree":"Treatment approach",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"40",
+"nametree":"Therapeutic reduction of high BP",
+"tocnametree":"Therapeutic reduction of high BP",
+"htmlpage":"ENAS260_6.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.0.0",
+"id":"41",
+"nametree":"Lifestyle changes and treatments",
+"tocnametree":"Lifestyle changes and treatments",
+"htmlpage":"ENAS260_6.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.0.0",
+"id":"42",
+"nametree":"Initiation of anti-HTN drug treatment",
+"tocnametree":"Initiation of anti-HTN drug treatment",
+"htmlpage":"ENAS260_6.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.4.0.0",
+"id":"43",
+"nametree":"Blood pressure treatment goals",
+"tocnametree":"Blood pressure treatment goals",
+"htmlpage":"ENAS260_6.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"44",
+"nametree":"Treatment strategies",
+"tocnametree":"Treatment strategies",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.1.0.0",
+"id":"45",
+"nametree":"Lifestyle changes",
+"tocnametree":"Lifestyle changes",
+"htmlpage":"ENAS260_7.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.2.0.0",
+"id":"46",
+"nametree":"Pharmacological therapy",
+"tocnametree":"Pharmacological therapy",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.2.1.0",
+"id":"47",
+"nametree":"Choice of antihypertensive drugs",
+"tocnametree":"Choice of antihypertensive drugs",
+"htmlpage":"ENAS260_7.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.2.2.0",
+"id":"48",
+"nametree":"Monotherapy and combination therapy",
+"tocnametree":"Monotherapy and combination therapy",
+"htmlpage":"ENAS260_7.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.2.3.0",
+"id":"49",
+"nametree":"Summary of treatment strategies",
+"tocnametree":"Summary of treatment strategies",
+"htmlpage":"ENAS260_7.2.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"50",
+"nametree":"Treatment strategies in special conditions",
+"tocnametree":"Treatment strategies in special conditions",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.1.0.0",
+"id":"51",
+"nametree":"White-coat and masked hypertension",
+"tocnametree":"White-coat and masked hypertension",
+"htmlpage":"ENAS260_8.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.2.0.0",
+"id":"52",
+"nametree":"Elderly",
+"tocnametree":"Elderly",
+"htmlpage":"ENAS260_8.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.3.0.0",
+"id":"53",
+"nametree":"Young adults",
+"tocnametree":"Young adults",
+"htmlpage":"ENAS260_8.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.4.0.0",
+"id":"54",
+"nametree":"Women",
+"tocnametree":"Women",
+"htmlpage":"ENAS260_8.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.5.0.0",
+"id":"55",
+"nametree":"Diabetes mellitus",
+"tocnametree":"Diabetes mellitus",
+"htmlpage":"ENAS260_8.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.6.0.0",
+"id":"56",
+"nametree":"Obstructive sleep apnoea",
+"tocnametree":"Obstructive sleep apnoea",
+"htmlpage":"ENAS260_8.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.7.0.0",
+"id":"57",
+"nametree":"Diabetic and non-diabetic nephropathy",
+"tocnametree":"Diabetic and non-diabetic nephropathy",
+"htmlpage":"ENAS260_8.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.8.0.0",
+"id":"58",
+"nametree":"Cerebrovascular disease",
+"tocnametree":"Cerebrovascular disease",
+"htmlpage":"ENAS260_8.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.9.0.0",
+"id":"59",
+"nametree":"Heart disease",
+"tocnametree":"Heart disease",
+"htmlpage":"ENAS260_8.9.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.10.0.0",
+"id":"60",
+"nametree":"Atherosclerosis, arteriosclerosis and PAD",
+"tocnametree":"Atherosclerosis, arteriosclerosis and PAD",
+"htmlpage":"ENAS260_8.10.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.11.0.0",
+"id":"61",
+"nametree":"Resistant hypertension",
+"tocnametree":"Resistant hypertension",
+"htmlpage":"ENAS260_8.11.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.12.0.0",
+"id":"62",
+"nametree":"Malignant hypertension",
+"tocnametree":"Malignant hypertension",
+"htmlpage":"ENAS260_8.12.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.13.0.0",
+"id":"63",
+"nametree":"Renovascular hypertension",
+"tocnametree":"Renovascular hypertension",
+"htmlpage":"ENAS260_8.13.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"64",
+"nametree":"Treatment of associated risk factors",
+"tocnametree":"Treatment of associated risk factors",
+"htmlpage":"ENAS260_9.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"65",
+"nametree":"Follow-up/improvement of BP control",
+"tocnametree":"Follow-up/improvement of BP control",
+"htmlpage":"ENAS260_10.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.0.0.0",
+"id":"66",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS260_11.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

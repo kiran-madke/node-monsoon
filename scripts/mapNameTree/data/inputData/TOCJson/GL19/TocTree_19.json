@@ -1,0 +1,371 @@
+﻿[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Essential messages",
+"tocnametree":"Essential messages",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.1.0.0",
+"id":"2",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS265_1.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.2.0.0",
+"id":"3",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS265_1.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.3.0.0",
+"id":"4",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS265_1.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"5",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS265_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"6",
+"nametree":"Recommendations and LOE",
+"tocnametree":"Table of recommendations and LOE",
+"htmlpage":"ENAS265_3.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"7",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS265_4.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"8",
+"nametree":"Scores and risk stratification",
+"tocnametree":"Scores and risk stratification",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"9",
+"nametree":"SYNTAX score",
+"tocnametree":"SYNTAX score",
+"htmlpage":"ENAS265_5.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"10",
+"nametree":"Risk models to assess outcomes",
+"tocnametree":"Risk models to assess outcomes",
+"htmlpage":"ENAS265_5.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"11",
+"nametree":"Decision making and patient information",
+"tocnametree":"Decision making and patient information",
+"htmlpage":"ENAS265_6.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"12",
+"nametree":"Func. testing and imaging",
+"tocnametree":"Func. testing and imaging",
+"htmlpage":"ENAS265_7.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"13",
+"nametree":"Revascularization for SCAD",
+"tocnametree":"Revascularization for SCAD",
+"htmlpage":"ENAS265_8.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"14",
+"nametree":"Revascularization in NSTE-ACS",
+"tocnametree":"Revascularization in NSTE-ACS",
+"htmlpage":"ENAS265_9.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"15",
+"nametree":"Revascularization in STEMI",
+"tocnametree":"Revascularization in STEMI",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.1.0.0",
+"id":"16",
+"nametree":"Ideal time intervals/delays",
+"tocnametree":"Ideal time intervals/delays",
+"htmlpage":"ENAS265_10.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.2.0.0",
+"id":"17",
+"nametree":"PCI: indications/logistics",
+"tocnametree":"PCI: indications/logistics",
+"htmlpage":"ENAS265_10.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.3.0.0",
+"id":"18",
+"nametree":"PCI: procedural aspects",
+"tocnametree":"PCI: procedural aspects",
+"htmlpage":"ENAS265_10.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.4.0.0",
+"id":"19",
+"nametree":"Secondary PCI",
+"tocnametree":"Secondary PCI",
+"htmlpage":"ENAS265_10.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"20",
+"nametree":"Revasc. in heart failure/cardiogenic shock",
+"tocnametree":"Revasc. in heart failure/cardiogenic shock",
+"htmlpage":"ENAS265_11.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.0.0.0",
+"id":"21",
+"nametree":"Revasc. in patients with diabetes",
+"tocnametree":"Revasc. in patients with diabetes",
+"htmlpage":"ENAS265_12.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.0.0.0",
+"id":"22",
+"nametree":"Revasc. in patients with CKD",
+"tocnametree":"Revasc. in patients with CKD",
+"htmlpage":"ENAS265_13.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.0.0.0",
+"id":"23",
+"nametree":"Revasc. combined with valve interventions",
+"tocnametree":"Revasc. combined with valve interventions",
+"htmlpage":"ENAS265_14.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.0.0.0",
+"id":"24",
+"nametree":"Associated carotid/PAD",
+"tocnametree":"Associated carotid/PAD",
+"htmlpage":"ENAS265_15.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"16.0.0.0",
+"id":"25",
+"nametree":"Repeat revasc./hybrid procedures",
+"tocnametree":"Repeat revasc./hybrid procedures",
+"htmlpage":"ENAS265_16.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"17.0.0.0",
+"id":"26",
+"nametree":"Arrhythmias",
+"tocnametree":"Arrhythmias",
+"htmlpage":"ENAS265_17.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.0.0.0",
+"id":"27",
+"nametree":"Procedural aspects of CABG",
+"tocnametree":"Procedural aspects of CABG",
+"htmlpage":"ENAS265_18.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"19.0.0.0",
+"id":"28",
+"nametree":"Procedural aspects of PCI",
+"tocnametree":"Procedural aspects of PCI",
+"htmlpage":"ENAS265_19.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"20.0.0.0",
+"id":"29",
+"nametree":"Antithrombotic treatments for PCI",
+"tocnametree":"Antithrombotic treatments for PCI",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"20.1.0.0",
+"id":"30",
+"nametree":"Patients with stable CAD",
+"tocnametree":"Patients with stable CAD",
+"htmlpage":"ENAS265_20.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"20.2.0.0",
+"id":"31",
+"nametree":"Patients with NSTE-ACS",
+"tocnametree":"Patients with NSTE-ACS",
+"htmlpage":"ENAS265_20.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"20.3.0.0",
+"id":"32",
+"nametree":"Patients with STEMI",
+"tocnametree":"Patients with STEMI",
+"htmlpage":"ENAS265_20.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"20.4.0.0",
+"id":"33",
+"nametree":"Patients who require OAC",
+"tocnametree":"Patients who require OAC",
+"htmlpage":"ENAS265_20.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"20.5.0.0",
+"id":"34",
+"nametree":"Pre-op mgmt. of pts. under DAPT",
+"tocnametree":"Pre-op mgmt. of pts. under DAPT",
+"htmlpage":"ENAS265_20.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"20.6.0.0",
+"id":"35",
+"nametree":"Patients with CKD",
+"tocnametree":"Patients with CKD",
+"htmlpage":"ENAS265_20.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"20.7.0.0",
+"id":"36",
+"nametree":"Antiplatelet therapy in myocardial revasc.",
+"tocnametree":"Antiplatelet therapy in myocardial revasc.",
+"htmlpage":"ENAS265_20.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"21.0.0.0",
+"id":"37",
+"nametree":"Volume-outcome relationship",
+"tocnametree":"Volume-outcome relationship",
+"htmlpage":"ENAS265_21.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"22.0.0.0",
+"id":"38",
+"nametree":"Management after revascularization",
+"tocnametree":"Management after revascularization",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"22.1.0.0",
+"id":"39",
+"nametree":"Medical therapy, secondary prevention",
+"tocnametree":"Medical therapy, secondary prevention",
+"htmlpage":"ENAS265_22.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"22.2.0.0",
+"id":"40",
+"nametree":"Follow up",
+"tocnametree":"Follow up",
+"htmlpage":"ENAS265_22.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"23.0.0.0",
+"id":"41",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS265_23.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

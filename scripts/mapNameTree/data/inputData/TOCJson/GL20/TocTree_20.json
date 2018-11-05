@@ -1,0 +1,398 @@
+﻿[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5079_1.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5079_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Prevention",
+"tocnametree":"Prevention",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.1.0.0",
+"id":"4",
+"nametree":"Main principles of prevention",
+"tocnametree":"Main principles of prevention",
+"htmlpage":"ENAS5079_3.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.0.0",
+"id":"5",
+"nametree":"Dental procedures prophylaxis",
+"tocnametree":"Dental procedures prophylaxis",
+"htmlpage":"ENAS5079_3.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.3.0.0",
+"id":"6",
+"nametree":"Highest risk cardiac conditions",
+"tocnametree":"Highest risk cardiac conditions",
+"htmlpage":"ENAS5079_3.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.4.0.0",
+"id":"7",
+"nametree":"Non-specefic prevention measures",
+"tocnametree":"Non-specefic prevention measures",
+"htmlpage":"ENAS5079_3.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.5.0.0",
+"id":"8",
+"nametree":"Procedures at risk",
+"tocnametree":"Procedures at risk",
+"htmlpage":"ENAS5079_3.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.0.0",
+"id":"9",
+"nametree":"Cardiac or vascular intervention",
+"tocnametree":"Cardiac or vascular intervention",
+"htmlpage":"ENAS5079_3.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.7.0.0",
+"id":"10",
+"nametree":"Summary",
+"tocnametree":"Summary",
+"htmlpage":"ENAS5079_3.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"11",
+"nametree":"The endocarditis team",
+"tocnametree":"The endocarditis team",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"12",
+"nametree":"Characteristics",
+"tocnametree":"Characteristics",
+"htmlpage":"ENAS5079_4.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.0.0",
+"id":"13",
+"nametree":"Reference centres",
+"tocnametree":"Reference centres",
+"htmlpage":"ENAS5079_4.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"14",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"15",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5079_5.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"16",
+"nametree":"Echo. and other imaging techniques",
+"tocnametree":"Echo. and other imaging techniques",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.1.0",
+"id":"17",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5079_5.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.2.0",
+"id":"18",
+"nametree":"Indications for echo. in suspected IE",
+"tocnametree":"Indications for echo. in suspected IE",
+"htmlpage":"ENAS5079_5.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.3.0",
+"id":"19",
+"nametree":"Role of echocardiography in IE",
+"tocnametree":"Role of echocardiography in IE",
+"htmlpage":"ENAS5079_5.2.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.4.0",
+"id":"20",
+"nametree":"Anatomic and echo. definitions",
+"tocnametree":"Anatomic and echocardiographic definitions",
+"htmlpage":"ENAS5079_5.2.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.0.0",
+"id":"21",
+"nametree":"Microbiological diagnosis",
+"tocnametree":"Microbiological diagnosis",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.1.0",
+"id":"22",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5079_5.3.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.2.0",
+"id":"23",
+"nametree":"Microbiological diagnostic algorithm",
+"tocnametree":"Microbiological diagnostic algorithm",
+"htmlpage":"ENAS5079_5.3.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.0.0",
+"id":"24",
+"nametree":"Duke criteria / ESC 2015 modified criteria",
+"tocnametree":"Duke criteria / ESC 2015 modified criteria",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.1.0",
+"id":"25",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5079_5.4.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.2.0",
+"id":"26",
+"nametree":"ESC 2015 criteria for diagnosis of IE",
+"tocnametree":"ESC 2015 criteria for diagnosis of IE",
+"htmlpage":"ENAS5079_5.4.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.5.0.0",
+"id":"27",
+"nametree":"ESC 2015 algorithm for diagnosis of IE",
+"tocnametree":"ESC 2015 algorithm for diagnosis of IE",
+"htmlpage":"ENAS5079_5.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"28",
+"nametree":"Prognostic assessment at admission",
+"tocnametree":"Prognostic assessment at admission",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"29",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5079_6.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"30",
+"nametree":"Predictors of poor outcome",
+"tocnametree":"Predictors of poor outcome",
+"htmlpage":"ENAS5079_6.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"31",
+"nametree":"Antimicrobial therapy",
+"tocnametree":"Antimicrobial therapy",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"32",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5079_7.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.0.0",
+"id":"33",
+"nametree":"IE due to Streptococci",
+"tocnametree":"IE due to Streptococci",
+"htmlpage":"ENAS5079_7.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.0.0",
+"id":"34",
+"nametree":"IE due to Staphylococcus spp.",
+"tocnametree":"IE due to Staphylococcus spp.",
+"htmlpage":"ENAS5079_7.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.4.0.0",
+"id":"35",
+"nametree":"IE due to Enterococcus spp.",
+"tocnametree":"IE due to Enterococcus spp.",
+"htmlpage":"ENAS5079_7.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.5.0.0",
+"id":"36",
+"nametree":"Empirical treatment",
+"tocnametree":"Empirical treatment",
+"htmlpage":"ENAS5079_7.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"37",
+"nametree":"Complications and management of IE",
+"tocnametree":"Complications and management of IE",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.1.0.0",
+"id":"38",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5079_8.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.2.0.0",
+"id":"39",
+"nametree":"Indications and timing of surgery",
+"tocnametree":"Indications and timing of surgery",
+"htmlpage":"ENAS5079_8.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"40",
+"nametree":"Neurological complications",
+"tocnametree":"Neurological complications",
+"htmlpage":"ENAS5079_9.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"41",
+"nametree":"Cardiac device-related IE",
+"tocnametree":"Cardiac device-related IE",
+"htmlpage":"ENAS5079_10.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"42",
+"nametree":"Right-sided IE",
+"tocnametree":"Right-sided IE",
+"htmlpage":"ENAS5079_11.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.0.0.0",
+"id":"43",
+"nametree":"Anti-thrombotic therapy in IE",
+"tocnametree":"Anti-thrombotic therapy in IE",
+"htmlpage":"ENAS5079_12.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.0.0.0",
+"id":"44",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS5079_13.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

@@ -1,0 +1,982 @@
+﻿[
+{
+"old_id":"1",
+"old_nametree":"Essential messages",
+"old_numtree":"1.0.0.0",
+"old_htmlpage":"null",
+"new_id":"1",
+"new_nametree":"Essential messages",
+"new_numtree":"1.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"2",
+"old_nametree":"Authors and legal information",
+"old_numtree":"1.1.0.0",
+"old_htmlpage":"ENAS263_1.1.0.0",
+"new_id":"2",
+"new_nametree":"Authors and legal information",
+"new_numtree":"1.1.0.0",
+"new_htmlpage":"ENAS263_1.1.0.0"
+},
+{
+"old_id":"3",
+"old_nametree":"Take home messages",
+"old_numtree":"1.2.0.0",
+"old_htmlpage":"ENAS263_1.2.0.0",
+"new_id":"3",
+"new_nametree":"Take home messages",
+"new_numtree":"1.2.0.0",
+"new_htmlpage":"ENAS263_1.2.0.0"
+},
+{
+"old_id":"4",
+"old_nametree":"Major gaps in evidence",
+"old_numtree":"1.3.0.0",
+"old_htmlpage":"ENAS263_1.3.0.0",
+"new_id":"4",
+"new_nametree":"Major gaps in evidence",
+"new_numtree":"1.3.0.0",
+"new_htmlpage":"ENAS263_1.3.0.0"
+},
+{
+"old_id":"5",
+"old_nametree":"Summary cards",
+"old_numtree":"2.0.0.0",
+"old_htmlpage":"null",
+"new_id":"5",
+"new_nametree":"Summary cards",
+"new_numtree":"2.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"6",
+"old_nametree":"Definition",
+"old_numtree":"2.1.0.0",
+"old_htmlpage":"ENAS263_87",
+"new_id":"6",
+"new_nametree":"Definition",
+"new_numtree":"2.1.0.0",
+"new_htmlpage":"ENAS263_87"
+},
+{
+"old_id":"7",
+"old_nametree":"Aetiology",
+"old_numtree":"2.2.0.0",
+"old_htmlpage":"ENAS263_88",
+"new_id":"7",
+"new_nametree":"Aetiology",
+"new_numtree":"2.2.0.0",
+"new_htmlpage":"ENAS263_88"
+},
+{
+"old_id":"8",
+"old_nametree":"Clinical presentation",
+"old_numtree":"2.3.0.0",
+"old_htmlpage":"ENAS263_89",
+"new_id":"8",
+"new_nametree":"Clinical presentation",
+"new_numtree":"2.3.0.0",
+"new_htmlpage":"ENAS263_89"
+},
+{
+"old_id":"9",
+"old_nametree":"Tests in pat. W definite or suspected HCM",
+"old_numtree":"2.4.0.0",
+"old_htmlpage":"ENAS263_90",
+"new_id":"9",
+"new_nametree":"Tests in pat. W definite or suspected HCM",
+"new_numtree":"2.4.0.0",
+"new_htmlpage":"ENAS263_90"
+},
+{
+"old_id":"10",
+"old_nametree":"Genetic counselling and testing",
+"old_numtree":"2.5.0.0",
+"old_htmlpage":"ENAS263_91",
+"new_id":"10",
+"new_nametree":"Genetic counselling and testing",
+"new_numtree":"2.5.0.0",
+"new_htmlpage":"ENAS263_91"
+},
+{
+"old_id":"11",
+"old_nametree":"Mgmt. & prevention of imp. complications",
+"old_numtree":"2.6.0.0",
+"old_htmlpage":"ENAS263_92",
+"new_id":"11",
+"new_nametree":"Mgmt. & prevention of imp. complications",
+"new_numtree":"2.6.0.0",
+"new_htmlpage":"ENAS263_92"
+},
+{
+"old_id":"12",
+"old_nametree":"Mgmt. of LV outflow tract obstruction",
+"old_numtree":"2.7.0.0",
+"old_htmlpage":"ENAS263_93",
+"new_id":"12",
+"new_nametree":"Mgmt. of LV outflow tract obstruction",
+"new_numtree":"2.7.0.0",
+"new_htmlpage":"ENAS263_93"
+},
+{
+"old_id":"13",
+"old_nametree":"Management of heart failure symptoms",
+"old_numtree":"2.8.0.0",
+"old_htmlpage":"ENAS263_94",
+"new_id":"13",
+"new_nametree":"Management of heart failure symptoms",
+"new_numtree":"2.8.0.0",
+"new_htmlpage":"ENAS263_94"
+},
+{
+"old_id":"14",
+"old_nametree":"Management of atrial tachyarrhythmia",
+"old_numtree":"2.9.0.0",
+"old_htmlpage":"ENAS263_95",
+"new_id":"14",
+"new_nametree":"Management of atrial tachyarrhythmia",
+"new_numtree":"2.9.0.0",
+"new_htmlpage":"ENAS263_95"
+},
+{
+"old_id":"15",
+"old_nametree":"Sudden death prevention",
+"old_numtree":"2.10.0.0",
+"old_htmlpage":"ENAS263_96",
+"new_id":"15",
+"new_nametree":"Sudden death prevention",
+"new_numtree":"2.10.0.0",
+"new_htmlpage":"ENAS263_96"
+},
+{
+"old_id":"16",
+"old_nametree":"Routine follow-up",
+"old_numtree":"2.11.0.0",
+"old_htmlpage":"ENAS263_97",
+"new_id":"16",
+"new_nametree":"Routine follow-up",
+"new_numtree":"2.11.0.0",
+"new_htmlpage":"ENAS263_97"
+},
+{
+"old_id":"17",
+"old_nametree":"General lifestyle considerations",
+"old_numtree":"2.12.0.0",
+"old_htmlpage":"ENAS263_98",
+"new_id":"17",
+"new_nametree":"General lifestyle considerations",
+"new_numtree":"2.12.0.0",
+"new_htmlpage":"ENAS263_98"
+},
+{
+"old_id":"18",
+"old_nametree":"Authors and legal information",
+"old_numtree":"3.0.0.0",
+"old_htmlpage":"ENAS263_2.0.0.0",
+"new_id":"18",
+"new_nametree":"Authors and legal information",
+"new_numtree":"3.0.0.0",
+"new_htmlpage":"ENAS263_2.0.0.0"
+},
+{
+"old_id":"19",
+"old_nametree":"Preamble",
+"old_numtree":"4.0.0.0",
+"old_htmlpage":"ENAS263_3.0.0.0",
+"new_id":"19",
+"new_nametree":"Preamble",
+"new_numtree":"4.0.0.0",
+"new_htmlpage":"ENAS263_3.0.0.0"
+},
+{
+"old_id":"20",
+"old_nametree":"Definition",
+"old_numtree":"5.0.0.0",
+"old_htmlpage":"ENAS263_4.0.0.0",
+"new_id":"20",
+"new_nametree":"Definition",
+"new_numtree":"5.0.0.0",
+"new_htmlpage":"ENAS263_4.0.0.0"
+},
+{
+"old_id":"21",
+"old_nametree":"Epidemiology",
+"old_numtree":"6.0.0.0",
+"old_htmlpage":"ENAS263_5.0.0.0",
+"new_id":"21",
+"new_nametree":"Epidemiology",
+"new_numtree":"6.0.0.0",
+"new_htmlpage":"ENAS263_5.0.0.0"
+},
+{
+"old_id":"22",
+"old_nametree":"Aetiology",
+"old_numtree":"7.0.0.0",
+"old_htmlpage":"ENAS263_6.0.0.0",
+"new_id":"22",
+"new_nametree":"Aetiology",
+"new_numtree":"7.0.0.0",
+"new_htmlpage":"ENAS263_6.0.0.0"
+},
+{
+"old_id":"23",
+"old_nametree":"Diagnosis",
+"old_numtree":"8.0.0.0",
+"old_htmlpage":"null",
+"new_id":"23",
+"new_nametree":"Diagnosis",
+"new_numtree":"8.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"24",
+"old_nametree":"Diagnostic algorithm",
+"old_numtree":"8.1.0.0",
+"old_htmlpage":"ENAS263_7.1.0.0",
+"new_id":"24",
+"new_nametree":"Diagnostic algorithm",
+"new_numtree":"8.1.0.0",
+"new_htmlpage":"ENAS263_7.1.0.0"
+},
+{
+"old_id":"25",
+"old_nametree":"Diagnostic criteria",
+"old_numtree":"8.2.0.0",
+"old_htmlpage":"null",
+"new_id":"25",
+"new_nametree":"Diagnostic criteria",
+"new_numtree":"8.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"26",
+"old_nametree":"Adults",
+"old_numtree":"8.2.1.0",
+"old_htmlpage":"ENAS263_7.2.1.0",
+"new_id":"26",
+"new_nametree":"Adults",
+"new_numtree":"8.2.1.0",
+"new_htmlpage":"ENAS263_7.2.1.0"
+},
+{
+"old_id":"27",
+"old_nametree":"Children",
+"old_numtree":"8.2.2.0",
+"old_htmlpage":"ENAS263_7.2.2.0",
+"new_id":"27",
+"new_nametree":"Children",
+"new_numtree":"8.2.2.0",
+"new_htmlpage":"ENAS263_7.2.2.0"
+},
+{
+"old_id":"28",
+"old_nametree":"Relatives",
+"old_numtree":"8.2.3.0",
+"old_htmlpage":"ENAS263_7.2.3.0",
+"new_id":"28",
+"new_nametree":"Relatives",
+"new_numtree":"8.2.3.0",
+"new_htmlpage":"ENAS263_7.2.3.0"
+},
+{
+"old_id":"29",
+"old_nametree":"History and physical examination",
+"old_numtree":"8.3.0.0",
+"old_htmlpage":"ENAS263_7.3.0.0",
+"new_id":"29",
+"new_nametree":"History and physical examination",
+"new_numtree":"8.3.0.0",
+"new_htmlpage":"ENAS263_7.3.0.0"
+},
+{
+"old_id":"30",
+"old_nametree":"Resting and ambulatory electrocardiography",
+"old_numtree":"8.4.0.0",
+"old_htmlpage":"ENAS263_7.4.0.0",
+"new_id":"30",
+"new_nametree":"Resting and ambulatory electrocardiography",
+"new_numtree":"8.4.0.0",
+"new_htmlpage":"ENAS263_7.4.0.0"
+},
+{
+"old_id":"31",
+"old_nametree":"Echocardiography",
+"old_numtree":"8.5.0.0",
+"old_htmlpage":"null",
+"new_id":"31",
+"new_nametree":"Echocardiography",
+"new_numtree":"8.5.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"32",
+"old_nametree":"Left ventricular hypertrophy",
+"old_numtree":"8.5.1.0",
+"old_htmlpage":"ENAS263_7.5.1.0",
+"new_id":"32",
+"new_nametree":"Left ventricular hypertrophy",
+"new_numtree":"8.5.1.0",
+"new_htmlpage":"ENAS263_7.5.1.0"
+},
+{
+"old_id":"33",
+"old_nametree":"Assessment of diastolic function",
+"old_numtree":"8.5.2.0",
+"old_htmlpage":"ENAS263_7.5.2.0",
+"new_id":"33",
+"new_nametree":"Assessment of diastolic function",
+"new_numtree":"8.5.2.0",
+"new_htmlpage":"ENAS263_7.5.2.0"
+},
+{
+"old_id":"34",
+"old_nametree":"Systolic function",
+"old_numtree":"8.5.3.0",
+"old_htmlpage":"ENAS263_7.5.3.0",
+"new_id":"34",
+"new_nametree":"Systolic function",
+"new_numtree":"8.5.3.0",
+"new_htmlpage":"ENAS263_7.5.3.0"
+},
+{
+"old_id":"35",
+"old_nametree":"Role of echo. in DDx",
+"old_numtree":"8.5.4.0",
+"old_htmlpage":"ENAS263_7.5.4.0",
+"new_id":"35",
+"new_nametree":"Role of echo. in DDx",
+"new_numtree":"8.5.4.0",
+"new_htmlpage":"ENAS263_7.5.4.0"
+},
+{
+"old_id":"36",
+"old_nametree":"Contrast echocardiography",
+"old_numtree":"8.5.5.0",
+"old_htmlpage":"ENAS263_7.5.5.0",
+"new_id":"36",
+"new_nametree":"Contrast echocardiography",
+"new_numtree":"8.5.5.0",
+"new_htmlpage":"ENAS263_7.5.5.0"
+},
+{
+"old_id":"37",
+"old_nametree":"Transoesophageal echocardiography",
+"old_numtree":"8.5.6.0",
+"old_htmlpage":"ENAS263_7.5.6.0",
+"new_id":"37",
+"new_nametree":"Transoesophageal echocardiography",
+"new_numtree":"8.5.6.0",
+"new_htmlpage":"ENAS263_7.5.6.0"
+},
+{
+"old_id":"38",
+"old_nametree":"Cardiovascular magnetic resonance imaging",
+"old_numtree":"8.6.0.0",
+"old_htmlpage":"ENAS263_7.6.0.0",
+"new_id":"38",
+"new_nametree":"Cardiovascular magnetic resonance imaging",
+"new_numtree":"8.6.0.0",
+"new_htmlpage":"ENAS263_7.6.0.0"
+},
+{
+"old_id":"39",
+"old_nametree":"Nuclear imaging and CT",
+"old_numtree":"8.7.0.0",
+"old_htmlpage":"ENAS263_7.7.0.0",
+"new_id":"39",
+"new_nametree":"Nuclear imaging and CT",
+"new_numtree":"8.7.0.0",
+"new_htmlpage":"ENAS263_7.7.0.0"
+},
+{
+"old_id":"40",
+"old_nametree":"Endomyocardial biopsy",
+"old_numtree":"8.8.0.0",
+"old_htmlpage":"ENAS263_7.8.0.0",
+"new_id":"40",
+"new_nametree":"Endomyocardial biopsy",
+"new_numtree":"8.8.0.0",
+"new_htmlpage":"ENAS263_7.8.0.0"
+},
+{
+"old_id":"41",
+"old_nametree":"Laboratory tests",
+"old_numtree":"8.9.0.0",
+"old_htmlpage":"ENAS263_7.9.0.0",
+"new_id":"41",
+"new_nametree":"Laboratory tests",
+"new_numtree":"8.9.0.0",
+"new_htmlpage":"ENAS263_7.9.0.0"
+},
+{
+"old_id":"42",
+"old_nametree":"Genetic testing and family screening",
+"old_numtree":"9.0.0.0",
+"old_htmlpage":"null",
+"new_id":"42",
+"new_nametree":"Genetic testing and family screening",
+"new_numtree":"9.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"43",
+"old_nametree":"Genet. counselling/molecular genet. testing",
+"old_numtree":"9.1.0.0",
+"old_htmlpage":"ENAS263_8.1.0.0",
+"new_id":"43",
+"new_nametree":"Genet. counselling/molecular genet. testing",
+"new_numtree":"9.1.0.0",
+"new_htmlpage":"ENAS263_8.1.0.0"
+},
+{
+"old_id":"44",
+"old_nametree":"Genetic and clinical screening of relatives",
+"old_numtree":"9.2.0.0",
+"old_htmlpage":"null",
+"new_id":"44",
+"new_nametree":"Genetic and clinical screening of relatives",
+"new_numtree":"9.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"45",
+"old_nametree":"Introduction",
+"old_numtree":"9.2.1.0",
+"old_htmlpage":"ENAS263_8.2.1.0",
+"new_id":"45",
+"new_nametree":"Introduction",
+"new_numtree":"9.2.1.0",
+"new_htmlpage":"ENAS263_8.2.1.0"
+},
+{
+"old_id":"46",
+"old_nametree":"Families with definite dis. causing mutations",
+"old_numtree":"9.2.2.0",
+"old_htmlpage":"ENAS263_8.2.2.0",
+"new_id":"46",
+"new_nametree":"Families with definite dis. causing mutations",
+"new_numtree":"9.2.2.0",
+"new_htmlpage":"ENAS263_8.2.2.0"
+},
+{
+"old_id":"47",
+"old_nametree":"Families without definite dis. causing mutations",
+"old_numtree":"9.2.3.0",
+"old_htmlpage":"ENAS263_8.2.3.0",
+"new_id":"47",
+"new_nametree":"Families without definite dis. causing mutations",
+"new_numtree":"9.2.3.0",
+"new_htmlpage":"ENAS263_8.2.3.0"
+},
+{
+"old_id":"48",
+"old_nametree":"Clinical and genetic screening of childern",
+"old_numtree":"9.3.0.0",
+"old_htmlpage":"ENAS263_8.3.0.0",
+"new_id":"48",
+"new_nametree":"Clinical and genetic screening of childern",
+"new_numtree":"9.3.0.0",
+"new_htmlpage":"ENAS263_8.3.0.0"
+},
+{
+"old_id":"49",
+"old_nametree":"Mutation carriers without a phenotype",
+"old_numtree":"9.4.0.0",
+"old_htmlpage":"ENAS263_8.4.0.0",
+"new_id":"49",
+"new_nametree":"Mutation carriers without a phenotype",
+"new_numtree":"9.4.0.0",
+"new_htmlpage":"ENAS263_8.4.0.0"
+},
+{
+"old_id":"50",
+"old_nametree":"Delivery of care",
+"old_numtree":"10.0.0.0",
+"old_htmlpage":"ENAS263_9.0.0.0",
+"new_id":"50",
+"new_nametree":"Delivery of care",
+"new_numtree":"10.0.0.0",
+"new_htmlpage":"ENAS263_9.0.0.0"
+},
+{
+"old_id":"51",
+"old_nametree":"Assessment of symptoms",
+"old_numtree":"11.0.0.0",
+"old_htmlpage":"null",
+"new_id":"51",
+"new_nametree":"Assessment of symptoms",
+"new_numtree":"11.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"52",
+"old_nametree":"Chest pain",
+"old_numtree":"11.1.0.0",
+"old_htmlpage":"ENAS263_10.1.0.0",
+"new_id":"52",
+"new_nametree":"Chest pain",
+"new_numtree":"11.1.0.0",
+"new_htmlpage":"ENAS263_10.1.0.0"
+},
+{
+"old_id":"53",
+"old_nametree":"Heart failure",
+"old_numtree":"11.2.0.0",
+"old_htmlpage":"null",
+"new_id":"53",
+"new_nametree":"Heart failure",
+"new_numtree":"11.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"54",
+"old_nametree":"Introduction",
+"old_numtree":"11.2.1.0",
+"old_htmlpage":"ENAS263_10.2.1.0",
+"new_id":"54",
+"new_nametree":"Introduction",
+"new_numtree":"11.2.1.0",
+"new_htmlpage":"ENAS263_10.2.1.0"
+},
+{
+"old_id":"55",
+"old_nametree":"Invasive pressure studies",
+"old_numtree":"11.2.2.0",
+"old_htmlpage":"ENAS263_10.2.2.0",
+"new_id":"55",
+"new_nametree":"Invasive pressure studies",
+"new_numtree":"11.2.2.0",
+"new_htmlpage":"ENAS263_10.2.2.0"
+},
+{
+"old_id":"56",
+"old_nametree":"Cardiopulmonary exercise testing",
+"old_numtree":"11.2.3.0",
+"old_htmlpage":"ENAS263_10.2.3.0",
+"new_id":"56",
+"new_nametree":"Cardiopulmonary exercise testing",
+"new_numtree":"11.2.3.0",
+"new_htmlpage":"ENAS263_10.2.3.0"
+},
+{
+"old_id":"57",
+"old_nametree":"Syncope",
+"old_numtree":"11.3.0.0",
+"old_htmlpage":"ENAS263_10.3.0.0",
+"new_id":"57",
+"new_nametree":"Syncope",
+"new_numtree":"11.3.0.0",
+"new_htmlpage":"ENAS263_10.3.0.0"
+},
+{
+"old_id":"58",
+"old_nametree":"Palpitations",
+"old_numtree":"11.4.0.0",
+"old_htmlpage":"ENAS263_10.4.0.0",
+"new_id":"58",
+"new_nametree":"Palpitations",
+"new_numtree":"11.4.0.0",
+"new_htmlpage":"ENAS263_10.4.0.0"
+},
+{
+"old_id":"59",
+"old_nametree":"Electrophysiological testing",
+"old_numtree":"11.5.0.0",
+"old_htmlpage":"ENAS263_10.5.0.0",
+"new_id":"59",
+"new_nametree":"Electrophysiological testing",
+"new_numtree":"11.5.0.0",
+"new_htmlpage":"ENAS263_10.5.0.0"
+},
+{
+"old_id":"60",
+"old_nametree":"Mgmt. of symptoms and prev. of complications",
+"old_numtree":"12.0.0.0",
+"old_htmlpage":"null",
+"new_id":"60",
+"new_nametree":"Mgmt. of symptoms and prev. of complications",
+"new_numtree":"12.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"61",
+"old_nametree":"LV outflow tract obstruction",
+"old_numtree":"12.1.0.0",
+"old_htmlpage":"null",
+"new_id":"61",
+"new_nametree":"LV outflow tract obstruction",
+"new_numtree":"12.1.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"62",
+"old_nametree":"Introduction and general measures",
+"old_numtree":"12.1.1.0",
+"old_htmlpage":"ENAS263_11.1.1.0",
+"new_id":"62",
+"new_nametree":"Introduction and general measures",
+"new_numtree":"12.1.1.0",
+"new_htmlpage":"ENAS263_11.1.1.0"
+},
+{
+"old_id":"63",
+"old_nametree":"Drug therapy",
+"old_numtree":"12.1.2.0",
+"old_htmlpage":"ENAS263_11.1.2.0",
+"new_id":"63",
+"new_nametree":"Drug therapy",
+"new_numtree":"12.1.2.0",
+"new_htmlpage":"ENAS263_11.1.2.0"
+},
+{
+"old_id":"64",
+"old_nametree":"Invasive treatment of LVOTO",
+"old_numtree":"12.1.3.0",
+"old_htmlpage":"null",
+"new_id":"64",
+"new_nametree":"Invasive treatment of LVOTO",
+"new_numtree":"12.1.3.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"65",
+"old_nametree":"Surgery",
+"old_numtree":"12.1.3.1",
+"old_htmlpage":"ENAS263_11.1.3.1",
+"new_id":"65",
+"new_nametree":"Surgery",
+"new_numtree":"12.1.3.1",
+"new_htmlpage":"ENAS263_11.1.3.1"
+},
+{
+"old_id":"66",
+"old_nametree":"Septal alcohol ablation",
+"old_numtree":"12.1.3.2",
+"old_htmlpage":"ENAS263_11.1.3.2",
+"new_id":"66",
+"new_nametree":"Septal alcohol ablation",
+"new_numtree":"12.1.3.2",
+"new_htmlpage":"ENAS263_11.1.3.2"
+},
+{
+"old_id":"67",
+"old_nametree":"Surgery Vs. alcohol ablation",
+"old_numtree":"12.1.3.3",
+"old_htmlpage":"ENAS263_11.1.3.3",
+"new_id":"67",
+"new_nametree":"Surgery Vs. alcohol ablation",
+"new_numtree":"12.1.3.3",
+"new_htmlpage":"ENAS263_11.1.3.3"
+},
+{
+"old_id":"68",
+"old_nametree":"Mid-cavity obstruction and apical aneurysms",
+"old_numtree":"12.2.0.0",
+"old_htmlpage":"ENAS263_11.2.0.0",
+"new_id":"68",
+"new_nametree":"Mid-cavity obstruction and apical aneurysms",
+"new_numtree":"12.2.0.0",
+"new_htmlpage":"ENAS263_11.2.0.0"
+},
+{
+"old_id":"69",
+"old_nametree":"Mgmt. of HF symptoms in pts. without LVOTO",
+"old_numtree":"12.3.0.0",
+"old_htmlpage":"null",
+"new_id":"69",
+"new_nametree":"Mgmt. of HF symptoms in pts. without LVOTO",
+"new_numtree":"12.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"70",
+"old_nametree":"Drug therapy",
+"old_numtree":"12.3.1.0",
+"old_htmlpage":"ENAS263_11.3.1.0",
+"new_id":"70",
+"new_nametree":"Drug therapy",
+"new_numtree":"12.3.1.0",
+"new_htmlpage":"ENAS263_11.3.1.0"
+},
+{
+"old_id":"71",
+"old_nametree":"Cardiac resynchronization",
+"old_numtree":"12.3.2.0",
+"old_htmlpage":"ENAS263_11.3.2.0",
+"new_id":"71",
+"new_nametree":"Cardiac resynchronization",
+"new_numtree":"12.3.2.0",
+"new_htmlpage":"ENAS263_11.3.2.0"
+},
+{
+"old_id":"72",
+"old_nametree":"Cardiac transplant and LV assist device",
+"old_numtree":"12.3.3.0",
+"old_htmlpage":"ENAS263_11.3.3.0",
+"new_id":"72",
+"new_nametree":"Cardiac transplant and LV assist device",
+"new_numtree":"12.3.3.0",
+"new_htmlpage":"ENAS263_11.3.3.0"
+},
+{
+"old_id":"73",
+"old_nametree":"Treatment of angina in non-obstructive patients",
+"old_numtree":"12.4.0.0",
+"old_htmlpage":"ENAS263_11.4.0.0",
+"new_id":"73",
+"new_nametree":"Treatment of angina in non-obstructive patients",
+"new_numtree":"12.4.0.0",
+"new_htmlpage":"ENAS263_11.4.0.0"
+},
+{
+"old_id":"74",
+"old_nametree":"Atrial tachyarrhythmia",
+"old_numtree":"12.5.0.0",
+"old_htmlpage":"null",
+"new_id":"74",
+"new_nametree":"Atrial tachyarrhythmia",
+"new_numtree":"12.5.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"75",
+"old_nametree":"Introduction",
+"old_numtree":"12.5.1.0",
+"old_htmlpage":"ENAS263_11.5.1.0",
+"new_id":"75",
+"new_nametree":"Introduction",
+"new_numtree":"12.5.1.0",
+"new_htmlpage":"ENAS263_11.5.1.0"
+},
+{
+"old_id":"76",
+"old_nametree":"Acute treatment",
+"old_numtree":"12.5.2.0",
+"old_htmlpage":"ENAS263_11.5.2.0",
+"new_id":"76",
+"new_nametree":"Acute treatment",
+"new_numtree":"12.5.2.0",
+"new_htmlpage":"ENAS263_11.5.2.0"
+},
+{
+"old_id":"77",
+"old_nametree":"Thromboembolism prophylaxis",
+"old_numtree":"12.5.3.0",
+"old_htmlpage":"ENAS263_11.5.3.0",
+"new_id":"77",
+"new_nametree":"Thromboembolism prophylaxis",
+"new_numtree":"12.5.3.0",
+"new_htmlpage":"ENAS263_11.5.3.0"
+},
+{
+"old_id":"78",
+"old_nametree":"Rate control",
+"old_numtree":"12.5.4.0",
+"old_htmlpage":"ENAS263_11.5.4.0",
+"new_id":"78",
+"new_nametree":"Rate control",
+"new_numtree":"12.5.4.0",
+"new_htmlpage":"ENAS263_11.5.4.0"
+},
+{
+"old_id":"79",
+"old_nametree":"Rhythm control",
+"old_numtree":"12.5.5.0",
+"old_htmlpage":"ENAS263_11.5.5.0",
+"new_id":"79",
+"new_nametree":"Rhythm control",
+"new_numtree":"12.5.5.0",
+"new_htmlpage":"ENAS263_11.5.5.0"
+},
+{
+"old_id":"80",
+"old_nametree":"Prevention of sudden cardiac death",
+"old_numtree":"12.6.0.0",
+"old_htmlpage":"null",
+"new_id":"80",
+"new_nametree":"Prevention of sudden cardiac death",
+"new_numtree":"12.6.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"81",
+"old_nametree":"Overview",
+"old_numtree":"12.6.1.0",
+"old_htmlpage":"ENAS263_11.6.1.0",
+"new_id":"81",
+"new_nametree":"Overview",
+"new_numtree":"12.6.1.0",
+"new_htmlpage":"ENAS263_11.6.1.0"
+},
+{
+"old_id":"82",
+"old_nametree":"Exercise recommendations",
+"old_numtree":"12.6.2.0",
+"old_htmlpage":"ENAS263_11.6.2.0",
+"new_id":"82",
+"new_nametree":"Exercise recommendations",
+"new_numtree":"12.6.2.0",
+"new_htmlpage":"ENAS263_11.6.2.0"
+},
+{
+"old_id":"83",
+"old_nametree":"Implantable cardioverter defibrillators",
+"old_numtree":"12.6.3.0",
+"old_htmlpage":"ENAS263_11.6.3.0",
+"new_id":"83",
+"new_nametree":"Implantable cardioverter defibrillators",
+"new_numtree":"12.6.3.0",
+"new_htmlpage":"ENAS263_11.6.3.0"
+},
+{
+"old_id":"84",
+"old_nametree":"Sudden death risk in children",
+"old_numtree":"12.6.4.0",
+"old_htmlpage":"ENAS263_11.6.4.0",
+"new_id":"84",
+"new_nametree":"Sudden death risk in children",
+"new_numtree":"12.6.4.0",
+"new_htmlpage":"ENAS263_11.6.4.0"
+},
+{
+"old_id":"85",
+"old_nametree":"Sympt. bradycardia and AV block",
+"old_numtree":"12.7.0.0",
+"old_htmlpage":"ENAS263_11.7.0.0",
+"new_id":"85",
+"new_nametree":"Sympt. bradycardia and AV block",
+"new_numtree":"12.7.0.0",
+"new_htmlpage":"ENAS263_11.7.0.0"
+},
+{
+"old_id":"86",
+"old_nametree":"Ventricular tachycardia",
+"old_numtree":"12.8.0.0",
+"old_htmlpage":"ENAS263_11.8.0.0",
+"new_id":"86",
+"new_nametree":"Ventricular tachycardia",
+"new_numtree":"12.8.0.0",
+"new_htmlpage":"ENAS263_11.8.0.0"
+},
+{
+"old_id":"87",
+"old_nametree":"Routine follow-up",
+"old_numtree":"13.0.0.0",
+"old_htmlpage":"ENAS263_12.0.0.0",
+"new_id":"87",
+"new_nametree":"Routine follow-up",
+"new_numtree":"13.0.0.0",
+"new_htmlpage":"ENAS263_12.0.0.0"
+},
+{
+"old_id":"88",
+"old_nametree":"Reproduction and contraception",
+"old_numtree":"14.0.0.0",
+"old_htmlpage":"ENAS263_13.0.0.0",
+"new_id":"88",
+"new_nametree":"Reproduction and contraception",
+"new_numtree":"14.0.0.0",
+"new_htmlpage":"ENAS263_13.0.0.0"
+},
+{
+"old_id":"89",
+"old_nametree":"Special issues",
+"old_numtree":"15.0.0.0",
+"old_htmlpage":"null",
+"new_id":"89",
+"new_nametree":"Special issues",
+"new_numtree":"15.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"90",
+"old_nametree":"Diagnosis of HCM in athletes",
+"old_numtree":"15.1.0.0",
+"old_htmlpage":"ENAS263_14.1.0.0",
+"new_id":"90",
+"new_nametree":"Diagnosis of HCM in athletes",
+"new_numtree":"15.1.0.0",
+"new_htmlpage":"ENAS263_14.1.0.0"
+},
+{
+"old_id":"91",
+"old_nametree":"Hypertension",
+"old_numtree":"15.2.0.0",
+"old_htmlpage":"ENAS263_14.2.0.0",
+"new_id":"91",
+"new_nametree":"Hypertension",
+"new_numtree":"15.2.0.0",
+"new_htmlpage":"ENAS263_14.2.0.0"
+},
+{
+"old_id":"92",
+"old_nametree":"Isolated basal septal hypertrophy in elderly",
+"old_numtree":"15.3.0.0",
+"old_htmlpage":"ENAS263_14.3.0.0",
+"new_id":"92",
+"new_nametree":"Isolated basal septal hypertrophy in elderly",
+"new_numtree":"15.3.0.0",
+"new_htmlpage":"ENAS263_14.3.0.0"
+},
+{
+"old_id":"93",
+"old_nametree":"Diag. and mgmt. of valve disease in pts. with HCM",
+"old_numtree":"15.4.0.0",
+"old_htmlpage":"null",
+"new_id":"93",
+"new_nametree":"Diag. and mgmt. of valve disease in pts. with HCM",
+"new_numtree":"15.4.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"94",
+"old_nametree":"Aortic valve disease",
+"old_numtree":"15.4.1.0",
+"old_htmlpage":"ENAS263_14.4.1.0",
+"new_id":"94",
+"new_nametree":"Aortic valve disease",
+"new_numtree":"15.4.1.0",
+"new_htmlpage":"ENAS263_14.4.1.0"
+},
+{
+"old_id":"95",
+"old_nametree":"Mitral valve disease",
+"old_numtree":"15.4.2.0",
+"old_htmlpage":"ENAS263_14.4.2.0",
+"new_id":"95",
+"new_nametree":"Mitral valve disease",
+"new_numtree":"15.4.2.0",
+"new_htmlpage":"ENAS263_14.4.2.0"
+},
+{
+"old_id":"96",
+"old_nametree":"Endocarditis prophylaxis",
+"old_numtree":"15.4.3.0",
+"old_htmlpage":"ENAS263_14.4.3.0",
+"new_id":"96",
+"new_nametree":"Endocarditis prophylaxis",
+"new_numtree":"15.4.3.0",
+"new_htmlpage":"ENAS263_14.4.3.0"
+},
+{
+"old_id":"97",
+"old_nametree":"Advice to patients",
+"old_numtree":"16.0.0.0",
+"old_htmlpage":"ENAS263_15.0.0.0",
+"new_id":"97",
+"new_nametree":"Advice to patients",
+"new_numtree":"16.0.0.0",
+"new_htmlpage":"ENAS263_15.0.0.0"
+},
+{
+"old_id":"98",
+"old_nametree":"Abbreviations and acronyms",
+"old_numtree":"17.0.0.0",
+"old_htmlpage":"ENAS263_16.0.0.0",
+"new_id":"98",
+"new_nametree":"Abbreviations and acronyms",
+"new_numtree":"17.0.0.0",
+"new_htmlpage":"ENAS263_16.0.0.0"
+}
+]

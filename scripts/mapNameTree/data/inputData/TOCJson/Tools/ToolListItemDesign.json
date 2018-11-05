@@ -1,0 +1,84 @@
+{
+  "level_0": {
+    "textSize": 15,
+    "textFontFamily": "",
+    "textColor": [
+      "#191717"
+    ],
+    "textStyle": "bold",
+    "bgColor": [
+      "#d0d0d0"
+    ],
+    "itemDisabledColor": {
+      "text": [
+        "#b2e0f9"
+      ],
+      "background": [
+        "#EBEBEB"
+      ]
+    },
+    "navigationBarColor": [
+      "#ae1022"
+    ],
+    "navigationBarTextColor": [
+      "#FFFFFF"
+    ],
+    "colorCode": "white",
+    "sticker": {
+      "color": [
+        "#000000"
+      ],
+      "enable": true,
+      "isLeft": true,
+      "isRight": false
+    },
+    "padding": {
+      "left": 14,
+      "right": 0
+    },
+    "dividerColor": [
+      "#FFFFFF"
+    ]
+  },
+  "level_1": {
+    "textSize": "15",
+    "textFontFamily": "",
+    "textColor": [
+      "#191717"
+    ],
+    "textStyle": "normal",
+    "bgColor": [
+      "#d0d0d0"
+    ],
+    "itemDisabledColor": {
+      "text": [
+        "#b2e0f9"
+      ],
+      "background": [
+        "#EBEBEB"
+      ]
+    },
+    "navigationBarColor": [
+      "#d0d0d0"
+    ],
+    "navigationBarTextColor": [
+      "#191717"
+    ],
+    "colorCode": "black",
+    "sticker": {
+      "color": [
+        "#000000"
+      ],
+      "enable": true,
+      "isLeft": true,
+      "isRight": false
+    },
+    "padding": {
+      "left": 10,
+      "right": 0
+    },
+    "dividerColor": [
+      "#FFFFFF"
+    ]
+  }
+}
