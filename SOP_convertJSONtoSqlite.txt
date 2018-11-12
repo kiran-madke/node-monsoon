@@ -1,0 +1,24 @@
+SOP to convert JSON to SQLite file
+
+1) Pick your JSON and go to http://convertjson.com/json-to-sql.htm
+2) Generate the SQL Query from there and copy it
+3) Go to localhost and create a temporary database
+4) Paste query there and run the query (Make sure no errors occur)
+//----- FULL TEXT SEARCH CASE------
+4.1) Add ENGINE=InnoDB DEFAULT CHARACTER SET=utf8 near create table
+4.2) change varchar to TEXT for text column
+4.3) Rename mytable to fulltext_search
+//------------------------------------
+5.1) If index search case then rename my_table to index_search
+5.2) Export the Entire database to .SQL format
+6) Open this SQL file in a text editor such that you can now view all the queries inside it.
+7) Remove the top code above the DROP TABLE IF EXISTS part. i.e the part where it says  SQL_MODE etc.
+7.1) Remove for both tables
+8) Remove the part ENGINE=InnoDB DEFAULT CHARSET=latin1;
+9) Remove the bottom part /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+10) Copy the entire SQL text now and go to https://sqliteonline.com/
+11) Paste the text there and hit Run. (Make sure no errors occur)
+12) Check if you see the table generated in the left section. Open and check all good or not.
+13) Click File->Save DB
