@@ -4,7 +4,7 @@ SOP to convert JSON to SQLite file
 -- Secondly run the script mapNameTree : output = mappedCombinedGTS.json
 [REFER THEIR RESPECTIVE SOPS FOR THE ABOVE 2 STEPS]
 
-1) Pick your mappedCombinedGTS JSON contents and go to http://convertjson.com/json-to-sql.htm and paste it there.
+1) Pick your mappedCombinedGTS JSON contents and go to http://convertjson.com/json-to-sql.htm and paste it there
 - Remove PRIMARY KEY attribute
 2) Generate the SQL Query from there and copy it
 3) Go to localhost and Create a SQL db in localhost/phpmyadmin. eg. sqlite-esmo
