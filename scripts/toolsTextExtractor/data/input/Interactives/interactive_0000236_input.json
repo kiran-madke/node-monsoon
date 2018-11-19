@@ -1,0 +1,32 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "Height",
+        "text_id": "",
+        "id": "sum1",
+        "unit": "dropdown",
+        "unitId":"ht",
+        "type":"input"
+    },
+	{
+        "text": "Weight",
+        "text_id": "",
+        "id": "sum2",
+        "unit": "kg",
+        "unitId":"ht",
+        "type":"input"
+    }
+    
+    
+    ],
+"output":[
+	{
+        "text": "Body Mass Index (BMI)",
+        "id": "result",
+        "unit": "kg/m<sup>2</sup>",
+        "unitId":"",
+        "type":"input"
+    }
+]
+}

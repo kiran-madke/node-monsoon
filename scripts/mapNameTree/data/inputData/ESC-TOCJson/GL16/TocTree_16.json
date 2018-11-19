@@ -1,0 +1,371 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Essential messages",
+"tocnametree":"Essential messages",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.1.0.0",
+"id":"2",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS262_1.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.2.0.0",
+"id":"3",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS262_1.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.3.0.0",
+"id":"4",
+"nametree":"Areas of uncertainty",
+"tocnametree":"Areas of uncertainty",
+"htmlpage":"ENAS262_1.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"5",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS262_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"6",
+"nametree":"Preamble",
+"tocnametree":"Preamble",
+"htmlpage":"ENAS262_3.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"7",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"8",
+"nametree":"Epidemiology",
+"tocnametree":"Epidemiology",
+"htmlpage":"ENAS262_4.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.0.0",
+"id":"9",
+"nametree":"Predisposing factors",
+"tocnametree":"Predisposing factors",
+"htmlpage":"ENAS262_4.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.3.0.0",
+"id":"10",
+"nametree":"Pathophysiology",
+"tocnametree":"Pathophysiology",
+"htmlpage":"ENAS262_4.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.4.0.0",
+"id":"11",
+"nametree":"Clinical classification, initial risk stratification",
+"tocnametree":"Clinical classification, initial risk stratification",
+"htmlpage":"ENAS262_4.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"12",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"13",
+"nametree":"Clinical presentation",
+"tocnametree":"Clinical presentation",
+"htmlpage":"ENAS262_5.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"14",
+"nametree":"Assessment of clinical probability",
+"tocnametree":"Assessment of clinical probability",
+"htmlpage":"ENAS262_5.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.0.0",
+"id":"15",
+"nametree":"Diagnostic strategies",
+"tocnametree":"Diagnostic strategies",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.1.0",
+"id":"16",
+"nametree":"PE with shock or hypotension",
+"tocnametree":"PE with shock or hypotension",
+"htmlpage":"ENAS262_5.3.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.2.0",
+"id":"17",
+"nametree":"PE without shock or hypotension",
+"tocnametree":"PE without shock or hypotension",
+"htmlpage":"ENAS262_5.3.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.3.0",
+"id":"18",
+"nametree":"Validated diagnostic criteria for suspected PE",
+"tocnametree":"Validated diagnostic criteria for suspected PE",
+"htmlpage":"ENAS262_5.3.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.4.0",
+"id":"19",
+"nametree":"Summary of diagnostic strategies",
+"tocnametree":"Summary of diagnostic strategies",
+"htmlpage":"ENAS262_5.3.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"20",
+"nametree":"Prognostis assessment",
+"tocnametree":"Prognostis assessment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"21",
+"nametree":"PESI and simplified PESI",
+"tocnametree":"PESI and simplified PESI",
+"htmlpage":"ENAS262_6.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"22",
+"nametree":"Imaging of the RV by echo or CT angiography",
+"tocnametree":"Imaging of the RV by echo or CT angiography",
+"htmlpage":"ENAS262_6.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.0.0",
+"id":"23",
+"nametree":"Lab tests/biomarkers",
+"tocnametree":"Lab tests/biomarkers",
+"htmlpage":"ENAS262_6.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.4.0.0",
+"id":"24",
+"nametree":"Prognostic assessment strategy",
+"tocnametree":"Prognostic assessment strategy",
+"htmlpage":"ENAS262_6.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"25",
+"nametree":"Acute phase treatment",
+"tocnametree":"Acute phase treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"26",
+"nametree":"Anticoagulation",
+"tocnametree":"Anticoagulation",
+"htmlpage":"ENAS262_7.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.0.0",
+"id":"27",
+"nametree":"Thrombolytic treatment",
+"tocnametree":"Thrombolytic treatment",
+"htmlpage":"ENAS262_7.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.0.0",
+"id":"28",
+"nametree":"Surgical embolectomy",
+"tocnametree":"Surgical embolectomy",
+"htmlpage":"ENAS262_7.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.4.0.0",
+"id":"29",
+"nametree":"Percutaneous catheter-directed treatment",
+"tocnametree":"Percutaneous catheter-directed treatment",
+"htmlpage":"ENAS262_7.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.5.0.0",
+"id":"30",
+"nametree":"Venous filters",
+"tocnametree":"Venous filters",
+"htmlpage":"ENAS262_7.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.6.0.0",
+"id":"31",
+"nametree":"Therapeutic strategies",
+"tocnametree":"Therapeutic strategies",
+"htmlpage":"ENAS262_7.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.7.0.0",
+"id":"32",
+"nametree":"Acute phase treatment strategy",
+"tocnametree":"Acute phase treatment strategy",
+"htmlpage":"ENAS262_7.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"33",
+"nametree":"Duration of anticoagulation",
+"tocnametree":"Duration of anticoagulation",
+"htmlpage":"ENAS262_8.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"34",
+"nametree":"Chronic thromboembolic pulmonary hypertension",
+"tocnametree":"Chronic thromboembolic pulmonary hypertension",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.1.0.0",
+"id":"35",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"ENAS262_9.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.2.0.0",
+"id":"36",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"ENAS262_9.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"37",
+"nametree":"Specific problems",
+"tocnametree":"Specific problems",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.1.0.0",
+"id":"38",
+"nametree":"Pregnancy",
+"tocnametree":"Pregnancy",
+"htmlpage":"ENAS262_10.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.2.0.0",
+"id":"39",
+"nametree":"Pulmonary embolism and cancer",
+"tocnametree":"Pulmonary embolism and cancer",
+"htmlpage":"ENAS262_10.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.3.0.0",
+"id":"40",
+"nametree":"Non-thrombotic pulmonary embolism",
+"tocnametree":"Non-thrombotic pulmonary embolism",
+"htmlpage":"ENAS262_10.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"41",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS262_11.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

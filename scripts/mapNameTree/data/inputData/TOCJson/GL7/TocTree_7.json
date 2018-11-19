@@ -1,0 +1,236 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5064_1.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"ENAS5064_2.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Staging",
+"tocnametree":"Staging",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.1.0.0",
+"id":"4",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5064_3.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.2.0.0",
+"id":"5",
+"nametree":"Impact of therapy on prognosis",
+"tocnametree":"Impact of therapy on prognosis",
+"htmlpage":"ENAS5064_3.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.3.0.0",
+"id":"6",
+"nametree":"HCC staging and treatment algorithm",
+"tocnametree":"HCC staging and treatment algorithm",
+"htmlpage":"ENAS5064_00009",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.4.0.0",
+"id":"7",
+"nametree":"Staging and treatment strategy",
+"tocnametree":"Staging and treatment strategy",
+"htmlpage":"ENAS5064_3.3.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.0.0.0",
+"id":"8",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"9",
+"nametree":"Radical therapies: local disease",
+"tocnametree":"Radical therapies: local disease",
+"htmlpage":"ENAS5064_4.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.2.0.0",
+"id":"10",
+"nametree":"Palliative treatments: locally adv./metastatic disease",
+"tocnametree":"Palliative treatments: locally adv./metastatic disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.1.0",
+"id":"11",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5064_26",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.2.2.0",
+"id":"12",
+"nametree":"Transcatheter devices",
+"tocnametree":"Transcatheter devices",
+"htmlpage":"ENAS5064_4.3.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.2.3.0",
+"id":"13",
+"nametree":"Systemic therapy",
+"tocnametree":"Systemic therapy",
+"htmlpage":"ENAS5064_4.4.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.2.4.0",
+"id":"14",
+"nametree":"External beam radiotherapy",
+"tocnametree":"External beam radiotherapy",
+"htmlpage":"ENAS5064_4.5.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.0.0.0",
+"id":"15",
+"nametree":"Response evaluation",
+"tocnametree":"Response evaluation",
+"htmlpage":"ENAS5064_5.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"6.0.0.0",
+"id":"16",
+"nametree":"Follow-up",
+"tocnametree":"Follow-up",
+"htmlpage":"ENAS5064_6.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.0.0.0",
+"id":"17",
+"nametree":"Summary of recommendations",
+"tocnametree":"Summary of recommendations",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"18",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"ENAS5064_7.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.2.0.0",
+"id":"19",
+"nametree":"Staging and risk assessment",
+"tocnametree":"Staging and risk assessment",
+"htmlpage":"ENAS5064_7.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.0.0",
+"id":"20",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.1.0",
+"id":"21",
+"nametree":"Early stage HCC",
+"tocnametree":"Early stage HCC",
+"htmlpage":"ENAS5064_7.3.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.2.0",
+"id":"22",
+"nametree":"Intermediate-stage HCC",
+"tocnametree":"Intermediate-stage HCC",
+"htmlpage":"ENAS5064_7.3.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.3.0",
+"id":"23",
+"nametree":"Advanced-stage HCC",
+"tocnametree":"Advanced-stage HCC",
+"htmlpage":"ENAS5064_7.3.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.4.0.0",
+"id":"24",
+"nametree":"Response evaluation",
+"tocnametree":"Response evaluation",
+"htmlpage":"ENAS5064_7.3.4.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.5.0.0",
+"id":"25",
+"nametree":"Follow-up",
+"tocnametree":"Follow-up",
+"htmlpage":"ENAS5064_7.3.5.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.0.0.0",
+"id":"26",
+"nametree":"Glossary",
+"tocnametree":"Glossary",
+"htmlpage":"ENAS5064_8.0.0.0",
+"haspdf":false,
+"emailContent":true
+}
+]

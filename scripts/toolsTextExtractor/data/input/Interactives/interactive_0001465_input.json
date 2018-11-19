@@ -1,0 +1,53 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>SBP of right ankle</b>",
+        "text_id": "",
+        "id": "right_ankle",
+        "unit": "",
+        "unitId":"",
+        "type":"input"
+    },
+    {
+        "text": "<b>SBP of left ankle</b>",
+        "text_id": "",
+        "id": "left_ankle",
+        "unit": "",
+        "unitId":"",
+        "type":"input"
+    },
+    {
+        "text": "<b>SBP of right brachial artery</b>",
+        "text_id": "",
+        "id": "right_artery",
+        "unit": "",
+        "unitId":"",
+        "type":"input"
+    },
+    {
+        "text": "<b>SBP of left brachial artery</b>",
+        "text_id": "",
+        "id": "left_artery",
+        "unit": "",
+        "unitId":"",
+        "type":"input"
+    }
+    ],
+"output":[
+	{
+        "text": "ABI",
+        "id": "result1",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    },
+    {
+        "text": "Interpretation",
+        "id": "result2",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    }
+]
+}

@@ -1,0 +1,152 @@
+{
+  "level_0": {
+    "textSize": 0,
+    "textFontFamily": "",
+    "textColor": [],
+    "textStyle": "",
+    "bgColor": [],
+    "itemDisabledColor": {
+      "text": [],
+      "background": []
+    },
+    "navigationBarColor": [],
+    "navigationBarTextColor": [],
+    "colorCode": "",
+    "sticker": {
+      "color": [],
+      "enable": false,
+      "isLeft": false,
+      "isRight": false
+    },
+    "padding": {
+      "left": 0,
+      "right": 0
+    },
+    "dividerColor": []
+  },
+  "level_1": {
+    "textSize": 0,
+    "textFontFamily": "",
+    "textColor": [],
+    "textStyle": "",
+    "bgColor": [],
+    "itemDisabledColor": {
+      "text": [],
+      "background": []
+    },
+    "navigationBarColor": [],
+    "navigationBarTextColor": [],
+    "colorCode": "",
+    "sticker": {
+      "color": [],
+      "enable": false,
+      "isLeft": false,
+      "isRight": false
+    },
+    "padding": {
+      "left": 0,
+      "right": 0
+    },
+    "dividerColor": []
+  },
+  "level_2": {
+    "textSize": 0,
+    "textFontFamily": "",
+    "textColor": [],
+    "textStyle": "",
+    "bgColor": [],
+    "itemDisabledColor": {
+      "text": [],
+      "background": []
+    },
+    "navigationBarColor": [],
+    "navigationBarTextColor": [],
+    "colorCode": "",
+    "sticker": {
+      "color": [],
+      "enable": false,
+      "isLeft": false,
+      "isRight": false
+    },
+    "padding": {
+      "left": 0,
+      "right": 0
+    },
+    "dividerColor": []
+  },
+  "level_3": {
+    "textSize": 0,
+    "textFontFamily": "",
+    "textColor": [],
+    "textStyle": "",
+    "bgColor": [],
+    "itemDisabledColor": {
+      "text": [],
+      "background": []
+    },
+    "navigationBarColor": [],
+    "navigationBarTextColor": [],
+    "colorCode": "",
+    "sticker": {
+      "color": [],
+      "enable": false,
+      "isLeft": false,
+      "isRight": false
+    },
+    "padding": {
+      "left": 0,
+      "right": 0
+    },
+    "dividerColor": []
+  },
+  "level_4": {
+    "textSize": 0,
+    "textFontFamily": "",
+    "textColor": [],
+    "textStyle": "",
+    "bgColor": [],
+    "itemDisabledColor": {
+      "text": [],
+      "background": []
+    },
+    "navigationBarColor": [],
+    "navigationBarTextColor": [],
+    "colorCode": "",
+    "sticker": {
+      "color": [],
+      "enable": false,
+      "isLeft": false,
+      "isRight": false
+    },
+    "padding": {
+      "left": 0,
+      "right": 0
+    },
+    "dividerColor": []
+  },
+  "level_5": {
+    "textSize": 0,
+    "textFontFamily": "",
+    "textColor": [],
+    "textStyle": "",
+    "bgColor": [],
+    "itemDisabledColor": {
+      "text": [],
+      "background": []
+    },
+    "navigationBarColor": [],
+    "navigationBarTextColor": [],
+    "colorCode": "",
+    "sticker": {
+      "color": [],
+      "enable": false,
+      "isLeft": false,
+      "isRight": false
+    },
+    "padding": {
+      "left": 0,
+      "right": 0
+    },
+    "dividerColor": []
+  }
+}

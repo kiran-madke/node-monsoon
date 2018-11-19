@@ -1,0 +1,113 @@
+﻿var text =[  
+   {  
+      "boxId":"1",
+      "infoText":"Management of aortic regurgitation",
+      "boxType":BoxTypes.ACTIVITY_STARTING_POINT,
+      "nextBox":"2"
+   },
+   {  
+      "boxId":"2",
+      "infoText":"Significant enlargment of ascending aorta<sup>a<\/sup>",
+      "boxType":BoxTypes.DECISION_GOING_THROUGH,
+      "buttons":[  
+         {  
+            "text":"No",
+            "eventAction":"3"
+         },
+         {  
+            "text":"Yes",
+            "eventAction":"5"
+         }
+      ]
+   },
+   {  
+      "boxId":"3",
+      "infoText":"Severe aortic regurgitation",
+      "boxType":BoxTypes.DECISION_GOING_THROUGH,
+      "buttons":[  
+         {  
+            "text":"No",
+            "eventAction":"4"
+         },
+         {  
+            "text":"Yes",
+            "eventAction":"6"
+         }
+      ]
+   },
+   {  
+      "boxId":"4",
+      "infoText":"Follow-up",
+      "boxType":BoxTypes.ACTIVITY_EXIT_BOX
+   },
+   {  
+      "boxId":"5",
+      "infoText":"Surgery<sup>b<\/sup>",
+      "boxType":BoxTypes.ACTIVITY_EXIT_BOX
+   },
+   {  
+      "boxId":"6",
+      "infoText":"Symptoms",
+      "boxType":BoxTypes.DECISION_GOING_THROUGH,
+      "buttons":[  
+         {  
+            "text":"No",
+            "eventAction":"7"
+         },
+         {  
+            "text":"Yes",
+            "eventAction":"5"
+         }
+      ]
+   },
+   {  
+      "boxId":"7",
+      "infoText":"LVEF ≤50% or LVEDD &gt;70 mm or LVESD &gt;50 mm (or &gt;25 mm\/m<sup>2<\/sup> BSA)",
+      "boxType":BoxTypes.DECISION_GOING_THROUGH,
+      "buttons":[  
+         {  
+            "text":"No",
+            "eventAction":"4"
+         },
+         {  
+            "text":"Yes",
+            "eventAction":"5"
+         }
+      ]
+   },
+   {  
+      "boxId":"998",
+      "boxType":BoxTypes.FOOTER,
+      "hasFootnote":true,
+      "referenceText":"<sup>a<\/sup>See <a href=\"ref_ENAS5328_5.3.1.0.html\">table of recommendations on indications for surgery in severe aortic regurgitation and aortic root disease</a> in section 4.2 for definition<br/><sup>b<\/sup>Surgery should also be considered if significant changes in LV or aortic size occur during follow-up (see table of recommendations on <a href=\"ref_ENAS5328_5.3.1.0.html\">indications for surgery in severe aortic regurgitation and aortic root disease</a> in section 4.2).",
+      "hasAbbreviation":true,
+      "abbreviationText":"AR = aortic regurgitation; BSA = body surface area; LVEDD = left ventricle end-diastolic diameter; LVEF = left ventricular ejection fraction; LVESD = left ventricle end-systolic diameter.",
+      "staticImageName":"interactive_0001431",
+      "extraButtons":[  
+         {  
+            "buttonRow":[  
+               {  
+                  "text":"Abbreviation(s) and Footnote(s)",
+                  "buttonId":FooterButtons.REF_BUTTON
+               },
+               {  
+                  "image":"Flip PDF",
+                  "buttonId":FooterButtons.PDF_BUTTON
+               }
+            ]
+         },
+         {  
+            "buttonRow":[  
+               {  
+                  "text":"Reset",
+                  "buttonId":FooterButtons.RESET_BUTTON
+               },
+               {  
+                  "text":"<a class='more-info-link' href='ref_ENAS5328_5.3.2.0.html'>More Information</a>",
+                  "buttonId":FooterButtons.MORE_INFO_BUTTON
+               }
+            ]
+         }
+      ]
+   }
+];

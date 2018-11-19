@@ -1,0 +1,43 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "Type of pericarditis therapy",
+        "text_id": "",
+        "id": "gc",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "First line",
+        "id": "sum_1",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    },
+    {
+        "text": "Second line",
+        "id": "sum_2",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    },
+    {
+        "text": "Third line",
+        "id": "sum_3",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    },
+    {
+        "text": "Fourth line",
+        "id": "sum_4",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    }
+]
+}

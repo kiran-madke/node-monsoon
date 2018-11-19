@@ -1,0 +1,659 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5407_1.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Diagnosis and pathology",
+"tocnametree":"Diagnosis and pathology",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.1.0.0",
+"id":"3",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5407_2.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"2.2.0.0",
+"id":"4",
+"nametree":"Rectal cancer diagnosis",
+"tocnametree":"Rectal cancer diagnosis",
+"htmlpage":"ENAS5407_2.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.0.0.0",
+"id":"5",
+"nametree":"Staging and risk assessment",
+"tocnametree":"Staging and risk assessment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.1.0.0",
+"id":"6",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5407_3.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.2.0.0",
+"id":"7",
+"nametree":"Rectal cancer staging",
+"tocnametree":"Rectal cancer staging",
+"htmlpage":"ENAS5407_3.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.3.0.0",
+"id":"8",
+"nametree":"Diagnostic work-up in primary rectal cancer",
+"tocnametree":"Diagnostic work-up in primary rectal cancer",
+"htmlpage":"ENAS5407_3.3.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.4.0.0",
+"id":"9",
+"nametree":"The UICC TNM staging",
+"tocnametree":"The UICC TNM staging",
+"htmlpage":"ENAS5407_3.4.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.5.0.0",
+"id":"10",
+"nametree":"Subclassification of T3 rectal cancer",
+"tocnametree":"Subclassification of T3 rectal cancer",
+"htmlpage":"ENAS5407_3.5.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.6.0.0",
+"id":"11",
+"nametree":"Stage grouping of colon and rectal cancer",
+"tocnametree":"Stage grouping of colon and rectal cancer",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.1.0",
+"id":"12",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5407_3.6.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.6.2.0",
+"id":"13",
+"nametree":"TNM pathological classification",
+"tocnametree":"TNM pathological classification",
+"htmlpage":"ENAS5407_3.6.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.6.3.0",
+"id":"14",
+"nametree":"Histopathology",
+"tocnametree":"Histopathology",
+"htmlpage":"ENAS5407_3.6.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.6.4.0",
+"id":"15",
+"nametree":"Grading of the mesorectum",
+"tocnametree":"Grading of the mesorectum",
+"htmlpage":"ENAS5407_3.6.4.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.0.0.0",
+"id":"16",
+"nametree":"Mgmt. of local/ locoregional disease",
+"tocnametree":"Mgmt. of local/ locoregional disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"17",
+"nametree":"Rectal cancer Tx recommendations",
+"tocnametree":"Rectal cancer Tx recommendations",
+"htmlpage":"ENAS5407_4.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.2.0.0",
+"id":"18",
+"nametree":"Tx of primary rectal CA w/out distant met.",
+"tocnametree":"Tx of primary rectal CA w/out distant met.",
+"htmlpage":"ENAS5407_4.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.0.0",
+"id":"19",
+"nametree":"Risk-adapted treatment",
+"tocnametree":"Risk-adapted treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.3.1.0",
+"id":"20",
+"nametree":"Very early cT1N0, with low grade",
+"tocnametree":"Very early cT1N0, with low grade",
+"htmlpage":"ENAS5407_4.3.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.2.0",
+"id":"21",
+"nametree":"Early rectal CA not suitable for local excision",
+"tocnametree":"Early rectal CA not suitable for local excision",
+"htmlpage":"ENAS5407_4.3.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.3.0",
+"id":"22",
+"nametree":"Intermediate/more locally advanced rectal CA",
+"tocnametree":"Intermediate/more locally advanced rectal CA",
+"htmlpage":"ENAS5407_4.3.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.4.0",
+"id":"23",
+"nametree":"Locally advanced rectal CA",
+"tocnametree":"Locally advanced rectal CA",
+"htmlpage":"ENAS5407_4.3.4.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.5.0",
+"id":"24",
+"nametree":"Tumours with threatened resection margin",
+"tocnametree":"Tumours with threatened resection margin",
+"htmlpage":"ENAS5407_4.3.5.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.4.0.0",
+"id":"25",
+"nametree":"Risk of recurr. accord. to postop. histology",
+"tocnametree":"Risk of recurr. accord. to postop. histology",
+"htmlpage":"ENAS5407_4.4.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.5.0.0",
+"id":"26",
+"nametree":"Consid. for selection of (C)RT regimen",
+"tocnametree":"Consid. for selection of (C)RT regimen",
+"htmlpage":"ENAS5407_4.5.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.6.0.0",
+"id":"27",
+"nametree":"Radiotherapy field sizes",
+"tocnametree":"Radiotherapy field sizes",
+"htmlpage":"ENAS5407_4.6.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.7.0.0",
+"id":"28",
+"nametree":"Preop. (neoadjuvant) chemotherapy",
+"tocnametree":"Preop. (neoadjuvant) chemotherapy",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.7.1.0",
+"id":"29",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5407_4.7.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.7.2.0",
+"id":"30",
+"nametree":"Assessment after preop. (C)RT",
+"tocnametree":"Assessment after preop. (C)RT",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.7.2.1",
+"id":"31",
+"nametree":"Assess. of the primary tumour response",
+"tocnametree":"Assess. of the primary tumour response",
+"htmlpage":"ENAS5407_4.7.2.1",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.7.2.2",
+"id":"32",
+"nametree":"cCR & a watch-&-wait approach",
+"tocnametree":"cCR & a watch-&-wait approach",
+"htmlpage":"ENAS5407_4.7.2.2",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.7.2.3",
+"id":"33",
+"nametree":"Patients planned for surgery",
+"tocnametree":"Patients planned for surgery",
+"htmlpage":"ENAS5407_4.7.2.3",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.7.2.4",
+"id":"34",
+"nametree":"Distant metastases",
+"tocnametree":"Distant metastases",
+"htmlpage":"ENAS5407_4.7.2.4",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.7.2.5",
+"id":"35",
+"nametree":"Pathological assess. of response",
+"tocnametree":"Pathological assess. of response",
+"htmlpage":"ENAS5407_4.7.2.5",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.7.2.6",
+"id":"36",
+"nametree":"Interval to surgery",
+"tocnametree":"Interval to surgery",
+"htmlpage":"ENAS5407_4.7.2.6",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.8.0.0",
+"id":"37",
+"nametree":"Postoperative therapy",
+"tocnametree":"Postoperative therapy",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.8.1.0",
+"id":"38",
+"nametree":"Postoperative chemoradiotherapy",
+"tocnametree":"Postoperative chemoradiotherapy",
+"htmlpage":"ENAS5407_4.8.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.8.2.0",
+"id":"39",
+"nametree":"Postoperative chemotherapy",
+"tocnametree":"Postoperative chemotherapy",
+"htmlpage":"ENAS5407_4.8.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.0.0.0",
+"id":"40",
+"nametree":"Management of local recurrence",
+"tocnametree":"Management of local recurrence",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"41",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5407_5.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.2.0.0",
+"id":"42",
+"nametree":"Rectal cancer Tx of local recurrence",
+"tocnametree":"Rectal cancer Tx of local recurrence",
+"htmlpage":"ENAS5407_5.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"6.0.0.0",
+"id":"43",
+"nametree":"Mgmt. of advanced/ met. disease",
+"tocnametree":"Mgmt. of advanced/ met. disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"44",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5407_6.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"6.2.0.0",
+"id":"45",
+"nametree":"Rectal cancer Tx of metastatic disease",
+"tocnametree":"Rectal cancer Tx of metastatic disease",
+"htmlpage":"ENAS5407_6.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.0.0.0",
+"id":"46",
+"nametree":"Personalised medicine",
+"tocnametree":"Personalised medicine",
+"htmlpage":"ENAS5407_7.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.0.0.0",
+"id":"47",
+"nametree":"Follow-up, long-term implications",
+"tocnametree":"Follow-up, long-term implications",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.1.0.0",
+"id":"48",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5407_8.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.2.0.0",
+"id":"49",
+"nametree":"Rectal CA surveillance & follow-up",
+"tocnametree":"Rectal CA surveillance & follow-up",
+"htmlpage":"ENAS5407_8.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.0.0.0",
+"id":"50",
+"nametree":"Summary of recommendations",
+"tocnametree":"Summary of recommendations",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.1.0.0",
+"id":"51",
+"nametree":"Diagnosis & pathology",
+"tocnametree":"Diagnosis & pathology",
+"htmlpage":"ENAS5407_9.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.2.0.0",
+"id":"52",
+"nametree":"Staging and risk assessment",
+"tocnametree":"Staging and risk assessment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.2.1.0",
+"id":"53",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5407_9.2.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.2.2.0",
+"id":"54",
+"nametree":"Histopathology",
+"tocnametree":"Histopathology",
+"htmlpage":"ENAS5407_9.2.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.3.0.0",
+"id":"55",
+"nametree":"Mgmt. of local/ locoregional disease",
+"tocnametree":"Mgmt. of local/ locoregional disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.3.1.0",
+"id":"56",
+"nametree":"Risk-adapted treatment",
+"tocnametree":"Risk-adapted treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.3.1.1",
+"id":"57",
+"nametree":"Very early cT1No, with low grade",
+"tocnametree":"Very early cT1No, with low grade",
+"htmlpage":"ENAS5407_9.3.1.1",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.3.1.2",
+"id":"58",
+"nametree":"Early rectal CA not suitable for local excision",
+"tocnametree":"Early rectal CA not suitable for local excision",
+"htmlpage":"ENAS5407_9.3.1.2",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.3.1.3",
+"id":"59",
+"nametree":"Intermediate/more locally advanced rectal CA",
+"tocnametree":"Intermediate/more locally advanced rectal CA",
+"htmlpage":"ENAS5407_9.3.1.3",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.3.1.4",
+"id":"60",
+"nametree":"Locally advanced rectal CA",
+"tocnametree":"Locally advanced rectal CA",
+"htmlpage":"ENAS5407_9.3.1.4",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.3.1.5",
+"id":"61",
+"nametree":"Tumours with threatened resection margin",
+"tocnametree":"Tumours with threatened resection margin",
+"htmlpage":"ENAS5407_9.3.1.5",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.3.2.0",
+"id":"62",
+"nametree":"Risk of recurr. accord. to postop. histology",
+"tocnametree":"Risk of recurr. accord. to postop. histology",
+"htmlpage":"ENAS5407_9.3.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.3.3.0",
+"id":"63",
+"nametree":"Consid. for selection of (C)RT regimen",
+"tocnametree":"Consid. for selection of (C)RT regimen",
+"htmlpage":"ENAS5407_9.3.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.3.4.0",
+"id":"64",
+"nametree":"Radiotherapy field sizes",
+"tocnametree":"Radiotherapy field sizes",
+"htmlpage":"ENAS5407_9.3.4.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.3.5.0",
+"id":"65",
+"nametree":"Preop. (neoadjuvant) chemotherapy",
+"tocnametree":"Preop. (neoadjuvant) chemotherapy",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.3.5.1",
+"id":"66",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5407_9.3.5.1",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.3.5.2",
+"id":"67",
+"nametree":"Assessment after preop. (C)RT",
+"tocnametree":"Assessment after preop. (C)RT",
+"htmlpage":"ENAS5407_9.3.5.2",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.3.6.0",
+"id":"68",
+"nametree":"Postoperative therapy",
+"tocnametree":"Postoperative therapy",
+"htmlpage":"ENAS5407_9.3.6.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.4.0.0",
+"id":"69",
+"nametree":"Management of local recurrence",
+"tocnametree":"Management of local recurrence",
+"htmlpage":"ENAS5407_9.4.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.5.0.0",
+"id":"70",
+"nametree":"Mgmt. of advanced/ met. disease",
+"tocnametree":"Mgmt. of advanced/ met. disease",
+"htmlpage":"ENAS5407_9.5.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.6.0.0",
+"id":"71",
+"nametree":"Personalised medicine",
+"tocnametree":"Personalised medicine",
+"htmlpage":"ENAS5407_9.6.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.7.0.0",
+"id":"72",
+"nametree":"Follow-up",
+"tocnametree":"Follow-up",
+"htmlpage":"ENAS5407_9.7.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"10.0.0.0",
+"id":"73",
+"nametree":"Glossary",
+"tocnametree":"Glossary",
+"htmlpage":"ENAS5407_10.0.0.0",
+"haspdf":false,
+"emailContent":true
+}
+]

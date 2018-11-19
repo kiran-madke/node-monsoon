@@ -1,0 +1,44 @@
+<html>
+    <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+<script src="jquery-1.9.1.min.js"></script>
+<script src="jquery-algoPlugin.js"></script>
+<script src="algoFunctions.js"></script>
+<script src="jquery-toggleDecisionBtn.js"></script>
+<link rel="stylesheet" type="text/css" href="interactives.css">
+
+<script>
+		$(document).ready(function() {
+	 
+$("#ref_button").click(function() {
+ 	var className = $('#ref_button').attr('class');
+ 	if (className == 'abbBtn')
+ 		$('#ref_button').removeClass('abbBtn').addClass('abbBtnClick');
+ 	else $('#ref_button').removeClass('abbBtnClick').addClass('abbBtn');
+ 		 $("#reference").slideToggle("fast",function()
+ 	 { $('html, body').animate({scrollTop : $(this).offset().top },700);});});});</script>
+
+
+
+
+            </head>
+    
+    
+    <body   width="100%" >
+	
+	
+
+	<img src="interactive_0000318.png" width="100%"> <img>
+		<br/>
+		
+<br/>
+<div style="float: right">
+	<button id="pdf_button"  class="flip-pdf-button">
+                        <a href="flipView"><img src="algo.png"  class="pdf-image">
+                        </img></a></button>
+			</div>
+            
+            
+            </body>
+</html>

@@ -1,0 +1,22 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>Region</b>",
+        "text_id": "",
+        "id": "regions",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "Causes",
+        "id": "result1",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    }
+]
+}

@@ -1,0 +1,1614 @@
+html,
+body {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    background: #e9e9e9;
+    cursor: pointer;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.section {
+    width: 24%;
+    float: left;
+    background: #ffffff;
+}
+
+.tool-div {
+    overflow: initial;
+    bottom: 0px;
+    padding-bottom: 20px;
+}
+
+
+/*
+
+!* ----------- Non-Retina Screens ----------- *!
+
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+    .section {
+        width: 24%;
+        float: left;
+        background: #ffffff;
+        margin-left: 8px;
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+    .tool-div {
+        overflow: hidden;
+        height: 96%;
+        bottom: 0px;
+    }
+}
+
+
+!* ----------- Retina Screens ----------- *!
+
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .section {
+        width: 24%;
+        float: left;
+        background: #ffffff;
+        margin-left: 8px;
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .tool-div {
+        overflow: hidden;
+        height: 96%;
+        bottom: 0px;
+    }
+}
+
+
+!* ----------- iPhone 4 and 4S ----------- *!
+
+
+!* Portrait *!
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* Landscape *!
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* ----------- iPhone 5 and 5S ----------- *!
+
+
+!* Portrait *!
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* Landscape *!
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* ----------- iPhone 6 ----------- *!
+
+
+!* Portrait *!
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* Landscape *!
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* ----------- iPhone 6+ ----------- *!
+
+
+!* Portrait *!
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* Landscape *!
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* ----------- iPad mini ----------- *!
+
+
+!* Portrait *!
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+
+!* Portrait *!
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* Landscape *!
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .section {
+        width: 24%;
+        float: left;
+        background: #ffffff;
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .tool-div {
+        overflow: auto;
+        height: 96%;
+        bottom: 0px;
+    }
+}
+
+
+!* ----------- iPad 1 and 2 ----------- *!
+
+
+!* Portrait *!
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .tool-div {
+        overflow: auto;
+        height: 0%;
+        bottom: 0px;
+    }
+}
+
+
+!* Landscape *!
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .section {
+        width: 24%;
+        float: left;
+        background: #ffffff;
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .tool-div {
+        overflow: auto;
+        height: 96%;
+        bottom: 0px;
+    }
+}
+
+
+!* ----------- iPad 3 and 4 ----------- *!
+
+
+!* Portrait *!
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* landscape *!
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .tool-div {
+        overflow: auto;
+        height: 96%;
+        bottom: 0px;
+    }
+}
+
+@media only screen and (device-width: 746px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (device-width: 746px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .tool-div {
+        overflow: auto;
+        height: 96%;
+        bottom: 0px;
+    }
+}
+
+
+!* ----------- Galaxy S3 ----------- *!
+
+
+!* Portrait *!
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* Landscape *!
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* ----------- Galaxy S4 ----------- *!
+
+
+!* Portrait and Landscape *!
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* Portrait *!
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* Landscape *!
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* ----------- Galaxy S5 ----------- *!
+
+
+!* Portrait *!
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* Landscape *!
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* Landscape *!
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .section {
+        width: 24%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!* Landscape iPad *!
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024) and (orientation: landscape) and (-webkit-min-device-pixel-ratio:2) {
+    .section {
+        width: 24%;
+        float: left;
+        background: #ffffff;
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024) and (orientation: landscape) and (-webkit-min-device-pixel-ratio:2) {
+    .tool-div {
+        overflow: hidden;
+        height: 96%;
+        bottom: 0px;
+    }
+}
+
+
+!* Portrait iPad *!
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+@media only screen and (max-device-width: 420) and (orientation: portrait) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (max-device-width: 420) and (orientation: portrait) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+@media only screen and (max-device-width: 750) and (orientation: landscape) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (max-device-width: 750) and (orientation: landscape) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 600) and (orientation: portrait) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 600) and (orientation: portrait) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 600) and (orientation: landscape) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 600) and (orientation: landscape) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+@media only screen and (min-device-width: 600) and (max-device-width: 732) and (orientation: portrait) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 600) and (max-device-width: 732) and (orientation: portrait) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!*@media only screen and (min-device-width: 768) and (orientation: landscape) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 768) and (orientation: landscape) {
+    .tool-div {
+        overflow: hidden;
+        height: 0px;
+        bottom: 0px;
+    }
+}*!
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640) and (orientation: portrait) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640) and (orientation: portrait) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640) and (orientation: landscape) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640) and (orientation: landscape) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+@media only screen and (min-device-width: 640) and (orientation: portrait) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 640) and (orientation: portrait) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+
+
+!*@media only screen and (min-device-width: 768) and (orientation: landscape) {
+    .section {
+        width: 24%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (min-device-width: 768) and (orientation: landscape) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}*!
+
+@media only screen and (max-device-width: 960) and (orientation: landscape) {
+    .section {
+        width: 100%;
+        float: left;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (max-device-width: 960) and (orientation: landscape) {
+    .tool-div {
+        overflow: auto;
+        height: 0px;
+        bottom: 0px;
+    }
+}
+*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.header-gray {
+    /*font-weight: bold;*/
+    font-size: 14px;
+    padding: 5px 0px 5px 15px;
+    text-align: left;
+    background-color: #b5b5b5;
+}
+
+.header-blue {
+    /*font-weight: bold;*/
+    font-size: 14px;
+    padding: 5px 0px 5px 15px;
+    text-align: left;
+    background-color: #336699;
+    color: #ffffff;
+}
+
+p.bold-text {
+    font-size: 12px;
+    /*font-weight: bold;*/
+    padding-left: 10px;
+    text-align: left;
+    color: #4d4d4d;
+}
+
+p.bold-text1 {
+    font-size: 12px;
+    /*font-weight: bold;*/
+    padding: 3px;
+    text-align: left;
+    color: #4d4d4d;
+}
+
+p.category-bold-text {
+    font-size: 12px;
+    /*font-weight: bold;*/
+    text-align: left;
+    color: #4d4d4d;
+}
+
+.normal-text {
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 10px;
+    text-align: left;
+    color: #4d4d4d;
+}
+
+td.calci-cell {
+    width: 25%;
+    text-align: center;
+}
+
+input {
+    border-radius: 7px;
+    border: 1px solid #7c7c7c;
+    height: 32px;
+    text-align: center;
+    outline: none;
+    font-weight: bold;
+}
+
+    input[type=text]:disabled {
+        border-radius: 7px;
+        border: 1px solid #7c7c7c;
+        height: 32px;
+        text-align: center;
+        outline: none;
+        font-weight: bold;
+        background: #ffffff;
+    }
+
+    input[type=number] {
+        width: 70px;
+    }
+
+#inputAge {
+    line-height: 32px;
+    height: 40px;
+    padding-top: 0px;
+}
+
+p.calci-bold-text {
+    font-size: 12px;
+    /*font-weight: bold;*/
+    text-align: left;
+    color: #4d4d4d;
+}
+
+p.button-text-bold {
+    /*font-weight: bold;*/
+    font-size: 12px;
+    text-align: center;
+    color: #4d4d4d;
+    border: 1px solid #e0e0e0;
+    background: #ffffff;
+    padding: 10px 5px;
+}
+
+.rc-button-table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.center-button {
+    font-size: 12px;
+    height: 35px;
+    white-space: normal;
+    width: 48%;
+    margin: 0px 5px 0px 5px;
+}
+
+.thin-line {
+    border: 0;
+    height: 1px;
+    background: #333333;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 92%;
+}
+
+.score-row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+}
+
+.header-row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #e6e6e6;
+}
+
+.question-div {
+    background: white;
+}
+
+.question-cell {
+    width: 70%;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.option-cell-ehra {
+    width: 15%;
+    text-align: center;
+}
+
+.option-cell-rc,
+.option-cell-rt,
+.option-cell-sp,
+.option-cell-rtdrug {
+    width: 15%;
+    text-align: center;
+}
+
+.radio-cell {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.option-cell-text {
+    width: 50px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: #acaeaf;
+    /*font-weight: bold;*/
+    font-size: 12px;
+    border: 1px solid #e0e0e0;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.option-cell-text-unknown {
+    width: 58px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: #acaeaf;
+    /*font-weight: bold;*/
+    font-size: 12px;
+    border: 1px solid #e0e0e0;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.option-cell-text-rc {
+    width: 40px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: #acaeaf;
+    /*font-weight: bold;*/
+    font-size: 12px;
+    border: 1px solid #e0e0e0;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-left: 4px;
+}
+
+.option-cell-text-selected {
+    width: 54px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    /*font-weight: bold;*/
+    font-size: 12px;
+    border: 1px solid #3d6ccc;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-left: 5px;
+    background: #3d6ccc;
+}
+
+.option-cell-text-spanned {
+    width: 101px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: #acaeaf;
+    font-weight: normal;
+    font-size: 14px;
+    border: 1px solid #e0e0e0;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.option-cell-empty {
+    color: #acaeaf;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.header-cell-text {
+    width: 54px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: #4d4d4d;
+    /*font-weight: bold;*/
+    font-size: 14px;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+}
+
+.header-cell-text-spanned {
+    width: 100px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color: #4d4d4d;
+    /*font-weight: bold;*/
+    font-size: 14px;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+}
+
+.header-cell-empty {
+    color: #4d4d4d;
+    /*font-weight: bold;*/
+    font-size: 14px;
+    padding: 10px;
+}
+
+.result-div {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+.result-info-text {
+    font-size: 12px;
+    color: #4d4d4d;
+    font-weight: bold;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding-top: 15px;
+}
+
+.result-text {
+    background-color: #c1d1f2;
+    border: 1px solid #93aee4;
+    margin-top: 10px;
+    color: #4d4d4d;
+    min-height: 30px;
+    text-align: left;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    vertical-align: middle;
+    /*font-weight: bold;*/
+    padding: 10px;
+}
+
+.score-info-text {
+    font-size: 15px;
+    color: #4d4d4d;
+    /*font-weight: bold;*/
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding-top: 15px;
+    width: 20%;
+}
+
+.extra-info-text {
+    font-size: 15px;
+    color: #4d4d4d;
+    font-weight: normal;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding-top: 14px;
+    width: 98%;
+}
+
+.score-table {
+    margin-top: 15px;
+}
+
+.score-text {
+    background-color: #c1d1f2;
+    border: 1px solid #93aee4;
+    color: #303030;
+    min-height: 30px;
+    text-align: left;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    vertical-align: middle;
+    /*font-weight: bold;*/
+    padding: 10px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.category-result-div {
+    background-color: #c1d1f2;
+    border: 1px solid #93aee4;
+    color: #303030;
+    min-height: 30px;
+    text-align: left;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    /*font-weight: bold;*/
+    padding: 10px;
+    outline: none;
+}
+
+.extra-buttons-div {
+    bottom: 5px;
+    vertical-align: baseline;
+}
+
+.extra-button-table {
+    padding-bottom: 1px;
+    width: 100%;
+}
+
+.extra-button {
+    background-color: #4c4c4c;
+    text-align: center;
+    padding: 3px 0px 3px 0px;
+    border: 1px solid white;
+    height: 30px;
+}
+
+    .extra-button:active {
+        background-color: #808080;
+        text-align: center;
+        padding: 3px 0px 3px 0px;
+        border: 1px solid white;
+        height: 30px;
+    }
+
+.mextra-button {
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    background-color: #4c4c4c;
+    border: none;
+}
+
+    .mextra-button:active {
+        width: 100%;
+        color: white;
+        font-size: 12px;
+        font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+        background-color: #808080;
+        border: none;
+    }
+
+.default-selected {
+    width: 50px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    border: 1px solid rgb(61, 108, 204);
+    color: rgb(255, 255, 255);
+    background: rgb(200, 213, 240);
+    margin-left: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 12px;
+    /*font-weight: bold;*/
+    color: #4d4d4d;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: -5px;
+}
+
+ul > li:before {
+    content: "-    ";
+    margin-left: -1em;
+}
+
+.more-info-button {
+    padding: 0 20px 0 20px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+    height: 40px;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    background-color: #4c4c4c;
+    border: none;
+    font-size: 12px;
+    float: right;
+}
+
+.drug-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.drug-cell {
+    width: 25%;
+}
+
+.drug-table-input {
+    background-color: #ffffff;
+    border-radius: 0px;
+    width: 100%;
+    border: none;
+    border-right: 1px solid #404040;
+}
+
+.drug-col-text {
+    font-size: 13px;
+    font-weight: normal;
+    background-color: #e5e5e5;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-right: 1px solid #404040;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+input[type='radio'] {
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding-left: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*
+input[type="radio"]:checked:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #3d6ccc;
+    border-radius: 50%;
+    background: #3d6ccc;
+}*/
+
+#rtCathAblradio {
+    margin-left: 20px;
+}
+
+.egfr-mdrd-cell {
+    width: 33%;
+    padding-top: 15px;
+}
+
+select {
+    font-size: 12px;
+    /*font-weight: bold;*/
+    text-align: left;
+    color: #4d4d4d;
+    border-radius: 7px;
+    border: 1px solid #7c7c7c;
+    height: 30px;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 7px;
+}
+
+.input-cell-spanned {
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #4d4d4d;
+    font-weight: normal;
+    font-size: 14px;
+    border: 1px solid #7c7c7c;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-left: 5px;
+    background-color: #c1d1f2;
+}
+
+@font-face {
+    font-family: HelvetivaCondensedBold;
+    src: url("Helvetica-condensed-bold.ttf");
+}
+
+
+/* Med Table CSS */
+
+.med_add_table {
+    background-color: #fff;
+    border-color: #4D4E4E;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.table_summary {
+    background-color: #D1DDF5;
+    border: 1px solid #3D6DCC;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.header_summary {
+    background-color: #3D6DCC;
+    color: #fff;
+    font-weight: bold;
+}
+
+.thin-line {
+    border: 0;
+    height: 1px;
+    background: #333333;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 95%;
+}
+
+.med_table_header_cell {
+    background-color: #E5E5E4;
+    border: 1px solid black;
+    /*font-weight: bold;*/
+    color: #4D4E4E;
+    font-size: 12px;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+}
+
+.med_table_cell {
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 12px;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+}
+
+.sub_header_summary {
+    color: #4D4E4E;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: HelvetivaCondensedBold, Helvetica, Arial, sans-serif;
+}
+
+
+/* styles for medicatio table starts here*/
+
+.med_add_table {
+    font-family: HelveticaCondensedBold, Helvetica, Arial, SansSerif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    border-color: #4D4E4E;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+    .med_add_table td,
+    th {
+        text-align: left;
+        padding: 4px;
+    }
+
+.ui-datepicker-calendar {
+    display: none;
+}
+
+.table_summary td,
+th {
+    text-align: left;
+    padding: 8px;
+}
+
+.table_summary {
+    font-family: HelveticaCondensedBold, Helvetica, Arial, SansSerif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #D1DDF5;
+    border: 1px solid #3D6DCC;
+}
+
+.header_summary {
+    background-color: #3D6DCC;
+    color: #fff;
+    font-weight: bold;
+}
+
+.thin-line {
+    border: 0;
+    height: 1px;
+    background: #333333;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 98%;
+}
+
+.med_table_header_cell {
+    background-color: #E5E5E4;
+    border: 1px solid black;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4D4E4E;
+}
+
+.med_to_add_table {
+    display: none;
+    font-family: HelveticaCondensedBold, Helvetica, Arial, SansSerif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .med_to_add_table td,
+    th {
+        text-align: left;
+        padding: 8px;
+    }
+
+.med_table_cell {
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 12px;
+}
+
+.sub_header_summary {
+    color: #4D4E4E;
+    font-weight: bold;
+}
+
+.med_to_add_cell {
+    background-color: #E5E5E4;
+    border: 1px solid black;
+    font-weight: bold;
+    color: #4D4E4E;
+}
+
+.med_to_add_header {
+    background-color: #3D6DCC;
+    border: 1px solid black;
+    font-weight: bold;
+    color: #fff;
+    padding: 1% 1%;
+    vertical-align: text-bottom;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation-name: fadeIn;
+    /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: fixed;
+    /*bottom: 0;*/
+	    margin: 8% 0 0 20%;
+    background-color: #fefefe;
+    /*width: 100%;*/
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #fff;
+    background-color: #3D6DCC;
+    float: right;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.modal-header {
+    padding: 2px 2px;
+    background-color: #3D6DCC;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 2px;
+}
+
+.modal-footer {
+    padding: 2px 2px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.dose_input {
+    outline: none;
+    border: none;
+}
+
+.dose_input_span {
+    width: 15px;
+    word-wrap: break-word;
+    outline: none;
+    border: none;
+}
+
+.when_input {
+    outline: none;
+    border: none;
+}
+
+.hasdatepicker {
+    outline: none;
+    border: none;
+}
+
+.date-picker {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* styles for medicatio table ends here*/

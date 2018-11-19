@@ -1,0 +1,902 @@
+﻿[
+{
+"old_id":"1",
+"old_nametree":"Authors and legal information",
+"old_numtree":"1.0.0.0",
+"old_htmlpage":"ENAS5410_1.0.0.0",
+"new_id":"1",
+"new_nametree":"Authors and legal information",
+"new_numtree":"1.0.0.0",
+"new_htmlpage":"ENAS5410_1.0.0.0"
+},
+{
+"old_id":"2",
+"old_nametree":"Incidence and epidemiology",
+"old_numtree":"2.0.0.0",
+"old_htmlpage":"null",
+"new_id":"2",
+"new_nametree":"Incidence and epidemiology",
+"new_numtree":"2.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"3",
+"old_nametree":"Overview",
+"old_numtree":"2.1.0.0",
+"old_htmlpage":"ENAS5410_2.1.0.0",
+"new_id":"3",
+"new_nametree":"Overview",
+"new_numtree":"2.1.0.0",
+"new_htmlpage":"ENAS5410_2.1.0.0"
+},
+{
+"old_id":"4",
+"old_nametree":"Timing of occu. of irAEs follow. ipilimumab Tx",
+"old_numtree":"2.2.0.0",
+"old_htmlpage":"ENAS5410_2.2.0.0",
+"new_id":"4",
+"new_nametree":"Timing of occu. of irAEs follow. ipilimumab Tx",
+"new_numtree":"2.2.0.0",
+"new_htmlpage":"ENAS5410_2.2.0.0"
+},
+{
+"old_id":"5",
+"old_nametree":"Time to onset of gr. 3–4 Tx-related select AEs",
+"old_numtree":"2.3.0.0",
+"old_htmlpage":"ENAS5410_2.3.0.0",
+"new_id":"5",
+"new_nametree":"Time to onset of gr. 3–4 Tx-related select AEs",
+"new_numtree":"2.3.0.0",
+"new_htmlpage":"ENAS5410_2.3.0.0"
+},
+{
+"old_id":"6",
+"old_nametree":"General aspects of irAEs",
+"old_numtree":"2.4.0.0",
+"old_htmlpage":"ENAS5410_2.4.0.0",
+"new_id":"6",
+"new_nametree":"General aspects of irAEs",
+"new_numtree":"2.4.0.0",
+"new_htmlpage":"ENAS5410_2.4.0.0"
+},
+{
+"old_id":"7",
+"old_nametree":"Patient selection and baseline assessments",
+"old_numtree":"2.5.0.0",
+"old_htmlpage":"ENAS5410_2.5.0.0",
+"new_id":"7",
+"new_nametree":"Patient selection and baseline assessments",
+"new_numtree":"2.5.0.0",
+"new_htmlpage":"ENAS5410_2.5.0.0"
+},
+{
+"old_id":"8",
+"old_nametree":"Immune-related toxicities",
+"old_numtree":"3.0.0.0",
+"old_htmlpage":"null",
+"new_id":"8",
+"new_nametree":"Immune-related toxicities",
+"new_numtree":"3.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"9",
+"old_nametree":"Immune-related skin toxicity",
+"old_numtree":"3.1.0.0",
+"old_htmlpage":"null",
+"new_id":"9",
+"new_nametree":"Immune-related skin toxicity",
+"new_numtree":"3.1.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"10",
+"old_nametree":"Overview",
+"old_numtree":"3.1.1.0",
+"old_htmlpage":"ENAS5410_3.1.1.0",
+"new_id":"10",
+"new_nametree":"Overview",
+"new_numtree":"3.1.1.0",
+"new_htmlpage":"ENAS5410_3.1.1.0"
+},
+{
+"old_id":"11",
+"old_nametree":"Diagnosis and pathology",
+"old_numtree":"3.1.2.0",
+"old_htmlpage":"ENAS5410_3.1.2.0",
+"new_id":"11",
+"new_nametree":"Diagnosis and pathology",
+"new_numtree":"3.1.2.0",
+"new_htmlpage":"ENAS5410_3.1.2.0"
+},
+{
+"old_id":"12",
+"old_nametree":"Management of rash",
+"old_numtree":"3.1.3.0",
+"old_htmlpage":"null",
+"new_id":"12",
+"new_nametree":"Management of rash",
+"new_numtree":"3.1.3.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"13",
+"old_nametree":"Overview",
+"old_numtree":"3.1.3.1",
+"old_htmlpage":"ENAS5410_3.1.3.1",
+"new_id":"13",
+"new_nametree":"Overview",
+"new_numtree":"3.1.3.1",
+"new_htmlpage":"ENAS5410_3.1.3.1"
+},
+{
+"old_id":"14",
+"old_nametree":"Schematic of body surface area",
+"old_numtree":"3.1.3.2",
+"old_htmlpage":"ENAS5410_3.1.3.2",
+"new_id":"14",
+"new_nametree":"Schematic of body surface area",
+"new_numtree":"3.1.3.2",
+"new_htmlpage":"ENAS5410_3.1.3.2"
+},
+{
+"old_id":"15",
+"old_nametree":"Mgmt. of skin rash/toxicity",
+"old_numtree":"3.1.3.3",
+"old_htmlpage":"ENAS5410_3.1.3.3",
+"new_id":"15",
+"new_nametree":"Mgmt. of skin rash/toxicity",
+"new_numtree":"3.1.3.3",
+"new_htmlpage":"ENAS5410_3.1.3.3"
+},
+{
+"old_id":"16",
+"old_nametree":"Immune-related endocrinopathies",
+"old_numtree":"3.2.0.0",
+"old_htmlpage":"null",
+"new_id":"16",
+"new_nametree":"Immune-related endocrinopathies",
+"new_numtree":"3.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"17",
+"old_nametree":"Thyroid gland disorders",
+"old_numtree":"3.2.1.0",
+"old_htmlpage":"null",
+"new_id":"17",
+"new_nametree":"Thyroid gland disorders",
+"new_numtree":"3.2.1.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"18",
+"old_nametree":"Overview",
+"old_numtree":"3.2.1.1",
+"old_htmlpage":"ENAS5410_3.2.1.1",
+"new_id":"18",
+"new_nametree":"Overview",
+"new_numtree":"3.2.1.1",
+"new_htmlpage":"ENAS5410_3.2.1.1"
+},
+{
+"old_id":"19",
+"old_nametree":"Thyroid function monitoring",
+"old_numtree":"3.2.1.2",
+"old_htmlpage":"ENAS5410_3.2.1.2",
+"new_id":"19",
+"new_nametree":"Thyroid function monitoring",
+"new_numtree":"3.2.1.2",
+"new_htmlpage":"ENAS5410_3.2.1.2"
+},
+{
+"old_id":"20",
+"old_nametree":"Thyroid function – TSH",
+"old_numtree":"3.2.1.3",
+"old_htmlpage":"ENAS5410_3.2.1.3",
+"new_id":"20",
+"new_nametree":"Thyroid function – TSH",
+"new_numtree":"3.2.1.3",
+"new_htmlpage":"ENAS5410_3.2.1.3"
+},
+{
+"old_id":"21",
+"old_nametree":"Hypophysitis",
+"old_numtree":"3.2.2.0",
+"old_htmlpage":"null",
+"new_id":"21",
+"new_nametree":"Hypophysitis",
+"new_numtree":"3.2.2.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"22",
+"old_nametree":"Overview",
+"old_numtree":"3.2.2.1",
+"old_htmlpage":"ENAS5410_3.2.2.1",
+"new_id":"22",
+"new_nametree":"Overview",
+"new_numtree":"3.2.2.1",
+"new_htmlpage":"ENAS5410_3.2.2.1"
+},
+{
+"old_id":"23",
+"old_nametree":"Management of hypophysitis",
+"old_numtree":"3.2.2.2",
+"old_htmlpage":"ENAS5410_3.2.2.2",
+"new_id":"23",
+"new_nametree":"Management of hypophysitis",
+"new_numtree":"3.2.2.2",
+"new_htmlpage":"ENAS5410_3.2.2.2"
+},
+{
+"old_id":"24",
+"old_nametree":"Type 1 diabetes mellitus",
+"old_numtree":"3.2.3.0",
+"old_htmlpage":"ENAS5410_3.2.3.0",
+"new_id":"24",
+"new_nametree":"Type 1 diabetes mellitus",
+"new_numtree":"3.2.3.0",
+"new_htmlpage":"ENAS5410_3.2.3.0"
+},
+{
+"old_id":"25",
+"old_nametree":"Immune-related hepatotoxicity",
+"old_numtree":"3.3.0.0",
+"old_htmlpage":"null",
+"new_id":"25",
+"new_nametree":"Immune-related hepatotoxicity",
+"new_numtree":"3.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"26",
+"old_nametree":"Overview",
+"old_numtree":"3.3.1.0",
+"old_htmlpage":"ENAS5410_3.3.1.0",
+"new_id":"26",
+"new_nametree":"Overview",
+"new_numtree":"3.3.1.0",
+"new_htmlpage":"ENAS5410_3.3.1.0"
+},
+{
+"old_id":"27",
+"old_nametree":"Management",
+"old_numtree":"3.3.2.0",
+"old_htmlpage":"null",
+"new_id":"27",
+"new_nametree":"Management",
+"new_numtree":"3.3.2.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"28",
+"old_nametree":"Overview",
+"old_numtree":"3.3.2.1",
+"old_htmlpage":"ENAS5410_3.3.2.1",
+"new_id":"28",
+"new_nametree":"Overview",
+"new_numtree":"3.3.2.1",
+"new_htmlpage":"ENAS5410_3.3.2.1"
+},
+{
+"old_id":"29",
+"old_nametree":"Management of hepatitis",
+"old_numtree":"3.3.2.2",
+"old_htmlpage":"ENAS5410_3.3.2.2",
+"new_id":"29",
+"new_nametree":"Management of hepatitis",
+"new_numtree":"3.3.2.2",
+"new_htmlpage":"ENAS5410_3.3.2.2"
+},
+{
+"old_id":"30",
+"old_nametree":"Gastrointestinal toxicity",
+"old_numtree":"3.4.0.0",
+"old_htmlpage":"null",
+"new_id":"30",
+"new_nametree":"Gastrointestinal toxicity",
+"new_numtree":"3.4.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"31",
+"old_nametree":"GI toxicity of anti-CTLA4 antibodies",
+"old_numtree":"3.4.1.0",
+"old_htmlpage":"null",
+"new_id":"31",
+"new_nametree":"GI toxicity of anti-CTLA4 antibodies",
+"new_numtree":"3.4.1.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"32",
+"old_nametree":"Overview",
+"old_numtree":"3.4.1.1",
+"old_htmlpage":"ENAS5410_3.4.1.1",
+"new_id":"32",
+"new_nametree":"Overview",
+"new_numtree":"3.4.1.1",
+"new_htmlpage":"ENAS5410_3.4.1.1"
+},
+{
+"old_id":"33",
+"old_nametree":"Management overview",
+"old_numtree":"3.4.1.2",
+"old_htmlpage":"ENAS5410_3.4.1.2",
+"new_id":"33",
+"new_nametree":"Management overview",
+"new_numtree":"3.4.1.2",
+"new_htmlpage":"ENAS5410_3.4.1.2"
+},
+{
+"old_id":"34",
+"old_nametree":"Management of diarrhoea and colitis",
+"old_numtree":"3.4.1.3",
+"old_htmlpage":"ENAS5410_3.4.1.3",
+"new_id":"34",
+"new_nametree":"Management of diarrhoea and colitis",
+"new_numtree":"3.4.1.3",
+"new_htmlpage":"ENAS5410_3.4.1.3"
+},
+{
+"old_id":"35",
+"old_nametree":"Follow-up and long-term implications",
+"old_numtree":"3.4.1.4",
+"old_htmlpage":"ENAS5410_3.4.1.4",
+"new_id":"35",
+"new_nametree":"Follow-up and long-term implications",
+"new_numtree":"3.4.1.4",
+"new_htmlpage":"ENAS5410_3.4.1.4"
+},
+{
+"old_id":"36",
+"old_nametree":"GI toxicity of anti-PD-1 antibodies",
+"old_numtree":"3.4.2.0",
+"old_htmlpage":"ENAS5410_3.4.2.0",
+"new_id":"36",
+"new_nametree":"GI toxicity of anti-PD-1 antibodies",
+"new_numtree":"3.4.2.0",
+"new_htmlpage":"ENAS5410_3.4.2.0"
+},
+{
+"old_id":"37",
+"old_nametree":"Combined anti-CTLA4 & anti-PD-1 antibodies",
+"old_numtree":"3.4.3.0",
+"old_htmlpage":"ENAS5410_3.4.3.0",
+"new_id":"37",
+"new_nametree":"Combined anti-CTLA4 & anti-PD-1 antibodies",
+"new_numtree":"3.4.3.0",
+"new_htmlpage":"ENAS5410_3.4.3.0"
+},
+{
+"old_id":"38",
+"old_nametree":"Immune-related pneumonitis",
+"old_numtree":"3.5.0.0",
+"old_htmlpage":"null",
+"new_id":"38",
+"new_nametree":"Immune-related pneumonitis",
+"new_numtree":"3.5.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"39",
+"old_nametree":"Overview",
+"old_numtree":"3.5.1.0",
+"old_htmlpage":"ENAS5410_3.5.1.0",
+"new_id":"39",
+"new_nametree":"Overview",
+"new_numtree":"3.5.1.0",
+"new_htmlpage":"ENAS5410_3.5.1.0"
+},
+{
+"old_id":"40",
+"old_nametree":"Management",
+"old_numtree":"3.5.2.0",
+"old_htmlpage":"null",
+"new_id":"40",
+"new_nametree":"Management",
+"new_numtree":"3.5.2.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"41",
+"old_nametree":"Overview",
+"old_numtree":"3.5.2.1",
+"old_htmlpage":"ENAS5410_3.5.2.1",
+"new_id":"41",
+"new_nametree":"Overview",
+"new_numtree":"3.5.2.1",
+"new_htmlpage":"ENAS5410_3.5.2.1"
+},
+{
+"old_id":"42",
+"old_nametree":"Management of pneumonitis",
+"old_numtree":"3.5.2.2",
+"old_htmlpage":"ENAS5410_3.5.2.2",
+"new_id":"42",
+"new_nametree":"Management of pneumonitis",
+"new_numtree":"3.5.2.2",
+"new_htmlpage":"ENAS5410_3.5.2.2"
+},
+{
+"old_id":"43",
+"old_nametree":"Rare immune-related toxicities",
+"old_numtree":"3.6.0.0",
+"old_htmlpage":"null",
+"new_id":"43",
+"new_nametree":"Rare immune-related toxicities",
+"new_numtree":"3.6.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"44",
+"old_nametree":"Neurological toxicity",
+"old_numtree":"3.6.1.0",
+"old_htmlpage":"null",
+"new_id":"44",
+"new_nametree":"Neurological toxicity",
+"new_numtree":"3.6.1.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"45",
+"old_nametree":"Overview",
+"old_numtree":"3.6.1.1",
+"old_htmlpage":"ENAS5410_3.6.1.1",
+"new_id":"45",
+"new_nametree":"Overview",
+"new_numtree":"3.6.1.1",
+"new_htmlpage":"ENAS5410_3.6.1.1"
+},
+{
+"old_id":"46",
+"old_nametree":"Peripheral neurological symptoms",
+"old_numtree":"3.6.1.2",
+"old_htmlpage":"ENAS5410_3.6.1.2",
+"new_id":"46",
+"new_nametree":"Peripheral neurological symptoms",
+"new_numtree":"3.6.1.2",
+"new_htmlpage":"ENAS5410_3.6.1.2"
+},
+{
+"old_id":"47",
+"old_nametree":"Peripheral neurological syndromes",
+"old_numtree":"3.6.1.3",
+"old_htmlpage":"ENAS5410_3.6.1.3",
+"new_id":"47",
+"new_nametree":"Peripheral neurological syndromes",
+"new_numtree":"3.6.1.3",
+"new_htmlpage":"ENAS5410_3.6.1.3"
+},
+{
+"old_id":"48",
+"old_nametree":"Mgmt. of suspected central neuro. toxicity",
+"old_numtree":"3.6.1.4",
+"old_htmlpage":"ENAS5410_3.6.1.4",
+"new_id":"48",
+"new_nametree":"Mgmt. of suspected central neuro. toxicity",
+"new_numtree":"3.6.1.4",
+"new_htmlpage":"ENAS5410_3.6.1.4"
+},
+{
+"old_id":"49",
+"old_nametree":"Cardiac toxicity",
+"old_numtree":"3.6.2.0",
+"old_htmlpage":"ENAS5410_3.6.2.0",
+"new_id":"49",
+"new_nametree":"Cardiac toxicity",
+"new_numtree":"3.6.2.0",
+"new_htmlpage":"ENAS5410_3.6.2.0"
+},
+{
+"old_id":"50",
+"old_nametree":"Rheumatological toxicity",
+"old_numtree":"3.6.3.0",
+"old_htmlpage":"null",
+"new_id":"50",
+"new_nametree":"Rheumatological toxicity",
+"new_numtree":"3.6.3.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"51",
+"old_nametree":"Overview",
+"old_numtree":"3.6.3.1",
+"old_htmlpage":"ENAS5410_3.6.3.1",
+"new_id":"51",
+"new_nametree":"Overview",
+"new_numtree":"3.6.3.1",
+"new_htmlpage":"ENAS5410_3.6.3.1"
+},
+{
+"old_id":"52",
+"old_nametree":"Management of arthralgia",
+"old_numtree":"3.6.3.2",
+"old_htmlpage":"ENAS5410_3.6.3.2",
+"new_id":"52",
+"new_nametree":"Management of arthralgia",
+"new_numtree":"3.6.3.2",
+"new_htmlpage":"ENAS5410_3.6.3.2"
+},
+{
+"old_id":"53",
+"old_nametree":"Renal toxicity",
+"old_numtree":"3.6.4.0",
+"old_htmlpage":"null",
+"new_id":"53",
+"new_nametree":"Renal toxicity",
+"new_numtree":"3.6.4.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"54",
+"old_nametree":"Overview",
+"old_numtree":"3.6.4.1",
+"old_htmlpage":"ENAS5410_3.6.4.1",
+"new_id":"54",
+"new_nametree":"Overview",
+"new_numtree":"3.6.4.1",
+"new_htmlpage":"ENAS5410_3.6.4.1"
+},
+{
+"old_id":"55",
+"old_nametree":"Management of nephritis",
+"old_numtree":"3.6.4.2",
+"old_htmlpage":"ENAS5410_3.6.4.2",
+"new_id":"55",
+"new_nametree":"Management of nephritis",
+"new_numtree":"3.6.4.2",
+"new_htmlpage":"ENAS5410_3.6.4.2"
+},
+{
+"old_id":"56",
+"old_nametree":"Ocular toxicities",
+"old_numtree":"3.6.5.0",
+"old_htmlpage":"ENAS5410_3.6.5.0",
+"new_id":"56",
+"new_nametree":"Ocular toxicities",
+"new_numtree":"3.6.5.0",
+"new_htmlpage":"ENAS5410_3.6.5.0"
+},
+{
+"old_id":"57",
+"old_nametree":"Haematological toxicities",
+"old_numtree":"3.6.6.0",
+"old_htmlpage":"ENAS5410_3.6.6.0",
+"new_id":"57",
+"new_nametree":"Haematological toxicities",
+"new_numtree":"3.6.6.0",
+"new_htmlpage":"ENAS5410_3.6.6.0"
+},
+{
+"old_id":"58",
+"old_nametree":"Allograft rejection",
+"old_numtree":"3.6.7.0",
+"old_htmlpage":"ENAS5410_3.6.7.0",
+"new_id":"58",
+"new_nametree":"Allograft rejection",
+"new_numtree":"3.6.7.0",
+"new_htmlpage":"ENAS5410_3.6.7.0"
+},
+{
+"old_id":"59",
+"old_nametree":"Summary of recommendations",
+"old_numtree":"4.0.0.0",
+"old_htmlpage":"null",
+"new_id":"59",
+"new_nametree":"Summary of recommendations",
+"new_numtree":"4.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"60",
+"old_nametree":"Incidence and epidemiology",
+"old_numtree":"4.1.0.0",
+"old_htmlpage":"null",
+"new_id":"60",
+"new_nametree":"Incidence and epidemiology",
+"new_numtree":"4.1.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"61",
+"old_nametree":"General aspects of irAEs",
+"old_numtree":"4.1.1.0",
+"old_htmlpage":"ENAS5410_4.1.1.0",
+"new_id":"61",
+"new_nametree":"General aspects of irAEs",
+"new_numtree":"4.1.1.0",
+"new_htmlpage":"ENAS5410_4.1.1.0"
+},
+{
+"old_id":"62",
+"old_nametree":"Patient selection and baseline assessments",
+"old_numtree":"4.1.2.0",
+"old_htmlpage":"ENAS5410_4.1.2.0",
+"new_id":"62",
+"new_nametree":"Patient selection and baseline assessments",
+"new_numtree":"4.1.2.0",
+"new_htmlpage":"ENAS5410_4.1.2.0"
+},
+{
+"old_id":"63",
+"old_nametree":"Immune-related toxicities",
+"old_numtree":"4.2.0.0",
+"old_htmlpage":"null",
+"new_id":"63",
+"new_nametree":"Immune-related toxicities",
+"new_numtree":"4.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"64",
+"old_nametree":"Immune-related skin toxicity",
+"old_numtree":"4.2.1.0",
+"old_htmlpage":"null",
+"new_id":"64",
+"new_nametree":"Immune-related skin toxicity",
+"new_numtree":"4.2.1.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"65",
+"old_nametree":"Overview",
+"old_numtree":"4.2.1.1",
+"old_htmlpage":"ENAS5410_4.2.1.1",
+"new_id":"65",
+"new_nametree":"Overview",
+"new_numtree":"4.2.1.1",
+"new_htmlpage":"ENAS5410_4.2.1.1"
+},
+{
+"old_id":"66",
+"old_nametree":"Diagnosis and pathology",
+"old_numtree":"4.2.1.2",
+"old_htmlpage":"ENAS5410_4.2.1.2",
+"new_id":"66",
+"new_nametree":"Diagnosis and pathology",
+"new_numtree":"4.2.1.2",
+"new_htmlpage":"ENAS5410_4.2.1.2"
+},
+{
+"old_id":"67",
+"old_nametree":"Management of rash",
+"old_numtree":"4.2.1.3",
+"old_htmlpage":"ENAS5410_4.2.1.3",
+"new_id":"67",
+"new_nametree":"Management of rash",
+"new_numtree":"4.2.1.3",
+"new_htmlpage":"ENAS5410_4.2.1.3"
+},
+{
+"old_id":"68",
+"old_nametree":"Immune-related endocrinopathies",
+"old_numtree":"4.2.2.0",
+"old_htmlpage":"null",
+"new_id":"68",
+"new_nametree":"Immune-related endocrinopathies",
+"new_numtree":"4.2.2.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"69",
+"old_nametree":"Thyroid gland disorders",
+"old_numtree":"4.2.2.1",
+"old_htmlpage":"ENAS5410_4.2.2.1",
+"new_id":"69",
+"new_nametree":"Thyroid gland disorders",
+"new_numtree":"4.2.2.1",
+"new_htmlpage":"ENAS5410_4.2.2.1"
+},
+{
+"old_id":"70",
+"old_nametree":"Hypophysitis",
+"old_numtree":"4.2.2.2",
+"old_htmlpage":"ENAS5410_4.2.2.2",
+"new_id":"70",
+"new_nametree":"Hypophysitis",
+"new_numtree":"4.2.2.2",
+"new_htmlpage":"ENAS5410_4.2.2.2"
+},
+{
+"old_id":"71",
+"old_nametree":"Type 1 diabetes mellitus",
+"old_numtree":"4.2.2.3",
+"old_htmlpage":"ENAS5410_4.2.2.3",
+"new_id":"71",
+"new_nametree":"Type 1 diabetes mellitus",
+"new_numtree":"4.2.2.3",
+"new_htmlpage":"ENAS5410_4.2.2.3"
+},
+{
+"old_id":"72",
+"old_nametree":"Immune-related hepatotoxicity",
+"old_numtree":"4.2.3.0",
+"old_htmlpage":"null",
+"new_id":"72",
+"new_nametree":"Immune-related hepatotoxicity",
+"new_numtree":"4.2.3.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"73",
+"old_nametree":"Overview",
+"old_numtree":"4.2.3.1",
+"old_htmlpage":"ENAS5410_4.2.3.1",
+"new_id":"73",
+"new_nametree":"Overview",
+"new_numtree":"4.2.3.1",
+"new_htmlpage":"ENAS5410_4.2.3.1"
+},
+{
+"old_id":"74",
+"old_nametree":"Management",
+"old_numtree":"4.2.3.2",
+"old_htmlpage":"ENAS5410_4.2.3.2",
+"new_id":"74",
+"new_nametree":"Management",
+"new_numtree":"4.2.3.2",
+"new_htmlpage":"ENAS5410_4.2.3.2"
+},
+{
+"old_id":"75",
+"old_nametree":"Gastrointestinal toxicity",
+"old_numtree":"4.2.4.0",
+"old_htmlpage":"null",
+"new_id":"75",
+"new_nametree":"Gastrointestinal toxicity",
+"new_numtree":"4.2.4.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"76",
+"old_nametree":"GI toxicity of anti-CTLA4 antibodies",
+"old_numtree":"4.2.4.1",
+"old_htmlpage":"ENAS5410_4.2.4.1",
+"new_id":"76",
+"new_nametree":"GI toxicity of anti-CTLA4 antibodies",
+"new_numtree":"4.2.4.1",
+"new_htmlpage":"ENAS5410_4.2.4.1"
+},
+{
+"old_id":"77",
+"old_nametree":"GI toxicity of anti-PD-1 antibodies",
+"old_numtree":"4.2.4.2",
+"old_htmlpage":"ENAS5410_4.2.4.2",
+"new_id":"77",
+"new_nametree":"GI toxicity of anti-PD-1 antibodies",
+"new_numtree":"4.2.4.2",
+"new_htmlpage":"ENAS5410_4.2.4.2"
+},
+{
+"old_id":"78",
+"old_nametree":"Combined anti-CTLA4 & anti-PD-1 antibodies",
+"old_numtree":"4.2.4.3",
+"old_htmlpage":"ENAS5410_4.2.4.3",
+"new_id":"78",
+"new_nametree":"Combined anti-CTLA4 & anti-PD-1 antibodies",
+"new_numtree":"4.2.4.3",
+"new_htmlpage":"ENAS5410_4.2.4.3"
+},
+{
+"old_id":"79",
+"old_nametree":"Immune-related pneumonitis",
+"old_numtree":"4.2.5.0",
+"old_htmlpage":"null",
+"new_id":"79",
+"new_nametree":"Immune-related pneumonitis",
+"new_numtree":"4.2.5.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"80",
+"old_nametree":"Overview",
+"old_numtree":"4.2.5.1",
+"old_htmlpage":"ENAS5410_4.2.5.1",
+"new_id":"80",
+"new_nametree":"Overview",
+"new_numtree":"4.2.5.1",
+"new_htmlpage":"ENAS5410_4.2.5.1"
+},
+{
+"old_id":"81",
+"old_nametree":"Management",
+"old_numtree":"4.2.5.2",
+"old_htmlpage":"ENAS5410_4.2.5.2",
+"new_id":"81",
+"new_nametree":"Management",
+"new_numtree":"4.2.5.2",
+"new_htmlpage":"ENAS5410_4.2.5.2"
+},
+{
+"old_id":"82",
+"old_nametree":"Rare immune-related toxicities",
+"old_numtree":"4.2.6.0",
+"old_htmlpage":"null",
+"new_id":"82",
+"new_nametree":"Rare immune-related toxicities",
+"new_numtree":"4.2.6.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"83",
+"old_nametree":"Neurological toxicity",
+"old_numtree":"4.2.6.1",
+"old_htmlpage":"ENAS5410_4.2.6.1",
+"new_id":"83",
+"new_nametree":"Neurological toxicity",
+"new_numtree":"4.2.6.1",
+"new_htmlpage":"ENAS5410_4.2.6.1"
+},
+{
+"old_id":"84",
+"old_nametree":"Cardiac toxicity",
+"old_numtree":"4.2.6.2",
+"old_htmlpage":"ENAS5410_4.2.6.2",
+"new_id":"84",
+"new_nametree":"Cardiac toxicity",
+"new_numtree":"4.2.6.2",
+"new_htmlpage":"ENAS5410_4.2.6.2"
+},
+{
+"old_id":"85",
+"old_nametree":"Rheumatological toxicity",
+"old_numtree":"4.2.6.3",
+"old_htmlpage":"ENAS5410_4.2.6.3",
+"new_id":"85",
+"new_nametree":"Rheumatological toxicity",
+"new_numtree":"4.2.6.3",
+"new_htmlpage":"ENAS5410_4.2.6.3"
+},
+{
+"old_id":"86",
+"old_nametree":"Renal toxicity",
+"old_numtree":"4.2.6.4",
+"old_htmlpage":"ENAS5410_4.2.6.4",
+"new_id":"86",
+"new_nametree":"Renal toxicity",
+"new_numtree":"4.2.6.4",
+"new_htmlpage":"ENAS5410_4.2.6.4"
+},
+{
+"old_id":"87",
+"old_nametree":"Ocular toxicities",
+"old_numtree":"4.2.6.5",
+"old_htmlpage":"ENAS5410_4.2.6.5",
+"new_id":"87",
+"new_nametree":"Ocular toxicities",
+"new_numtree":"4.2.6.5",
+"new_htmlpage":"ENAS5410_4.2.6.5"
+},
+{
+"old_id":"88",
+"old_nametree":"Haematological toxicities",
+"old_numtree":"4.2.6.6",
+"old_htmlpage":"ENAS5410_4.2.6.6",
+"new_id":"88",
+"new_nametree":"Haematological toxicities",
+"new_numtree":"4.2.6.6",
+"new_htmlpage":"ENAS5410_4.2.6.6"
+},
+{
+"old_id":"89",
+"old_nametree":"Allograft rejection",
+"old_numtree":"4.2.6.7",
+"old_htmlpage":"ENAS5410_4.2.6.7",
+"new_id":"89",
+"new_nametree":"Allograft rejection",
+"new_numtree":"4.2.6.7",
+"new_htmlpage":"ENAS5410_4.2.6.7"
+},
+{
+"old_id":"90",
+"old_nametree":"Glossary",
+"old_numtree":"5.0.0.0",
+"old_htmlpage":"ENAS5410_5.0.0.0",
+"new_id":"90",
+"new_nametree":"Glossary",
+"new_numtree":"5.0.0.0",
+"new_htmlpage":"ENAS5410_5.0.0.0"
+}
+]

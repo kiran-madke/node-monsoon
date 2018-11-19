@@ -1,0 +1,122 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>Age</b>",
+        "text_id": "",
+        "id": "selectAge",
+        "unit": "years",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>Heart rate</b>",
+        "text_id": "",
+        "id": "selectHeart",
+        "unit": "bpm",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>Systolic BP</b>",
+        "text_id": "",
+        "id": "selectBlood",
+        "unit": "mmHg",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>CHF (Killip class)</b>",
+        "text_id": "",
+        "id": "selectCHF",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>Diuretic usage</b>",
+        "text_id": "",
+        "id": "selectDiuretic",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>Creatinine</b>",
+        "text_id": "",
+        "id": "selectCreatine",
+        "unit": "mg/dL or μmol/L",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>Renal failure</b>",
+        "text_id": "",
+        "id": "selectRenal",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>ST-segment deviation</b>",
+        "text_id": "",
+        "id": "selectSegment",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>Elevated troponin*</b>",
+        "text_id": "",
+        "id": "selectTroponin",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>Cardiac arrest at admission</b>",
+        "text_id": "",
+        "id": "selectCardiac",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "Death in hospital",
+        "id": "inHospitalResult",
+        "unit": "% Risk",
+        "unitId":"",
+        "type":"div"
+    },
+    {
+        "text": "Death in 6 months",
+        "id": "sixMonthResult",
+        "unit": "% Risk",
+        "unitId":"",
+        "type":"div"
+    },
+    {
+        "text": "Death in 1 year",
+        "id": "oneYearResult",
+        "unit": "% Risk",
+        "unitId":"",
+        "type":"div"
+    },
+    {
+        "text": "Death in 3 years",
+        "id": "threeYearResult",
+        "unit": "% Risk",
+        "unitId":"",
+        "type":"div"
+    },
+    {
+        "text": "Death/MI in 1 year",
+        "id": "oneYearResultMI",
+        "unit": "% Risk",
+        "unitId":"",
+        "type":"div"
+    }
+]
+}

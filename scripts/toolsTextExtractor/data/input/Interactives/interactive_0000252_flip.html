@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Algorithm_Static_image</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="interactives-2.1.1.css">
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        div {
+            width: 100%;
+        }
+
+        img[usemap] {
+            border: none;
+            height: auto;
+            max-width: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="interactive_0000252.png" id="imageMap" usemap="#staticImageMap" alt="">
+        <table>
+            <tr>
+                <td>
+                    <a href="flipView">
+                        <button id="pdf_button" class="flip-pdf-button">
+                            <img src="algo.png" class="pdf-image" />
+                        </button>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="static-reference-box">
+                        <p class="text-left"><nobr>CAD = coronary </nobr>artery disease; <nobr>CTA = computed</nobr> tomography angiography;CXR = chest X-ray; <nobr>ECG = electrocardiogram;</nobr> <nobr> ICA = invasive</nobr> coronary angiography; <nobr>LVEF = left ventricular</nobr> ejection fraction; <nobr>PTP = pre-test</nobr> probability; <nobr>QoL = quality of <nobr />life; <nobr>  SCAD = stable</nobr> coronary artery disease.</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="static-reference-box">
+                        <p class="text-left"><sup>a</sup>May be omitted in very young and healthy patients with a high suspicion of an extracardiac cause of chest pain and in multimorbid patients in whom the echo result has no consequence for further patient management.<br /> <sup>b</sup>If diagnosis of SCAD is doubtful, establishing a diagnosis using pharmacologic stress imaging prior to treatment may be reasonable.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <map name="staticImageMap">
+            <area shape="poly" coords="21,835,258,837,257,901,33,904" href="ref_ENAS258_7.3.4.0.html" title="map" alt="map">
+            <area shape="poly" coords="541,804,705,802,706,871,549,878" href="ref_ENAS258_7.3.6.0.html" title="" alt="map">
+            <area shape="poly" coords="17,1298,169,1298,161,1367,27,1372" href="ref_ENAS258_7.3.6.0.html" title="" alt="map">
+            <area shape="poly" coords="19,1466,238,1468,222,1535,35,1545" href="ref_ENAS258_7.5.2.0.html" title="" alt="map">
+            <area shape="poly" coords="374,1259,549,1259,531,1304,386,1316" href="ref_ENAS258_7.5.2.0.html" title="" alt="map">
+        </map>
+    </div>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="jquery.rwdImageMaps.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>Age</b>",
+        "text_id": "",
+        "name": "txtAge",
+        "type":"input"
+    },
+    {
+        "text": "<b>Male sex</b>",
+        "text_id": "",
+        "name": "r1",
+        "type":"button"
+    },
+    {
+        "text": "<b>Cancer</b>",
+        "text_id": "",
+        "name": "r2",
+        "type":"button"
+    },
+    {
+        "text": "<b>Chronic heart failure</b>",
+        "text_id": "",
+        "name": "r3",
+        "type":"button"
+    },
+    {
+        "text": "<b>Chronic pulmonary disease</b>",
+        "text_id": "",
+        "name": "r4",
+        "type":"button"
+    },
+    {
+        "text": "<b>Pulse rate &ge;110 b.p.m.</b>",
+        "text_id": "",
+        "name": "r5",
+        "type":"button"
+    },
+    {
+        "text": "<b>Systolic blood pressure &lt;100 mm Hg</b>",
+        "text_id": "",
+        "name": "r6",
+        "type":"button"
+    },
+    {
+        "text": "<b>Respiratory rate &gt;30 breaths per minute</b>",
+        "text_id": "",
+        "name": "r7",
+        "type":"button"
+    },
+    {
+        "text": "<b>Temperature &lt;36&deg;</b>",
+        "text_id": "",
+        "name": "r8",
+        "type":"button"
+    },
+    {
+        "text": "<b>Altered mental status</b>",
+        "text_id": "",
+        "name": "r9",
+        "type":"button"
+    },
+    {
+        "text": "<b>Arterial oxyhaemoglobin saturation &lt;90%</b>",
+        "text_id": "",
+        "name": "r10",
+        "type":"button"
+    }
+    ],
+"output":[
+	{
+        "text": "<b>Score</b>",
+        "name": "txtresult",
+        "type":"input"
+    },
+	{
+        "text": "<b>Risk strata<sup>a</sup></b>",
+        "name": "txtDescription",
+        "type":"div"
+    }
+]
+}

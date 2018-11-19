@@ -1,0 +1,603 @@
+<html>
+    <head>
+        <LINK href="calci_std.css" rel="stylesheet" type="text/css">
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+                <script src="jquery-1.9.1.min.js"></script>
+                <script src="jquery-algoPlugin.js"></script>
+                <script src="algoFunctions.js"></script>
+                <link rel="stylesheet" type="text/css" href="calci_std.css">
+                    <link rel="stylesheet" type="text/css" href="pop-example.css">
+                    <script type="text/JavaScript">
+           
+		 
+        //     if(screen.width < 768)
+        //     {
+        //        changeCSS('calci_bb.css',0);
+        //     }
+        // else
+        // {
+        //     changeCSS('calci_ipad_bb.css',0);
+        // }
+		
+		function changeCSS(cssFile, cssLinkIndex) {
+ 
+        var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+ 
+        var newlink = document.createElement("link");
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", cssFile);
+ 
+        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+      }
+		
+            </script>
+
+                    
+         
+                <script type="text/javascript">
+                    //Below function is used for generating POP-UP
+ function showModal(message) {
+     // get the modal
+     var modal = document.getElementById("modal");
+     modal.style.display = "block";
+
+     document.getElementById("text").innerHTML = message;
+
+     var modalButton = document.getElementById("modalButton");
+     modalButton.onclick = function() {
+         modal.style.display = "none";
+     }
+
+     window.onclick = function(event) {
+         if (event.target === modal) {
+             modal.style.display = "none";
+         }
+     }
+ } 
+                    
+                  /*  function alertshow(mgs)
+                    {
+                        // custom alert without title bar
+                        // as per new standard -> Pravin
+                        var iframe = document.createElement("IFRAME");
+                        iframe.setAttribute("src", 'data:text/plain,');
+                        document.documentElement.appendChild(iframe);
+                        window.frames[0].window.alert(mgs);
+                        iframe.parentNode.removeChild(iframe);
+                    }*/
+                    
+            function roundVal(val)
+            {
+                var dec = 2;
+                var result = Math.round(val*Math.pow(10,dec))/Math.pow(10,dec);
+                return result;
+            }
+            var w1=0;
+            var w2=0;
+            
+            function valcal()
+            {
+                var q1=fm.sum1.value;
+                w1=parseFloat(q1);
+                
+                var q2=fm.sum2.value;
+                w2=parseFloat(q2);
+                
+                var q3=fm.ht.value;
+                
+				
+					if(q1!= "" && q2!= "")
+					{
+					activeResultStyle();
+					}
+					else
+					{
+							deactiveResultStyle();
+					}
+
+                if(w1==0 || w2==0)
+                {
+                    
+                }
+                else
+                
+                {
+                    if(q3.match("1"))
+                    {
+                        
+                        
+                        fm.result.value= roundVal(w2 / (w1/100 * w1/100)) ;
+                        
+                    }
+                    else
+                    {
+                        
+                        fm.result.value= roundVal(w2 / (w1 *w1)) ;
+                    }
+                    
+                    
+                }
+                
+                
+                
+                
+            }
+            function valcal2()
+            {
+                var q1=fm.sum1.value;
+                w1=parseFloat(q1);
+                
+                var q2=fm.sum2.value;
+                w2=parseFloat(q2);
+                
+                var q3=fm.ht.value;
+                
+
+
+                if(w1==0 || w2==0)
+                {
+                    
+                }
+                else
+                
+                {
+                    if(q3.match("1"))
+                    {
+                        
+                        w1=w1*100;
+                        document.fm.sum1.value=w1;
+                        fm.result.value= roundVal(w2 / (w1/100 * w1/100)) ;
+                        
+                    }
+                    else
+                    {
+                        w1=w1/100;
+                        document.fm.sum1.value=w1;
+                        fm.result.value= roundVal(w2 / (w1 *w1)) ;
+                    }
+                    
+                    
+                }
+                
+                
+                
+                
+            }
+            
+            function check1()
+            
+            {
+                
+                var drop=document.getElementById("ht").value;
+                var serum = parseFloat(document.fm.sum1.value);
+                if(serum<0.1)
+                {
+                    document.fm.sum1.value="";
+                    document.fm.result.value="";
+                  
+                    document.getElementById('sum1').focus();
+                    //alert("Sorry! Not a valid range");
+                    if (window.orientation ==0 || window.orientation ==180)
+                    {
+                        showModal("Sorry! Not a valid range");
+                      //  document.getElementById("ShowMyCustomPop").style.display="inline";
+                        //document.getElementById("errmgs").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry! Not a valid range";
+                    }
+                    else
+                    {
+                        showModal("Sorry! Not a valid range");
+                        //document.getElementById("ShowMyCustomPopLandscape").style.display="inline";
+                        //document.getElementById("errmgs1").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry! Not a valid range";
+                    }
+
+                    document.getElementById('sum1').blur();
+
+                }
+                
+                
+            }
+                                    function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    //alert(charCode);
+    if (charCode==46)
+    {
+    return true;
+    }
+    else if (charCode > 31 && (charCode < 48 || charCode > 57)) 
+    {
+        return false;
+    }
+      
+    return true;
+}
+            function check()
+            
+            {
+                var drop=document.getElementById("ht").value;
+                var serum = parseFloat(document.fm.sum1.value);
+                
+                var weight = parseFloat(document.fm.sum2.value);
+                
+                if((weight<1)||(weight>800))
+                {       document.fm.sum2.value="";
+                    document.fm.result.value="";                    document.getElementById('sum2').focus();
+                    if (window.orientation ==0 || window.orientation ==180)
+                    {
+                        showModal("Sorry! Not a valid range");
+                        //document.getElementById("ShowMyCustomPop").style.display="inline";
+                        //document.getElementById("errmgs").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry! Not a valid range";
+                    }
+                    else
+                    {
+                        showModal("Sorry! Not a valid range");
+                        //document.getElementById("ShowMyCustomPopLandscape").style.display="inline";
+                        //document.getElementById("errmgs1").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry! Not a valid range";
+                    }
+
+                    document.getElementById('sum2').blur();
+
+                    //alert("Sorry! Not a valid range");
+                }
+                
+                if(drop==1)
+                {
+                    if((serum<1)||(serum>300))
+                    {
+                        document.fm.sum1.value="";
+                        document.fm.result.value="";
+                        document.getElementById('sum1').focus();
+                        //alert("Sorry! Not a valid range");
+                        if (window.orientation ==0 || window.orientation ==180)
+                        {
+                            showModal("Sorry! Not a valid range");
+                           // document.getElementById("ShowMyCustomPop").style.display="inline";
+                            //document.getElementById("errmgs").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry! Not a valid range";
+                        }
+                        else
+                        {
+                            showModal("Sorry! Not a valid range");
+                           // document.getElementById("ShowMyCustomPopLandscape").style.display="inline";
+                            //document.getElementById("errmgs1").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry! Not a valid range";
+                        }
+                        document.getElementById('sum1').blur();
+
+                    }
+                    
+                    
+                }
+                if(drop==2)
+                {
+                    
+                    if(serum>3)
+                    {
+                        document.fm.sum1.value="";
+                        document.fm.result.value="";
+                        document.getElementById('sum1').focus();
+                        //alert("Sorry! Not a valid range");
+                        if (window.orientation ==0 || window.orientation ==180)
+                        {
+                            showModal("Sorry! Not a valid range");
+                           // document.getElementById("ShowMyCustomPop").style.display="inline";
+                            //document.getElementById("errmgs").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry! Not a valid range";
+                        }
+                        else
+                        {
+                            
+                            showModal("Sorry! Not a valid range");
+                           // document.getElementById("ShowMyCustomPopLandscape").style.display="inline";
+                            //document.getElementById("errmgs1").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry! Not a valid range";
+                        }
+
+                        document.getElementById('sum1').blur();
+
+                    }
+                    
+                    if((serum<1))
+                    {
+                        if(serum==0)
+                        {
+                            
+                        }
+                        else
+                        if(serum<0.1)
+                        {
+                            document.fm.sum1.value="";
+                            document.fm.result.value="";                            document.getElementById('sum1').focus();
+                            //alert("Sorry! Not a valid range");
+                            if (window.orientation ==0 || window.orientation ==180)
+                            {
+                                showModal("Sorry! Not a valid range");
+                                //document.getElementById("ShowMyCustomPop").style.display="inline";
+                                //document.getElementById("errmgs").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry! Not a valid range";
+                            }
+                            else
+                            {
+                                showModal("Sorry! Not a valid range");
+                                //document.getElementById("ShowMyCustomPopLandscape").style.display="inline";
+                                //document.getElementById("errmgs1").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry! Not a valid range";
+                            }
+
+                            document.getElementById('sum1').blur();
+
+                        }
+                        
+                        
+                    }
+                    
+                }
+            }
+
+			/*Active deactive results*/
+			function activeResultStyle()
+						{
+						//alert("done");
+						var classValue = document.getElementsByClassName("output_name_disabled");
+						
+						for(var i = 0; i  < classValue.length; i+1)
+						{
+						//alert("done");
+						classValue[i].classList.add("output_name");
+						classValue[i].classList.remove("output_name_disabled");
+						}
+						
+						var outputClass = document.getElementsByClassName("output_disabled");
+						for(var j = 0; j  < outputClass.length; j+1)
+						{
+						//alert("done");
+						outputClass[j].classList.add("output");
+						outputClass[j].classList.remove("output_disabled");
+						}
+						
+						var textareaOutputClass = document.getElementsByClassName("text-area-output-disabled");
+						for(var k = 0; k  <textareaOutputClass.length; k+1)
+						{
+						//alert("done");
+						textareaOutputClass[k].classList.add("text-area-output");
+						textareaOutputClass[k].classList.remove("text-area-output-disabled");
+						}
+						
+						var unitOutputClass = document.getElementsByClassName("unit_label_output_disabled");
+						for(var l = 0; l  < unitOutputClass.length; l+1)
+						{
+						//alert("done");
+						unitOutputClass[l].classList.add("unit_label_output");
+						unitOutputClass[l].classList.remove("unit_label_output_disabled");
+						}
+						
+						var activityOutput = document.getElementsByClassName("activity_output_disabled");
+						for(var act1 = 0; act1  < activityOutput.length; act1+1)
+						{
+						//alert("done");
+						activityOutput[act1].classList.add("activity_output");
+						activityOutput[act1].classList.remove("activity_output_disabled");
+						}
+						
+						var activityTextOutput = document.getElementsByClassName("activity-text-area-output-disabled");
+						for(var act2 = 0; act2  < activityTextOutput.length; act2+1)
+						{
+						//alert("done");
+						activityTextOutput[act2].classList.add("activity-text-area-output");
+						activityTextOutput[act2].classList.remove("activity-text-area-output-disabled");
+						}
+						
+								
+						}
+                        
+                       function deactiveResultStyle()
+						{
+						//alert("done");
+						var classValue = document.getElementsByClassName("output_name");
+						for(var i = 0; i  < classValue.length; i+1)
+						{
+						//alert("done");
+						classValue[i].classList.add("output_name_disabled");
+						classValue[i].classList.remove("output_name");
+						}
+						
+						var outputClass = document.getElementsByClassName("output");
+						for(var j = 0; j  < outputClass.length; j+1)
+						{
+						//alert("done");
+						outputClass[j].classList.add("output_disabled");
+						outputClass[j].classList.remove("output");
+						}
+						
+						var textareaOutputClass = document.getElementsByClassName("text-area-output");
+						for(var k = 0; k  < textareaOutputClass.length; k+1)
+						{
+						//alert("done");
+						textareaOutputClass[k].classList.add("text-area-output-disabled");
+						textareaOutputClass[k].classList.remove("text-area-output");
+						}
+						
+						var unitOutputClass = document.getElementsByClassName("unit_label_output");
+						for(var l = 0; l  < unitOutputClass.length; l+1)
+						{
+						//alert("done");
+						unitOutputClass[l].classList.add("unit_label_output_disabled");
+						unitOutputClass[l].classList.remove("unit_label_output");
+						}
+						
+						
+						var activityOutput = document.getElementsByClassName("activity_output");
+						for(var act1 = 0; act1  < activityOutput.length; act1+1)
+						{
+						//alert("done");
+						activityOutput[act1].classList.add("activity_output_disabled");
+						activityOutput[act1].classList.remove("activity_output");
+						}
+						
+						var activityTextOutput = document.getElementsByClassName("activity-text-area-output");
+						for(var act2 = 0; act2  < activityTextOutput.length; act2+1)
+						{
+						//alert("done");
+						activityTextOutput[act2].classList.add("activity-text-area-output-disabled");
+						activityTextOutput[act2].classList.remove("activity-text-area-output");
+						}
+								
+						}
+            </script>
+        
+        <script language="JavaScript">
+            $(function(){
+              $('label').bind('click', function(){ $(input, this).click(); return false; });
+              });
+            
+            function hidePopup()
+            {
+                 
+                document.getElementById("ShowMyCustomPop").style.display="none";
+                document.getElementById("ShowMyCustomPop").style.display="none";
+            }
+
+            </script>
+                    <script type="text/javascript">
+                        
+                        $(function(){
+                          
+                          
+                          
+                          $('input').on('keyup', function(e){
+                                         
+                                        if (e.keyCode == 188)  {
+                                        
+                                        fm.result.value="";
+                                          showModal("Sorry, please use a period instead of a comma as a decimal point.");
+                                        //document.getElementById("errmgs").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry, please use a period instead <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of a comma as a decimal point.";
+                                        //document.getElementById("errmgs1").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry, please use a period instead <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of a comma as a decimal point.";
+                                        
+                                        this.value="";
+                                    
+                                        
+                                        
+                                        
+                                        
+                                        } }); });
+                        function cssChange()
+                        {
+                            
+                            document.getElementById("ShowMyCustomPopLandscape").style.display="none";
+                            document.getElementById("ShowMyCustomPop").style.display="none";
+                            
+                        }
+                        </script>
+                    
+                    </head>
+    
+    
+    <body onload="_geturl1();">
+       <form name="fm">
+            <div class="table_container">
+            <table class="input_table">
+                <colgroup>
+                    <col width="30%">
+                    <col width="40%">
+                    <col width="30%">
+                </colgroup>
+                <tbody>
+				<tr><td colspan="3"></td></tr>
+                <tr>
+                    <td class="input_name">
+                       Height
+                    </td>
+                    <td>
+                        <input type="number" class="input" id="sum1" name="sum1" onkeyup="valcal(); check();" onkeypress="return isNumber(event)">
+                    </td>
+                    <td class="unit_label_input">
+                        <select name="ht" id="ht" onChange="valcal2(); check();" onblur="check1();" class="drop_unit">
+                            <option value="1" selected="selected">cm</option>
+                            <option value="2">Meter</option>
+                        </select>
+                    </td>
+				</tr>
+                
+				<tr>
+                    <td class="input_name">
+                        Weight
+                    </td>
+                    <td>
+                        <input type="number" class="input" id="sum2" name="sum2" onkeyup="valcal(); check();" onkeypress="return isNumber(event)">
+                    </td>
+                    <td class="unit_label_input">
+                        kg
+                    </td>
+				</tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="table_container">    
+			<table class="output_table">
+            <colgroup>
+                <col width="35%">
+                <col width="45%">
+                <col width="20%">
+            </colgroup>
+            <tbody id="tr_result">
+	            <tr>
+                    <td class="output_name_disabled" colspan="3">
+                   Body Mass Index (BMI)
+                    </td>
+                </tr>
+                <tr>    
+                    <td colspan="2">
+                        <input type="number" class="output_disabled" id="result" name="result" readonly="readonly">
+                    </td>
+                    <td class="unit_label_output_disabled">
+                      kg/m<sup>2</sup>
+                    </td>
+				</tr>
+            </tbody>
+            </table>
+            </div>
+            </form>
+            <div class="footer-div" id="998">
+                <table class="footer-button-table">
+                    <colgroup>
+                        <col width="50%">
+                        <col width="50%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td class="footer-button">
+                                <button class="mfooter-button" id="resetButton" onClick="window.location.href=window.location.href">Reset</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info_text_box_abb">
+               <!--  <p class="text_left">For recommendations correlated to BMI in CVD prevention Guideline, <a href="ref_ENAS252_9.1.5.0">see here</a>
+                    <br/>
+                    <br/> -->
+                    For recommendations correlated to BMI in Dyslipidaemia Guideline, <a href="ref_ENAS5197_6.1.0.0.html">see here</a></p>
+            </div>
+
+           <!-- <div id="ShowMyCustomPop"  class="AnimatePopup" style="position:absolute;display: none;">
+                <img src="trans_bg.png"  id="trans_bgImage"  width="100%" >
+                    
+                    <img src="Std_popUp.png" id="Std_popUpImage">
+                        <div  align="center" id="divPopupText" >
+                            <p style="font-size:12pt; font-weight:bold;  " id="errmgs">
+                            <b> 
+                                </p>
+                                </div>
+                          <img src="okBtn.png" id="okBtnImage" onClick="hidePopup()" ></button>
+                            </div>
+            -->
+              <div id="modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p class="modal-text" id="text">This is text of modal</p>
+                <p class="modal-button" id="modalButton">OK</p>
+            </div>
+        </div>      
+        
+    </body>
+</html>
+
+

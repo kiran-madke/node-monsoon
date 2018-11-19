@@ -1,0 +1,39 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>Grade</b>",
+        "text_id": "",
+        "id": "grade",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "Category",
+        "id": "result1",
+        "unit": "",
+        "type":"div"
+    },
+    {
+        "text": "Sensory loss",
+        "id": "result2",
+        "unit": "",
+        "type":"div"
+    },
+    {
+        "text": "Motor deficit",
+        "id": "result3",
+        "unit": "",
+        "type":"div"
+    },
+    {
+        "text": "Prognosis",
+        "id": "result4",
+        "unit": "",
+        "type":"div"
+    }
+]
+}

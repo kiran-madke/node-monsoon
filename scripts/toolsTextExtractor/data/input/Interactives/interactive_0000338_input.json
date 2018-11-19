@@ -1,0 +1,22 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "Type of VA",
+        "text_id": "",
+        "id": "gc",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "Definition",
+        "id": "sum_1",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    }
+]
+}

@@ -1,0 +1,907 @@
+﻿<html>
+
+<head>
+     <meta name="viewport" charset="UTF-8" />
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0' name='viewport' />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>AF Treatment Manager</title>
+    <link rel="stylesheet" type="text/css" href="af_style.css">
+
+    <!-- supporitng files for medication table -->
+
+    <script src="jquery-3.1.0.js"></script>
+    <script src="jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui.css">
+
+    <script src="interactive_0001426.js"></script>
+    <script src="stroke_prev_therapy_data.js"></script>
+    <script src="deviceDisplay.js"></script>
+    <script src="storage.js"></script>
+    <script src="af-treatment-manager-mEHRA-rateControl-2.0.js"></script>
+    <script src="af-treatment-manager-rhythmControl-1.0.js"></script>
+    <script src="af-treatment-manager-strokePrevention-1.0.js"></script>
+    <script src="decimalRounding.js"></script>
+    <script src="medicationSummary.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Stroke prevention therapy layout -->
+    <div class="section">
+        <div class="header-gray">
+            Stroke Prevention Therapy
+        </div>
+
+        <div style="padding-left: 5px; padding-right: 5px;">
+            <div class="tool-div">
+                <div id="strokePrevDiv">
+                </div>
+                <div class="category-result-div" id="categoryResultDiv">
+                    <p class="category-bold-text" id="catDivText" style="display: none;">Bleeding risk:</p>
+                </div>
+                <div>
+                    <button class="more-info-button" id="sponsorButton1">Financial<br/>support</button>
+                    <a href="ref_ENAS5194_8.2.0.0.html">
+                        <button class="more-info-button">More Information</button>
+                    </a>
+                </div>
+                <hr class="thin-line" />
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <p class="bold-text">Serum Creatinine</p>
+                            </td>
+                            <td>
+                                <input id="inputSerumCreatnine" size="6" type="number" />
+                            </td>
+                            <td>
+                                <select id="serumUnit">
+                                    <option>&#956;mol/l</option>
+                                    <option>mg/dl</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="egfr-mdrd-cell">
+                                <p class="bold-text">Weight</p>
+                            </td>
+                            <td class="egfr-mdrd-cell">
+                                <input id="inputWeight" size="6" class="input-result" type="number" />
+                            </td>
+                            <td class="egfr-mdrd-cell">
+                                <p class="bold-text">Kg</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="egfr-mdrd-cell">
+                                <p class="bold-text">eGFR (MDRD)</p>
+                            </td>
+                            <td class="egfr-mdrd-cell">
+                                <input id="outputMdrd" size="6" class="input-result" type="text" disabled />
+                            </td>
+                            <td class="egfr-mdrd-cell">
+                                <p class="bold-text">mL/min</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <hr class="thin-line" />
+                <table class="score-table">
+                    <tr class="score-row">
+                        <td class="question-cell">
+                            <p class="bold-text">Moderate/severe mitral stenosis or valve replacement is present</p>
+                        </td>
+                        <td class="option-cell-mv" id="mitralValveYes">
+                            <p class="option-cell-text">Yes</p>
+                        </td>
+                        <td class="option-cell-mv" id="mitralValveNo">
+                            <p class="option-cell-text">No</p>
+                        </td>
+                    </tr>
+                </table>
+                <hr class="thin-line" />
+                <div class="result-div">
+                    <div class="result-text" id="resultTextMv"></div>
+                </div>
+                <div>
+                    <button class="more-info-button" id="sponsorButton2">Financial<br/>support</button>
+                    <a href="ref_ENAS5194_8.3.0.0.html">
+                        <button class="more-info-button">More Information</button>
+                    </a>
+                </div>
+
+                <table class="med_add_table" id="med_table_1" width="100%">
+                    <colgroup>
+                        <col width="35%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="5%" />
+                    </colgroup>
+
+                    <tr>
+                        <td class="med_table_header_cell">Name</td>
+                        <td class="med_table_header_cell">Dose</td>
+                        <td class="med_table_header_cell">When</td>
+                        <td class="med_table_header_cell">Since</td>
+                        <td class="med_table_header_cell"></td>
+
+                    </tr>
+                </table>
+
+                <div>
+                    <p class="bold-text">*The usage of a drug combination is not recommended</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Rate Control layout -->
+    <div class="section">
+        <div class="header-gray">
+            Rate Control Therapy
+        </div>
+
+        <div style="padding-left: 5px; padding-right: 5px;">
+            <div class="tool-div">
+                <div>
+                    <div>
+                        <p class="bold-text">Kind of rate control</p>
+                        <table class="rc-button-table">
+                            <tr>
+                                <td class="center-button" id="rcKindAcute">
+                                    <p class="button-text-bold">Acute</p>
+                                </td>
+                                <td class="center-button" id="rcKindLong">
+                                    <p class="button-text-bold">Long-term</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <hr class="thin-line">
+                    </div>
+                </div>
+                <div id="mEhraDiv"></div>
+                <hr class="thin-line">
+                <table class="rc-button-table">
+                    <tr>
+                        <td class="calci-cell">
+                            <p class="calci-bold-text">
+                                Heart Rate
+                                <br />(bpm):
+                        </td>
+                        <td class="calci-cell">
+                            <input id="inputHeartRate" class="input-result" size="5" type="number">
+                        </td>
+                        <td class="calci-cell">
+                            <p class="calci-bold-text">
+                                Target Heart
+                                <br />rate (bpm):
+                            </p>
+                        </td>
+                        <td class="calci-cell">
+                            <input id="inputTargetHeartRate" class="input-result" size="5">
+                        </td>
+                    </tr>
+                </table>
+                <table class="score-table">
+
+                    <tr class="score-row">
+                        <td class="question-cell">
+                            <p class="bold-text1">LVEF&le;40%</p>
+                        </td>
+                        <td class="option-cell-rc" id="lvefYes">
+                            <p class="option-cell-text-rc">Yes</p>
+                        </td>
+                        <td class="option-cell-rc" id="lvefNo">
+                            <p class="option-cell-text-rc">No</p>
+                        </td>
+                        <td class="option-cell-rc" id="lvefUnknown">
+                            <p class="option-cell-text-unknown">Unknown</p>
+                        </td>
+                    </tr>
+                </table>
+                <div class="result-div">
+                    <div class="result-text" id="resultTextRc"></div>
+                </div>
+                <div>
+                    <button class="more-info-button" id="sponsorButton3">Financial<br/>support</button>
+                    <a href="ref_ENAS5194_9.2.0.0.html">
+                        <button class="more-info-button">More Information</button>
+                    </a>
+                </div>
+
+                <table class="med_add_table" id="med_table_2" width="100%">
+                    <colgroup>
+                        <col width="35%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="5%" />
+                    </colgroup>
+
+                    <tr>
+                        <td class="med_table_header_cell">Name</td>
+                        <td class="med_table_header_cell">Dose</td>
+                        <td class="med_table_header_cell">When</td>
+                        <td class="med_table_header_cell">Since</td>
+                        <td class="med_table_header_cell"></td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Rhythm therapy layout -->
+    <div class="section">
+        <div class="header-gray">
+            Rhythm Control Therapy
+        </div>
+
+        <div style="padding-left: 5px; padding-right: 5px;">
+            <div class="tool-div">
+                <div id="rctToolDiv">
+                    <div>
+                        <div id="rtMehraDiv"></div>
+                        <hr class="thin-line">
+                        <p class="bold-text">Signs of structural heart disease</p>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input name="rtSignRadioGroup" type="radio" id="radioRtSignNone" />
+                                        <label for="radioRtSignNone" class="normal-text">None/minimal</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="rtSignRadioGroup" type="radio" id="radioRtSignSignificant" />
+                                        <label for="radioRtSignSignificant" class="normal-text">Coronary artery disease, Significant valvular heart disease, abnormal LVH</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="rtSignRadioGroup" type="radio" id="radioRtSignHeartFailure" />
+                                        <label for="radioRtSignHeartFailure" class="normal-text">
+                                            Heart failure
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                    <hr class="thin-line">
+                    <div id="rtDrugDiv">
+                        <p class="bold-text">Have any of the following treatment options been used in the past?</p>
+                        <table class="score-table">
+                            <tr id="rtDrug1" class="score-row">
+                                <td class="question-cell">
+                                    <p class="bold-text">Amiodarone</p>
+                                </td>
+                                <td class="option-cell-rtdrug" id="rtdrug1_cell0">
+                                    <p class="option-cell-text">Yes</p>
+                                </td>
+                                <td class="option-cell-rtdrug" id="rtdrug1_cell1">
+                                    <p class="option-cell-text">No</p>
+                                </td>
+                            </tr>
+                            <tr id="rtDrug2" class="score-row">
+                                <td class="question-cell">
+                                    <p class="bold-text">Dronedarone</p>
+                                </td>
+                                <td class="option-cell-rtdrug" id="rtdrug2_cell0">
+                                    <p class="option-cell-text">Yes</p>
+                                </td>
+                                <td class="option-cell-rtdrug" id="rtdrug2_cell1">
+                                    <p class="option-cell-text">No</p>
+                                </td>
+                            </tr>
+                            <tr id="rtDrug3" class="score-row">
+                                <td class="question-cell">
+                                    <p class="bold-text">Flecainide</p>
+                                </td>
+                                <td class="option-cell-rtdrug" id="rtdrug3_cell0">
+                                    <p class="option-cell-text">Yes</p>
+                                </td>
+                                <td class="option-cell-rtdrug" id="rtdrug3_cell1">
+                                    <p class="option-cell-text">No</p>
+                                </td>
+                            </tr>
+                            <tr id="rtDrug4" class="score-row">
+                                <td class="question-cell">
+                                    <p class="bold-text">Propafenone</p>
+                                </td>
+                                <td class="option-cell-rtdrug" id="rtdrug4_cell0">
+                                    <p class="option-cell-text">Yes</p>
+                                </td>
+                                <td class="option-cell-rtdrug" id="rtdrug4_cell1">
+                                    <p class="option-cell-text">No</p>
+                                </td>
+                            </tr>
+                            <tr id="rtDrug5" class="score-row">
+                                <td class="question-cell">
+                                    <p class="bold-text">Sotalol</p>
+                                </td>
+                                <td class="option-cell-rtdrug" id="rtdrug5_cell0">
+                                    <p class="option-cell-text">Yes</p>
+                                </td>
+                                <td class="option-cell-rtdrug" id="rtdrug5_cell1">
+                                    <p class="option-cell-text">No</p>
+                                </td>
+                            </tr>
+                            <tr id="rtDrug1" class="score-row">
+                                <td class="question-cell">
+                                    <p class="bold-text">Catheter ablation</p>
+                                </td>
+                                <td class="option-cell-rtdrug" id="rtdrug6_cell0">
+                                    <p class="option-cell-text">Yes</p>
+                                </td>
+                                <td class="option-cell-rtdrug" id="rtdrug6_cell1">
+                                    <p class="option-cell-text">No</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <hr class="thin-line">
+                    <div class="result-div">
+                        <div class="result-text" id="resultTextDrugsRt"></div>
+                    </div>
+                    <div>
+                        <button class="more-info-button" id="sponsorButton4">Financial<br/>support</button>
+                        <a href="ref_ENAS5194_10.1.2.0.html">
+                            <button class="more-info-button">More Information</button>
+                        </a>
+                    </div>
+
+                    <table class="med_add_table" id="med_table_3" width="100%">
+                        <colgroup>
+                            <col width="35%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="5%" />
+                        </colgroup>
+                        <tr>
+                            <td class="med_table_header_cell">Name</td>
+                            <td class="med_table_header_cell">Dose</td>
+                            <td class="med_table_header_cell">When</td>
+                            <td class="med_table_header_cell">Since</td>
+                            <td class="med_table_header_cell"></td>
+
+                        </tr>
+
+                    </table>
+
+                    <div>
+                        <p class="bold-text">*The usage of a drug combination is not recommended</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Medication summary -->
+    <div class="section">
+        <div class="header-blue">
+            AF THERAPY SUMMARY
+        </div>
+
+        <div style="padding-left: 5px; padding-right: 5px;">
+            <div class="tool-div">
+                <div>
+                    <table class="table_summary" width="100%">
+                        <colgroup>
+                            <col width="40%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                        </colgroup>
+                        <tr>
+                            <td colspan="4" class="sub_header_summary">Stroke prevention therapy</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <table class="med_add_table" id="summ_med_table_1" width="100%">
+                                    <colgroup>
+                                        <col width="40%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                    </colgroup>
+                                    <tr>
+                                        <td class="med_table_header_cell">Name</td>
+                                        <td class="med_table_header_cell">Dose</td>
+                                        <td class="med_table_header_cell">When</td>
+                                        <td class="med_table_header_cell">Since</td>
+                                    </tr>
+                                    <tr id="dummy_section_1">
+                                        <td class="med_table_cell">Choice of Anticoagulant</td>
+                                        <td class="med_table_cell"></td>
+                                        <td class="med_table_cell"></td>
+                                        <td class="med_table_cell"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="sub_header_summary">Rate control therapy</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <table class="med_add_table" id="summ_med_table_2" width="100%">
+                                    <colgroup>
+                                        <col width="40%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                    </colgroup>
+                                    <tr>
+                                        <td class="med_table_header_cell">Name</td>
+                                        <td class="med_table_header_cell">Dose</td>
+                                        <td class="med_table_header_cell">When</td>
+                                        <td class="med_table_header_cell">Since</td>
+                                    </tr>
+                                    <tr id="dummy_section_2">
+                                        <td class="med_table_cell">Rate Control Choice</td>
+                                        <td class="med_table_cell"></td>
+                                        <td class="med_table_cell"></td>
+                                        <td class="med_table_cell"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="sub_header_summary">Rhythm control therapy</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <table class="med_add_table" id="summ_med_table_3" width="100%">
+                                    <colgroup>
+                                        <col width="40%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                    </colgroup>
+                                    <tr>
+                                        <td class="med_table_header_cell">Name</td>
+                                        <td class="med_table_header_cell">Dose</td>
+                                        <td class="med_table_header_cell">When</td>
+                                        <td class="med_table_header_cell">Since</td>
+                                    </tr>
+                                    <tr id="dummy_section_3">
+                                        <td class="med_table_cell">Rhythm Control Choice</td>
+                                        <td class="med_table_cell"></td>
+                                        <td class="med_table_cell"></td>
+                                        <td class="med_table_cell"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="sub_header_summary">Other Medications</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <table class="med_add_table" id="summ_med_table_4" width="100%">
+                                    <colgroup>
+                                        <col width="35%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="5%" />
+                                    </colgroup>
+                                    <tr>
+                                        <td class="med_table_header_cell">Name</td>
+                                        <td class="med_table_header_cell">Dose</td>
+                                        <td class="med_table_header_cell">When</td>
+                                        <td class="med_table_header_cell">Since</td>
+                                        <td class="med_table_header_cell"></td>
+
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="sub_header_summary">
+                                <hr class="thin-line" /> Next Steps/Comments
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <textarea rows="4" id="commentText"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!--<button id="btnDataExport">Export Data</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Sponsor Modal-->
+    <div id="sponsorModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content"  >
+            <div id="sponsorImage" style="">
+                <img src="sponsor.png"   />
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="myModalBody" class="modal-body">
+                <table id="section_med_one" class="med_to_add_table">
+                    <tr>
+                        <th class="med_to_add_header">Add Medication<span class="close">&times </span></th>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Acenocoumarol</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Apixaban</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Dabigatran</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Edoxaban</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Fluindione</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Phenprocoumon</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Rivaroxaban</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Warfarin</td>
+                    </tr>
+                </table>
+                <table id="section_med_two" class="med_to_add_table">
+                    <tr>
+                        <th class="med_to_add_header">Add Medication<span class="close">&times </span></th>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Bisoprolol</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Carvedilol</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Nebivolol</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Esmolol</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Diltiazem</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Verapamil</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Digoxin</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Digitoxin</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Amiodarone</td>
+                    </tr>
+                </table>
+                <table id="section_med_three" class="med_to_add_table">
+                    <tr>
+                        <th class="med_to_add_header">Add Medication<span class="close">&times </span></th>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Amiodarone</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Dronedarone</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Flecainide</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Propafenone</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Sotalol</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Catheter ablation</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="WhenModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="WhenModalBody" class="modal-body">
+                <table id="when_table" class="med_to_add_table">
+                    <tr>
+                        <th class="med_to_add_header">When<span class="close">&times </span></th>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">1/day</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">2/day</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">3/day</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">4/day</td>
+                    </tr>
+                    <tr>
+                        <td class="med_to_add_cell">Other</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#med_table_1").append('<tr><td style="color:grey;font-size:13px;"  id="addMedication_1" colspan="5">Add Medication...</td></tr>');
+            $("#med_table_2").append('<tr><td style="color:grey;font-size:13px;"  id="addMedication_2" colspan="5">Add Medication...</td></tr>');
+            $("#med_table_3").append('<tr><td style="color:grey;font-size:13px;"  id="addMedication_3" colspan="5">Add Medication...</td></tr>');
+            $("#summ_med_table_4").append('<tr><td style="color:grey;font-size:13px;"  id="addMedication_4" colspan="5">Add Medication...</td></tr>');
+
+
+            $("#addMedication_1").on("click", {
+                section: 1
+            }, initModal);
+            $("#addMedication_2").on("click", {
+                section: 2
+            }, initModal);
+            $("#addMedication_3").on("click", {
+                section: 3
+            }, initModal);
+
+            $("#addMedication_4").on("click", {
+                section: 4
+            }, initOtherMedication);
+
+            $("#sponsorButton1").click(function () {
+                showSponsor();
+            });
+
+            $("#sponsorButton2").click(function () {
+                showSponsor();
+            });
+
+            $("#sponsorButton3").click(function () {
+                showSponsor();
+            });
+
+            $("#sponsorButton4").click(function () {
+                showSponsor();
+            });
+
+            $("#sponsorModal").click(function () {
+                // When the user clicks anywhere outside of the modal, close it
+
+                var sponsorModal = document.getElementById("sponsorModal");
+
+                sponsorModal.style.display = "none";
+            });
+
+        });
+
+        function showSponsor() {
+            var sponsorModal = document.getElementById("sponsorModal");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close");
+            // When the user clicks the button, open the modal
+            sponsorModal.style.display = "block";
+            // When the user clicks on <span> (x), close the modal
+
+            //x.style.display = 'table';
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == sponsorModal) {
+                    sponsorModal.style.display = "none";
+                }
+            }
+        }
+
+
+        function initOtherMedication() {
+            var indx = $('#addMedication_4').parent().index();
+            $('<tr id = \"other_1_row_' + indx + '\"><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\" id=\"other_name_' + 1 + '_' + indx + '\" class=\"dose_input\" type=\"text\"/></td><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\" id=\"other_dose_' + 1 + '_' + indx + '\" class=\"dose_input\" type=\"text\"/></td><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\" id=\"other_when' + 1 + '_' + indx + '\" class=\"when_input\" type=\"text\" readonly/></td><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\"  class=\"date-picker\"  id=\"other_since_' + 1 + '_' + indx + '\" type=\"text\" readonly></td><td class=\"med_table_cell\" align=\"center\"><span class=\"delete-icon ui-icon ui-icon-trash\"></td></tr>').insertBefore($('#summ_med_table_4 tbody tr:nth(' + indx + ')'));
+            setWhenInput();
+            setDoseInput();
+            setDatePicker();
+            setDelete();
+
+        }
+
+        $("#section_med_one td").click(function () {
+
+            var indx = $('#addMedication_1').parent().index();
+            $('<tr id = \"sec_1_row_' + indx + '\" ><td class=\"med_table_cell\">' + $(this).html() + '</td><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\" id=\"dose_' + 1 + '_' + indx + '\" class=\"dose_input\" type=\"text\"/></td><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\" id=\"when' + 1 + '_' + indx + '\" class=\"when_input\" type=\"text\" readonly/></td><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\"  class=\"date-picker\"  id=\"since_' + 1 + '_' + indx + '\" type=\"text\" readonly></td><td class=\"med_table_cell\" align=\"center\"><span class=\"delete-icon ui-icon ui-icon-trash\"></td></tr>').insertBefore($('#med_table_1 tbody tr:nth(' + indx + ')'));
+            $('#dummy_section_1').hide();
+            $('#summ_med_table_1 tr:last').after('<tr id = \"summ_sec_1_row_' + indx + '\"><td class=\"med_table_cell\">' + $(this).html() + '</td><td class=\"med_table_cell\"><span style=\"display:table-cell; width:100%\" id=\"sum_dose_' + 1 + '_' + indx + '\" class=\"dose_input\" type=\"text\"/></td><td class=\"med_table_cell\"><span style=\"display:table-cell; width:100%\" id=\"sum_when' + 1 + '_' + indx + '\" class=\"when_input\" type=\"text\"/></td><td class=\"med_table_cell\"><span style=\"display:table-cell; width:100%\" id=\"sum_since_' + 1 + '_' + indx + '\" type=\"text\"></td></tr>');
+            var modal = document.getElementById('myModal');
+            modal.style.display = "none";
+            setWhenInput();
+            setDoseInput();
+            setDatePicker();
+            setDelete();
+
+        });
+
+        $("#section_med_two td").click(function () {
+
+            var indx = $('#addMedication_2').parent().index();
+            $('<tr id = \"sec_2_row_' + indx + '\"><td  class=\"med_table_cell\">' + $(this).html() + '</td><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\" id=\"dose_' + 2 + '_' + indx + '\" class=\"dose_input\" type=\"text\"/></td><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\" id=\"when' + 2 + '_' + indx + '\" class=\"when_input\" type=\"text\" readonly/></td><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\" class=\"date-picker\"  id=\"since_' + 2 + '_' + indx + '\" type=\"text\" readonly></td><td class=\"med_table_cell\" align=\"center\"><span class=\"delete-icon ui-icon ui-icon-trash\"></td></tr>').insertBefore($('#med_table_2 tbody tr:nth(' + indx + ')'));
+            $('#dummy_section_2').hide();
+            $('#summ_med_table_2 tr:last').after('<tr id = \"summ_sec_2_row_' + indx + '\"><td class=\"med_table_cell\">' + $(this).html() + '</td><td class=\"med_table_cell\"><span style=\"display:table-cell; width:100%\" id=\"sum_dose_' + 2 + '_' + indx + '\" class=\"dose_input\" type=\"text\"/></td><td class=\"med_table_cell\"><span style=\"display:table-cell; width:100%\" id=\"sum_when' + 2 + '_' + indx + '\" class=\"when_input\" type=\"text\"/></td><td class=\"med_table_cell\"><span style=\"display:table-cell; width:100%\" id=\"sum_since_' + 2 + '_' + indx + '\" type=\"text\"></td></tr>');
+            var modal = document.getElementById('myModal');
+            modal.style.display = "none";
+            setWhenInput();
+            setDoseInput();
+            setDatePicker();
+            setDelete();
+
+        });
+
+
+        $("#section_med_three td").click(function () {
+
+            var indx = $('#addMedication_3').parent().index();
+            $('<tr id = \"sec_3_row_' + indx + '\"><td class=\"med_table_cell\">' + $(this).html() + '</td><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\" id=\"dose_' + 3 + '_' + indx + '\" class=\"dose_input\" type=\"text\"/></td><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\" id=\"when' + 3 + '_' + indx + '\" class=\"when_input\" type=\"text\" readonly/></td><td class=\"med_table_cell\"><input style=\"display:table-cell; width:100%\" class=\"date-picker\"  id=\"since_' + 3 + '_' + indx + '\" type=\"text\" readonly></td><td class=\"med_table_cell\" align=\"center\"><span class=\"delete-icon ui-icon ui-icon-trash\"></td></tr>').insertBefore($('#med_table_3 tbody tr:nth(' + indx + ')'));
+            $('#dummy_section_3').hide();
+            $('#summ_med_table_3 tr:last').after('<tr id = \"summ_sec_3_row_' + indx + '\"><td class=\"med_table_cell\">' + $(this).html() + '</td><td class=\"med_table_cell\"><span style=\"display:table-cell; width:100%\" id=\"sum_dose_' + 3 + '_' + indx + '\" class=\"dose_input\" type=\"text\"/></td><td class=\"med_table_cell\"><span style=\"display:table-cell; width:100%\" id=\"sum_when' + 3 + '_' + indx + '\" class=\"when_input\" type=\"text\"/></td><td class=\"med_table_cell\"><span style=\"display:table-cell; width:100%\" id=\"sum_since_' + 3 + '_' + indx + '\" type=\"text\"></td></tr>');
+
+            var modal = document.getElementById('myModal');
+            modal.style.display = "none";
+            setWhenInput();
+            setDoseInput();
+            setDatePicker();
+            setDelete();
+
+        });
+
+        function setDelete() {
+            $(".delete-icon").on("click", {
+                when: $(this).attr('id')
+            }, deleteMedRow);
+        }
+
+
+        function deleteMedRow(event) {
+            var listItemId = $(this).closest('tr').attr('id');
+            $('#' + listItemId).remove();
+            $('#summ_' + listItemId).remove();
+
+        }
+
+        function setWhenInput() {
+            $(".when_input").on("click", {
+                when: $(this).attr('id')
+            }, initWhenModal);
+        }
+
+
+        function initWhenModal(event) {
+            var whenId = $(this).attr('id');
+
+            var modal = document.getElementById('WhenModal');
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[3];
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            var x = document.getElementById('when_table');
+            x.style.display = 'table';
+
+            // When the user clicks the button, open the modal
+            modal.style.display = "block";
+            // When the user clicks on <span> (x), close the modal
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+            $("#when_table td").click(function () {
+                $('#' + whenId).val($(this).html());
+                $("#" + 'sum_' + whenId).html($(this).html());
+                whenId = null;
+                modal.style.display = "none";
+            });
+        }
+
+
+
+
+        function setDoseInput() {
+            $('.dose_input').on('change paste keyup', function (e) {
+                var sumId = $(this).attr('id');
+                $("#" + 'sum_' + sumId).html($(this).val());
+
+            });
+        }
+
+        function setDatePicker() {
+
+            $('.date-picker').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                showButtonPanel: true,
+                dateFormat: 'MM/y',
+                monthNames: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+                monthNamesShort: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+                onClose: function (dateText, inst) {
+                    $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+                    var sumId = $(this).attr('id');
+                    $("#" + 'sum_' + sumId).html($(this).val());
+                }
+            });
+        }
+
+        function initModal(event) {
+            var section = event.data.section;
+            var modal = document.getElementById('myModal');
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close");
+            // When the user clicks the button, open the modal
+            modal.style.display = "block";
+            // When the user clicks on <span> (x), close the modal
+            if (section == 1) {
+                var x = document.getElementById('section_med_one');
+            } else if (section == 2) {
+                var x = document.getElementById('section_med_two')
+                $("#section_med_two td").click(function () {
+                    modal.style.display = "none";
+                });
+            } else if (section == 3) {
+                var x = document.getElementById('section_med_three');
+                $("#section_med_three td").click(function () {
+                    modal.style.display = "none";
+                });
+            }
+
+            var medTables = document.getElementsByClassName("med_to_add_table");
+            for (var i = 0; i < medTables.length; i++) {
+                medTables[i].style.display = 'none';
+                span[i].onclick = function () {
+                    modal.style.display = "none";
+                }
+            }
+            x.style.display = 'table';
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+
+                    modal.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

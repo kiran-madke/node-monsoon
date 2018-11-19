@@ -1,0 +1,362 @@
+﻿[
+{
+"old_id":"1",
+"old_nametree":"Authors and legal information",
+"old_numtree":"1.0.0.0",
+"old_htmlpage":"ENAS5326_1.0.0.0",
+"new_id":"1",
+"new_nametree":"Authors and legal information",
+"new_numtree":"1.0.0.0",
+"new_htmlpage":"ENAS5326_1.0.0.0"
+},
+{
+"old_id":"2",
+"old_nametree":"Preamble",
+"old_numtree":"2.0.0.0",
+"old_htmlpage":"ENAS5326_2.0.0.0",
+"new_id":"2",
+"new_nametree":"Preamble",
+"new_numtree":"2.0.0.0",
+"new_htmlpage":"ENAS5326_2.0.0.0"
+},
+{
+"old_id":"3",
+"old_nametree":"Introduction",
+"old_numtree":"3.0.0.0",
+"old_htmlpage":"ENAS5326_3.0.0.0",
+"new_id":"3",
+"new_nametree":"Introduction",
+"new_numtree":"3.0.0.0",
+"new_htmlpage":"ENAS5326_3.0.0.0"
+},
+{
+"old_id":"4",
+"old_nametree":"DAPT duration tools and recommendations",
+"old_numtree":"4.0.0.0",
+"old_htmlpage":"null",
+"new_id":"4",
+"new_nametree":"DAPT duration tools and recommendations",
+"new_numtree":"4.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"5",
+"old_nametree":"Risk scores",
+"old_numtree":"4.1.0.0",
+"old_htmlpage":"ENAS5326_4.1.0.0",
+"new_id":"5",
+"new_nametree":"Risk scores",
+"new_numtree":"4.1.0.0",
+"new_htmlpage":"ENAS5326_4.1.0.0"
+},
+{
+"old_id":"6",
+"old_nametree":"Recommendations",
+"old_numtree":"4.2.0.0",
+"old_htmlpage":"null",
+"new_id":"6",
+"new_nametree":"Recommendations",
+"new_numtree":"4.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"7",
+"old_nametree":"Use of risk scores",
+"old_numtree":"4.2.1.0",
+"old_htmlpage":"ENAS5326_4.2.1.0",
+"new_id":"7",
+"new_nametree":"Use of risk scores",
+"new_numtree":"4.2.1.0",
+"new_htmlpage":"ENAS5326_4.2.1.0"
+},
+{
+"old_id":"8",
+"old_nametree":"P2Y12 inhibitor selection and timing",
+"old_numtree":"4.2.2.0",
+"old_htmlpage":"ENAS5326_4.2.2.0",
+"new_id":"8",
+"new_nametree":"P2Y12 inhibitor selection and timing",
+"new_numtree":"4.2.2.0",
+"new_htmlpage":"ENAS5326_4.2.2.0"
+},
+{
+"old_id":"9",
+"old_nametree":"Measures to minimize bleeding",
+"old_numtree":"4.2.3.0",
+"old_htmlpage":"ENAS5326_4.2.3.0",
+"new_id":"9",
+"new_nametree":"Measures to minimize bleeding",
+"new_numtree":"4.2.3.0",
+"new_htmlpage":"ENAS5326_4.2.3.0"
+},
+{
+"old_id":"10",
+"old_nametree":"Switching oral P2Y12 inhibitors",
+"old_numtree":"4.2.4.0",
+"old_htmlpage":"ENAS5326_4.2.4.0",
+"new_id":"10",
+"new_nametree":"Switching oral P2Y12 inhibitors",
+"new_numtree":"4.2.4.0",
+"new_htmlpage":"ENAS5326_4.2.4.0"
+},
+{
+"old_id":"11",
+"old_nametree":"Switching algorithms",
+"old_numtree":"4.3.0.0",
+"old_htmlpage":"ENAS5326_4.3.0.0",
+"new_id":"11",
+"new_nametree":"Switching algorithms",
+"new_numtree":"4.3.0.0",
+"new_htmlpage":"ENAS5326_4.3.0.0"
+},
+{
+"old_id":"12",
+"old_nametree":"DAPT and PCI",
+"old_numtree":"5.0.0.0",
+"old_htmlpage":"null",
+"new_id":"12",
+"new_nametree":"DAPT and PCI",
+"new_numtree":"5.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"13",
+"old_nametree":"Overview",
+"old_numtree":"5.1.0.0",
+"old_htmlpage":"ENAS5326_5.1.0.0",
+"new_id":"13",
+"new_nametree":"Overview",
+"new_numtree":"5.1.0.0",
+"new_htmlpage":"ENAS5326_5.1.0.0"
+},
+{
+"old_id":"14",
+"old_nametree":"DAPT & stent choices in stable CAD with PCI",
+"old_numtree":"5.2.0.0",
+"old_htmlpage":"ENAS5326_5.2.0.0",
+"new_id":"14",
+"new_nametree":"DAPT & stent choices in stable CAD with PCI",
+"new_numtree":"5.2.0.0",
+"new_htmlpage":"ENAS5326_5.2.0.0"
+},
+{
+"old_id":"15",
+"old_nametree":"DAPT in ACS treated with PCI",
+"old_numtree":"5.3.0.0",
+"old_htmlpage":"ENAS5326_5.3.0.0",
+"new_id":"15",
+"new_nametree":"DAPT in ACS treated with PCI",
+"new_numtree":"5.3.0.0",
+"new_htmlpage":"ENAS5326_5.3.0.0"
+},
+{
+"old_id":"16",
+"old_nametree":"Algorithm for DAPT in PCI",
+"old_numtree":"5.4.0.0",
+"old_htmlpage":"ENAS5326_5.4.0.0",
+"new_id":"16",
+"new_nametree":"Algorithm for DAPT in PCI",
+"new_numtree":"5.4.0.0",
+"new_htmlpage":"ENAS5326_5.4.0.0"
+},
+{
+"old_id":"17",
+"old_nametree":"DAPT and cardiac surgery",
+"old_numtree":"6.0.0.0",
+"old_htmlpage":"null",
+"new_id":"17",
+"new_nametree":"DAPT and cardiac surgery",
+"new_numtree":"6.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"18",
+"old_nametree":"Cardiac surgery in stable/unstable CAD",
+"old_numtree":"6.1.0.0",
+"old_htmlpage":"ENAS5326_6.1.0.0",
+"new_id":"18",
+"new_nametree":"Cardiac surgery in stable/unstable CAD",
+"new_numtree":"6.1.0.0",
+"new_htmlpage":"ENAS5326_6.1.0.0"
+},
+{
+"old_id":"19",
+"old_nametree":"Algo. in ACS undergoing CABG",
+"old_numtree":"6.2.0.0",
+"old_htmlpage":"ENAS5326_6.2.0.0",
+"new_id":"19",
+"new_nametree":"Algo. in ACS undergoing CABG",
+"new_numtree":"6.2.0.0",
+"new_htmlpage":"ENAS5326_6.2.0.0"
+},
+{
+"old_id":"20",
+"old_nametree":"DAPT in medically managed ACS",
+"old_numtree":"7.0.0.0",
+"old_htmlpage":"null",
+"new_id":"20",
+"new_nametree":"DAPT in medically managed ACS",
+"new_numtree":"7.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"21",
+"old_nametree":"Recommendations",
+"old_numtree":"7.1.0.0",
+"old_htmlpage":"ENAS5326_7.1.0.0",
+"new_id":"21",
+"new_nametree":"Recommendations",
+"new_numtree":"7.1.0.0",
+"new_htmlpage":"ENAS5326_7.1.0.0"
+},
+{
+"old_id":"22",
+"old_nametree":"Algorithm",
+"old_numtree":"7.2.0.0",
+"old_htmlpage":"ENAS5326_7.2.0.0",
+"new_id":"22",
+"new_nametree":"Algorithm",
+"new_numtree":"7.2.0.0",
+"new_htmlpage":"ENAS5326_7.2.0.0"
+},
+{
+"old_id":"23",
+"old_nametree":"DAPT and concomitant OAC",
+"old_numtree":"8.0.0.0",
+"old_htmlpage":"null",
+"new_id":"23",
+"new_nametree":"DAPT and concomitant OAC",
+"new_numtree":"8.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"24",
+"old_nametree":"Strategies to avoid bleed. complications",
+"old_numtree":"8.1.0.0",
+"old_htmlpage":"ENAS5326_8.1.0.0",
+"new_id":"24",
+"new_nametree":"Strategies to avoid bleed. complications",
+"new_numtree":"8.1.0.0",
+"new_htmlpage":"ENAS5326_8.1.0.0"
+},
+{
+"old_id":"25",
+"old_nametree":"Stent-related high ischemic risk features",
+"old_numtree":"8.2.0.0",
+"old_htmlpage":"ENAS5326_8.2.0.0",
+"new_id":"25",
+"new_nametree":"Stent-related high ischemic risk features",
+"new_numtree":"8.2.0.0",
+"new_htmlpage":"ENAS5326_8.2.0.0"
+},
+{
+"old_id":"26",
+"old_nametree":"Unfavourable pt. profile for OAC & APT",
+"old_numtree":"8.3.0.0",
+"old_htmlpage":"ENAS5326_8.3.0.0",
+"new_id":"26",
+"new_nametree":"Unfavourable pt. profile for OAC & APT",
+"new_numtree":"8.3.0.0",
+"new_htmlpage":"ENAS5326_8.3.0.0"
+},
+{
+"old_id":"27",
+"old_nametree":"Recommendations",
+"old_numtree":"8.4.0.0",
+"old_htmlpage":"ENAS5326_8.4.0.0",
+"new_id":"27",
+"new_nametree":"Recommendations",
+"new_numtree":"8.4.0.0",
+"new_htmlpage":"ENAS5326_8.4.0.0"
+},
+{
+"old_id":"28",
+"old_nametree":"Pts. with an indication for OAC undergoing PCI",
+"old_numtree":"8.5.0.0",
+"old_htmlpage":"ENAS5326_8.5.0.0",
+"new_id":"28",
+"new_nametree":"Pts. with an indication for OAC undergoing PCI",
+"new_numtree":"8.5.0.0",
+"new_htmlpage":"ENAS5326_8.5.0.0"
+},
+{
+"old_id":"29",
+"old_nametree":"Elective non-cardiac surgery",
+"old_numtree":"9.0.0.0",
+"old_htmlpage":"null",
+"new_id":"29",
+"new_nametree":"Elective non-cardiac surgery",
+"new_numtree":"9.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"30",
+"old_nametree":"Recommendations",
+"old_numtree":"9.1.0.0",
+"old_htmlpage":"ENAS5326_9.1.0.0",
+"new_id":"30",
+"new_nametree":"Recommendations",
+"new_numtree":"9.1.0.0",
+"new_htmlpage":"ENAS5326_9.1.0.0"
+},
+{
+"old_id":"31",
+"old_nametree":"Elective non-cardiac surgery timing after PCI",
+"old_numtree":"9.2.0.0",
+"old_htmlpage":"ENAS5326_9.2.0.0",
+"new_id":"31",
+"new_nametree":"Elective non-cardiac surgery timing after PCI",
+"new_numtree":"9.2.0.0",
+"new_htmlpage":"ENAS5326_9.2.0.0"
+},
+{
+"old_id":"32",
+"old_nametree":"Minimal discont. & re-implementation time",
+"old_numtree":"9.3.0.0",
+"old_htmlpage":"ENAS5326_9.3.0.0",
+"new_id":"32",
+"new_nametree":"Minimal discont. & re-implementation time",
+"new_numtree":"9.3.0.0",
+"new_htmlpage":"ENAS5326_9.3.0.0"
+},
+{
+"old_id":"33",
+"old_nametree":"Bleeding mgmt. with or without OAC",
+"old_numtree":"10.0.0.0",
+"old_htmlpage":"null",
+"new_id":"33",
+"new_nametree":"Bleeding mgmt. with or without OAC",
+"new_numtree":"10.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"34",
+"old_nametree":"Gender and special populations",
+"old_numtree":"10.1.0.0",
+"old_htmlpage":"ENAS5326_10.1.0.0",
+"new_id":"34",
+"new_nametree":"Gender and special populations",
+"new_numtree":"10.1.0.0",
+"new_htmlpage":"ENAS5326_10.1.0.0"
+},
+{
+"old_id":"35",
+"old_nametree":"Practical recom. for management",
+"old_numtree":"10.2.0.0",
+"old_htmlpage":"ENAS5326_10.2.0.0",
+"new_id":"35",
+"new_nametree":"Practical recom. for management",
+"new_numtree":"10.2.0.0",
+"new_htmlpage":"ENAS5326_10.2.0.0"
+},
+{
+"old_id":"36",
+"old_nametree":"Abbreviations and acronyms",
+"old_numtree":"11.0.0.0",
+"old_htmlpage":"ENAS5326_11.0.0.0",
+"new_id":"36",
+"new_nametree":"Abbreviations and acronyms",
+"new_numtree":"11.0.0.0",
+"new_htmlpage":"ENAS5326_11.0.0.0"
+}
+]

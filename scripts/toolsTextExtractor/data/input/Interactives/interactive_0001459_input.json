@@ -1,0 +1,36 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>Agent</b>",
+        "text_id": "",
+        "id": "grade",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "Normal renal function and stage 1–3 CKD*",
+        "id": "result1",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    },
+    {
+        "text": "Stage 4 CKD**",
+        "id": "result2",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    },
+    {
+        "text": "Stage 5 CKD***",
+        "id": "result3",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    }
+]
+}

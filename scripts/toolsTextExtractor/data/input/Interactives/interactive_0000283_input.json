@@ -1,0 +1,22 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "Cholesterol value of",
+        "text_id": "",
+        "id": "unit",
+        "unit": "dropdown",
+        "unitId":"drop",
+        "type":"input"
+    }
+    ],
+"output":[
+	{
+        "text": "is approx. equivalent to",
+        "id": "DisplayAnswer",
+        "unit": "id",
+        "unitId":"ChangeUnit_text",
+        "type":"input"
+    }
+]
+}

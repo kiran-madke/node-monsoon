@@ -1,0 +1,69 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "Ulcer",
+        "text_id": "",
+        "id": "ulcer",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+	{
+        "text": "Gangrene",
+        "text_id": "",
+        "id": "gangrene",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+	{
+        "text": "ABI",
+        "text_id": "",
+        "id": "abi",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+	{
+        "text": "Ankle pressure (mmHg)",
+        "text_id": "",
+        "id": "ankle",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+	{
+        "text": "Toe pressure or TcPO<sub>2</sub>",
+        "text_id": "",
+        "id": "toe",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+	{
+        "text": "fI (foot Infection)",
+        "text_id": "",
+        "id": "fi",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "WIfI",
+        "id": "result1",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    },
+    {
+        "text": "Risk of amputation",
+        "id": "result2",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    }
+]
+}

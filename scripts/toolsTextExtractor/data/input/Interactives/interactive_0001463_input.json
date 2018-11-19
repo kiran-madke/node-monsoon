@@ -1,0 +1,30 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>Type of setting</b>",
+        "text_id": "",
+        "id": "setting_type",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>P2Y<sub>12</sub> inhibitor type</b>",
+        "text_id": "",
+        "id": "inhibitor_type",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "Result",
+        "id": "result1",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    }
+]
+}

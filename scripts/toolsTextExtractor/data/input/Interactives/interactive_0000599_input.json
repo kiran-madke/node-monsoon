@@ -1,0 +1,77 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "Country of origin",
+        "text_id": "",
+        "id": "gc",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "Gender",
+        "text_id": "",
+        "id": "button",
+        "unit": "",
+        "unitId":"",
+        "type":"button1"
+    },
+    {
+        "text": "Age",
+        "text_id": "",
+        "id": "age",
+        "unit": "years",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "Tobacco use",
+        "text_id": "",
+        "id": "button",
+        "unit": "",
+        "unitId":"",
+        "type":"button2"
+    },
+    {
+        "text": "Systolic BP",
+        "text_id": "",
+        "id": "SBP",
+        "unit": "mmHg",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "Total cholesterol",
+        "text_id": "",
+        "id": "TC",
+        "unit": "mmol/L (mg/dL)",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "HDL-C (optional)",
+        "text_id": "",
+        "id": "HDL",
+        "unit": "mmol/L (mg/dL)",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "Fatal CVD risk",
+        "id": "sum",
+        "unit": "10 years risk in %",
+        "unitId":"",
+        "type":"input"
+    },
+    {
+        "text": "Total CVD risk",
+        "id": "sum1",
+        "unit": "10 years risk in %",
+        "unitId":"",
+        "type":"input"
+    }
+]
+}

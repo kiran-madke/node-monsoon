@@ -1,0 +1,398 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5283_1.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Diagnosis and pathology",
+"tocnametree":"Diagnosis and pathology",
+"htmlpage":"ENAS5283_2.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Staging and risk assessment",
+"tocnametree":"Staging and risk assessment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.1.0.0",
+"id":"4",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5283_3.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.2.0.0",
+"id":"5",
+"nametree":"TNM staging",
+"tocnametree":"TNM staging",
+"htmlpage":"ENAS5283_3.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.3.0.0",
+"id":"6",
+"nametree":"Anatomic stage/ prognostic groups",
+"tocnametree":"Anatomic stage/ prognostic groups",
+"htmlpage":"ENAS5283_3.3.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.0.0.0",
+"id":"7",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"8",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5283_4.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.2.0.0",
+"id":"9",
+"nametree":"Gastric CA treatment algo.",
+"tocnametree":"Gastric CA treatment algo.",
+"htmlpage":"ENAS5283_4.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.0.0",
+"id":"10",
+"nametree":"Mgmt. of local/ locoregional disease",
+"tocnametree":"Mgmt. of local/ locoregional disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.3.1.0",
+"id":"11",
+"nametree":"Surgery",
+"tocnametree":"Surgery",
+"htmlpage":"ENAS5283_4.3.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.2.0",
+"id":"12",
+"nametree":"Perioperative chemotherapy",
+"tocnametree":"Perioperative chemotherapy",
+"htmlpage":"ENAS5283_4.3.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.3.0",
+"id":"13",
+"nametree":"Adjuvant treatment",
+"tocnametree":"Adjuvant treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.3.3.1",
+"id":"14",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5283_4.3.3.1",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.3.2",
+"id":"15",
+"nametree":"Chemoradiotherapy",
+"tocnametree":"Chemoradiotherapy",
+"htmlpage":"ENAS5283_4.3.3.2",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.3.3",
+"id":"16",
+"nametree":"Chemotherapy",
+"tocnametree":"Chemotherapy",
+"htmlpage":"ENAS5283_4.3.3.3",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.3.4",
+"id":"17",
+"nametree":"Following preop. chemotherapy",
+"tocnametree":"Following preop. chemotherapy",
+"htmlpage":"ENAS5283_4.3.3.4",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.4.0.0",
+"id":"18",
+"nametree":"Mgmt. of advanced/ metastatic disease",
+"tocnametree":"Mgmt. of advanced/ metastatic disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.4.1.0",
+"id":"19",
+"nametree":"First line treatment",
+"tocnametree":"First line treatment",
+"htmlpage":"ENAS5283_2018031939",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.5.0.0",
+"id":"20",
+"nametree":"Elderly patients with gastric cancer",
+"tocnametree":"Elderly patients with gastric cancer",
+"htmlpage":"ENAS5283_4.5.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.6.0.0",
+"id":"21",
+"nametree":"Second- and further-line treatment",
+"tocnametree":"Second- and further-line treatment",
+"htmlpage":"ENAS5283_4.6.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.0.0.0",
+"id":"22",
+"nametree":"Personalised medicine and targeted therapy",
+"tocnametree":"Personalised medicine and targeted therapy",
+"htmlpage":"ENAS5283_5.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"6.0.0.0",
+"id":"23",
+"nametree":"Specific situations",
+"tocnametree":"Specific situations",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"24",
+"nametree":"Metastasectomy",
+"tocnametree":"Metastasectomy",
+"htmlpage":"ENAS5283_2018031941",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"6.2.0.0",
+"id":"25",
+"nametree":"Peritoneal metastases",
+"tocnametree":"Peritoneal metastases",
+"htmlpage":"ENAS5283_2018031942",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"6.3.0.0",
+"id":"26",
+"nametree":"Signet cell tumours",
+"tocnametree":"Signet cell tumours",
+"htmlpage":"ENAS5283_2018031940",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.0.0.0",
+"id":"27",
+"nametree":"F-up, long term implic. & survivorship",
+"tocnametree":"F-up, long term implic. & survivorship",
+"htmlpage":"ENAS5283_7.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.0.0.0",
+"id":"28",
+"nametree":"Summary of recommendations",
+"tocnametree":"Summary of recommendations",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.1.0.0",
+"id":"29",
+"nametree":"Diagnosis and pathology",
+"tocnametree":"Diagnosis and pathology",
+"htmlpage":"ENAS5283_8.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.2.0.0",
+"id":"30",
+"nametree":"Staging and risk assessment",
+"tocnametree":"Staging and risk assessment",
+"htmlpage":"ENAS5283_8.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.3.0.0",
+"id":"31",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.3.1.0",
+"id":"32",
+"nametree":"Mgmt. of local/ locoregional disease",
+"tocnametree":"Mgmt. of local/ locoregional disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.3.1.1",
+"id":"33",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5283_2018032044",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.3.1.2",
+"id":"34",
+"nametree":"Surgery",
+"tocnametree":"Surgery",
+"htmlpage":"ENAS5283_8.3.1.1",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.3.1.3",
+"id":"35",
+"nametree":"Perioperative chemotherapy",
+"tocnametree":"Perioperative chemotherapy",
+"htmlpage":"ENAS5283_8.3.1.2",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.3.1.4",
+"id":"36",
+"nametree":"Adjuvant treatment",
+"tocnametree":"Adjuvant treatment",
+"htmlpage":"ENAS5283_8.3.1.3",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.3.2.0",
+"id":"37",
+"nametree":"Mgmt. of advanced/ metastatic disease",
+"tocnametree":"Mgmt. of advanced/ metastatic disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.3.2.1",
+"id":"38",
+"nametree":"First line treatment",
+"tocnametree":"First line treatment",
+"htmlpage":"ENAS5283_2018031943",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.3.3.0",
+"id":"39",
+"nametree":"Elderly patients with gastric cancer",
+"tocnametree":"Elderly patients with gastric cancer",
+"htmlpage":"ENAS5283_8.3.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.3.4.0",
+"id":"40",
+"nametree":"Second- and further-line treatment",
+"tocnametree":"Second- and further-line treatment",
+"htmlpage":"ENAS5283_8.3.4.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.4.0.0",
+"id":"41",
+"nametree":"Personalised med. & targeted Tx",
+"tocnametree":"Personalised med. & targeted Tx",
+"htmlpage":"ENAS5283_8.4.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.5.0.0",
+"id":"42",
+"nametree":"Specific situations",
+"tocnametree":"Specific situations",
+"htmlpage":"ENAS5283_8.5.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.6.0.0",
+"id":"43",
+"nametree":"F-up, long term implic. & survivorship",
+"tocnametree":"F-up, long term implic. & survivorship",
+"htmlpage":"ENAS5283_8.6.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.0.0.0",
+"id":"44",
+"nametree":"Glossary",
+"tocnametree":"Glossary",
+"htmlpage":"ENAS5283_9.0.0.0",
+"haspdf":false,
+"emailContent":true
+}
+]

@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <link rel="stylesheet" type="text/css" href="gcs_style.css">
+                
+                <script src="jquery-1.9.1.min.js"></script>
+                
+                <script>
+                    
+                    
+                    function deleteCookie(name){
+                        document.cookie = name + "=" +
+                        " expires=Thu, 01-Jan-00 00:00:01 GMT";
+                    }
+                
+                function del()
+                {
+                    location.reload();
+                }
+                var flag=0;
+                var Data="";
+                function getCookie(c_name)
+                {
+                    
+                    var c_value = document.cookie;
+                    var c_start = c_value.indexOf(" " + c_name + "=");
+                    if (c_start == -1)
+                    {
+                        c_start = c_value.indexOf(c_name + "=");
+                    }
+                    if (c_start == -1)
+                    {
+                        c_value = null;
+                    }
+                    else
+                    {
+                        c_start = c_value.indexOf("=", c_start) + 1;
+                        var c_end = c_value.indexOf(";", c_start);
+                        if (c_end == -1)
+                        {
+                            c_end = c_value.length;
+                        }
+                        c_value = unescape(c_value.substring(c_start,c_end));
+                    }
+                    //alert(c_value);
+                    return c_value;
+                    
+                }
+                
+                
+                function setCookie(c_name,value,exdays)
+                {
+                    var exdate=new Date();
+                    exdate.setDate(exdate.getDate() + exdays);
+                    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+                    document.cookie=c_name + "=" + c_value;
+                }
+                
+                function gotCookie(c_name)
+                {
+                    
+                    var inf=getCookie(c_name);
+                    
+                    var mainArr=new Array();
+                    
+                    mainArr=inf.split('$$');
+                    //   alert(mainArr);
+                    for(var i=0;i<mainArr.length;i++)
+                    {
+                        var subarray=new Array();
+                        subarray=mainArr[i].split('#');
+                        
+                        // alert(subarray);
+                        if(subarray[0].match("box1slide"))
+                        {
+                            
+                            box1Slide(subarray[1],subarray[2],parseInt(subarray[3]),parseInt(subarray[4]));
+                            //  alert("box1slide");
+                        }
+                        else  if(subarray[0].match("box2slider"))
+                        
+                        {
+                            box2Slide(subarray[1],subarray[2],parseInt(subarray[3]),parseInt(subarray[4]));
+                            // alert("box2");
+                            
+                        }
+                        else  if(subarray[0].match("box3slider"))
+                        
+                        {
+                            box3Slide(subarray[1],subarray[2],parseInt(subarray[3]),parseInt(subarray[4]));
+                            //alert("box3");
+                            
+                        }
+                        else  if(subarray[0].match("box4slider"))
+                        
+                        {
+                            box4Slide(subarray[1],subarray[2],parseInt(subarray[3]),parseInt(subarray[4]));
+                            //  alert("box4");
+                            
+                        }
+                        else  if(subarray[0].match("box5slider"))
+                        
+                        {
+                            box5Slide(subarray[1],subarray[2],parseInt(subarray[3]),parseInt(subarray[4]));
+                            //  alert("box5");
+                        }
+                        else  if(subarray[0].match("box6slider"))
+                        
+                        {
+                            box6Slide(subarray[1],subarray[2],parseInt(subarray[3]),parseInt(subarray[4]));
+                            //         alert("box6");
+                            
+                        }
+                        else  if(subarray[0].match("box7slider"))
+                        
+                        {
+                            box7Slide(subarray[1],subarray[2],parseInt(subarray[3]),parseInt(subarray[4]));
+                            //   alert("box7");
+                            
+                        }
+                        
+                        else  if(subarray[0].match("box8slider"))
+                        
+                        {
+                            box8Slide(subarray[1],subarray[2],parseInt(subarray[3]),parseInt(subarray[4]));
+                            // alert("box8");
+                            
+                        }
+                        else
+                        {
+                            
+                        }
+                        
+                        
+                    }
+                    
+                    
+                }
+                var i=0;
+                var fg=0;
+                function saveCookie(slider,id, status, point, mode)
+                {
+                    
+                    fg=0;
+                    i=0;
+                    var mainAF=new Array();
+                    mainAF=Data.split('$$');
+                    while(i< mainAF.length)
+                    {
+                        var subAF=new Array();
+                        subAF=mainAF[i].split('#');
+                        if(subAF[0].match(slider))
+                        {
+                            fg=1;
+                            break;
+                        }
+                        i++;
+                        
+                    }
+                    
+                    if(fg==1)
+                    {
+                        var dt=slider+'#'+id+'#'+status+'#'+point+'#'+mode;
+                        mainAF[i]=dt;
+                        
+                        Data="";
+                        var k=0;
+                        while(k<mainAF.length)
+                        {
+                            Data=Data+'$$'+mainAF[k];
+                            k++;
+                        }
+                        
+                        //  Data=mainAF.toString();
+                    }
+                    else
+                    {
+                        Data=Data+'$$'+slider+'#'+id+'#'+status+'#'+point+'#'+mode;
+                    }
+                    
+                    // alert(Data);
+                    setCookie("german",Data,365);
+                    
+                }
+                
+                
+                
+                var totalscore = 0;
+                var isBox1Pressed = "false";
+                var isBox2Pressed = "false";
+                var isBox3Pressed = "false";
+                var isBox4Pressed = "false";
+                var isBox5Pressed = "false";
+                var isBox6Pressed = "false";
+                var isBox7Pressed = "false";
+                var isBox8Pressed = "false";
+                
+                var isResetPressed = "false";
+                $(document).ready(function()
+                                  {
+                                  $("#bodyPopUp").click(function()
+                                                        {
+                                                        document.getElementById('imgDiv').style.display='inline';
+                                                        document.getElementById('mainDiv').style.display='none';
+                                                        });
+                                  
+                                  $("#box1_option5").click(function()
+                                                           {
+                                                           if (isBox1Pressed == "false")
+                                                           {
+                                                           box1Slide($(this).attr("id"), "true", 0, 1);
+                                                           }
+                                                           else
+                                                           {
+                                                           box1Slide($(this).attr("id"), "false", 0, 0);
+                                                           }
+                                                           });
+                                  $("#box1_option4").click(function()
+                                                           {
+                                                           if (isBox1Pressed == "false")
+                                                           {
+                                                           box1Slide($(this).attr("id"), "true", 1, 1);
+                                                           }
+                                                           else
+                                                           {
+                                                           box1Slide($(this).attr("id"), "false", 1, 0);
+                                                           }
+                                                           });
+                                  $("#box1_option3").click(function()
+                                                           {
+                                                           if (isBox1Pressed == "false")
+                                                           {
+                                                           box1Slide($(this).attr("id"), "true", 2, 1);
+                                                           }
+                                                           else
+                                                           {
+                                                           box1Slide($(this).attr("id"), "false", 2, 0);
+                                                           }
+                                                           });
+                                  $("#box1_option2").click(function()
+                                                           {
+                                                           if (isBox1Pressed == "false")
+                                                           {
+                                                           box1Slide($(this).attr("id"), "true", 3, 1);
+                                                           }
+                                                           else
+                                                           {
+                                                           box1Slide($(this).attr("id"), "false", 3, 0);
+                                                           }
+                                                           });
+                                  $("#box1_option1").click(function()
+                                                           {
+                                                           if (isBox1Pressed == "false")
+                                                           {
+                                                           box1Slide($(this).attr("id"), "true", 4, 1);
+                                                           }
+                                                           else
+                                                           {
+                                                           box1Slide($(this).attr("id"), "false", 4, 0);
+                                                           $("#box1_option1").css(
+                                                                                  {
+                                                                                  "-webkit-border-bottom-right-radius" : "7px",
+                                                                                  "-webkit-border-bottom-left-radius" : "7px"
+                                                                                  });
+                                                           }
+                                                           });
+                                  });
+                                  
+                                  $(document).ready(function()
+                                                    {
+                                                    
+                                                    $("#box2_option3").click(function()
+                                                                             {
+                                                                             if (isBox2Pressed == "false")
+                                                                             {
+                                                                             box2Slide($(this).attr("id"), "true", 0, 1);
+                                                                             }
+                                                                             else
+                                                                             {
+                                                                             box2Slide($(this).attr("id"), "false", 0, 0);
+                                                                             }
+                                                                             });
+                                                    $("#box2_option2").click(function()
+                                                                             {
+                                                                             if (isBox2Pressed == "false")
+                                                                             {
+                                                                             box2Slide($(this).attr("id"), "true", 1, 1);
+                                                                             }
+                                                                             else
+                                                                             {
+                                                                             box2Slide($(this).attr("id"), "false", 1, 0);
+                                                                             }
+                                                                             });
+                                                    $("#box2_option1").click(function()
+                                                                             {
+                                                                             if (isBox2Pressed == "false")
+                                                                             {
+                                                                             box2Slide($(this).attr("id"), "true", 3, 1);
+                                                                             }
+                                                                             else
+                                                                             {
+                                                                             box2Slide($(this).attr("id"), "false", 3, 0);
+                                                                             $("#box2_option1").css(
+                                                                                                    {
+                                                                                                    "-webkit-border-bottom-right-radius" : "7px",
+                                                                                                    "-webkit-border-bottom-left-radius" : "7px"
+                                                                                                    });
+                                                                             }
+                                                                             });
+                                                    });
+                                                    
+                                                    $(document).ready(function()
+                                                                      {
+                                                                      
+                                                                      $("#box3_option3").click(function()
+                                                                                               {
+                                                                                               if (isBox3Pressed == "false")
+                                                                                               {
+                                                                                               box3Slide($(this).attr("id"), "true", 0, 1);
+                                                                                               }
+                                                                                               else
+                                                                                               {
+                                                                                               box3Slide($(this).attr("id"), "false", 0, 0);
+                                                                                               }
+                                                                                               });
+                                                                      $("#box3_option2").click(function()
+                                                                                               {
+                                                                                               if (isBox3Pressed == "false")
+                                                                                               {
+                                                                                               box3Slide($(this).attr("id"), "true", 3, 1);
+                                                                                               }
+                                                                                               else
+                                                                                               {
+                                                                                               box3Slide($(this).attr("id"), "false", 3, 0);
+                                                                                               }
+                                                                                               });
+                                                                      $("#box3_option1").click(function()
+                                                                                               {
+                                                                                               if (isBox3Pressed == "false")
+                                                                                               {
+                                                                                               box3Slide($(this).attr("id"), "true", 4, 1);
+                                                                                               }
+                                                                                               else
+                                                                                               {
+                                                                                               box3Slide($(this).attr("id"), "false",4, 0);
+                                                                                               $("#box3_option1").css(
+                                                                                                                      {
+                                                                                                                      "-webkit-border-bottom-right-radius" : "7px",
+                                                                                                                      "-webkit-border-bottom-left-radius" : "7px"
+                                                                                                                      });
+                                                                                               }
+                                                                                               });
+                                                                      $(document).ready(function()
+                                                                                        {
+                                                                                        $("#box4_option2").click(function()
+                                                                                                                 {
+                                                                                                                 if (isBox4Pressed == "false")
+                                                                                                                 {
+                                                                                                                 box4Slide($(this).attr("id"), "true", 0, 1);
+                                                                                                                 }
+                                                                                                                 else
+                                                                                                                 {
+                                                                                                                 box4Slide($(this).attr("id"), "false", 0, 0);
+                                                                                                                 }
+                                                                                                                 });
+                                                                                        $("#box4_option1").click(function()
+                                                                                                                 {
+                                                                                                                 if (isBox4Pressed == "false")
+                                                                                                                 {
+                                                                                                                 box4Slide($(this).attr("id"), "true", 2, 1);
+                                                                                                                 }
+                                                                                                                 else
+                                                                                                                 {
+                                                                                                                 box4Slide($(this).attr("id"), "false", 2, 0);
+                                                                                                                 $("#box4_option1").css(
+                                                                                                                                        {
+                                                                                                                                        "-webkit-border-bottom-right-radius" : "7px",
+                                                                                                                                        "-webkit-border-bottom-left-radius" : "7px"
+                                                                                                                                        });
+                                                                                                                 }
+                                                                                                                 }); });
+                                                                      
+                                                                      $(document).ready(function()
+                                                                                        {
+                                                                                        $("#box5_option2").click(function()
+                                                                                                                 {
+                                                                                                                 if (isBox5Pressed == "false")
+                                                                                                                 {
+                                                                                                                 box5Slide($(this).attr("id"), "true", 0, 1);
+                                                                                                                 }
+                                                                                                                 else
+                                                                                                                 {
+                                                                                                                 box5Slide($(this).attr("id"), "false", 0, 0);
+                                                                                                                 }
+                                                                                                                 });
+                                                                                        $("#box5_option1").click(function()
+                                                                                                                 {
+                                                                                                                 if (isBox5Pressed == "false")
+                                                                                                                 {
+                                                                                                                 box5Slide($(this).attr("id"), "true", 5, 1);
+                                                                                                                 }
+                                                                                                                 else
+                                                                                                                 {
+                                                                                                                 box5Slide($(this).attr("id"), "false", 5, 0);
+                                                                                                                 $("#box5_option1").css(
+                                                                                                                                        {
+                                                                                                                                        "-webkit-border-bottom-right-radius" : "7px",
+                                                                                                                                        "-webkit-border-bottom-left-radius" : "7px"
+                                                                                                                                        });
+                                                                                                                 }
+                                                                                                                 });
+                                                                                        
+                                                                                        
+                                                                                        $("#box6_option2").click(function()
+                                                                                                                 {
+                                                                                                                 if (isBox6Pressed == "false")
+                                                                                                                 {
+                                                                                                                 box6Slide($(this).attr("id"), "true", 0, 1);
+                                                                                                                 }
+                                                                                                                 else
+                                                                                                                 {
+                                                                                                                 box6Slide($(this).attr("id"), "false", 0, 0);
+                                                                                                                 }
+                                                                                                                 });
+                                                                                        $("#box6_option1").click(function()
+                                                                                                                 {
+                                                                                                                 if (isBox6Pressed == "false")
+                                                                                                                 {
+                                                                                                                 box6Slide($(this).attr("id"), "true", 2, 1);
+                                                                                                                 }
+                                                                                                                 else
+                                                                                                                 {
+                                                                                                                 box6Slide($(this).attr("id"), "false", 2, 0);
+                                                                                                                 $("#box6_option1").css(
+                                                                                                                                        {
+                                                                                                                                        "-webkit-border-bottom-right-radius" : "7px",
+                                                                                                                                        "-webkit-border-bottom-left-radius" : "7px"
+                                                                                                                                        });
+                                                                                                                 }
+                                                                                                                 });
+                                                                                        
+                                                                                        
+                                                                                        $("#box7_option2").click(function()
+                                                                                                                 {
+                                                                                                                 if (isBox7Pressed == "false")
+                                                                                                                 {
+                                                                                                                 box7Slide($(this).attr("id"), "true", 0, 1);
+                                                                                                                 }
+                                                                                                                 else
+                                                                                                                 {
+                                                                                                                 box7Slide($(this).attr("id"), "false", 0, 0);
+                                                                                                                 }
+                                                                                                                 });
+                                                                                        $("#box7_option1").click(function()
+                                                                                                                 {
+                                                                                                                 if (isBox7Pressed == "false")
+                                                                                                                 {
+                                                                                                                 box7Slide($(this).attr("id"), "true", 1, 1);
+                                                                                                                 }
+                                                                                                                 else
+                                                                                                                 {
+                                                                                                                 box7Slide($(this).attr("id"), "false", 1, 0);
+                                                                                                                 $("#box7_option1").css(
+                                                                                                                                        {
+                                                                                                                                        "-webkit-border-bottom-right-radius" : "7px",
+                                                                                                                                        "-webkit-border-bottom-left-radius" : "7px"
+                                                                                                                                        });
+                                                                                                                 }
+                                                                                                                 });
+                                                                                        $("#box8_option3").click(function()
+                                                                                                                 {
+                                                                                                                 if (isBox8Pressed == "false")
+                                                                                                                 {
+                                                                                                                 box8Slide($(this).attr("id"), "true", 0, 1);
+                                                                                                                 }
+                                                                                                                 else
+                                                                                                                 {
+                                                                                                                 box8Slide($(this).attr("id"), "false", 0, 0);
+                                                                                                                 }
+                                                                                                                 });
+                                                                                        $("#box8_option2").click(function()
+                                                                                                                 {
+                                                                                                                 if (isBox8Pressed == "false")
+                                                                                                                 {
+                                                                                                                 box8Slide($(this).attr("id"), "true", 3, 1);
+                                                                                                                 }
+                                                                                                                 else
+                                                                                                                 {
+                                                                                                                 box8Slide($(this).attr("id"), "false", 3, 0);
+                                                                                                                 }
+                                                                                                                 });
+                                                                                        $("#box8_option1").click(function()
+                                                                                                                 {
+                                                                                                                 if (isBox8Pressed == "false")
+                                                                                                                 {
+                                                                                                                 box8Slide($(this).attr("id"), "true", 5, 1);
+                                                                                                                 }
+                                                                                                                 else
+                                                                                                                 {
+                                                                                                                 box8Slide($(this).attr("id"), "false", 5, 0);
+                                                                                                                 $("#box8_option1").css(
+                                                                                                                                        {
+                                                                                                                                        "-webkit-border-bottom-right-radius" : "7px",
+                                                                                                                                        "-webkit-border-bottom-left-radius" : "7px"
+                                                                                                                                        });
+                                                                                                                 }
+                                                                                                                 });
+                                                                                        
+                                                                                        });
+                                                                      
+                                                                      $("#reset").click(function()
+                                                                                        {
+                                                                                        
+                                                                                        
+                                                                                        $(".points").hide("slow");
+                                                                                        $(".result_table").hide("slow");
+                                                                                        totalscore = 0;
+                                                                                        isBox1Pressed = "false";
+                                                                                        isBox2Pressed = "false";
+                                                                                        isBox3Pressed = "false";
+                                                                                        isBox4Pressed = "false";
+                                                                                        isBox5Pressed = "false";
+                                                                                        isBox6Pressed = "false";
+                                                                                        isBox7Pressed = "false";
+                                                                                        isBox8Pressed = "false";
+                                                                                        isResetPressed = "false";
+                                                                                        
+                                                                                        $("#total_points").text(totalscore);
+                                                                                        $("#box2").hide();
+                                                                                        $("#box3").hide();
+                                                                                        
+                                                                                        $("#reset_text").text("Reset");
+                                                                                        isResetPressed = "false";
+                                                                                        $("#reset_options").slideUp("fast");
+                                                                                        $("#reset").css(
+                                                                                                        {
+                                                                                                        "-webkit-border-bottom-right-radius" : "7px",
+                                                                                                        "-webkit-border-bottom-left-radius" : "7px"
+                                                                                                        });
+                                                                                        
+                                                                                        for ( var i = 0; i < box1Array.length; i++)
+                                                                                        {
+                                                                                        $("#" + box1Array[i]).slideDown("fast");
+                                                                                        }
+                                                                                        for ( var i = 0; i < box2Array.length; i++)
+                                                                                        {
+                                                                                        $("#" + box2Array[i]).slideDown("fast");
+                                                                                        }
+                                                                                        for ( var i = 0; i < box3Array.length; i++)
+                                                                                        {
+                                                                                        $("#" + box3Array[i]).slideDown("fast");
+                                                                                        }
+                                                                                        for ( var i = 0; i < box4Array.length; i++)
+                                                                                        {
+                                                                                        $("#" + box4Array[i]).slideDown("fast");
+                                                                                        }
+                                                                                        for ( var i = 0; i < box5Array.length; i++)
+                                                                                        {
+                                                                                        $("#" + box5Array[i]).slideDown("fast");
+                                                                                        }
+                                                                                        for ( var i = 0; i < box6Array.length; i++)
+                                                                                        {
+                                                                                        $("#" + box6Array[i]).slideDown("fast");
+                                                                                        }
+                                                                                        for ( var i = 0; i < box7Array.length; i++)
+                                                                                        {
+                                                                                        $("#" + box7Array[i]).slideDown("fast");
+                                                                                        }
+                                                                                        for ( var i = 0; i < box8Array.length; i++)
+                                                                                        {
+                                                                                        $("#" + box8Array[i]).slideDown("fast");
+                                                                                        }
+                                                                                        
+                                                                                        $(".list_middle").css(
+                                                                                                              {
+                                                                                                              "-webkit-border-bottom-right-radius" : "0px",
+                                                                                                              "-webkit-border-bottom-left-radius" : "0px"
+                                                                                                              });
+                                                                                        });
+                                                                      });
+                                                                      
+                                                                      var box1Array = new Array("box1_option5","box1_option4", "box1_option3", "box1_option2", "box1_option1");
+                                                                      var box2Array = new Array( "box2_option3", "box2_option2", "box2_option1");
+                                                                      var box3Array = new Array("box3_option3", "box3_option2", "box3_option1");
+                                                                      var box4Array = new Array( "box4_option2", "box4_option1");
+                                                                      var box5Array = new Array( "box5_option2", "box5_option1");
+                                                                      var box6Array = new Array( "box6_option2", "box6_option1");
+                                                                      var box7Array = new Array( "box7_option2", "box7_option1");
+                                                                      var box8Array = new Array( "box8_option3","box8_option2", "box8_option1");
+                                                                      function box1Slide(id, status, point, mode)
+                                                                      {
+                                                                          
+                                                                             //saveCookie("box1slider",id, status, point, mode);
+                                                                          
+                                                                          $('html, body').animate({scrollTop : $('#box1').offset().top}, 700);
+                                                                          if (mode == 1)
+                                                                          {
+                                                                              for ( var i = 0; i < 5; i++)
+                                                                              {
+                                                                                  if (id != box1Array[i])
+                                                                                  {
+                                                                                      $("#" + box1Array[i]).slideUp("fast");
+                                                                                  }
+                                                                              }
+                                                                              $("#" + id).css(
+                                                                                              {
+                                                                                              "-webkit-border-bottom-right-radius" : "7px",
+                                                                                              "-webkit-border-bottom-left-radius" : "7px"
+                                                                                              });
+                                                                                              isBox1Pressed = status;
+                                                                                              totalscore = totalscore + point;
+                                                                                              showScore();
+                                                                          }
+                                                                          else if (mode == 0)
+                                                                          {
+                                                                              for ( var i = 0; i < 5; i++)
+                                                                              {
+                                                                                  if (id != box1Array[i])
+                                                                                  {
+                                                                                      $("#" + box1Array[i]).slideDown("fast");
+                                                                                  }
+                                                                              }
+                                                                              $("#" + id).css(
+                                                                                              {
+                                                                                              "-webkit-border-bottom-right-radius" : "0px",
+                                                                                              "-webkit-border-bottom-left-radius" : "0px"
+                                                                                              });
+                                                                                              isBox1Pressed = status;
+                                                                                              totalscore = totalscore - point;
+                                                                                              hideScore();
+                                                                          }
+                                                                          isBox1Pressed != isBox1Pressed;
+                                                                          $("#total_points").text(totalscore);
+                                                                          $("#box2").show();
+                                                                         
+                                                                      }
+                
+                function box2Slide(id, status, point, mode)
+                {
+                       //saveCookie("box2slider",id, status, point, mode);
+                    $('html, body').animate({scrollTop : $('#box2').offset().top}, 700);
+                    if (mode == 1)
+                    {
+                        for ( var i = 0; i < 3; i++)
+                        {
+                            if (id != box2Array[i])
+                            {
+                                $("#" + box2Array[i]).slideUp("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "7px",
+                                        "-webkit-border-bottom-left-radius" : "7px"
+                                        });
+                                        isBox2Pressed = status;
+                                        totalscore = totalscore + point;
+                                        showScore();
+                    }
+                    else if (mode == 0)
+                    {
+                        for ( var i = 0; i < 3; i++)
+                        {
+                            if (id != box2Array[i])
+                            {
+                                $("#" + box2Array[i]).slideDown("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "0px",
+                                        "-webkit-border-bottom-left-radius" : "0px"
+                                        });
+                                        isBox2Pressed = status;
+                                        totalscore = totalscore - point;
+                                        hideScore();
+                    }
+                    $("#total_points").text(totalscore);
+                    
+                    $("#box3").show();
+                    
+                }
+                
+                function box3Slide(id, status, point, mode)
+                {
+                       //saveCookie("box3slider",id, status, point, mode);
+                    $('html, body').animate({scrollTop : $('#box3').offset().top}, 700);
+                    if (mode == 1)
+                    {
+                        for ( var i = 0; i < 3; i++)
+                        {
+                            if (id != box3Array[i])
+                            {
+                                $("#" + box3Array[i]).slideUp("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "7px",
+                                        "-webkit-border-bottom-left-radius" : "7px"
+                                        });
+                                        isBox3Pressed = status;
+                                        totalscore = totalscore + point;
+                                        showScore();
+                                        
+                    }
+                    else if (mode == 0)
+                    {
+                        for ( var i = 0; i < 3; i++)
+                        {
+                            if (id != box3Array[i])
+                            {
+                                $("#" + box3Array[i]).slideDown("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "0px",
+                                        "-webkit-border-bottom-left-radius" : "0px"
+                                        });
+                                        isBox3Pressed = status;
+                                        totalscore = totalscore - point;
+                                        hideScore();
+                    }
+                   
+                    $("#box6").show();
+                    $("#total_points").text(totalscore);
+                }
+                function box4Slide(id, status, point, mode)
+                {
+                       //saveCookie("box4slider",id, status, point, mode);
+                    $('html, body').animate({scrollTop : $('#box4').offset().top}, 700);
+                    if (mode == 1)
+                    {
+                        for ( var i = 0; i < 2; i++)
+                        {
+                            if (id != box4Array[i])
+                            {
+                                $("#" + box4Array[i]).slideUp("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "7px",
+                                        "-webkit-border-bottom-left-radius" : "7px"
+                                        });
+                                        isBox4Pressed = status;
+                                        totalscore = totalscore + point;
+                                        showScore();
+                    }
+                    else if (mode == 0)
+                    {
+                        for ( var i = 0; i < 2; i++)
+                        {
+                            if (id != box4Array[i])
+                            {
+                                $("#" + box4Array[i]).slideDown("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "0px",
+                                        "-webkit-border-bottom-left-radius" : "0px"
+                                        });
+                                        isBox4Pressed = status;
+                                        totalscore = totalscore - point;
+                                        hideScore();
+                    }
+                     
+                    $("#box5").show();
+                    $("#total_points").text(totalscore);
+                }
+                
+                function box5Slide(id, status, point, mode)
+                {
+                       //saveCookie("box5slider",id, status, point, mode);
+                    $('html, body').animate({scrollTop : $('#box5').offset().top}, 700);
+                    if (mode == 1)
+                    {
+                        for ( var i = 0; i < 2; i++)
+                        {
+                            if (id != box5Array[i])
+                            {
+                                $("#" + box5Array[i]).slideUp("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "7px",
+                                        "-webkit-border-bottom-left-radius" : "7px"
+                                        });
+                                        isBox5Pressed = status;
+                                        totalscore = totalscore + point;
+                                        showScore();
+                    }
+                    else if (mode == 0)
+                    {
+                        for ( var i = 0; i < 2; i++)
+                        {
+                            if (id != box5Array[i])
+                            {
+                                $("#" + box5Array[i]).slideDown("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "0px",
+                                        "-webkit-border-bottom-left-radius" : "0px"
+                                        });
+                                        isBox5Pressed = status;
+                                        totalscore = totalscore - point;
+                                        hideScore();
+                    }
+                    
+                    $("#box8").show();
+                    $("#total_points").text(totalscore);
+                }
+                
+                function box6Slide(id, status, point, mode)
+                {
+                       //saveCookie("box6slider",id, status, point, mode);
+                    $('html, body').animate({scrollTop : $('#box6').offset().top}, 700);
+                    if (mode == 1)
+                    {
+                        for ( var i = 0; i < 2; i++)
+                        {
+                            if (id != box6Array[i])
+                            {
+                                $("#" + box6Array[i]).slideUp("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "7px",
+                                        "-webkit-border-bottom-left-radius" : "7px"
+                                        });
+                                        isBox6Pressed = status;
+                                        totalscore = totalscore + point;
+                                        showScore();
+                    }
+                    else if (mode == 0)
+                    {
+                        for ( var i = 0; i < 2; i++)
+                        {
+                            if (id != box6Array[i])
+                            {
+                                $("#" + box6Array[i]).slideDown("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "0px",
+                                        "-webkit-border-bottom-left-radius" : "0px"
+                                        });
+                                        isBox6Pressed = status;
+                                        totalscore = totalscore - point;
+                                        hideScore();
+                    }
+                    $("#box7").show();
+                    $("#total_points").text(totalscore);
+                }
+                
+                function box7Slide(id, status, point, mode)
+                {
+                       //saveCookie("box7slider",id, status, point, mode);
+                    $('html, body').animate({scrollTop : $('#box7').offset().top}, 700);
+                    if (mode == 1)
+                    {
+                        for ( var i = 0; i < 2; i++)
+                        {
+                            if (id != box7Array[i])
+                            {
+                                $("#" + box7Array[i]).slideUp("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "7px",
+                                        "-webkit-border-bottom-left-radius" : "7px"
+                                        });
+                                        isBox7Pressed = status;
+                                        totalscore = totalscore + point;
+                                        showScore();
+                    }
+                    else if (mode == 0)
+                    {
+                        for ( var i = 0; i < 2; i++)
+                        {
+                            if (id != box7Array[i])
+                            {
+                                $("#" + box7Array[i]).slideDown("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "0px",
+                                        "-webkit-border-bottom-left-radius" : "0px"
+                                        });
+                                        isBox7Pressed = status;
+                                        totalscore = totalscore - point;
+                                        hideScore();
+                    }
+                    $("#box4").show();
+                    $("#total_points").text(totalscore);
+                }
+                
+                function box8Slide(id, status, point, mode)
+                {
+                       //saveCookie("box8slider",id, status, point, mode);
+                    $('html, body').animate({scrollTop : $('#box8').offset().top}, 700);
+                    if (mode == 1)
+                    {
+                        for ( var i = 0; i < 3; i++)
+                        {
+                            if (id != box8Array[i])
+                            {
+                                $("#" + box8Array[i]).slideUp("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "7px",
+                                        "-webkit-border-bottom-left-radius" : "7px"
+                                        });
+                                        isBox8Pressed = status;
+                                        totalscore = totalscore + point;
+                                        showScore();
+                    }
+                    else if (mode == 0)
+                    {
+                        for ( var i = 0; i < 3; i++)
+                        {
+                            if (id != box8Array[i])
+                            {
+                                $("#" + box8Array[i]).slideDown("fast");
+                            }
+                        }
+                        $("#" + id).css(
+                                        {
+                                        "-webkit-border-bottom-right-radius" : "0px",
+                                        "-webkit-border-bottom-left-radius" : "0px"
+                                        });
+                                        isBox8Pressed = status;
+                                        totalscore = totalscore - point;
+                                        hideScore();
+                    }
+                    
+                    $("#total_points").text(totalscore);
+                }
+                function scroll ()
+                {
+                    
+                    
+                }
+                function hideScore()
+                {
+                    $(".points").hide();
+                    $(".result_table").hide();
+                    $("#reset_text").text("Reset");
+                    isResetPressed = "false";
+                    $("#reset_options").slideUp("fast");
+                    $("#reset").css(
+                                    {
+                                    "-webkit-border-bottom-right-radius" : "7px",
+                                    "-webkit-border-bottom-left-radius" : "7px"
+                                    });
+                }
+                
+                function showScore()
+                
+                
+                {
+                    if ((isBox1Pressed == "true") && (isBox2Pressed == "true") && (isBox3Pressed == "true")
+                        && (isBox4Pressed == "true") && (isBox5Pressed == "true") &&  (isBox8Pressed == "true")&&  (isBox6Pressed == "true")&&  (isBox7Pressed == "true")
+                        
+                        )
+                        {
+                            deleteCookie("german");
+                            $(".result_table").show();
+                            $(".result_tableOne").show();
+                            $(".points").show();
+                        }
+                        var res = parseInt(totalscore, 10);
+                        if (res > 20)
+                        {
+                            //$("#result").text("50 Prozent*");
+                            
+                            document.getElementById('resultText1').style.display='none';
+                            document.getElementById('resultText2').style.display='none';
+                            document.getElementById('resultText3').style.display='none';
+                            document.getElementById('resultText4').style.display='none';
+                            document.getElementById('resultText5').style.display='inline';
+                            document.getElementById('answer').style.color='#ffffff';
+                            document.getElementById('ansText').style.color='#ffffff';
+                            document.getElementById('answer').style.fontWeight="bold";
+                            document.getElementById('answer').style.fontSize="xx-large";
+                            document.getElementById('ansText').style.fontWeight="normal";
+                            document.getElementById('ansText').style.background ='-webkit-gradient(linear, left top, left bottom, from(rgb(255, 0, 20)), to(#FF0014))';
+                            document.getElementById('answer').style.background ='-webkit-gradient(linear, left top, left bottom, from(rgb(255, 0, 20)), to(#FF0014))';
+                            
+                            
+                            $("#total_points").text(totalscore);
+                            
+                        }
+                        else if (res >= 15)
+                        {
+                            //$("#result").text("33 Prozent*");
+                            $("#total_points").text(totalscore);
+                            document.getElementById('resultText1').style.display='none';
+                            document.getElementById('resultText2').style.display='none';
+                            document.getElementById('resultText3').style.display='none';
+                            document.getElementById('resultText4').style.display='inline';
+                            document.getElementById('resultText5').style.display='none';
+                            document.getElementById('answer').style.color='#ffffff';
+                            document.getElementById('ansText').style.color='#ffffff';
+                            document.getElementById('answer').style.fontWeight="bold";
+                            document.getElementById('answer').style.fontSize="xx-large";
+                            document.getElementById('ansText').style.fontWeight="normal";
+                            document.getElementById('ansText').style.background ='-webkit-gradient(linear, left top, left bottom, from(rgb(255, 102, 1)), to(#FC6601))';
+                            document.getElementById('answer').style.background ='-webkit-gradient(linear, left top, left bottom, from(rgb(255, 102, 1)), to(#FC6601))';
+                            
+                            
+                        }
+                        else if (res >= 12)
+                        {
+                            //$("#result").text("17 Prozent*");
+                            $("#total_points").text(totalscore);
+                            document.getElementById('resultText1').style.display='none';
+                            document.getElementById('resultText2').style.display='none';
+                            document.getElementById('resultText3').style.display='inline';
+                            document.getElementById('resultText4').style.display='none';
+                            document.getElementById('resultText5').style.display='none';
+                            document.getElementById('answer').style.color='#ffffff';
+                            document.getElementById('ansText').style.color='#ffffff';
+                            document.getElementById('answer').style.fontWeight="bold";
+                            document.getElementById('answer').style.fontSize="xx-large";
+                            document.getElementById('ansText').style.fontWeight="normal";
+                            document.getElementById('ansText').style.background ='-webkit-gradient(linear, left top, left bottom, from(rgb(244, 203, 0)), to(#F4CB00))';
+                            document.getElementById('answer').style.background ='-webkit-gradient(linear, left top, left bottom, from(rgb(244, 203, 0)), to(#F4CB00))';
+                            
+                            
+                        }
+                        else if (res >= 7)
+                        {
+                            //$("#result").text("4 Prozent*");
+                            $("#total_points").text(totalscore);
+                            document.getElementById('resultText1').style.display='none';
+                            document.getElementById('resultText2').style.display='inline';
+                            document.getElementById('resultText3').style.display='none';
+                            document.getElementById('resultText4').style.display='none';
+                            document.getElementById('resultText5').style.display='none';
+                            document.getElementById('answer').style.color='#000000';
+                            document.getElementById('ansText').style.color='#000000';
+                            document.getElementById('answer').style.fontWeight="bold";
+                            document.getElementById('answer').style.fontSize="xx-large";
+                            document.getElementById('ansText').style.fontWeight="normal";
+                            document.getElementById('ansText').style.background ='-webkit-gradient(linear, left top, left bottom, from(rgb(184, 224, 16)), to(#B8E110))';
+                            document.getElementById('answer').style.background ='-webkit-gradient(linear, left top, left bottom, from(rgb(184, 224, 16)), to(#B8E110))';
+                            
+                        }
+                        else
+                        {
+                            //$("#result").text("1 Prozent*");
+                            $("#total_points").text(totalscore);
+                            document.getElementById('resultText1').style.display='inline';
+                            document.getElementById('resultText2').style.display='none';
+                            document.getElementById('resultText3').style.display='none';
+                            document.getElementById('resultText4').style.display='none';
+                            document.getElementById('resultText5').style.display='none';
+                            document.getElementById('answer').style.color='#ffffff';
+                            document.getElementById('ansText').style.color='#ffffff';
+                            document.getElementById('answer').style.fontWeight="bold";
+                            document.getElementById('answer').style.fontSize="xx-large";
+                            document.getElementById('ansText').style.fontWeight="normal";
+                            document.getElementById('ansText').style.background ='-webkit-gradient(linear, left top, left bottom, from(rgb(116, 207, 41)), to(#74CF29))';
+                            document.getElementById('answer').style.background ='-webkit-gradient(linear, left top, left bottom, from(rgb(116, 207, 41)), to(#74CF29))';
+                            
+                            
+                            
+                        }
+                }
+                
+                function hideDIV()
+                {
+                    
+                    document.getElementById('imgDiv').style.display='none';
+                    document.getElementById('mainDiv').style.display='inline';
+                    $('html, body').animate({scrollTop : $('#box8').offset().top}, 0);
+                }
+                </script>
+                
+    </head>
+    <body >
+        <div class="fadeMe" style="display:none; background-color:white;" id="imgDiv"   >
+            <img src='popUp.png' onclick="hideDIV()" style="width:100%; height:auto;"></img> <br/><br/> <br/></div>
+        <div id="mainDiv">
+            <div class="infoDiv" style="font-family: Helvetica;font-size:13px;">
+                FINnish Diabetes RIsk SCore (FINDRISC) to assess the 10-year risk of
+                2 diabetes in adults. (Available at: <a href="https://www.diabetes.fi/english">www.diabetes.fi/english</a>). </span></div>
+            
+            <div>
+                <div id="box1" class="box_class">
+                    <div class="list_first" id="box1_title">
+                        <table  width="100%"><col style="width:97%"><col style="width:3%">
+                            <tr><td>
+                                <p class="text_left">Age
+                            </td><td><span class="num_right_grey" align="center">max. 4 </span></td></tr></table>
+                        
+                    </div>
+                    <div class="list_middle" id="box1_option5">
+                        <p class="text_left">
+                        &nbsp;Under 45 years<span class="num_right">0</span>
+                        </p>
+                    </div>
+                   
+                    <div class="list_middle" id="box1_option3">
+                        <p class="text_left">
+                        &nbsp;45-54 years<span class="num_right">2</span>
+                        </p>
+                    </div>
+                    <div class="list_middle" id="box1_option2">
+                        <p class="text_left">
+                        &nbsp;55-64 years<span class="num_right">3</span>
+                        </p>
+                    </div>
+                    <div class="list_last" id="box1_option1">
+                        <p class="text_left">
+                        &nbsp;Over 64 years<span class="num_right">4</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div id="box2" style="display: none;" class="box_class">
+                    <div class="list_first_triangle" id="box2_title">
+                        
+                        <table  width="100%" style="margin:0px 0px 0px 3px; padding: 0px 0px 0px 0px;"><col style="width:97%"><col style="width:3%">
+                            <tr><td>	<p class="text_left">
+                              Body mass Index
+                            </td><td><span class="num_right_grey" align="center">max. 3 </span></td></tr></table>
+                        
+                    </div>
+                    <div class="list_middle" id="box2_option3">
+                        <p class="text_left">
+                        Lower than 25 kg/m<sup>2</sup><span class="num_right">0</span>
+                        </p>
+                    </div>
+                    <div class="list_middle" id="box2_option2" >
+                        <table width="100%" style="margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px;"><col style="width:97%"><col style="width:3%">
+                            <tr><td>
+                                <p class="text_left" >
+                                25-30 kg/m<sup>2</sup></p>
+                            </td><td><span class="num_right">1</span></td></tr></table>
+                        
+                    </div>
+                    <div class="list_last" id="box2_option1">
+                        <table width="100%" style="margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px;"><col style="width:97%"><col style="width:3%">
+                            <tr><td>
+                                <p class="text_left" >
+                              Higher than 30 kg/m<sup>2</sup></p>
+                            </td><td><span class="num_right">3</span></td></tr></table>
+                    </div>
+                    
+                </div>
+                
+                <div id="box3" style="display: none" class="box_class">
+                    <div class="list_first_triangle" id="box3_title">
+                        <table width="100%" style="margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px;">
+                            <col style="width:48.5%"><col style="width:48.5%"><col style="width:3%">
+                                <tr><td colspan="2">
+                                    <p class="text_left">
+                                    Waist circumference measured below
+                                    the ribs (usually at the level of the navel)
+                                    </p></td><td><span class="num_right_grey" align="center">max. 4 </span></td></tr>
+                                <tr ><td align="left" style=" border-top:1px solid white;">Male </td><td style="border-top:1px solid white;" align="center">Female</td><td style="border-top:1px solid white;"></td></tr>
+                        </table>
+                        
+                        
+                    </div>
+                    
+                    <div class="list_middle" id="box3_option3">
+                        <table width="100%" style="margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px;">
+                            <col style="width:48.5%"><col style="width:48.5%"><col style="width:3%">
+                                <tr><td><p class="text_left" align="left">&nbsp;Less than 94 cm</td>
+                                    <td style="border-left:1px solid rgb(176,218,254); ">&nbsp;Less than 80 cm</td>
+                                    <td><span class="num_right">0</td></tr></table>
+                        
+                    </div>
+                    <div class="list_middle" id="box3_option2">
+                        <table width="100%" style="margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px;">
+                            <col style="width:48.5%"><col style="width:48.5%"><col style="width:3%">
+                                <tr><td><p class="text_left" align="left">&nbsp;94-102 cm</td>
+                                    <td style="border-left:1px solid  rgb(176,218,254); ">&nbsp;80-88 cm </td>
+                                    <td><span class="num_right">3</td></tr></table>
+                    </div>
+                    <div class="list_last" id="box3_option1">
+                        <table width="100%" style="margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px;">
+                            <col style="width:48.5%"><col style="width:48.5%"><col style="width:3%">
+                                <tr><td><p class="text_left" align="left">&nbsp;More than 102 cm</td>
+                                    <td style="border-left:1px solid rgb(176,218,254); ">&nbsp;More than 88 cm</td>
+                                    <td><span class="num_right">4</td></tr></table>
+                    </div>
+                </div>
+                
+                
+                
+                <div id="box6" style="display: none;" class="box_class">
+                    <div class="list_first_triangle" id="box6_title">
+                        <table  width="100%"><col style="width:97%"><col style="width:3%">
+                            <tr><td>
+                                <p class="text_left">Do you usually have daily at least 30
+                                min of physical activity at work and/or
+                                during leisure time (including normal
+                                daily activity)?</p>
+                            </td><td><span class="num_right_grey" align="center">max. 2 </span></td></tr></table>
+                        </p>
+                    </div>
+                    
+                    <div class="list_middle" id="box6_option2">
+                        <p class="text_left">&nbsp;Yes<span class="num_right">0</span>
+                        </p>
+                    </div>
+                    <div class="list_last" id="box6_option1">
+                        <p class="text_left">&nbsp;No<span class="num_right">2</span>
+                        
+                    </div>
+                </div>
+                
+                <div id="box7" style="display: none;" class="box_class">
+                    <div class="list_first_triangle" id="box7_title">
+                        <table  width="100%"><col style="width:97%"><col style="width:3%">
+                            <tr><td>
+                                <p class="text_left">￼How often do you eat vegetables, fruit,
+                                or berries?</p>
+                            </td><td><span class="num_right_grey" align="center">max. 1 </span></td></tr></table>
+                      </div>
+                      <div class="list_middle" id="box7_option2">
+                            <p class="text_left">&nbsp;Every day<span class="num_right">0</span>
+                            </p>
+                        </div>
+                      <div class="list_last" id="box7_option1">
+                          <p class="text_left">&nbsp;Not every day<span class="num_right">1</span>
+                          </p>
+                      </div>
+                      
+                    
+                     </div>
+                
+                
+                <div id="box4"  style="display: none;" class="box_class">
+                    <div class="list_first_triangle" id="box4_title">
+                        <table  width="100%"><col style="width:97%"><col style="width:3%">
+                            <tr><td>
+                                <p class="text_left">Have you ever taken anti-hypertensive
+                                medication regularly?</p>
+                            </td><td><span class="num_right_grey" align="center">max. 2 </span></td></tr></table>
+                        
+                    </div>
+                    
+                    <div class="list_middle" id="box4_option2">
+                        <p class="text_left">&nbsp;No<span class="num_right">0</span>
+                        </p>
+                    </div>
+                    <div class="list_last" id="box4_option1">
+                        <p class="text_left">&nbsp;Yes<span class="num_right">2</span>
+                        </p>
+                    </div>
+                </div>
+                
+                
+                
+                <div id="box5" style="display: none;" class="box_class">
+                    <div class="list_first_triangle" id="box5_title">
+                        <table  width="100%"><col style="width:97%"><col style="width:3%">
+                            <tr><td>
+                                <p class="text_left">Have you ever been found to have high
+                                blood glucose (e.g. in a health examination,
+                                during an illness, during pregnancy)?</p>
+                            </td><td><span class="num_right_grey" align="center">max. 5 </span></td></tr></table>
+                        
+                    </div>
+                    
+                    <div class="list_middle" id="box5_option2">
+                        <p class="text_left">&nbsp;No<span class="num_right">0</span>
+                        </p>
+                    </div>
+                    <div class="list_last" id="box5_option1">
+                        <p class="text_left">&nbsp;Yes<span class="num_right">5</span>
+                        
+                    </div>
+                </div>
+              <!--
+                
+               
+                    
+                    <div class="list_middle" id="box7_option2">
+                        <p class="text_left">&nbsp;nein<span class="num_right">0</span>
+                        </p>
+                    </div>
+                    <div class="list_last" id="box7_option1">
+                        <p class="text_left">&nbsp;ja<span class="num_right">5</span>
+                        
+                    </div>
+                </div>
+                -->
+                <div id="box8" style="display: none;"  class="box_class">
+                    <div class="list_first_triangle" id="box8_title">
+                        <table  width="100%"><col style="width:97%"><col style="width:3%">
+                            <tr><td>
+                                <p class="text_left">￼Have any of the members of your
+                                immediate family or other relatives been
+                                diagnosed with diabetes (type 1 or type 2)? <br/>
+                              
+                            
+                                    </td><td><span class="num_right_grey" align="center">max. 5 </span></td></tr></table>
+                        
+                    </div>
+                    <div class="list_middle" id="box8_option3">
+                        <p class="text_left">&nbsp;No<span class="num_right">0</span>
+                        </p>
+                    </div>
+                    <div class="list_middle" id="box8_option2">
+                        <p class="text_left">&nbsp;Yes: grandparent, aunt, uncle, or
+                        first cousin <br/>(but no own parent,
+                        brother, sister or child)<span class="num_right">3</span>
+                        </p>
+                    </div>
+                    <div class="list_last" id="box8_option1">
+                        <p class="text_left">&nbsp;Yes: parent, brother, sister, or own
+                        child<span class="num_right">5</span>
+                        
+                    </div>
+                </div>
+                
+                <table class="result_table"  id="answer" width="100%" >
+                    
+                    <col style="width:70%;  "><col style="width:30%">
+                        
+                        <tr>
+                            <td><b> Score  :</b></td>
+                            <td id="total_points" align="right"><b>0</b></td>
+                        </tr>
+                        
+                        </table><table id="ansText" class="result_table" width="100%">
+                            <tr>
+                                
+                                
+                                
+                                <td   style="display:none;"    id="resultText1" align="left"  > 
+                                    The risk of developing
+                                    type 2 diabetes within 10 years is: <b>Low</b> <br/>estimated 1 in 100
+                                    will develop disease
+                                </td></tr>
+                            
+                            
+                            <td  style="display:none;" id="resultText2" align="left"  >
+                                Slightly elevated:<br/>
+                                estimated 1 in 25 will
+                                develop disease
+                                
+                            </td>
+                            </tr>
+                            
+                            <td  style="display:none;" id="resultText3" align="left"  >
+                                The risk of developing
+                                type 2 diabetes within 10 years is:<b> Moderate</b><br/> estimated
+                                1 in 6 will develop disease
+                            </td>
+                            <td  style="display:none;" id="resultText4" align="left"  >
+                                The risk of developing
+                                type 2 diabetes within 10 years is: <b>High</b><br/>
+                                estimated 1 in
+                                3 will develop disease
+                            </td>
+                            <td  style="display:none;" id="resultText5" align="left"  >
+                                The risk of developing
+                                type 2 diabetes within 10 years is:<b> Very High</b><br/>
+                                estimated 1 in 2 will
+                                develop disease
+                            </td>
+                        </table>
+                        <br/>
+                        <table>
+                            
+                            <tr>
+                                <td>
+                                    <input id="reset_text" type="reset" value="Reset" class="resetBtn" style="width:100%" onClick="del()">
+                                        </td>
+                                
+                            </tr>
+                            
+                            <tr><td><br/>* Test designed by Professor Jaakko Tuomilehto. Department of Public Health, University of Helsinki, and Dr Jaana Lindstrôm, MFS, National
+                                Public Health Institute.</td></tr>
+                        </table>
+                        
+            </div>
+            
+            
+			 <table style="width:100%">
+            <tr>
+                <td>
+                    
+                    <div style="float:right"><button  class="abbBtn" style="width:100%" >
+                       For more information <a href="ref_ENAS257_5.3.1.0.html">see here</a></button>
+                    </div>
+                    </td>
+                    </tr>
+                    </table>
+			<br/>
+			<br/>
+            </body>
+           
+        </div></body>
+</html>

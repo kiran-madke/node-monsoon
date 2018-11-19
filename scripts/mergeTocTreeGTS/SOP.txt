@@ -1,0 +1,11 @@
+1. Go to Project file of web app eg. ESMO.
+2. Go To SearchFiles folder : media/data/EN/SearchFiles
+3. Copy all contents of this folder and go to mergeTocTreeGTS\data\inputData\ and paste it in PROJECTNAME-SearchFiles folder eg. ESMO-SearchFiles
+4. Identify which project preprocessing needs to be done. in this case eg:ESMO.
+5. Copy all files from that folder into SearchFiles. (This is the main input folder for this script)
+6. Before running the script, clear out the mergeTocTreeGTS\data\outputData
+7. Now go to the main page of node monsoon script. 
+8. Run this script
+9. If script runs without any errors, you should see a new file generated called combinedSearchJSON.json
+10. Copy this combinedSearchJSON.json file and now go to 2nd script i.e mapNameTree.
+(Read that scripts SOP for more details.)

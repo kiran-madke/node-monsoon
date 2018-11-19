@@ -1,0 +1,61 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "Serum creatinine",
+        "text_id": "",
+        "id": "serum",
+        "unit": "dropdown",
+        "unitId":"drop",
+        "type":"input"
+    },
+    {
+        "text": "Age",
+        "text_id": "",
+        "id": "age",
+        "unit": "years",
+        "unitId":"",
+        "type":"input"
+    },
+    {
+        "text": "Weight",
+        "text_id": "",
+        "id": "weight",
+        "unit": "kg",
+        "unitId":"",
+        "type":"input"
+    },
+    {
+        "text": "Gender",
+        "text_id": "",
+        "id": "button",
+        "unit": "",
+        "unitId":"",
+        "type":"button1"
+    },
+    {
+        "text": "African American",
+        "text_id": "",
+        "id": "button",
+        "unit": "",
+        "unitId":"",
+        "type":"button2"
+    }
+    ],
+"output":[
+	{
+        "text": "<b>eGFR</b> Cockcroft-Gault",
+        "id": "egfr1",
+        "unit": "mL/min",
+        "unitId":"",
+        "type":"input"
+    },
+    {
+        "text": "<b>eGFR</b> MDRD",
+        "id": "egfr2",
+        "unit": "mL/min",
+        "unitId":"",
+        "type":"input"
+    }
+]
+}

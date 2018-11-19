@@ -1,0 +1,785 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Summary Card (AFib)",
+"tocnametree":"Summary Card (AFib)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.1.0.0",
+"id":"2",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5189_2017070658",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.2.0.0",
+"id":"3",
+"nametree":"The 5 domains of integrated AF mgmt.",
+"tocnametree":"The 5 domains of integrated AF mgmt.",
+"htmlpage":"ENAS5189_2017070659",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.3.0.0",
+"id":"4",
+"nametree":"Diagnosis & screening",
+"tocnametree":"Diagnosis & screening",
+"htmlpage":"ENAS5189_2017070660",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.4.0.0",
+"id":"5",
+"nametree":"Prevention & general management",
+"tocnametree":"Prevention & general management",
+"htmlpage":"ENAS5189_2017070661",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.5.0.0",
+"id":"6",
+"nametree":"Patient involvement",
+"tocnametree":"Patient involvement",
+"htmlpage":"ENAS5189_2017070662",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.6.0.0",
+"id":"7",
+"nametree":"Stroke prevention",
+"tocnametree":"Stroke prevention",
+"htmlpage":"ENAS5189_2017070663",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.7.0.0",
+"id":"8",
+"nametree":"Risk factors",
+"tocnametree":"Risk factors",
+"htmlpage":"ENAS5189_2017070664",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.8.0.0",
+"id":"9",
+"nametree":"Stroke prevention in atrial fibrillation",
+"tocnametree":"Stroke prevention in atrial fibrillation",
+"htmlpage":"ENAS5189_2017070665",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.9.0.0",
+"id":"10",
+"nametree":"Heart rate control",
+"tocnametree":"Heart rate control",
+"htmlpage":"ENAS5189_2017070666",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.10.0.0",
+"id":"11",
+"nametree":"Rhythm control",
+"tocnametree":"Rhythm control",
+"htmlpage":"ENAS5189_2017070667",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.11.0.0",
+"id":"12",
+"nametree":"Integrated care of AF patients",
+"tocnametree":"Integrated care of AF patients",
+"htmlpage":"ENAS5189_2017070668",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.12.0.0",
+"id":"13",
+"nametree":"Clinical signs for urgent AF referral",
+"tocnametree":"Clinical signs for urgent AF referral",
+"htmlpage":"ENAS5189_2017070669",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"14",
+"nametree":"Summary Card (HF)",
+"tocnametree":"Summary Card (HF)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.1.0.0",
+"id":"15",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5189_2017070670",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.2.0.0",
+"id":"16",
+"nametree":"Definition",
+"tocnametree":"Definition",
+"htmlpage":"ENAS5189_2017070671",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.3.0.0",
+"id":"17",
+"nametree":"Diagnosis of HF (non-acute onset)",
+"tocnametree":"Diagnosis of HF (non-acute onset)",
+"htmlpage":"ENAS5189_2017070672",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.4.0.0",
+"id":"18",
+"nametree":"Therapeutic algo. for symptomatic HFrEF",
+"tocnametree":"Therapeutic algo. for symptomatic HFrEF",
+"htmlpage":"ENAS5189_2017070673",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.5.0.0",
+"id":"19",
+"nametree":"Initial mgmt. of a patient with AHF",
+"tocnametree":"Initial mgmt. of a patient with AHF",
+"htmlpage":"ENAS5189_2017070674",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.6.0.0",
+"id":"20",
+"nametree":"Mgmt. of AHF based on clinical profile",
+"tocnametree":"Mgmt. of AHF based on clinical profile",
+"htmlpage":"ENAS5189_2017070675",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.7.0.0",
+"id":"21",
+"nametree":"ICD and CRT indication",
+"tocnametree":"ICD and CRT indication",
+"htmlpage":"ENAS5189_2017070676",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.8.0.0",
+"id":"22",
+"nametree":"LVAD eligible patients",
+"tocnametree":"LVAD eligible patients",
+"htmlpage":"ENAS5189_2017070677",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.9.0.0",
+"id":"23",
+"nametree":"Charact. & components of mgmt. programmes",
+"tocnametree":"Charact. & components of mgmt. programmes",
+"htmlpage":"ENAS5189_2017070678",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.10.0.0",
+"id":"24",
+"nametree":"Palliative care service in HF",
+"tocnametree":"Palliative care service in HF",
+"htmlpage":"ENAS5189_2017070679",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"25",
+"nametree":"Summary Card (CVD Prev)",
+"tocnametree":"Summary Card (CVD Prev)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.1.0.0",
+"id":"26",
+"nametree":"Definition of CVD prevention",
+"tocnametree":"Definition of CVD prevention",
+"htmlpage":"ENAS5189_2017070680",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.0.0",
+"id":"27",
+"nametree":"Relevance of CVD prevention in practice",
+"tocnametree":"Relevance of CVD prevention in practice",
+"htmlpage":"ENAS5189_2017070681",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.3.0.0",
+"id":"28",
+"nametree":"Who will benefit from prevention?",
+"tocnametree":"Who will benefit from prevention?",
+"htmlpage":"ENAS5189_2017070682",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.4.0.0",
+"id":"29",
+"nametree":"How to estimate total CV risk?",
+"tocnametree":"How to estimate total CV risk?",
+"htmlpage":"ENAS5189_2017070683",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.5.0.0",
+"id":"30",
+"nametree":"How to use the risk estimation charts",
+"tocnametree":"How to use the risk estimation charts",
+"htmlpage":"ENAS5189_2017070684",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.0.0",
+"id":"31",
+"nametree":"SCORE chart for HIGH-risk countries",
+"tocnametree":"SCORE chart for HIGH-risk countries",
+"htmlpage":"ENAS5189_2017070685",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.7.0.0",
+"id":"32",
+"nametree":"SCORE chart for LOW-risk countries",
+"tocnametree":"SCORE chart for LOW-risk countries",
+"htmlpage":"ENAS5189_2017070686",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.8.0.0",
+"id":"33",
+"nametree":"Risk categories: priorities",
+"tocnametree":"Risk categories: priorities",
+"htmlpage":"ENAS5189_2017070687",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.9.0.0",
+"id":"34",
+"nametree":"Main targets and goals",
+"tocnametree":"Main targets and goals",
+"htmlpage":"ENAS5189_2017070688",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"35",
+"nametree":"Summary Card (Cardio-Onco)",
+"tocnametree":"Summary Card (Cardio-Onco)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"36",
+"nametree":"Myocardial dysfunction and heart failure",
+"tocnametree":"Myocardial dysfunction and heart failure",
+"htmlpage":"ENAS5189_2017070689",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.0.0",
+"id":"37",
+"nametree":"Baseline risk factors for cardiotoxicity",
+"tocnametree":"Baseline risk factors for cardiotoxicity",
+"htmlpage":"ENAS5189_2017070690",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.3.0.0",
+"id":"38",
+"nametree":"Key points",
+"tocnametree":"Key points",
+"htmlpage":"ENAS5189_2017070691",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.4.0.0",
+"id":"39",
+"nametree":"Coronary artery disease",
+"tocnametree":"Coronary artery disease",
+"htmlpage":"ENAS5189_2017070692",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.5.0.0",
+"id":"40",
+"nametree":"Arrhythmias",
+"tocnametree":"Arrhythmias",
+"htmlpage":"ENAS5189_2017070693",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.6.0.0",
+"id":"41",
+"nametree":"QT prolongation",
+"tocnametree":"QT prolongation",
+"htmlpage":"ENAS5189_2017070694",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.7.0.0",
+"id":"42",
+"nametree":"Atrial fibrillation",
+"tocnametree":"Atrial fibrillation",
+"htmlpage":"ENAS5189_2017070695",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.8.0.0",
+"id":"43",
+"nametree":"Thromboembolic disease",
+"tocnametree":"Thromboembolic disease",
+"htmlpage":"ENAS5189_2017070696",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.9.0.0",
+"id":"44",
+"nametree":"Prevention of cardiotoxicity",
+"tocnametree":"Prevention of cardiotoxicity",
+"htmlpage":"ENAS5189_2017070697",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"45",
+"nametree":"Summary Card (DM)",
+"tocnametree":"Summary Card (DM)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"46",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5189_1.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"47",
+"nametree":"Identify. pat. W DM & at risk for dev. DM",
+"tocnametree":"Identify. pat. W DM & at risk for dev. DM",
+"htmlpage":"ENAS5189_1.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.0.0",
+"id":"48",
+"nametree":"CV risk assess. in pat. with dysglycaemia",
+"tocnametree":"CV risk assess. in pat. with dysglycaemia",
+"htmlpage":"ENAS5189_1.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.0.0",
+"id":"49",
+"nametree":"Recs. on lstyle modif. in diabetes",
+"tocnametree":"Recs. on lstyle modif. in diabetes",
+"htmlpage":"ENAS5189_1.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.5.0.0",
+"id":"50",
+"nametree":"Prevention of diabetes in patients with IGT",
+"tocnametree":"Prevention of diabetes in patients with IGT",
+"htmlpage":"ENAS5189_1.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.6.0.0",
+"id":"51",
+"nametree":"Recommendations for patient with DM & CVD",
+"tocnametree":"Recommendations for patient with DM & CVD",
+"htmlpage":"ENAS5189_1.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.7.0.0",
+"id":"52",
+"nametree":"Glucose and other risk factor control",
+"tocnametree":"Glucose and other risk factor control",
+"htmlpage":"ENAS5189_1.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.8.0.0",
+"id":"53",
+"nametree":"Microvascular complications",
+"tocnametree":"Microvascular complications",
+"htmlpage":"ENAS5189_1.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.9.0.0",
+"id":"54",
+"nametree":"Patient-centred care in DM & CVD",
+"tocnametree":"Patient-centred care in DM & CVD",
+"htmlpage":"ENAS5189_1.9.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"55",
+"nametree":"Summary Card (HCM)",
+"tocnametree":"Summary Card (HCM)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"56",
+"nametree":"Definition",
+"tocnametree":"Definition",
+"htmlpage":"ENAS5189_2.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"57",
+"nametree":"Aetiology",
+"tocnametree":"Aetiology",
+"htmlpage":"ENAS5189_2.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.0.0",
+"id":"58",
+"nametree":"Clinical presentation",
+"tocnametree":"Clinical presentation",
+"htmlpage":"ENAS5189_2.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.4.0.0",
+"id":"59",
+"nametree":"Tests in pat. W definite or suspected HCM",
+"tocnametree":"Tests in pat. W definite or suspected HCM",
+"htmlpage":"ENAS5189_2.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.5.0.0",
+"id":"60",
+"nametree":"Genetic counselling and testing",
+"tocnametree":"Genetic counselling and testing",
+"htmlpage":"ENAS5189_2.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.6.0.0",
+"id":"61",
+"nametree":"Mgmt. & prevention of imp. complications",
+"tocnametree":"Mgmt. & prevention of imp. complications",
+"htmlpage":"ENAS5189_2.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.7.0.0",
+"id":"62",
+"nametree":"Mgmt. of LV outflow tract obstruction",
+"tocnametree":"Mgmt. of LV outflow tract obstruction",
+"htmlpage":"ENAS5189_2.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.8.0.0",
+"id":"63",
+"nametree":"Management of heart failure symptoms",
+"tocnametree":"Management of heart failure symptoms",
+"htmlpage":"ENAS5189_2.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.9.0.0",
+"id":"64",
+"nametree":"Management of atrial tachyarrhythmia",
+"tocnametree":"Management of atrial tachyarrhythmia",
+"htmlpage":"ENAS5189_2.9.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.10.0.0",
+"id":"65",
+"nametree":"Sudden death prevention",
+"tocnametree":"Sudden death prevention",
+"htmlpage":"ENAS5189_2.10.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.11.0.0",
+"id":"66",
+"nametree":"Routine follow-up",
+"tocnametree":"Routine follow-up",
+"htmlpage":"ENAS5189_2.11.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.12.0.0",
+"id":"67",
+"nametree":"General lifestyle considerations",
+"tocnametree":"General lifestyle considerations",
+"htmlpage":"ENAS5189_2.12.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"68",
+"nametree":"Summary Card (HTN)",
+"tocnametree":"Summary Card (HTN)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"69",
+"nametree":"Why is prevention & treat. of HTN imp.?",
+"tocnametree":"Why is prevention & treat. of HTN imp.?",
+"htmlpage":"ENAS5189_3.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.0.0",
+"id":"70",
+"nametree":"How to diagnose hypertension?",
+"tocnametree":"How to diagnose hypertension?",
+"htmlpage":"ENAS5189_3.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.0.0",
+"id":"71",
+"nametree":"Other measurements to be performed",
+"tocnametree":"Other measurements to be performed",
+"htmlpage":"ENAS5189_3.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.4.0.0",
+"id":"72",
+"nametree":"When to initiate anti-HTN treatment?",
+"tocnametree":"When to initiate anti-HTN treatment?",
+"htmlpage":"ENAS5189_3.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.5.0.0",
+"id":"73",
+"nametree":"Target BP during anti-HTN treatment",
+"tocnametree":"Target BP during anti-HTN treatment",
+"htmlpage":"ENAS5189_3.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.6.0.0",
+"id":"74",
+"nametree":"Which anti-HTN drugs to choose?",
+"tocnametree":"Which anti-HTN drugs to choose?",
+"htmlpage":"ENAS5189_3.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.7.0.0",
+"id":"75",
+"nametree":"Treating associated risk factors",
+"tocnametree":"Treating associated risk factors",
+"htmlpage":"ENAS5189_3.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.8.0.0",
+"id":"76",
+"nametree":"Follow-up patients with HTN in GP",
+"tocnametree":"Follow-up patients with HTN in GP",
+"htmlpage":"ENAS5189_3.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"77",
+"nametree":"Summary Card (Pacing)",
+"tocnametree":"Summary Card (Pacing)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.1.0.0",
+"id":"78",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5189_4.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.2.0.0",
+"id":"79",
+"nametree":"Patients with persistent bradycardia",
+"tocnametree":"Patients with persistent bradycardia",
+"htmlpage":"ENAS5189_4.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.3.0.0",
+"id":"80",
+"nametree":"Patients with intermit. document. bradycardia",
+"tocnametree":"Patients with intermit. document. bradycardia",
+"htmlpage":"ENAS5189_4.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.4.0.0",
+"id":"81",
+"nametree":"Pats. with syncope and suspected bradycardia",
+"tocnametree":"Pats. with syncope and suspected bradycardia",
+"htmlpage":"ENAS5189_4.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.5.0.0",
+"id":"82",
+"nametree":"Indications for CRT in pat. with HF or low EF",
+"tocnametree":"Indications for CRT in pat. with HF or low EF",
+"htmlpage":"ENAS5189_4.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.6.0.0",
+"id":"83",
+"nametree":"Key evidence supporting recs.",
+"tocnametree":"Key evidence supporting recs.",
+"htmlpage":"ENAS5189_4.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.7.0.0",
+"id":"84",
+"nametree":"CRT indi. in Pat. W HF & low EF in sinus rhythm",
+"tocnametree":"CRT indi. in Pat. W HF & low EF in sinus rhythm",
+"htmlpage":"ENAS5189_4.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.8.0.0",
+"id":"85",
+"nametree":"Indications for CRT in patients in AF",
+"tocnametree":"Indications for CRT in patients in AF",
+"htmlpage":"ENAS5189_4.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.9.0.0",
+"id":"86",
+"nametree":"Indi. for upgraded or “de novo” CRT",
+"tocnametree":"Indi. for upgraded or “de novo” CRT",
+"htmlpage":"ENAS5189_4.9.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.10.0.0",
+"id":"87",
+"nametree":"Choice of CRT-P or CRT-D in prim. prevention",
+"tocnametree":"Choice of CRT-P or CRT-D in prim. prevention",
+"htmlpage":"ENAS5189_4.10.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

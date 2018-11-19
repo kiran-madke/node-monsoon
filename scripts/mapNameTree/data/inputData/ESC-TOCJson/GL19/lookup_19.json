@@ -1,0 +1,412 @@
+﻿[
+{
+"old_id":"1",
+"old_nametree":"Essential messages",
+"old_numtree":"1.0.0.0",
+"old_htmlpage":"null",
+"new_id":"1",
+"new_nametree":"Essential messages",
+"new_numtree":"1.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"2",
+"old_nametree":"Authors and legal information",
+"old_numtree":"1.1.0.0",
+"old_htmlpage":"ENAS265_1.1.0.0",
+"new_id":"2",
+"new_nametree":"Authors and legal information",
+"new_numtree":"1.1.0.0",
+"new_htmlpage":"ENAS265_1.1.0.0"
+},
+{
+"old_id":"3",
+"old_nametree":"Take home messages",
+"old_numtree":"1.2.0.0",
+"old_htmlpage":"ENAS265_1.2.0.0",
+"new_id":"3",
+"new_nametree":"Take home messages",
+"new_numtree":"1.2.0.0",
+"new_htmlpage":"ENAS265_1.2.0.0"
+},
+{
+"old_id":"4",
+"old_nametree":"Major gaps in evidence",
+"old_numtree":"1.3.0.0",
+"old_htmlpage":"ENAS265_1.3.0.0",
+"new_id":"4",
+"new_nametree":"Major gaps in evidence",
+"new_numtree":"1.3.0.0",
+"new_htmlpage":"ENAS265_1.3.0.0"
+},
+{
+"old_id":"5",
+"old_nametree":"Authors and legal information",
+"old_numtree":"2.0.0.0",
+"old_htmlpage":"ENAS265_2.0.0.0",
+"new_id":"5",
+"new_nametree":"Authors and legal information",
+"new_numtree":"2.0.0.0",
+"new_htmlpage":"ENAS265_2.0.0.0"
+},
+{
+"old_id":"6",
+"old_nametree":"Table of recommendations and LOE",
+"old_numtree":"3.0.0.0",
+"old_htmlpage":"ENAS265_3.0.0.0",
+"new_id":"6",
+"new_nametree":"Table of recommendations and LOE",
+"new_numtree":"3.0.0.0",
+"new_htmlpage":"ENAS265_3.0.0.0"
+},
+{
+"old_id":"7",
+"old_nametree":"Introduction",
+"old_numtree":"4.0.0.0",
+"old_htmlpage":"ENAS265_4.0.0.0",
+"new_id":"7",
+"new_nametree":"Introduction",
+"new_numtree":"4.0.0.0",
+"new_htmlpage":"ENAS265_4.0.0.0"
+},
+{
+"old_id":"8",
+"old_nametree":"Scores and risk stratification",
+"old_numtree":"5.0.0.0",
+"old_htmlpage":"null",
+"new_id":"8",
+"new_nametree":"Scores and risk stratification",
+"new_numtree":"5.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"9",
+"old_nametree":"SYNTAX score",
+"old_numtree":"5.1.0.0",
+"old_htmlpage":"ENAS265_5.1.0.0",
+"new_id":"9",
+"new_nametree":"SYNTAX score",
+"new_numtree":"5.1.0.0",
+"new_htmlpage":"ENAS265_5.1.0.0"
+},
+{
+"old_id":"10",
+"old_nametree":"Risk models to assess outcomes",
+"old_numtree":"5.2.0.0",
+"old_htmlpage":"ENAS265_5.2.0.0",
+"new_id":"10",
+"new_nametree":"Risk models to assess outcomes",
+"new_numtree":"5.2.0.0",
+"new_htmlpage":"ENAS265_5.2.0.0"
+},
+{
+"old_id":"11",
+"old_nametree":"Decision making and patient information",
+"old_numtree":"6.0.0.0",
+"old_htmlpage":"ENAS265_6.0.0.0",
+"new_id":"11",
+"new_nametree":"Decision making and patient information",
+"new_numtree":"6.0.0.0",
+"new_htmlpage":"ENAS265_6.0.0.0"
+},
+{
+"old_id":"12",
+"old_nametree":"Func. testing and imaging",
+"old_numtree":"7.0.0.0",
+"old_htmlpage":"ENAS265_7.0.0.0",
+"new_id":"12",
+"new_nametree":"Func. testing and imaging",
+"new_numtree":"7.0.0.0",
+"new_htmlpage":"ENAS265_7.0.0.0"
+},
+{
+"old_id":"13",
+"old_nametree":"Revascularization for SCAD",
+"old_numtree":"8.0.0.0",
+"old_htmlpage":"ENAS265_8.0.0.0",
+"new_id":"13",
+"new_nametree":"Revascularization for SCAD",
+"new_numtree":"8.0.0.0",
+"new_htmlpage":"ENAS265_8.0.0.0"
+},
+{
+"old_id":"14",
+"old_nametree":"Revascularization in NSTE-ACS",
+"old_numtree":"9.0.0.0",
+"old_htmlpage":"ENAS265_9.0.0.0",
+"new_id":"14",
+"new_nametree":"Revascularization in NSTE-ACS",
+"new_numtree":"9.0.0.0",
+"new_htmlpage":"ENAS265_9.0.0.0"
+},
+{
+"old_id":"15",
+"old_nametree":"Revascularization in STEMI",
+"old_numtree":"10.0.0.0",
+"old_htmlpage":"null",
+"new_id":"15",
+"new_nametree":"Revascularization in STEMI",
+"new_numtree":"10.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"16",
+"old_nametree":"Ideal time intervals/delays",
+"old_numtree":"10.1.0.0",
+"old_htmlpage":"ENAS265_10.1.0.0",
+"new_id":"16",
+"new_nametree":"Ideal time intervals/delays",
+"new_numtree":"10.1.0.0",
+"new_htmlpage":"ENAS265_10.1.0.0"
+},
+{
+"old_id":"17",
+"old_nametree":"PCI: indications/logistics",
+"old_numtree":"10.2.0.0",
+"old_htmlpage":"ENAS265_10.2.0.0",
+"new_id":"17",
+"new_nametree":"PCI: indications/logistics",
+"new_numtree":"10.2.0.0",
+"new_htmlpage":"ENAS265_10.2.0.0"
+},
+{
+"old_id":"18",
+"old_nametree":"PCI: procedural aspects",
+"old_numtree":"10.3.0.0",
+"old_htmlpage":"ENAS265_10.3.0.0",
+"new_id":"18",
+"new_nametree":"PCI: procedural aspects",
+"new_numtree":"10.3.0.0",
+"new_htmlpage":"ENAS265_10.3.0.0"
+},
+{
+"old_id":"19",
+"old_nametree":"Secondary PCI",
+"old_numtree":"10.4.0.0",
+"old_htmlpage":"ENAS265_10.4.0.0",
+"new_id":"19",
+"new_nametree":"Secondary PCI",
+"new_numtree":"10.4.0.0",
+"new_htmlpage":"ENAS265_10.4.0.0"
+},
+{
+"old_id":"20",
+"old_nametree":"Revasc. in heart failure/cardiogenic shock",
+"old_numtree":"11.0.0.0",
+"old_htmlpage":"ENAS265_11.0.0.0",
+"new_id":"20",
+"new_nametree":"Revasc. in heart failure/cardiogenic shock",
+"new_numtree":"11.0.0.0",
+"new_htmlpage":"ENAS265_11.0.0.0"
+},
+{
+"old_id":"21",
+"old_nametree":"Revasc. in patients with diabetes",
+"old_numtree":"12.0.0.0",
+"old_htmlpage":"ENAS265_12.0.0.0",
+"new_id":"21",
+"new_nametree":"Revasc. in patients with diabetes",
+"new_numtree":"12.0.0.0",
+"new_htmlpage":"ENAS265_12.0.0.0"
+},
+{
+"old_id":"22",
+"old_nametree":"Revasc. in patients with CKD",
+"old_numtree":"13.0.0.0",
+"old_htmlpage":"ENAS265_13.0.0.0",
+"new_id":"22",
+"new_nametree":"Revasc. in patients with CKD",
+"new_numtree":"13.0.0.0",
+"new_htmlpage":"ENAS265_13.0.0.0"
+},
+{
+"old_id":"23",
+"old_nametree":"Revasc. combined with valve interventions",
+"old_numtree":"14.0.0.0",
+"old_htmlpage":"ENAS265_14.0.0.0",
+"new_id":"23",
+"new_nametree":"Revasc. combined with valve interventions",
+"new_numtree":"14.0.0.0",
+"new_htmlpage":"ENAS265_14.0.0.0"
+},
+{
+"old_id":"24",
+"old_nametree":"Associated carotid/PAD",
+"old_numtree":"15.0.0.0",
+"old_htmlpage":"ENAS265_15.0.0.0",
+"new_id":"24",
+"new_nametree":"Associated carotid/PAD",
+"new_numtree":"15.0.0.0",
+"new_htmlpage":"ENAS265_15.0.0.0"
+},
+{
+"old_id":"25",
+"old_nametree":"Repeat revasc./hybrid procedures",
+"old_numtree":"16.0.0.0",
+"old_htmlpage":"ENAS265_16.0.0.0",
+"new_id":"25",
+"new_nametree":"Repeat revasc./hybrid procedures",
+"new_numtree":"16.0.0.0",
+"new_htmlpage":"ENAS265_16.0.0.0"
+},
+{
+"old_id":"26",
+"old_nametree":"Arrhythmias",
+"old_numtree":"17.0.0.0",
+"old_htmlpage":"ENAS265_17.0.0.0",
+"new_id":"26",
+"new_nametree":"Arrhythmias",
+"new_numtree":"17.0.0.0",
+"new_htmlpage":"ENAS265_17.0.0.0"
+},
+{
+"old_id":"27",
+"old_nametree":"Procedural aspects of CABG",
+"old_numtree":"18.0.0.0",
+"old_htmlpage":"ENAS265_18.0.0.0",
+"new_id":"27",
+"new_nametree":"Procedural aspects of CABG",
+"new_numtree":"18.0.0.0",
+"new_htmlpage":"ENAS265_18.0.0.0"
+},
+{
+"old_id":"28",
+"old_nametree":"Procedural aspects of PCI",
+"old_numtree":"19.0.0.0",
+"old_htmlpage":"ENAS265_19.0.0.0",
+"new_id":"28",
+"new_nametree":"Procedural aspects of PCI",
+"new_numtree":"19.0.0.0",
+"new_htmlpage":"ENAS265_19.0.0.0"
+},
+{
+"old_id":"29",
+"old_nametree":"Antithrombotic treatments for PCI",
+"old_numtree":"20.0.0.0",
+"old_htmlpage":"null",
+"new_id":"29",
+"new_nametree":"Antithrombotic treatments for PCI",
+"new_numtree":"20.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"30",
+"old_nametree":"Patients with stable CAD",
+"old_numtree":"20.1.0.0",
+"old_htmlpage":"ENAS265_20.1.0.0",
+"new_id":"30",
+"new_nametree":"Patients with stable CAD",
+"new_numtree":"20.1.0.0",
+"new_htmlpage":"ENAS265_20.1.0.0"
+},
+{
+"old_id":"31",
+"old_nametree":"Patients with NSTE-ACS",
+"old_numtree":"20.2.0.0",
+"old_htmlpage":"ENAS265_20.2.0.0",
+"new_id":"31",
+"new_nametree":"Patients with NSTE-ACS",
+"new_numtree":"20.2.0.0",
+"new_htmlpage":"ENAS265_20.2.0.0"
+},
+{
+"old_id":"32",
+"old_nametree":"Patients with STEMI",
+"old_numtree":"20.3.0.0",
+"old_htmlpage":"ENAS265_20.3.0.0",
+"new_id":"32",
+"new_nametree":"Patients with STEMI",
+"new_numtree":"20.3.0.0",
+"new_htmlpage":"ENAS265_20.3.0.0"
+},
+{
+"old_id":"33",
+"old_nametree":"Patients who require OAC",
+"old_numtree":"20.4.0.0",
+"old_htmlpage":"ENAS265_20.4.0.0",
+"new_id":"33",
+"new_nametree":"Patients who require OAC",
+"new_numtree":"20.4.0.0",
+"new_htmlpage":"ENAS265_20.4.0.0"
+},
+{
+"old_id":"34",
+"old_nametree":"Pre-op mgmt. of pts. under DAPT",
+"old_numtree":"20.5.0.0",
+"old_htmlpage":"ENAS265_20.5.0.0",
+"new_id":"34",
+"new_nametree":"Pre-op mgmt. of pts. under DAPT",
+"new_numtree":"20.5.0.0",
+"new_htmlpage":"ENAS265_20.5.0.0"
+},
+{
+"old_id":"35",
+"old_nametree":"Patients with CKD",
+"old_numtree":"20.6.0.0",
+"old_htmlpage":"ENAS265_20.6.0.0",
+"new_id":"35",
+"new_nametree":"Patients with CKD",
+"new_numtree":"20.6.0.0",
+"new_htmlpage":"ENAS265_20.6.0.0"
+},
+{
+"old_id":"36",
+"old_nametree":"Antiplatelet therapy in myocardial revasc.",
+"old_numtree":"20.7.0.0",
+"old_htmlpage":"ENAS265_20.7.0.0",
+"new_id":"36",
+"new_nametree":"Antiplatelet therapy in myocardial revasc.",
+"new_numtree":"20.7.0.0",
+"new_htmlpage":"ENAS265_20.7.0.0"
+},
+{
+"old_id":"37",
+"old_nametree":"Volume-outcome relationship",
+"old_numtree":"21.0.0.0",
+"old_htmlpage":"ENAS265_21.0.0.0",
+"new_id":"37",
+"new_nametree":"Volume-outcome relationship",
+"new_numtree":"21.0.0.0",
+"new_htmlpage":"ENAS265_21.0.0.0"
+},
+{
+"old_id":"38",
+"old_nametree":"Management after revascularization",
+"old_numtree":"22.0.0.0",
+"old_htmlpage":"null",
+"new_id":"38",
+"new_nametree":"Management after revascularization",
+"new_numtree":"22.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"39",
+"old_nametree":"Medical therapy, secondary prevention",
+"old_numtree":"22.1.0.0",
+"old_htmlpage":"ENAS265_22.1.0.0",
+"new_id":"39",
+"new_nametree":"Medical therapy, secondary prevention",
+"new_numtree":"22.1.0.0",
+"new_htmlpage":"ENAS265_22.1.0.0"
+},
+{
+"old_id":"40",
+"old_nametree":"Follow up",
+"old_numtree":"22.2.0.0",
+"old_htmlpage":"ENAS265_22.2.0.0",
+"new_id":"40",
+"new_nametree":"Follow up",
+"new_numtree":"22.2.0.0",
+"new_htmlpage":"ENAS265_22.2.0.0"
+},
+{
+"old_id":"41",
+"old_nametree":"Abbreviations and acronyms",
+"old_numtree":"23.0.0.0",
+"old_htmlpage":"ENAS265_23.0.0.0",
+"new_id":"41",
+"new_nametree":"Abbreviations and acronyms",
+"new_numtree":"23.0.0.0",
+"new_htmlpage":"ENAS265_23.0.0.0"
+}
+]

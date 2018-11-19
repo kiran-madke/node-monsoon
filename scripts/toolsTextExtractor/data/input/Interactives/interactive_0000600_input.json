@@ -1,0 +1,38 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>Region*</b>",
+        "text_id": "",
+        "id": "button",
+        "unit": "",
+        "unitId":"",
+        "type":"button1"
+    },
+    {
+        "text": "<b>Gender</b>",
+        "text_id": "",
+        "id": "button",
+        "unit": "",
+        "unitId":"",
+        "type":"button2"
+    },
+    {
+        "text": "<b>Age</b>",
+        "text_id": "",
+        "id": "age",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": " ",
+        "id": "imageDisc",
+        "unit": "",
+        "unitId":"",
+        "type":"img"
+    }
+]
+}

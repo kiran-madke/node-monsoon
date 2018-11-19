@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Algorithm_Static_image</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="interactives-2.1.1.css">
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        div {
+            width: 100%;
+        }
+
+        img[usemap] {
+            border: none;
+            height: auto;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="interactive_0000315.png" id="imageMap" usemap="#staticImageMap" alt="">
+        <table>
+            <tr>
+                <td>
+                    <a href="flipView">
+                        <button id="pdf_button" class="flip-pdf-button">
+                            <img src="algo.png" class="pdf-image" />
+                        </button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <map name="staticImageMap">
+            <area shape="poly" coords="154,927,325,926,329,986,163,986" href="ref_ENAS256_5.6.9.0.html" title="map" alt="map">
+        </map>
+    </div>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="jquery.rwdImageMaps.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>Previous DVT or PE</b>",
+        "text_id": "",
+        "name": "r1",
+        "type":"button"
+    },
+    {
+        "text": "<b>Heart rate 75-94 b.p.m.</b>",
+        "text_id": "",
+        "name": "r2",
+        "type":"button"
+    },
+    {
+        "text": "<b>Heart rate &ge; 95 b.p.m.</b>",
+        "text_id": "",
+        "name": "r3",
+        "type":"button"
+    },
+    {
+        "text": "<b>Surgery or fracture within the past month</b>",
+        "text_id": "",
+        "name": "r4",
+        "type":"button"
+    },
+    {
+        "text": "<b>Haemoptysis</b>",
+        "text_id": "",
+        "name": "r5",
+        "type":"button"
+    },
+    {
+        "text": "<b>Active cancer</b>",
+        "text_id": "",
+        "name": "r6",
+        "type":"button"
+    },
+    {
+        "text": "<b>Unilateral lower limb pain</b>",
+        "text_id": "",
+        "name": "r7",
+        "type":"button"
+    },
+    {
+        "text": "<b>Pain on lower limb deep venous palpation and unilateral oedema</b>",
+        "text_id": "",
+        "name": "r8",
+        "type":"button"
+    },
+    {
+        "text": "<b>Age &gt;65 years</b>",
+        "text_id": "",
+        "name": "r9",
+        "type":"button"
+    }
+    ],
+"output":[
+	{
+        "text": "<b>Score</b>",
+        "name": "txtresult",
+        "type":"input"
+    },
+	{
+        "text": "<b>Clinical probability (Three-level score)</b>",
+        "name": "txtThreeLevelScore",
+        "type":"input"
+    },
+	{
+        "text": "<b>Clinical probability (Two-level score)</b>",
+        "name": "txtTwoLevelScore",
+        "type":"input"
+    }
+]
+}

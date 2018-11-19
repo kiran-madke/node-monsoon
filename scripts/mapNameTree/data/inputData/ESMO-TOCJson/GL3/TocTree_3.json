@@ -1,0 +1,218 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5071_1.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"ENAS5071_2.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Staging",
+"tocnametree":"Staging",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.1.0.0",
+"id":"4",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5071_3.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.2.0.0",
+"id":"5",
+"nametree":"AJCC/UICC TNM staging",
+"tocnametree":"AJCC/UICC TNM staging",
+"htmlpage":"ENAS5071_3.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.3.0.0",
+"id":"6",
+"nametree":"Tumour stage grouping",
+"tocnametree":"Tumour stage grouping",
+"htmlpage":"ENAS5071_3.3.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.0.0.0",
+"id":"7",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"8",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5071_4.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.2.0.0",
+"id":"9",
+"nametree":"Treatment algorithm",
+"tocnametree":"Treatment algorithm",
+"htmlpage":"ENAS5071_00008",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.0.0",
+"id":"10",
+"nametree":"Localised disease",
+"tocnametree":"Localised disease",
+"htmlpage":"ENAS5071_4.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.4.0.0",
+"id":"11",
+"nametree":"Metastatic disease",
+"tocnametree":"Metastatic disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.4.1.0",
+"id":"12",
+"nametree":"First-line treatment",
+"tocnametree":"First-line treatment",
+"htmlpage":"ENAS5071_4.3.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.4.2.0",
+"id":"13",
+"nametree":"Second-line treatment",
+"tocnametree":"Second-line treatment",
+"htmlpage":"ENAS5071_4.3.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.0.0.0",
+"id":"14",
+"nametree":"Personalised medicine",
+"tocnametree":"Personalised medicine",
+"htmlpage":"ENAS5071_4.4.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"6.0.0.0",
+"id":"15",
+"nametree":"Follow-up",
+"tocnametree":"Follow-up",
+"htmlpage":"ENAS5071_5.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.0.0.0",
+"id":"16",
+"nametree":"Summary of recommendations",
+"tocnametree":"Summary of recommendations",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"17",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"ENAS5071_6.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.2.0.0",
+"id":"18",
+"nametree":"Staging",
+"tocnametree":"Staging",
+"htmlpage":"ENAS5071_6.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.0.0",
+"id":"19",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.1.0",
+"id":"20",
+"nametree":"Localised disease",
+"tocnametree":"Localised disease",
+"htmlpage":"ENAS5071_6.3.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.2.0",
+"id":"21",
+"nametree":"Metastatic disease",
+"tocnametree":"Metastatic disease",
+"htmlpage":"ENAS5071_6.3.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.4.0.0",
+"id":"22",
+"nametree":"Personalised medicine",
+"tocnametree":"Personalised medicine",
+"htmlpage":"ENAS5071_6.4.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.5.0.0",
+"id":"23",
+"nametree":"Follow-up",
+"tocnametree":"Follow-up",
+"htmlpage":"ENAS5071_6.5.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.0.0.0",
+"id":"24",
+"nametree":"Glossary",
+"tocnametree":"Glossary",
+"htmlpage":"ENAS5071_7.0.0.0",
+"haspdf":false,
+"emailContent":true
+}
+]

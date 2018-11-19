@@ -1,0 +1,551 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5080_1.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Definitions",
+"tocnametree":"Definitions",
+"htmlpage":"ENAS5080_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.1.0.0",
+"id":"4",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5080_3.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.0.0",
+"id":"5",
+"nametree":"Cardiac troponin assays: implications",
+"tocnametree":"Cardiac troponin assays: implications",
+"htmlpage":"ENAS5080_3.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.3.0.0",
+"id":"6",
+"nametree":"Non MI conditions with elevated troponin",
+"tocnametree":"Non MI conditions with elevated troponin",
+"htmlpage":"ENAS5080_3.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.4.0.0",
+"id":"7",
+"nametree":"Initial assessment of suspected ACS",
+"tocnametree":"Initial assessment of suspected ACS",
+"htmlpage":"ENAS5080_3.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.5.0.0",
+"id":"8",
+"nametree":"“Rule-in” and “rule-out” algorithms",
+"tocnametree":"“Rule-in” and “rule-out” algorithms",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.5.1.0",
+"id":"9",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5080_3.5.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.5.2.0",
+"id":"10",
+"nametree":"0h/3h rule-out algorithm",
+"tocnametree":"0h/3h rule-out algorithm",
+"htmlpage":"ENAS5080_3.5.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.5.3.0",
+"id":"11",
+"nametree":"0h/1h rule-in and rule-out algorithms",
+"tocnametree":"0h/1h rule-in and rule-out algorithms",
+"htmlpage":"ENAS5080_3.5.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.6.0.0",
+"id":"12",
+"nametree":"Non-invasive imaging",
+"tocnametree":"Non-invasive imaging",
+"htmlpage":"ENAS5080_3.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.7.0.0",
+"id":"13",
+"nametree":"Differential diagnoses",
+"tocnametree":"Differential diagnoses",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.7.1.0",
+"id":"14",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5080_3.7.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.7.2.0",
+"id":"15",
+"nametree":"Differential diagnoses of ACS",
+"tocnametree":"Differential diagnoses of ACS",
+"htmlpage":"ENAS5080_3.7.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"16",
+"nametree":"Risk assessment and outcomes",
+"tocnametree":"Risk assessment and outcomes",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"17",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5080_4.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.0.0",
+"id":"18",
+"nametree":"Unit and duration of monitoring",
+"tocnametree":"Unit and duration of monitoring",
+"htmlpage":"ENAS5080_4.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.3.0.0",
+"id":"19",
+"nametree":"Suspected NSTE-ACS",
+"tocnametree":"Suspected NSTE-ACS",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.3.1.0",
+"id":"20",
+"nametree":"Diagnosis and risk stratification",
+"tocnametree":"Diagnosis and risk stratification",
+"htmlpage":"ENAS5080_4.3.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.3.2.0",
+"id":"21",
+"nametree":"Imaging",
+"tocnametree":"Imaging",
+"htmlpage":"ENAS5080_4.3.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.3.3.0",
+"id":"22",
+"nametree":"Monitoring",
+"tocnametree":"Monitoring",
+"htmlpage":"ENAS5080_4.3.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"23",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"24",
+"nametree":"Pharmacological treatment of ischaemia",
+"tocnametree":"Pharmacological treatment of ischaemia",
+"htmlpage":"ENAS5080_5.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"25",
+"nametree":"Platelet inhibition",
+"tocnametree":"Platelet inhibition",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.1.0",
+"id":"26",
+"nametree":"P2Y12 inhibitors",
+"tocnametree":"P2Y12 inhibitors",
+"htmlpage":"ENAS5080_5.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.2.0",
+"id":"27",
+"nametree":"Glycoprotein IIb/IIIa inhibitors",
+"tocnametree":"Glycoprotein IIb/IIIa inhibitors",
+"htmlpage":"ENAS5080_5.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.3.0",
+"id":"28",
+"nametree":"Oral antiplatelet therapy",
+"tocnametree":"Oral antiplatelet therapy",
+"htmlpage":"ENAS5080_5.2.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.4.0",
+"id":"29",
+"nametree":"Intravenous antiplatelet therapy",
+"tocnametree":"Intravenous antiplatelet therapy",
+"htmlpage":"ENAS5080_5.2.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.5.0",
+"id":"30",
+"nametree":"Long-term P2Y12 inhibition",
+"tocnametree":"Long-term P2Y12 inhibition",
+"htmlpage":"ENAS5080_5.2.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.6.0",
+"id":"31",
+"nametree":"General recommendations",
+"tocnametree":"General recommendations",
+"htmlpage":"ENAS5080_5.2.6.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.0.0",
+"id":"32",
+"nametree":"Anticoagulation",
+"tocnametree":"Anticoagulation",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.1.0",
+"id":"33",
+"nametree":"Dosing",
+"tocnametree":"Dosing",
+"htmlpage":"ENAS5080_5.3.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.2.0",
+"id":"34",
+"nametree":"Treatment in NSTE-ACS",
+"tocnametree":"Treatment in NSTE-ACS",
+"htmlpage":"ENAS5080_5.3.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.0.0",
+"id":"35",
+"nametree":"Managing oral antiplatelet agents",
+"tocnametree":"Managing oral antiplatelet agents",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.1.0",
+"id":"36",
+"nametree":"Bleeding risk reduction",
+"tocnametree":"Bleeding risk reduction",
+"htmlpage":"ENAS5080_5.4.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.2.0",
+"id":"37",
+"nametree":"Antithrombotic strategies",
+"tocnametree":"Antithrombotic strategies",
+"htmlpage":"ENAS5080_5.4.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.3.0",
+"id":"38",
+"nametree":"Chronic oral anticoag. recomm.",
+"tocnametree":"Chronic oral anticoagulation recommendations",
+"htmlpage":"ENAS5080_5.4.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.4.0",
+"id":"39",
+"nametree":"Pts. undergoing coronary stenting",
+"tocnametree":"Pts. undergoing coronary stenting",
+"htmlpage":"ENAS5080_5.4.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.5.0",
+"id":"40",
+"nametree":"Bleeding mgmt. and blood transfusion",
+"tocnametree":"Bleeding mgmt. and blood transfusion",
+"htmlpage":"ENAS5080_5.4.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.5.0.0",
+"id":"41",
+"nametree":"Invasive coronary angio. and revascularisation",
+"tocnametree":"Invasive coronary angio. and revascularisation",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.5.1.0",
+"id":"42",
+"nametree":"NSTE-ACS treatment strategy and timing",
+"tocnametree":"NSTE-ACS treatment strategy and timing",
+"htmlpage":"ENAS5080_5.5.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.5.2.0",
+"id":"43",
+"nametree":"PCI in NSTE-ACS",
+"tocnametree":"PCI in NSTE-ACS",
+"htmlpage":"ENAS5080_5.5.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.5.3.0",
+"id":"44",
+"nametree":"CABG: peri-op mgmt. of antiplatelet therapy",
+"tocnametree":"CABG: peri-op mgmt. of antiplatelet therapy",
+"htmlpage":"ENAS5080_5.5.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.6.0.0",
+"id":"45",
+"nametree":"Special populations and conditions",
+"tocnametree":"Special populations and conditions",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.6.1.0",
+"id":"46",
+"nametree":"Elderly patients",
+"tocnametree":"Elderly patients",
+"htmlpage":"ENAS5080_5.6.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.6.2.0",
+"id":"47",
+"nametree":"Diabetic patients",
+"tocnametree":"Diabetic patients",
+"htmlpage":"ENAS5080_5.6.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.6.3.0",
+"id":"48",
+"nametree":"Chronic kidney disease",
+"tocnametree":"Chronic kidney disease",
+"htmlpage":"ENAS5080_5.6.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.6.4.0",
+"id":"49",
+"nametree":"Acute heart failure in NSTE-ACS",
+"tocnametree":"Acute heart failure in NSTE-ACS",
+"htmlpage":"ENAS5080_5.6.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.6.5.0",
+"id":"50",
+"nametree":"Heart failure following NSTE-ACS",
+"tocnametree":"Heart failure following NSTE-ACS",
+"htmlpage":"ENAS5080_5.6.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.6.6.0",
+"id":"51",
+"nametree":"Atrial fibrillation",
+"tocnametree":"Atrial fibrillation",
+"htmlpage":"ENAS5080_5.6.6.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.6.7.0",
+"id":"52",
+"nametree":"Thrombocytopenia",
+"tocnametree":"Thrombocytopenia",
+"htmlpage":"ENAS5080_5.6.7.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.7.0.0",
+"id":"53",
+"nametree":"Long-term mgmt. post NSTE-ACS",
+"tocnametree":"Long-term mgmt. post NSTE-ACS",
+"htmlpage":"ENAS5080_5.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"54",
+"nametree":"Summary of mgmt. strategy",
+"tocnametree":"Summary of mgmt. strategy",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"55",
+"nametree":"Initial evaluation and pathway",
+"tocnametree":"Initial evaluation and pathway",
+"htmlpage":"ENAS5080_6.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"56",
+"nametree":"Diagnosis validation and risk assessment",
+"tocnametree":"Diagnosis validation and risk assessment",
+"htmlpage":"ENAS5080_6.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.0.0",
+"id":"57",
+"nametree":"Antithrombotic treatment",
+"tocnametree":"Antithrombotic treatment",
+"htmlpage":"ENAS5080_6.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.4.0.0",
+"id":"58",
+"nametree":"Invasive strategy",
+"tocnametree":"Invasive strategy",
+"htmlpage":"ENAS5080_6.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.5.0.0",
+"id":"59",
+"nametree":"Revascularisation modalities",
+"tocnametree":"Revascularisation modalities",
+"htmlpage":"ENAS5080_6.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.6.0.0",
+"id":"60",
+"nametree":"Hospital discharge and post-discharge mgmt.",
+"tocnametree":"Hospital discharge and post-discharge mgmt.",
+"htmlpage":"ENAS5080_6.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"61",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS5080_7.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

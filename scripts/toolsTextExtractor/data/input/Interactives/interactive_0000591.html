@@ -1,0 +1,495 @@
+<html>
+
+<head>
+    <title>CV risk: relative (CVD Prev/Dyslip)</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+    <link href="calci_std.css" rel="stylesheet" type="text/css" />
+    <script>
+        var x;
+        var y;
+        var z;
+        var a;
+
+        function TUse() {
+            x = document.getElementById("r1").value;
+            toresult();
+        }
+
+        function TUse2() {
+            x = document.getElementById("r2").value;
+            toresult();
+        }
+
+        function calculate() {
+
+            a = "";
+            y = document.getElementById("BPSelect").value;
+            z = document.getElementById("UnitSelect").value;
+            //   alert(x);
+            if (z == "unit1") {
+                // alert("hi");
+                createOption("4");
+                createOption("5");
+                createOption("6");
+                createOption("7");
+                createOption("8");
+
+            } else if (z == "unit2") {
+                // alert(z);
+                createOption("155");
+                createOption("190");
+                createOption("230");
+                createOption("270");
+                createOption("310");
+                document.getElementById("UnitSelect").setAttribute("value", "");
+            }
+            toresult();
+        }
+
+        function toresult() {
+            //alert(x);
+            //alert(y);
+            //alert(z);
+            a = document.getElementById("TotalC").value;
+            y = document.getElementById("BPSelect").value;
+            z = document.getElementById("UnitSelect").value;
+            // alert(a);
+
+            if (isNaN(x) && isNaN(y) && isNaN(z) && isNaN(a)) {
+                //alert("called");
+            } else {
+                result(x, y, z, a);
+            }
+        }
+
+        function createOption(text) {
+            //alert(text);
+            var z = document.createElement("option");
+            z.setAttribute("value", text);
+            var t = document.createTextNode(text);
+            z.appendChild(t);
+
+            document.getElementById("TotalC").appendChild(z);
+        }
+
+        function deleteOption() {
+
+            document.getElementById("TotalC").options.length = 1;
+        }
+
+        function result(x, y, z, a) {
+            //alert(x);
+            if (x === undefined || y === undefined || z === undefined || a === undefined || z == "Select" || a == "Select") {
+                //alert(x);
+                document.getElementById("result").innerHTML = "<br/>";
+                deactiveResultStyle();
+            } else {
+                activeResultStyle();
+            }
+            if (x == "NS") {
+                // alert(y);
+                if (y == "120" && (a == "4" || a == "155")) {
+                    document.getElementById("result").innerHTML = "1";
+                }
+                if (y == "120" && (a == "5" || a == "190")) {
+                    document.getElementById("result").innerHTML = "1";
+                }
+                if (y == "120" && (a == "6" || a == "230")) {
+                    document.getElementById("result").innerHTML = "1";
+                }
+                if (y == "120" && (a == "7" || a == "270")) {
+                    document.getElementById("result").innerHTML = "2";
+                }
+                if (y == "120" && (a == "8" || a == "310")) {
+                    document.getElementById("result").innerHTML = "2";
+                }
+                if (y == "140" && (a == "4" || a == "155")) {
+                    document.getElementById("result").innerHTML = "1";
+                }
+                if (y == "140" && (a == "5" || a == "190")) {
+                    document.getElementById("result").innerHTML = "2";
+                }
+                if (y == "140" && (a == "6" || a == "230")) {
+                    document.getElementById("result").innerHTML = "2";
+                }
+                if (y == "140" && (a == "7" || a == "270")) {
+                    document.getElementById("result").innerHTML = "2";
+                }
+                if (y == "140" && (a == "8" || a == "310")) {
+                    document.getElementById("result").innerHTML = "3";
+                }
+                if (y == "160" && (a == "4" || a == "155")) {
+                    document.getElementById("result").innerHTML = "2";
+                }
+                if (y == "160" && (a == "5" || a == "190")) {
+                    document.getElementById("result").innerHTML = "3";
+                }
+                if (y == "160" && (a == "6" || a == "230")) {
+                    document.getElementById("result").innerHTML = "3";
+                }
+                if (y == "160" && (a == "7" || a == "270")) {
+                    document.getElementById("result").innerHTML = "4";
+                }
+                if (y == "160" && (a == "8" || a == "310")) {
+                    document.getElementById("result").innerHTML = "4";
+                }
+                if (y == "180" && (a == "4" || a == "155")) {
+                    document.getElementById("result").innerHTML = "3";
+                }
+                if (y == "180" && (a == "5" || a == "190")) {
+                    document.getElementById("result").innerHTML = "3";
+                }
+                if (y == "180" && (a == "6" || a == "230")) {
+                    document.getElementById("result").innerHTML = "4";
+                }
+                if (y == "180" && (a == "7" || a == "270")) {
+                    document.getElementById("result").innerHTML = "5";
+                }
+                if (y == "180" && (a == "8" || a == "310")) {
+                    document.getElementById("result").innerHTML = "6";
+                }
+
+            } else if (x == "S") {
+
+                if (y == "120" && (a == "4" || a == "155")) {
+                    document.getElementById("result").innerHTML = "2";
+                }
+                if (y == "120" && (a == "5" || a == "190")) {
+                    document.getElementById("result").innerHTML = "2";
+                }
+                if (y == "120" && (a == "6" || a == "230")) {
+                    document.getElementById("result").innerHTML = "3";
+                }
+                if (y == "120" && (a == "7" || a == "270")) {
+                    document.getElementById("result").innerHTML = "3";
+                }
+                if (y == "120" && (a == "8" || a == "310")) {
+                    document.getElementById("result").innerHTML = "4";
+                }
+                if (y == "140" && (a == "4" || a == "155")) {
+                    document.getElementById("result").innerHTML = "3";
+                }
+                if (y == "140" && (a == "5" || a == "190")) {
+                    document.getElementById("result").innerHTML = "3";
+                }
+                if (y == "140" && (a == "6" || a == "230")) {
+                    document.getElementById("result").innerHTML = "4";
+                }
+                if (y == "140" && (a == "7" || a == "270")) {
+                    document.getElementById("result").innerHTML = "5";
+                }
+                if (y == "140" && (a == "8" || a == "310")) {
+                    document.getElementById("result").innerHTML = "6";
+                }
+                if (y == "160" && (a == "4" || a == "155")) {
+                    document.getElementById("result").innerHTML = "4";
+                }
+                if (y == "160" && (a == "5" || a == "190")) {
+                    document.getElementById("result").innerHTML = "5";
+                }
+                if (y == "160" && (a == "6" || a == "230")) {
+                    document.getElementById("result").innerHTML = "6";
+                }
+                if (y == "160" && (a == "7" || a == "270")) {
+                    document.getElementById("result").innerHTML = "7";
+                }
+                if (y == "160" && (a == "8" || a == "310")) {
+                    document.getElementById("result").innerHTML = "8";
+                }
+                if (y == "180" && (a == "4" || a == "155")) {
+                    document.getElementById("result").innerHTML = "6";
+                }
+                if (y == "180" && (a == "5" || a == "190")) {
+                    document.getElementById("result").innerHTML = "7";
+                }
+                if (y == "180" && (a == "6" || a == "230")) {
+                    document.getElementById("result").innerHTML = "8";
+                }
+                if (y == "180" && (a == "7" || a == "270")) {
+                    document.getElementById("result").innerHTML = "10";
+                }
+                if (y == "180" && (a == "8" || a == "310")) {
+                    document.getElementById("result").innerHTML = "12";
+                }
+            }
+
+
+        }
+    </script>
+    <script>
+        function activeResultStyle() {
+            //alert("done");
+            var classValue = document.getElementsByClassName("output_name_disabled");
+
+            for (var i = 0; i < classValue.length; i + 1) {
+                //alert("done");
+                classValue[i].classList.add("output_name");
+                classValue[i].classList.remove("output_name_disabled");
+            }
+
+            var outputClass = document.getElementsByClassName("output_disabled");
+            for (var j = 0; j < outputClass.length; j + 1) {
+                //alert("done");
+                outputClass[j].classList.add("output");
+                outputClass[j].classList.remove("output_disabled");
+            }
+
+            var textareaOutputClass = document.getElementsByClassName("text-area-output-disabled");
+            for (var k = 0; k < textareaOutputClass.length; k + 1) {
+                //alert("done");
+                textareaOutputClass[k].classList.add("text-area-output");
+                textareaOutputClass[k].classList.remove("text-area-output-disabled");
+            }
+
+            var unitOutputClass = document.getElementsByClassName("unit_label_output_disabled");
+            for (var l = 0; l < unitOutputClass.length; l + 1) {
+                //alert("done");
+                unitOutputClass[l].classList.add("unit_label_output");
+                unitOutputClass[l].classList.remove("unit_label_output_disabled");
+            }
+
+            var activityOutput = document.getElementsByClassName("activity_output_disabled");
+            for (var act1 = 0; act1 < activityOutput.length; act1 + 1) {
+                //alert("done");
+                activityOutput[act1].classList.add("activity_output");
+                activityOutput[act1].classList.remove("activity_output_disabled");
+            }
+
+            var activityTextOutput = document.getElementsByClassName("activity-text-area-output-disabled");
+            for (var act2 = 0; act2 < activityTextOutput.length; act2 + 1) {
+                //alert("done");
+                activityTextOutput[act2].classList.add("activity-text-area-output");
+                activityTextOutput[act2].classList.remove("activity-text-area-output-disabled");
+            }
+
+
+        }
+
+        function deactiveResultStyle() {
+            //alert("done");
+            var classValue = document.getElementsByClassName("output_name");
+            for (var i = 0; i < classValue.length; i + 1) {
+                //alert("done");
+                classValue[i].classList.add("output_name_disabled");
+                classValue[i].classList.remove("output_name");
+            }
+
+            var outputClass = document.getElementsByClassName("output");
+            for (var j = 0; j < outputClass.length; j + 1) {
+                //alert("done");
+                outputClass[j].classList.add("output_disabled");
+                outputClass[j].classList.remove("output");
+            }
+
+            var textareaOutputClass = document.getElementsByClassName("text-area-output");
+            for (var k = 0; k < textareaOutputClass.length; k + 1) {
+                //alert("done");
+                textareaOutputClass[k].classList.add("text-area-output-disabled");
+                textareaOutputClass[k].classList.remove("text-area-output");
+            }
+
+            var unitOutputClass = document.getElementsByClassName("unit_label_output");
+            for (var l = 0; l < unitOutputClass.length; l + 1) {
+                //alert("done");
+                unitOutputClass[l].classList.add("unit_label_output_disabled");
+                unitOutputClass[l].classList.remove("unit_label_output");
+            }
+
+
+            var activityOutput = document.getElementsByClassName("activity_output");
+            for (var act1 = 0; act1 < activityOutput.length; act1 + 1) {
+                //alert("done");
+                activityOutput[act1].classList.add("activity_output_disabled");
+                activityOutput[act1].classList.remove("activity_output");
+            }
+
+            var activityTextOutput = document.getElementsByClassName("activity-text-area-output");
+            for (var act2 = 0; act2 < activityTextOutput.length; act2 + 1) {
+                //alert("done");
+                activityTextOutput[act2].classList.add("activity-text-area-output-disabled");
+                activityTextOutput[act2].classList.remove("activity-text-area-output");
+            }
+
+        }
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#ref_button").click(function() {
+
+                var t = $('#reference').css('display');
+
+                if (t == 'none') {
+                    $('#reference').css('display', "block");
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                } else {
+                    $('#reference').css('display', "none");
+                    t = block;
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                }
+
+            });
+
+            $("#reset").click(function() {
+                //$(".points").hide("slow");
+                $(".result_table").hide("slow");
+                //$("#reftext").hide("slow");
+                $("#reference").hide("slow");
+                totalscore = 0;
+                for (var x = 0; x < isBoxPressed.length; x++) {
+                    isBoxPressed[x] = "false";
+                }
+                isResetPressed = "false";
+
+                for (var x = 1; x < box.length; x++) {
+                    $("#" + box[x]).hide();
+                }
+
+                $("#total_points").text(totalscore);
+                $("#reset_text").text("Reset");
+                $("#reset").css({
+                    "-webkit-border-bottom-right-radius": "7px",
+                    "-webkit-border-bottom-left-radius": "7px"
+                });
+
+                for (var i = 0; i < boxArray.length; i++) {
+                    for (var j = 0; j < boxArray[i].length; j++) {
+                        $("#" + boxArray[i][j]).slideDown("fast");
+                    }
+                }
+
+                $(".list_middle").css({
+                    "-webkit-border-bottom-right-radius": "0px",
+                    "-webkit-border-bottom-left-radius": "0px"
+                });
+            });
+        });
+    </script>
+</head>
+
+<body onload="onLoad()">
+    <div class="table_container">
+        <table class="input_table">
+            <colgroup>
+                <col width="20%">
+                <col width="40%">
+                <col width="40%">
+            </colgroup>
+            <tbody>
+                <tr>
+
+                    <td class="input_name">Tobacco use</td>
+                    <td>
+                        <input type="radio" name="r1" id="r1" onclick="TUse()" value="NS" />
+                        <label onclick="" for="r1">Non-smoker</label></td>
+                    <td>
+                        <input type="radio" name="r1" id="r2" onclick="TUse2()" value="S" />
+                        <label onclick="" for="r2">Smoker</label></td>
+                </tr>
+
+                <tr>
+                    <td class="input_name">Systolic BP</td>
+                    <td>
+                        <select class="drop_center" name="methodSelect" id="BPSelect" onChange="toresult()">
+                            <option>Select</option>
+                            <option value="120">120</option>
+                            <option value="140">140</option>
+                            <option value="160">160</option>
+                            <option value="180">180</option>
+                        </select>
+                    </td>
+                    <td>mmHg</td>
+                </tr>
+                <tr>
+                    <td class="input_name">Total Cholestrol</td>
+                    <td colspan="1">
+                        <select class="drop_center" name="TotalC" id="TotalC" onChange="toresult()">
+                        <option>Select</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+							</select> </td>
+                    <td>
+                        <select class="drop_center" name="methodSelect" id="UnitSelect" onChange="deleteOption(); calculate()">
+                            
+                            <option value="unit1">mmol/L</option>
+                            <option value="unit2">mg/dL</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="table_container">
+        <table class="output_table">
+            <colgroup>
+                <col width="40%">
+                <col width="40%">
+                <col width="20%">
+            </colgroup>
+
+
+            <tbody id="tr_result">
+                <tr>
+                    <td class="output_name_disabled" colspan="3">
+                        <nobr>Relative CV risk</nobr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="output_disabled" id="result" name="result" readonly="readonly"><br/></div>
+                    </td>
+                    <td class="unit_label_output_disabled">10 years risk in %</td>
+                </tr>
+            </tbody>
+
+
+        </table>
+    </div>
+    <br/>
+    <div class="footer-div" id="998">
+        <table class="footer-button-table">
+            <!--       <tr>
+                <td class="footer-button" colspan="2" style="width: 50%;">
+                    <button class="mfooter-button" id="ref_button">Abbreviation(s)</button>
+                </td>-->
+            <tr>
+                <td class="footer-button" colspan="2" style="width: 50%;"><button class="mfooter-button" id="resetButton" onclick="window.location.href=window.location.href">Reset</button></td>
+                <td class="footer-button" colspan="2" style="width: 50%;"><button class="mfooter-button" id="moreInfoButton"><a href="ref_ENAS5196_9.3.3.0.html" class="more-info-link">More information</a></td>
+            </tr>
+			
+            <!-- <tr>
+                <td colspan="4">
+                    <div class="reference-box" id="reference">
+                        <p class="text-left">ECG = electrocardiogram; IVIG = intravenous immunoglobulin; NSAIDs = non-steroidal anti-inflammatory drugs.</p>
+                        <p class="text_left">Low-dose corticosteroids are considered when there are contra-indications to other drugs or when there is an incomplete response to aspirin/NSAIDs plus colchicine; in this case physicians should consider adding these drugs instead
+                            of replacing other anti-inflammatory therapies.</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="reference-box" id="reference">
+                        <p class="text-left"><sup>a</sup>Azathioprine is steroid-sparing and has a slow onset of action compared with IVIG and anakinra. Cost considerations may apply considering the cheaper solution first (e.g. azathioprine) and resorting to more expensive
+                            options (e.g. IVIG and anakinra) for refractory cases.
+                            <br/> *2 of 4 clinical criteria: pericardial chest pain, pericardial rubs, ECG changes; pericardial effusion<br/> **in case of contra-indications to aspirin/NSAID/colchicine and after exclusion of infectious cause</p>
+                    </div>
+                </td>
+            </tr>-->
+        </table>
+
+    </div>
+</body>
+
+</html>

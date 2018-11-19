@@ -9,13 +9,37 @@ class mergeTocTreeGTS {
         this.searchFolderPath = searchFolderPath;
         this.TOCJsonFolderPath = TOCJsonFolderPath;
         this.combinedContentArray = [];
+        this.fileCount = 0;
     }
 
     execute() {
 
-        this.readAllGTSFiles();
+        // this.readAllGTSFiles();
+        this.readSearchFilesDirectorySync();
+        console.log('Total files read : ', this.fileCount);
 
         return true;
+    }
+
+    readSearchFilesDirectorySync() {
+        var files = fs.readdirSync(this.searchFolderPath);
+        for (var i in files) {
+            // console.log(files[i]);
+            if (files[i] !== 'idx.json') {
+                let content = this.readFileSync(this.searchFolderPath + files[i]);
+                this.processGTSContent(files[i], content);
+            }
+        }
+    }
+
+    readFileSync(filePath) {
+        if (fs.existsSync(filePath)) {
+            // console.log(filePath + ' File exists');
+            console.log(`Now reading contents of ${filePath}`);
+            return fs.readFileSync(filePath, 'utf8');
+        } else {
+            console.log(filePath + ' File does not exist');
+        }
     }
 
     getFilePath(fileName) {
@@ -24,7 +48,7 @@ class mergeTocTreeGTS {
 
     readAllGTSFiles() {
         let THIS = this;
-        fs.readdir(this.searchFolderPath, function(err, filenames) {
+        fs.readdirSync(this.searchFolderPath, function(err, filenames) {
             if (err) {
                 // onError(err);
                 return;
@@ -32,11 +56,13 @@ class mergeTocTreeGTS {
             filenames.forEach(function(filename) {
                 // IGNORE IDX JSON
                 if (filename.toLowerCase() !== 'idx.json') {
-                    fs.readFile(THIS.searchFolderPath + filename, 'utf-8', function(err, content) {
+                    fs.readFileSync(THIS.searchFolderPath + filename, 'utf-8', function(err, content) {
                         if (err) {
                             // onError(err);
+                            console.log(err);
                             return;
                         }
+                        console.log(content);
                         THIS.processGTSContent(filename, content);
                     });
                 }
@@ -47,6 +73,7 @@ class mergeTocTreeGTS {
     // Filename expected : gts_1.json
     // Content expected : [{"page":"","text":""}]
     processGTSContent(filename, content) {
+        // console.log(content);
         let glID = this.extractGlIDfromFileName(filename);
         console.log(glID);
 
@@ -58,6 +85,9 @@ class mergeTocTreeGTS {
         let THIS = this;
         content.forEach(obj => {
             // Extract contents out of [] inside parsed json and push it to combinedContentArray
+            obj.guidelineID = glID;
+            // obj.test = '123';
+            // console.log(obj);
             THIS.combinedContentArray.push(obj);
         });
 

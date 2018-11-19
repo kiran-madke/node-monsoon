@@ -1,0 +1,1002 @@
+﻿[
+{
+"old_id":"1",
+"old_nametree":"Authors and legal information",
+"old_numtree":"1.0.0.0",
+"old_htmlpage":"ENAS5083_1.0.0.0",
+"new_id":"1",
+"new_nametree":"Authors and legal information",
+"new_numtree":"1.0.0.0",
+"new_htmlpage":"ENAS5083_1.0.0.0"
+},
+{
+"old_id":"2",
+"old_nametree":"Preamble",
+"old_numtree":"2.0.0.0",
+"old_htmlpage":"ENAS5083_2.0.0.0",
+"new_id":"2",
+"new_nametree":"Preamble",
+"new_numtree":"2.0.0.0",
+"new_htmlpage":"ENAS5083_2.0.0.0"
+},
+{
+"old_id":"3",
+"old_nametree":"Introduction",
+"old_numtree":"3.0.0.0",
+"old_htmlpage":"ENAS5083_3.0.0.0",
+"new_id":"3",
+"new_nametree":"Introduction",
+"new_numtree":"3.0.0.0",
+"new_htmlpage":"ENAS5083_3.0.0.0"
+},
+{
+"old_id":"4",
+"old_nametree":"Definition and prevention of SCD",
+"old_numtree":"4.0.0.0",
+"old_htmlpage":"null",
+"new_id":"4",
+"new_nametree":"Definition and prevention of SCD",
+"new_numtree":"4.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"5",
+"old_nametree":"Definitions",
+"old_numtree":"4.1.0.0",
+"old_htmlpage":"ENAS5083_4.1.0.0",
+"new_id":"5",
+"new_nametree":"Definitions",
+"new_numtree":"4.1.0.0",
+"new_htmlpage":"ENAS5083_4.1.0.0"
+},
+{
+"old_id":"6",
+"old_nametree":"Indications for autopsy",
+"old_numtree":"4.2.0.0",
+"old_htmlpage":"ENAS5083_4.2.0.0",
+"new_id":"6",
+"new_nametree":"Indications for autopsy",
+"new_numtree":"4.2.0.0",
+"new_htmlpage":"ENAS5083_4.2.0.0"
+},
+{
+"old_id":"7",
+"old_nametree":"Ventricular arrhythmia screening",
+"old_numtree":"4.3.0.0",
+"old_htmlpage":"null",
+"new_id":"7",
+"new_nametree":"Ventricular arrhythmia screening",
+"new_numtree":"4.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"8",
+"old_nametree":"Non-invasive evaluation",
+"old_numtree":"4.3.1.0",
+"old_htmlpage":"ENAS5083_4.3.1.0",
+"new_id":"8",
+"new_nametree":"Non-invasive evaluation",
+"new_numtree":"4.3.1.0",
+"new_htmlpage":"ENAS5083_4.3.1.0"
+},
+{
+"old_id":"9",
+"old_nametree":"Invasive evaluation",
+"old_numtree":"4.3.2.0",
+"old_htmlpage":"ENAS5083_4.3.2.0",
+"new_id":"9",
+"new_nametree":"Invasive evaluation",
+"new_numtree":"4.3.2.0",
+"new_htmlpage":"ENAS5083_4.3.2.0"
+},
+{
+"old_id":"10",
+"old_nametree":"Terminology vs. ECG classification",
+"old_numtree":"4.3.3.0",
+"old_htmlpage":"ENAS5083_4.3.3.0",
+"new_id":"10",
+"new_nametree":"Terminology vs. ECG classification",
+"new_numtree":"4.3.3.0",
+"new_htmlpage":"ENAS5083_4.3.3.0"
+},
+{
+"old_id":"11",
+"old_nametree":"Diagnostic workup",
+"old_numtree":"4.3.4.0",
+"old_htmlpage":"ENAS5083_4.3.4.0",
+"new_id":"11",
+"new_nametree":"Diagnostic workup",
+"new_numtree":"4.3.4.0",
+"new_htmlpage":"ENAS5083_4.3.4.0"
+},
+{
+"old_id":"12",
+"old_nametree":"Ventricular arrhythmia therapies",
+"old_numtree":"5.0.0.0",
+"old_htmlpage":"null",
+"new_id":"12",
+"new_nametree":"Ventricular arrhythmia therapies",
+"new_numtree":"5.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"13",
+"old_nametree":"Pharmacotherapy",
+"old_numtree":"5.1.0.0",
+"old_htmlpage":"ENAS5083_5.1.0.0",
+"new_id":"13",
+"new_nametree":"Pharmacotherapy",
+"new_numtree":"5.1.0.0",
+"new_htmlpage":"ENAS5083_5.1.0.0"
+},
+{
+"old_id":"14",
+"old_nametree":"Device therapy",
+"old_numtree":"5.2.0.0",
+"old_htmlpage":"null",
+"new_id":"14",
+"new_nametree":"Device therapy",
+"new_numtree":"5.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"15",
+"old_nametree":"ICD",
+"old_numtree":"5.2.1.0",
+"old_htmlpage":"ENAS5083_5.2.1.0",
+"new_id":"15",
+"new_nametree":"ICD",
+"new_numtree":"5.2.1.0",
+"new_htmlpage":"ENAS5083_5.2.1.0"
+},
+{
+"old_id":"16",
+"old_nametree":"Subcut. cardiovert. defibrillator",
+"old_numtree":"5.2.2.0",
+"old_htmlpage":"ENAS5083_5.2.2.0",
+"new_id":"16",
+"new_nametree":"Subcut. cardiovert. defibrillator",
+"new_numtree":"5.2.2.0",
+"new_htmlpage":"ENAS5083_5.2.2.0"
+},
+{
+"old_id":"17",
+"old_nametree":"Wearable cardiovert. defirillator",
+"old_numtree":"5.2.3.0",
+"old_htmlpage":"ENAS5083_5.2.3.0",
+"new_id":"17",
+"new_nametree":"Wearable cardiovert. defirillator",
+"new_numtree":"5.2.3.0",
+"new_htmlpage":"ENAS5083_5.2.3.0"
+},
+{
+"old_id":"18",
+"old_nametree":"Public access defibrillator",
+"old_numtree":"5.2.4.0",
+"old_htmlpage":"ENAS5083_5.2.4.0",
+"new_id":"18",
+"new_nametree":"Public access defibrillator",
+"new_numtree":"5.2.4.0",
+"new_htmlpage":"ENAS5083_5.2.4.0"
+},
+{
+"old_id":"19",
+"old_nametree":"Cardioversion",
+"old_numtree":"5.3.0.0",
+"old_htmlpage":"ENAS5083_5.3.0.0",
+"new_id":"19",
+"new_nametree":"Cardioversion",
+"new_numtree":"5.3.0.0",
+"new_htmlpage":"ENAS5083_5.3.0.0"
+},
+{
+"old_id":"20",
+"old_nametree":"Interventional therapy",
+"old_numtree":"5.4.0.0",
+"old_htmlpage":"null",
+"new_id":"20",
+"new_nametree":"Interventional therapy",
+"new_numtree":"5.4.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"21",
+"old_nametree":"Catheter ablation",
+"old_numtree":"5.4.1.0",
+"old_htmlpage":"ENAS5083_5.4.1.0",
+"new_id":"21",
+"new_nametree":"Catheter ablation",
+"new_numtree":"5.4.1.0",
+"new_htmlpage":"ENAS5083_5.4.1.0"
+},
+{
+"old_id":"22",
+"old_nametree":"Anti-arrhythmic surgery",
+"old_numtree":"5.4.2.0",
+"old_htmlpage":"ENAS5083_5.4.2.0",
+"new_id":"22",
+"new_nametree":"Anti-arrhythmic surgery",
+"new_numtree":"5.4.2.0",
+"new_htmlpage":"ENAS5083_5.4.2.0"
+},
+{
+"old_id":"23",
+"old_nametree":"ICD treat. psych. impact",
+"old_numtree":"5.5.0.0",
+"old_htmlpage":"ENAS5083_5.5.0.0",
+"new_id":"23",
+"new_nametree":"ICD treat. psych. impact",
+"new_numtree":"5.5.0.0",
+"new_htmlpage":"ENAS5083_5.5.0.0"
+},
+{
+"old_id":"24",
+"old_nametree":"Mgmt. of vent. arrhythmia in CAD",
+"old_numtree":"6.0.0.0",
+"old_htmlpage":"null",
+"new_id":"24",
+"new_nametree":"Mgmt. of vent. arrhythmia in CAD",
+"new_numtree":"6.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"25",
+"old_nametree":"Acute coronary syndromes",
+"old_numtree":"6.1.0.0",
+"old_htmlpage":"null",
+"new_id":"25",
+"new_nametree":"Acute coronary syndromes",
+"new_numtree":"6.1.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"26",
+"old_nametree":"SCD with ACS: pre-hospital",
+"old_numtree":"6.1.1.0",
+"old_htmlpage":"ENAS5083_6.1.1.0",
+"new_id":"26",
+"new_nametree":"SCD with ACS: pre-hospital",
+"new_numtree":"6.1.1.0",
+"new_htmlpage":"ENAS5083_6.1.1.0"
+},
+{
+"old_id":"27",
+"old_nametree":"SCD with ACS: hospital phase",
+"old_numtree":"6.1.2.0",
+"old_htmlpage":"null",
+"new_id":"27",
+"new_nametree":"SCD with ACS: hospital phase",
+"new_numtree":"6.1.2.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"28",
+"old_nametree":"Indications for revascularization",
+"old_numtree":"6.1.2.1",
+"old_htmlpage":"ENAS5083_6.1.2.1",
+"new_id":"28",
+"new_nametree":"Indications for revascularization",
+"new_numtree":"6.1.2.1",
+"new_htmlpage":"ENAS5083_6.1.2.1"
+},
+{
+"old_id":"29",
+"old_nametree":"Defib./cardioversion/drugs/ablation",
+"old_numtree":"6.1.2.2",
+"old_htmlpage":"ENAS5083_6.1.2.2",
+"new_id":"29",
+"new_nametree":"Defib./cardioversion/drugs/ablation",
+"new_numtree":"6.1.2.2",
+"new_htmlpage":"ENAS5083_6.1.2.2"
+},
+{
+"old_id":"30",
+"old_nametree":"Pacing/ICD",
+"old_numtree":"6.1.2.3",
+"old_htmlpage":"ENAS5083_6.1.2.3",
+"new_id":"30",
+"new_nametree":"Pacing/ICD",
+"new_numtree":"6.1.2.3",
+"new_htmlpage":"ENAS5083_6.1.2.3"
+},
+{
+"old_id":"31",
+"old_nametree":"Diagnostic workup",
+"old_numtree":"6.1.3.0",
+"old_htmlpage":"ENAS5083_6.1.3.0",
+"new_id":"31",
+"new_nametree":"Diagnostic workup",
+"new_numtree":"6.1.3.0",
+"new_htmlpage":"ENAS5083_6.1.3.0"
+},
+{
+"old_id":"32",
+"old_nametree":"Early after MI",
+"old_numtree":"6.2.0.0",
+"old_htmlpage":"null",
+"new_id":"32",
+"new_nametree":"Early after MI",
+"new_numtree":"6.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"33",
+"old_nametree":"Risk stratification for SCD after MI",
+"old_numtree":"6.2.1.0",
+"old_htmlpage":"ENAS5083_6.2.1.0",
+"new_id":"33",
+"new_nametree":"Risk stratification for SCD after MI",
+"new_numtree":"6.2.1.0",
+"new_htmlpage":"ENAS5083_6.2.1.0"
+},
+{
+"old_id":"34",
+"old_nametree":"Timing of ICD placement",
+"old_numtree":"6.2.2.0",
+"old_htmlpage":"ENAS5083_6.2.2.0",
+"new_id":"34",
+"new_nametree":"Timing of ICD placement",
+"new_numtree":"6.2.2.0",
+"new_htmlpage":"ENAS5083_6.2.2.0"
+},
+{
+"old_id":"35",
+"old_nametree":"SCAD after MI with preserved EF",
+"old_numtree":"6.2.3.0",
+"old_htmlpage":"ENAS5083_6.2.3.0",
+"new_id":"35",
+"new_nametree":"SCAD after MI with preserved EF",
+"new_numtree":"6.2.3.0",
+"new_htmlpage":"ENAS5083_6.2.3.0"
+},
+{
+"old_id":"36",
+"old_nametree":"LV dysfunction: therapies",
+"old_numtree":"7.0.0.0",
+"old_htmlpage":"null",
+"new_id":"36",
+"new_nametree":"LV dysfunction: therapies",
+"new_numtree":"7.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"37",
+"old_nametree":"Primary prevention of SCD",
+"old_numtree":"7.1.0.0",
+"old_htmlpage":"ENAS5083_7.1.0.0",
+"new_id":"37",
+"new_nametree":"Primary prevention of SCD",
+"new_numtree":"7.1.0.0",
+"new_htmlpage":"ENAS5083_7.1.0.0"
+},
+{
+"old_id":"38",
+"old_nametree":"Cardiac resynchronization therapy",
+"old_numtree":"7.2.0.0",
+"old_htmlpage":"null",
+"new_id":"38",
+"new_nametree":"Cardiac resynchronization therapy",
+"new_numtree":"7.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"39",
+"old_nametree":"Sinus rhythm in class III-IV HF",
+"old_numtree":"7.2.1.0",
+"old_htmlpage":"ENAS5083_7.2.1.0",
+"new_id":"39",
+"new_nametree":"Sinus rhythm in class III-IV HF",
+"new_numtree":"7.2.1.0",
+"new_htmlpage":"ENAS5083_7.2.1.0"
+},
+{
+"old_id":"40",
+"old_nametree":"Permanent AFib in class III-IV HF",
+"old_numtree":"7.2.2.0",
+"old_htmlpage":"ENAS5083_7.2.2.0",
+"new_id":"40",
+"new_nametree":"Permanent AFib in class III-IV HF",
+"new_numtree":"7.2.2.0",
+"new_htmlpage":"ENAS5083_7.2.2.0"
+},
+{
+"old_id":"41",
+"old_nametree":"Sinus rhythm and mild HF",
+"old_numtree":"7.2.3.0",
+"old_htmlpage":"ENAS5083_7.2.3.0",
+"new_id":"41",
+"new_nametree":"Sinus rhythm and mild HF",
+"new_numtree":"7.2.3.0",
+"new_htmlpage":"ENAS5083_7.2.3.0"
+},
+{
+"old_id":"42",
+"old_nametree":"Premature ventricular complexes",
+"old_numtree":"7.3.0.0",
+"old_htmlpage":"ENAS5083_7.3.0.0",
+"new_id":"42",
+"new_nametree":"Premature ventricular complexes",
+"new_numtree":"7.3.0.0",
+"new_htmlpage":"ENAS5083_7.3.0.0"
+},
+{
+"old_id":"43",
+"old_nametree":"Sustained ventricular tachycardia",
+"old_numtree":"7.4.0.0",
+"old_htmlpage":"null",
+"new_id":"43",
+"new_nametree":"Sustained ventricular tachycardia",
+"new_numtree":"7.4.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"44",
+"old_nametree":"Drug therapy",
+"old_numtree":"7.4.1.0",
+"old_htmlpage":"ENAS5083_7.4.1.0",
+"new_id":"44",
+"new_nametree":"Drug therapy",
+"new_numtree":"7.4.1.0",
+"new_htmlpage":"ENAS5083_7.4.1.0"
+},
+{
+"old_id":"45",
+"old_nametree":"Catheter ablation",
+"old_numtree":"7.4.2.0",
+"old_htmlpage":"ENAS5083_7.4.2.0",
+"new_id":"45",
+"new_nametree":"Catheter ablation",
+"new_numtree":"7.4.2.0",
+"new_htmlpage":"ENAS5083_7.4.2.0"
+},
+{
+"old_id":"46",
+"old_nametree":"Bundle branch re-entrant tachycardia",
+"old_numtree":"7.4.3.0",
+"old_htmlpage":"ENAS5083_7.4.3.0",
+"new_id":"46",
+"new_nametree":"Bundle branch re-entrant tachycardia",
+"new_numtree":"7.4.3.0",
+"new_htmlpage":"ENAS5083_7.4.3.0"
+},
+{
+"old_id":"47",
+"old_nametree":"Cardiomyopathies",
+"old_numtree":"8.0.0.0",
+"old_htmlpage":"null",
+"new_id":"47",
+"new_nametree":"Cardiomyopathies",
+"new_numtree":"8.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"48",
+"old_nametree":"Dilated cardiomyopathy",
+"old_numtree":"8.1.0.0",
+"old_htmlpage":"null",
+"new_id":"48",
+"new_nametree":"Dilated cardiomyopathy",
+"new_numtree":"8.1.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"49",
+"old_nametree":"Definition",
+"old_numtree":"8.1.1.0",
+"old_htmlpage":"ENAS5083_8.1.1.0",
+"new_id":"49",
+"new_nametree":"Definition",
+"new_numtree":"8.1.1.0",
+"new_htmlpage":"ENAS5083_8.1.1.0"
+},
+{
+"old_id":"50",
+"old_nametree":"Risk stratification and mgmt.",
+"old_numtree":"8.1.2.0",
+"old_htmlpage":"ENAS5083_8.1.2.0",
+"new_id":"50",
+"new_nametree":"Risk stratification and mgmt.",
+"new_numtree":"8.1.2.0",
+"new_htmlpage":"ENAS5083_8.1.2.0"
+},
+{
+"old_id":"51",
+"old_nametree":"Hypertrophic cardiomyopathy",
+"old_numtree":"8.2.0.0",
+"old_htmlpage":"null",
+"new_id":"51",
+"new_nametree":"Hypertrophic cardiomyopathy",
+"new_numtree":"8.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"52",
+"old_nametree":"Introduction",
+"old_numtree":"8.2.1.0",
+"old_htmlpage":"ENAS5083_8.2.1.0",
+"new_id":"52",
+"new_nametree":"Introduction",
+"new_numtree":"8.2.1.0",
+"new_htmlpage":"ENAS5083_8.2.1.0"
+},
+{
+"old_id":"53",
+"old_nametree":"Prevention of SCD",
+"old_numtree":"8.2.2.0",
+"old_htmlpage":"ENAS5083_8.2.2.0",
+"new_id":"53",
+"new_nametree":"Prevention of SCD",
+"new_numtree":"8.2.2.0",
+"new_htmlpage":"ENAS5083_8.2.2.0"
+},
+{
+"old_id":"54",
+"old_nametree":"Arrhythmogenic RV cardiomyopathy",
+"old_numtree":"8.3.0.0",
+"old_htmlpage":"ENAS5083_8.3.0.0",
+"new_id":"54",
+"new_nametree":"Arrhythmogenic RV cardiomyopathy",
+"new_numtree":"8.3.0.0",
+"new_htmlpage":"ENAS5083_8.3.0.0"
+},
+{
+"old_id":"55",
+"old_nametree":"Other Cardiomyopathies",
+"old_numtree":"8.4.0.0",
+"old_htmlpage":"null",
+"new_id":"55",
+"new_nametree":"Other Cardiomyopathies",
+"new_numtree":"8.4.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"56",
+"old_nametree":"Infiltrative cardiomyopathy",
+"old_numtree":"8.4.1.0",
+"old_htmlpage":"ENAS5083_8.4.1.0",
+"new_id":"56",
+"new_nametree":"Infiltrative cardiomyopathy",
+"new_numtree":"8.4.1.0",
+"new_htmlpage":"ENAS5083_8.4.1.0"
+},
+{
+"old_id":"57",
+"old_nametree":"Restrictive cardiomyopathy",
+"old_numtree":"8.4.2.0",
+"old_htmlpage":"ENAS5083_8.4.2.0",
+"new_id":"57",
+"new_nametree":"Restrictive cardiomyopathy",
+"new_numtree":"8.4.2.0",
+"new_htmlpage":"ENAS5083_8.4.2.0"
+},
+{
+"old_id":"58",
+"old_nametree":"Chagas’ cardiomyopathy",
+"old_numtree":"8.4.3.0",
+"old_htmlpage":"ENAS5083_8.4.3.0",
+"new_id":"58",
+"new_nametree":"Chagas’ cardiomyopathy",
+"new_numtree":"8.4.3.0",
+"new_htmlpage":"ENAS5083_8.4.3.0"
+},
+{
+"old_id":"59",
+"old_nametree":"Inherited pri. arrhythmia synd.",
+"old_numtree":"9.0.0.0",
+"old_htmlpage":"null",
+"new_id":"59",
+"new_nametree":"Inherited pri. arrhythmia synd.",
+"new_numtree":"9.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"60",
+"old_nametree":"Introduction",
+"old_numtree":"9.1.0.0",
+"old_htmlpage":"ENAS5083_9.1.0.0",
+"new_id":"60",
+"new_nametree":"Introduction",
+"new_numtree":"9.1.0.0",
+"new_htmlpage":"ENAS5083_9.1.0.0"
+},
+{
+"old_id":"61",
+"old_nametree":"Long QT syndrome",
+"old_numtree":"9.2.0.0",
+"old_htmlpage":"null",
+"new_id":"61",
+"new_nametree":"Long QT syndrome",
+"new_numtree":"9.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"62",
+"old_nametree":"Diagnosis",
+"old_numtree":"9.2.1.0",
+"old_htmlpage":"ENAS5083_9.2.1.0",
+"new_id":"62",
+"new_nametree":"Diagnosis",
+"new_numtree":"9.2.1.0",
+"new_htmlpage":"ENAS5083_9.2.1.0"
+},
+{
+"old_id":"63",
+"old_nametree":"Risk stratification and mgmt.",
+"old_numtree":"9.2.2.0",
+"old_htmlpage":"ENAS5083_9.2.2.0",
+"new_id":"63",
+"new_nametree":"Risk stratification and mgmt.",
+"new_numtree":"9.2.2.0",
+"new_htmlpage":"ENAS5083_9.2.2.0"
+},
+{
+"old_id":"64",
+"old_nametree":"Short QT syndrome",
+"old_numtree":"9.3.0.0",
+"old_htmlpage":"null",
+"new_id":"64",
+"new_nametree":"Short QT syndrome",
+"new_numtree":"9.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"65",
+"old_nametree":"Diagnosis",
+"old_numtree":"9.3.1.0",
+"old_htmlpage":"ENAS5083_9.3.1.0",
+"new_id":"65",
+"new_nametree":"Diagnosis",
+"new_numtree":"9.3.1.0",
+"new_htmlpage":"ENAS5083_9.3.1.0"
+},
+{
+"old_id":"66",
+"old_nametree":"Risk stratification and mgmt.",
+"old_numtree":"9.3.2.0",
+"old_htmlpage":"ENAS5083_9.3.2.0",
+"new_id":"66",
+"new_nametree":"Risk stratification and mgmt.",
+"new_numtree":"9.3.2.0",
+"new_htmlpage":"ENAS5083_9.3.2.0"
+},
+{
+"old_id":"67",
+"old_nametree":"Brugada syndrome",
+"old_numtree":"9.4.0.0",
+"old_htmlpage":"null",
+"new_id":"67",
+"new_nametree":"Brugada syndrome",
+"new_numtree":"9.4.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"68",
+"old_nametree":"Diagnosis",
+"old_numtree":"9.4.1.0",
+"old_htmlpage":"ENAS5083_9.4.1.0",
+"new_id":"68",
+"new_nametree":"Diagnosis",
+"new_numtree":"9.4.1.0",
+"new_htmlpage":"ENAS5083_9.4.1.0"
+},
+{
+"old_id":"69",
+"old_nametree":"Risk stratification and mgmt.",
+"old_numtree":"9.4.2.0",
+"old_htmlpage":"ENAS5083_9.4.2.0",
+"new_id":"69",
+"new_nametree":"Risk stratification and mgmt.",
+"new_numtree":"9.4.2.0",
+"new_htmlpage":"ENAS5083_9.4.2.0"
+},
+{
+"old_id":"70",
+"old_nametree":"CPVT",
+"old_numtree":"9.5.0.0",
+"old_htmlpage":"null",
+"new_id":"70",
+"new_nametree":"CPVT",
+"new_numtree":"9.5.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"71",
+"old_nametree":"Diagnosis",
+"old_numtree":"9.5.1.0",
+"old_htmlpage":"ENAS5083_9.5.1.0",
+"new_id":"71",
+"new_nametree":"Diagnosis",
+"new_numtree":"9.5.1.0",
+"new_htmlpage":"ENAS5083_9.5.1.0"
+},
+{
+"old_id":"72",
+"old_nametree":"Risk stratification and mgmt.",
+"old_numtree":"9.5.2.0",
+"old_htmlpage":"ENAS5083_9.5.2.0",
+"new_id":"72",
+"new_nametree":"Risk stratification and mgmt.",
+"new_numtree":"9.5.2.0",
+"new_htmlpage":"ENAS5083_9.5.2.0"
+},
+{
+"old_id":"73",
+"old_nametree":"Paediatric arrhythmias and CHD",
+"old_numtree":"10.0.0.0",
+"old_htmlpage":"null",
+"new_id":"73",
+"new_nametree":"Paediatric arrhythmias and CHD",
+"new_numtree":"10.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"74",
+"old_nametree":"Mgmt. of ventricular arrhythmia",
+"old_numtree":"10.1.0.0",
+"old_htmlpage":"ENAS5083_10.1.0.0",
+"new_id":"74",
+"new_nametree":"Mgmt. of ventricular arrhythmia",
+"new_numtree":"10.1.0.0",
+"new_htmlpage":"ENAS5083_10.1.0.0"
+},
+{
+"old_id":"75",
+"old_nametree":"SCD and VA in pts. with CHD",
+"old_numtree":"10.2.0.0",
+"old_htmlpage":"ENAS5083_10.2.0.0",
+"new_id":"75",
+"new_nametree":"SCD and VA in pts. with CHD",
+"new_numtree":"10.2.0.0",
+"new_htmlpage":"ENAS5083_10.2.0.0"
+},
+{
+"old_id":"76",
+"old_nametree":"ICD therapy",
+"old_numtree":"10.3.0.0",
+"old_htmlpage":"ENAS5083_10.3.0.0",
+"new_id":"76",
+"new_nametree":"ICD therapy",
+"new_numtree":"10.3.0.0",
+"new_htmlpage":"ENAS5083_10.3.0.0"
+},
+{
+"old_id":"77",
+"old_nametree":"VT and VF in normal hearts",
+"old_numtree":"11.0.0.0",
+"old_htmlpage":"null",
+"new_id":"77",
+"new_nametree":"VT and VF in normal hearts",
+"new_numtree":"11.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"78",
+"old_nametree":"Outflow tract VT",
+"old_numtree":"11.1.0.0",
+"old_htmlpage":"ENAS5083_11.1.0.0",
+"new_id":"78",
+"new_nametree":"Outflow tract VT",
+"new_numtree":"11.1.0.0",
+"new_htmlpage":"ENAS5083_11.1.0.0"
+},
+{
+"old_id":"79",
+"old_nametree":"VT of miscellaneous origin",
+"old_numtree":"11.2.0.0",
+"old_htmlpage":"ENAS5083_11.2.0.0",
+"new_id":"79",
+"new_nametree":"VT of miscellaneous origin",
+"new_numtree":"11.2.0.0",
+"new_htmlpage":"ENAS5083_11.2.0.0"
+},
+{
+"old_id":"80",
+"old_nametree":"Idiopathic VF",
+"old_numtree":"11.3.0.0",
+"old_htmlpage":"ENAS5083_11.3.0.0",
+"new_id":"80",
+"new_nametree":"Idiopathic VF",
+"new_numtree":"11.3.0.0",
+"new_htmlpage":"ENAS5083_11.3.0.0"
+},
+{
+"old_id":"81",
+"old_nametree":"Short-coupled torsade de pointes",
+"old_numtree":"11.4.0.0",
+"old_htmlpage":"ENAS5083_11.4.0.0",
+"new_id":"81",
+"new_nametree":"Short-coupled torsade de pointes",
+"new_numtree":"11.4.0.0",
+"new_htmlpage":"ENAS5083_11.4.0.0"
+},
+{
+"old_id":"82",
+"old_nametree":"Inflammatory/valvular heart diseases",
+"old_numtree":"12.0.0.0",
+"old_htmlpage":"null",
+"new_id":"82",
+"new_nametree":"Inflammatory/valvular heart diseases",
+"new_numtree":"12.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"83",
+"old_nametree":"Mgmt. of VA in IHD",
+"old_numtree":"12.1.0.0",
+"old_htmlpage":"ENAS5083_12.1.0.0",
+"new_id":"83",
+"new_nametree":"Mgmt. of VA in IHD",
+"new_numtree":"12.1.0.0",
+"new_htmlpage":"ENAS5083_12.1.0.0"
+},
+{
+"old_id":"84",
+"old_nametree":"Mgmt. of VA in VHD",
+"old_numtree":"12.2.0.0",
+"old_htmlpage":"ENAS5083_12.2.0.0",
+"new_id":"84",
+"new_nametree":"Mgmt. of VA in VHD",
+"new_numtree":"12.2.0.0",
+"new_htmlpage":"ENAS5083_12.2.0.0"
+},
+{
+"old_id":"85",
+"old_nametree":"Arrhythmia risk: Sp. Populations",
+"old_numtree":"13.0.0.0",
+"old_htmlpage":"null",
+"new_id":"85",
+"new_nametree":"Arrhythmia risk: Sp. Populations",
+"new_numtree":"13.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"86",
+"old_nametree":"Psychiatric patients",
+"old_numtree":"13.1.0.0",
+"old_htmlpage":"ENAS5083_13.1.0.0",
+"new_id":"86",
+"new_nametree":"Psychiatric patients",
+"new_numtree":"13.1.0.0",
+"new_htmlpage":"ENAS5083_13.1.0.0"
+},
+{
+"old_id":"87",
+"old_nametree":"Pts. with neuromuscular disorders",
+"old_numtree":"13.2.0.0",
+"old_htmlpage":"null",
+"new_id":"87",
+"new_nametree":"Pts. with neuromuscular disorders",
+"new_numtree":"13.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"88",
+"old_nametree":"Overview",
+"old_numtree":"13.2.1.0",
+"old_htmlpage":"ENAS5083_13.2.1.0",
+"new_id":"88",
+"new_nametree":"Overview",
+"new_numtree":"13.2.1.0",
+"new_htmlpage":"ENAS5083_13.2.1.0"
+},
+{
+"old_id":"89",
+"old_nametree":"Muscular dystrophies",
+"old_numtree":"13.2.2.0",
+"old_htmlpage":"ENAS5083_13.2.2.0",
+"new_id":"89",
+"new_nametree":"Muscular dystrophies",
+"new_numtree":"13.2.2.0",
+"new_htmlpage":"ENAS5083_13.2.2.0"
+},
+{
+"old_id":"90",
+"old_nametree":"Pregnant patients",
+"old_numtree":"13.3.0.0",
+"old_htmlpage":"null",
+"new_id":"90",
+"new_nametree":"Pregnant patients",
+"new_numtree":"13.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"91",
+"old_nametree":"Arrhythmia not related to peripart. CM",
+"old_numtree":"13.3.1.0",
+"old_htmlpage":"ENAS5083_13.3.1.0",
+"new_id":"91",
+"new_nametree":"Arrhythmia not related to peripart. CM",
+"new_numtree":"13.3.1.0",
+"new_htmlpage":"ENAS5083_13.3.1.0"
+},
+{
+"old_id":"92",
+"old_nametree":"Arrhythmia related to peripart. CM",
+"old_numtree":"13.3.2.0",
+"old_htmlpage":"ENAS5083_13.3.2.0",
+"new_id":"92",
+"new_nametree":"Arrhythmia related to peripart. CM",
+"new_numtree":"13.3.2.0",
+"new_htmlpage":"ENAS5083_13.3.2.0"
+},
+{
+"old_id":"93",
+"old_nametree":"Obstructive sleep apnea",
+"old_numtree":"13.4.0.0",
+"old_htmlpage":"ENAS5083_13.4.0.0",
+"new_id":"93",
+"new_nametree":"Obstructive sleep apnea",
+"new_numtree":"13.4.0.0",
+"new_htmlpage":"ENAS5083_13.4.0.0"
+},
+{
+"old_id":"94",
+"old_nametree":"Drug-related pro-arrhythmia",
+"old_numtree":"13.5.0.0",
+"old_htmlpage":"ENAS5083_13.5.0.0",
+"new_id":"94",
+"new_nametree":"Drug-related pro-arrhythmia",
+"new_numtree":"13.5.0.0",
+"new_htmlpage":"ENAS5083_13.5.0.0"
+},
+{
+"old_id":"95",
+"old_nametree":"SCD in athletes",
+"old_numtree":"13.6.0.0",
+"old_htmlpage":"ENAS5083_13.6.0.0",
+"new_id":"95",
+"new_nametree":"SCD in athletes",
+"new_numtree":"13.6.0.0",
+"new_htmlpage":"ENAS5083_13.6.0.0"
+},
+{
+"old_id":"96",
+"old_nametree":"Pre-participation eval. Protocol",
+"old_numtree":"13.7.0.0",
+"old_htmlpage":"ENAS5083_13.7.0.0",
+"new_id":"96",
+"new_nametree":"Pre-participation eval. Protocol",
+"new_numtree":"13.7.0.0",
+"new_htmlpage":"ENAS5083_13.7.0.0"
+},
+{
+"old_id":"97",
+"old_nametree":"Wolff-Parkinson-White syndrome",
+"old_numtree":"13.8.0.0",
+"old_htmlpage":"null",
+"new_id":"97",
+"new_nametree":"Wolff-Parkinson-White syndrome",
+"new_numtree":"13.8.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"98",
+"old_nametree":"Ablation",
+"old_numtree":"13.8.1.0",
+"old_htmlpage":"ENAS5083_13.8.1.0",
+"new_id":"98",
+"new_nametree":"Ablation",
+"new_numtree":"13.8.1.0",
+"new_htmlpage":"ENAS5083_13.8.1.0"
+},
+{
+"old_id":"99",
+"old_nametree":"End-of-life issues",
+"old_numtree":"13.8.2.0",
+"old_htmlpage":"ENAS5083_13.8.2.0",
+"new_id":"99",
+"new_nametree":"End-of-life issues",
+"new_numtree":"13.8.2.0",
+"new_htmlpage":"ENAS5083_13.8.2.0"
+},
+{
+"old_id":"100",
+"old_nametree":"Abbreviations",
+"old_numtree":"14.0.0.0",
+"old_htmlpage":"ENAS5083_14.0.0.0",
+"new_id":"100",
+"new_nametree":"Abbreviations and acronyms",
+"new_numtree":"14.0.0.0",
+"new_htmlpage":"ENAS5083_14.0.0.0"
+}
+]

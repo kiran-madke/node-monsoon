@@ -1,0 +1,1084 @@
+<html>
+    <head>  <link rel="stylesheet" type="text/css" href="calci_grace.css">
+        <meta name="viewport" content="width=device-width">
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+        
+      
+
+<script type="text/javascript" src="commonFunctions.js"></script>
+<script type="text/javascript" src="grace_lookups.js"></script>
+<script type="text/javascript" src="grace.js"></script>
+<script type="text/javascript" src="jsFunctions.js"></script>
+<script src="jquery-2.0.3.min.js"></script>
+
+
+
+            <script language="javascript">
+                /*
+                window.onload = function()
+                {
+                    document.getElementById('selectHeart').selectedIndex = -1;
+                    document.getElementById('selectAge').selectedIndex = -1;
+                    document.getElementById('selectBlood').selectedIndex = -1;
+                    document.getElementById('selectCHF').selectedIndex = -1;
+                    document.getElementById('selectDiuretic').selectedIndex = -1;
+                    document.getElementById('selectCreatine').selectedIndex = -1;
+                    document.getElementById('selectRenal').selectedIndex = -1;
+                    document.getElementById('selectSegment').selectedIndex = -1;
+                    document.getElementById('selectTroponin').selectedIndex = -1;
+                    document.getElementById('selectCardiac').selectedIndex = -1;
+                    
+                }
+                 */
+                </script>
+                    <script>
+                       
+                        /*document.getElementById('selectAge').tabIndex="1";
+                        document.getElementById('selectHeart').tabIndex="2";
+                        document.getElementById('selectBlood').tabIndex="3";
+                        document.getElementById('selectChf').tabIndex="4";
+                        document.getElementById('selectDiuretic').tabIndex="5";
+                           document.getElementById('selectCreatine').tabIndex="6";
+                         document.getElementById('selectRenal').tabIndex="7";
+                         document.getElementById('selectSegment').tabIndex="8";
+                          document.getElementById('selectTroponin').tabIndex="9";
+                         document.getElementById('selectCardiac').tabIndex="10";*/
+                        
+                        $(document).ready(function()
+                                          {
+			
+			
+$("#helpbtn").click(function()
+  {
+  document.getElementById('aboutarea').style.display='none';
+    $('#aboutbtn').removeClass('aboutbtnclassClick').addClass('aboutbtnclass');
+  var className = $('#helpbtn').attr('class');
+  if (className == 'helpbtnclass')
+  $('#helpbtn').removeClass('helpbtnclass').addClass('helpbtnclassClick');
+   else
+  $('#helpbtn').removeClass('helpbtnclassClick').addClass('helpbtnclass');
+  $("#helparea").slideToggle("fast", function()
+  {
+  $('html, body').animate({scrollTop : $(this).offset().top}, 700);
+  });
+  });
+     
+     // about
+     $("#aboutbtn").click(function()
+  {
+    $('#helpbtn').removeClass('helpbtnclassClick').addClass('helpbtnclass');
+    document.getElementById('helparea').style.display='none';
+  var className = $('#aboutbtn').attr('class');
+  if (className == 'aboutbtnclass')
+  $('#aboutbtn').removeClass('aboutbtnclass').addClass('aboutbtnclassClick');
+   else
+  $('#aboutbtn').removeClass('aboutbtnclassClick').addClass('aboutbtnclass');
+  $("#aboutarea").slideToggle("fast", function()
+  {
+  $('html, body').animate({scrollTop : $(this).offset().top}, 700);
+  });
+  });
+     
+     });
+	    </script>
+	    
+	    <script>
+      
+            
+	var isResultShowing = false;
+	var isPressed = false;
+	var input_age, input_heartRate, input_bloodPressure, input_creatine, input_renal, input_chf, input_diuretic, input_cardiac, input_troponin, input_segment;
+	$(document).ready(function()
+	{
+                      flagChf=0;
+                      flagCreatnine=0;
+                      document.getElementById("selectDiuretic").disabled=true;
+                      document.getElementById("selectDiuretic").style.background='#cccccc';
+                      document.getElementById("selectDiuretic").style.border='1px solid #cccccc';
+                      
+                      document.getElementById("selectRenal").disabled=true;
+                      document.getElementById("selectRenal").style.background='#cccccc';
+                      document.getElementById("selectRenal").style.border='1px solid #cccccc';
+      
+
+		$("#btnReset").click(function()
+		{
+                             flagChf=0;
+                             flagCreatnine=0;
+			hideTables();
+			//location.reload();
+			isResultShowing = false;
+			//$("#tr_renal").show();
+			//$("#tr_diuretic").show();
+                             
+                             document.getElementById("selectDiuretic").disabled=false;
+                             document.getElementById("selectDiuretic").style.background=null;
+                             document.getElementById("selectDiuretic").style.border=null;
+
+                             document.getElementById("selectRenal").disabled=false;
+                             document.getElementById("selectRenal").style.background=null;
+                             document.getElementById("selectRenal").style.border=null;
+                             
+			isPressed = false;
+		});
+
+		$("#btnCalculate").click(function()
+		{
+                                 flagChf=0;
+                                 flagCreatnine=0;
+            $('html, body').animate({scrollTop : $(this).offset().top}, 700);
+
+			input_age = $("#selectAge").val();
+			input_heartRate = $("#selectHeart").val();
+			input_bloodPressure = $("#selectBlood").val();
+			input_chf = $("#selectCHF").val();
+			input_diuretic = $("#selectDiuretic").val();
+			input_creatine = $("#selectCreatine").val();
+			input_renal = $("#selectRenal").val();
+			input_segment = $("#selectSegment").val();
+			input_troponin = $("#selectTroponin").val();
+			input_cardiac = $("#selectCardiac").val();
+
+            //alert("input_diuretic"+input_diuretic);
+            //alert("input_renal"+input_renal);
+
+			if((input_age=="")||(input_heartRate=="")||(input_bloodPressure=="")||(input_chf=="")||(input_creatine=="")||(input_segment=="")||(input_troponin=="")||(input_cardiac==""))
+			{
+				return;
+			}
+			
+
+			if(input_chf=="na")
+			{
+				if(input_diuretic==null)
+				{
+					return;
+				}				
+			}
+             else
+             {
+                input_diuretic="";
+             }
+                                 
+			if(input_creatine=="na")
+			{
+				if(input_renal==null)
+				{
+					return;
+				}				
+			}
+             else
+             {
+             input_renal=""
+             }
+
+
+			/*
+			if(input_diuretic==NULL)
+			{
+							 alert(input_diuretic);
+
+			}
+			*/
+
+			if (validateInput() == true)
+			{
+				calculateResults();
+				isPressed = true;
+				showTables();
+			}
+		});
+
+                      
+                      
+                      
+		$("#selectAge").change(function()
+		{
+			input_age = $("#selectAge").val();
+			if (validateInput() == true)
+			{
+				calculateResults();
+				showTables();
+			}
+		});
+		$("#selectHeart").change(function()
+                {
+                    
+			input_heartRate = $("#selectHeart").val();
+			if (validateInput() == true)
+			{
+				calculateResults();
+				showTables();
+			}
+		});
+		$("#selectBlood").change(function()
+		{
+                       
+                       
+			input_bloodPressure = $("#selectBlood").val();
+			if (validateInput() == true)
+			{
+				calculateResults();
+				showTables();
+			}
+		});
+            
+                      
+                      
+                      
+                      
+                      
+		$("#selectCHF").change(function()
+		{
+                      flagCreatnine=0;        
+			input_chf = $("#selectCHF").val();
+                             
+			if (input_chf == "na")
+			{
+                             
+				//$("#tr_diuretic").fadeIn(400);
+                document.getElementById("selectDiuretic").disabled=false;
+                   
+                document.getElementById("selectDiuretic").style.background=null;
+                document.getElementById("selectDiuretic").style.border=null;
+                               document.getElementById('selectDiuretic').selectedIndex = 0;
+                               
+			}
+			else
+			{
+                               
+				//$("#tr_diuretic").fadeOut(400);
+                                  document.getElementById("selectDiuretic").disabled=false;
+               // document.getElementById("selectDiuretic").disabled=true;
+                document.getElementById("selectDiuretic").style.background='#cccccc';
+                document.getElementById("selectDiuretic").style.border='1px solid #cccccc';
+                               document.getElementById('selectDiuretic').selectedIndex = -1;
+
+			}
+			if (validateInput() == true)
+			{
+				calculateResults();
+				showTables();
+			}
+		});
+                      
+                      $("#selectCHF").focusout(function()
+                                               {
+                                        //       alert("chf");
+                                               
+                                              var  input_chf2 = $("#selectCHF").val();
+                                               
+                                               
+                                               
+                                               if (input_chf2 == "na" && flagChf==0)
+                                               {
+                                               
+                                               $("#selectDiuretic").focus();
+                                               }
+                                               else if(flagChf==0)
+                                               {
+                                               $("#selectDiuretic").blur();
+                                               $("#selectCreatine").focus();
+                                               document.getElementById("selectDiuretic").disabled=true;
+                                               }
+                                               else
+                                               {
+                                               $("#selectBlood").focus();
+                                               
+                                               }
+                                               
+                                               
+                                               
+                                               });
+                      
+                      $("#selectDiuretic").focus(function()
+                                                  {
+                                               
+                                                 input_chf = $("#selectCHF").val();
+                                         
+                                                 if (!(input_chf == "na"))
+                                                 {
+                                               $("#selectCreatine").focus();
+                                                 }
+                                             
+                                                  });
+		$("#selectDiuretic").change(function()
+		{  flagCreatnine=0;
+			input_diuretic = $("#selectDiuretic").val();
+			if (validateInput() == true)
+			{
+				calculateResults();
+				showTables();
+			}
+		});
+
+                      
+		$("#selectCreatine").change(function()
+		{
+			input_creatine = $("#selectCreatine").val();
+			if (input_creatine == "na")
+			{
+				//$("#tr_renal").fadeIn(400);
+                                    document.getElementById("selectRenal").disabled=false;
+                                    document.getElementById("selectRenal").style.background=null;
+                                    document.getElementById("selectRenal").style.border=null;
+                                    document.getElementById('selectRenal').selectedIndex = 0;
+
+				/* $("#selectRenal").prop('disabled', false);
+				$('#selectRenal')[0].attr('selected', 'selected'); */
+			}
+			else
+			{
+				//$("#tr_renal").fadeOut(400);
+                                //    document.getElementById("selectRenal").disabled=true;
+                                    document.getElementById("selectRenal").style.background='#cccccc';
+                                    document.getElementById("selectRenal").style.border='1px solid #cccccc';
+                                    document.getElementById('selectRenal').selectedIndex = -1;
+
+				/* $("#selectRenal").val("No");
+				$("#selectRenal").prop('disabled', true); */
+			}
+			if (validateInput() == true)
+			{
+				calculateResults();
+				showTables();
+				
+			}
+		});
+                      
+                      $("#selectCreatine").focusout(function()
+                                               {
+                                            
+                                       var       input_chf1 = $("#selectCreatine").val();
+                                               
+                                               
+                                          
+                                               if (input_chf1 == "na" && flagCreatnine==0)
+                                               {
+                                               
+                                               $("#selectRenal").focus();
+                                               }
+                                               else if(flagCreatnine==0)
+                                               {
+                                                    $("#selectRenal").blur();
+                                                    $("#selectSegment").focus();
+                                               document.getElementById("selectRenal").disabled=true;
+                                               }
+                                               else
+                                                    {
+                                            input_chf1  = $("#selectCHF").val();
+                                                    
+                                                    if (!(input_chf1 == "na"))
+                                                    {
+                                                    $("#selectCHF").focus();
+                                                    }
+                                                    else
+                                                    {
+                                                              $("#selectDiuretic").focus();
+                                                    
+                                                    }
+                                                    
+                                            }
+
+                                               
+                                               
+                                               });
+                      
+                      $("#selectCHF").focus(function()
+                                                 {
+                                            flagCreatnine=0;
+                                            
+                                                 });
+                      
+                      $("#selectBlood").focus(function()
+                                                 {
+                                                 flagChf=0;
+                                                 flagCreatnine=0;
+                                                 });
+                
+                      $("#selectCreatine").focus(function()
+                                                 {
+                                                  
+                                                 flagChf=1;
+                                                 });
+                      $("#selectDiuretic").focus(function()
+                                              {
+                                               flagChf=1;
+                                                   flagCreatnine=0;
+                                              });
+                      $("#selectCreatine").focus(function()
+                                              {
+                                              flagChf=1;
+                                              });
+                      $("#selectRenal").focus(function()
+                                                 {
+                                               flagChf=1;
+                                              
+                                              flagCreatnine=1;
+                                                 input_chf = $("#selectCreatine").val();
+                                                 
+                                                 if (!(input_chf == "na"))
+                                                 {
+                                                 $("#selectSegment").focus();
+                                                 }
+                                                 
+                                                 });
+                      $("#selectSegment").focus(function()
+                                              {
+                                                flagChf=1;
+                                              flagCreatnine=1;
+                                              });
+                      
+                      $("#selectTroponin").focus(function()
+                                                {
+                                                 flagChf=1;
+                                                flagCreatnine=1;
+                                                });
+                      $("#selectCardiac").focus(function()
+                                                 {
+                                                  flagChf=1;
+                                                 flagCreatnine=1;
+                                                 });
+		$("#selectRenal").change(function()
+		{
+                                  
+			input_renal = $("#selectRenal").val();
+			if (validateInput() == true)
+			{
+				calculateResults();
+				showTables();
+			}
+		});
+		$("#selectSegment").change(function()
+		{
+                             
+			input_segment = $("#selectSegment").val();
+			if (validateInput() == true)
+			{
+				calculateResults();
+				showTables();
+			}
+		});
+		$("#selectTroponin").change(function()
+		{ 
+			input_troponin = $("#selectTroponin").val();
+			if (validateInput() == true)
+			{
+				calculateResults();
+				showTables();
+			}
+		});
+		$("#selectCardiac").change(function()
+		{
+			input_cardiac = $("#selectCardiac").val();
+			if (validateInput() == true)
+			{
+				calculateResults();
+				showTables();
+			}
+		});
+
+				$("#one-year-nomi").click(
+						function()
+						{
+                            $('html, body').animate({scrollTop : $(this).offset().top}, 725);
+							animateGraph(resultOneYearToPlotOnGraph,
+									resultOneYear, $(this).attr("id"));
+						});
+				$("#graph4_btn").click(
+						function()
+						{
+                            $('html, body').animate({scrollTop : $(this).offset().top}, 725);
+							animateGraph(resultThreeYearToPlotOnGraph,
+									resultThreeYear, $(this).attr("id"));
+						});
+				$("#graph4MI_btn").click(
+						function()
+						{
+                            $('html, body').animate({scrollTop : $(this).offset().top}, 725);
+							animateGraph(resultOneYearMIToPlotOnGraph,
+									resultOneYearMI, $(this).attr("id"));
+						});
+	});
+</script>
+	    
+	    
+	    
+	    
+    </head>
+    
+    
+    <body>
+        
+
+        <form name="gracefrm">
+           
+            <table width="100%" cellpadding=5 cellspacing=0 style="border-collapse:collapse;">
+                <tr class="input_tr"><td colspan="3"></td></tr>
+				<tr class="input_tr">
+                    <td width="22%" align="right" class="input_name">
+					Age
+                    </td>
+                    <td width="61%" style="padding-left:10px;">
+                        <select class="drop_center" name="age" id="selectAge">
+                            <option></option>
+                                    <option value="29">&lt;30</option>
+                                    <option value="34">30&ndash;39</option>
+                                    <option value="42">40&ndash;44</option>
+                                    <option value="47">45&ndash;49</option>
+                                    <option value="50">50</option>
+                                    <option value="51">51</option>
+                                    <option value="52">52</option>
+                                    <option value="53">53</option>
+                                    <option value="54">54</option>
+                                    <option value="55">55</option>
+                                    <option value="56">56</option>
+                                    <option value="57">57</option>
+                                    <option value="58">58</option>
+                                    <option value="59">59</option>
+                                    <option value="60">60</option>
+                                    <option value="61">61</option>
+                                    <option value="62">62</option>
+                                    <option value="63">63</option>
+                                    <option value="64">64</option>
+                                    <option value="65">65</option>
+                                    <option value="66">66</option>
+                                    <option value="67">67</option>
+                                    <option value="68">68</option>
+                                    <option value="69">69</option>
+                                    <option value="70">70</option>
+                                    <option value="71">71</option>
+                                    <option value="72">72</option>
+                                    <option value="73">73</option>
+                                    <option value="74">74</option>
+                                    <option value="75">75</option>
+                                    <option value="76">76</option>
+                                    <option value="77">77</option>
+                                    <option value="78">78</option>
+                                    <option value="79">79</option>
+                                    <option value="80">80</option>
+                                    <option value="81">81</option>
+                                    <option value="82">82</option>
+                                    <option value="83">83</option>
+                                    <option value="84">84</option>
+                                    <option value="85">85</option>
+                                    <option value="86">86</option>
+                                    <option value="87">87</option>
+                                    <option value="88">88</option>
+                                    <option value="89">89</option>
+                                    <option value="92">90-94</option>
+                                    <option value="95">&ge;95</option>
+                        </select>
+                    </td>
+                    <td class="input_unit" style="padding-left:9px;">
+                    years
+                    </td>
+				</tr>
+                
+				<tr class="input_tr">
+                    <td align="right" class="input_name" style="padding-top:32px;">
+					Heart rate
+                    </td>
+                    <td style="padding-left:10px;padding-top:32px;">
+                        <select class="drop_center" name="heart-rate" id="selectHeart" >
+                            <option></option>
+                                    <option value="49">&lt;50</option>
+                                    <option value="59.5">50&ndash;69</option>
+                                    <option value="74.5">70&ndash;79</option>
+                                    <option value="84.5">80&ndash;89</option>
+                                    <option value="94.5">90&ndash;99</option>
+                                    <option value="104.5">100&ndash;109</option>
+                                    <option value="119.5">110&ndash;129</option>
+                                    <option value="139.5">130&ndash;149</option>
+                                    <option value="174.5">150&ndash;199</option>
+                                    <option value="200">&ge;200</option>
+                        </select>
+                    </td>
+                    <td class="input_unit" style="padding-left:9px;padding-top:32px;">
+                    bpm
+                    </td>
+				</tr>
+                
+				<tr class="input_tr">
+                    <td align="right" class="input_name"style="padding-top:24px;">
+					Systolic BP
+                    </td>
+                    <td style="padding-left:10px;padding-top:27px;">
+                        <select class="drop_center" name="blood-pressure" id="selectBlood">
+                            <option></option>
+                                    <option value="79">&lt;80</option>
+                                    <option value="89.5">80&ndash;99</option>
+                                    <option value="104.5">100&ndash;109</option>
+                                    <option value="114.5">110&ndash;119</option>
+                                    <option value="124.5">120&ndash;129</option>
+                                    <option value="134.5">130&ndash;139</option>
+                                    <option value="149.5">140&ndash;159</option>
+                                    <option value="169.5">160&ndash;179</option>
+                                    <option value="180">&ge;180</option>
+                        </select>
+                    </td>
+                    <td class="input_unit" style="padding-left:6px;padding-top:27px;">
+                    mmHg
+                    </td>
+				</tr>
+                
+				<tr class="input_tr">
+                    <td align="right" class="input_name" style="padding-top:3px;">
+					CHF (Killip class)
+                    </td>
+                    <td style="padding-left:10px;padding-top:14px;">
+                        <select class="drop_center" name="chf" id="selectCHF" >
+                            <option></option>
+									<option value="na" id="chf-na">Not available</option>
+                                    <option value="1">I</option>
+                                    <option value="2">II</option>
+                                    <option value="3">III</option>
+                                    <option value="4">IV</option>
+                        </select>
+                    </td>
+                    <td style="padding-left:9px;padding-top:14px;">
+
+                    </td>
+				</tr>
+                
+                <tr class="input_tr" id="tr_diuretic">
+                    <td align="right" class="input_name" style="padding-top:9px;">
+					Diuretic usage
+                    </td>
+                    <td style="padding-left:10px;padding-top:18px;">
+                        
+                        
+                     <select class="drop_center" name="diuretic" id="selectDiuretic">
+                            <option></option>
+                                    <option value="no" id="diuretic_no">No</option>
+                                    <option value="yes">Yes</option>
+                        </select>
+                    </td>
+                    <td style="padding-left:14px;">
+
+                    </td>
+				</tr>
+                
+				<tr class="input_tr">
+                    <td align="right" class="input_name" style="padding-top:14px;">
+                    Creatinine
+                    </td>
+                    <td style="padding-left:10px; padding-top:14px;">
+                        <select class="drop_center_smallfont" name="creatinine" id="selectCreatine">
+                            <option></option>
+									<option value="na" id="creat-na">Not available</option>
+                                    <option value="0.195">0&ndash;0.39 / 0&ndash;35.3</option>
+                                    <option value="0.595">0.4&ndash;0.79 / 35.4&ndash;70</option>
+                                    <option value="0.995">0.8&ndash;1.19 / 71&ndash;105</option>
+                                    <option value="1.395">1.2&ndash;1.59 / 106&ndash;140</option>
+                                    <option value="1.795">1.6&ndash;1.99 / 141&ndash;176</option>
+                                    <option value="2.995">2.0&ndash;3.99 / 177&ndash;353</option>
+                                    <option value="4.0">&ge;4.0/ &ge;354</option>
+                        </select>
+                    </td>
+                    <td class="input_unit" style="padding-left:5px;padding-right:0px; padding-top:11px;">
+                    mg/dL or &mu;mol/L
+                    </td>
+				</tr>
+
+
+                
+				<tr class="input_tr" id="tr_renal">
+                    <td align="right" class="input_name" style="padding-top:7px;">
+					Renal failure
+                    </td>
+                    <td style="padding-left:10px;padding-top:17px;">
+                        <select class="drop_center" name="renal" id="selectRenal">
+                            <option></option>
+                                    <option value="no">No</option>
+                                    <option value="yes">Yes</option>
+                        </select>
+                    </td>
+                    <td>
+                    </td>
+				</tr>
+                
+				<tr class="input_tr">
+                    <td align="right" class="input_name" style="padding-top:9px;">
+					ST-segment deviation
+                    </td>
+                    <td style="padding-left:10px;padding-top:24px;">
+                        <select class="drop_center" name="st-segment" id="selectSegment">
+                            <option></option>
+                                    <option value="no">No</option>
+                                    <option value="yes">Yes</option>
+                        </select>
+                    </td>
+                    <td>
+                    </td>
+				</tr>
+                
+				<tr class="input_tr">
+                    <td align="right" class="input_name" style="padding-top:12px;">
+					Elevated troponin*
+                    </td>
+                    <td style="padding-left:10px;padding-top:22px;">
+                        <select class="drop_center" name="troponin" id="selectTroponin">
+                            <option></option>
+                                    <option value="no">No</option>
+                                    <option value="yes">Yes</option>
+                        </select>
+                    </td>
+                    <td>
+                    </td>
+				</tr>
+                
+				<tr class="input_tr">
+                    <td align="right" class="input_name" style="padding-top:7px;">
+					Cardiac arrest at admission
+                    </td>
+                    <td style="padding-left:10px;padding-top:22px;">
+                        <select class="drop_center" name="cardiac" id="selectCardiac">
+                            <option></option>
+                                    <option value="no">No</option>
+                                    <option value="yes">Yes</option>
+                        </select>
+                    </td>
+                    <td>
+                    </td>
+				</tr>
+                <tr class="input_tr">
+                    <td colspan="3">
+                    </td>
+                </tr>
+                
+                </table>
+                <table width="100%" style="padding-top:12px;">
+                    <tr>
+                        <td>
+                        </td>
+                    </tr>
+                <tr>
+                    <td style="padding-top:10px;" align="center" width="100%">
+                        <input type="button" id="btnCalculate" value="Calculate" class="calculatebtn">
+                    </td>
+                    </td>
+                </tr>
+                
+
+            </table>
+        </form>
+        <br/>
+        
+        
+            <table width="100%" id="result_table" style="border-collapse:collapse;display:none;" cellpadding="5">
+            	<tr>
+            		<td colspan="3" class="resulttitle">
+            			Death
+            		</td>
+            	</tr>
+
+            	<tr>
+            		<td width="30%" class="resultheader" align="center">
+            			Time
+            		</td>
+            		<td width="30%" class="resultheader" align="center">
+            			% Risk (Score)
+            		</td>
+            		<td width="30%" class="resultheader" align="center">
+            			Histograms
+            		</td>
+            	</tr>
+
+            	<tr>
+            		<td class="resulttd" align="center">
+            			In hospital
+            		</td>
+            		<td class="result" align="center" id="inHospitalResult">
+            		</td>
+            		<td class="result" align="center">
+            			<img src="grace_inactive.png" width="70" height="35"></img>
+            		</td>
+            	</tr>
+
+            	<tr>
+            		<td class="resulttd" align="center">
+            			To 6 months
+            		</td>
+            		<td class="result" align="center" id="sixMonthResult">
+            		</td>
+            		<td class="result" align="center">
+            			<img src="grace_inactive.png" width="70" height="35"></img>
+            		</td>
+            	</tr>
+
+            	<tr>
+            		<td class="resulttd" align="center">
+            			1 year
+            		</td>
+            		<td class="result" align="center" id="oneYearResult">
+            		</td>
+            		<td class="result" align="center" id="one-year-nomi">
+            			<img src="grace_active.png" width="70" height="35"></img>
+            		</td>
+            	</tr>
+
+            	<tr>
+            		<td class="resulttd" align="center">
+            			3 years
+            		</td>
+            		<td class="result" align="center" id="threeYearResult">
+            		</td>
+            		<td class="result" align="center" id="graph4_btn">
+            			<img src="grace_active.png" width="70" height="35"></img>
+            		</td>
+            	</tr>
+
+				<tr>
+					<td collspan="3">
+					</td>
+				</tr>
+				
+            	<tr>
+            		<td colspan="3" class="resulttitle">
+            		Death/MI
+            		</td>
+            	</tr>
+            	<tr>
+            		<td width="30%" class="resultheader" align="center">
+            			Time
+            		</td>
+            		<td width="30%" class="resultheader" align="center">
+            			% Risk (Score)
+            		</td>
+            		<td width="30%" class="resultheader" align="center">
+            			Histograms
+            		</td>
+            	</tr>
+
+            	<tr>
+            		<td class="resulttd" align="center">
+            			1 year
+            		</td>
+            		<td class="result" align="center" id="oneYearResultMI">
+            		</td>
+            		<td class="result" align="center" id="graph4MI_btn">
+            			<img src="grace_active.png" width="70" height="35"></img>
+            		</td>
+            	</tr>
+            	<tr>
+            	</table>
+            	<table width="100%">
+            	<tr>
+            	<td colspan="3">
+            	<font size="2"><b>* Or other necrosis cardiac biomarkers</b></font>
+            	</td>
+            	</tr>
+            </table>
+            
+            <!--<div class="grapharea" id="grapharea">
+            </div>-->
+            
+ 		           	<div id="page-graph-id" style="display:none;">
+
+		<div class="graphtitle" align="center">
+			<span id="graph-header" style="display: none;" align="center">Number
+				of patients by risk group for 1-year mortality </span>
+		</div>
+		<br/>
+		<!-- Start: Graph Death: In Hospital -->
+		<div class="graphs active" id="graph" style="background-color:white;" align="center">
+		<br/>
+			<div id="graph-img">
+				<div id="graph-content">
+					<!--<span id="curve"></span>-->
+					<div id="bar" style="width:5px; height:125px; float:left; margin-left:-3px; display:none;">
+						<span id="bar-result">Result</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br/>
+		<div class="graphtitle" align="center">
+		<span id="graph-footer"></span>
+	</div>
+	</div>
+
+
+                <table width="100%" style="padding-top:0px;">
+                <tr>
+                        <td style="padding-top:10px;" align="center">
+                        <input type="reset" value="Reset" class="resetBtn" onClick="window.location.href=window.location.href" style="width:100%">
+                    </td>
+                    </td>
+                </tr>
+                
+
+            </table>
+
+
+
+            <br/>
+            <table width="100%">
+            <tr>
+            <td>
+            <div align="right" style="float:right;">
+    	        <button id="helpbtn" class="helpbtnclass" onClick="showhelp();">Help</button>
+	            <button id="aboutbtn" class="aboutbtnclass" onClick="showabout();">About Us</button>
+			</div>
+			</td>
+			</tr>
+			</table>
+			<br/>
+			<div class="helparea" id="helparea" style="display:none;">
+			<h2>What does this do?</h2>
+	                <p>The GRACE 2.0 ACS Risk Calculator is a tool to help clinicians assess the future risk of death or myocardial infarction (MI), as a guide to treatment options, in a patient with an acute coronary syndrome (ACS). It includes clinical findings at admission that have been shown to have predictive power for adverse events (see the <a href="http://www.outcomes-umassmed.org/GRACE/bibliography.aspx"><span>GRACE bibliography</span></a> for supporting literature).</p>
+	                <p>These factors include age, pulse rate, systolic blood pressure, renal function, congestive heart failure, ST-segment deviation, cardiac arrest and elevated biomarkers, which together provide more than 90% of the accuracy of the complete multivariable prediction model.</p>
+	                <p>Outputs are given in terms of probability of dying (as a percentage) while in hospital, and at 6 months and 1 and 3 years after admission. The combined risk of death or MI at 1 year is also given. The GRACE score at 6 months is also provided as guidelines have categorized patients into low (&le;108 GRACE score), medium (109–140 GRACE score) and high risk (&gt;140 GRACE score) (<a href="http://www.dx.doi.org/10.1093/eurheartj/ehr236">ESC Guideline on non-STE ACS 2011. <em style="font-weight: normal;">Eur Heart J</em> 2011;32:2999–3054</a>).</p>
+	            
+	            
+	                <h2>Why would I use it?</h2>
+	                <p>Risk calculators are designed to integrate important risk factors. The GRACE 2.0 ACS Risk Calculator can provide clinicians with a robust risk of death or death/MI for the patient presenting with ACS, to help guide the use of more intensive and invasive therapies. The GRACE Risk Score has been <a href="http://www.outcomes-umassmed.org/GRACE">extensively and independently validated</a>. The current updated version of the calculator provides more accurate non-linear computations and an updated interface for mobile devices. </p>
+
+	                <h2>What is different?</h2>
+	                <p>This version of the GRACE 2.0 ACS Risk Calculator takes account of the non-linear relationship of certain risk factors, and now includes 1-year and 3-year risk calculations. The 1- and 3-year calculations are particularly relevant for long-term clinical management, and they have been validated externally against the FAST-MI registry.</p>
+	                <p>Emphasis is given to the probability of an event occurring (shown as percent risk of death or death/MI in the period), but for reference to prior studies and guidelines the GRACE risk score is also provided where applicable.</p>
+	                <p>To help users understand the context of a result, the updated calculator also provides the population histograms from the GRACE registry, indicating where the individual patient’s result is positioned compared with the whole ACS population. This allows the clinician to determine at a glance whether an individual’s risk is low, medium or high.</p>
+	                <p>In addition, it is recognized that some evaluations may not be available (serum creatinine and Killip class) at the time a risk score is required. For the <a href="https://www.nice.org.uk/guidance/CG94">NICE Guideline on non-ST elevation ACS</a> a “mini” version of the GRACE score was tested in a population of approximately 70,000 patients. It performed well compared with all published scores. This option is automatically implemented when creatinine or Killip is not available (see <a href="#1">I don’t have creatinine/Killip data</a>).</p>
+
+	                <h2>How do I enter data?</h2>
+	                <p>To calculate the GRACE risk for any patient with documented or suspected ACS, enter the patient data by selecting from the ranges given or by using the yes/no toggle switches. Press "Calculate" to obtain risk of event probabilities, or "Reset" to clear all entered data.</p>
+	                <p>On the results screen, use “Edit input” to change individual parameters for the same patient, or "New calculation" to reset the calculator and start over.</p>
+
+	                <h2>What is CHF/Killip?</h2>
+	                <p>Killip is a classification of congestive heart failure (CHF) that independently predicts mortality in patients with MI. For the purposes of the calculator it includes <i>prior history or current CHF</i>.</p>
+	                <p>The Killip classification:</p>
+	                <ul style="list-style: none;">
+	                <li>I.	No clinical sign of CHF</li>
+	                <li>II.	Presence of rales (crackles) in the lungs, raised jugular venous pressure, or third heart sound (S3 gallop)</li>
+	                <li>III.	Acute pulmonary oedema</li>
+	                <li>IV.	Cardiogenic shock</li>
+	                </ul>
+
+	                <h2>What are the creatinine units?</h2>
+	                <p>Creatinine values are displayed in both US and SI units (mg dL<sup>-1</sup> and &micro;mol L<sup>-1</sup>, respectively) for your convenience.</p>
+
+	                <h2 id="1">I don't have creatinine/Killip data</h2>
+	                <p>The most accurate result is obtained using actual Killip class and serum creatinine level values, but if you do not have these data then select "Not available". You will then be able to enter substitute values: either presence of renal failure in place of serum creatinine or use of diuretics (either current or historical) in place of Killip class.</p>
+	                <p>The calculator will automatically default to the "mini-GRACE" algorithm with results that are nearly as accurate as the full GRACE risk calculation. The "mini-GRACE" algorithm will be employed whenever either serum creatinine or Killip class is unavailable.</p>
+
+	                <h2>What is troponin?</h2>
+	                <p>Troponin is a protein found in heart cells that is released into the bloodstream following cardiac damage. Elevated troponin in the bloodstream on admission is a strong predictor of mortality and infarct size.</p>
+	                <p>If troponin data are not available then cardiac biomarkers of myocardial necrosis (sometimes known as "cardiac enzymes", for example CK-MB or CK) may be substituted.</p>
+
+	                <h2>What do the results mean?</h2>
+	                <p>The results are given first as a probability (expressed as a percentage) of either death alone, or death/MI, occurring up to given time points after admission. The original GRACE score is also provided for 6-month results.</p>
+
+	                <h2>Why is a range quoted?</h2>
+	                <p>Because of differences in the way the 6-month and 1-year probabilities are calculated (see <a href="#2">"What are its limitations?"</a>), and to reflect the differences in original risk populations, a range of probabilities may be quoted.</p>
+
+	                <h2>Where is the GRACE numerical score?</h2>
+	                <p>Previous versions of the GRACE ACS Risk Score Calculator yielded numerical "scores", which then had to be converted to probabilities. In this version, risks are given directly as probabilities for ease of interpretation. While users already familiar with the calculator may be comfortable with the GRACE score, a probability is more intuitive and easier to understand in context. Additionally, the 1- and 3-year calculations yield a probability directly from linear and non-linear terms, resulting in greater predictive accuracy than can be obtained using a score.</p>
+	                <p>Because nomograms for in-hospital and 6-month death and death/MI are calculated from different patient datasets, with differing risk factor estimates (and because estimates determine the risk score), it is impossible to relate the scores at the different time points to each other in the same patient. However, the probability of an event will always increase over time, and so probability gives a more easily understandable insight into how the different clinical parameters might affect long-term risk. For the benefit of users familiar with the previous version of the calculator, we have retained the original GRACE score for 6-month results.</p>
+
+	                <h2>What do the graphs show?</h2>
+	                <p>The graphs (currently only available for 1 and 3 years) are derived from the entire GRACE population of 102,341 patients, and show the distribution of risk for the entire ACS population.</p>
+	                <p>The vertical bar on the graph indicates the calculated probability of an event for the individual patient result, superimposed over the full range of the GRACE ACS population. The number on top gives the calculated probability, while the bar changes colour, from green to yellow to red, depending on the risk tertile for that particular patient. This allows the practitioner to determine at a glance whether their patient has a low, medium or high risk, and is intended as a guide to inform clinical management of patients.</p>
+	                <p>In the app, use the "Back" button to return to the tabulated output.</p>
+
+	                <h2 id="2">What are its limitations?</h2>
+	                <p>The new 1-year and 3-year calculations are based on clinical observations across the entire GRACE ACS population. In addition, for greater accuracy, the updated score takes account of the non-linear relationship between some factors and risk. The in-hospital and 6-month calculations did not have access to the entire dataset, and so it is not possible to directly compare the shorter-term with the longer-term outputs for any given patient. For this reason, the 6-month results in this version of the calculator are adjusted to reflect overall death rates in the different populations. This explains why the 6-month results in this version are not identical to the probabilities given by the original calculator.</p>
+	                <p>Additionally, the 6-month calculation is based on a score-based model, which is converted to a probability. This is less accurate than calculating the probability directly. Together with the difference in original risk populations this may result in the 6-month probability being greater than at 1 year for some patients. When this occurs the risk is quoted as a range between the two extremes.</p>
+	                <p>However, as the calculator is designed to facilitate management of patients suffering an ACS, the small differences that these uncertainties introduce are, from a clinical point of view, largely irrelevant. To guide clinical therapeutic decision making, the most important factor to know is whether a given patient is in the lowest, middle or upper tertile of risk, as indicated by the graphs.</p>
+	                <p>This version includes death/MI calculations only at 1 year. It is considered that 1 year is the most clinically relevant time point, but further outputs will be enabled once the calculator has been fully validated against external databases.</p>
+
+	                <h2>Who made this?</h2>
+	                <p>The updated calculator is derived from the <a href="http://www.outcomes-umassmed.org/GRACE">original GRACE score</a>. The work on the updated calculator was supported by the British Heart Foundation, the Chief Scientist in Scotland and an educational grant from AstraZeneca to the University of Edinburgh (chair of the GRACE Advisory Committee, Professor Keith AA Fox at the University of Edinburgh). Professors Frederick A Anderson, Jr. and Gordon FitzGerald of the Center for Outcomes Research, University of Massachusetts Medical School, analysed the GRACE population risk factors and created the algorithms. The algorithms were implemented and the app and website created by AS&amp;K Communications.</p>
+                    <p>
+                        For further information and bibliography please visit the
+                        <a href="http://www.outcomes-umassmed.org/GRACE">GRACE homepage</a>.
+                        Please also see the <a href="http://www.gracescore.org/WebSite">GRACE calculator supporting website</a>  
+                        and <a href="http://www.gracescore.co.uk/">GRACE at the University of Edinburgh</a>.
+                    </p>
+</div>
+			
+			<div class="aboutarea" id="aboutarea" style="display:none;">
+					<h2>About</h2>
+	                <p>The GRACE 2.0 ACS Risk Calculator implements the revised GRACE algorithms for predicting death or death/myocardial infarction following 
+                    presentation with an acute coronary syndrome (ACS).</p>
+                    <p>
+                        GRACE (the <a href="http://www.outcomes-umassmed.org/GRACE/default.aspx">Global Registry of Acute Coronary Events</a>)
+                        is an international observational programme of outcomes for patients who were hospitalized with an ACS in the 10 
+                        years from 1999. GRACE includes nearly 250 hospitals in 30 countries, and enrolled a total of 102,341 patients. 
+                        Participating physicians receive confidential quarterly reports showing their outcomes side by side with the
+                        aggregate outcomes of all participating hospitals. The GRACE Risk Score has been extensively validated 
+                        prospectively and externally.
+                    </p>
+                    <p>
+                        For more information and bibliography please visit the 
+                        <a href="http://www.outcomes-umassmed.org/GRACE">GRACE homepage</a>.
+                        Please also see the <a href="http://www.gracescore.org/WebSite">GRACE calculator supporting website</a> 
+                        and <a href="http://www.gracescore.co.uk/">GRACE at the University of Edinburgh</a>.
+                    </p>
+                    <p>
+                        The work on the updated GRACE calculator was supported by the British Heart Foundation and the Chief Scientist 
+                        in Scotland, and the development of the app and website was supported by an educational grant from AstraZeneca 
+                        to the University of Edinburgh.
+                    </p>
+
+	                <h2>What’s new in this version?</h2>	
+	                <ul>
+	                    <li>"Mini-GRACE" algorithm (for use when serum creatinine and Killip class may not be available)</li>
+	                    <li>New 1- and 3-year calculations</li> 
+	                    <li>New calculations provide probabilities directly, bypassing scores</li>
+	                    <li>Population histograms with high-, medium- and low-risk markers</li>
+                        <li>CE marking</li>
+	                </ul>
+
+	                <h2>Disclaimer</h2>
+	                <p>
+                        By accessing, using or downloading the GRACE 2.0 ACS Risk Calculator app or accompanying 
+                        website you agree to the following Terms and Conditions:
+                    </p>
+                    <p>
+                        The GRACE 2.0 ACS Risk Calculator app (the "App") and the accompanying website at 
+                        <a href="http://www.gracescore.org/WebSite">http://www.gracescore.org/</a>
+                        (the "Site") are operated by the University Court of the 
+                        University of Edinburgh, a charitable body registered in Scotland under registration 
+                        number SC005336, incorporated under the Universities (Scotland) Acts and having its 
+                        main administrative offices at Old College, South Bridge, Edinburgh EH8 9YL, and the 
+                        University of Massachusetts, a public institution of higher education of the 
+                        Commonwealth of Massachusetts as represented by its Medical School (Worcester campus) 
+                        ("We"). The Site and App are for use only by qualified health care professionals 
+                        ("HCPs"), in conjunction with a comprehensive individual patient assessment, in 
+                        patients with Acute Coronary Syndromes ("ACS"). The Site and the App are intended 
+                        as a risk assessment tool to provide HCPs with information about a patient’s 
+                        potential for a future coronary event, as one component of a comprehensive clinical 
+                        patient assessment.
+                    </p>
+                    <p>
+                        Nothing contained in the Site or the App is intended to replace the physician–patient 
+                        relationship, or to be a substitute for medical advice. Any information provided should 
+                        be interpreted in the context of a comprehensive professional clinical assessment. 
+                    </p>
+                    <p>
+                        You hereby agree that any medical decision or treatment will be based on a complete 
+                        clinical assessment and not this risk score in isolation. You also acknowledge that 
+                        your use of this Site and the App are at your own risk.
+                    </p>
+                    <p>
+                        Please see <span class="view-full-disclaimer hide-elements">full Terms and Conditions</span>.
+                    </p>
+                    <p>
+                        If the Terms and Conditions set forth above are not acceptable to you, do not use 
+                        this Site or App.
+                    </p>
+
+	                <h2>Contact us</h2>
+	                <p>For help with the calculator, FAQs and further information please visit <a href="http://www.gracescore.org/WebSite">http://www.gracescore.org/</a>.</p>
+
+			</div>
+			
+			
+	
+			
+    </body>
+</html>
+
+

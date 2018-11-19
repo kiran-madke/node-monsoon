@@ -1,0 +1,800 @@
+﻿<html>
+    <head>
+    <link href="calci_std.css" rel="stylesheet" type="text/css"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+       <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+		<title>SCD HCM risk calculator_V2</title>
+		<link rel="stylesheet" type="text/css" href="pop-example.css">
+		  <script src="jquery-1.9.1.min.js"></script>
+            <script src="jquery-algoPlugin.js"></script>
+            <script>
+$(document).ready(function()
+ {
+ $("#ref_button").click(function()
+			   {
+			   
+     var t=$('#reference').css('display');
+            
+			if(t=='none')
+			{
+			$('#reference').css('display',"block");
+			$('html, body').animate({scrollTop : $(this).offset().top}, 700);
+			}
+			else
+			{
+			$('#reference').css('display',"none");
+			t=block;
+			$('html, body').animate({scrollTop : $(this).offset().top}, 700);
+			}
+				 
+				  });
+
+$("#reset").click(function()
+				 {
+				 //$(".points").hide("slow");
+				 $(".result_table").hide("slow");
+				 //$("#reftext").hide("slow");
+				 $("#reference").hide("slow");
+				 totalscore = 0;
+				 for ( var x = 0; x < isBoxPressed.length; x++)
+				 {
+				 isBoxPressed[x] = "false";
+				 }
+				 isResetPressed = "false";
+				 
+				 for ( var x = 1; x < box.length; x++)
+				 {
+				 $("#" + box[x]).hide();
+				 }
+				 
+				 $("#total_points").text(totalscore);
+				 $("#reset_text").text("Reset");
+				 $("#reset").css(
+								 {
+									 "-webkit-border-bottom-right-radius" : "7px",
+									 "-webkit-border-bottom-left-radius" : "7px"
+									 });
+					 
+					 for ( var i = 0; i < boxArray.length; i++)
+					 {
+					 for ( var j = 0; j < boxArray[i].length; j++)
+					 {
+					 $("#" + boxArray[i][j]).slideDown("fast");
+					 }
+					 }
+					 
+					 $(".list_middle").css(
+										   {
+										   "-webkit-border-bottom-right-radius" : "0px",
+										   "-webkit-border-bottom-left-radius" : "0px"
+										   });
+					 });
+   });
+   function showModal(message) {
+     // get the modal
+     var modal = document.getElementById("modal");
+     modal.style.display = "block";
+
+     document.getElementById("text").innerHTML = message;
+
+     var modalButton = document.getElementById("modalButton");
+     modalButton.onclick = function() {
+         modal.style.display = "none";
+     }
+
+     window.onclick = function(event) {
+         if (event.target === modal) {
+             modal.style.display = "none";
+         }
+     }
+ } 
+</script>
+<script type="text/JavaScript">
+           
+		 
+           // if(screen.width < 768)
+            //{
+             //  changeCSS('calci_bb.css',0);
+           // }
+       // else
+        //{
+        //    changeCSS('calci_ipad_bb.css',0);
+       // }
+		
+		function changeCSS(cssFile, cssLinkIndex) {
+ 
+        var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+ 
+        var newlink = document.createElement("link");
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", cssFile);
+ 
+        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+      }
+		
+            </script>
+            
+		<!--<style>
+			
+			sup{
+				font-weight: normal;
+				font-size:10px;
+			}
+			table,td{
+				border:none;
+				border-collapse:collapse;
+				padding-top:5px;
+				padding-bottom:5px;
+			}
+			table td:nth-child(1)
+			{
+				text-align:right;
+				padding-right:5px;
+			}
+			table td:nth-child(3)
+			{
+				text-align:left;
+				padding-left:5px;
+			}
+			.hide{
+				display:none;
+			}
+			.show
+			{
+				display: inline-block;
+			}
+			#Recommendation{
+				display:none;
+			}
+			#Recom_box{
+				padding:2px 5px 2px 5px;
+			}
+		</style>-->
+		
+		<script>
+                
+                
+                
+               /* $(document).ready(function()
+                                  {
+                                  $("#reset").click(function()
+                                                    {
+                                                    //$(".points").hide("slow");
+                                                    $(".result_table").hide("slow");
+                                                    //$("#reftext").hide("slow");
+                                                    $("#reference").hide("slow");
+                                                    totalscore = 0;
+                                                    for ( var x = 0; x < isBoxPressed.length; x++)
+                                                    {
+                                                    isBoxPressed[x] = "false";
+                                                    }
+                                                    isResetPressed = "false";
+                                                    
+                                                    for ( var x = 1; x < box.length; x++)
+                                                    {
+                                                    $("#" + box[x]).hide();
+                                                    }
+                                                    
+                                                    $("#total_points").text(totalscore);
+                                                    $("#reset_text").text("Reset");
+                                                    $("#reset").css(
+                                                                    {
+                                                                    "-webkit-border-bottom-right-radius" : "7px",
+                                                                    "-webkit-border-bottom-left-radius" : "7px"
+                                                                    });
+                                                    
+                                                    for ( var i = 0; i < boxArray.length; i++)
+                                                    {
+                                                    for ( var j = 0; j < boxArray[i].length; j++)
+                                                    {
+                                                    $("#" + boxArray[i][j]).slideDown("fast");
+                                                    }
+                                                    }
+                                                    
+                                                    $(".list_middle").css(
+                                                                          {
+                                                                          "-webkit-border-bottom-right-radius" : "0px",
+                                                                          "-webkit-border-bottom-left-radius" : "0px"
+                                                                          });
+                                                    });
+                                  
+                                  $("#ref_button").click(
+                                                         function() {
+                                                         var className = $('#ref_button').attr('class');
+                                                         if (className == 'abbBtn')
+                                                         $('#ref_button').removeClass('abbBtn')
+                                                         .addClass('abbBtnClick');
+                                                         else
+                                                         $('#ref_button').removeClass('abbBtnClick')
+                                                         .addClass('abbBtn');
+                                                         $("#reference").slideToggle("fast", function() {
+                                                                                     $('html, body').animate({
+                                                                                                             scrollTop : $(this).offset().top
+                                                                                                             }, 700);
+                                                                                     });
+                                                         });
+                                  
+
+                                  });*/
+                                  </script>
+		
+		<script>
+		
+
+				
+		var Type = {"Text":0,"Radio":1,"CheckBox":2};
+			function valCal()
+			{
+			
+			/*enable disable output box*/
+			
+			var value1 = document.getElementById("Age").value;
+			var value2 = document.getElementById("MaxWallThikness").value;
+			var value3 = document.getElementById("LeftAtrialSize").value;
+			var value4 = document.getElementById("MaxLvotGradients").value;
+			var value5,value6,value7;
+			
+			if(document.getElementById("FamilyHistorySCD0").checked || document.getElementById("FamilyHistorySCD1").checked)
+			{
+					value5 = true;
+			}
+			
+			else
+			  value5 = false;
+		
+			if(document.getElementById("Nonsustained0").checked || document.getElementById("Nonsustained1").checked)
+			{
+					value6 = true;
+			}
+			
+			else
+			  value6 = false;		
+			  
+			  if(document.getElementById("Syncope0").checked || document.getElementById("Syncope1").checked)
+			{
+					value7 = true;
+			}
+			
+			else
+			  value7 = false;	
+		
+		
+		if(value1!= 0 && value2!= 0 && value3!= 0 && value4!= 0 && value5 && value6 && value7)
+			{
+			activeResultStyle();
+			}
+			
+			else
+			{
+			deactiveResultStyle();
+			}
+			
+				var RadioEleNo = getObj("input[type='radio']:checked").length;
+				var textEleNo=0,textEleObjs =  getObj(".input");
+				for(var i=0;i < textEleObjs.length;i++)
+				{
+					if(textEleObjs[i].value != "")
+					textEleNo++;
+				}
+				if(RadioEleNo+textEleNo != 7)
+				return;
+				
+				var maxWallThikness = getVal("MaxWallThikness");
+				var leftAtrialDiameter = getVal("LeftAtrialSize");
+				var maxLvotGradient = getVal("MaxLvotGradients");
+				var familyHistorySCD = getVal("FamilyHistorySCD",Type.Radio);
+				var syncope = getVal("Syncope",Type.Radio);
+				var age = getVal("Age");
+				var NSVT = getVal("Nonsustained",Type.Radio);
+				var RiskFactor;
+				
+				 if(maxWallThikness < 10 || maxWallThikness > 35)
+			{
+				//setInvalidInput($("#MaxWallThikness"));
+				clearOutputFields();
+				return;
+			}else if(leftAtrialDiameter < 28 || leftAtrialDiameter > 67)
+			{
+				//setInvalidInput($("#LeftAtrialSize"));
+				clearOutputFields();
+				return;
+			}else if(maxLvotGradient < 2 || maxLvotGradient > 154)
+			{
+				//setInvalidInput($("#MaxLvotGradients"));
+				clearOutputFields();
+				return;
+			}else if(age < 2 || age > 154)
+			{
+				//setInvalidInput($("#Age"));
+				clearOutputFields();
+				return;
+			}
+				
+				//-----------------Formula----------------------------
+				var pi = (0.15939858*maxWallThikness)-(0.00294271 * maxWallThikness * maxWallThikness) + (0.0259082 * leftAtrialDiameter) + 
+				(0.00446131 * maxLvotGradient) + (0.4583082 * familyHistorySCD) + (0.82639195 * NSVT) + (0.71650361 * syncope) -
+				(0.01799934 * age);
+				
+				var resultSurvivalPersent = Math.pow(0.998,Math.exp(pi));
+				
+				var resultClinicalRisk = 1-Math.pow(Math.pow(0.998,2),Math.exp(pi));
+				//alert("pi="+pi+" risk"+resultClinicalRisk);
+				//setVal("ResultPI",round(pi));
+				//setVal("ResultSurvivalPersent",round(resultSurvivalPersent));
+				RiskFactor = (1-resultSurvivalPersent)*100;
+				setVal("ResultRiskFactor",round(RiskFactor));
+				if(RiskFactor < 4)
+				$("#Recom_box").val($($.parseHTML("ICD generally not indicated <sup>**</sup>")).text());
+				if(RiskFactor >= 4 && RiskFactor < 6)
+				$("#Recom_box").val("ICD may be considered");
+				if(RiskFactor >= 6)
+				$("#Recom_box").val("ICD should be considered");
+				
+			}
+			
+			// ----------------Validation-------------------------
+			function validateInput(me)
+			{
+				var value = me.value;
+				if(value == "")
+					clearOutputFields();
+			}
+			function validateAge(me)
+			{
+				var value = me.value;
+				if(value<16 || value>80)
+				{
+					showModal("Age input should be between 16 to 80 years.");
+					me.value="";
+					clearOutputFields();
+				}
+			}
+			function validateMaxLV(me)
+			{
+				var value = me.value;
+				if(value<10 || value>35)
+				{
+					showModal("Maximal wall thickness input should be between 10mm to 35mm.");
+					me.value="";
+					clearOutputFields();
+				}
+			}
+			function validateLASize(me)
+			{
+				var value = me.value;
+				if(value<28 || value>67)
+				{
+					showModal("LA Diameter input should be between 28mm to 67mm.");
+					me.value="";
+					clearOutputFields();
+				}
+			}
+			
+			function validateGrad(me)
+			{
+				
+				var value = me.value;
+				if(value<2 || value>154){
+					showModal("LVOT Gradient input should be between 2mmHg to 154mmHg.");
+					me.value="";
+					clearOutputFields();
+					}
+			}
+			
+             /*   function showModal(mgs)
+                {
+					
+                    // custom alert without title bar
+                    // as per new standard -> Pravin
+                    var iframe = document.createElement("IFRAME");
+                    iframe.setAttribute("src", 'data:text/plain,');
+                    document.documentElement.appendChild(iframe);
+                    window.frames[0].window.alert(mgs);
+                    iframe.parentNode.removeChild(iframe);
+                }*/
+			function deleteInvalidChar(obj)
+			{
+				var regExp = new RegExp("");
+			}
+			
+			
+			function getVal(idName,type)
+			{
+				type = type || Type.Text;
+				if(type == Type.Text)
+					return document.getElementById(idName).value;
+				else if(type == Type.Radio)
+				{
+					var arr = document.getElementsByName(idName);
+					for(var i =0;i < arr.length;i++)
+					{
+						if(arr[i].checked)
+						return arr[i].value;
+					}
+				}		
+			}
+			function getObj(cssStr)
+			{
+				return document.querySelectorAll(cssStr);
+			}
+			function setVal(id,str)
+			{
+				document.getElementById(id).value = str;
+			}
+			
+			function clearOutputFields()
+			{
+				/*var objs = getObj(".output");
+				for(var i=0;i < objs.length;i++)
+					objs[i].value="";
+				$("#Recommendation").css("display","none");*/
+				
+				document.getElementById("Recom_box").value = "";
+				document.getElementById("ResultRiskFactor").value = "";
+			}
+			
+			
+			function isNumber(str)
+			{
+				var regExp = /^[0-9]*$/;
+				if(regExp.test(str))
+				return true;
+			}
+			
+			function round(no)
+			{
+			
+			var dec=2;
+			var result=Math.round(no*Math.pow(10,dec))/Math.pow(10,dec);
+				return result;
+			}
+			
+	function isNumbered(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    //alert(charCode);
+    if (charCode==46)
+    {
+    return true;
+    }
+    else if (charCode > 31 && (charCode < 48 || charCode > 57)) 
+    {
+	    showModal("Only numbers are allowed!");
+        return false;
+    }
+      
+    return true;
+}
+
+		/*function validateAge(me)
+		{
+			
+		}*/
+  
+  /*Active deactive results*/
+			function activeResultStyle()
+						{
+						//alert("done");
+						var classValue = document.getElementsByClassName("output_name_disabled");
+						
+						for(var i = 0; i  < classValue.length; i+1)
+						{
+						//alert("done");
+						classValue[i].classList.add("output_name");
+						classValue[i].classList.remove("output_name_disabled");
+						}
+						
+						var outputClass = document.getElementsByClassName("output_disabled");
+						for(var j = 0; j  < outputClass.length; j+1)
+						{
+						//alert("done");
+						outputClass[j].classList.add("output");
+						outputClass[j].classList.remove("output_disabled");
+						}
+						
+						var textareaOutputClass = document.getElementsByClassName("text-area-output-disabled");
+						for(var k = 0; k  <textareaOutputClass.length; k+1)
+						{
+						//alert("done");
+						textareaOutputClass[k].classList.add("text-area-output");
+						textareaOutputClass[k].classList.remove("text-area-output-disabled");
+						}
+						
+						var unitOutputClass = document.getElementsByClassName("unit_label_output_disabled");
+						for(var l = 0; l  < unitOutputClass.length; l+1)
+						{
+						//alert("done");
+						unitOutputClass[l].classList.add("unit_label_output");
+						unitOutputClass[l].classList.remove("unit_label_output_disabled");
+						}
+						
+						var activityOutput = document.getElementsByClassName("activity_output_disabled");
+						for(var act1 = 0; act1  < activityOutput.length; act1+1)
+						{
+						//alert("done");
+						activityOutput[act1].classList.add("activity_output");
+						activityOutput[act1].classList.remove("activity_output_disabled");
+						}
+						
+						var activityTextOutput = document.getElementsByClassName("activity-text-area-output-disabled");
+						for(var act2 = 0; act2  < activityTextOutput.length; act2+1)
+						{
+						//alert("done");
+						activityTextOutput[act2].classList.add("activity-text-area-output");
+						activityTextOutput[act2].classList.remove("activity-text-area-output-disabled");
+						}
+						
+								
+						}
+                        
+                       function deactiveResultStyle()
+						{
+						//alert("done");
+						var classValue = document.getElementsByClassName("output_name");
+						for(var i = 0; i  < classValue.length; i+1)
+						{
+						//alert("done");
+						classValue[i].classList.add("output_name_disabled");
+						classValue[i].classList.remove("output_name");
+						}
+						
+						var outputClass = document.getElementsByClassName("output");
+						for(var j = 0; j  < outputClass.length; j+1)
+						{
+						//alert("done");
+						outputClass[j].classList.add("output_disabled");
+						outputClass[j].classList.remove("output");
+						}
+						
+						var textareaOutputClass = document.getElementsByClassName("text-area-output");
+						for(var k = 0; k  < textareaOutputClass.length; k+1)
+						{
+						//alert("done");
+						textareaOutputClass[k].classList.add("text-area-output-disabled");
+						textareaOutputClass[k].classList.remove("text-area-output");
+						}
+						
+						var unitOutputClass = document.getElementsByClassName("unit_label_output");
+						for(var l = 0; l  < unitOutputClass.length; l+1)
+						{
+						//alert("done");
+						unitOutputClass[l].classList.add("unit_label_output_disabled");
+						unitOutputClass[l].classList.remove("unit_label_output");
+						}
+						
+						
+						var activityOutput = document.getElementsByClassName("activity_output");
+						for(var act1 = 0; act1  < activityOutput.length; act1+1)
+						{
+						//alert("done");
+						activityOutput[act1].classList.add("activity_output_disabled");
+						activityOutput[act1].classList.remove("activity_output");
+						}
+						
+						var activityTextOutput = document.getElementsByClassName("activity-text-area-output");
+						for(var act2 = 0; act2  < activityTextOutput.length; act2+1)
+						{
+						//alert("done");
+						activityTextOutput[act2].classList.add("activity-text-area-output-disabled");
+						activityTextOutput[act2].classList.remove("activity-text-area-output");
+						}
+								
+						}
+			
+		</script>
+	</head>
+	<body>
+	
+		<table  class="output_table"  >
+			<col style="width:46%">
+			<col style="width:33%">
+			<tr>
+			<td colspan="2" class="input_name" style="text-align:center">
+		<p><b>HCM Risk-SCD Calculator</b></p>
+			</td>
+			</table>
+			<div class="table_container">
+            <table class="input_table">
+            <colgroup>
+			<col width="30%">
+			<col width="35%">
+			<col width="35%">
+			</colgroup>
+			<tbody>
+			<tr><td colspan="3"></td></tr>
+            <tr>
+				<td colspan="1" class="input_name">Age<sup>1</sup>
+				</td>
+				<td>
+					<input class="input"  type="number" id="Age" onchange="validateAge(this)" onkeyup="validateInput(this);valCal();"  onkeypress="return isNumbered(event)"/> 
+				</td>
+				<td>Years</td>
+			</tr>
+		 <tr>
+				<td colspan="1" class="input_name">Maximum LV wall thickness<sup>2</sup>
+				</td>
+				<td>
+					<input class="input" type="number" id="MaxWallThikness" onchange="validateMaxLV(this)" onkeyup="validateInput(this);valCal();"  onkeypress="return isNumbered(event)" />  
+				</td>
+				<td>mm</td>
+			</tr>
+			 <tr>
+				<td colspan="1" class="input_name">Left atrial size<sup>3</sup>
+				</td>
+				<td>
+					<input class="input" type="number" id="LeftAtrialSize" onchange="validateLASize(this)" onkeyup="validateInput(this);valCal();"  onkeypress="return isNumbered(event)"/>  
+				</td>
+				<td>mm</td>
+			</tr>
+			 <tr>
+				<td colspan="1" class="input_name">Max LVOT <nobr>gradients</nobr><sup>4</sup>
+				</td>
+				<td>
+					<input class="input" type="number" id="MaxLvotGradients" onchange="validateGrad(this)" onkeyup="validateInput(this);valCal();" onkeypress="return isNumbered(event)"/> 
+				</td >
+				<td>mmHg</td>
+			</tr>
+</tr>
+<td colspan="1" class="input_name">Family history SCD<sup>5</sup></td>
+<td>
+<input type="radio" name="FamilyHistorySCD" onchange="validateInput(this);valCal()" value="0" id="FamilyHistorySCD0"/>
+<label for="FamilyHistorySCD0">No</label></td>
+<td>
+<input type="radio" name="FamilyHistorySCD" onchange="validateInput(this);valCal()" value="1" id="FamilyHistorySCD1"/>
+<label for="FamilyHistorySCD1">Yes</label></td>
+</tr>
+<tr>
+<td colspan="1" class="input_name">Nonsustained VT<sup>6</sup></td>
+<td>
+<input type="radio" name="Nonsustained" onchange="validateInput(this);valCal()" value="0" id="Nonsustained0"/>
+<label for="Nonsustained0" ">No</label></td>
+<td>
+<input type="radio" name="Nonsustained" onchange="validateInput(this);valCal()" value="1" id="Nonsustained1"/>
+<label for="Nonsustained1" >Yes</label></td>
+</tr>
+<tr>
+<td colspan="1" class="input_name">Syncope<sup>7</sup></td>
+<td>
+<input type="radio" onchange="validateInput(this);valCal()" name="Syncope" value="0" id="Syncope0"/>
+<label for="Syncope0">No</label></td>
+<td>
+<input type="radio" onchange="validateInput(this);valCal()" name="Syncope" value="1" id="Syncope1"/>
+<label for="Syncope1">Yes</label></td>
+</tr> 
+</tbody>
+</table>
+			
+			<!--<tr >
+				<td class="input_name">
+					<span>PI</span>
+				</td>
+				<td>
+					<input class="output" type="number" id="ResultPI" readonly=readonly/>  
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="input_name">
+					<span>Survival at 5 years from evaluation</span>
+				</td>
+				<td>
+					<input class="output" type="number" id="ResultSurvivalPersent"readonly=readonly/>  
+				</td>
+				<td class="input_unit"></td>
+			</tr>-->
+<div class="table_container">
+<table class="output_table">
+<colgroup>
+<col width="35%">
+<col width="35%">
+<col width="30%">
+</colgroup>  			
+<tr>
+<td class="output_name_disabled" colspan="3">Risk of SCD at 5 years
+				</td></tr><tr>
+				<td colspan="3">
+					<input type="number" class="output_disabled" id="ResultRiskFactor"readonly=readonly/>  
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr >
+				<td class="output_name_disabled" colspan="3">Recommendation
+				</td></tr><tr>
+				<td colspan="3">
+					<textarea class="activity_output_disabled" id="Recom_box" rows="3" cols="20" style="font-weight: bold;font-family: arial;" readonly=readonly></textarea>  
+				</td>
+			</tr>
+			</table>
+			<div class="footer-div" id="998">
+		    <table class="footer-button-table" width="100%">
+		    <colgroup>
+		    	<col width="50%">
+		    	<col width="50%">
+		    </colgroup>
+			<tbody>
+		       <tr>
+		          <td class="footer-button" colspan="2" style="width: 50%;">
+		             <button class="mfooter-button" id="ref_button">Abbreviation(s) and footnote(s)</button>
+		          </td>
+				  <td class="footer-button" colspan="2" style="width: 50%;"><button class="mfooter-button" id="moreInfoButton" style="height:auto;"><a class="more-info-link" href="ref_ENAS263_11.6.3.0">More information</a></button></td>
+		       </tr>
+		       <tr>
+		          <td class="footer-button" colspan="4" style="width: 100%;"><button class="mfooter-button" id="resetButton" onclick="window.location.href=window.location.href">Reset</button></td>
+         		  
+		       </tr>
+			   </tbody>
+		    </table>
+		 </div>
+			
+		<br/>
+		<br/>
+	    <br />
+                                                <br />
+                                                <br />
+                                                
+                                              
+                                                
+	<div id="reference" style="display: none; width: 100%;">
+		
+		<div class="info_text_box_abb" style="">
+            <p class="text_left">
+          Probability SCD at 5 years= 1 – 0.998<sup>exp(prognostic index)</sup>
+          <br>
+          <br>
+where prognostic Index= 0.15939858*Maximal wall thickness (mm)-0.00294271*Maximal wall thickness2 (mm2)+0.0259082*Left atrial diameter (mm)+0.00446131*Maximal (rest/Valsalva) left ventricular outflow tract gradient (mmHg)+0.4583082*Family history SCD+0.82639195*NSVT+0.71650361* Unexplained syncope -0.01799934*Age at clinical evaluation (years).   
+			</p>
+        </div >
+		
+<div class="info_text_box_abb">
+		   		<p class="text_left">HCM Risk-SCD should not be used in:<br/>
+	<ol><li>         Paediatric patients (<16 years)<br/></li>
+	<li>        Elite/competitive athletes<br/></li>
+	<li>        HCM associated with metabolic diseases (e.g. Anderson-Fabry disease), and syndromes (e.g. Noonan syndrome).<br/></li>
+	<li>        Patients with a previous history of aborted SCD or sustained ventricular arrhythmia who should be treated with an ICD for secondary prevention.<br/></li></ol>
+	Caution should be exercised when assessing the SCD in patients following invasive reduction in left ventricular outflow tract obstruction with myectomy or alcohol septal ablation.
+				</p>
+		   </div>
+
+
+		<diV class="info_text_box_abb">
+			<p class="text_left">
+				<sup>**</sup> ICD not recommended unless there other clinical features that are of potential prognostic importance and when the likely benefit is greater than the lifelong risk of complications and the impact of an ICD on lifestyle, socioeconomic status and psychological health.<br/> 
+				<sup>1</sup> Age at evaluation -  years<br/>
+				<sup>2</sup> TTE measurement - mm<br/>
+				<sup>3</sup> Left atrial diameter determined by M-Mode or 2D echocardiography in the parasternal long axis plane at time of evaluation<br/>
+				<sup>4</sup> The maximum LV outflow gradient determined at rest and with Valsalva provocation (irrespective of concurrent medical treatment) using pulsed and continuous wave Doppler from the apical three and five chamber views. Peak outflow tract gradients were determined using the modified Bernouilli equation: Gradient= 4V2, where V is the peak aortic outflow velocity<br/>
+				<sup>5</sup> History of sudden cardiac death in 1 or more first degree relatives under 40 years of age or SCD in a first degree relative with confirmed HCM at any age (post or ante-mortem diagnosis).<br/>
+				<sup>6</sup> ≥3 consecutive ventricular beats at a rate of ≥120 beats per minute and &lt;30s in duration on Holter monitoring (minimum duration 24 hours) at or prior to evaluation.<br/>
+				<sup>7</sup> History of unexplained syncope at or prior to evaluation.
+			</p>
+		</diV>
+		
+	    <div class="info_text_box_abb">
+	        <p class="text_left">
+	         <nobr>HCM = hypertrophic </nobr>cardiomyopathy;
+	       <nobr>LV = left ventricular;</nobr>
+	         <nobr>LVOT = left</nobr> ventricular outflow tract;
+	         <nobr>NSVT = non-sustained </nobr> ventricular tachycardia;
+	         <nobr>SCD = sudden </nobr>cardiac death;
+	         <nobr>VT = ventricular </nobr>tachycardiax
+	      
+
+	        </p>
+	    </div>
+                                            
+			
+
+	    </div>
+	    </div>   
+  <div id="modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p class="modal-text" id="text">This is text of modal</p>
+                <p class="modal-button" id="modalButton">OK</p>
+            </div>
+        </div>     
+		
+	</body>
+
+</html>

@@ -1,0 +1,1838 @@
+<html>
+    <head>
+        <meta name="viewport" content="charset=UTF-8" />
+       <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+         <link rel="stylesheet" type="text/css" href="score_esc.css">
+            <script src="jquery-1.9.1.min.js"></script>
+<script src="jquery-tocPlugin.js"></script>
+
+        <STYLE TYPE="text/css">
+            
+            body 
+            {
+                background-color: #cccccc;
+                background-color: #cccccc;
+                margin: 2px 2px 2px 2px;
+            }
+            .flipButton
+            {
+                width:70px; height: 40px;
+                align:right;
+                -webkit-border-top-right-radius: 7px;
+                -webkit-border-top-left-radius: 7px;
+                -webkit-border-bottom-right-radius: 7px;
+                -webkit-border-bottom-left-radius: 7px;
+                background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)),
+                to(#a8adb2));
+                padding: 4% 20% 1% 20%;
+            }/*
+            .abbBtn
+            {
+                
+                width:100px; height: 40px;
+                align:right;
+                font-weight:bold;
+                -webkit-border-top-right-radius: 7px;
+                -webkit-border-top-left-radius: 7px;
+                -webkit-border-bottom-right-radius: 7px;
+                -webkit-border-bottom-left-radius: 7px;
+                background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)),
+                to(#a8adb2));
+            }
+            .abbBtnClick
+            {
+                
+                width:100px; height: 40px;
+                align:right;
+                font-weight:bold;
+                -webkit-border-top-right-radius: 7px;
+                -webkit-border-top-left-radius: 7px;
+                -webkit-border-bottom-right-radius: 7px;
+                -webkit-border-bottom-left-radius: 7px;
+                background: -webkit-gradient(linear, left top, left bottom, from(#7c7c7c),
+                to(#7c7c7c));
+                color:#ffffff;
+            }*/
+            img.pdfImage
+            {
+                width:90%; height:90%;  
+                align:right;
+            }
+
+            
+ 
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+input[type=radio]
+{
+	display:none;
+}
+input[type=radio] + label 
+{
+    display:inline-block;
+    margin: 0px 2px 0px 2px;
+                padding:2px 1px 0px 1px;
+    background-color: #ffffff;
+	border: 1px solid #dfdfdf;
+	margin: 0;
+	padding: 0;
+	width:99%;
+   height:23px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+     text-align:center;
+    font-size:15;
+    
+    
+ 
+                font-weight:bold;
+                color:#686868;
+}
+
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input[type=radio]:checked + label 
+{
+       background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#662016));
+                border: 2px solid #ececec;
+                color:#ffffff;
+                text-align:center;
+                width:99%;
+                font-size:15;
+                font-weight:bold;
+                
+    
+}
+      
+</style>
+           <script>
+                         
+                         
+                         
+                         $(document).ready(function()
+                                           {
+                                           
+                                           
+                                           
+                                           
+                                           $("#ref_button").click(function()
+                                                                  {
+                                                                  var className = $('#ref_button').attr('class');
+                                                                  if (className == 'abbBtn')
+                                                                  $('#ref_button').removeClass('abbBtn').addClass('abbBtnClick');
+                                                                  else
+                                                                  $('#ref_button').removeClass('abbBtnClick').addClass('abbBtn');
+                                                                  $("#reference").slideToggle("fast", function()
+                                                                                              {
+                                                                                              $('html, body').animate({scrollTop : $(this).offset().top}, 700);
+                                                                                              });
+                                                                  });
+                                           
+                                           $("#reset").click(function()
+                                                             {
+                                                             //$(".points").hide("slow");
+                                                             $(".result_table").hide("slow");
+                                                             //$("#reftext").hide("slow");
+                                                             $("#reference").hide("slow");
+                                                             totalscore = 0;
+                                                             for ( var x = 0; x < isBoxPressed.length; x++)
+                                                             {
+                                                             isBoxPressed[x] = "false";
+                                                             }
+                                                             isResetPressed = "false";
+                                                             
+                                                             for ( var x = 1; x < box.length; x++)
+                                                             {
+                                                             $("#" + box[x]).hide();
+                                                             }
+                                                             
+                                                             $("#total_points").text(totalscore);
+                                                             $("#reset_text").text("Reset");
+                                                             $("#reset").css(
+                                                                             {
+                                                                             "-webkit-border-bottom-right-radius" : "7px",
+                                                                             "-webkit-border-bottom-left-radius" : "7px"
+                                                                             });
+                                                             
+                                                             for ( var i = 0; i < boxArray.length; i++)
+                                                             {
+                                                             for ( var j = 0; j < boxArray[i].length; j++)
+                                                             {
+                                                             $("#" + boxArray[i][j]).slideDown("fast");
+                                                             }
+                                                             }
+                                                             
+                                                             $(".list_middle").css(
+                                                                                   {
+                                                                                   "-webkit-border-bottom-right-radius" : "0px",
+                                                                                   "-webkit-border-bottom-left-radius" : "0px"
+                                                                                   });
+                                                             });
+                                           });
+                         
+                         function boxSlide(id, status, point, mode, whichArray)
+                         {
+                             if (mode == 1)
+                             {
+                                 for ( var j = 0; j < boxArray[whichArray].length; j++)
+                                 {
+                                     if (id != boxArray[whichArray][j])
+                                     {
+                                         $("#" + boxArray[whichArray][j]).slideUp("fast");
+                                     }
+                                 }
+                                 $("#" + id).css(
+                                                 {
+                                                 "-webkit-border-bottom-right-radius" : "7px",
+                                                 "-webkit-border-bottom-left-radius" : "7px"
+                                                 });
+                                 isBoxPressed[whichArray] = status;
+                                 totalscore = totalscore + point;
+                                 showScore();
+                             }
+                             else if (mode == 0)
+                             {
+                                 for ( var j = 0; j < boxArray[whichArray].length; j++)
+                                 {
+                                     if (id != boxArray[whichArray][j])
+                                     {
+                                         $("#" + boxArray[whichArray][j]).slideDown("fast");
+                                     }
+                                 }
+                                 $("#" + id).css(
+                                                 {
+                                                 "-webkit-border-bottom-right-radius" : "0px",
+                                                 "-webkit-border-bottom-left-radius" : "0px"
+                                                 });
+                                 isBoxPressed[whichArray] = status;
+                                 totalscore = totalscore - point;
+                                 hideScore();
+                             }
+                             $("#total_points").text(totalscore);
+                             if (whichArray < box.length)
+                             $("#" + box[whichArray + 1]).show();
+                             $("#" + box[whichArray]).scroll();
+                         }
+                         
+                         
+                         </script> 
+<script language="JavaScript">
+        $(function(){
+          $('label').bind('click', function(){ $(input, this).click(); return false; });
+          });
+          
+          
+           window.onload = function(){
+                document.getElementById("txtresult_text_guide").style.display="none";
+                        document.getElementById("trHide").style.display="none";
+  }
+  
+    </script>
+
+<script type="text/javascript">
+    
+    
+    var total1,total,one, two , three, four, five, six , seven, eight, nine, ten, eleven , twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen,twenty,twentyone,twentytwo,twentythree,twentyfour,twentyfive,twentysix;
+    
+    function valcal()
+    {
+        
+        one=-1;
+         two=-1;
+        three=-1;
+        four=-1;
+        five=-1;
+        six=-1;
+        
+        seven=-1;
+        eight=-1;
+        nine=-1;
+        ten=-1;
+        eleven=-1;
+        twelve=-1;
+        thirteen=-1;
+        fourteen=-1;
+        fifteen=-1;
+        sixteen=-1;
+        seventeen=-1;
+        eighteen=-1;
+        
+        nineteen=-1;
+        twenty=-1;
+        twentyone=-1;
+        twentytwo=-1;
+        twentythree=-1;
+        twentyfour=-1;
+        twentyfive=-1;
+        twentysix=-1;
+        frm.txtresult_text.value="";
+        txtresult_text_guide.value="";
+        total=0;
+        total1=0;
+       /* document.getElementById("gc").style.visibility="visible";
+        document.getElementById("gc1").style.visibility="visible";
+        document.getElementById("gc").style.display="block";
+        document.getElementById("gc1").style.display="block";
+        */
+        var drop;
+        var rftrue=-1;
+        var odtrue=-1;
+        var dmtrue=-1;
+        var cvdtrue=-1;
+        
+        
+        
+        if(document.getElementById("a1_1").checked==true)
+        {
+            
+          
+            
+            //document.getElementById("a1").hidden=false;
+               rftrue=1;
+                    /* document.getElementById("a2").hidden=true;
+                     document.getElementById("a3").hidden=true;
+              document.getElementById("a3").hidden=true;*/
+        }
+        else
+        if(document.getElementById("a1_2").checked==true)
+        {
+            rftrue=0;
+           /*
+            document.getElementById("r1_1").checked=false;
+            document.getElementById("r1_2").checked=false;
+            
+            document.getElementById("r2_1").checked=false;
+            document.getElementById("r2_2").checked=false;
+            
+            document.getElementById("r3_1").checked=false;
+            document.getElementById("r3_2").checked=false;
+            
+            document.getElementById("r4_1").checked=false;
+            document.getElementById("r4_2").checked=false;
+            
+            document.getElementById("r5_1").checked=false;
+            document.getElementById("r5_2").checked=false;
+            
+            document.getElementById("r6_1").checked=false;
+            document.getElementById("r6_2").checked=false;
+            
+            document.getElementById("r7_1").checked=false;
+            document.getElementById("r7_2").checked=false;
+            
+            document.getElementById("r8_1").checked=false;
+            document.getElementById("r8_2").checked=false;
+            
+            document.getElementById("r9_1").checked=false;
+            document.getElementById("r9_2").checked=false;
+          //   document.getElementById("a1").hidden=true;
+           /* document.getElementById("a2").hidden=true;
+            document.getElementById("a3").hidden=true;
+            document.getElementById("a4").hidden=true;*/
+   
+        }
+        
+        if(document.getElementById("b1_1").checked==true)
+        {
+            
+            
+            
+           
+
+            odtrue=1;
+            document.getElementById("a2").hidden=false;
+           /* document.getElementById("a1").hidden=true;
+            document.getElementById("a3").hidden=true;
+            document.getElementById("a4").hidden=true;*/
+        }
+        else
+        if(document.getElementById("b1_2").checked==true)
+        {
+            
+            
+            
+            document.getElementById("r10_1").checked=false;
+            document.getElementById("r10_2").checked=false;
+            
+            document.getElementById("r11_1").checked=false;
+            document.getElementById("r11_2").checked=false;
+            
+            document.getElementById("r12_1").checked=false;
+            document.getElementById("r12_2").checked=false;
+            
+            document.getElementById("r13_1").checked=false;
+            document.getElementById("r13_2").checked=false;
+            
+            document.getElementById("r14_1").checked=false;
+            document.getElementById("r14_2").checked=false;
+            
+            document.getElementById("r15_1").checked=false;
+            document.getElementById("r15_2").checked=false;
+            
+            document.getElementById("r16_1").checked=false;
+            document.getElementById("r16_2").checked=false;
+            
+            document.getElementById("r17_1").checked=false;
+            document.getElementById("r17_2").checked=false;
+            odtrue=0;
+            document.getElementById("a2").hidden=true;
+           /* document.getElementById("a1").hidden=true;
+            document.getElementById("a3").hidden=true;
+            document.getElementById("a4").hidden=true;*/
+        }
+        
+        if(document.getElementById("c1_1").checked==true)
+        {
+            dmtrue=1;
+           // document.getElementById("a3").hidden=false;
+           /* document.getElementById("a2").hidden=true;
+            document.getElementById("a1").hidden=true;
+            document.getElementById("a4").hidden=true;*/
+        }
+        else
+        if(document.getElementById("c1_2").checked==true)
+        {
+            
+            
+            /*
+            
+            document.getElementById("r18_1").checked=false;
+            document.getElementById("r18_2").checked=false;
+            
+            document.getElementById("r19_1").checked=false;
+            document.getElementById("r19_2").checked=false;
+            
+            document.getElementById("r20_1").checked=false;
+            document.getElementById("r20_2").checked=false;*/
+            dmtrue=0;
+         //   document.getElementById("a3").hidden=true;
+            /*document.getElementById("a2").hidden=true;
+            document.getElementById("a1").hidden=true;
+            document.getElementById("a4").hidden=true;*/
+        }
+        
+        if(document.getElementById("d1_1").checked==true)
+        {
+            
+                      cvdtrue=1;
+          //  document.getElementById("a4").hidden=false;
+            /*document.getElementById("a2").hidden=true;
+            document.getElementById("a3").hidden=true;
+            document.getElementById("a1").hidden=true;*/
+            
+        }
+        else
+        if(document.getElementById("d1_2").checked==true)
+        {
+            
+            /*document.getElementById("r21_1").checked=false;
+            document.getElementById("r21_2").checked=false;
+            
+            document.getElementById("r22_1").checked=false;
+            document.getElementById("r22_2").checked=false;
+            
+            document.getElementById("r23_1").checked=false;
+            document.getElementById("r23_2").checked=false;
+            
+            document.getElementById("r24_1").checked=false;
+            document.getElementById("r24_2").checked=false;
+            
+            document.getElementById("r25_1").checked=false;
+            document.getElementById("r25_2").checked=false;
+            
+            document.getElementById("r26_1").checked=false;
+            document.getElementById("r26_2").checked=false;*/
+
+            cvdtrue=0
+         //   document.getElementById("a4").hidden=true;
+            /*document.getElementById("a2").hidden=true;
+            document.getElementById("a3").hidden=true;
+            document.getElementById("a1").hidden=true;*/
+            
+        }
+        
+        
+        
+        
+        if(document.getElementById("r1_27").checked==true)
+        {
+            document.getElementById("once").hidden=false;
+                document.getElementById("twice").hidden=false;
+         //  document.getElementById("bpmmhg").hidden="true";
+         document.getElementById("gc").hidden=false;
+        document.getElementById("gc1").hidden=true;
+            //alert("r1");
+            
+            drop=document.frm.gc.value;
+            
+        }
+        else if(document.getElementById("r1_28").checked==true)
+        {
+             document.getElementById("twice").hidden=false;
+            document.getElementById("once").hidden=false;
+            //
+         //      document.getElementById("bpmmhg").hidden="true";
+         
+            document.getElementById("gc1").hidden=false;
+             document.getElementById("gc").hidden=true;
+        
+            drop=document.frm.gc1.value;
+        }
+        
+        total1=1;
+        
+       
+        
+       
+        
+            if(document.getElementById("r1_1").checked==true)
+            {
+                total+=0;
+                one=0;
+            }
+            else
+            if(document.getElementById("r1_2").checked==true)
+            {
+                total+=1;
+                one=1;
+            }
+            
+            
+            if(document.getElementById("r2_1").checked==true)
+            {
+                total+=1;
+                two=1;
+            }
+            else
+            if(document.getElementById("r2_2").checked==true)
+            {
+                total+=0;
+                two=0;
+            }
+            
+            if(document.getElementById("r3_1").checked==true)
+            {
+                total+=1;
+                three=1;
+            }
+            else
+            if(document.getElementById("r3_2").checked==true)
+            {
+                total+=0;
+                three=0;
+            }
+            
+            if(document.getElementById("r4_1").checked==true)
+            {
+                total+=1;
+                four=1;
+            }
+            else
+            if(document.getElementById("r4_2").checked==true)
+            {
+                total+=0;
+                four=0;
+            }
+            
+            
+            if(document.getElementById("r5_1").checked==true)
+            {
+                total+=1;
+                five=1;
+            }
+            else
+            if(document.getElementById("r5_2").checked==true)
+            {
+                total+=0;
+                five=0;
+            }
+            
+            
+            
+            if(document.getElementById("r6_1").checked==true)
+            {
+                total+=1;
+                six=1;
+            }
+            else
+            if(document.getElementById("r6_2").checked==true)
+            {
+                total+=0;
+                six=0;
+            }
+            
+            
+            
+            if(document.getElementById("r7_1").checked==true)
+            {
+                total+=1;
+                seven=1;
+            }
+            else
+            if(document.getElementById("r7_2").checked==true)
+            {
+                total+=0;
+                seven=0;
+            }
+            
+            
+            if(document.getElementById("r8_1").checked==true)
+            {
+                total+=1;
+                eight=1;
+            }
+            else
+            if(document.getElementById("r8_2").checked==true)
+            {
+                total+=0;
+                eight=0;
+            }
+            
+            
+            if(document.getElementById("r9_1").checked==true)
+            {
+                total+=1;
+                nine=1;
+            }
+            else
+            if(document.getElementById("r9_2").checked==true)
+            {
+                total+=0;
+                nine=0;
+            }
+            
+            
+            
+            if(document.getElementById("r10_1").checked==true)
+            {
+                total+=1;
+                ten=1;
+            }
+            else
+            if(document.getElementById("r10_2").checked==true)
+            {
+                //   total+=0;
+                ten=0;
+            }
+            
+            
+            if(document.getElementById("r11_1").checked==true)
+            {
+                //  total+=1;
+                eleven=1;
+            }
+            else
+            if(document.getElementById("r11_2").checked==true)
+            {
+                //  total+=0;
+                eleven=0;
+            }
+            
+            if(document.getElementById("r12_1").checked==true)
+            {
+                //  total+=1;
+                twelve=1;
+            }
+            else
+            if(document.getElementById("r12_2").checked==true)
+            {
+                // total+=0;
+                twelve=0;
+            }
+            
+            if(document.getElementById("r13_1").checked==true)
+            {
+                // total+=1;
+                thirteen=1;
+            }
+            else
+            if(document.getElementById("r13_2").checked==true)
+            {
+                //total+=0;
+                thirteen=0;
+            }
+            
+            if(document.getElementById("r14_1").checked==true)
+            {
+                // total+=1;
+                fourteen=1;
+            }
+            else
+            if(document.getElementById("r14_2").checked==true)
+            {
+                // total+=0;
+                fourteen=0;
+            }
+            
+            if(document.getElementById("r15_1").checked==true)
+            {
+                // total+=1;
+                fifteen=1;
+            }
+            else
+            if(document.getElementById("r15_2").checked==true)
+            {
+                //  total+=0;
+                fifteen=0;
+            }
+            
+            if(document.getElementById("r16_1").checked==true)
+            {
+                //  total+=1;
+                sixteen=1;
+            }
+            else
+            if(document.getElementById("r16_2").checked==true)
+            {
+                //  total+=0;
+                sixteen=0;
+            }
+            
+            
+            if(document.getElementById("r17_1").checked==true)
+            {
+                // total+=1;
+                seventeen=1;
+            }
+            else
+            if(document.getElementById("r17_2").checked==true)
+            {
+                // total+=0;
+                seventeen=0;
+            }
+            
+            
+            if(document.getElementById("r18_1").checked==true)
+            {
+                //total+=1;
+                eighteen=1;
+            }
+            else
+            if(document.getElementById("r18_2").checked==true)
+            {
+                total+=0;
+                eighteen=0;
+            }
+            
+            
+            if(document.getElementById("r19_1").checked==true)
+            {
+                total+=1;
+                nineteen=1;
+            }
+            else
+            if(document.getElementById("r19_2").checked==true)
+            {
+                // total+=0;
+                nineteen=0;
+            }
+            if(document.getElementById("r20_1").checked==true)
+            {
+                //total+=1;
+                twenty=1;
+            }
+            else
+            if(document.getElementById("r20_2").checked==true)
+            {
+                //   total+=0;
+                twenty=0;
+            }
+            
+            
+            if(document.getElementById("r21_1").checked==true)
+            {
+                // total+=1;
+                twentyone=1;
+            }
+            else
+            if(document.getElementById("r21_2").checked==true)
+            {
+                // total+=0;
+                twentyone=0;
+            }
+            
+            
+            if(document.getElementById("r22_1").checked==true)
+            {
+                // total+=1;
+                twentytwo=1;
+            }
+            else
+            if(document.getElementById("r22_2").checked==true)
+            {
+                //total+=0;
+                twentytwo=0;
+            }
+            
+            
+            if(document.getElementById("r23_1").checked==true)
+            {
+                //total+=1;
+                twentythree=1;
+            }
+            else
+            if(document.getElementById("r23_2").checked==true)
+            {
+                //total+=0;
+                twentythree=0;
+            }
+            
+            
+            if(document.getElementById("r24_1").checked==true)
+            {
+                //total+=1;
+                twentyfour=1;
+            }
+            else
+            if(document.getElementById("r24_2").checked==true)
+            {
+                //total+=0;
+                twentyfour=0;
+            }
+            
+            if(document.getElementById("r25_1").checked==true)
+            {
+                //   total+=1;
+                twentyfive=1;
+            }
+            else
+            if(document.getElementById("r25_2").checked==true)
+            {
+                // total+=0;
+                twentyfive=0;
+            }
+            
+            
+            if(document.getElementById("r26_1").checked==true)
+            {
+                // total+=1;
+                twentysix=1;
+            }
+            else
+            if(document.getElementById("r26_2").checked==true)
+            {
+                // total+=0;
+                twentysix=0;
+            }
+            
+            
+            
+            
+            
+            var oneone,twotwo,threethree,fourfour;
+            /*if(!(one==-1||two==-1||three==-1||four==-1||five==-1||six==-1||seven==-1||eight==-1||nine==-1||ten==-1||eleven==-1||twelve==-1||thirteen==-1||fourteen==-1||fifteen==-1||sixteen==-1||seventeen==-1||eighteen==-1||nineteen==-1||twenty==-1||twentyone==-1||twentytwo==-1||twentythree==-1||twentyfour==-1||twentyfive==-1||twentysix==-1))*/
+            oneone=-1;
+            twotwo=-1;
+            threethree=-1;
+            fourfour=-1;
+           
+               
+            if(one||two || three || four || five || six || seven || eight || nine)
+            {
+              
+                oneone=1;
+            }
+            else if(one!=-1 ||two!=-1 || three !=-1|| four!=-1 || five!=-1 || six!=-1 || seven!=-1 || eight!=-1 || nine!=-1)
+            {
+          
+               /* document.getElementById("r1_1").checked=false;
+                  document.getElementById("r1_2").checked=false;
+                  
+                  document.getElementById("r2_1").checked=false;
+                  document.getElementById("r2_2").checked=false;
+                  
+                  document.getElementById("r3_1").checked=false;
+                  document.getElementById("r3_2").checked=false;
+                  
+                  document.getElementById("r4_1").checked=false;
+                  document.getElementById("r4_2").checked=false;
+                  
+                  document.getElementById("r5_1").checked=false;
+                  document.getElementById("r5_2").checked=false;
+                  
+                  document.getElementById("r6_1").checked=false;
+                  document.getElementById("r6_2").checked=false;
+                  
+                  document.getElementById("r7_1").checked=false;
+                  document.getElementById("r7_2").checked=false;
+                  
+                  document.getElementById("r8_1").checked=false;
+                  document.getElementById("r8_2").checked=false;
+                  
+                  document.getElementById("r9_1").checked=false;
+                  document.getElementById("r9_2").checked=false;
+                
+              //  document.getElementById("a1").hidden=true;
+                document.getElementById("a1_1").checked=false;
+                
+                document.getElementById("a1_2").checked=true;*/
+                    oneone=0;
+                
+                
+            }
+            
+            if((ten || eleven || twelve || thirteen || fourteen || fifteen || sixteen || seventeen))
+            {
+                twotwo=1;
+            }
+            else if(ten!=-1 || eleven !=-1|| twelve!=-1 || thirteen!=-1 || fourteen!=-1 || fifteen!=-1 || sixteen!=-1 || seventeen!=-1)
+            {
+                
+         
+                
+                document.getElementById("r10_1").checked=false;
+                document.getElementById("r10_2").checked=false;
+                
+                document.getElementById("r11_1").checked=false;
+                document.getElementById("r11_2").checked=false;
+                
+                document.getElementById("r12_1").checked=false;
+                document.getElementById("r12_2").checked=false;
+                
+                document.getElementById("r13_1").checked=false;
+                document.getElementById("r13_2").checked=false;
+                
+                document.getElementById("r14_1").checked=false;
+                document.getElementById("r14_2").checked=false;
+                
+                document.getElementById("r15_1").checked=false;
+                document.getElementById("r15_2").checked=false;
+                
+                document.getElementById("r16_1").checked=false;
+                document.getElementById("r16_2").checked=false;
+                
+                document.getElementById("r17_1").checked=false;
+                document.getElementById("r17_2").checked=false;
+                
+                
+                document.getElementById("a2").hidden=true;
+                document.getElementById("b1_1").checked=false;
+                
+                document.getElementById("b1_2").checked=true;
+                    twotwo=0;
+                
+            }
+            if(eighteen || nineteen || twenty )
+            {
+                threethree=1;
+            }
+            else if(eighteen!=-1 || nineteen!=-1 || twenty!=-1 )
+            {
+                threethree=0;
+               /*// document.getElementById("a3").hidden=true;
+               
+                
+                
+                
+                document.getElementById("r18_1").checked=false;
+                document.getElementById("r18_2").checked=false;
+                
+                document.getElementById("r19_1").checked=false;
+                document.getElementById("r19_2").checked=false;
+                
+                document.getElementById("r20_1").checked=false;
+                document.getElementById("r20_2").checked=false;
+                
+            */
+                
+            }
+            if( twentyone || twentytwo || twentythree || twentyfour || twentyfive||twentysix)
+            {
+                fourfour=1;
+            }
+            else if(twentyone!=-1 || twentytwo!=-1 || twentythree!=-1 || twentyfour!=-1 || twentyfive!=-1||twentysix!=-1)
+            {
+               
+                 
+                 
+               /*
+                 document.getElementById("r21_1").checked=false;
+                 document.getElementById("r21_2").checked=false;
+                 
+                 document.getElementById("r22_1").checked=false;
+                 document.getElementById("r22_2").checked=false;
+                 
+                 document.getElementById("r23_1").checked=false;
+                 document.getElementById("r23_2").checked=false;
+                 
+                 document.getElementById("r24_1").checked=false;
+                 document.getElementById("r24_2").checked=false;
+                 
+                 document.getElementById("r25_1").checked=false;
+                 document.getElementById("r25_2").checked=false;
+                 
+                 document.getElementById("r26_1").checked=false;
+                 document.getElementById("r26_2").checked=false;
+                 
+                 
+         // document.getElementById("a3").hidden=true;
+                 document.getElementById("d1_1").checked=false;
+                 
+                 document.getElementById("d1_2").checked=true;*/
+                 fourfour=0;
+              
+                
+            }
+            
+       
+       
+       
+       
+      if(rftrue)
+      {
+          
+      }
+      else if(rftrue==0)
+      {
+          oneone=0;
+          total=0;
+      }
+      if(odtrue)
+      {
+          
+      }
+      else if(odtrue==0)
+      {
+          twotwo=0;
+          
+      }
+      if(dmtrue)
+      {
+          
+      }
+      else if(dmtrue==0)
+      {
+          threethree=0;
+      }
+      if(cvdtrue)
+      {
+          
+      }
+      else if(cvdtrue==0)
+      {
+          fourfour=0;
+      }
+      
+      
+      
+      
+      if(drop)
+      {
+          
+          if((!(rftrue)||!(one==-1||two==-1||three==-1||four==-1||five==-1||six==-1||seven==-1||eight==-1||nine==-1) )
+             &&(!(odtrue)||!(ten==-1||eleven==-1||twelve==-1||thirteen==-1||fourteen==-1||fifteen==-1||sixteen==-1||seventeen==-1 ))
+             && (!(dmtrue)||!(eighteen==-1||nineteen==-1||twenty==-1))
+             && (!(cvdtrue)||!((twentyone==-1||twentytwo==-1||twentythree==-1||twentyfour==-1||twentyfive==-1||twentysix==-1)  )))
+             {
+      
+        if(oneone && !(twotwo || threethree||fourfour))
+            {
+                if(total==0)
+                {
+                    if(drop.match("1"))
+                    {
+
+                        frm.txtresult_text.value="No Risk";
+                        txtresult_text_guide.value="No BP intervention";
+                        
+                    }
+                    else if (drop.match("2"))
+                    {
+                        
+                        frm.txtresult_text.value="Low risk";
+                        txtresult_text_guide.value="1.Lifestyle changes for several months \n2. Then add BP drugs targeting <140/90";
+                    }
+                    else if (drop.match("3"))
+                    {
+                        frm.txtresult_text.value="Moderate risk";
+                        txtresult_text_guide.value="1.Lifestyle changes for several weeks   \n2. Then add BP drugs targeting <140/90";
+                    }
+                    
+                    else if (drop.match("4"))
+                    {
+                        frm.txtresult_text.value="High risk";
+                        txtresult_text_guide.value="1. Lifestyle changes   \n2. Immediate BP drugs targeting <140/90";
+                    }
+                    
+                    
+                }
+                else if(total<3)
+                {
+                    
+                    
+                    if(drop.match("1"))
+                    {
+                        
+                        frm.txtresult_text.value="Low risk";
+                        txtresult_text_guide.value="1. Lifestyle changes   \n2. No BP intervention";
+                    }
+                    else if (drop.match("2"))
+                    {
+                        frm.txtresult_text.value="Moderate risk";
+                        txtresult_text_guide.value="1. Lifestyle changes for several weeks   \n2. Then add BP drugs targeting <140/90";
+                    }
+                    else if (drop.match("3"))
+                    {
+                        frm.txtresult_text.value="Moderate to high risk";
+                        txtresult_text_guide.value="1. Lifestyle changes for several weeks   \n2. Then add BP drugs targeting <140/90";
+                    }
+                    else if (drop.match("4"))
+                    {
+                        frm.txtresult_text.value="High risk";
+                        txtresult_text_guide.value="1. Lifestyle changes   \n2. Immediate BP drugs targeting <140/90";
+                    }
+                    
+                    
+                    
+                }
+                else
+                {
+                    
+                    if(drop.match("1"))
+                    {
+                        
+                        frm.txtresult_text.value="Low to Moderate risk";
+                        txtresult_text_guide.value="1. Lifestyle changes   \n2. No BP intervention";
+                    }
+                    else if (drop.match("2"))
+                    {
+                        frm.txtresult_text.value="Moderate to high risk";
+                        txtresult_text_guide.value="1. Lifestyle changes for several weeks   \n2. Then add BP drugs targeting <140/90";
+                    }
+                    else if (drop.match("3"))
+                    {
+                        frm.txtresult_text.value="High Risk";
+                        txtresult_text_guide.value="1. Lifestyle changes   \n2. BP drugs targeting <140/90";
+                    }
+                    else if (drop.match("4"))
+                    {
+                        frm.txtresult_text.value="High risk";
+                        txtresult_text_guide.value="1. Lifestyle changes   \n2. Immediate BP drugs targeting <140/90";
+                    }
+                    
+                    
+                    
+                    
+                }
+                
+            }
+            else if(((twotwo || threethree) && !(twotwo && threethree) && !(fourfour) && !(threethree && oneone))||(twotwo &&!(oneone || threethree||fourfour))||((twotwo && oneone)&&!(threethree||fourfour)))
+            {
+                
+                if(drop.match("1"))
+                {
+                    
+                    frm.txtresult_text.value="Moderate to high risk";
+                    txtresult_text_guide.value="1. Lifestyle changes   \n2. No BP intervention";
+                }
+                else if (drop.match("2"))
+                {
+                    frm.txtresult_text.value="High risk";
+                    txtresult_text_guide.value="1. Lifestyle changes   \n2. BP drugs targeting <140/90";
+                }
+                else if (drop.match("3"))
+                {
+                    frm.txtresult_text.value="High risk";
+                    txtresult_text_guide.value="1. Lifestyle changes   \n2. BP drugs targeting <140/90";
+                }
+                else if (drop.match("4"))
+                {
+                    frm.txtresult_text.value="High to very high risk";
+                    txtresult_text_guide.value="1. Lifestyle changes   \n2. Immediate BP drugs targeting <140/90";
+                }
+                
+                
+            }
+            
+            else if(fourfour ||( threethree && (twotwo ||oneone) ))
+            {
+                
+                if(drop.match("1"))
+                {
+                    
+                    frm.txtresult_text.value="Very high risk";
+                    txtresult_text_guide.value="1. Lifestyle changes   \n2. No BP intervention";
+                }
+                else if (drop.match("2"))
+                {
+                    frm.txtresult_text.value="Very high risk";
+                    txtresult_text_guide.value="1. Lifestyle changes   \n2. BP drugs targeting <140/90";
+                }
+                else if (drop.match("3"))
+                {
+                    frm.txtresult_text.value="Very high risk";
+                    txtresult_text_guide.value="1. Lifestyle changes   \n2. BP drugs targeting <140/90";
+                    
+                    
+                    
+                }
+                else if (drop.match("4"))
+                {
+                    frm.txtresult_text.value="Very high risk";
+                    txtresult_text_guide.value="1. Lifestyle changes   \n2. Immediate BP drugstargeting <140/90";
+                }
+                
+                
+            }
+            else if((oneone==0 && twotwo==0 && threethree==0 && fourfour==0) )
+            
+            {
+                if(total==0)
+                {
+                    if(drop.match("1"))
+                    {
+                        
+                        frm.txtresult_text.value="No Risk";
+                        txtresult_text_guide.value="No BP intervention";
+                        
+                    }
+                    else if (drop.match("2"))
+                    {
+                        
+                        frm.txtresult_text.value="Low risk";
+                        txtresult_text_guide.value="1. Lifestyle changes for several months \n2. Then add BP drugs targeting <140/90";
+                    }
+                    else if (drop.match("3"))
+                    {
+                        frm.txtresult_text.value="Moderate risk";
+                        txtresult_text_guide.value="1. Lifestyle changes for several weeks   \n2. Then add BP drugs targeting <140/90";
+                    }
+                    
+                    else if (drop.match("4"))
+                    {
+                        frm.txtresult_text.value="High risk";
+                        txtresult_text_guide.value="1. Lifestyle changes   \n2. Immediate BP drugs targeting <140/90";
+                    }
+                    
+                    
+                }
+            }
+            
+            
+            
+        }
+        else
+        
+        {
+            frm.txtresult_text.value="";
+            txtresult_text_guide.value="";
+            
+        }
+        }
+        else
+        {
+            frm.txtresult_text.value="";
+            txtresult_text_guide.value="";
+            
+        }
+    }
+
+function emptydrop()
+{
+    
+    document.getElementById("gc").style.visibility="visible";
+    document.getElementById("gc1").style.visibility="visible";
+    document.getElementById('gc').selectedIndex = -1;
+    document.getElementById('gc1').selectedIndex = -1;
+}
+
+function reser()
+{
+    location.reload();
+     document.getElementById("twice").hidden=false;
+      document.getElementById("once").hidden=false;
+     //  document.getElementById("bpmmhg").hidden="true";
+    document.getElementById("gc").hidden="true";
+    document.getElementById("gc1").hidden="true";
+}
+function HIDD()
+{
+   
+    document.getElementById("once").hidden="true";
+  document.getElementById("twice").hidden=true;
+  // document.getElementById("bpmmhg").hidden="true";
+    //location.reload();
+    document.getElementById("gc").hidden="true";
+     document.getElementById("gc1").hidden="true";
+}
+</script>
+            
+</head>
+    
+    
+    <body onload="HIDD();" width="100%" >
+
+          
+        <form name="frm">
+            
+       
+            
+
+    
+    <table id="table" width="100%" cellpadding=0 cellspacing=0 style=" border-collapse:collapse;">
+        <col style="width:50%"><col style="width:50%">
+            
+
+
+<tr style="background-color:#cccccc">
+    <td  id= "bpmmhg" style="padding-left:9px;padding-bottom:-9px;border:0px solid #7c7c7c; color:#000000;height:20px;" align="left"><b><span style="font-size:16;">BP (mmHg)</span></b></td>
+</tr>
+
+   <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"  style="border:0px solid #7c7c7c;">
+<input type="radio" name="r27" id="r1_27" onChange="valcal()" value="0">
+<label onclick="" for="r1_27">SBP</label></td>
+
+<td style="border:0px solid #7c7c7c;padding-right:8px;">
+<input type="radio" name="r27" id="r1_28" onChange="valcal()" value="0">
+<label onclick="" for="r1_28">DBP</label></td>
+</tr>
+
+<tr  id ="once"  style="background-color:#cccccc">
+
+
+    <td  style="padding-left:9px;padding-bottom:-9px;border:0px solid #7c7c7c; color:#000000;height:20px;" align="left"><b><span style="font-size:16;">BP (mmHg)</span></b></td>
+</tr>
+     </tr>
+     <tr style="background-color:F2F2F2" height="10px" id ="twice" >
+<td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;" align="right" >
+    
+ 
+<select style="font-size:14px; width:100px;" class="drop_center" name="gc" id="gc"  onChange="valcal();">
+                            <option value="1"><!--High normal (-->130-139<!--)--></option>
+                            <option value="2"><!--Grade 1 HT (-->140-159<!--)--></option>
+                            <option value="3"><!--Grade 2 HT (-->160-179<!--)--></option>
+                            <option value="4"><!--Grade 3 HT (-->&ge;180<!--)--></option>
+                         </select>  </td>
+
+<td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;" align="left" >
+<select style="font-size:14px; width:100px;" class="drop_center" name="gc1" id="gc1"  onChange="valcal();">
+                            <option value="1"><!--High normal (-->85-89<!--)--></option>
+                            <option value="2"><!--Grade 1 HT (-->90-99<!--)--></option>
+                            <option value="3"><!--Grade 2 HT (-->100-109<!--)--></option>
+                            <option value="4"><!--Grade 3 HT (-->&ge;110<!--)--></option>
+                        </select>  </td>                        
+</tr>
+     </table>
+     
+     <table id="table" width="100%" cellpadding=0 cellspacing=0 style=" border-collapse:collapse;">
+         <col style="width:50%"><col style="width:50%">
+             
+             <tr style="background-color:#cccccc">
+                 <td  style="padding-left:9px;padding-bottom:-9px;border:0px solid #7c7c7c; color:#000000;height:20px;" align="left"><b><span style="font-size:16;">Risk Factors</span></b></td>
+             </tr>
+             <tr hidden=hidden>
+                 
+                 <td style="border:0px solid #7c7c7c;padding-top:-9px;"  style="border:0px solid #7c7c7c;">
+                     <input type="radio" name="a1" id="a1_2" onChange="valcal()" value="0">
+                     <label onclick="" for="a1_2">No</label></td>
+                 <td style="border:0px solid #7c7c7c;padding-right:8px;padding-top:-9px;"  >
+                     <input type="radio" name="a1" id="a1_1" onChange="valcal()" value="0">
+                     <label onclick="" for="a1_1">Yes</label></td>
+             </tr>
+             </table>
+     
+  
+  <div id="a1" >
+      <table id="table" width="100%" cellpadding=0 cellspacing=0 style=" border-collapse:collapse;">
+          <col style="width:50%"><col style="width:50%">
+ 
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;" align="left" ><b>Gender</b></td>
+    </tr>
+<tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"  style="border:0px solid #7c7c7c;">
+<input type="radio" name="r1" id="r1_2" onChange="valcal()" value="0">
+<label onclick="" for="r1_2">Male</label></td>
+
+<td style="border:0px solid #7c7c7c;padding-right:8px;">
+<input type="radio" name="r1" id="r1_1" onChange="valcal()" value="0">
+<label onclick="" for="r1_1">Female</label></td>
+</tr>
+                
+
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;" align="left" ><b>Age (men &ge;55 years; women &ge;65 years)</b></td>
+    </tr>
+    <tr style="background-color:F2F2F2" height="10px">
+
+<td style="border:0px solid #7c7c7c;"  style="border:0px solid #7c7c7c;">
+<input type="radio" name="r2" id="r2_2" onChange="valcal()" value="0">
+<label onclick="" for="r2_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"  >
+<input type="radio" name="r2" id="r2_1" onChange="valcal()" value="0">
+<label onclick="" for="r2_1">Yes</label></td>
+</tr>
+
+ <tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;" align="left" ><b>Smoking</b></td>
+     </tr>
+     <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"  style="border:0px solid #7c7c7c;">
+<input type="radio" name="r3" id="r3_2" onChange="valcal()" value="0">
+<label onclick="" for="r3_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"  >
+<input type="radio" name="r3" id="r3_1" onChange="valcal()" value="0">
+<label onclick="" for="r3_1">Yes</label></td>
+</tr>
+         
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan= 2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Dyslipidae&shy;mia<sup>a</sup></b>
+                    </td>
+    </tr>
+            
+    <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;">
+<input type="radio" name="r4" id="r4_2" onChange="valcal()" value="0">
+<label onclick="" for="r4_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;">
+<input type="radio" name="r4" id="r4_1" onChange="valcal()" value="1">
+<label onclick="" for="r4_1">Yes</label></td>
+</tr>
+
+
+ <tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Obesity [BMI &ge;30 kg/m<sup>2</sup> (height<sup>2</sup>)]</span>
+                    </td>
+     </tr>
+     <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"><input type="radio" name="r7" id="r7_2" onChange="valcal()" value="0"> <label onclick="" for="r7_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"><input type="radio" name="r7" id="r7_1" onChange="valcal()" value="1"> <label onclick="" for="r7_1">Yes</label></td>
+</tr>
+
+ <tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Abdominal obesity (Waist circumference: men &ge;102 cm; women &ge;88 cm) (in Caucasians) </span>
+                    </td>
+     </tr>
+     <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"><input type="radio" name="r8" id="r8_2" onChange="valcal()" value="0"> <label onclick="" for="r8_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"><input type="radio" name="r8" id="r8_1" onChange="valcal()" value="1"> <label onclick="" for="r8_1">Yes</label></td>
+</tr>
+
+ <tr style="background-color:F2F2F2" height="10px">
+<td  colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Family history of premature CVD (men aged <55 years; women aged <65 years)</span>
+                    </td>
+     </tr>
+     <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"><input type="radio" name="r9" id="r9_2" onChange="valcal()" value="0"> <label onclick="" for="r9_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"><input type="radio" name="r9" id="r9_1" onChange="valcal()" value="1"> <label onclick="" for="r9_1">Yes</label></td>
+</tr>
+            </table>
+    </div>
+ 
+            <table id="table" width="100%" cellpadding=0 cellspacing=0 style=" border-collapse:collapse;">
+                <col style="width:50%"><col style="width:50%">
+                   
+                   <tr style="background-color:#cccccc">
+                       <td colspan=2  style="padding-left:9px;border:0px solid #7c7c7c; color:#000000;height:20px;" align="left"><b><span style="font-size:16;">Asymptomatic organ damage</span></b></td>
+                       </tr>
+                            <tr style="background-color:#cccccc">
+                       <td style="border:0px solid #7c7c7c;"  style="border:0px solid #7c7c7c;">
+                           <input type="radio" name="b1" id="b1_2" onChange="valcal()" value="0">
+                           <label onclick="" for="b1_2">No</label></td>
+                       <td style="border:0px solid #7c7c7c;padding-right:8px;"  >
+                           <input type="radio" name="b1" id="b1_1" onChange="valcal()" value="0">
+                           <label onclick="" for="b1_1">Yes</label></td>
+                   </tr>
+            </table>
+            
+    <div id="a2" hidden=hidden>
+        
+        <table id="table" width="100%" cellpadding=0 cellspacing=0 style=" border-collapse:collapse;">
+            <col style="width:50%"><col style="width:50%">
+             
+   <tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px"  align="left" ><b>Pulse pressure &ge;60 mmHg (in the elderly)</span>
+                    </td>
+       </tr>
+        <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"><input type="radio" name="r10" id="r10_2" onChange="valcal()" value="0"> <label onclick="" for="r10_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"><input type="radio" name="r10" id="r10_1" onChange="valcal()" value="1"> <label onclick="" for="r10_1">Yes</label></td>
+</tr>                
+   
+   
+
+<tr style="background-color:F2F2F2" height="10px">
+    <td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Electro&shy;cardio&shy;graphic LVH (Sokolow-Lyon index >3.5 mV;
+        RaVL >1.1 mV; Cornell voltage duration product >244 mV*ms)</span>
+                    </td>
+    </tr>
+    <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;">
+<input type="radio" name="r11" id="r11_2" onChange="valcal()" value="0">
+<label onclick="" for="r11_2">No/Unknown</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;">
+<input type="radio" name="r11" id="r11_1" onChange="valcal()" value="1">
+<label onclick="" for="r11_1">Yes</label></td>
+</tr>
+
+
+<tr style="background-color:F2F2F2" height="10px">
+    <td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Echo&shy;cardio&shy;graphic LVH [LVM index: men >115 g/m<sup>2</sup>; women >95 g/m<sup>2</sup> (BSA)]<sup>b</sup> </span>
+                    </td>
+    </tr>
+    <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"><input type="radio" name="r12" id="r12_2" onChange="valcal()" value="0"> <label onclick="" for="r12_2">No/Unknown</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"><input type="radio" name="r12" id="r12_1" onChange="valcal()" value="1"> <label onclick="" for="r12_1">Yes</label></td>
+</tr>
+
+
+                          
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Carotid wall thickening (IMT >0.9 mm) or plaque</span>
+                    </td>
+    </tr>
+    <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"><input type="radio" name="r13" id="r13_2" onChange="valcal()" value="0"> <label onclick="" for="r13_2">No/Unknown</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"><input type="radio" name="r13" id="r13_1" onChange="valcal()" value="1"> <label onclick="" for="r13_1">Yes</label></td>
+</tr>                     
+
+
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Carotid-femoral PWV >10 m/s</span>
+                    </td>
+    </tr>
+    <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"><input type="radio" name="r14" id="r14_2" onChange="valcal()" value="0"> <label onclick="" for="r14_2">No/Unknown</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"><input type="radio" name="r14" id="r14_1" onChange="valcal()" value="1"> <label onclick="" for="r14_1">Yes</label></td>
+</tr>                     
+
+
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan= 2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Ankle-brachial index <0.9</span>
+                    </td>
+    </tr>
+    <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;">
+<input type="radio" name="r15" id="r15_2" onChange="valcal()" value="0">
+<label onclick="" for="r15_2">No/Unknown</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;">
+<input type="radio" name="r15" id="r15_1" onChange="valcal()" value="1">
+<label onclick="" for="r15_1">Yes</label></td>
+</tr>
+
+
+
+
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>CKD with eGFR 30-60 mL/min/1.73 m<sup>2</sup> (BSA)</span>
+                    </td>
+    </tr>
+    <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;">
+<input type="radio" name="r16" id="r16_2" onChange="valcal()" value="0">
+<label onclick="" for="r16_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;">
+<input type="radio" name="r16" id="r16_1" onChange="valcal()" value="1">
+<label onclick="" for="r16_1">Yes</label></td>
+</tr>       
+
+
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px"  align="left" ><b>Micro&shy;albumin&shy;uria (30-300 mg/24 h), or albumin creatinine ratio (30-300 mg/g; 3.4-34 mg/mmol) (preferentially on morning spot urine)</span>
+                    </td>
+</tr>
+                <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;">
+<input type="radio" name="r17" id="r17_2" onChange="valcal()" value="0">
+<label onclick="" for="r17_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;">
+<input type="radio" name="r17" id="r17_1" onChange="valcal()" value="1">
+<label onclick="" for="r17_1">Yes</label></td>
+</tr>
+                 </table>
+</div>
+            
+            
+           
+            
+           
+
+            
+            <table id="table" width="100%" cellpadding=0 cellspacing=0 style=" border-collapse:collapse;">
+                <col style="width:50%"><col style="width:50%">
+                   <tr style="background-color:#cccccc">
+                   <td colspan=2  style="padding-left:9px;border:0px solid #7c7c7c; color:#000000;height:20px;" align="left"><b><span style="font-size:16;">Diabetes mellitus</span></b></td></tr>
+                        <tr style="background-color:#cccccc" hidden=hidden>
+                       <td style="border:0px solid #7c7c7c;"  style="border:0px solid #7c7c7c;" >
+                           <input type="radio" name="c1" id="c1_2" onChange="valcal()" value="0">
+                           <label onclick="" for="c1_2">No</label></td>
+                       <td style="border:0px solid #7c7c7c;padding-right:8px;"  >
+                           <input type="radio" name="c1" id="c1_1" onChange="valcal()" value="0">
+                           <label onclick="" for="c1_1">Yes</label></td>
+                   </tr>
+      </table>
+            <div id="a3" >
+                <table id="table" width="100%" cellpadding=0 cellspacing=0 style=" border-collapse:collapse;">
+                    <col style="width:50%"><col style="width:50%">
+                        
+                        <tr style="background-color:F2F2F2" height="10px">
+                            <td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Fasting plasma glucose 5.6-6.9 mmol/L (102-125 mg/dL)</span>
+                                </td>
+                        </tr>
+                        <tr style="background-color:F2F2F2" height="10px">
+                            <td style="border:0px solid #7c7c7c;">
+                                <input type="radio" name="r5" id="r5_2" onChange="valcal()" value="0">
+                                <label onclick="" for="r5_2">No</label></td>
+                            <td style="border:0px solid #7c7c7c;padding-right:8px;">
+                                <input type="radio" name="r5" id="r5_1" onChange="valcal()" value="1">
+                                <label onclick="" for="r5_1">Yes</label></td>
+                        </tr>
+                        
+                        
+                        
+                        <tr style="background-color:F2F2F2" height="10px">
+                            <td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Abnormal glucose tolerance test</span>
+                                </td>
+                        </tr>
+                        <tr style="background-color:F2F2F2" height="10px">
+                            <td style="border:0px solid #7c7c7c;">
+                                <input type="radio" name="r6" id="r6_2" onChange="valcal()" value="0">
+                                <label onclick="" for="r6_2">No/Unknown</label></td>
+                            <td style="border:0px solid #7c7c7c;padding-right:8px;">
+                                <input type="radio" name="r6" id="r6_1" onChange="valcal()" value="1">
+                                <label onclick="" for="r6_1">Yes</label></td>
+                        </tr>
+                        
+                        
+
+
+
+<tr style="background-color:F2F2F2" height="10px">
+    <td  colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left"  ><b>Fasting plasma glucose &ge;7.0 mmol/L (126 mg/dL) on two repeated measurements</span>
+                    </td>
+    </tr>
+    <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;">
+<input type="radio" name="r18" id="r18_2" onChange="valcal()" value="0">
+<label onclick="" for="r18_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;">
+<input type="radio" name="r18" id="r18_1" onChange="valcal()" value="1">
+<label onclick="" for="r18_1">Yes</label></td>
+</tr>                      
+
+                
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left"  ><b>HbA<sub>1c</sub> >7% (53 mmol/mol)</span>
+                    </td>
+</tr>
+                        <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;">
+<input type="radio" name="r19" id="r19_2" onChange="valcal()" value="0">
+<label onclick="" for="r19_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;">
+<input type="radio" name="r19" id="r19_1" onChange="valcal()" value="1">
+<label onclick="" for="r19_1">Yes</label></td>
+</tr>                          
+
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Post-load plasma glucose >11.0 mmol/L (198 mg/dL)</span>
+                    </td>
+</tr>
+                        <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"><input type="radio" name="r20" id="r20_2" onChange="valcal()" value="0"> <label onclick="" for="r20_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"><input type="radio" name="r20" id="r20_1" onChange="valcal()" value="1"> <label onclick="" for="r20_1">Yes</label></td>
+</tr>  
+</table>
+</div>
+            
+            
+            <table id="table" width="100%" cellpadding=0 cellspacing=0 style=" border-collapse:collapse;">
+                <col style="width:50%"><col style="width:50%">
+                   <tr style="background-color:#cccccc">
+                       <td  colspan=2 style="padding-left:9px;border:0px solid #7c7c7c; color:#000000;height:20px;" align="left"><b><span style="font-size:16;">Established CV or renal disease</span></b></td>
+                       </tr>
+                       <tr style="background-color:#cccccc" hidden=hidden>
+                       <td style="border:0px solid #7c7c7c;"  style="border:0px solid #7c7c7c;">
+                           <input type="radio" name="d1" id="d1_2" onChange="valcal()" value="0">
+                           <label onclick="" for="d1_2">No</label></td>
+                       <td style="border:0px solid #7c7c7c;padding-right:8px;"  >
+                           <input type="radio" name="d1" id="d1_1" onChange="valcal()" value="0">
+                           <label onclick="" for="d1_1">Yes</label></td>
+                   </tr>
+                   
+                        </tr>
+                        </table>
+                <div id="a4" >
+                    <table id="table" width="100%" cellpadding=0 cellspacing=0 style=" border-collapse:collapse;">
+                        <col style="width:50%"><col style="width:50%">
+<tr style="background-color:F2F2F2" height="10px">
+    <td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Cerebro&shy;vascular disease: ischaemic stroke; cerebral haemorrhage; transient ischaemic attack</span>
+                    </td>
+    </tr>
+    <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;">
+<input type="radio" name="r21" id="r21_2" onChange="valcal()" value="0">
+<label onclick="" for="r21_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;">
+<input type="radio" name="r21" id="r21_1" onChange="valcal()" value="1">
+<label onclick="" for="r21_1">Yes</label></td>
+</tr>                                 
+
+<tr style="background-color:F2F2F2" height="10px">
+    <td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>CHD: myocardial infarction; angina; myocardial revascularization with PCI or CABG</span>
+                    </td>
+    
+</tr>
+ <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"><input type="radio" name="r22" id="r22_2" onChange="valcal()" value="0"> <label onclick="" for="r22_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"><input type="radio" name="r22" id="r22_1" onChange="valcal()" value="1"> <label onclick="" for="r22_1">Yes</label></td>
+</tr>      
+
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Heart failure, including heart failure with preserved EF</span>
+                    </td>
+    
+</tr>
+                            <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;">
+<input type="radio" name="r23" id="r23_2" onChange="valcal()" value="0">
+<label onclick="" for="r23_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;">
+<input type="radio" name="r23" id="r23_1" onChange="valcal()" value="1">
+<label onclick="" for="r23_1">Yes</label></td>
+</tr>                                    
+
+
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan= 2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Sympto&shy;matic lower extremities peripheral artery disease</span>
+                    </td>
+    
+</tr>
+ <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"><input type="radio" name="r24" id="r24_2" onChange="valcal()" value="0"> <label onclick="" for="r24_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"><input type="radio" name="r24" id="r24_1" onChange="valcal()" value="1"> <label onclick="" for="r24_1">Yes</label></td>
+</tr>
+
+<tr style="background-color:F2F2F2" height="10px">
+<td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>CKD with eGFR <30 mL/min/1.73m<sup>2</sup> (BSA); proteinuria (>300 mg/24 h)</span>
+                    </td>
+    
+    
+</tr>
+                            <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"><input type="radio" name="r25" id="r25_2" onChange="valcal()" value="0"> <label onclick="" for="r25_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"><input type="radio" name="r25" id="r25_1" onChange="valcal()" value="1"> <label onclick="" for="r25_1">Yes</label></td>
+</tr>
+
+
+
+
+<tr style="background-color:F2F2F2" height="10px">
+    <td colspan=2 style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;height:20px;"  align="left" ><b>Advanced retino&shy;pathy: haemorrhages or exudates, papilloedema</span>
+                    </td>
+    
+</tr>
+                            <tr style="background-color:F2F2F2" height="10px">
+<td style="border:0px solid #7c7c7c;"><input type="radio" name="r26" id="r26_2" onChange="valcal()" value="0"> <label onclick="" for="r26_2">No</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:8px;"><input type="radio" name="r26" id="r26_1" onChange="valcal()" value="1"> <label onclick="" for="r26_1">Yes</label></td>
+</tr>
+                            </table>
+          </div>
+           
+            <table id="table" width="100%" cellpadding=0 cellspacing=0 style=" border-collapse:collapse;">
+                <col style="width:33%"><col style="width:33%"><col style="width:33%">
+
+                <tr><td  colspan="3" style="padding-left:9px;border:0px solid #7c7c7c; font-weight:medium;  vertical-align: bottom;background-color:cccccc;
+               color:#000000;"height="10px">
+<b>Total CV Risk :
+                    </td>      
+    </tr>
+<tr>
+<td colspan="3" style="border:0px solid #7c7c7c;  text-align:center; font-weight:medium;  vertical-align: center;   background-color:cccccc; color:#000000; ">
+<input type="text"  name="txtresult_text" size="50"   readonly="readonly" class="resultbox"/>
+</td>
+</tr> 
+        
+        
+
+<tr>
+<td id="trHide" colspan="3" style="padding-left:9px;border:0px solid #7c7c7c;  text-align:left; font-weight:medium;  vertical-align: center;   background-color:cccccc; 
+               color:#000000; " height="10px"> 
+ <b>Treatment recommendation 
+                    </td>  </tr>
+                  
+                  
+   <tr id="trHide" style="border:0px solid #7c7c7c; background-color:cccccc">
+<td  colspan="3" style="border:0px solid #7c7c7c;  vertical-align: bottom; "align="left">
+<textarea rows="3" class="textbox1" style="-webkit-user-select: none; width:100%;font-weight:bold;" id="txtresult_text_guide"  name="txtresult_text_guide"   readonly="readonly" class="readonly"/>
+</textarea>
+                    </td>
+</tr>        
+                 
+    <tr style="background-color:F2F2F2">
+<td  colspan="3" style="border:0px solid #7c7c7c;  vertical-align: bottom;background-color:cccccc;color:#000000; width:100% " >
+                       <input class="resetBtn" type="button"  value="Reset" id="reset" /onClick="reser();" style="width:100%">
+                               </td> </tr>
+                                
+                    </table>
+           
+        </form>
+      
+        <p style="text-align: left; display: inline;" id="reftext">
+     
+    
+    <div style="float:right">
+        <table style="width:100% border: 0px solid #ffffff;" >
+            <col style="width:50%"><col style="width:100px"><col style="width:70px">
+                <tr><td>
+                </td>
+                    <td><button id="ref_button" colspan="2" class="abbBtn">Abbreviations and footnotes</button>  </td>
+     </tr></table>
+     
+    </div>
+    
+ 
+   
+<div id="reference" style="display: none; width: 93%; float: center;">
+    <br/>
+    
+    <br/>
+    <br/>
+    
+    <div class="info_text_box_abb">
+        <p class="text_left">
+        <nobr>BMI = body mass index;</nobr> <nobr>BP = blood pressure;</nobr> <nobr>BSA = body </nobr>surface area; <nobr>CABG = coronary</nobr> artery bypass graft;
+        <nobr>CHD = coronary</nobr> heart disease; <nobr>CKD = chronic</nobr> kidney disease; <nobr>CV = cardiovascular;</nobr> <nobr>CVD = cardiovascular</nobr> disease;
+        <nobr>EF = ejection fraction;</nobr> <nobr>eGFR = estimated glomerular</nobr> filtration rate; <nobr>HbA1c = glycated haemoglobin;</nobr> <nobr>IMT = intima-media</nobr>
+        thickness; <nobr>LVH = left ventricular</nobr> hypertrophy; <nobr>LVM = left ventricular</nobr> mass; <nobr>PCI = percutaneous</nobr> coronary intervention;
+        <nobr>PWV = pulse wave</nobr> velocity.
+        
+        </p>
+    </div>
+    <div class="info_text_box_abb">
+<table class="refTable">
+<tr>
+<td class="no_height" valign="top"><sup>a</sup></td>
+<td class="no_height" valign="top">Total cholesterol >4.9 mmol/L (190 mg/dL), and/or<br/>
+    Low-density lipoprotein cholesterol >3.0 mmol/L (115 mg/dL), and/or<br/>
+    High-density lipoprotein cholesterol: men <1.0 mmol/L (40 mg/dL), women <1.2 mmol/L (46 mg/dL), and/or<br/>
+        Triglycerides >1.7 mmol/L (150 mg/dL)</td>
+</tr>
+    
+    <tr>
+        <td class="no_height" valign="top"><sup>b</sup></td>
+        <td class="no_height" valign="top">Risk maximal for concentric LVH: increased LVM index with a wall thickness/radius ratio of >0.42.</td>
+    </tr>
+
+
+</table>
+</div>
+     </div>
+ 
+ <table style="width:100%">
+     <tr>
+         <td>
+             
+             <div style="float:right"><button id="ref_button" class="abbBtn" style="width:100%" >
+                 <a href="ref_ENAS260_4.4.1.0.html">More Information</a></button>
+             </div>
+             </td>
+             </tr>
+             </table>
+    
+ </body>
+</html>

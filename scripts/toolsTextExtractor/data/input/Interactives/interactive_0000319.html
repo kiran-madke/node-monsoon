@@ -1,0 +1,401 @@
+<html>
+    <head>
+        <meta name="viewport" content="charset=UTF-8" />
+       <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+         <link rel="stylesheet" type="text/css" href="score_esc.css">
+            <script src="jquery-1.9.1.min.js"></script>
+<script src="jquery-tocPlugin.js"></script>
+
+
+        <STYLE TYPE="text/css">
+		
+            
+            </style>    
+
+              <script>
+
+ 
+
+	$(document).ready(function()
+	{
+	
+ 
+                      
+                  
+                      $("#ref_button").click(function()
+                                             {
+                                             var className = $('#ref_button').attr('class');
+                                             if (className == 'abbBtn')
+                                             $('#ref_button').removeClass('abbBtn').addClass('abbBtnClick');
+                                             else
+                                             $('#ref_button').removeClass('abbBtnClick').addClass('abbBtn');
+                                             $("#reference").slideToggle("fast", function()
+                                                                         {
+                                                                         $('html, body').animate({scrollTop : $(this).offset().top}, 700);
+                                                                         });
+                                             });
+
+		$("#reset").click(function()
+		{
+			//$(".points").hide("slow");
+			$(".result_table").hide("slow");
+			//$("#reftext").hide("slow");
+			$("#reference").hide("slow");
+			totalscore = 0;
+			for ( var x = 0; x < isBoxPressed.length; x++)
+			{
+				isBoxPressed[x] = "false";
+			}
+			isResetPressed = "false";
+
+			for ( var x = 1; x < box.length; x++)
+			{
+				$("#" + box[x]).hide();
+			}
+
+			$("#total_points").text(totalscore);
+			$("#reset_text").text("Reset");
+			$("#reset").css(
+			{
+				"-webkit-border-bottom-right-radius" : "7px",
+				"-webkit-border-bottom-left-radius" : "7px"
+			});
+
+			for ( var i = 0; i < boxArray.length; i++)
+			{
+				for ( var j = 0; j < boxArray[i].length; j++)
+				{
+					$("#" + boxArray[i][j]).slideDown("fast");
+				}
+			}
+
+			$(".list_middle").css(
+			{
+				"-webkit-border-bottom-right-radius" : "0px",
+				"-webkit-border-bottom-left-radius" : "0px"
+			});
+		});
+	});
+
+	function boxSlide(id, status, point, mode, whichArray)
+	{
+		if (mode == 1)
+		{
+			for ( var j = 0; j < boxArray[whichArray].length; j++)
+			{
+				if (id != boxArray[whichArray][j])
+				{
+					$("#" + boxArray[whichArray][j]).slideUp("fast");
+				}
+			}
+			$("#" + id).css(
+			{
+				"-webkit-border-bottom-right-radius" : "7px",
+				"-webkit-border-bottom-left-radius" : "7px"
+			});
+			isBoxPressed[whichArray] = status;
+			totalscore = totalscore + point;
+			showScore();
+		}
+		else if (mode == 0)
+		{
+			for ( var j = 0; j < boxArray[whichArray].length; j++)
+			{
+				if (id != boxArray[whichArray][j])
+				{
+					$("#" + boxArray[whichArray][j]).slideDown("fast");
+				}
+			}
+			$("#" + id).css(
+			{
+				"-webkit-border-bottom-right-radius" : "0px",
+				"-webkit-border-bottom-left-radius" : "0px"
+			});
+			isBoxPressed[whichArray] = status;
+			totalscore = totalscore - point;
+			hideScore();
+		}
+		$("#total_points").text(totalscore);
+		if (whichArray < box.length)
+			$("#" + box[whichArray + 1]).show();
+		$("#" + box[whichArray]).scroll();
+	}
+
+ 
+</script> 
+            <script type="text/javascript">
+			
+			var VersionValue = [[10,30,10,10,20,30,20,20,60,20],
+								[ 0, 1, 1, 1, 1, 1, 0, 0, 0, 1]];
+										
+			function versionChange()
+			{
+				if(document.getElementById("orgVer").checked==true)
+				{
+					currVersion = 0;
+				}
+				else
+				{
+					currVersion = 1;
+				}
+				
+				for(var i=0; i < VersionValue[0].length; i++)
+				{
+					document.getElementById("lblRadio" + (i + 1)).innerHTML = VersionValue[currVersion][i] == 0 ? "-" : VersionValue[currVersion][i];
+					document.getElementById("radio" + ((i + 1) * 2)).value = VersionValue[currVersion][i];
+					
+					
+				}
+				
+				
+					for(var i=0; i < VersionValue[0].length *2 ; i++)
+						{
+				
+									document.getElementById("radio" + ((i + 1) * 1)).disabled=false;
+						}				
+				valcal();
+			}
+			
+			var currVersion = -1;
+			
+                function valcal()
+                {
+					if(currVersion == -1)
+					{
+						
+					}
+					else
+					{
+						var totalValue = 0;
+						
+						
+						
+						var isAllSelected = true;
+						for(var i=0; i < VersionValue[0].length * 2 ; i=i+2)
+						{
+						
+							if(document.getElementById("radio" + (i + 1)).checked==false && document.getElementById("radio" + (i + 2)).checked==false)
+							{
+								isAllSelected = false;
+								
+								break;
+							}
+						}
+						if(isAllSelected)
+						{	
+							for(var i=0; i < VersionValue[0].length * 2 ; i = i+2)
+							{
+								if(document.getElementById("radio" + (i + 1)).checked==true)
+								{
+									totalValue = totalValue + parseFloat(document.getElementById("radio" + (i + 1)).value);
+								}
+								else
+								{
+									totalValue = totalValue + parseFloat(document.getElementById("radio" + (i + 2)).value);
+								}
+							}
+							
+							
+							//alert(totalValue);
+							if(currVersion == 0)
+							{
+								if(totalValue>=0 && totalValue<=65)
+								{
+									//window.frm.txtDescription.value = "Class I: &le;65 points - very low 30-day mortality risk (0 to 1.6%)";
+									document.getElementById("txtDescription").innerHTML="Class I: &le;65 points - very low 30-day mortality risk (0 to 1.6%)"
+								}
+								else if(totalValue>=66 && totalValue<=85)
+								{
+									//window.frm.txtDescription.value = "Class II: 66-85 points - low mortality risk (1.7 to 3.5%)";
+									document.getElementById("txtDescription").innerHTML="Class II: 66-85 points - low mortality risk (1.7 to 3.5%)";
+								}
+								else if(totalValue>=86 && totalValue<=105)
+								{
+									//window.frm.txtDescription.value = "Class III: 86-105 points - moderate mortality risk (3.2 to 7.1%) ";
+									document.getElementById("txtDescription").innerHTML="Class III: 86-105 points - moderate mortality risk (3.2 to 7.1%) ";
+								}
+								else if(totalValue>=106 && totalValue<=125)
+								{
+									//window.frm.txtDescription.value = "Class IV: 106-125 points - high mortality risk (4.0 to 11.4%)";
+									document.getElementById("txtDescription").innerHTML="Class IV: 106-125 points - high mortality risk (4.0 to 11.4%)";
+								}
+								else
+								{
+									//window.frm.txtDescription.value = "Class V: >125 points - very high mortality risk (10.0 to 24.5%)";
+									document.getElementById("txtDescription").innerHTML="Class V: >125 points - very high mortality risk (10.0 to 24.5%)";
+								}
+							}
+							else
+							{
+								if(totalValue==0)
+								{
+									document.getElementById("txtDescription").innerHTML= "30-day mortality risk 1.0% (95% CI 0.0%-2.1%)";
+								}
+								else
+								{
+									document.getElementById("txtDescription").innerHTML = "30-day mortality risk 10.9% (95% CI 8.5%- 13.2%)";
+								}
+								
+								if(parseInt(window.frm.txtAge.value) > 80)
+								{
+									//alert("dd");
+									totalValue++;
+								}
+								
+								if(document.getElementById("radio6").checked==true && document.getElementById("radio8").checked==true)
+								{
+									totalValue--;
+								}
+							}
+							window.frm.txtresult.value = totalValue;
+						}
+						else
+						{
+							//alert("Not Selected");
+						}
+					}
+                }
+                </script>
+</head>
+    
+    
+    <body onload="_geturl1();" width="100%" >
+          
+        <form name="frm">
+            <table id="tableHead" width="100%" cellpadding=3 cellspacing=0 style="margin-top:-7px;border-collapse:collapse;">
+               <col style="width:50%"><col style="width:50%">
+                <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c;  align:center;"><input type="radio" name="verName" id="orgVer" onChange="versionChange()" value="0"> <label  onclick="" for="orgVer">Original Version</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="verName" id="simVer" onChange="versionChange()" value="1"> <label  onclick="" for="simVer">Simplified Version</label></td>
+                </tr>
+            </table>
+            <table id="table" width="100%" cellpadding=3 cellspacing=0 style="margin-top:-7px;border-collapse:collapse;">
+               <col style="width:30%"><col style="width:30%"><col style="width:30%">
+                   
+                   
+                <tr style="background-color:#cccccc;" >
+                    
+				<td style="border:0px solid #7c7c7c;"  align="right"><b>Risk factor </td>
+<td style="border:0px solid #7c7c7c;"  align="center" style="border:0px solid #7c7c7c;"><b>No</b></td>
+<td style="border:0px solid #7c7c7c;"   align="center" style="border:0px solid #7c7c7c;"><b>Yes</b></td>
+                 </tr>
+                   
+                
+                <tr style="background-color:F2F2F2;" height="8px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;" align="right"><b>Age</td>
+					<td style="border:0px solid #7c7c7c;" style="border:0px solid #7c7c7c;"><input type="number" onKeyUp="valcal()" name="txtAge" class="resultbox"/></td>
+					<td style="float:left"><b>years</b></td>
+				</tr>
+                
+                <tr id="hide1" style="background-color:F2F2F2;" height="8px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Male sex</td>
+					<td style="border:0px solid #7c7c7c;"  style="border:0px solid #7c7c7c;"><input type="radio" name="r1" id="radio1" onChange="valcal()"   value="0" disabled="true" > <label onclick="" for="radio1">0</label></td>
+					<td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="r1"    id="radio2" onChange="valcal()" value="1" disabled="true"><label id="lblRadio1"  onclick="" for="radio2"></label></td>
+                </tr>
+                <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;"  align="right"><b>Cancer</td>
+                    <td style="border:0px solid #7c7c7c;  align:center;"><input type="radio" name="r2" id="radio3" onChange="valcal()" value="0" disabled="true"> <label onclick="" for="radio3">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="r2" id="radio4" onChange="valcal()" value="1" disabled="true"> <label id="lblRadio2"  onclick="" for="radio4"></label></td>
+                </tr>
+                <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Chronic heart failure</td>
+                    <td    id="r3_1td" ><input type="radio" name="r3" id="radio5" onChange="valcal()" value="0" disabled="true"> <label id="r3_2Label" onclick="" for="radio5" disabled="true">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "  id="r3_2td" ><input type="radio" name="r3" id="radio6" onChange="valcal()" value="2" disabled="true"> <label  id="lblRadio3" for="radio6"></label></td>
+                </tr>
+                <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Chronic pulmonary disease</td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r4" id="radio7" onChange="valcal()" value="0" disabled="true"> <label  onclick="" for="radio7">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="r4" id="radio8" onChange="valcal()" value="0" disabled="true"> <label id="lblRadio4" for="radio8"></label></td>
+                </tr>
+                <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Pulse rate &ge;110 b.p.m.</td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r5" id="radio9" onChange="valcal()" value="0" disabled="true"> <label  onclick="" for="radio9">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px;  "><input type="radio" name="r5" id="radio10" onChange="valcal()" value="2" disabled="true"> <label id="lblRadio5" for="radio10"></label></td>
+                </tr>
+                 <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Systolic blood pressure &lt;100 mm Hg</td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r6" id="radio11" onChange="valcal()" value="0" disabled="true"> <label  onclick="" for="radio11" disabled="true">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="r6" id="radio12" onChange="valcal()" value="1" disabled="true"> <label id="lblRadio6" for="radio12"></label></td>
+                </tr> 
+                <tr  id="hide2" style="background-color:F2F2F2" height="8px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Respiratory rate &gt;30 breaths per minute</td>
+                    <td style="border:0px solid #7c7c7c;" id="r7_1td"><input type="radio" name="r7" id="radio13" onChange="valcal()" value="0" disabled="true"> <label  onclick="" id="r7_2Label" for="radio13">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; " id="r7_2td"><input type="radio" name="r7" id="radio14" onChange="valcal()" value="1" disabled="true"> <label id="lblRadio7" onclick="" for="radio14"></label></td>
+                </tr> 
+                 <tr id="hide3" style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Temperature <nobr>&lt;36&deg;</nobr></td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r8" id="radio15" onChange="valcal()" value="0" disabled="true"> <label  onclick="" for="radio15">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="r8" id="radio16" onChange="valcal()" value="1" disabled="true"> <label id="lblRadio8" for="radio16"></label></td>
+                </tr> 
+                <tr  id="hide4" style="background-color:F2F2F2" height="8px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Altered mental status</td>
+                    <td style="border:0px solid #7c7c7c;" id="r7_1td"><input type="radio" name="r9" id="radio17" onChange="valcal()" value="0" disabled="true"> <label  onclick="" id="r7_2Label" for="radio17">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; " id="r7_2td"><input type="radio" name="r9" id="radio18" onChange="valcal()" value="1" disabled="true"> <label id="lblRadio9" onclick="" for="radio18"></label></td>
+                </tr> 
+                 <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Arterial oxyhaemoglobin saturation &lt;90%</td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r10" id="radio19" onChange="valcal()" value="0" disabled="true"> <label  onclick="" for="radio19">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="r10" id="radio20" onChange="valcal()" value="1" disabled="true"> <label id="lblRadio10" for="radio20"></label></td>
+                </tr> 
+				
+                <tr style="background-color:cccccc" >
+                    <td  style="border:0px solid #cccccc;  vertical-align: bottom;background-color:cccccc;color:#000000; "  align="right"><b>
+                       Score
+                    </td>
+                    
+                    <td  style="border:0px solid #7c7c7c; vertical-align: bottom; " colspan="2">
+                        <input type="text"  name="txtresult" readonly="readonly" class="resultbox"/>
+                    </td>
+                </tr>
+                <tr>
+					<td  style="border:0px solid #7c7c7c; font-weight:medium;background-color:cccccc; color:#000000;" align="right" valign="middle">
+						<span style="font-family:Helvetica; font-size:12pt;" ><b>Risk strata<sup>a</sup>  :</b></span>
+                    </td>
+                    <td  style="border:0px solid #7c7c7c; vertical-align: bottom; background-color:cccccc; " colspan="2">
+						<div id="txtDescription" name="txtDescription" rows="6" cols="10" readonly="readonly" class="resultbox" style="height:75px;resize:noresize;"></div>
+                    </td>
+                </tr>
+                
+                <tr>
+				<td colspan="3">
+					<input class="resetbtn" type="reset" style="width:100%" value="Reset" onclick="window.location.href=window.location.href" />
+				</td>
+			</tr>
+            </table>
+        </form><!--Reference-->
+
+    <div style="float:right">
+        <table style="width:100% border: 0px solid #ffffff;" >
+           <col style="width:50%"><col style="width:100px"><col style="width:70px">
+                <tr><td>
+                </td>
+                    <td><button id="ref_button"  class="abbBtn">Abbreviations and footnotes</button>  </td>
+                    <td><button id="pdf_button"  class="flip-pdf-button">
+                        <a href="flipView"><img src="pdf.png"  class="pdf-image">
+                        </img></a></button></td></tr></table>
+    </div>
+   
+        <div id="reference" style="display: none; width: 93%; float: center;">
+         <br/><br/><br/>
+        <div class="info_text_box_abb" >
+            <p class="text_left">
+          b.p.m. = beats per minute; PESI = pulmonary embolism severity index.
+            </p>
+         <sup>a</sup>&thinsp;Based on the sum of points
+            </p>
+        </div>
+    </div>
+        <table style="width:100%">
+            <tr>
+                <td>
+                    
+                    <div style="float:right"><button class="abbBtn" style="width:100%" >
+                       <a href="ref_ENAS262_6.1.0.0.html">More Information</a></button>
+                    </div>
+                    </td>
+                    </tr>
+                    </table>
+<br/>
+<br/>
+  </body>
+</html>

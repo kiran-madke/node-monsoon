@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+    <link rel="stylesheet" type="text/css" href="calci_std.css">
+    <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="interactive_0001465.js"></script>
+	<link rel="stylesheet" type="text/css" href="pop-example.css">
+</head>
+
+<body onload="analyte();">
+    <div class="table_container">
+        <table class="input_table">
+            <colgroup>
+                <col width="35%">
+                <col width="45%">
+                <col width="20%">
+            </colgroup>
+            <tr>
+                <td class="input_name"><b>SBP of ankle</b></td>
+
+                <td colspan="2">
+                    <input autocomplete="off" autocorrect="off" autocapitalize="off" type="number" class="input" id="ankle" name="sum2" onchange="validateSBI(this);valCal();" onkeyup="valCal();" onkeypress="return isNumberKey(event)" />
+                </td>
+
+                
+            </tr>
+			 <tr>
+                <td class="input_name"><b>SBP of  brachial artery</b></td>
+
+                <td colspan="2">
+                    <input autocomplete="off" autocorrect="off" autocapitalize="off" type="number" class="input" id="artery" onchange="validateSBI(this);valCal();" onkeypress="return isNumberKey(event)" onkeyup="valCal();" />
+                </td>
+
+        
+            </tr>
+        </table>
+    </div>
+
+    <div class="table_container">
+        <table class="output_table">
+            <colgroup>
+                <col width="35%">
+                <col width="45%">
+                <col width="20%">
+            </colgroup>
+            <tbody id="tr_result">
+                <tr>
+                    <td class="output_name_disabled" colspan="3">ABI:</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="output_disabled" id="result1" name="result" readonly="readonly" width="98%"><br/></div>
+                    </td>
+                </tr>
+				<tr>
+                    <td class="output_name_disabled" colspan="3">Interpretation:</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="output_disabled" id="result2" name="result" readonly="readonly" width="98%"><br/></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <table class="footer-button-table">
+            <colspan>
+                <col width="50%">
+                <col width="50%">
+            </colspan>
+            <tr>
+			<br/><br/>
+			 <td class="footer-button"><button class="mfooter-button" id="ref_button" style="outline:0">Abbreviation(s)</button></td>
+			<!--<td class="footer-button" style="width: 50%;">
+        <button class="mfooter-button" id="pdfButton"><a href="flipView"><img id="algoPdf" src="algo_pdf_white.png" alt="Static version"></a></button></td>-->
+			   <td class="footer-button"  style="width: 50%;">
+        <a href="ref_ENAS5327_5.4.0.0.html"><button class="mfooter-button" id="moreInfoButton">More Information</button></a></td>
+			   
+			 
+		</tr>
+		<tr>
+                <td class="footer-button"  colspan="2" style="width: 50%;">
+                    <button class="mfooter-button" id="resetButton" onClick="window.location.href=window.location.href" style="outline:0">Reset</button></td>
+					
+            </tr>
+			 <tr>
+            <tr>
+                <td colspan="2" style="border:0px;">
+                    <div id="reference" style="display: none;">
+                        <div class="info_text_box_abb">
+                            <p class="text_left">
+                               AAA = abdominal aorta aneurysm; ABI = ankle-brachial index; BP = blood pressure; CAD = coronary artery disease; CKD = chronic kidney disease; CV = cardiovascular; ESC = European Society of Cardiology; LEAD = lower extremity artery disease; PADs = peripheral arterial diseases; SBP = systolic blood pressure.
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+		</div>
+		 <div id="modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p class="modal-text" id="text">This is text of modal</p>
+                <p class="modal-button" id="modalButton">OK</p>
+            </div>
+        </div>
+        <br/><br/><br/><br/>
+</body>
+
+</html>

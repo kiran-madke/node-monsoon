@@ -1,0 +1,37 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>Therapy/Co-therapies</b>",
+        "text_id": "",
+        "id": "therapy",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>Drug</b>",
+        "text_id": "",
+        "id": "drug",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "Initial treatment",
+        "id": "result1",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    },
+    {
+        "text": "Specific contraindications",
+        "id": "result2",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    }
+]
+}

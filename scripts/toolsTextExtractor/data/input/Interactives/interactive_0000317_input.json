@@ -1,0 +1,64 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>Previous PE or DVT</b>",
+        "text_id": "",
+        "name": "r1",
+        "type":"button"
+    },
+    {
+        "text": "<b>Heart rate &ge;100 b.p.m.</b>",
+        "text_id": "",
+        "name": "r2",
+        "type":"button"
+    },
+    {
+        "text": "<b>Surgery or immobilization within the past 4 weeks</b>",
+        "text_id": "",
+        "name": "r3",
+        "type":"button"
+    },
+    {
+        "text": "<b>Haemoptysis</b>",
+        "text_id": "",
+        "name": "r4",
+        "type":"button"
+    },
+    {
+        "text": "<b>Active cancer</b>",
+        "text_id": "",
+        "name": "r5",
+        "type":"button"
+    },
+    {
+        "text": "<b>Clinical signs of DVT</b>",
+        "text_id": "",
+        "name": "r6",
+        "type":"button"
+    },
+    {
+        "text": "<b>Alternative diagnosis less likely than PE</b>",
+        "text_id": "",
+        "name": "r7",
+        "type":"button"
+    }
+    ],
+"output":[
+	{
+        "text": "<b>Score</b>",
+        "name": "txtresult",
+        "type":"input"
+    },
+	{
+        "text": "<b>Clinical probability (Three-level score)</b>",
+        "name": "txtThreeLevelScore",
+        "type":"input"
+    },
+	{
+        "text": "<b>Clinical probability (Two-level score)</b>",
+        "name": "txtTwoLevelScore",
+        "type":"input"
+    }
+]
+}

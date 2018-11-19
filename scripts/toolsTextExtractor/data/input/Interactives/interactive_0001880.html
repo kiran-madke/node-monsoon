@@ -1,0 +1,95 @@
+<html>
+
+<head>
+	
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+    <link rel="stylesheet" type="text/css" href="calci_std.css">
+	<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="interactive_0001880.js"></script>
+</head>
+
+<body>
+    <div class="table_container">
+        <table class="input_table">
+            <colgroup>
+                <col width="35%">
+                <col width="45%">
+                <col width="20%">
+            </colgroup>
+			<tr>
+                <td class="input_name"><b>Role</b></td>
+
+                <td colspan="2">
+                    <select class="drop_center" id="role" onchange="result();">
+						<option value="Select" selected>Select</option>
+						<option>Syncope unit physician</option>
+					    <option>Syncope unit staff</option>
+						<option>Nonsyncope unit personnel</option>
+						
+					</select>
+                </td>
+            </tr>
+        </table>
+    </div>
+  <div class="table_container">
+    <table class="output_table">
+            <colgroup>
+                <col width="100%">
+            </colgroup>
+            <tbody id="tr_result">
+                <tr>
+                    <td colspan="2" class="output_name_disabled">Procedure or test</td>
+				</tr>
+				<tr>
+                    <td>
+                        <div class="activity_output_disabled" id="result1" name="result" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+				
+            </tbody>
+        </table>
+		 <table class="footer-button-table">
+            <tr>
+			<br/><br/>
+			 <td class="footer-button"><button class="mfooter-button" id="ref_button" style="outline:0">Abbreviation(s) and Footnote(s)</button></td>
+			<td class="footer-button" style="width: 50%;">
+        <button class="mfooter-button" id="pdfButton"><a href="flipView"><img id="algoPdf" src="algo_pdf_white.png" alt="Static version"></a></button></td>
+			  
+			   
+			 
+		</tr>
+		<tr>
+                <td class="footer-button" style="width: 50%;">
+                    <button class="mfooter-button" id="resetButton" onClick="window.location.href=window.location.href" style="outline:0">Reset</button></td>
+					 <td class="footer-button"  style="width: 50%;">
+        <a href="ref_ENAS5530_30.7.0.0.html"><button class="mfooter-button" id="moreInfoButton">More Information</button></a></td>
+            </tr>
+			 <tr>
+                <td colspan="2" style="border:0px;">
+                    <div id="reference" style="display: none;">
+                        <div class="info_text_box_abb">
+                            <p class="text_left">
+BP = blood pressure; CSM = carotid sinus massage; ECG = electrocardiogram; EEG = electroencephalogram;
+EPS = electrophysiological study; ICD = implantable cardioverter defibrillator; ILR = implantable loop
+recorder; PCM = physical counter-pressure manoeuvres. 
+                            </p>
+                        </div>
+						<div class="info_text_box_abb">
+                            <p class="text_left">
+<sup>a</sup>Physician need not be in the room, but a physician
+adequately trained in resuscitation needs to be in the vicinity of the test - <sup>b</sup>Current practice limited to a
+few countries - <sup>c</sup>Biofeedback means that the PCM training session consists of biofeedback training using
+a continuous BP monitor. Each manoeuvre is demonstrated and explained. The manoeuvres are practised
+under supervision, with immediate feedback of the recordings to gain optimal performance.
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+   </div>
+</body>
+
+</html>

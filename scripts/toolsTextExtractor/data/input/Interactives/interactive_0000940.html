@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="charset=UTF-8" />
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>My Stroke Risk score</title>
+
+    <script src="jquery-1.11.3.js"></script>
+    <script src="catchMe-jquery-scorePlugin-2.0.min.js"></script>
+    <script src="catchMe-chad-vasc-scoreFunctions-2.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="interactives_1.css">
+    <script src="interactive_0000940.js"></script>
+    <script src="interactive_0000940_Mapping.js"></script>
+
+    <script>
+
+        $(document).ready(function ()
+        {
+
+            /**
+             * Array variable storing the history of the boxes
+             */
+            var historyArray = [];
+
+            /**
+             * boolean variable to check, whether the reference button is clicked or not
+             */
+            var isReferenceButtonClicked = false;
+
+            //loadDataFile("");
+
+            $("body").on("click", "td", function ()
+            {
+                // id of the currently clicked table cell item
+                var cellId = $(this).attr("id");
+
+                var rowIndex = $(this).closest("tr").index();
+                var cellIndex = $(this).closest("td").index();
+
+                if (typeof (cellId) !== 'undefined')
+                {
+                    amendHistory(rowIndex.toString(), cellIndex.toString());
+                    if (cellId !== undefined)
+                    {
+                        var thisElement = document.getElementById(cellId);
+
+                        // creating the array of buttons in table row
+                        var tableRow = document.getElementById(cellId).parentNode.childNodes;
+
+                        // toggling the button click background effects
+                        toggleDecisionBtn(cellId, tableRow, 0);
+
+                        // saving the history of the algorithm
+                        //historyArray = saveHistory();
+                        //console.log("History on button click :" + historyArray);
+                    }
+                }
+
+            });
+
+            $("body").on("click", "button", function ()
+            {
+                switch ($(this).attr("id"))
+                {
+                    case "refButton":
+                        if (!isReferenceButtonClicked)
+                        {
+                            $("#refButton").removeClass('abb-button').addClass('abb-button-click');
+                            $(".reference-box").slideDownBox();
+                        }
+                        else
+                        {
+                            $("#refButton").removeClass('abb-button-click').addClass('abb-button');
+                            $(".reference-box").slideUpBox();
+                        }
+                        isReferenceButtonClicked = !isReferenceButtonClicked;
+                        break;
+                    case "pdfButton":
+                        //alert("clicked on pdf button");
+                        break;
+                    case "resetButton":
+                        // initializing the mainDiv
+                        var mainDiv = document.getElementById("mainDiv");
+                        // removing the elements from the mainDiv
+                        while (mainDiv.firstChild)
+                        {
+                            mainDiv.removeChild(mainDiv.firstChild);
+                        }
+                        // removing the footer div
+                        document.getElementsByTagName("body")[0].removeChild(document.getElementById("998"));
+                        document.getElementsByTagName("body")[0].removeChild(document.getElementById("extraButtons"));
+                        loadDataFile("");
+                        break;
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div id="mainDiv"></div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+
+<head>
+	
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+    <link rel="stylesheet" type="text/css" href="calci_std.css">
+	<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="interactive_0001459.js"></script>
+</head>
+
+<body>
+    <div class="table_container">
+        <table class="input_table">
+            <colgroup>
+                <col width="35%">
+                <col width="45%">
+                <col width="20%">
+            </colgroup>
+			<tr>
+                <td class="input_name"><b>Agent</b></td>
+
+                <td colspan="2">
+                    <select class="drop_center" id="grade" onchange="result();">
+						<option value="Select" selected>Select</option>
+						<option>Aspirin</option>
+					    <option>Clopidogrel</option>
+						<option>Ticagrelor</option>
+						<option>Prasugrel</option>
+						<option>Enoxaparin</option>
+						<option>UFH</option>
+						<option>Fondaparinux</option>
+						<option>Bivalirudin</option>
+						<option>Abciximab</option>
+						<option>Eptifibatide</option>
+						<option>Tirofiban</option>
+					</select>
+                </td>
+            </tr>
+        </table>
+    </div>
+  <div class="table_container">
+    <table class="output_table">
+            <colgroup>
+                <col width="100%">
+            </colgroup>
+            <tbody id="tr_result">
+                <tr>
+                    <td colspan="2" class="output_name_disabled">Normal renal function and stage 1–3 CKD*</td>
+				</tr>
+				<tr>
+                    <td>
+                        <div class="activity_output_disabled" id="result1" name="result" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+				<tr>
+                    <td colspan="2" class="output_name_disabled">Stage 4 CKD**</td>
+				</tr>
+				<tr>
+                    <td>
+                        <div class="activity_output_disabled" id="result2" name="result" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+				 <tr>
+                    <td colspan="2" class="output_name_disabled">Stage 5 CKD***</td>
+				</tr>
+				<tr>
+                    <td>
+                        <div class="activity_output_disabled" id="result3" name="result" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+		 <table class="footer-button-table">
+            <tr>
+			<br/><br/>
+			 <td class="footer-button"><button class="mfooter-button" id="ref_button" style="outline:0">Abbreviation(s) and Footnote(s)</button></td>
+			<td class="footer-button" style="width: 50%;">
+        <button class="mfooter-button" id="pdfButton"><a href="flipView"><img id="algoPdf" src="algo_pdf_white.png" alt="Static version"></a></button></td>
+			  
+			   
+			 
+		</tr>
+		<tr>
+                <td class="footer-button" style="width: 50%;">
+                    <button class="mfooter-button" id="resetButton" onClick="window.location.href=window.location.href" style="outline:0">Reset</button></td>
+					 <td class="footer-button"  style="width: 50%;">
+        <a href="ref_ENAS5329_7.2.3.0.html"><button class="mfooter-button" id="moreInfoButton">More Information</button></a></td>
+            </tr>
+			 <tr>
+                <td colspan="2" style="border:0px;">
+                    <div id="reference" style="display: none;">
+                        <div class="info_text_box_abb">
+                            <p class="text_left">
+aPTT = activated partial thromboplastin time; CKD = chronic kidney disease; eGFR = estimated
+glomerular filtration rate; GP = glycoprotein; IU = international units; <i>i.v.</i> = intravenous; PCI = percutaneous coronary intervention; <i>s.c.</i> = subcutaneous; UFH = unfractionated heparin.
+                            </p>
+                        </div>
+						<div class="info_text_box_abb">
+                            <p class="text_left">
+*Normal renal function and stage 1–3 CKD (eGFR &ge;30 mL/min/1.73 m<sup>2</sup>)<br/>**Stage 4 CKD (eGFR 15 to <30 mL/min/1.73 m<sup>2</sup>)<br/>***Stage 5 CKD (eGFR <15 mL/min/1.73 m<sup>2</sup>)<br/><sup>a</sup>Double bolus if administered during primary PCI.
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+   </div>
+</body>
+
+</html>

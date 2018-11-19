@@ -1,0 +1,584 @@
+<html>
+    <head>
+        <meta name="viewport" content="charset=UTF-8" />
+       <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+         <link rel="stylesheet" type="text/css" href="score_esc.css">
+            <script src="jquery-1.9.1.min.js"></script>
+<script src="jquery-tocPlugin.js"></script>
+
+
+        <STYLE TYPE="text/css">
+			input[type="radio"]
+			{
+				disabled: true;
+			}
+			
+            body {
+ 
+                background-color: #cccccc;
+                -webkit-user-select: none;
+            }/*
+            .info_text_box_abb1 {
+                
+                margin-top: -7px;
+                margin-left: 3px;
+                width: 98.3%;
+
+                position: relative;
+                color: #000000;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                font-family: "Helvetica";
+                font-weight: italic;
+                text-align: left;
+                background-color: #e1e1e1;
+                font-size: 14px;
+                color:#52494C;
+                font-weight:bold;
+                font-style:italic;
+                
+            }*/
+/*
+.info_text_box_abb
+ {
+margin-top: -7px;
+	width: 100%;
+	position: relative;
+	color: #000000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-family: "Helvetica";
+	font-weight: italic;
+	text-align: left;
+	background-color: #e1e1e1;
+    	font-size: 14px;
+         color:#52494C;
+         font-weight:bold;
+         font-style:italic;
+            }*/
+            
+ .resetbox {
+     color:#ffffff;
+     height:25px;
+     font-weight:normal;
+     font-size:12pt;
+     width:100%;
+     height:80%;
+     border-color: black;
+     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1, #000000 ), color-stop(0, #ffffff));
+     
+
+            }
+ p.text_left {
+	margin-left: 5px;
+ }
+
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+            select {width:100%;}
+                         input.output
+            {
+                width:100%;
+                height:23px;
+                /*border-color: #E08100;*/
+                border-color:#F58324;
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1, #FAAB6F ), color-stop(0, #ffffff));
+                
+            }
+            span.text_left {
+	float: left;
+	margin-left: 2px;
+	font-weight: bold;
+	font-size: 1em;
+	font-family: "Helvetica";
+}
+
+            td.input_name
+            {
+                font:Helvetica;
+            }
+            
+            input[type=radio]
+            {
+                display:none;
+                margin: 2px 2px 2px 2px;
+                padding: 1px 1px 1px 1px;
+            }
+            
+            /*
+             Change the look'n'feel of labels (which are adjacent to radiobuttons).
+             Add some margin, padding to label
+             */
+            input[type=radio] + label
+            {
+                display:inline-block;
+                margin: 0px 2px 0px 2px;
+                padding:2px 1px 0px 1px;
+                background-color: #ffffff;
+                border: 2px solid #dfdfdf;
+                width:102%;
+                height:23px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                text-align:center;
+                font-size:15;
+                font-weight:bold;
+                color:#686868;
+                 
+            }
+            
+            input[type=radio]:checked + label
+            {
+                background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#662016));
+                border: 2px solid #ececec;
+                color:#ffffff;
+                text-align:center;
+                width:103%;
+                font-size:15;
+                font-weight:bold;
+                
+                
+            }
+			/*
+            .abbBtn
+            {
+                
+                width:100px; height: 40px;
+                align:right;
+                font-weight:bold;
+                -webkit-border-top-right-radius: 7px;
+                -webkit-border-top-left-radius: 7px;
+                -webkit-border-bottom-right-radius: 7px;
+                -webkit-border-bottom-left-radius: 7px;
+                background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)),
+                to(#a8adb2));
+            }
+            .abbBtnClick
+            {
+                
+                width:100px; height: 40px;
+                align:right;
+                font-weight:bold;
+                -webkit-border-top-right-radius: 7px;
+                -webkit-border-top-left-radius: 7px;
+                -webkit-border-bottom-right-radius: 7px;
+                -webkit-border-bottom-left-radius: 7px;
+                background: -webkit-gradient(linear, left top, left bottom, from(#7c7c7c),
+                to(#7c7c7c));
+                color:#ffffff;
+            }
+            */
+            </style>    
+
+              <script>
+
+ 
+
+	$(document).ready(function()
+	{
+	
+ 
+                      
+                  
+                      $("#ref_button").click(function()
+                                             {
+                                             var className = $('#ref_button').attr('class');
+                                             if (className == 'abbBtn')
+                                             $('#ref_button').removeClass('abbBtn').addClass('abbBtnClick');
+                                             else
+                                             $('#ref_button').removeClass('abbBtnClick').addClass('abbBtn');
+                                             $("#reference").slideToggle("fast", function()
+                                                                         {
+                                                                         $('html, body').animate({scrollTop : $(this).offset().top}, 700);
+                                                                         });
+                                             });
+
+		$("#reset").click(function()
+		{
+			//$(".points").hide("slow");
+			$(".result_table").hide("slow");
+			//$("#reftext").hide("slow");
+			$("#reference").hide("slow");
+			totalscore = 0;
+			for ( var x = 0; x < isBoxPressed.length; x++)
+			{
+				isBoxPressed[x] = "false";
+			}
+			isResetPressed = "false";
+
+			for ( var x = 1; x < box.length; x++)
+			{
+				$("#" + box[x]).hide();
+			}
+
+			$("#total_points").text(totalscore);
+			$("#reset_text").text("Reset");
+			$("#reset").css(
+			{
+				"-webkit-border-bottom-right-radius" : "7px",
+				"-webkit-border-bottom-left-radius" : "7px"
+			});
+
+			for ( var i = 0; i < boxArray.length; i++)
+			{
+				for ( var j = 0; j < boxArray[i].length; j++)
+				{
+					$("#" + boxArray[i][j]).slideDown("fast");
+				}
+			}
+
+			$(".list_middle").css(
+			{
+				"-webkit-border-bottom-right-radius" : "0px",
+				"-webkit-border-bottom-left-radius" : "0px"
+			});
+		});
+	});
+
+	function boxSlide(id, status, point, mode, whichArray)
+	{
+		if (mode == 1)
+		{
+			for ( var j = 0; j < boxArray[whichArray].length; j++)
+			{
+				if (id != boxArray[whichArray][j])
+				{
+					$("#" + boxArray[whichArray][j]).slideUp("fast");
+				}
+			}
+			$("#" + id).css(
+			{
+				"-webkit-border-bottom-right-radius" : "7px",
+				"-webkit-border-bottom-left-radius" : "7px"
+			});
+			isBoxPressed[whichArray] = status;
+			totalscore = totalscore + point;
+			showScore();
+		}
+		else if (mode == 0)
+		{
+			for ( var j = 0; j < boxArray[whichArray].length; j++)
+			{
+				if (id != boxArray[whichArray][j])
+				{
+					$("#" + boxArray[whichArray][j]).slideDown("fast");
+				}
+			}
+			$("#" + id).css(
+			{
+				"-webkit-border-bottom-right-radius" : "0px",
+				"-webkit-border-bottom-left-radius" : "0px"
+			});
+			isBoxPressed[whichArray] = status;
+			totalscore = totalscore - point;
+			hideScore();
+		}
+		$("#total_points").text(totalscore);
+		if (whichArray < box.length)
+			$("#" + box[whichArray + 1]).show();
+		$("#" + box[whichArray]).scroll();
+	}
+
+ 
+</script> 
+            <script type="text/javascript">
+			
+			var VersionValue = [[3,3,5,2,2,2,3,4,1],
+								[1,1,2,1,1,1,1,1,1]];
+								
+			function dispAge1()
+			{
+				document.getElementById("radio6").checked = true;
+				document.getElementById("radio6").disabled = false;
+				document.getElementById("radio5").disabled = false;
+			}					
+			function dispAge2()
+			{
+				document.getElementById("radio5").checked = true;
+				document.getElementById("radio6").disabled = true;
+				document.getElementById("radio5").disabled = true;
+			}
+										
+			function versionChange()
+			{
+				if(document.getElementById("orgVer").checked==true)
+				{
+					currVersion = 0;
+				}
+				else
+				{
+					currVersion = 1;
+				}
+				
+				for(var i=0; i < VersionValue[0].length; i++)
+				{
+					document.getElementById("lblRadio" + (i + 1)).innerHTML = VersionValue[currVersion][i];
+					document.getElementById("radio" + ((i + 1) * 2)).value = VersionValue[currVersion][i];
+				}
+				
+					for(var i=0; i < VersionValue[0].length*2; i++)
+				{
+					document.getElementById("radio" + ((i + 1) )).disabled=false;
+				}
+				valcal();
+			}
+			
+			var currVersion = -1;
+			
+			function reload()
+			{
+				for(var i=0; i < VersionValue[0].length*2; i++)
+				{
+					document.getElementById("radio" + ((i + 1) )).disabled=true;
+				}
+			}
+                function valcal()
+                {
+					if(currVersion == -1)
+					{
+						
+					}
+					else
+					{
+						var totalValue = 0;
+						
+						var isAllSelected = true;
+						for(var i=0; i < VersionValue[0].length * 2 ; i=i+2)
+						{
+							if(document.getElementById("radio" + (i + 1)).checked==false && document.getElementById("radio" + (i + 2)).checked==false)
+							{
+								isAllSelected = false;
+								break;
+							}
+						}
+						if(isAllSelected)
+						{	
+							for(var i=0; i < VersionValue[0].length * 2 ; i = i+2)
+							{
+								if(document.getElementById("radio" + (i + 1)).checked==true)
+								{
+									totalValue = totalValue + parseFloat(document.getElementById("radio" + (i + 1)).value);
+								}
+								else
+								{
+									totalValue = totalValue + parseFloat(document.getElementById("radio" + (i + 2)).value);
+								}
+							}
+							window.frm.txtresult.value = totalValue;
+							
+							if(currVersion == 0)
+							{
+								if(totalValue>=0 && totalValue<=3)
+								{
+									window.frm.txtThreeLevelScore.value = "Low";
+								}
+								else if(totalValue>=4 && totalValue<=10)
+								{
+									window.frm.txtThreeLevelScore.value = "Intermediate";
+								}
+								else
+								{
+									window.frm.txtThreeLevelScore.value = "High";
+								}
+								
+								if(totalValue>=0 && totalValue<=5)
+								{
+									window.frm.txtTwoLevelScore.value = "PE unlikely";
+								}
+								else
+								{
+									window.frm.txtTwoLevelScore.value = "PE likely";
+								}
+							}
+							else
+							{
+								if(totalValue>=0 && totalValue<=1)
+								{
+									window.frm.txtThreeLevelScore.value = "Low";
+								}
+								else if(totalValue>=2 && totalValue<=4)
+								{
+									window.frm.txtThreeLevelScore.value = "Intermediate";
+								}
+								else
+								{
+									window.frm.txtThreeLevelScore.value = "High";
+								}
+								
+								if(totalValue>=0 && totalValue<=2)
+								{
+									window.frm.txtTwoLevelScore.value = "PE unlikely";
+								}
+								else
+								{
+									window.frm.txtTwoLevelScore.value = "PE likely";
+								}
+							}
+							
+						}
+						else
+						{
+							//alert("Not Selected");
+						}
+					}
+                }
+                </script>
+</head>
+    
+    
+    <body onload="reload();" width="100%" >
+          
+        <form name="frm">
+            <table id="tableHead" width="100%" cellpadding=3 cellspacing=0 style="margin-top:-7px;border-collapse:collapse;">
+               <col style="width:50%"><col style="width:50%">
+                <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c;  align:center;"><input type="radio" name="verName" id="orgVer" onChange="versionChange()" value="0"> <label  onclick="" for="orgVer">Original Version</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="verName" id="simVer" onChange="versionChange()" value="1"> <label  onclick="" for="simVer">Simplified Version</label></td>
+                </tr>
+            </table>
+            <table id="table" width="100%" cellpadding=3 cellspacing=0 style="margin-top:-7px;border-collapse:collapse;">
+               <col style="width:30%"><col style="width:30%"><col style="width:30%">
+                   
+                   
+                <tr style="background-color:#cccccc;" >
+                    
+ <td style="border:0px solid #7c7c7c;"  align="right"><b>Risk factor </td>
+<td style="border:0px solid #7c7c7c;"  align="center" style="border:0px solid #7c7c7c;"><b>No</b></td>
+<td style="border:0px solid #7c7c7c;"   align="center" style="border:0px solid #7c7c7c;"><b>Yes</b></td>
+                 </tr>
+                   
+                <tr style="background-color:F2F2F2;" height="8px">
+ <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;"  align="right"><b>Previous DVT or PE</td>
+<td style="border:0px solid #7c7c7c;"  style="border:0px solid #7c7c7c;"><input type="radio" name="r1" id="radio1" onChange="valcal()"   value="0" > <label onclick="" for="radio1">0</label></td>
+<td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="r1"    id="radio2" onChange="valcal()" value="1"><label id="lblRadio1"  onclick="" for="radio2"></label></td>
+                 </tr>
+                <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Heart rate 75-94 b.p.m. </td>
+                    <td style="border:0px solid #7c7c7c;  align:center;"><input type="radio" name="r2" id="radio3" onChange="dispAge1(),valcal()" value="0"> <label onclick="" for="radio3">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="r2" id="radio4" onChange="dispAge2(),valcal()" value="1"> <label id="lblRadio2"  onclick="" for="radio4"></label></td>
+                </tr>
+                <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;"  align="right"><b>Heart rate &ge; 95 b.p.m.
+                        
+                    </td>
+                    <td    id="r3_1td" ><input type="radio" name="r3" id="radio5" onChange="valcal()" value="0"> <label id="r3_2Label" onclick="" for="radio5">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "  id="r3_2td" ><input type="radio" name="r3" id="radio6" onChange="valcal()" value="2"> <label  id="lblRadio3" for="radio6"></label></td>
+                </tr>
+                <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Surgery or fracture within the past month
+                    </td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r4" id="radio7" onChange="valcal()" value="0"> <label  onclick="" for="radio7">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="r4" id="radio8" onChange="valcal()" value="0"> <label id="lblRadio4" for="radio8"></label></td>
+                </tr>
+                <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Haemoptysis 
+                    </td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r5" id="radio9" onChange="valcal()" value="0"> <label  onclick="" for="radio9">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px;  "><input type="radio" name="r5" id="radio10" onChange="valcal()" value="2"> <label id="lblRadio5" for="radio10"></label></td>
+                </tr>
+                 <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Active cancer
+                    </td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r6" id="radio11" onChange="valcal()" value="0"> <label  onclick="" for="radio11">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="r6" id="radio12" onChange="valcal()" value="1"> <label id="lblRadio6" for="radio12"></label></td>
+                </tr> 
+                <tr style="background-color:F2F2F2" height="8px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Unilateral lower limb pain
+                    </td>
+                    <td style="border:0px solid #7c7c7c;" id="r7_1td"><input type="radio" name="r7" id="radio13" onChange="valcal()" value="0"> <label  onclick="" id="r7_2Label" for="radio13">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; " id="r7_2td"><input type="radio" name="r7" id="radio14" onChange="valcal()" value="1"> <label id="lblRadio7" onclick="" for="radio14"></label></td>
+                </tr> 
+                 <tr style="background-color:F2F2F2" height="10px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Pain on lower limb deep venous palpation and unilateral oedema
+                    </td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r8" id="radio15" onChange="valcal()" value="0"> <label  onclick="" for="radio15">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; "><input type="radio" name="r8" id="radio16" onChange="valcal()" value="1"> <label id="lblRadio8" for="radio16"></label></td>
+                </tr> 
+                <tr style="background-color:F2F2F2" height="8px">
+                    <td style="border:0px solid #7c7c7c; background-color:F2F2F2;color:#000000;padding-right:8px;"   align="right"><b>Age &gt;65 years 
+                    </td>
+                    <td style="border:0px solid #7c7c7c;" id="r7_1td"><input type="radio" name="r9" id="radio17" onChange="valcal()" value="0"> <label  onclick="" id="r7_2Label" for="radio17">0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:13px; " id="r7_2td"><input type="radio" name="r9" id="radio18" onChange="valcal()" value="1"> <label id="lblRadio9" onclick="" for="radio18"></label></td>
+                </tr> 
+				
+                <tr style="background-color:cccccc" >
+                    <td  style="border:0px solid #cccccc;  vertical-align: bottom;background-color:cccccc;color:#000000; "  align="right"><b>
+                       Score
+                    </td>
+                    
+                    <td  style="border:0px solid #7c7c7c; vertical-align: bottom; " colspan="2">
+                        <input type="text"  name="txtresult" readonly="readonly" class="resultbox"/>
+                    </td>
+                </tr>
+                <tr>
+					<td  colspan="3" style="border:0px solid #7c7c7c; font-weight:medium;  vertical-align: bottom;background-color:cccccc; color:#000000; " ><br/>
+						<span style="font-family:Helvetica; font-size:12pt;" ><b>Clinical probability :</b></span>
+                    </td>
+                </tr> 
+				
+                <tr style="background-color:cccccc" >
+                    <td  style="border:0px solid #cccccc;  vertical-align: bottom;background-color:cccccc;color:#000000; "  align="right"><b>
+                       Three-level score
+                    </td>
+                    
+                    <td  style="border:0px solid #7c7c7c; vertical-align: bottom; " colspan="2">
+                        <input type="text"  name="txtThreeLevelScore" readonly="readonly" class="resultbox"/>
+                    </td>
+                </tr>
+				
+                <tr style="background-color:cccccc" >
+                    <td  style="border:0px solid #cccccc;  vertical-align: bottom;background-color:cccccc;color:#000000; "  align="right"><b>
+                       Two-level score
+                    </td>
+                    
+                    <td  style="border:0px solid #7c7c7c; vertical-align: bottom; " colspan="2">
+                        <input type="text"  name="txtTwoLevelScore" readonly="readonly" class="resultbox"/>
+                    </td>
+                </tr>
+                  <tr>
+               <td  colspan="3" style="border:0px solid #7c7c7c;  vertical-align: bottom;background-color:cccccc;color:#000000; " >
+                                <input class="resetbtn" type="reset" style="width:100%" value="Reset" id="reset" onClick="window.location.href=window.location.href"> 
+                            </td> </tr>
+            </table>
+        </form><!--Reference-->
+
+    <div style="float:right">
+        <table style="width:100% border: 0px solid #ffffff;" >
+            <col style="width:50%"><col style="width:100px"><col style="width:70px">
+                <tr><td>
+                </td>
+                    <td><button id="ref_button"  class="abbBtn">Abbreviations and footnotes</button>  </td>
+                    <td><button id="pdf_button"  class="flip-pdf-button">
+                        <a href="flipView"><img src="pdf.png"  class="pdf-image">
+                        </img></a></button></td></tr></table>
+    </div>
+
+<div id="reference" style="display: none; width: 93%; float: center;">
+    
+    <br/>
+    <br/>
+    <br/>
+<div class="info_text_box_abb">
+<p class="text_left">b.p.m.= beats per minute; DVT = deep vein thrombosis; PE = pulmonary embolism.</p>
+</div>
+</div>
+
+<table style="width:100%">
+            <tr>
+                <td>
+                    
+                    <div style="float:right"><button id="ref_button" class="abbBtn" style="width:100%" >
+                        <a href="ref_ENAS262_5.2.0.0.html">More Information</a></button>
+                    </div>
+                    </td>
+                    </tr>  
+                    </table>
+<br/>
+<br/>
+<br/>
+  </body>
+</html>

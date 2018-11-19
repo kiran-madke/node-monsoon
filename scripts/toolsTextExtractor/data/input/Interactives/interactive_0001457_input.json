@@ -1,0 +1,41 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>Classification type</b>",
+        "text_id": "",
+        "id": "classified",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>Symptoms</b>",
+        "text_id": "",
+        "id": "symptoms",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "Stage",
+        "id": "result1",
+        "unit": "",
+        "type":"div"
+    },
+    {
+        "text": "Grade",
+        "id": "result2",
+        "unit": "",
+        "type":"div"
+    },
+    {
+        "text": "Category",
+        "id": "result3",
+        "unit": "",
+        "type":"div"
+    }
+]
+}

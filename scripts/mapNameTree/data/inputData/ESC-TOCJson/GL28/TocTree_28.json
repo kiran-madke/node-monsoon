@@ -1,0 +1,848 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Summary cards",
+"tocnametree":"Summary cards",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.1.0.0",
+"id":"2",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5195_2017063085",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.2.0.0",
+"id":"3",
+"nametree":"Definition",
+"tocnametree":"Definition",
+"htmlpage":"ENAS5195_2017063086",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.3.0.0",
+"id":"4",
+"nametree":"Diagnosis of HF (non-acute onset)",
+"tocnametree":"Diagnosis of HF (non-acute onset)",
+"htmlpage":"ENAS5195_2017063087",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.4.0.0",
+"id":"5",
+"nametree":"Therapeutic algo. for symptomatic HFrEF",
+"tocnametree":"Therapeutic algo. for symptomatic HFrEF",
+"htmlpage":"ENAS5195_2017063088",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.5.0.0",
+"id":"6",
+"nametree":"Initial mgmt. of a patient with AHF",
+"tocnametree":"Initial mgmt. of a patient with AHF",
+"htmlpage":"ENAS5195_2017063089",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.6.0.0",
+"id":"7",
+"nametree":"Mgmt. of AHF based on clinical profile",
+"tocnametree":"Mgmt. of AHF based on clinical profile",
+"htmlpage":"ENAS5195_2017063090",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.7.0.0",
+"id":"8",
+"nametree":"ICD and CRT indication",
+"tocnametree":"ICD and CRT indication",
+"htmlpage":"ENAS5195_2017063091",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.8.0.0",
+"id":"9",
+"nametree":"LVAD eligible patients",
+"tocnametree":"LVAD eligible patients",
+"htmlpage":"ENAS5195_2017063092",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.9.0.0",
+"id":"10",
+"nametree":"Charact. & components of mgmt. programmes",
+"tocnametree":"Charact. & components of mgmt. programmes",
+"htmlpage":"ENAS5195_2017063093",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.10.0.0",
+"id":"11",
+"nametree":"Palliative care service in HF",
+"tocnametree":"Palliative care service in HF",
+"htmlpage":"ENAS5195_2017063094",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"12",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5195_1.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"13",
+"nametree":"Preamble",
+"tocnametree":"Preamble",
+"htmlpage":"ENAS5195_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"14",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5195_3.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"15",
+"nametree":"Definition and classification",
+"tocnametree":"Definition and classification",
+"htmlpage":"ENAS5195_4.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"16",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"17",
+"nametree":"Symptoms and signs",
+"tocnametree":"Symptoms and signs",
+"htmlpage":"ENAS5195_5.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"18",
+"nametree":"Diagnosis of HF (non-acute onset)",
+"tocnametree":"Diagnosis of HF (non-acute onset)",
+"htmlpage":"ENAS5195_5.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"19",
+"nametree":"Cardiac imaging and diagnostic tests",
+"tocnametree":"Cardiac imaging and diagnostic tests",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"20",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5195_6.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.0.0",
+"id":"21",
+"nametree":"Imaging w/ suspected or established HF",
+"tocnametree":"Imaging w/ suspected or established HF",
+"htmlpage":"ENAS5195_6.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.0.0",
+"id":"22",
+"nametree":"Diagnostic tests in pts with HF",
+"tocnametree":"Diagnostic tests in pts with HF",
+"htmlpage":"ENAS5195_6.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.4.0.0",
+"id":"23",
+"nametree":"Genetic testing in patients with HF",
+"tocnametree":"Genetic testing in patients with HF",
+"htmlpage":"ENAS5195_6.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"24",
+"nametree":"Delay/Prevention of overt HF or death",
+"tocnametree":"Delay/Prevention of overt HF or death",
+"htmlpage":"ENAS5195_7.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"25",
+"nametree":"Pharmacological treat. of HFrEF",
+"tocnametree":"Pharmacological treat. of HFrEF",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.1.0.0",
+"id":"26",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5195_8.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.2.0.0",
+"id":"27",
+"nametree":"Therapeutic algo. for symptomatic HFrEF",
+"tocnametree":"Therapeutic algo. for symptomatic HFrEF",
+"htmlpage":"ENAS5195_8.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.3.0.0",
+"id":"28",
+"nametree":"Pharmac. treatments in symp. HFrEF",
+"tocnametree":"Pharmac. treatments in symp. HFrEF",
+"htmlpage":"ENAS5195_8.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.4.0.0",
+"id":"29",
+"nametree":"Other Tx options in symptomatic HFrEF",
+"tocnametree":"Other Tx options in symptomatic HFrEF",
+"htmlpage":"ENAS5195_8.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.5.0.0",
+"id":"30",
+"nametree":"Treatments that may cause harm",
+"tocnametree":"Treatments that may cause harm",
+"htmlpage":"ENAS5195_8.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"31",
+"nametree":"Non-surgical device treatment of HFrEF",
+"tocnametree":"Non-surgical device treatment of HFrEF",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.1.0.0",
+"id":"32",
+"nametree":"ICD",
+"tocnametree":"ICD",
+"htmlpage":"ENAS5195_9.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.2.0.0",
+"id":"33",
+"nametree":"CRT",
+"tocnametree":"CRT",
+"htmlpage":"ENAS5195_9.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"34",
+"nametree":"Treatment of HFpEF",
+"tocnametree":"Treatment of HFpEF",
+"htmlpage":"ENAS5195_10.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.0.0.0",
+"id":"35",
+"nametree":"Arrhythmias & conductance disturb.",
+"tocnametree":"Arrhythmias & conductance disturb.",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.1.0.0",
+"id":"36",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5195_11.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.2.0.0",
+"id":"37",
+"nametree":"Rapid ventricular rate mgmt. in HF & AFib",
+"tocnametree":"Rapid ventricular rate mgmt. in HF & AFib",
+"htmlpage":"ENAS5195_11.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.3.0.0",
+"id":"38",
+"nametree":"Rhythm control strategy in HF & AF",
+"tocnametree":"Rhythm control strategy in HF & AF",
+"htmlpage":"ENAS5195_11.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.4.0.0",
+"id":"39",
+"nametree":"Prevention of thrombo-embolism in HF & AF",
+"tocnametree":"Prevention of thrombo-embolism in HF & AF",
+"htmlpage":"ENAS5195_11.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.5.0.0",
+"id":"40",
+"nametree":"Mgmt. of ventricular tachyarrhythmias in HF",
+"tocnametree":"Mgmt. of ventricular tachyarrhythmias in HF",
+"htmlpage":"ENAS5195_11.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.6.0.0",
+"id":"41",
+"nametree":"Management of bradyarrhythmias in HF",
+"tocnametree":"Management of bradyarrhythmias in HF",
+"htmlpage":"ENAS5195_11.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.0.0.0",
+"id":"42",
+"nametree":"Co-morbidities",
+"tocnametree":"Co-morbidities",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.1.0.0",
+"id":"43",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5195_12.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.2.0.0",
+"id":"44",
+"nametree":"Angina and coronary artery disease",
+"tocnametree":"Angina and coronary artery disease",
+"htmlpage":"ENAS5195_12.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.3.0.0",
+"id":"45",
+"nametree":"Cachexia and sarcopenia",
+"tocnametree":"Cachexia and sarcopenia",
+"htmlpage":"ENAS5195_12.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.4.0.0",
+"id":"46",
+"nametree":"Cancer",
+"tocnametree":"Cancer",
+"htmlpage":"ENAS5195_12.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.5.0.0",
+"id":"47",
+"nametree":"Central nervous system",
+"tocnametree":"Central nervous system",
+"htmlpage":"ENAS5195_12.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.6.0.0",
+"id":"48",
+"nametree":"Diabetes",
+"tocnametree":"Diabetes",
+"htmlpage":"ENAS5195_12.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.7.0.0",
+"id":"49",
+"nametree":"Erectile dysfunction",
+"tocnametree":"Erectile dysfunction",
+"htmlpage":"ENAS5195_12.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.8.0.0",
+"id":"50",
+"nametree":"Gout and arthritis",
+"tocnametree":"Gout and arthritis",
+"htmlpage":"ENAS5195_12.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.9.0.0",
+"id":"51",
+"nametree":"Hypokalaemia and hyperkalaemia",
+"tocnametree":"Hypokalaemia and hyperkalaemia",
+"htmlpage":"ENAS5195_12.9.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.10.0.0",
+"id":"52",
+"nametree":"Hyperlipidaemia",
+"tocnametree":"Hyperlipidaemia",
+"htmlpage":"ENAS5195_12.10.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.11.0.0",
+"id":"53",
+"nametree":"Hypertension",
+"tocnametree":"Hypertension",
+"htmlpage":"ENAS5195_12.11.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.12.0.0",
+"id":"54",
+"nametree":"Iron deficiency and anaemia",
+"tocnametree":"Iron deficiency and anaemia",
+"htmlpage":"ENAS5195_12.12.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.13.0.0",
+"id":"55",
+"nametree":"Other co-morbidities",
+"tocnametree":"Other co-morbidities",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.13.1.0",
+"id":"56",
+"nametree":"Treatment recommendations",
+"tocnametree":"Treatment recommendations",
+"htmlpage":"ENAS5195_12.13.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.13.2.0",
+"id":"57",
+"nametree":"Treatments not recommended",
+"tocnametree":"Treatments not recommended",
+"htmlpage":"ENAS5195_12.13.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.14.0.0",
+"id":"58",
+"nametree":"Kidney dysfunction",
+"tocnametree":"Kidney dysfunction",
+"htmlpage":"ENAS5195_12.14.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.15.0.0",
+"id":"59",
+"nametree":"Lung disease",
+"tocnametree":"Lung disease",
+"htmlpage":"ENAS5195_12.15.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.16.0.0",
+"id":"60",
+"nametree":"Obesity",
+"tocnametree":"Obesity",
+"htmlpage":"ENAS5195_12.16.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.17.0.0",
+"id":"61",
+"nametree":"Sleep disturb. & sleep-disordered breathing",
+"tocnametree":"Sleep disturb. & sleep-disordered breathing",
+"htmlpage":"ENAS5195_12.17.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.18.0.0",
+"id":"62",
+"nametree":"Valvular heart disease",
+"tocnametree":"Valvular heart disease",
+"htmlpage":"ENAS5195_12.18.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.0.0.0",
+"id":"63",
+"nametree":"Acute heart failure",
+"tocnametree":"Acute heart failure",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.1.0.0",
+"id":"64",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5195_13.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.2.0.0",
+"id":"65",
+"nametree":"Factors triggering acute HF",
+"tocnametree":"Factors triggering acute HF",
+"htmlpage":"ENAS5195_13.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.3.0.0",
+"id":"66",
+"nametree":"Clinical profiles of acute HF patients",
+"tocnametree":"Clinical profiles of acute HF patients",
+"htmlpage":"ENAS5195_13.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.4.0.0",
+"id":"67",
+"nametree":"Diagnostic workup",
+"tocnametree":"Diagnostic workup",
+"htmlpage":"ENAS5195_13.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.5.0.0",
+"id":"68",
+"nametree":"Initial mgmt. of a patient with AHF",
+"tocnametree":"Initial mgmt. of a patient with AHF",
+"htmlpage":"ENAS5195_13.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.6.0.0",
+"id":"69",
+"nametree":"Applied diagnostic measurements",
+"tocnametree":"Applied diagnostic measurements",
+"htmlpage":"ENAS5195_13.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.7.0.0",
+"id":"70",
+"nametree":"Oxygen therapy and ventilatory support",
+"tocnametree":"Oxygen therapy and ventilatory support",
+"htmlpage":"ENAS5195_13.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.8.0.0",
+"id":"71",
+"nametree":"Management of patients with AHF",
+"tocnametree":"Management of patients with AHF",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.8.1.0",
+"id":"72",
+"nametree":"Management algorithm of AHF",
+"tocnametree":"Management algorithm of AHF",
+"htmlpage":"ENAS5195_13.8.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.8.2.0",
+"id":"73",
+"nametree":"Pharmacotherapy",
+"tocnametree":"Pharmacotherapy",
+"htmlpage":"ENAS5195_13.8.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.8.3.0",
+"id":"74",
+"nametree":"Renal replacement therapy",
+"tocnametree":"Renal replacement therapy",
+"htmlpage":"ENAS5195_13.8.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.8.4.0",
+"id":"75",
+"nametree":"Mgmt. of patients with cardiogenic shock",
+"tocnametree":"Mgmt. of patients with cardiogenic shock",
+"htmlpage":"ENAS5195_13.8.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.8.5.0",
+"id":"76",
+"nametree":"Oral disease-modifying therapies",
+"tocnametree":"Oral disease-modifying therapies",
+"htmlpage":"ENAS5195_13.8.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.8.6.0",
+"id":"77",
+"nametree":"Clinical monitoring of hospitalized pts.",
+"tocnametree":"Clinical monitoring of hospitalized pts.",
+"htmlpage":"ENAS5195_13.8.6.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.9.0.0",
+"id":"78",
+"nametree":"Criteria for discharge",
+"tocnametree":"Criteria for discharge",
+"htmlpage":"ENAS5195_13.9.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.10.0.0",
+"id":"79",
+"nametree":"Goals of treatment in AHF",
+"tocnametree":"Goals of treatment in AHF",
+"htmlpage":"ENAS5195_13.10.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.0.0.0",
+"id":"80",
+"nametree":"MCS and heart transplantation",
+"tocnametree":"MCS and heart transplantation",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.1.0.0",
+"id":"81",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5195_14.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.2.0.0",
+"id":"82",
+"nametree":"Pts. eligible for implantation of LVAD",
+"tocnametree":"Pts. eligible for implantation of LVAD",
+"htmlpage":"ENAS5195_14.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.3.0.0",
+"id":"83",
+"nametree":"Implantation of MCS in refractory HF",
+"tocnametree":"Implantation of MCS in refractory HF",
+"htmlpage":"ENAS5195_14.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.4.0.0",
+"id":"84",
+"nametree":"Heart transplantation",
+"tocnametree":"Heart transplantation",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.4.1.0",
+"id":"85",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5195_14.4.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.4.2.0",
+"id":"86",
+"nametree":"Indications and contra-indications",
+"tocnametree":"Indications and contra-indications",
+"htmlpage":"ENAS5195_14.4.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"16.0.0.0",
+"id":"87",
+"nametree":"Multidisciplinary team management",
+"tocnametree":"Multidisciplinary team management",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"16.1.0.0",
+"id":"88",
+"nametree":"Non-pharmac. non-device/surg. interven.",
+"tocnametree":"Non-pharmac. non-device/surg. interven.",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"16.1.1.0",
+"id":"89",
+"nametree":"Characteristics and components",
+"tocnametree":"Characteristics and components",
+"htmlpage":"ENAS5195_15.1.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"16.1.2.0",
+"id":"90",
+"nametree":"Exerercise, multidiscip. mgmt., & monitoring",
+"tocnametree":"Exerercise, multidiscip. mgmt., & monitoring",
+"htmlpage":"ENAS5195_15.1.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"16.1.3.0",
+"id":"91",
+"nametree":"Goal of management",
+"tocnametree":"Goal of management",
+"htmlpage":"ENAS5195_15.1.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"16.1.4.0",
+"id":"92",
+"nametree":"Monitoring and follow-up of older adult w/ HF",
+"tocnametree":"Monitoring and follow-up of older adult w/ HF",
+"htmlpage":"ENAS5195_15.1.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"16.2.0.0",
+"id":"93",
+"nametree":"Palliative care approaches",
+"tocnametree":"Palliative care approaches",
+"htmlpage":"ENAS5195_15.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"17.0.0.0",
+"id":"94",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS5195_16.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

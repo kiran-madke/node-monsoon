@@ -1,117 +1,117 @@
 {
   "level_0": {
-    "textSize": 16,
-    "textFontFamily": "helvetica",
+    "textSize": "15",
+    "textFontFamily": "Helvetica-condensed-Bold",
     "textColor": [
-      "#191717"
+      "#000000"
     ],
-    "textStyle": "bold",
+    "textStyle": "",
     "bgColor": [
-      "#C3C3C3"
+      "#cadee6"
     ],
     "itemDisabledColor": {
       "text": [
-        "#808080"
+        "#b2e0f9"
       ],
       "background": [
-        "#aeaeae"
+        "#EBEBEB"
       ]
     },
     "navigationBarColor": [
-      "#ae1022"
+      "#ffffff"
     ],
     "navigationBarTextColor": [
-      "#FFFFFF"
+      "#5391B7"
     ],
     "colorCode": "black",
     "sticker": {
       "color": [
-        "#bc1f4c"
+        "#b9d432"
       ],
       "enable": true,
-      "isLeft": false,
-      "isRight": true
-    },
-    "padding": {
-      "left": 4,
-      "right": 17
-    },
-    "dividerColor": [
-      "#FFFFFF"
-    ]
-  },
-  "level_1": {
-    "textSize": 15,
-    "textFontFamily": "helvetica",
-    "textColor": [
-      "#191717"
-    ],
-    "textStyle": "normal",
-    "bgColor": [
-      "#C3C3C3"
-    ],
-    "itemDisabledColor": {
-      "text": [
-        "#808080"
-      ],
-      "background": [
-        "#aeaeae"
-      ]
-    },
-    "navigationBarColor": [
-      "#C3C3C3"
-    ],
-    "navigationBarTextColor": [
-      "#191717"
-    ],
-    "colorCode": "black",
-    "sticker": {
-      "color": [
-        "#d8224d"
-      ],
-      "enable": false,
-      "isLeft": false,
+      "isLeft": true,
       "isRight": false
     },
     "padding": {
-      "left": 10,
+      "left": 5,
       "right": 0
     },
     "dividerColor": [
-      "#FFFFFF"
+      "#ffffff"
     ]
   },
-  "level_2": {
-    "textSize": 15,
-    "textFontFamily": "helvetica",
+  "level_1": {
+    "textSize": "15",
+    "textFontFamily": "Helvetica-condensed",
     "textColor": [
-      "#191717"
+      "#000000"
     ],
-    "textStyle": "normal",
+    "textStyle": "",
     "bgColor": [
-      "#cdcdce"
+      "#cadee6"
     ],
     "itemDisabledColor": {
       "text": [
-        "#808080"
+        "#b2e0f9"
       ],
       "background": [
-        "#aeaeae"
+        "#EBEBEB"
       ]
     },
     "navigationBarColor": [
-      "#cdcdce"
+      "#cadee6"
     ],
     "navigationBarTextColor": [
-      "#191717"
+      "#000000"
     ],
     "colorCode": "black",
     "sticker": {
       "color": [
-        "#000000"
+        "#b9d432"
       ],
       "enable": false,
-      "isLeft": false,
+      "isLeft": true,
+      "isRight": false
+    },
+    "padding": {
+      "left": 5,
+      "right": 0
+    },
+    "dividerColor": [
+      "#ffffff"
+    ]
+  },
+  "level_2": {
+    "textSize": "15",
+    "textFontFamily": "Helvetica-condensed",
+    "textColor": [
+      "#000000"
+    ],
+    "textStyle": "",
+    "bgColor": [
+      "#d7e6ec"
+    ],
+    "itemDisabledColor": {
+      "text": [
+        "#b2e0f9"
+      ],
+      "background": [
+        "#EBEBEB"
+      ]
+    },
+    "navigationBarColor": [
+      "#d7e6ec"
+    ],
+    "navigationBarTextColor": [
+      "#000000"
+    ],
+    "colorCode": "black",
+    "sticker": {
+      "color": [
+        "#b9d432"
+      ],
+      "enable": false,
+      "isLeft": true,
       "isRight": false
     },
     "padding": {
@@ -119,81 +119,40 @@
       "right": 0
     },
     "dividerColor": [
-      "#FFFFFF"
+      "#ffffff"
     ]
   },
   "level_3": {
-    "textSize": 15,
-    "textFontFamily": "helvetica",
+    "textSize": "15",
+    "textFontFamily": "Helvetica-condensed",
     "textColor": [
-      "#191717"
+      "#000000"
     ],
-    "textStyle": "normal",
+    "textStyle": "",
     "bgColor": [
-      "#d7d8d8"
+      "#e5eff3"
     ],
     "itemDisabledColor": {
       "text": [
-        "#808080"
+        "#b2e0f9"
       ],
       "background": [
-        "#aeaeae"
+        "#EBEBEB"
       ]
     },
     "navigationBarColor": [
-      "#d7d8d8"
+      "#e5eff3"
     ],
     "navigationBarTextColor": [
-      "#191717"
+      "#000000"
     ],
     "colorCode": "black",
     "sticker": {
       "color": [
-        "#000000"
+        "#b9d432"
       ],
       "enable": false,
-      "isLeft": false,
-      "isRight": false
-    },
-    "padding": {
-      "left": 20,
-      "right": 0
-    },
-    "dividerColor": [
-      "#FFFFFF"
-    ]
-  },
-  "level_4": {
-    "textSize": 15,
-    "textFontFamily": "helvetica",
-    "textColor": [
-      "#191717"
-    ],
-    "textStyle": "normal",
-    "bgColor": [
-      "#e1e2e3"
-    ],
-    "itemDisabledColor": {
-      "text": [
-        "#808080"
-      ],
-      "background": [
-        "#aeaeae"
-      ]
-    },
-    "navigationBarColor": [
-      "#e1e2e3"
-    ],
-    "navigationBarTextColor": [
-      "#191717"
-    ],
-    "colorCode": "black",
-    "sticker": {
-      "color": [
-        "#000000"
-      ],
-      "enable": false,
-      "isLeft": false,
+      "isLeft": true,
       "isRight": false
     },
     "padding": {
@@ -201,48 +160,89 @@
       "right": 0
     },
     "dividerColor": [
-      "#FFFFFF"
+      "#ffffff"
     ]
   },
-  "level_5": {
-    "textSize": 15,
-    "textFontFamily": "helvetica",
+  "level_4": {
+    "textSize": "15",
+    "textFontFamily": "Helvetica-condensed",
     "textColor": [
-      "#191717"
+      "#000000"
     ],
-    "textStyle": "normal",
+    "textStyle": "",
     "bgColor": [
-      "#ecedee"
+      "#f2f7f9"
     ],
     "itemDisabledColor": {
       "text": [
-        "#808080"
+        "#b2e0f9"
       ],
       "background": [
-        "#aeaeae"
+        "#EBEBEB"
       ]
     },
     "navigationBarColor": [
-      "#ecedee"
+      "#f2f7f9"
     ],
     "navigationBarTextColor": [
-      "#191717"
+      "#000000"
     ],
     "colorCode": "black",
     "sticker": {
       "color": [
-        "#000000"
+        "#b9d432"
       ],
       "enable": false,
-      "isLeft": false,
+      "isLeft": true,
       "isRight": false
     },
     "padding": {
-      "left": 30,
+      "left": 35,
       "right": 0
     },
     "dividerColor": [
-      "#FFFFFF"
+      "#ffffff"
+    ]
+  },
+  "level_5": {
+    "textSize": "15",
+    "textFontFamily": "Helvetica-condensed",
+    "textColor": [
+      "#000000"
+    ],
+    "textStyle": "",
+    "bgColor": [
+      "#f2f7f9"
+    ],
+    "itemDisabledColor": {
+      "text": [
+        "#b2e0f9"
+      ],
+      "background": [
+        "#EBEBEB"
+      ]
+    },
+    "navigationBarColor": [
+      "#f2f7f9"
+    ],
+    "navigationBarTextColor": [
+      "#000000"
+    ],
+    "colorCode": "black",
+    "sticker": {
+      "color": [
+        "#z"
+      ],
+      "enable": false,
+      "isLeft": true,
+      "isRight": false
+    },
+    "padding": {
+      "left": 45,
+      "right": 0
+    },
+    "dividerColor": [
+      "#ffffff"
     ]
   }
 }

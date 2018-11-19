@@ -1,0 +1,506 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5081_1.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Preamble",
+"tocnametree":"Preamble",
+"htmlpage":"ENAS5081_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.1.0.0",
+"id":"4",
+"nametree":"Principles",
+"tocnametree":"Principles",
+"htmlpage":"ENAS5081_3.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.0.0",
+"id":"5",
+"nametree":"New aspects",
+"tocnametree":"New aspects",
+"htmlpage":"ENAS5081_3.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"6",
+"nametree":"Definitions and classifications",
+"tocnametree":"Definitions and classifications",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"7",
+"nametree":"Definitions",
+"tocnametree":"Definitions",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.1.0",
+"id":"8",
+"nametree":"General definitions",
+"tocnametree":"General definitions",
+"htmlpage":"ENAS5081_4.1.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.2.0",
+"id":"9",
+"nametree":"Hemodynamic definitions of PH",
+"tocnametree":"Hemodynamic definitions of PH",
+"htmlpage":"ENAS5081_4.1.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.0.0",
+"id":"10",
+"nametree":"Classifications",
+"tocnametree":"Classifications",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.1.0",
+"id":"11",
+"nametree":"Clinical classification of PH",
+"tocnametree":"Clinical classification of PH",
+"htmlpage":"ENAS5081_4.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.2.0",
+"id":"12",
+"nametree":"Classification of PAH associated with CHD",
+"tocnametree":"Classification of PAH associated with CHD",
+"htmlpage":"ENAS5081_4.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"13",
+"nametree":"PH diagnosis",
+"tocnametree":"PH diagnosis",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"14",
+"nametree":"Clinical presentation",
+"tocnametree":"Clinical presentation",
+"htmlpage":"ENAS5081_5.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"15",
+"nametree":"Diagnostic investigations",
+"tocnametree":"Diagnostic investigations",
+"htmlpage":"ENAS5081_5.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.0.0",
+"id":"16",
+"nametree":"Echocardiographic probability of PH",
+"tocnametree":"Echocardiographic probability of PH",
+"htmlpage":"ENAS5081_5.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.0.0",
+"id":"17",
+"nametree":"Echocardiographic signs suggesting PH",
+"tocnametree":"Echocardiographic signs suggesting PH",
+"htmlpage":"ENAS5081_5.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.5.0.0",
+"id":"18",
+"nametree":"Diagnostic mgmt. acc. to echo. probability",
+"tocnametree":"Diagnostic mgmt. acc. to echo. probability",
+"htmlpage":"ENAS5081_5.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.6.0.0",
+"id":"19",
+"nametree":"RHC in PH",
+"tocnametree":"RHC in PH",
+"htmlpage":"ENAS5081_5.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.7.0.0",
+"id":"20",
+"nametree":"Vasoreactivity testing",
+"tocnametree":"Vasoreactivity testing",
+"htmlpage":"ENAS5081_5.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.8.0.0",
+"id":"21",
+"nametree":"PH diagnostic algorithm",
+"tocnametree":"PH diagnostic algorithm",
+"htmlpage":"ENAS5081_5.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.9.0.0",
+"id":"22",
+"nametree":"Diagnostic strategy",
+"tocnametree":"Diagnostic strategy",
+"htmlpage":"ENAS5081_5.9.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"23",
+"nametree":"PAH group 1",
+"tocnametree":"PAH group 1",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"24",
+"nametree":"Evaluation of severity",
+"tocnametree":"Evaluation of severity",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.1.0",
+"id":"25",
+"nametree":"Regular assessment of patients",
+"tocnametree":"Regular assessment of patients",
+"htmlpage":"ENAS5081_6.1.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.2.0",
+"id":"26",
+"nametree":"Risk assessment in PAH",
+"tocnametree":"Risk assessment in PAH",
+"htmlpage":"ENAS5081_6.1.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.3.0",
+"id":"27",
+"nametree":"Evaluation of severity and response to treat.",
+"tocnametree":"Evaluation of severity and response to treatment",
+"htmlpage":"ENAS5081_6.1.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"28",
+"nametree":"Therapy",
+"tocnametree":"Therapy",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.1.0",
+"id":"29",
+"nametree":"Treatment strategy",
+"tocnametree":"Treatment strategy",
+"htmlpage":"ENAS5081_6.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.2.0",
+"id":"30",
+"nametree":"General measures and supportive therapy",
+"tocnametree":"General measures and supportive therapy",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.2.1",
+"id":"31",
+"nametree":"General measures",
+"tocnametree":"General measures",
+"htmlpage":"ENAS5081_6.2.2.1",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.2.2",
+"id":"32",
+"nametree":"Supportive therapy",
+"tocnametree":"Supportive therapy",
+"htmlpage":"ENAS5081_6.2.2.2",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.3.0",
+"id":"33",
+"nametree":"Initial targeted therapy",
+"tocnametree":"Initial targeted therapy",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.3.1",
+"id":"34",
+"nametree":"CCB therapy",
+"tocnametree":"CCB therapy",
+"htmlpage":"ENAS5081_6.2.3.1",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.3.2",
+"id":"35",
+"nametree":"Drug monotherapy",
+"tocnametree":"Drug monotherapy",
+"htmlpage":"ENAS5081_6.2.3.2",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.3.3",
+"id":"36",
+"nametree":"Initial drug combination therapy",
+"tocnametree":"Initial drug combination therapy",
+"htmlpage":"ENAS5081_6.2.3.3",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.3.4",
+"id":"37",
+"nametree":"Sequential drug combination therapy",
+"tocnametree":"Sequential drug combination therapy",
+"htmlpage":"ENAS5081_6.2.3.4",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.4.0",
+"id":"38",
+"nametree":"Further treatment strategies",
+"tocnametree":"Further treatment strategies",
+"htmlpage":"ENAS5081_6.2.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.5.0",
+"id":"39",
+"nametree":"PAH treatment algorithm",
+"tocnametree":"PAH treatment algorithm",
+"htmlpage":"ENAS5081_6.2.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"40",
+"nametree":"Specific PAH subsets",
+"tocnametree":"Specific PAH subsets",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"41",
+"nametree":"Paediatric PAH",
+"tocnametree":"Paediatric PAH",
+"htmlpage":"ENAS5081_7.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.0.0",
+"id":"42",
+"nametree":"PAH associated with adult CHD",
+"tocnametree":"PAH associated with adult CHD",
+"htmlpage":"ENAS5081_7.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.0.0",
+"id":"43",
+"nametree":"PAH associated with CTD",
+"tocnametree":"PAH associated with CTD",
+"htmlpage":"ENAS5081_7.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.4.0.0",
+"id":"44",
+"nametree":"PAH associated with portal HTN",
+"tocnametree":"PAH associated with portal HTN",
+"htmlpage":"ENAS5081_7.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.5.0.0",
+"id":"45",
+"nametree":"PAH associated with HIV infection",
+"tocnametree":"PAH associated with HIV infection",
+"htmlpage":"ENAS5081_7.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.6.0.0",
+"id":"46",
+"nametree":"PVOD and PCH",
+"tocnametree":"PVOD and PCH",
+"htmlpage":"ENAS5081_7.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"47",
+"nametree":"PAH group 2 (due to left heart disease)",
+"tocnametree":"PAH group 2 (due to left heart disease)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.1.0.0",
+"id":"48",
+"nametree":"Key factors suggestive of group 2 PH",
+"tocnametree":"Key factors suggestive of group 2 PH",
+"htmlpage":"ENAS5081_8.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.2.0.0",
+"id":"49",
+"nametree":"Mgmt. of PH in left heart disease",
+"tocnametree":"Mgmt. of PH in left heart disease",
+"htmlpage":"ENAS5081_8.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"50",
+"nametree":"PAH group 3 (lung diseases/hypoxia)",
+"tocnametree":"PAH group 3 (due to lung diseases and/or hypoxia)",
+"htmlpage":"ENAS5081_9.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"51",
+"nametree":"PAH group 4.1. (CTEPH)",
+"tocnametree":"PAH group 4.1. (CTEPH)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.1.0.0",
+"id":"52",
+"nametree":"CTEPH diagnostic algorithm",
+"tocnametree":"CTEPH diagnostic algorithm",
+"htmlpage":"ENAS5081_10.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.2.0.0",
+"id":"53",
+"nametree":"CTEPH treatment algorithm",
+"tocnametree":"CTEPH treatment algorithm",
+"htmlpage":"ENAS5081_10.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.3.0.0",
+"id":"54",
+"nametree":"CTEPH strategy",
+"tocnametree":"CTEPH strategy",
+"htmlpage":"ENAS5081_10.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"55",
+"nametree":"Definition of a PH referral centre",
+"tocnametree":"Definition of a PH referral centre",
+"htmlpage":"ENAS5081_11.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.0.0.0",
+"id":"56",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS5081_12.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

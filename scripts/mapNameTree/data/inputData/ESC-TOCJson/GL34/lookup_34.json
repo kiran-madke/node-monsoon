@@ -1,0 +1,522 @@
+﻿[
+{
+"old_id":"1",
+"old_nametree":"Authors and legal information",
+"old_numtree":"1.0.0.0",
+"old_htmlpage":"ENAS5329_1.0.0.0",
+"new_id":"1",
+"new_nametree":"Authors and legal information",
+"new_numtree":"1.0.0.0",
+"new_htmlpage":"ENAS5329_1.0.0.0"
+},
+{
+"old_id":"2",
+"old_nametree":"Preamble",
+"old_numtree":"2.0.0.0",
+"old_htmlpage":"ENAS5329_2.0.0.0",
+"new_id":"2",
+"new_nametree":"Preamble",
+"new_numtree":"2.0.0.0",
+"new_htmlpage":"ENAS5329_2.0.0.0"
+},
+{
+"old_id":"3",
+"old_nametree":"Introduction",
+"old_numtree":"3.0.0.0",
+"old_htmlpage":"null",
+"new_id":"3",
+"new_nametree":"Introduction",
+"new_numtree":"3.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"4",
+"old_nametree":"Overview",
+"old_numtree":"3.1.0.0",
+"old_htmlpage":"ENAS5329_3.1.0.0",
+"new_id":"4",
+"new_nametree":"Overview",
+"new_numtree":"3.1.0.0",
+"new_htmlpage":"ENAS5329_3.1.0.0"
+},
+{
+"old_id":"5",
+"old_nametree":"Definition of acute MI",
+"old_numtree":"3.2.0.0",
+"old_htmlpage":"ENAS5329_3.2.0.0",
+"new_id":"5",
+"new_nametree":"Definition of acute MI",
+"new_numtree":"3.2.0.0",
+"new_htmlpage":"ENAS5329_3.2.0.0"
+},
+{
+"old_id":"6",
+"old_nametree":"Epidemiology of STEMI",
+"old_numtree":"3.3.0.0",
+"old_htmlpage":"ENAS5329_3.3.0.0",
+"new_id":"6",
+"new_nametree":"Epidemiology of STEMI",
+"new_numtree":"3.3.0.0",
+"new_htmlpage":"ENAS5329_3.3.0.0"
+},
+{
+"old_id":"7",
+"old_nametree":"What is new?",
+"old_numtree":"4.0.0.0",
+"old_htmlpage":"ENAS5329_4.0.0.0",
+"new_id":"7",
+"new_nametree":"What is new?",
+"new_numtree":"4.0.0.0",
+"new_htmlpage":"ENAS5329_4.0.0.0"
+},
+{
+"old_id":"8",
+"old_nametree":"Emergency care",
+"old_numtree":"5.0.0.0",
+"old_htmlpage":"null",
+"new_id":"8",
+"new_nametree":"Emergency care",
+"new_numtree":"5.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"9",
+"old_nametree":"Initial diagnosis",
+"old_numtree":"5.1.0.0",
+"old_htmlpage":"ENAS5329_5.1.0.0",
+"new_id":"9",
+"new_nametree":"Initial diagnosis",
+"new_numtree":"5.1.0.0",
+"new_htmlpage":"ENAS5329_5.1.0.0"
+},
+{
+"old_id":"10",
+"old_nametree":"Relief of pain, breathless. & anxiety",
+"old_numtree":"5.2.0.0",
+"old_htmlpage":"ENAS5329_5.2.0.0",
+"new_id":"10",
+"new_nametree":"Pain, breathlessness, & anxiety therapy",
+"new_numtree":"5.2.0.0",
+"new_htmlpage":"ENAS5329_5.2.0.0"
+},
+{
+"old_id":"11",
+"old_nametree":"Cardiac arrest",
+"old_numtree":"5.3.0.0",
+"old_htmlpage":"ENAS5329_5.3.0.0",
+"new_id":"11",
+"new_nametree":"Cardiac arrest",
+"new_numtree":"5.3.0.0",
+"new_htmlpage":"ENAS5329_5.3.0.0"
+},
+{
+"old_id":"12",
+"old_nametree":"Prehospital logistics of care",
+"old_numtree":"5.4.0.0",
+"old_htmlpage":"ENAS5329_5.4.0.0",
+"new_id":"12",
+"new_nametree":"Prehospital logistics of care",
+"new_numtree":"5.4.0.0",
+"new_htmlpage":"ENAS5329_5.4.0.0"
+},
+{
+"old_id":"13",
+"old_nametree":"Reperfusion therapy",
+"old_numtree":"6.0.0.0",
+"old_htmlpage":"null",
+"new_id":"13",
+"new_nametree":"Reperfusion therapy",
+"new_numtree":"6.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"14",
+"old_nametree":"Selection of reperfusion strategies",
+"old_numtree":"6.1.0.0",
+"old_htmlpage":"null",
+"new_id":"14",
+"new_nametree":"Selection of reperfusion strategies",
+"new_numtree":"6.1.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"15",
+"old_nametree":"Overview and definition of terms",
+"old_numtree":"6.1.1.0",
+"old_htmlpage":"ENAS5329_6.1.1.0",
+"new_id":"15",
+"new_nametree":"Overview and definition of terms",
+"new_numtree":"6.1.1.0",
+"new_htmlpage":"ENAS5329_6.1.1.0"
+},
+{
+"old_id":"16",
+"old_nametree":"Max. target times in EMS or non-PCI centre",
+"old_numtree":"6.1.2.0",
+"old_htmlpage":"ENAS5329_6.1.2.0",
+"new_id":"16",
+"new_nametree":"Max. target times in EMS or non-PCI centre",
+"new_numtree":"6.1.2.0",
+"new_htmlpage":"ENAS5329_6.1.2.0"
+},
+{
+"old_id":"17",
+"old_nametree":"In infarcted art. acc to time from symt. onset",
+"old_numtree":"6.1.3.0",
+"old_htmlpage":"ENAS5329_6.1.3.0",
+"new_id":"17",
+"new_nametree":"Strategy & time limits for IRA reperfusion",
+"new_numtree":"6.1.3.0",
+"new_htmlpage":"ENAS5329_6.1.3.0"
+},
+{
+"old_id":"18",
+"old_nametree":"Recommendations",
+"old_numtree":"6.1.4.0",
+"old_htmlpage":"ENAS5329_6.1.4.0",
+"new_id":"18",
+"new_nametree":"Recommendations for reperfusion therapy",
+"new_numtree":"6.1.4.0",
+"new_htmlpage":"ENAS5329_6.1.4.0"
+},
+{
+"old_id":"19",
+"old_nametree":"Patient present., isch. time and flowchart",
+"old_numtree":"6.1.5.0",
+"old_htmlpage":"ENAS5329_6.1.5.0",
+"new_id":"19",
+"new_nametree":"Presentation mode & reperfusion strategy",
+"new_numtree":"6.1.5.0",
+"new_htmlpage":"ENAS5329_6.1.5.0"
+},
+{
+"old_id":"20",
+"old_nametree":"Summary of important time targets",
+"old_numtree":"6.1.6.0",
+"old_htmlpage":"ENAS5329_6.1.6.0",
+"new_id":"20",
+"new_nametree":"Summary of important time targets",
+"new_numtree":"6.1.6.0",
+"new_htmlpage":"ENAS5329_6.1.6.0"
+},
+{
+"old_id":"21",
+"old_nametree":"Primary PCI and adjunctive therapy",
+"old_numtree":"6.2.0.0",
+"old_htmlpage":"null",
+"new_id":"21",
+"new_nametree":"Primary PCI and adjunctive therapy",
+"new_numtree":"6.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"22",
+"old_nametree":"Procedural aspects",
+"old_numtree":"6.2.1.0",
+"old_htmlpage":"ENAS5329_6.2.1.0",
+"new_id":"22",
+"new_nametree":"Procedural aspects: primary PCI strategy",
+"new_numtree":"6.2.1.0",
+"new_htmlpage":"ENAS5329_6.2.1.0"
+},
+{
+"old_id":"23",
+"old_nametree":"Peri- & postprocedural antithrombotic Tx",
+"old_numtree":"6.2.2.0",
+"old_htmlpage":"ENAS5329_6.2.2.0",
+"new_id":"23",
+"new_nametree":"Peri & post-PCI antithrombotic therapy",
+"new_numtree":"6.2.2.0",
+"new_htmlpage":"ENAS5329_6.2.2.0"
+},
+{
+"old_id":"24",
+"old_nametree":"Doses of antiplatelet & anticoag. co-therapies",
+"old_numtree":"6.2.3.0",
+"old_htmlpage":"ENAS5329_6.2.3.0",
+"new_id":"24",
+"new_nametree":"Antithrombotics doses in primary PCI",
+"new_numtree":"6.2.3.0",
+"new_htmlpage":"ENAS5329_6.2.3.0"
+},
+{
+"old_id":"25",
+"old_nametree":"Fibrinolysis & pharmacoinva. Strateg.",
+"old_numtree":"6.3.0.0",
+"old_htmlpage":"null",
+"new_id":"25",
+"new_nametree":"Fibrinolysis & pharmacoinva. strateg.",
+"new_numtree":"6.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"26",
+"old_nametree":"Overview & recommendations",
+"old_numtree":"6.3.1.0",
+"old_htmlpage":"ENAS5329_6.3.1.0",
+"new_id":"26",
+"new_nametree":"Overview & recommendations",
+"new_numtree":"6.3.1.0",
+"new_htmlpage":"ENAS5329_6.3.1.0"
+},
+{
+"old_id":"27",
+"old_nametree":"Doses of co-therapies",
+"old_numtree":"6.3.2.0",
+"old_htmlpage":"ENAS5329_6.3.2.0",
+"new_id":"27",
+"new_nametree":"Doses of agents at fibrinolysis",
+"new_numtree":"6.3.2.0",
+"new_htmlpage":"ENAS5329_6.3.2.0"
+},
+{
+"old_id":"28",
+"old_nametree":"Contra-indications to fibrinolytic therapy",
+"old_numtree":"6.3.3.0",
+"old_htmlpage":"ENAS5329_6.3.3.0",
+"new_id":"28",
+"new_nametree":"Contra-indications to fibrinolytic therapy",
+"new_numtree":"6.3.3.0",
+"new_htmlpage":"ENAS5329_6.3.3.0"
+},
+{
+"old_id":"29",
+"old_nametree":"Coronary bypass surgery",
+"old_numtree":"6.4.0.0",
+"old_htmlpage":"ENAS5329_6.4.0.0",
+"new_id":"29",
+"new_nametree":"Coronary bypass surgery",
+"new_numtree":"6.4.0.0",
+"new_htmlpage":"ENAS5329_6.4.0.0"
+},
+{
+"old_id":"30",
+"old_nametree":"Mgmt during hospitaliz. & at discharge",
+"old_numtree":"7.0.0.0",
+"old_htmlpage":"null",
+"new_id":"30",
+"new_nametree":"Mgmt during hospitaliz. & at discharge",
+"new_numtree":"7.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"31",
+"old_nametree":"General recommendations",
+"old_numtree":"7.1.0.0",
+"old_htmlpage":"ENAS5329_7.1.0.0",
+"new_id":"31",
+"new_nametree":"General recommendations",
+"new_numtree":"7.1.0.0",
+"new_htmlpage":"ENAS5329_7.1.0.0"
+},
+{
+"old_id":"32",
+"old_nametree":"Special patient subsets",
+"old_numtree":"7.2.0.0",
+"old_htmlpage":"null",
+"new_id":"32",
+"new_nametree":"Special patient subsets",
+"new_numtree":"7.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"33",
+"old_nametree":"Patients taking oral anticoagulation",
+"old_numtree":"7.2.1.0",
+"old_htmlpage":"ENAS5329_7.2.1.0",
+"new_id":"33",
+"new_nametree":"Patients taking oral anticoagulation",
+"new_numtree":"7.2.1.0",
+"new_htmlpage":"ENAS5329_7.2.1.0"
+},
+{
+"old_id":"34",
+"old_nametree":"Elderly patients",
+"old_numtree":"7.2.2.0",
+"old_htmlpage":"ENAS5329_7.2.2.0",
+"new_id":"34",
+"new_nametree":"Elderly patients",
+"new_numtree":"7.2.2.0",
+"new_htmlpage":"ENAS5329_7.2.2.0"
+},
+{
+"old_id":"35",
+"old_nametree":"Renal dysfunction",
+"old_numtree":"7.2.3.0",
+"old_htmlpage":"ENAS5329_7.2.3.0",
+"new_id":"35",
+"new_nametree":"Renal dysfunction",
+"new_numtree":"7.2.3.0",
+"new_htmlpage":"ENAS5329_7.2.3.0"
+},
+{
+"old_id":"36",
+"old_nametree":"Management of hyperglycaemia",
+"old_numtree":"7.2.4.0",
+"old_htmlpage":"ENAS5329_7.2.4.0",
+"new_id":"36",
+"new_nametree":"Management of hyperglycaemia",
+"new_numtree":"7.2.4.0",
+"new_htmlpage":"ENAS5329_7.2.4.0"
+},
+{
+"old_id":"37",
+"old_nametree":"Risk assessment",
+"old_numtree":"7.3.0.0",
+"old_htmlpage":"null",
+"new_id":"37",
+"new_nametree":"Risk assessment",
+"new_numtree":"7.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"38",
+"old_nametree":"Clinical risk assessment",
+"old_numtree":"7.3.1.0",
+"old_htmlpage":"ENAS5329_7.3.1.0",
+"new_id":"38",
+"new_nametree":"Clinical risk assessment",
+"new_numtree":"7.3.1.0",
+"new_htmlpage":"ENAS5329_7.3.1.0"
+},
+{
+"old_id":"39",
+"old_nametree":"Non-invasive imaging in mgmt & risk stratif.",
+"old_numtree":"7.3.2.0",
+"old_htmlpage":"ENAS5329_7.3.2.0",
+"new_id":"39",
+"new_nametree":"Non-invasive imaging in mgmt & risk stratif.",
+"new_numtree":"7.3.2.0",
+"new_htmlpage":"ENAS5329_7.3.2.0"
+},
+{
+"old_id":"40",
+"old_nametree":"Long-term therapies for STEMI",
+"old_numtree":"8.0.0.0",
+"old_htmlpage":"null",
+"new_id":"40",
+"new_nametree":"Long-term therapies for STEMI",
+"new_numtree":"8.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"41",
+"old_nametree":"Lifestyle interventions and risk factor control",
+"old_numtree":"8.1.0.0",
+"old_htmlpage":"ENAS5329_8.1.0.0",
+"new_id":"41",
+"new_nametree":"Lifestyle interventions and risk factor control",
+"new_numtree":"8.1.0.0",
+"new_htmlpage":"ENAS5329_8.1.0.0"
+},
+{
+"old_id":"42",
+"old_nametree":"Pharmacological interventions",
+"old_numtree":"8.2.0.0",
+"old_htmlpage":"ENAS5329_8.2.0.0",
+"new_id":"42",
+"new_nametree":"Pharmacological interventions",
+"new_numtree":"8.2.0.0",
+"new_htmlpage":"ENAS5329_8.2.0.0"
+},
+{
+"old_id":"43",
+"old_nametree":"Tx: acute, subacute & long-term phases",
+"old_numtree":"8.3.0.0",
+"old_htmlpage":"ENAS5329_8.3.0.0",
+"new_id":"43",
+"new_nametree":"Acute & long term routine therapies",
+"new_numtree":"8.3.0.0",
+"new_htmlpage":"ENAS5329_8.3.0.0"
+},
+{
+"old_id":"44",
+"old_nametree":"“Do not forget”: in primary PCI strategy",
+"old_numtree":"8.4.0.0",
+"old_htmlpage":"ENAS5329_8.4.0.0",
+"new_id":"44",
+"new_nametree":"“Do not forget”: in primary PCI strategy",
+"new_numtree":"8.4.0.0",
+"new_htmlpage":"ENAS5329_8.4.0.0"
+},
+{
+"old_id":"45",
+"old_nametree":"“Do not forget”: in successful fibrinolysis",
+"old_numtree":"8.5.0.0",
+"old_htmlpage":"ENAS5329_8.5.0.0",
+"new_id":"45",
+"new_nametree":"“Do not forget”: in successful fibrinolysis",
+"new_numtree":"8.5.0.0",
+"new_htmlpage":"ENAS5329_8.5.0.0"
+},
+{
+"old_id":"46",
+"old_nametree":"Complications following STEMI",
+"old_numtree":"9.0.0.0",
+"old_htmlpage":"null",
+"new_id":"46",
+"new_nametree":"Complications following STEMI",
+"new_numtree":"9.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"47",
+"old_nametree":"Mgmt. of LV dysfun. and acute HF",
+"old_numtree":"9.1.0.0",
+"old_htmlpage":"ENAS5329_9.1.0.0",
+"new_id":"47",
+"new_nametree":"LV dysfunction and acute heart failure",
+"new_numtree":"9.1.0.0",
+"new_htmlpage":"ENAS5329_9.1.0.0"
+},
+{
+"old_id":"48",
+"old_nametree":"Mgmt. of cardiogenic shock",
+"old_numtree":"9.2.0.0",
+"old_htmlpage":"ENAS5329_9.2.0.0",
+"new_id":"48",
+"new_nametree":"Cardiogenic shock",
+"new_numtree":"9.2.0.0",
+"new_htmlpage":"ENAS5329_9.2.0.0"
+},
+{
+"old_id":"49",
+"old_nametree":"Arrhyth. & conduction disturb.: acute phase",
+"old_numtree":"9.3.0.0",
+"old_htmlpage":"ENAS5329_9.3.0.0",
+"new_id":"49",
+"new_nametree":"Arrhythmias in the acute phase of STEMI",
+"new_numtree":"9.3.0.0",
+"new_htmlpage":"ENAS5329_9.3.0.0"
+},
+{
+"old_id":"50",
+"old_nametree":"MINOCA",
+"old_numtree":"10.0.0.0",
+"old_htmlpage":"ENAS5329_10.0.0.0",
+"new_id":"50",
+"new_nametree":"MINOCA",
+"new_numtree":"10.0.0.0",
+"new_htmlpage":"ENAS5329_10.0.0.0"
+},
+{
+"old_id":"51",
+"old_nametree":"Assessment of quality of care",
+"old_numtree":"11.0.0.0",
+"old_htmlpage":"ENAS5329_11.0.0.0",
+"new_id":"51",
+"new_nametree":"Assessment of quality of care",
+"new_numtree":"11.0.0.0",
+"new_htmlpage":"ENAS5329_11.0.0.0"
+},
+{
+"old_id":"52",
+"old_nametree":"Abbreviations and acronym",
+"old_numtree":"12.0.0.0",
+"old_htmlpage":"ENAS5329_12.0.0.0",
+"new_id":"52",
+"new_nametree":"Abbreviations and acronym",
+"new_numtree":"12.0.0.0",
+"new_htmlpage":"ENAS5329_12.0.0.0"
+}
+]

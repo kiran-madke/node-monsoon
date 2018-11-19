@@ -1,0 +1,486 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="calci_std.css">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery-algoPlugin.js"></script>
+    <script src="algoFunctions.js"></script>
+	<link rel="stylesheet" type="text/css" href="pop-example.css">
+    <script>
+        $(document).ready(function() {
+            $("#ref_button").click(function() {
+
+                var t = $('#reference').css('display');
+
+                if (t == 'none') {
+                    $('#reference').css('display', "block");
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                } else {
+                    $('#reference').css('display', "none");
+                    t = block;
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                }
+
+            });
+
+            $("#reset").click(function() {
+                //$(".points").hide("slow");
+                $(".result_table").hide("slow");
+                //$("#reftext").hide("slow");
+                $("#reference").hide("slow");
+                totalscore = 0;
+                for (var x = 0; x < isBoxPressed.length; x++) {
+                    isBoxPressed[x] = "false";
+                }
+                isResetPressed = "false";
+
+                for (var x = 1; x < box.length; x++) {
+                    $("#" + box[x]).hide();
+                }
+
+                $("#total_points").text(totalscore);
+                $("#reset_text").text("Reset");
+                $("#reset").css({
+                    "-webkit-border-bottom-right-radius": "7px",
+                    "-webkit-border-bottom-left-radius": "7px"
+                });
+
+                for (var i = 0; i < boxArray.length; i++) {
+                    for (var j = 0; j < boxArray[i].length; j++) {
+                        $("#" + boxArray[i][j]).slideDown("fast");
+                    }
+                }
+
+                $(".list_middle").css({
+                    "-webkit-border-bottom-right-radius": "0px",
+                    "-webkit-border-bottom-left-radius": "0px"
+                });
+            });
+        });
+		function showModal(message) {
+     // get the modal
+     var modal = document.getElementById("modal");
+     modal.style.display = "block";
+
+     document.getElementById("text").innerHTML = message;
+
+     var modalButton = document.getElementById("modalButton");
+     modalButton.onclick = function() {
+         modal.style.display = "none";
+     }
+
+     window.onclick = function(event) {
+         if (event.target === modal) {
+             modal.style.display = "none";
+         }
+     }
+ } 
+    </script>
+    <STYLE TYPE="text/css">
+        /* iPhone Portrait */
+        
+        @media screen and (max-device-width: 320px) and (orientation:portrait) {
+            #trans_bgImage {
+                margin-top: -240px;
+                height: 600px;
+            }
+            #Std_popUpImage {
+                position: absolute;
+                margin-left: 20px;
+                margin-top: -410px;
+                width: 90%
+            }
+            #divPopupText {
+                line-height: 1.5em;
+                position: absolute;
+                margin-left: 5px;
+                margin-top: -410px;
+                color: #FFFFFF;
+            }
+            #okBtnImage {
+                position: absolute;
+                margin-left: 26px;
+                margin-top: -340px;
+                width: 86%;
+            }
+        }
+        
+        @media screen and (max-device-width: 480px) and (orientation:landscape) {
+            #trans_bgImage {
+                margin-top: 0px;
+            }
+            #Std_popUpImage {
+                position: absolute;
+                align: center;
+                margin-left: 130px;
+                margin-top: -290px;
+                width: 55%;
+            }
+            #divPopupText {
+                line-height: 1.5em;
+                position: absolute;
+                margin-left: 220px;
+                margin-top: -280px;
+                color: #FFFFFF;
+            }
+            #okBtnImage {
+                position: absolute;
+                margin-left: 137px;
+                margin-top: -228px;
+                width: 52%;
+            }
+            #AnimatePopup {
+                margin: 0px 0px 0px 0px;
+            }
+        }
+    </STYLE>
+
+
+    <script type="text/javascript">
+        var count = 0;
+        var old = 0;
+        window.onload = function() {
+            document.getElementById("drop").selectedIndex = 0;
+            document.getElementById("ChangeUnit_text").innerHTML = "mg/dL";
+        }
+
+      /*  function showModal(mgs) {
+            // custom alert without title bar
+            // as per new standard -> Pravin
+            var iframe = document.createElement("IFRAME");
+            iframe.setAttribute("src", 'data:text/plain,');
+            document.documentElement.appendChild(iframe);
+            window.frames[0].window.alert(mgs);
+            iframe.parentNode.removeChild(iframe);
+        }*/
+
+        function CalUnitConverter() {
+
+
+            var x1 = document.getElementById("drop").selectedIndex;
+            var unit = parseFloat(document.frm.unit.value);
+            var lk = document.frm.unit.value;
+
+			if(document.getElementById("unit").value!=0)
+			{
+			activeResultStyle();
+			
+			}
+			
+			else
+			{
+			deactiveResultStyle();
+			}
+
+
+
+            if ((unit > 999) || (lk.length - lk.indexOf(".") > 3 && lk.indexOf(".") != -1)) {
+
+
+                if ((unit > 999)) {
+
+                    if (window.orientation == 0 || window.orientation == 180) {
+                        showModal("Sorry! Not a valid range");
+                        //  document.getElementById("ShowMyCustomPop").style.display="inline";
+                        //document.getElementById("errmgs").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry! Not a valid range";
+                    } else {
+                        showModal("Sorry! Not a valid range");
+                        //document.getElementById("ShowMyCustomPopLandscape").style.display="inline";
+                        //document.getElementById("errmgs1").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry! Not a valid range";
+                   
+					}
+                    document.frm.DisplayAnswer.value = "";
+                    document.frm.unit.value = "";
+					
+
+                } else {
+                    stringtemp = document.frm.unit.value;
+                    document.frm.unit.value = stringtemp.substr(0, (stringtemp.length - 1));
+                }
+
+                document.getElementById('unit').blur();
+                stringtemp = document.frm.unit.value;
+
+                // document.frm.DisplayAnswer.value="";
+
+            } else {
+
+                if (x1 == 0) {
+                    //var answer=unit*18.01801801801802;38.66976
+                    var answer = unit * 38.61;
+                    answer = Math.round(answer * 100) / 100;
+
+
+                    document.getElementById("DisplayAnswer").value = answer;
+                } else if (x1 == 1) {
+                    //var answer=unit*0.0555;0.02586
+                    var answer = unit * 0.0259;
+                    answer = Math.round(answer * 100) / 100;
+
+
+                    document.getElementById("DisplayAnswer").value = answer;
+                }
+
+            }
+        }
+
+        function hidePopup() {
+            document.getElementById("ShowMyCustomPop").style.display = "none";
+            document.getElementById("ShowMyCustomPopLandscape").style.display = "none";
+        }
+
+        function ChangeUnit() {
+            var x1 = document.getElementById("drop").selectedIndex;
+            if (x1 == 0) {
+                document.getElementById("ChangeUnit_text").innerHTML = "mg/dL";
+            } else {
+                document.getElementById("ChangeUnit_text").innerHTML = "mmol/L";
+            }
+
+
+            CalUnitConverter();
+
+        }
+
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            //alert(charCode);
+            if (charCode == 46) {
+                return true;
+            } else if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        $(function() {
+
+
+
+            $('input').on('keyup', function(e) {
+
+
+                if (e.keyCode == 188) {
+
+                    frm.DisplayAnswer.value = "";
+
+                    //document.getElementById("errmgs").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry, please use a period instead <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of a comma as a decimal point.";
+                    //document.getElementById("errmgs1").innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry, please use a period instead <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of a comma as a decimal point.";
+
+                    showModal("Sorry, please use a period instead of a comma as a decimal point.");
+
+                    this.value = "";
+
+
+
+
+
+
+                }
+            });
+        });
+
+        function cssChange() {
+
+            document.getElementById("ShowMyCustomPopLandscape").style.display = "none";
+            document.getElementById("ShowMyCustomPop").style.display = "none";
+
+        }
+		
+		/*Active deactive results*/
+			function activeResultStyle()
+						{
+						//alert("done");
+						var classValue = document.getElementsByClassName("output_name_disabled");
+						
+						for(var i = 0; i  < classValue.length; i+1)
+						{
+						//alert("done");
+						classValue[i].classList.add("output_name");
+						classValue[i].classList.remove("output_name_disabled");
+						}
+						
+						var outputClass = document.getElementsByClassName("output_disabled");
+						for(var j = 0; j  < outputClass.length; j+1)
+						{
+						//alert("done");
+						outputClass[j].classList.add("output");
+						outputClass[j].classList.remove("output_disabled");
+						}
+						
+						var textareaOutputClass = document.getElementsByClassName("text-area-output-disabled");
+						for(var k = 0; k  <textareaOutputClass.length; k+1)
+						{
+						//alert("done");
+						textareaOutputClass[k].classList.add("text-area-output");
+						textareaOutputClass[k].classList.remove("text-area-output-disabled");
+						}
+						
+						var unitOutputClass = document.getElementsByClassName("unit_label_output_disabled");
+						for(var l = 0; l  < unitOutputClass.length; l+1)
+						{
+						//alert("done");
+						unitOutputClass[l].classList.add("unit_label_output");
+						unitOutputClass[l].classList.remove("unit_label_output_disabled");
+						}
+						
+						var activityOutput = document.getElementsByClassName("activity_output_disabled");
+						for(var act1 = 0; act1  < activityOutput.length; act1+1)
+						{
+						//alert("done");
+						activityOutput[act1].classList.add("activity_output");
+						activityOutput[act1].classList.remove("activity_output_disabled");
+						}
+						
+						var activityTextOutput = document.getElementsByClassName("activity-text-area-output-disabled");
+						for(var act2 = 0; act2  < activityTextOutput.length; act2+1)
+						{
+						//alert("done");
+						activityTextOutput[act2].classList.add("activity-text-area-output");
+						activityTextOutput[act2].classList.remove("activity-text-area-output-disabled");
+						}
+						
+								
+						}
+                        
+                       function deactiveResultStyle()
+						{
+						//alert("done");
+						var classValue = document.getElementsByClassName("output_name");
+						for(var i = 0; i  < classValue.length; i+1)
+						{
+						//alert("done");
+						classValue[i].classList.add("output_name_disabled");
+						classValue[i].classList.remove("output_name");
+						}
+						
+						var outputClass = document.getElementsByClassName("output");
+						for(var j = 0; j  < outputClass.length; j+1)
+						{
+						//alert("done");
+						outputClass[j].classList.add("output_disabled");
+						outputClass[j].classList.remove("output");
+						}
+						
+						var textareaOutputClass = document.getElementsByClassName("text-area-output");
+						for(var k = 0; k  < textareaOutputClass.length; k+1)
+						{
+						//alert("done");
+						textareaOutputClass[k].classList.add("text-area-output-disabled");
+						textareaOutputClass[k].classList.remove("text-area-output");
+						}
+						
+						var unitOutputClass = document.getElementsByClassName("unit_label_output");
+						for(var l = 0; l  < unitOutputClass.length; l+1)
+						{
+						//alert("done");
+						unitOutputClass[l].classList.add("unit_label_output_disabled");
+						unitOutputClass[l].classList.remove("unit_label_output");
+						}
+						
+						
+						var activityOutput = document.getElementsByClassName("activity_output");
+						for(var act1 = 0; act1  < activityOutput.length; act1+1)
+						{
+						//alert("done");
+						activityOutput[act1].classList.add("activity_output_disabled");
+						activityOutput[act1].classList.remove("activity_output");
+						}
+						
+						var activityTextOutput = document.getElementsByClassName("activity-text-area-output");
+						for(var act2 = 0; act2  < activityTextOutput.length; act2+1)
+						{
+						//alert("done");
+						activityTextOutput[act2].classList.add("activity-text-area-output-disabled");
+						activityTextOutput[act2].classList.remove("activity-text-area-output");
+						}
+								
+						}
+    </script>
+
+
+</head>
+
+
+<body onload="onLoad()">
+    <form name="frm">
+        <div class="table_container">
+            <table class="input_table">
+                <colgroup>
+                    <col width="30%">
+                    <col width="40%">
+                    <col width="30%">
+                </colgroup>
+				<tbody>
+				<tr><td colspan="3"></td></tr>
+                <tr>
+                    <td colspan="1" class="input_name">Cholesterol value of</td>
+                    <td colspan="1">
+                        <input type="number" class="input" id="unit" name="unit" onkeyup="CalUnitConverter();" onkeypress="return isNumber(event)">
+                    </td>
+                    <td colspan="1">
+                        <select class="drop_unit" id="drop" onChange="ChangeUnit();">
+                            <option value="1" selected="selected">mmol/L</option>
+                            <option value="2">mg/dL</option>
+                        </select>
+                    </td>
+                </tr>
+				</tbody>
+            </table>
+        </div>
+        <div class="table_container">
+            <table class="output_table">
+                <colgroup>
+                    <col width="35%">
+                    <col width="45%">
+                    <col width="20%">
+                </colgroup>
+                <tr>
+                    <td class="output_name_disabled" colspan="3">is approx. equivalent to</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="number" class="output_disabled" id="DisplayAnswer" name="DisplayAnswer" readonly="readonly">
+                    </td>
+                    <td class="unit_label_output_disabled"><span id="ChangeUnit_text">mg/dL</span></td>
+                </tr>
+            </table>
+            <br/>
+            <div class="footer-div" id="998">
+                <table class="footer-button-table">
+				 <colgroup>
+		    	<col width="50%">
+		    	<col width="50%">
+		    </colgroup>
+			<tbody>
+                    <tr>
+                        <td class="footer-button" colspan="2" style="width: 50%;"><button class="mfooter-button" id="resetButton">Reset</button></td>
+                        
+                    </tr>
+					</tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+	   <div id="modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p class="modal-text" id="text">This is text of modal</p>
+                <p class="modal-button" id="modalButton">OK</p>
+            </div>
+        </div>      
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "PT patient",
+        "text_id": "",
+        "id": "sum1",
+        "unit": "sec",
+        "unitId":"",
+        "type":"input"
+    },
+    {
+        "text": "PT normal",
+        "text_id": "",
+        "id": "sum2",
+        "unit": "sec",
+        "unitId":"",
+        "type":"input"
+    },
+    {
+        "text": "ISI",
+        "text_id": "",
+        "id": "sum3",
+        "unit": "",
+        "unitId":"",
+        "type":"input"
+    }
+    ],
+"output":[
+	{
+        "text": "Result",
+        "id": "result",
+        "unit": "",
+        "unitId":"",
+        "type":"input"
+    }
+]
+}

@@ -1,0 +1,382 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="calci_std.css">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+    <script src="jquery-1.9.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#ref_button").click(function() {
+
+                var t = $('#reference').css('display');
+
+                if (t == 'none') {
+                    $('#reference').css('display', "block");
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                } else {
+                    $('#reference').css('display', "none");
+                    t = block;
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                }
+
+            });
+
+            $("#reset").click(function() {
+                //$(".points").hide("slow");
+                $(".result_table").hide("slow");
+                //$("#reftext").hide("slow");
+                $("#reference").hide("slow");
+                totalscore = 0;
+                for (var x = 0; x < isBoxPressed.length; x++) {
+                    isBoxPressed[x] = "false";
+                }
+                isResetPressed = "false";
+
+                for (var x = 1; x < box.length; x++) {
+                    $("#" + box[x]).hide();
+                }
+
+                $("#total_points").text(totalscore);
+                $("#reset_text").text("Reset");
+                $("#reset").css({
+                    "-webkit-border-bottom-right-radius": "7px",
+                    "-webkit-border-bottom-left-radius": "7px"
+                });
+
+                for (var i = 0; i < boxArray.length; i++) {
+                    for (var j = 0; j < boxArray[i].length; j++) {
+                        $("#" + boxArray[i][j]).slideDown("fast");
+                    }
+                }
+
+                $(".list_middle").css({
+                    "-webkit-border-bottom-right-radius": "0px",
+                    "-webkit-border-bottom-left-radius": "0px"
+                });
+            });
+        });
+    </script>
+
+    <script type="text/JavaScript">
+
+
+        /*if(screen.width
+        < 768) { changeCSS( 'calci_bb.css',0); } else { changeCSS( 'calci_ipad_bb.css',0); }*/ function changeCSS(cssFile, cssLinkIndex) { var oldlink=d ocument.getElementsByTagName( "link").item(cssLinkIndex); var newlink=d ocument.createElement( "link"); newlink.setAttribute(
+            "rel", "stylesheet"); newlink.setAttribute( "type", "text/css"); newlink.setAttribute( "href", cssFile); document.getElementsByTagName( "head").item(0).replaceChild(newlink, oldlink); } </script>
+
+
+            <script type="text/javascript">
+                function valcal() {
+                    var q1 = fm.gc.value;
+                    var w1 = parseInt(q1);
+
+					if(document.getElementById("gc").selectedIndex!=0)
+					{
+					activeResultStyle();
+					}
+			
+					else
+					{
+					deactiveResultStyle();
+					}
+					
+					
+                    if (w1 == 1) {
+
+                        document.getElementById("sum_1").innerHTML = "Aspirin or NSAID + colchicine + exercise restriction";
+                        document.getElementById("sum_2").innerHTML = "Low-dose corticosteroids <br/>(in case of contra-indications to aspirin/NSAID/colchicine and after exclusion of infectious cause)";
+                        document.getElementById("sum_3").innerHTML = "-";
+                        document.getElementById("sum_4").innerHTML = "-";
+
+
+
+                    }
+
+                    if (w1 == 2) {
+                        document.getElementById("sum_1").innerHTML = "Aspirin or NSAID + colchicine + exercise restriction";
+                        document.getElementById("sum_2").innerHTML = "Low-dose corticosteroids <br/>(in case of contra-indications to aspirin/NSAID/colchicine and after exclusion of infectious cause)";
+                        document.getElementById("sum_3").innerHTML = "i.v. immunoglobulin or anakinra or azathioprine<sup>a</sup>";
+                        document.getElementById("sum_4").innerHTML = "Pericardiectomy";
+
+                    }
+
+                    /*                  if(w1==3)
+                {
+             
+                         fm.sum_1.value="Thiazide diuretics, calcium antagonists";
+                         fm.sum_2.value="-";
+                         fm.sum_3.value="Beta-blockers, other antihypertensives";
+                         fm.sum_4.value="ACE-inhibitors";
+
+                  }
+                                   if(w1==4)
+                {
+             
+                         fm.sum_1.value="Angiotensin-receptor blockers, thiazide diuretics, ACE-inhibitors";
+                         fm.sum_2.value="-";
+                         fm.sum_3.value="Beta-blockers, other antihypertensives";
+                         fm.sum_4.value="-";
+
+                  }
+              
+                             if(w1==5)
+                {
+             
+                         fm.sum_1.value="Thiazide diuretics, calcium antagonists";
+                         fm.sum_2.value="-";
+                         fm.sum_3.value="Beta-blockers, other antihypertensives";
+                         fm.sum_4.value="Angiotensin-receptor blockers";
+                  }
+                                
+                             if(w1==6)
+                {
+             
+                         fm.sum_1.value="-";
+                         fm.sum_2.value="-";
+                         fm.sum_3.value="Thiazide diuretics, beta-blockers, Angiotensin-receptor blockers, calcium antagonists, ACE-inhibitors";
+                         fm.sum_4.value="-";
+                  }*/
+                }
+
+                $(function() {
+                    $('label').bind('click', function() {
+                        $(input, this).click();
+                        return false;
+                    });
+                });
+				
+				function activeResultStyle()
+						{
+						//alert("done");
+						var classValue = document.getElementsByClassName("output_name_disabled");
+						
+						for(var i = 0; i  < classValue.length; i+1)
+						{
+						//alert("done");
+						classValue[i].classList.add("output_name");
+						classValue[i].classList.remove("output_name_disabled");
+						}
+						
+						var outputClass = document.getElementsByClassName("output_disabled");
+						for(var j = 0; j  < outputClass.length; j+1)
+						{
+						//alert("done");
+						outputClass[j].classList.add("output");
+						outputClass[j].classList.remove("output_disabled");
+						}
+						
+						var textareaOutputClass = document.getElementsByClassName("text-area-output-disabled");
+						for(var k = 0; k  <textareaOutputClass.length; k+1)
+						{
+						//alert("done");
+						textareaOutputClass[k].classList.add("text-area-output");
+						textareaOutputClass[k].classList.remove("text-area-output-disabled");
+						}
+						
+						var unitOutputClass = document.getElementsByClassName("unit_label_output_disabled");
+						for(var l = 0; l  < unitOutputClass.length; l+1)
+						{
+						//alert("done");
+						unitOutputClass[l].classList.add("unit_label_output");
+						unitOutputClass[l].classList.remove("unit_label_output_disabled");
+						}
+						
+						var activityOutput = document.getElementsByClassName("activity_output_disabled");
+						for(var act1 = 0; act1  < activityOutput.length; act1+1)
+						{
+						//alert("done");
+						activityOutput[act1].classList.add("activity_output");
+						activityOutput[act1].classList.remove("activity_output_disabled");
+						}
+						
+						var activityTextOutput = document.getElementsByClassName("activity-text-area-output-disabled");
+						for(var act2 = 0; act2  < activityTextOutput.length; act2+1)
+						{
+						//alert("done");
+						activityTextOutput[act2].classList.add("activity-text-area-output");
+						activityTextOutput[act2].classList.remove("activity-text-area-output-disabled");
+						}
+						
+								
+						}
+                        
+                       function deactiveResultStyle()
+						{
+						//alert("done");
+						var classValue = document.getElementsByClassName("output_name");
+						for(var i = 0; i  < classValue.length; i+1)
+						{
+						//alert("done");
+						classValue[i].classList.add("output_name_disabled");
+						classValue[i].classList.remove("output_name");
+						}
+						
+						var outputClass = document.getElementsByClassName("output");
+						for(var j = 0; j  < outputClass.length; j+1)
+						{
+						//alert("done");
+						outputClass[j].classList.add("output_disabled");
+						outputClass[j].classList.remove("output");
+						}
+						
+						var textareaOutputClass = document.getElementsByClassName("text-area-output");
+						for(var k = 0; k  < textareaOutputClass.length; k+1)
+						{
+						//alert("done");
+						textareaOutputClass[k].classList.add("text-area-output-disabled");
+						textareaOutputClass[k].classList.remove("text-area-output");
+						}
+						
+						var unitOutputClass = document.getElementsByClassName("unit_label_output");
+						for(var l = 0; l  < unitOutputClass.length; l+1)
+						{
+						//alert("done");
+						unitOutputClass[l].classList.add("unit_label_output_disabled");
+						unitOutputClass[l].classList.remove("unit_label_output");
+						}
+						
+						
+						var activityOutput = document.getElementsByClassName("activity_output");
+						for(var act1 = 0; act1  < activityOutput.length; act1+1)
+						{
+						//alert("done");
+						activityOutput[act1].classList.add("activity_output_disabled");
+						activityOutput[act1].classList.remove("activity_output");
+						}
+						
+						var activityTextOutput = document.getElementsByClassName("activity-text-area-output");
+						for(var act2 = 0; act2  < activityTextOutput.length; act2+1)
+						{
+						//alert("done");
+						activityTextOutput[act2].classList.add("activity-text-area-output-disabled");
+						activityTextOutput[act2].classList.remove("activity-text-area-output");
+						}
+								
+						}
+            </script>
+            <script type='text/javascript'>
+                window.onload = function() {
+                    document.getElementById('gc').selectedIndex = -1;
+                }
+            </script>
+
+
+</head>
+
+
+<body onload="onLoad()">
+    <form name="fm">
+        <div class="table_container">
+            <table class="input_table">
+                <colgroup>
+                    <col width="35%">
+                    <col width="45%">
+                    <col width="20%">
+                </colgroup>
+				<tbody>
+				<tr><td colspan="3"></td></tr>
+                <tr>
+                    <td colspan="1" class="input_name">Type of pericarditis therapy</td>
+                    <td colspan="2">
+                        <select class="drop_center" name="gc" id="gc" onChange="valcal();">
+                        <option >Select</option>
+                           <option value="1">Acute*</option>
+                            <option value="2">Recurrent**</option>
+                            <!-- <option value="3">Angiotensin-receptor blockers</option>
+                            <option value="4">Calcium antagonists</option>
+                            <option value="5">ACE-inhibitors</option>
+                            <option value="6">Other Antihypertensives</option> --> 
+                        </select> </td>
+                    <td></td>
+                </tr>
+				</tbody>
+            </table>
+			
+        </div>
+        <div class="table_container">
+            <table class="output_table">
+                <colgroup>
+                    <col width="35%">
+                    <col width="45%">
+                    <col width="20%">
+                </colgroup>
+                <tr>
+                    <td class="output_name_disabled" colspan="3">First line:</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="activity_output_disabled" name="sum_1" id="sum_1" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="output_name_disabled" colspan="3">Second line:</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="activity_output_disabled" name="sum_2" id="sum_2" readonly="readonly"><br/></div>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td class="output_name_disabled" colspan="3">Third line:</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="activity_output_disabled" id="sum_3" name="sum_3" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="output_name_disabled" colspan="3">Fourth line:</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="activity_output_disabled" name="sum_4" id="sum_4" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+            </table><br/>
+        </div>
+    </form>
+    <br/><br/><br/>
+    <div class="footer-div" id="998">
+        <table class="footer-button-table">
+            <tr>
+                <td class="footer-button" colspan="2" style="width: 50%;">
+                    <button class="mfooter-button" id="ref_button">Abbreviation(s) and footnote(s)</button>
+                </td>
+                <td class="footer-button" colspan="2" style="width: 50%;"><a href="flipView"><button class="mfooter-button" id="pdfButton"><img id="algoPdf" src="algo_pdf.png" alt="Static version"></button></a></td>
+            </tr>
+            <tr>
+                <td class="footer-button" colspan="2" style="width: 50%;"><button class="mfooter-button" id="resetButton" onClick="window.location.href=window.location.href">Reset</button></td>
+                <td class="footer-button" colspan="2" style="width: 50%;"><button class="mfooter-button" id="moreInfoButton"><a href="ref_ENAS5082_3.4.0.0.html" class="more-info-link">More Information</a></button></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="reference-box" id="reference">
+                        <p class="text-left">ECG = electrocardiogram; IVIG = intravenous immunoglobulin; NSAIDs = non-steroidal anti-inflammatory drugs.</p>
+                        <p class="text_left">Low-dose corticosteroids are considered when there are contra-indications to other drugs or when there is an incomplete response to aspirin/NSAIDs plus colchicine; in this case physicians should consider adding these drugs instead
+                            of replacing other anti-inflammatory therapies.</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="reference-box" id="reference">
+                        <p class="text-left"><sup>a</sup>Azathioprine is steroid-sparing and has a slow onset of action compared with IVIG and anakinra. Cost considerations may apply considering the cheaper solution first (e.g. azathioprine) and resorting to more expensive
+                            options (e.g. IVIG and anakinra) for refractory cases.
+                            <br/> *2 of 4 clinical criteria: pericardial chest pain, pericardial rubs, ECG changes; pericardial effusion<br/> **in case of contra-indications to aspirin/NSAID/colchicine and after exclusion of infectious cause</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

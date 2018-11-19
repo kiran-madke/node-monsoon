@@ -1,0 +1,121 @@
+<html>
+
+<head>
+	
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+    <link rel="stylesheet" type="text/css" href="calci_std.css">
+	<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="interactive_0001881.js"></script>
+		<script type="text/javascript" src="interactive_0001881_data.js"></script>
+
+</head>
+
+<body onload="load()">
+    <div class="table_container">
+        <table class="input_table">
+            <colgroup>
+                <col width="35%">
+                <col width="45%">
+                <col width="20%">
+            </colgroup>
+			<tr>
+                <td class="input_name"><b>Drugs</b></td>
+
+                <td colspan="2">
+                    <select class="drop_center" id="drugs" onChange="result()">
+						<option value="Select" selected>Select</option>
+						
+					</select>
+                </td>
+            </tr>
+        </table>
+    </div>
+  <div class="table_container">
+    <table class="output_table">
+            <colgroup>
+                <col width="100%">
+            </colgroup>
+            <tbody id="tr_result">
+                <tr>
+                    <td colspan="2" class="output_name_disabled">Classification (Vaughan Williams for antiarrhythmic drugs)</td>
+				</tr>
+				<tr>
+                    <td>
+                        <div class="activity_output_disabled" id="result1" name="result" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+				<tr>
+                    <td colspan="2" class="output_name_disabled">Former FDA category</td>
+				</tr>
+				<tr>
+                    <td>
+                        <div class="activity_output_disabled" id="result2" name="result" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+				 <tr>
+                    <td colspan="2" class="output_name_disabled">Placenta permeable</td>
+				</tr>
+				<tr>
+                    <td>
+                        <div class="activity_output_disabled" id="result3" name="result" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+				</tr>
+				 <tr>
+                    <td colspan="2" class="output_name_disabled">Transfer to breast milk (fetal dose)</td>
+				</tr>
+				<tr>
+                    <td>
+                        <div class="activity_output_disabled" id="result4" name="result" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+				</tr>
+				 <tr>
+                    <td colspan="2" class="output_name_disabled">Preclinical/clinical safety data</td>
+				</tr>
+				<tr>
+                    <td>
+                        <div class="activity_output_disabled" id="result5" name="result" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+		 <table class="footer-button-table">
+            <tr>
+			<br/><br/>
+			 <td class="footer-button" ><button class="mfooter-button" id="ref_button" style="outline:0">Abbreviation(s) and Footnote(s)</button></td>
+			
+			  <td class="footer-button"  style="width: 50%;">
+        <a href="https://academic.oup.com/eurheartj/article-lookup/doi/10.1093/eurheartj/ehy340"><button class="mfooter-button" id="moreInfoButton">More Information</button></a></td>		   
+			 
+		</tr>
+		<tr>
+                <td class="footer-button" colspan="4" >
+                    <button class="mfooter-button" id="resetButton" onClick="window.location.href=window.location.href" style="outline:0;">Reset</button></td>
+					 
+            </tr>
+			 <tr>
+                <td colspan="2" style="border:0px;">
+                    <div id="reference" style="display: none;">
+                        <div class="info_text_box_abb">
+                            <p class="text_left">
+ACE = angiotensin-converting enzyme; ARB = angiotensin receptor blocker; AUC = area under the curve; FDA = US Food and Drug Administration; i.v. = intravenous; KLH = keyhole limpet haemocyanin; MRHD = maximum recommended human dose; RAAS = renin–angiotensin–aldosterone system; RHD = recommended human dose; UFH = unfractionated heparin; VTE = venous thromboembolism.
+                            </p>
+                        </div>
+						<div class="info_text_box_abb">
+                            <p class="text_left"><sup>a</sup>The available data on first trimester use do not strongly support teratogenic potential.<sup>435, 436</sup> Because ACE inhibitors, ARBs, aldosterone antagonists, and renin inhibitors should be avoided during pregnancy and breastfeeding the risk category is D. Positive outcomes with ACE inhibitors have been described and pregnancy does not have to be terminated if the patient was exposed to these medications, but should be followed-up closely.<br><sup>b</sup>Breastfeeding is possible if the mother is treated with the drug.<sup>437</sup><br><sup>c</sup>Adenosine: Most experiences with this drug are in the second and third trimesters. Its short half-life may prevent it from reaching the fetus.<br><sup>d</sup>Atenolol is classified D by the FDA,<sup>438</sup> although some authors classify it as C.<sup>439</sup> <br><sup>e</sup>Digoxin: The experience with digoxin is extensive, and it is considered to be the safest antiarrhythmic drug during pregnancy. A prophylactic antiarrhythmic efficacy has never been demonstrated.<br><sup>f</sup>Statins: These should not be prescribed in pregnancy and during breastfeeding since their harmlessness is not proven. There are no expected disadvantages to the mother from a temporary interruption of the therapy during pregnancy. Information is retrieved from <a href="http://www.ema.europa.eu/">http://www.ema.europa.eu/</a>, <a href="http://www.accessdata.fda.gov/">http://www.accessdata.fda.gov/</a>, <a href="http://www.embryotox.de">http://www.embryotox.de</a>, or from prescription labels provided by manufacturers.
+
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+   </div>
+       
+
+</body>
+
+</html>

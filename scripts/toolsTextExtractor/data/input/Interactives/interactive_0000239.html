@@ -1,0 +1,4810 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="calci_std.css">
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />             <script src="jquery-1.9.1.min.js"></script>
+                <script src="jquery-algoPlugin.js"></script>
+                <script src="algoFunctions.js"></script>
+              
+                <script type="text/JavaScript">
+           
+		 
+            if(screen.width < 768)
+            {
+               changeCSS('calci_std.css',0);
+            }
+        else
+        {
+            changeCSS('calci_std.css',0);
+        }
+		
+		function changeCSS(cssFile, cssLinkIndex) {
+ 
+        var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+ 
+        var newlink = document.createElement("link");
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", cssFile);
+ 
+        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+      }
+		
+            </script>
+                       <script type="text/javascript">
+
+/*         window.onload=function()
+         {
+         document.getElementById("gc").selectedIndex=-1;
+         
+         }
+  */                         var high;
+                      var low;
+                           var ind=0;
+             
+                            
+    function changeColor()
+    {
+        var q1=fm.gc.value;
+        var w1=parseInt(q1);
+//        console.log(w1);
+         if(w1==10)
+                { 
+               document.getElementById("changeColor").style.backgroundColor="#ff0000";
+			   document.getElementById("changeColor").style.color="#ff0000"; 
+                }
+        else
+            {
+               document.getElementById("changeColor").style.backgroundColor="#54B414";
+			   document.getElementById("changeColor").style.color="#54B414"; 
+                
+            }
+                
+    }
+                           function valcal()
+            {
+                ind=0;
+                var q1=fm.gc.value;
+                var w1=parseInt(q1);
+                
+                var q2=fm.age.value;
+                var w2=parseInt(q2);
+                
+                var q3=fm.SBP.value;
+                var w3=parseInt(q3);
+                
+                var q4=fm.TC.value;
+                var w4=parseInt(q4);
+                
+                var q5=fm.HDL.value;
+                var w5=parseFloat(q5);
+                if(!w5)
+                {
+ 
+                
+                if(w1==1||w1==2||w1==3||w1==4||w1==5||w1==6||w1==7||w1==8||w1==9)
+                {
+                
+                
+				document.getElementById("changeColor").style.backgroundColor="#54B414";
+				document.getElementById("changeColor").style.color="#54B414"; 
+                   /* alert(" " + w1);
+                     alert(" " + w2);
+                     alert(" " + w3);
+                     alert(" " + w4);
+                     alert(" " + w5);
+*/
+                    if(document.getElementById("radio4").checked==true)
+                    {
+                       //alert("female");
+  //                      alert(" " + w2);
+                        if(w2==40)
+                        {
+
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                              //  alert("non smoker");
+                                
+                                if(w3==120 || w3==140 || w3==160 || w3==180)
+                                {
+                                   // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5 || w4==6 || w4==7||w4==8)
+                                    {   var total=0;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*4;
+                                  } 
+                                } 
+                            }
+else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                             //   alert("smoker");
+                                
+                                if(w3==120 || w3==140 || w3==160 || w3==180)
+                                {
+                                    // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5 || w4==6 || w4==7||w4==8)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=0;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                         
+                                        
+                                    }
+                                   
+                                }
+                            }
+                        
+                        }
+                        else
+                        if(w2==50)
+                        {
+                            
+                            
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                                //  alert("non smoker");
+                                
+                                if(w3==120 || w3==140)
+                                {
+                                    // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5 || w4==6 || w4==7||w4==8)
+                                    { var total=0;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                           
+                                    }
+                                     
+                                }
+                                else
+                                if(w3==160)
+                                {
+                                    if(w4==4 || w4==5)
+                                    {
+                                         var total=0;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                         
+                                    }
+                                    else
+                                    if(w4==6 || w4==7||w4==8)
+                                    {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    }
+                                }
+                                if(w3==180)
+                                {
+                                    if(w4==4 || w4==5|| w4==6 || w4==7||w4==8)
+                                    {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                }
+                                
+                            }
+                            else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                                //   alert("smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5 || w4==6)
+                                    { 
+                                    var total=0;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                         
+                                    }
+                                    else
+                                    {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    }
+                                    
+                                }
+                                else
+                                if(w3==140 || w3==160)
+                                {
+                                
+                                    if(w4==4 || w4==5 || w4==6 || w4==7||w4==8)
+                                    {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                
+                                }
+                                else
+                                if(w3==180)
+                                {
+                                    
+                                    if(w4==4 || w4==5)
+                                    {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                        
+                                    }
+                                    else
+                                    if(w4==6 || w4==7||w4==8)
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    }
+                                    
+                                }
+ 							 }
+                            
+                        }
+                        else
+                        if(w2==55)
+                        {
+                            
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                                //  alert("non smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    if(w4==4 || w4==5)
+                                    {
+                                        // alert(" " + w4); 
+                                        var total=0;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==6 || w4==7 || w4==8)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    
+                                }
+                                else
+                                if(w3==140||w3==160)
+                                {
+                                    if(w4==4 || w4==5|| w4==6 || w4==7||w4==8)
+                                    {
+                                        // alert(" " + w4);
+                                         var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                     
+                                }
+                                if(w3==180)
+                                {
+                                    if(w4==4 || w4==5)
+                                    {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    
+                                    if(w4==6 || w4==7||w4==8)
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    
+                                }
+                                
+                            }
+                            else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                                //   alert("smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5 || w4==6|| w4==7|| w4==8)
+                                    {
+                                        // alert(" " + w4);                                    
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                    
+                                    if(w4==4 || w4==5 || w4==6)
+                                    {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                    
+                                    }
+                                    
+                                }
+                                else
+                                
+                                if(w3==160)
+                                {
+                                    
+                                    if(w4==4 || w4==5 || w4==6)
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    
+                                }
+                                else
+                                if(w3==180)
+                                {
+                                    
+                                    if(w4==4 || w4==5||w4==6)
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                    else
+                                    if(w4==7||w4==8)
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                        
+                                    }
+                                    
+                                }
+                             }
+                        }
+                        else
+                        if(w2==60)
+                        {
+                            
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                                //  alert("non smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    if(w4==4 || w4==5 || w4==6 || w4==7 || w4==8)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }                                      
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                    if(w4==4 || w4==5|| w4==6)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                        
+                                    }
+                                }
+                                else
+                                if(w3==160)
+                                {
+                                    if(w4==4 || w4==5|| w4==6|| w4==7)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                        
+                                    }
+                                }
+                                if(w3==180)
+                                {
+                                    if(w4==4 || w4==5||w4==6)
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else 
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    
+                                }
+                                
+                            }
+                            else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                                //   alert("smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    
+                                    if(w4==4)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    if(w4==5 || w4==6|| w4==7)
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    
+                                    }
+                                    else
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    
+                                    
+                                    }
+                                    
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                    
+                                    if(w4==4 || w4==5)
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else if(w4==6||w4==7)
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    
+                                }
+                                else                                
+                                if(w3==160)
+                                {
+                                    
+                                    if(w4==4)
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else if(w4==5 || w4==6)
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+
+                                }
+                                else
+                                if(w3==180)
+                                {
+                                    
+                                    if(w4==4 || w4==5)
+                                    {
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==6)
+                                    {
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==7)
+                                    {
+                                        var total=7;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=8;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    }
+                                    
+                                }
+                            }
+                            
+                        }
+                        else
+                        if(w2==65)
+                        {
+                                              // alert("65");
+
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                                //  alert("non smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    if(w4==4 || w4==5)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        // alert(" " + w4);
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                    if(w4==4 || w4==5|| w4==6)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                        
+                                    }
+                                }
+                                else
+                                if(w3==160)
+                                {
+                                    if(w4==4 || w4==5)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==6 || w4==7)
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                    else
+                                    {
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                }
+                                if(w3==180)
+                                {
+                                    if(w4==4)
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    if(w4==5)
+                                    {
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==6||w4==7)
+                                    {
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    }
+                                    else
+                                    {
+                                        var total=7;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                }
+                                
+                            }
+                            else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                                 // alert("smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    
+                                    if(w4==4|| w4==5 || w4==6)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    if(w4==7||w4==8)
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                     
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                        //  alert("140");
+
+                                    if(w4==4 || w4==5)
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else if(w4==6)
+                                    {
+                                       // alert("5");
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                else if(w4==7) 
+                                    {
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=7;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                }
+                                else
+                                if(w3==160)
+                                {
+                                    
+                                    if(w4==4||w4==5)
+                                    {
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else if(w4==6)
+                                    {
+                                        var total=7;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else if(w4==7)
+                                    {
+                                        var total=8;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else  
+                                    {
+                                        var total=10;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                }
+                                else
+                                if(w3==180)
+                                {
+                                    
+                                    if(w4==4 || w4==5)
+                                    {
+                                        var total=9;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==6)
+                                    {
+                                        var total=11;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==7)
+                                    {
+                                        var total=12;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=14;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    
+                                }
+                            }
+                        }
+                        
+                        
+                    }
+                    else                    
+                    if(document.getElementById("radio3").checked==true)
+                    {
+                    //alert("male");
+                        
+					if(w2==40)
+                     {
+
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                              //  alert("non smoker");
+                                
+                                if(w3==120||w3==140)
+                                {
+                                   // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5||w4==6 || w4==7||w4==8)
+                                    {
+                                         var total=0;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+                                          
+                                    } 
+                                    
+                                } 
+                                else
+								 if(w3==160)
+ 							  {
+ if(w4==4||w4==5||w4==6)
+{
+									 var total=0;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+}
+else
+{
+									 var total=1;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+}
+                                
+                                }
+                                else
+                                if(w3==180)
+                                { 
+ if(w4==4)
+{
+ 									 var total=0;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+ }
+            else
+            {
+             					 var total=1;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+
+            }                     
+                                
+                                }
+
+                            }
+							else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                             //   alert("smoker");
+                                
+                                if(w3==120 )
+                                {
+                                    // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5 || w4==6)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=0;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                     } 
+                                     else
+                                     {
+                                        // alert(" " + w4);                                        
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                     } 
+                                    
+                                }
+                                else                                
+								if(w3==140)
+								{								
+					  if(w4==4)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=0;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                        
+                                    } 
+                                    else
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                        
+                                    } 
+								}
+								if(w3==160)
+								{								
+					  if(w4==4||w4==5||w4==6||w4==7||w4==8)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                        
+                                    } 
+                                     
+								}
+								else
+								if(w3==180)
+								{								
+					  if(w4==4||w4==5||w4==6)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                     } 
+                                    else
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                     } 
+                                    
+								}
+                            }
+                        
+                        }
+                    else
+                    if(w2==50)
+                     {
+
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                              //  alert("non smoker");
+                                
+                                if(w3==120)
+                                {
+                                   // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5||w4==6||w4==7||w4==8)
+                                    {
+                                       // alert(" " + w4);
+  var total=1;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+                                          
+                                    }
+                                     
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                if(w4==4||w4==5||w4==6||w4==7)
+                                    { 
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+                                          
+                                    }
+                                    else
+                                    {
+                                    
+									 var total=2;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+
+                                    }
+                                }
+                                else
+								 if(w3==160)
+	 							  {
+ if(w4==4||w4==5)
+{
+									 var total=1;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+}             
+else 
+{									 var total=2;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+ }                  
+                                }
+                                else
+                                if(w3==180)
+                                { 
+ if(w4==4||w4==5)
+{
+ 									 var total=2;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+ }
+            else  if(w4==6||w4==7)
+            {
+                         					 var total=3;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+
+            }
+            else
+            {
+                         					 var total=4;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*3;
+
+            }
+                                
+                                }
+
+                            }
+							else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                             //   alert("smoker");
+                                
+                                if(w3==120 )
+                                {
+                                //////remain
+                                                                    
+                                    if(w4==4 || w4==5)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                    }
+                                    else
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                    } 
+                                }
+                                else                                
+								if(w3==140)
+								{								
+					  if(w4==4 || w4==5 || w4==6)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                        
+                                    } 
+                                    else
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                        
+                                    } 
+								}
+								if(w3==160)
+								{								
+					  if(w4==4)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                        
+                                    } 
+                                    else if(w4==5||w4==6)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                        
+                                    } 
+                                    else if(w4==7)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                     }
+                                     else
+                                     {
+                                        // alert(" " + w4);                                        
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                     } 
+                                    
+								}
+								else
+								if(w3==180)
+								{								
+					  if(w4==4||w4==5)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                        
+                                    } 
+                                    else if(w4==6)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                        
+                                    } 
+                                    else if(w4==7)
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                     } 
+                                    else  
+                                    {
+                                        // alert(" " + w4);                                        
+                                        var total=7;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*3;
+                                     }
+								}
+                            }
+                        
+                        }
+                        
+                    
+  else
+                    if(w2==55)
+                     {
+
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                              //  alert("non smoker");
+                                
+                                if(w3==120)
+                                {
+                                   // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5|| w4==6)
+                                    {
+                                       // alert(" " + w4);
+ var total=1;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;                                          
+}
+else
+{
+ var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+                                    
+}
+  else
+                                if(w3==140)
+                                {
+                                if(w4==4)
+                                    { 
+var total=1;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+                                     
+else
+                                     if(w4==5||w4==6||w4==7)
+
+                                    {
+									 var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+                                                                        
+else {
+									 var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}    
+}
+  else
+								 if(w3==160)
+	 							  {
+ if(w4==4||w4==5)
+{
+									 var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+else if(w4==6||w4==7)
+{
+									 var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}           
+else  
+{
+									 var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}                  
+}
+  else
+                                if(w3==180)
+                                { 
+ if(w4==4)
+{
+ 									 var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+else  if(w4==5 || w4==6)
+            {
+             					 var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}                     
+else
+            if(w4==7)
+            {
+                         					 var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+else
+            {
+                         					 var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+                                
+}
+
+}
+							else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                             //   alert("smoker");
+                                
+                                if(w3==120 )
+                                {
+                                //////remain
+                                                                    
+                                    if(w4==4 || w4==5)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+ else
+                                      if(w4==6 || w4==7)
+                                     {
+ var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+else
+                                   {
+ var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+                                     
+ }
+}
+  else                                
+								if(w3==140)
+								{								
+					  if(w4==4 || w4==5)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+    else
+                                  if(w4==6)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+    else
+                                  if(w4==7)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+ else
+                                     {
+ var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+}
+								if(w3==160)
+								{								
+							  if(w4==4)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else if(w4==5)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else
+                                    if(w4==6)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+    else
+                                    if(w4==7)
+ 									{
+ 									var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+    else
+                                    if(w4==8)
+ 									{
+ 									var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+                                    
+}
+								else
+								if(w3==180)
+								{								
+								  if(w4==4)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else if(w4==5)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+  else if(w4==6)
+                 {
+                                        // alert(" " + w4);                                        
+var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+
+  else if(w4==7)
+                 {
+                                        // alert(" " + w4);                                        
+var total=10;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }     
+                                     
+  else if(w4==8)
+                 {
+                                        // alert(" " + w4);                                        
+var total=12;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }                                  
+                                    
+}
+}
+                        
+}      
+
+   else
+if(w2==60)
+{
+
+if(document.getElementById("radio41").checked==true)
+{
+                              //  alert("non smoker");
+                                
+if(w3==120)
+{
+                                   // alert(" " + w3);
+                                    
+if(w4==4 || w4==5 || w4==6)
+{
+ var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+ else
+{
+ var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;                                          
+}                                    
+}
+ else
+if(w3==140)
+{
+if(w4==4)
+{ 
+var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else
+ if(w4==5 || w4==6)
+{
+				var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}    
+     else
+{
+									 var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}    
+}
+ else
+ if(w3==160)
+{
+ if(w4==4)
+{
+									 var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+else if(w4==5)
+{
+									 var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+else if(w4==6 || w4==7)
+{
+									 var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}             
+else if(w4==8)
+{
+									 var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}                  
+}
+ else
+if(w3==180)
+{ 
+ if(w4==4)
+{
+ 									 var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+else  if(w4==5)
+{
+ 									 var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+ else  if(w4==6)
+{
+             					 var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}                     
+else
+if(w4==7)
+{
+                         					 var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+else
+{
+                         					 var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+                                
+}
+
+}
+							
+else
+if(document.getElementById("radio31").checked==true)
+{
+                             //   alert("smoker");
+                                
+if(w3==120 )
+{
+                                                                     
+if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+                                                                 
+if(w4==5 || w4==6)
+{                             // alert(" " + w4);                                        
+var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+  if(w4==7)
+{                                        // alert(" " + w4);                                        
+var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+{
+ var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+                                     
+ }
+}
+ else                                
+if(w3==140)
+{								
+					  if(w4==4 || w4==5)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+   else
+  if(w4==6)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+   else
+  if(w4==7)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+{
+ var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+}
+if(w3==160)
+{								
+if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else if(w4==5)
+{
+                                        // alert(" " + w4);                                        
+var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else
+if(w4==6)
+ 									{
+ 									var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+   else
+if(w4==7)
+	{
+ 									var total=11;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+ else
+ {
+ 									var total=13;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+                                    
+}
+else
+	if(w3==180)
+{								
+								  if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=10;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else if(w4==5)
+{
+                                        // alert(" " + w4);                                        
+var total=11;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+ else if(w4==6)
+{
+                                        // alert(" " + w4);                                        
+var total=13;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+
+ else if(w4==7)
+{
+                                        // alert(" " + w4);                                        
+var total=15;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }     
+                                     
+ else if(w4==8)
+{
+                                        // alert(" " + w4);                                        
+var total=18;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }                                  
+                                    
+}
+
+
+}
+                        
+}   
+
+
+
+else
+if(w2==65)
+{
+
+if(document.getElementById("radio41").checked==true)
+{
+                              //  alert("non smoker");
+                                
+if(w3==120)
+{
+                                   // alert(" " + w3);
+                                    
+if(w4==4)
+{                                   
+var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else                          
+if(w4==5 || w4==6)
+{
+ var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else    if(w4==7)
+{
+ var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;                                          
+}
+else
+{
+ var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;                                          
+}                                    
+}
+ else
+if(w3==140)
+{
+if(w4==4 || w4==5)     
+{
+	var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+                                     
+     else if(w4==6)
+{
+				var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}    else if(w4==7)
+{
+				var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}                                    
+     else
+{
+									 var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}    
+}
+ else
+ if(w3==160)
+{
+ if(w4==4)
+{
+									 var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+else if(w4==5)
+{
+									 var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+else if(w4==6)
+{
+									 var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}             
+ 
+else if(w4==7)
+{
+									 var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}             
+else if(w4==8)
+{
+									 var total=10;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}                  
+}
+ else
+if(w3==180)
+{ 
+ if(w4==4)
+{
+ 									 var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+else  if(w4==5)
+{
+ 									 var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+ else  if(w4==6)
+{
+             					 var total=10;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}                     
+else
+if(w4==7)
+{
+                         					 var total=12;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+else
+{
+                         					 var total=14;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+                                
+}
+
+}
+							
+else
+if(document.getElementById("radio31").checked==true)
+{
+                             //   alert("smoker");
+                                
+if(w3==120 )
+{
+                                                                     
+if(w4==4||w4==5)
+{                                        // alert(" " + w4);                                        
+var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+if(w4==6)
+{                             // alert(" " + w4);                                        
+var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+  if(w4==7)
+{                                        // alert(" " + w4);                                        
+var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+{
+ var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+                                     
+ }
+}
+ else
+if(w3==140)
+								{								
+					  if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else
+ if(w4==5)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+   else
+  if(w4==6)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+   else
+  if(w4==7)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=11;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+{
+ var total=13;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+}
+								if(w3==160)
+								{								
+							  if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=10;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else if(w4==5)
+{
+                                        // alert(" " + w4);                                        
+var total=12;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else
+if(w4==6)
+{
+                                        // alert(" " + w4);                                        
+var total=14;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+   else
+if(w4==7)
+ 									{
+ 									var total=16;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+   else
+if(w4==8)
+ 									{
+ 									var total=19;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+                                    
+}
+								else
+								if(w3==180)
+								{								
+								  if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=15;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else if(w4==5)
+{
+                                        // alert(" " + w4);                                        
+var total=17;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+ else if(w4==6)
+{
+                                        // alert(" " + w4);                                        
+var total=20;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+
+ else if(w4==7)
+{
+                                        // alert(" " + w4);                                        
+var total=23;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }     
+                                     
+ else if(w4==8)
+{
+                                        // alert(" " + w4);                                        
+var total=26;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }                                  
+                                    
+}
+
+
+}
+                        
+}        
+                    
+                        
+                    }
+                    
+                  }
+ 
+                else  
+                if(w1==10)
+                { 
+               document.getElementById("changeColor").style.backgroundColor="#ff0000";
+			   document.getElementById("changeColor").style.color="#ff0000"; 
+
+                    if(document.getElementById("radio4").checked==true)
+                    { 
+                        if(w2==40)
+                        {
+
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                              //  alert("non smoker");
+                                
+                                if(w3==120 || w3==140 || w3==160 || w3==180)
+                                {
+                                   // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5 || w4==6 || w4==7||w4==8)
+                                    { 
+                                      var total=0;
+                                        document.fm.sum.value=total;
+                                document.fm.sum1.value=total*4;
+                                         
+                                    } 
+                                    
+                                }                                 
+                            }
+else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                             //   alert("smoker");
+                                
+                                if(w3==120 || w3==140 || w3==160)
+                                {
+                                     if(w4==4 || w4==5 || w4==6 || w4==7||w4==8)
+                                    {    var total=0;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                         
+                                    }
+                                 }
+                                else
+                                {
+                                
+                                if(w4==4 || w4==5 || w4==6)
+                                    {
+                                        // alert(" " + w4);
+                                        
+                                        
+                                        var total=0;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                         
+                                    }
+  else
+  {
+                                          var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+  
+  }                                  
+                                
+                                }
+                            }
+                        
+                        }
+                       else
+                        if(w2==50)
+                        {                             
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                                //  alert("non smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5)
+                                    {
+                                        // alert(" " + w4);
+                                         var total=0;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                           
+                                    }
+                                    else
+                                    {
+                                                                                 var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    }
+                                    
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                    if(w4==4)
+                                    {
+                                        // alert(" " + w4);
+                                        
+                                        
+                                        var total=0;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                         
+                                    }
+                                    else
+                                     {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    }
+                                }
+                                if(w3==160)
+                                {
+                                    if(w4==4 || w4==5|| w4==6 || w4==7||w4==8)
+                                    {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                }
+                                
+                                if(w3==180)
+                                {
+                                    if(w4==4 || w4==5|| w4==6)
+                                    {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                        
+                                    }
+                                    else
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                        
+                                    }
+                                }
+                            }
+                            else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                                //   alert("smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5 || w4==6|| w4==7|| w4==8)
+                                    {
+                                        // alert(" " + w4);
+                                         var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                         
+                                    } 
+                                    
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                 if(w4==4 || w4==5 || w4==6 || w4==7)
+                                    {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+ 									}
+ 									else
+ 									{
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+ 									}
+                                
+                                }
+                                else
+                                if(w3==160)
+                                {
+                                    
+                                    if(w4==4)
+                                    {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+  }
+                                    else
+                                    if(w4==5 || w4==6||w4==7)
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+ }
+ else
+                                   {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+ }
+                                    
+                                }
+
+                                if(w3==180)
+                                {
+                                    
+                                    if(w4==4||w4==5)
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+  }
+                                    else
+                                    if(w4==6||w4==7)
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+ }
+ else
+                                   {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+ }
+                                    
+                                }
+                             }
+                            
+                        }
+                        else
+                        if(w2==55)
+                        {
+                            
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                                //  alert("non smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    if(w4==4 || w4==5||w4==6 || w4==7 || w4==8)
+                                    {
+                                        // alert(" " + w4); 
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    } 
+                                    
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                    if(w4==4 || w4==5|| w4==6 || w4==7)
+                                    {
+                                        // alert(" " + w4);
+                                         var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                     {
+                                                var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    }
+                                }
+                                if(w3==160)
+                                {
+                                    if(w4==4)
+                                    {
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    
+                                    if(w4==5 || w4==6||w4==7)
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    
+                                }
+                                
+                                if(w3==180)
+                                {
+                                    if(w4==4||w4==5)
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else                                    
+                                    if(w4==6||w4==7)
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    
+                                }
+                            }
+                            else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                                //   alert("smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5)
+                                    {
+                                        // alert(" " + w4);                                    
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                     else
+                                     if(w4==6|| w4==7|| w4==8)
+                                    {
+                                        // alert(" " + w4);                                    
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                     if(w4==4 || w4==5 || w4==6)
+                                    {
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                    
+                                    }
+                                    
+                                }
+                                else
+                                
+                                if(w3==160)
+                                {
+                                    
+                                    if(w4==4 || w4==5)
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    if(w4==6|| w4==7)
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    
+                                }
+                                else
+                                if(w3==180)
+                                {
+                                    
+                                    if(w4==4)
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                    else
+                                    if(w4==5||w4==6)
+                                    {
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                        
+                                    }
+                                    else
+                                    if(w4==7)
+                                    {
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                        
+                                    }  else
+                                     {
+                                        var total=7;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                        
+                                    }
+                                }
+                             }
+                        }
+                        else
+                        if(w2==60)
+                        {
+                            
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                                //  alert("non smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    if(w4==4 || w4==5)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=1;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }   
+                                    else
+                                    {
+                                           var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    
+                                    }                                   
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                    if(w4==4 || w4==5|| w4==6)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                        
+                                    }
+                                }
+                                else
+                                if(w3==160)
+                                {
+                                    if(w4==4 || w4==5|| w4==6)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                 if(w4==7)
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                }
+                                if(w3==180)
+                                {
+                                    if(w4==4 || w4==5)
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                    else 
+                                    if(w4==6)                                    
+                                    {
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                        
+                                    }                                    
+                                    else 
+                                    if(w4==7)                                    
+                                    {
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                        
+                                    }
+                                    
+                                    else 
+                                    if(w4==8)                                    
+                                    {
+                                        var total=7;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;                                        
+                                    }
+                                }
+                                
+                            }
+                            else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                                //   alert("smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    
+                                    if(w4==4)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    if(w4==5 || w4==6)
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    
+                                    }
+                                    else
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+      }
+                                    
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                    
+                                    if(w4==4)
+                                    {
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else if(w4==5)
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                               else if(w4==6||w4==7)
+ {
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+ 
+                                }
+                                else                                
+                                if(w3==160)
+                                {
+                                    
+                                    if(w4==4)
+                                    {
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else if(w4==5)
+                                    {
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else if(w4==6)
+                                    {
+                                        var total=7;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else if(w4==7)
+                                    {
+                                        var total=8;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else if(w4==8)
+                                    {
+                                        var total=9;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+
+                                }
+                                else
+                                if(w3==180)
+                                {
+                                    
+                                    if(w4==4)
+                                    {
+                                        var total=8;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==5)
+                                    {
+                                        var total=9;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==6)
+                                    {
+                                        var total=10;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                     if(w4==7)
+                                    {
+                                        var total=11;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    }
+                                    else
+                                     {
+                                        var total=13;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    }
+                                    
+                                }
+                            }
+                            
+                        }
+                     else
+                        if(w2==65)
+                        {
+                        //alert("in the 65");
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                           //  alert("non smoker");                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    if(w4==4 || w4==5)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=2;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                 if(w4==6 || w4==7)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+else
+                                    {
+                                        // alert(" " + w4);
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                    if(w4==4 || w4==5)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=3;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                               if(w4==6)
+                                    {
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                     else
+                                     
+                               if(w4==7)
+                                    {
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                     else
+                                     {
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                }
+                                else
+                                if(w3==160)
+                             {
+                                    if(w4==4 || w4==5)
+                                    {
+                                         var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                      else
+                                    if(w4==6)
+                                    {
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                     else
+                                 if(w4==7)
+                                    
+                                    {
+                                        var total=7;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=8;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    } 
+                                }
+                                else
+                                if(w3==180)
+                                {
+                                    if(w4==4)
+                                    {
+                                        var total=7;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else
+                                    if(w4==5)
+                                    {
+                                        var total=8;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==6)
+                                    {
+                                        var total=9;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+
+                                    }
+                                    else
+                                    if(w4==7)
+                                    {
+                                        var total=10;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=12;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                } 
+                                
+                            }
+                         else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                                //   alert("smoker");
+                                
+                                if(w3==120)
+                                { 
+                                    if(w4==4)
+                                    {
+                                        // alert(" " + w4);
+                                        var total=4;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                    else
+                                    if(w4==7||w4==8)
+                                    {
+                                        var total=5;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                    else
+                                    if(w4==9)
+                                    {
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }                                     
+                                    else
+                                     {
+                                        var total=7;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                     }
+                                }
+                                else
+                                if(w3==140)
+                                {
+                                    //remain
+                                    if(w4==4)
+                                    {
+                                        var total=6;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else if(w4==5)
+                                    {
+                                        var total=7;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                      else if(w4==6)
+ {
+                                        var total=8;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                      else if(w4==7)
+ {
+                                        var total=9;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                      else 
+ {
+                                        var total=11;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    
+                                }
+                                else
+                                if(w3==160)
+                                {
+                                    
+                                    if(w4==4)
+                                    {
+                                        var total=9;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                        
+                                    }
+                                    else if(w4==5)
+                                    {
+                                        var total=10;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else if(w4==6)
+                                    {
+                                        var total=12;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                         else if(w4==7)
+                                    {
+                                        var total=13;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                          else  
+                                      {
+                                        var total=16;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                }
+                                else
+                                if(w3==180)
+                                {
+                                    
+                                    if(w4==4)
+                                    {
+                                        var total=13;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==5)
+                                    {
+                                        var total=15;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==6)
+                                    {
+                                        var total=17;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    if(w4==7)                                    
+                                    {
+                                        var total=19;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    else
+                                    {
+                                        var total=22;
+                                        document.fm.sum.value=total;
+                                        document.fm.sum1.value=total*4;
+                                    }
+                                    
+                                }
+                            } 
+                        }
+                        
+                        
+                    }
+                    else    
+                 
+                     if(document.getElementById("radio3").checked==true)
+                    {
+                  //  alert("male");
+                        
+					if(w2==40)
+                     {
+
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                              //  alert("non smoker");
+                                
+                                if(w3==120)
+                                {
+                                   // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5)
+                                    {
+                                       // alert(" " + w4);                                        
+var total=0;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;                                          
+}
+else
+                                    {
+                                        
+var total=1;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+                                    
+}
+  else
+                                if(w3==140)
+                                {
+                                if(w4==4)
+                                    { 
+var total=0;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else
+                                    {
+                                    
+									 var total=1;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+}
+  else
+								 if(w3==160)
+ 							  {
+ if(w4==4||w4==5||w4==6||w4==7||w4==8)
+{
+
+									 var total=1;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+
+}
+                                
+}
+  else
+                                if(w3==180)
+                                { 
+ if(w4==4||w4==5||w4==6)
+{
+ 									 var total=1;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+else
+            {
+             					 var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}                     
+                                
+}
+
+}
+							else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                             //   alert("smoker");
+                                
+                                if(w3==120)
+                                {
+                                    // alert(" " + w3);
+                                    
+        if(w4==4 || w4==5 || w4==6 || w4==7||w4==8)
+        {
+                                        // alert(" " + w4);                                        
+var total=1;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+}
+  else                                
+								if(w3==140)
+								{								
+					  if(w4==4 || w4==5 || w4==6)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=1;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else
+                                    {
+                                        // alert(" " + w4);                                        
+var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+}
+								if(w3==160)
+								{								
+					  if(w4==4)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=1;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else if(w4==5||w4==6||w4==7)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else
+                                    {
+                                        // alert(" " + w4);                                        
+var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+                                    
+}
+								else
+								if(w3==180)
+								{								
+					  if(w4==4||w4==5)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else if(w4==6||w4==7)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else
+                                    {
+                                        // alert(" " + w4);                                        
+var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+                                    
+}
+}
+                        
+}
+ else
+                    if(w2==50)
+                     {
+
+                            if(document.getElementById("radio41").checked==true)
+                            {
+                              //  alert("non smoker");
+                                
+                                if(w3==120)
+                                {
+                                   // alert(" " + w3);
+                                    
+                                    if(w4==4 || w4==5)
+                                    {
+                                       // alert(" " + w4);
+
+                                        
+var total=1;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else
+                                     {
+                                        
+var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+                                    
+}
+  else
+                                if(w3==140)
+                                {
+                                if(w4==4||w4==5||w4==6)
+                                    { 
+var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else
+                                    {
+                                    
+									 var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+}
+  else
+								 if(w3==160)
+	 							  {
+ if(w4==4)
+{
+									 var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+else if(w4==5||w4==6)
+{
+									 var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+ 
+else if(w4==7)
+{
+									 var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}             
+else if(w4==8)
+{
+									 var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}                  
+}
+  else
+                                if(w3==180)
+                                { 
+ if(w4==4||w4==5)
+{
+ 									 var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+else  if(w4==6)
+            {
+             					 var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}                     
+else
+            if(w4==7)
+            {
+                         					 var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+else
+            {
+                         					 var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+                                
+}
+
+}
+							else
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                             //   alert("smoker");
+                                
+                                if(w3==120 )
+                                {
+                                //////remain
+                                                                    
+                                    if(w4==4)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+ else
+                                    if(w4==5||w4==6)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+ else
+                                      if(w4==7)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+ else
+                                     {
+ var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+                                     
+ }
+}
+  else                                
+								if(w3==140)
+								{								
+					  if(w4==4)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else
+                                     if(w4==5)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+    else
+                                  if(w4==6)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+    else
+                                  if(w4==7)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+ else
+                                     {
+ var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+}
+								if(w3==160)
+								{								
+							  if(w4==4)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else if(w4==5)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else
+                                    if(w4==6)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+    else
+                                    if(w4==7)
+ 									{
+ 									var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+    else
+                                    if(w4==8)
+ 									{
+ 									var total=10;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+                                    
+}
+								else
+								if(w3==180)
+								{								
+								  if(w4==4)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else if(w4==5)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+  else if(w4==6)
+                 {
+                                        // alert(" " + w4);                                        
+var total=10;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+
+  else if(w4==7)
+                 {
+                                        // alert(" " + w4);                                        
+var total=12;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }     
+                                     
+  else if(w4==8)
+                 {
+                                        // alert(" " + w4);                                        
+var total=14;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }                                  
+                                    
+}
+}
+                        
+}
+else
+                    if(w2==55)
+                     {
+                      if(document.getElementById("radio41").checked==true)
+                            {
+                               //alert("non smoker");                                
+                                if(w3==120)
+                                {
+                                     if(w4==4 || w4==5)
+                                    {
+var total=2;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else   if(w4==6 || w4==7)
+          {
+ var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else
+          {
+ var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+                                    
+}
+  else
+  if(w3==140)
+     {
+                                alert("non smoker");                                
+if(w4==4||w4==5)
+{ 
+var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;                                          
+}
+else  if(w4==6)
+
+                                    {
+									 var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+                                     
+else if(w4==7)
+                                    {
+									 var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}                                    
+else
+                                    {
+									 var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}    
+}
+
+}
+else
+if(document.getElementById("radio31").checked==true)
+{
+                             //   alert("smoker");
+                                
+                                if(w3==120 )
+                                {
+                                //////remain
+                                                                    
+                                    if(w4==4||w4==5)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+ else
+                                    if(w4==6)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+ else
+                                      if(w4==7)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+ else
+                                     {
+ var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+                                     
+ }
+}
+  else                                
+								if(w3==140)
+								{								
+					  if(w4==4)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else
+                                     if(w4==5)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+    else
+                                  if(w4==6)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+    else
+                                  if(w4==7)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+ else
+                                     {
+ var total=11;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+}
+								if(w3==160)
+								{								
+							  if(w4==4)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else if(w4==5)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else
+                                    if(w4==6)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=11;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+    else
+                                    if(w4==7)
+ 									{
+ 									var total=13;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+    else
+                                    if(w4==8)
+ 									{
+ 									var total=16;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+                                    
+}
+								else
+								if(w3==180)
+								{								
+								  if(w4==4)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=12;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+else if(w4==5)
+                                    {
+                                        // alert(" " + w4);                                        
+var total=13;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+  else if(w4==6)
+                 {
+                                        // alert(" " + w4);                                        
+var total=16;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+
+  else if(w4==7)
+                 {
+                                        // alert(" " + w4);                                        
+var total=19;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }     
+                                     
+  else 
+                 {
+                                        // alert(" " + w4);                                        
+var total=22;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }                                  
+                                    
+}
+}
+                        
+}                        
+    else
+if(w2==60)
+{
+
+if(document.getElementById("radio41").checked==true)
+{
+                              //  alert("non smoker");
+                                
+if(w3==120)
+{
+                                   // alert(" " + w3);
+                                    
+if(w4==4 || w4==5)
+{                                   
+var total=3;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+     else
+   if(w4==6)
+{
+ var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else    if(w4==7)
+{
+ var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;                                          
+}
+else
+{
+ var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;                                          
+}                                    
+}
+ else
+if(w3==140)
+{
+if(w4==4)
+{ 
+var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else
+ if(w4==5)     
+{
+	var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+                                     
+     else if(w4==6)
+{
+				var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}    else if(w4==7)
+{
+				var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}                                    
+     else
+{
+									 var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}    
+}
+ else
+ if(w3==160)
+{
+ if(w4==4)
+{
+									 var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+else if(w4==5)
+{
+									 var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+else if(w4==6)
+{
+									 var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}             
+ 
+else if(w4==7)
+{
+									 var total=10;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}             
+else  
+{
+									 var total=12;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}                  
+}
+ else
+if(w3==180)
+{ 
+ if(w4==4)
+{
+ 									 var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+else  if(w4==5)
+{
+ 									 var total=11;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+ else  if(w4==6)
+{
+             					 var total=13;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}                     
+else
+if(w4==7)
+{
+                         					 var total=15;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+else
+{
+                         					 var total=18;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+                                
+}
+
+}
+							
+else
+if(document.getElementById("radio31").checked==true)
+{
+                             //   alert("smoker");
+                                
+if(w3==120 )
+{
+                                                                     
+if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+                                                                 
+if(w4==5)
+{                                        // alert(" " + w4);                                        
+var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+if(w4==6)
+{                             // alert(" " + w4);                                        
+var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+  if(w4==7)
+{                                        // alert(" " + w4);                                        
+var total=10;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+{
+ var total=12;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+                                     
+ }
+}
+ else                                
+if(w3==140)
+								{								
+ if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else
+ if(w4==5)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=10;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+   else
+  if(w4==6)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=12;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+   else
+  if(w4==7)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=14;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+{
+ var total=17;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+}
+								if(w3==160)
+								{								
+							  if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=12;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else if(w4==5)
+{
+                                        // alert(" " + w4);                                        
+var total=14;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else
+if(w4==6)
+{
+                                        // alert(" " + w4);                                        
+var total=17;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+   else
+if(w4==7)
+ 									{
+ 									var total=20;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+   else
+if(w4==8)
+ 									{
+ 									var total=24;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+                                    
+}
+								else
+								if(w3==180)
+								{								
+								  if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=18;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else if(w4==5)
+{
+                                        // alert(" " + w4);                                        
+var total=21;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+ else if(w4==6)
+{
+                                        // alert(" " + w4);                                        
+var total=24;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+
+ else if(w4==7)
+{
+                                        // alert(" " + w4);                                        
+var total=28;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }     
+                                     
+ else if(w4==8)
+{
+                                        // alert(" " + w4);                                        
+var total=33;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }                                  
+                                    
+}
+
+
+}
+                        
+}                        
+
+else
+if(w2==65)
+{
+
+if(document.getElementById("radio41").checked==true)
+{
+                              //  alert("non smoker");
+                                
+if(w3==120)
+{
+                                   // alert(" " + w3);
+                                    
+if(w4==4)
+{                                   
+var total=4;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else                          
+if(w4==5)
+{                                   
+var total=5;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+     else
+   if(w4==6)
+{
+ var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else    if(w4==7)
+{
+ var total=7;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;                                          
+}
+else
+{
+ var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;                                          
+}                                    
+}
+ else
+if(w3==140)
+{
+if(w4==4)
+{ 
+var total=6;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                          
+}
+else
+ if(w4==5)     
+{
+	var total=8;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+                                     
+     else if(w4==6)
+{
+				var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}    else if(w4==7)
+{
+				var total=11;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}                                    
+     else
+{
+									 var total=13;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}    
+}
+ else
+ if(w3==160)
+{
+ if(w4==4)
+{
+									 var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+else if(w4==5)
+{
+									 var total=11;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+else if(w4==6)
+{
+									 var total=13;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}             
+ 
+else if(w4==7)
+{
+									 var total=15;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}             
+else if(w4==8)
+{
+									 var total=16;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}                  
+}
+ else
+if(w3==180)
+{ 
+ if(w4==4)
+{
+ 									 var total=14;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+else  if(w4==5)
+{
+ 									 var total=16;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+ else  if(w4==6)
+{
+             					 var total=19;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}                     
+else
+if(w4==7)
+{
+                         					 var total=22;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+else
+{
+                         					 var total=26;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+}
+                                
+}
+
+}
+							
+else
+if(document.getElementById("radio31").checked==true)
+{
+                             //   alert("smoker");
+                                
+if(w3==120 )
+{
+                                                                     
+if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=9;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+                                                                 
+if(w4==5)
+{                                        // alert(" " + w4);                                        
+var total=10;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+if(w4==6)
+{                             // alert(" " + w4);                                        
+var total=12;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+  if(w4==7)
+{                                        // alert(" " + w4);                                        
+var total=14;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+{
+ var total=17;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+
+                                     
+ }
+}
+ else                                
+if(w3==140)
+								{								
+					  if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=13;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else
+ if(w4==5)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=15;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+   else
+  if(w4==6)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=17;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+   else
+  if(w4==7)
+ 									{
+                                        // alert(" " + w4);                                        
+var total=20;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+else
+{
+ var total=24;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+}
+								if(w3==160)
+								{								
+							  if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=18;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else if(w4==5)
+{
+                                        // alert(" " + w4);                                        
+var total=21;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else
+if(w4==6)
+{
+                                        // alert(" " + w4);                                        
+var total=25;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+}
+   else
+if(w4==7)
+ 									{
+ 									var total=29;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+   else
+if(w4==8)
+ 									{
+ 									var total=34;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }
+                                    
+}
+								else
+								if(w3==180)
+								{								
+								  if(w4==4)
+{
+                                        // alert(" " + w4);                                        
+var total=26;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+     else if(w4==5)
+{
+                                        // alert(" " + w4);                                        
+var total=30;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+                                        
+} 
+ else if(w4==6)
+{
+                                        // alert(" " + w4);                                        
+var total=35;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ } 
+
+ else if(w4==7)
+{
+                                        // alert(" " + w4);                                        
+var total=41;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }     
+                                     
+ else if(w4==8)
+{
+                                        // alert(" " + w4);                                        
+var total=47;
+document.fm.sum.value=total;
+document.fm.sum1.value=total*3;
+ }                                  
+                                    
+}
+
+
+}
+                        
+}     
+
+                        
+}
+
+                }
+                
+             }
+            //Sushant Coding start---
+            else
+                {
+                    var agearr =new Array(40,50,55,60,65);
+                    
+                    var sybp =new Array(120,140,160,180);
+                    
+                    var hdl =new Array(4,5,6,7,8);
+                    
+ if(w1 ==10)//high risk countries
+{
+    
+    
+
+    
+    if(w5==0.8)
+    {
+high = new Array(1,1,1,1,2,1,1,2,2,2,2,2,2,3,3,2,3,3,3,5,0,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,2,2,2,3,3,4,4,5,6,4,5,6,7,9,6,7,8,10,12,8,10,12,14,17,2,2,2,3,4,2,3,3,4,5,3,4,5,6,7,5,5,7,8,9,5,6,7,8,10,7,8,9,11,14,9,11,13,15,19,13,15,18,21,25,3,3,4,5,6,4,4,5,6,8,5,6,7,9,11,7,9,10,12,15,7,8,10,12,14,10,12,14,16,19,14,16,19,22,26,19,22,25,30,35,4,5,6,7,8,6,7,8,9,11,8,9,11,13,15,11,13,15,18,21,10,12,14,16,19,14,16,19,22,26,19,22,25,29,34,26,30,34,39,45,6,7,8,9,11,8,9,11,13,15,11,13,15,18,21,16,18,21,24,28,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,2,2,2,2,2,2,2,3,2,2,3,3,3,3,3,3,4,4,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,2,2,2,2,3,3,3,4,4,4,4,4,5,6,5,5,6,6,7,6,7,8,8,9,1,2,2,2,2,2,2,2,2,3,2,3,3,3,4,3,3,4,4,5,5,5,6,7,7,6,7,8,9,10,8,9,10,11,12,11,12,13,14,16,2,3,3,3,4,3,3,4,4,5,4,4,5,6,6,5,6,6,7,8,10,11,12,14,15,13,14,16,18,19,17,19,20,22,25,22,24,26,28,31,5,6,6,7,8,7,7,8,9,10,9,9,10,12,13,11,12,13,15,16);
+        
+                    
+    }
+    else if(w5==1.0)
+    {
+       
+   high=new Array(1,1,1,1,2,1,1,2,2,2,2,2,2,3,3,2,3,3,4,4,0,0,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,3,3,4,5,6,4,4,5,6,8,5,6,7,9,11,7,9,10,12,15,1,2,2,3,3,2,2,3,4,4,3,3,4,5,6,4,5,6,7,8,4,5,6,7,9,6,7,8,10,12,8,10,11,14,16,11,13,16,19,22,2,3,3,4,5,3,4,5,6,7,5,5,6,8,9,6,8,9,11,13,6,7,9,10,13,9,10,12,14,17,12,14,17,20,23,17,20,23,27,31,4,4,5,6,7,5,6,7,8,10,7,8,10,11,14,10,12,13,16,19,9,10,12,14,17,13,14,17,20,23,18,20,23,27,31,24,27,31,35,41,5,6,7,8,10,7,8,10,11,13,10,12,13,16,18,14,16,19,22,25,0,0,0,0,1,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,3,2,2,3,3,4,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,3,3,3,3,3,3,4,4,5,4,4,5,5,6,5,6,6,7,8,1,1,1,2,2,1,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,5,5,6,5,6,6,7,8,7,7,8,9,10,9,10,11,12,13,2,2,2,3,3,3,3,3,3,4,3,4,4,5,5,4,5,5,6,7,8,9,10,11,13,11,12,13,15,16,14,16,17,19,20,19,20,22,24,26,4,5,5,6,7,5,6,7,7,8,7,8,9,10,11,9,10,11,12,14);
+      
+    }
+    else if(w5==1.4)
+    {
+ high=new Array(1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,2,2,2,3,3,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,3,4,4,3,3,4,5,6,4,5,6,7,8,6,7,8,10,11,1,1,2,2,2,2,2,2,3,3,2,3,3,4,5,3,4,5,5,6,3,4,5,6,7,5,5,6,8,9,6,8,9,11,13,9,11,12,15,17,2,2,3,3,4,3,3,4,4,5,4,4,5,6,7,5,6,7,8,10,5,6,7,8,10,7,8,10,11,13,10,12,14,16,18,14,16,19,22,25,3,3,4,5,6,4,5,6,6,8,6,7,8,9,11,8,9,11,13,15,7,9,10,11,13,11,12,14,16,18,15,17,19,22,25,21,23,26,29,34, 4,5,6,7,8,6,7,8,9,11,9,10,11,13,15,12,14,15,18,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,2,2,2,2,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,4,4,4,4,4,5,5,5,5,6,6,7,6,7,7,8,9,1,1,2,2,2,2,2,2,2,3,2,2,3,3,3,3,3,4,4,4,6,6,7,8,9,8,8,9,10,11,10,11,12,13,14,13,14,15,17,18, 3,3,3,4,4,4,4,4,5,6,5,5,6,6,7,7,7,8,8,9);
+   
+    }
+    else if(w5==1.8)
+    {
+high=new Array(0,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,2,2,2,3,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,3,3,2,3,3,4,5,3,4,5,5,6,6,6,7,8,9, 1,1,1,2,2,1,2,2,2,3,2,2,3,3,4,3,3,4,4,5,3,3,4,4,5,4,4,5,6,7,5,6,7,8,10,8,9,10,12,14,1,2,2,2,3,2,2,3,3,4,3,3,4,5,6,4,5,6,7,8,4,5,6,7,8,6,7,8,9,11,9,10,11,13,15,12,14,15,18,20,2,3,3,4,4,3,4,4,5,6,5,6,6,7,9,7,8,9,10,12,6,7,8,9,11,9,10,11,13,15,13,14,16,18,21,18,20,22,25,28,4,4,5,5,6,5,6,7,7,9,7,8,9,11,12,11,12,13,15,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,2,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,2,3,3,3,3,3,4,4,4,5,4,5,5,5,6,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,4,4,5,5,6,5,6,6,7,7,7,8,8,9,10,9,10,11,12,13,2,2,2,3,3,3,3,3,3,4,3,4,4,4,5,5,5,5,6,6);
+         
+    }
+    
+    if(document.getElementById("radio3").checked==true)
+    {
+      
+          
+         var ag= agearr.indexOf(w2);
+        ind=ind+ag*40;
+        
+        if(document.getElementById("radio31").checked==true)
+        {
+            ind=ind;
+        }
+        else if(document.getElementById("radio41").checked==true)
+        {
+            ind=ind+20;
+        }
+        
+           var bp= sybp.indexOf(w3);
+        var hd=hdl.indexOf(w4);
+        ind=ind+bp*5;
+        ind=ind+hd;
+    document.fm.sum.value=high[ind];
+             
+        
+    }
+    else if(document.getElementById("radio4").checked==true)
+    {
+      
+        ind=ind+200;
+        var ag= agearr.indexOf(w2);
+        ind=ind+ag*40;
+        
+        if(document.getElementById("radio31").checked==true)
+        {
+            ind=ind;
+        }
+        else if(document.getElementById("radio41").checked==true)
+        {
+            ind=ind+20;
+        }
+        
+        var bp= sybp.indexOf(w3);
+        var hd=hdl.indexOf(w4);
+        ind=ind+bp*5;
+        ind=ind+hd;
+        document.fm.sum.value=high[ind];
+        
+        
+    }
+    
+    
+
+
+}
+else// Low risk countries
+                    {
+                        
+                        
+                        
+                        
+                        if(w5==0.8)
+                        {
+high = new Array(0,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,2,2,2,3, 0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,3,3,2,3,3,4,5,3,4,4,5,6,4,5,6,7,9,1,1,1,1,2,1,1,2,2,3,2,2,2,3,4,2,3,3,4,5,2,3,3,4,5,3,4,5,6,7,5,5,6,8,9,7,8,9,11,13,1,2,2,2,3,2,2,3,3,4,3,3,4,4,5,4,4,5,6,7,4,4,5,6,7,5,6,7,8,10,7,8,10,11,14,10,12,14,16,19,2,2,3,3,4,3,3,4,5,6,4,5,6,7,8,6,7,8,9,11,6,6,8,9,11,8,9,11,12,15,11,13,15,17,20,16,18,20,23,27,3,4,4,5,6,5,5,6,7,8,6,7,8,10,12,9,10,12,14,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,2,3,3,3,4,3,3,4,4,5,1,1,1,1,1,1,1,1,1,2,1,1,1,2,2,2,2,2,2,2,3,3,3,3,4,3,4,4,4,5,4,5,5,6,6,6,6,7,8,8,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,5,6,6,7,7,7,7,8,9,10,9,10,10,11,12,12,13,13,15,16,2,3,3,3,4,3,4,4,4,5,4,5,5,6,6,6,6,7,7,8);
+                            
+                            
+                        }
+                        else if(w5==1.0)
+                        {
+                            
+high=new Array(0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,2,2,2,3,2,2,3,3,4,3,3,4,5,6,4,5,5,6,8,1,1,1,1,2,1,1,2,2,2,2,2,2,3,3,2,3,3,4,4, 2,2,3,3,4,3,3,4,5,6,4,5,6,7,8,6,7,8,9,11,1,1,2,2,2,2,2,2,3,3,2,3,3,4,5,3,4,5,5,6,3,4,4,5,6,5,5,6,7,9,7,8,9,10,12,9,11,12,14,17,2,2,3,3,3,3,3,4,4,5,4,4,5,6,7,5,6,7,8,10, 5,6,7,8,9,7,8,10,11,13,10,12,13,15,18,14,16,18,21,24,3,3,4,4,5,4,5,5,6,7,6,7,8,9,10,8,9,11,12,14, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,2,2,2,2,2,2,2,3,3,3,3,3,3,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,5,5,5,5,6,6,7,1,1,1,1,2,1,1,2,2,2,2,2,2,2,3,2,3,3,3,3,4,5,5,6,6,6,6,7,7,8,7,8,9,9,10,10,11,12,12,13,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,5,6,6,7);
+                            
+                        }
+                        else if(w5==1.4)
+                        {
+high=new Array(0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,2,3,3,4,4,3,4,4,5,6, 1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,2,2,2,3,3, 2,2,2,3,3,2,3,3,4,5,3,4,5,5,6,5,6,7,8,9,1,1,1,2,2,1,2,2,2,3,2,2,3,3,4,3,3,4,4,5,3,3,4,4,5,4,4,5,6,7,6,6,7,8,10,8,9,10,12,13,2,2,2,2,3,2,3,3,3,4,3,4,4,5,5,5,5,6,7,8,4,5,6,6,7,6,7,8,9,10,9,10,11,13,14,12,14,15,17,20,2,3,3,4,4,4,4,4,5,6,5,6,6,7,8,7,8,9,10,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,2,2,2,2,3,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 1,2,2,2,2,2,2,2,2,3,3,3,3,3,4,3,4,4,4,5,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,4,4,4,4,5,5,5,5,6,6,6,7,7,7,8,8,9,1,2,2,2,2,2,2,2,2,3,2,3,3,3,3,3,4,4,4,5);
+                            
+                        }
+                        else if(w5==1.8)
+                        {
+ high=new Array(0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,4,4,5,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,1,2,2,2,3,2,2,3,3,4,3,3,4,4,5,4,5,5,6,7, 1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,2,3,3,3,4,2,3,3,3,4,3,4,4,5,6,5,5,6,7,8,7,8,9,10,11,1,1,2,2,2,2,2,2,3,3,3,3,3,4,4,4,4,5,5,6,4,4,5,5,6,5,6,7,7,9,8,8,9,11,12,11,12,13,15,17,2,2,3,3,3,3,3,4,4,5,4,5,5,6,7,6,7,8,9,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2, 0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,5,5,5,6,6,6,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3);
+                            
+                        }
+                        
+                        if(document.getElementById("radio3").checked==true)
+                        {
+                            
+                            
+                            var ag= agearr.indexOf(w2);
+                            ind=ind+ag*40;
+                            
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                                ind=ind;
+                            }
+                            else if(document.getElementById("radio41").checked==true)
+                            {
+                                ind=ind+20;
+                            }
+                            
+                            var bp= sybp.indexOf(w3);
+                            var hd=hdl.indexOf(w4);
+                            ind=ind+bp*5;
+                            ind=ind+hd;
+                            if(document.getElementById("radio31").checked==true ||document.getElementById("radio41").checked==true )
+                            {
+                            document.fm.sum.value=high[ind];
+                            }
+                            
+                            
+                        }
+                        else if(document.getElementById("radio4").checked==true)
+                        {
+                        
+                            ind=ind+200;
+                            var ag= agearr.indexOf(w2);
+                            ind=ind+ag*40;
+                            
+                            if(document.getElementById("radio31").checked==true)
+                            {
+                                ind=ind;
+                            }
+                            else if(document.getElementById("radio41").checked==true)
+                            {
+                                ind=ind+20;
+                            }
+                            
+                            var bp= sybp.indexOf(w3);
+                            var hd=hdl.indexOf(w4);
+                            ind=ind+bp*5;
+                            ind=ind+hd;
+                             if(document.getElementById("radio31").checked==true ||document.getElementById("radio41").checked==true )
+                            {
+                            document.fm.sum.value=high[ind];
+                            }
+                            
+                        }
+                        
+                        
+                    }
+               }
+                
+              if(document.getElementById("radio3").checked==true)
+                {
+                    var total= parseFloat(document.fm.sum.value);
+                    document.fm.sum1.value=total *3;
+                }
+                else if(document.getElementById("radio4").checked==true)
+
+                {
+                    var total= parseFloat(document.fm.sum.value);
+                    document.fm.sum1.value=total *4;
+                }
+            
+                
+                
+            }
+             $(function(){
+          $('label').bind('click', function(){ $(input, this).click(); return false; });
+          });
+
+                       </script>
+               
+<script type='text/javascript'>
+    /*
+  window.onload = function()
+  {
+    document.getElementById('gc').selectedIndex = -1;
+    document.getElementById('age').selectedIndex = -1;
+    document.getElementById('SBP').selectedIndex = -1;
+    document.getElementById('TC').selectedIndex = -1;
+    document.getElementById('HDL').selectedIndex = -1;
+  }
+  */
+  
+</script>
+                   <script language="JavaScript">
+                       $(function(){
+                         $('label').bind('click', function(){ $(input, this).click(); return false; });
+                         
+                         $("#ref_button").click(function()
+                                                {
+                                                var className = $('#ref_button').attr('class');
+                                                if (className == 'abbBtn')
+                                                $('#ref_button').removeClass('abbBtn').addClass('abbBtnClick');
+                                                else
+                                                $('#ref_button').removeClass('abbBtnClick').addClass('abbBtn');
+                                                $("#reference").slideToggle("fast", function()
+                                                                            {
+                                                                            $('html, body').animate({scrollTop : $(this).offset().top}, 700);
+                                                                            });
+                                                });
+                         
+                         });
+                       </script>
+              
+</head>
+    
+    
+    <body>
+  <form name="fm" >
+            <table width="100%" cellpadding="4"  cellspacing=0 style="border-collapse:collapse;">
+                <tr class="input_tr"><td colspan="3"></td></tr>
+				<tr class="input_tr">
+
+<td width="33%" align="right" class="input_name">Country of origin</td>
+<td colspan="2" style="padding-left:10px;">
+<select style="font-size:14px; width:130px;" class="drop_center" name="gc" id="gc"  onChange="valcal(); changeColor();">
+                            <option></option>
+                            <option value="9">Low risk countries</option>
+                            <option value="10">High risk countries</option>
+                        </select>
+                      <!--</td>
+<td>-->&nbsp;&nbsp;<span class="color_panel" id="changeColor">colori</span></td>
+</tr>                
+<tr class="input_tr">
+<td class="input_name" align="right" style="padding-top:4px;">Gender</td>
+<td colspan="2" style="padding-top:4px;">
+
+<table width="97%">
+<tr>
+<td width="48%"><input type="radio" name="radio1" id="radio3" onChange="valcal()" value="0" ><label onclick="" for="radio3" onclick="">Male</label></td>
+<td width="52%"><input type="radio" name="radio1" id="radio4" onChange="valcal()" value="1"><label onclick="" for="radio4" onclick="">Female</label></td>
+</tr>
+</table>
+
+</td></tr>
+                
+<tr class="input_tr">
+<td  align="right" class="input_name" style="padding-top:9px;">Age</td>
+<td width="35%" style="padding-left:10px; padding-top:9px;">
+<select class="drop_center" id="age" name="age"  onChange="valcal()">
+                            <option></option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                            <option value="55">55</option>
+                            <option value="60">60</option>
+                            <option value="65">65</option>
+                         </select></td>
+<td class="input_unit">years</td>
+                </tr>
+ 
+       
+       <tr class="input_tr">
+           <td align="right" class="input_name" style="padding-top:9px;">
+               Tobacco use
+           </td>
+           <td colspan="2" style="padding-top:9px;">
+               <table width="97%">
+                   <tr>
+                       <td width="47%"><input type="radio" name="radios11" id="radio31" onChange="valcal()" value="0" >
+                           <label onclick="" for="radio31" onclick="">Smoker</label>
+                           </td>
+                       
+                       <td width="50%"><input type="radio" name="radios11" id="radio41" onChange="valcal()" value="1">
+                           <label onclick="" for="radio41" onclick="">Non-Smoker</label>
+                           </td>
+                   </tr>
+               </table>
+           </td>
+           
+       </tr>
+
+       
+                <tr class="input_tr">
+                   		<td  align="right" class="input_name" style="padding-top:10px;">
+                        Systolic BP                    </td>
+                    <td style="padding-left:10px;padding-top:10px;">
+                        
+                        	<select class="drop_center" id="SBP" onChange="valcal();" name="SBP">
+                                <option></option>
+                            <option value="120">120</option>
+                            <option value="140">140</option>
+                            <option value="160">160</option>
+                            <option value="180">180</option>
+                         </select>
+                    </td>
+                    		<td class="input_unit">
+                        mmHg                    </td>
+                </tr>
+                
+                <tr class="input_tr">
+                   		<td  align="right" class="input_name" style="padding-top:7px;">
+                        Total cholesterol</td>
+                    <td style="padding-left:10px;padding-top:7px;">
+                        
+                      <select style="width:100%;" class="drop_center" id="TC" name="TC"  onChange="valcal()">
+                          <option></option>
+                            <option value="4">4 (150)</option>
+                            <option value="5">5 (190)</option>
+                            <option value="6">6 (230)</option>
+                            <option value="7">7 (270)</option>
+                            <option value="8">8 (310)</option>
+                        </select>
+                    </td>
+                    		<td class="input_unit">
+                        mmol/L (mg/dL)</td>
+                </tr>
+                
+                
+                <tr class="input_tr">
+                    		<td  align="right" class="input_name" style="padding-top:1px;padding-bottom:7px;">
+                        HDL-C (optional)</td>
+                    <td style="padding-left:10px;padding-top:1px;padding-bottom:7px;">
+                        
+            <select class="drop_center" name="HDL" id="HDL" onChange="valcal()">
+                            <option></option>
+                            <option value="0.8">0.8 (31)</option>
+                            <option value="1.0">1.0 (39)</option>
+                            <option value="1.4">1.4 (54)</option>
+                            <option value="1.8">1.8 (70)</option>
+                         </select>
+                    </td>
+                    		<td class="input_unit"  style="padding-top:0px;padding-bottom:7px;">
+                        mmol/L (mg/dL)</td>
+                </tr>
+                 <tr>
+                    		<td  align="right" class="input_name" style="padding-top:11px;">
+Fatal CVD risk</td>
+                    <td style="padding-left:10px;padding-top:11px;">
+<!--<input style="width:100%; text-align:right;"   type="number" name="sum" size="3" readonly="readonly" class="readonly" style="float:right;" />-->
+                        
+                      <input type="number" class="output" name="sum" readonly="readonly">
+
+                    </td>
+                   		<td class="input_unit" rowspan="2">
+                        10 years risk in %                    </td>
+                </tr>
+                                 
+
+                <tr>
+                    		<td  align="right" class="input_name" style="padding-top:9px;">
+                        Total CVD risk</td>
+                    <td style="padding-left:10px;padding-top:9px;"> 
+<input type="number" name="sum1" readonly="readonly" class="output">                        
+<!--<input type="number" class="output" id="egfr2" name="egfr2" style="padding-left:10px;" readonly="readonly">
+    -->                </td>
+                </tr>
+                
+                
+                 
+            </table>      
+        </form>
+         <div class="footer-div" id="998">
+        <table class="footer-button-table">
+            <tr>
+			<td class="footer-button" style="width: 50%;"><button class="mfooter-button" id="reset" onClick="window.location.href=window.location.href">Reset</button></td>
+                <td class="footer-button"  style="width: 50%;">
+                    <button class="mfooter-button" id="ref_button">Abbreviation(s) and footnote(s)</button>
+                </td>
+            
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <div class="reference-box" id="reference">
+                    <p class="text-left"> <sup>*</sup>Country with substantial lowering of CV mortality rate recently
+                            <br>(see <a href="http://www.ehnheart.org/">www.ehnheart.org</a> [CVD statistics] for recent mortality rates)
+							<br>For detailed view of risk charts, <a href="ref_ENAS5197_4.1.1.0.html" >see here </a>
+                    </p>
+        </div>
+        </td>
+        </tr>
+        </table>
+        </div>
+   
+		
+		
+		
+		
+        
+  </body>
+</html>

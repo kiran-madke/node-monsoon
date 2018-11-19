@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="score_bb.css">
+
+<script src="jquery-1.9.1.min.js"></script>
+<script src="jquery-tocPlugin.js"></script>
+    <STYLE TYPE="text/css">
+        body {
+            background-color: #cccccc;
+            background-color: #cccccc;
+        }
+        </style>
+<script>
+
+	var totalscore = 0;
+	var isResetPressed = "false";
+	var box1Array = new Array("box1_option1", "box1_option2", "box1_option3");
+	var box2Array = new Array("box2_option1", "box2_option2", "box2_option3");
+	var box3Array = new Array("box3_option1", "box3_option2", "box3_option3","box3_option4");
+	var box4Array = new Array("box4_option1", "box4_option2", "box4_option3", "box4_option4", "box4_option5");
+	var box5Array = new Array("box5_option1", "box5_option2");
+	
+	var boxArray = new Array(6);
+
+		boxArray = [ box1Array, box2Array, box3Array, box4Array, box5Array ];
+	var box = new Array("box1", "box2", "box3", "box4", "box5");
+	var isBoxPressed = new Array("false", "false", "false", "false", "false");
+
+	$(document).ready(function()
+	{
+	
+	
+				 $("#box5_option2").click(function()
+                                               {
+                                               whichArray = 4;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 0, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 0, 0, whichArray);
+                                               }
+                                               });
+                $("#box5_option1").click(function()
+                                               {
+                                               whichArray = 4;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 8, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 8, 0, whichArray);
+                                               }
+                                               });
+               
+                      $("#box4_option5").click(function()
+                                               {
+                                               whichArray = 3;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 0, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 0, 0, whichArray);
+                                               }
+                                               });
+	  
+					 $("#box4_option4").click(function()
+                                               {
+                                               whichArray = 3;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 8, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 8, 0, whichArray);
+                                               }
+                                               });                                                                                                 
+					$("#box4_option3").click(function()
+                                               {
+                                               whichArray = 3;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 5, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 5, 0, whichArray);
+                                               }
+                                               });                                                
+                                               
+				  $("#box4_option2").click(function()
+                                               {
+                                               whichArray = 3;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 3, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 3, 0, whichArray);
+                                               }
+                                               });    
+				 $("#box4_option1").click(function()
+                                               {
+                                               whichArray = 3;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 1, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 1, 0, whichArray);
+                                               }
+                                               });                                                                                               
+                                                                                              
+                 $("#box3_option4").click(function()
+                                               {
+                                               whichArray = 2;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 6, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 6, 0, whichArray);
+                                               }
+                                               });
+											   
+											                                                  
+                 $("#box3_option3").click(function()
+                                               {
+                                               whichArray = 2;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 0, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 0, 0, whichArray);
+                                               }
+                                               });
+											   
+                $("#box3_option2").click(function()
+                                               {
+                                               whichArray = 2;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 4, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 4, 0, whichArray);
+                                               }
+                                               });
+                $("#box3_option1").click(function()
+                                               {
+                                               whichArray = 2;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 6, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 6, 0, whichArray);
+                                               }
+                                               });
+                      
+                $("#box2_option3").click(function()
+                                               {
+                                               whichArray = 1;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 0, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 0, 0, whichArray);
+                                               }
+                                               });
+                $("#box2_option2").click(function()
+                                               {
+                                               whichArray = 1;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 1, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 1, 0, whichArray);
+                                               }
+                                               });
+                $("#box2_option1").click(function()
+                                               {
+                                               whichArray = 1;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 2, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 2, 0, whichArray);
+                                               }
+                                               });
+                      
+                      $("#box1_option3").click(function()
+                                               {
+                                               whichArray = 0;
+                                               if (isBoxPressed[whichArray] == "false")
+                                               {
+                                               boxSlide($(this).attr("id"), "true", 0, 1, whichArray);
+                                               }
+                                               else
+                                               {
+                                               boxSlide($(this).attr("id"), "false", 0, 0, whichArray);
+                                               }
+                                               });
+                      
+                       		$("#box1_option2").click(function()
+		{
+			whichArray = 0;
+			if (isBoxPressed[whichArray] == "false")
+			{
+				boxSlide($(this).attr("id"), "true", 1, 1, whichArray);
+			}
+			else
+			{
+				boxSlide($(this).attr("id"), "false", 1, 0, whichArray);
+			}
+		});
+		$("#box1_option1").click(function()
+		{
+			whichArray = 0;
+			if (isBoxPressed[whichArray] == "false")
+			{
+				boxSlide($(this).attr("id"), "true", 2, 1, whichArray);
+			}
+			else
+			{
+				boxSlide($(this).attr("id"), "false", 2, 0, whichArray);
+			}
+		});
+
+                      
+                  
+	 
+                      
+                      $("#ref_button").click(function()
+                                             {
+                                             $("#reference").slideToggle("fast", function()
+                                                                         {
+                                                                         $('html, body').animate(
+                                                                                                 {
+                                                                                                 scrollTop : $(this).offset().top
+                                                                                                 }, 700);
+                                                                         });
+                                             });
+
+		$("#reset").click(function()
+		{
+			//$(".points").hide("slow");
+			$(".result_table").hide("slow");
+			//$("#reftext").hide("slow");
+			$("#reference").hide("slow");
+			totalscore = 0;
+			for ( var x = 0; x < isBoxPressed.length; x++)
+			{
+				isBoxPressed[x] = "false";
+			}
+			isResetPressed = "false";
+
+			for ( var x = 1; x < box.length; x++)
+			{
+				$("#" + box[x]).hide();
+			}
+
+			$("#total_points").text(totalscore);
+			$("#reset_text").text("Reset");
+			$("#reset").css(
+			{
+				"-webkit-border-bottom-right-radius" : "7px",
+				"-webkit-border-bottom-left-radius" : "7px"
+			});
+
+			for ( var i = 0; i < boxArray.length; i++)
+			{
+				for ( var j = 0; j < boxArray[i].length; j++)
+				{
+					$("#" + boxArray[i][j]).slideDown("fast");
+				}
+			}
+
+			$(".list_middle").css(
+			{
+				"-webkit-border-bottom-right-radius" : "0px",
+				"-webkit-border-bottom-left-radius" : "0px"
+			});
+		});
+	});
+
+	
+	function boxSlide(id, status, point, mode, whichArray)
+	{
+		if (mode == 1)
+		{
+			for ( var j = 0; j < boxArray[whichArray].length; j++)
+			{
+				if (id != boxArray[whichArray][j])
+				{
+					$("#" + boxArray[whichArray][j]).slideUp("fast");
+				}
+			}
+			$("#" + id).css(
+			{
+				"-webkit-border-bottom-right-radius" : "7px",
+				"-webkit-border-bottom-left-radius" : "7px"
+			});
+			isBoxPressed[whichArray] = status;
+			totalscore = totalscore + point;
+			showScore();
+		}
+		else if (mode == 0)
+		{
+			for ( var j = 0; j < boxArray[whichArray].length; j++)
+			{
+				if (id != boxArray[whichArray][j])
+				{
+					$("#" + boxArray[whichArray][j]).slideDown("fast");
+				}
+			}
+			$("#" + id).css(
+			{
+				"-webkit-border-bottom-right-radius" : "0px",
+				"-webkit-border-bottom-left-radius" : "0px"
+			});
+			isBoxPressed[whichArray] = status;
+			totalscore = totalscore - point;
+			hideScore();
+		}
+		$("#total_points").text(totalscore);
+		if (whichArray < box.length)
+			$("#" + box[whichArray + 1]).show();
+		$("#" + box[whichArray]).scroll();
+	}
+
+
+	function hideScore()
+	{
+		//$(".points").hide();
+		$(".result_table").hide();
+		$("#reftext").hide();
+		$("#reset_text").text("Reset");
+		isResetPressed = "false";
+		$("#reset").css(
+		{
+			"-webkit-border-bottom-right-radius" : "7px",
+			"-webkit-border-bottom-left-radius" : "7px"
+		});
+	}
+
+	function showScore()
+	{
+		if ((isBoxPressed[0] == "true") && (isBoxPressed[1] == "true") && (isBoxPressed[2] == "true") && (isBoxPressed[3] == "true") && (isBoxPressed[4] == "true") )
+		{
+			$(".result_table").show();
+		//	$(".points").show();
+			$("#reftext").show();
+		}
+		
+		var res = parseInt(totalscore, 10);
+		if (res > 8)
+		{
+			$("#result").text("Definite familial hypercholesterolaemia");
+			$("#total_points").text(totalscore);
+		}
+		else if (res >= 6 && res <=8)
+		{
+			$("#result").text("Probable familial hypercholesterolaemia");
+			$("#total_points").text(totalscore);
+		}
+		else if (res >= 3 && res <=5)
+		{
+			$("#result").text("Possible familial hypercholesterolaemia");
+			$("#total_points").text(totalscore);
+		}
+		else if (res <3)
+		{
+			$("#result").text("No familial hypercholesterolaemia");
+			$("#total_points").text(totalscore);
+		}
+		
+	}
+</script>
+
+</head>
+<body>
+<div>
+		<div id="box1" class="box_class">
+			<div class="list_first" id="box1_title">
+				<p class="text_left">Family history<span class="num_right_grey">max. 2</span></p>
+			</div>
+            <div class="list_middle" id="box1_option2">
+                <table style="margin: 5px 0px 5px 0px;"><tr><td width="85%">First-degree relative with known premature (men: &lt;55 years; women: &lt;60 years) coronary or vascular disease, or First-degree relative with known LDL-C above the 95th percentile</td><td><span class="num_right">1</span></td></tr>
+                </table>
+			</div>
+			<div class="list_middle" id="box1_option1"> 
+                <table style="margin: 5px 0px 5px 0px;"><tr><td width="85%">First-degree relative with tendinous xanthomata and/or arcus cornealis, or children &lt;18 years of age with LDL-C above the 95th percentile</td><td><span class="num_right">2</span></td></tr>
+                </table>
+				
+            
+			</div>
+           
+            
+            <div class="list_last" id="box1_option3">
+				 <table style="margin: 5px 0px 5px 0px;"><tr><td width="85%">  None of above</td><td><span class="num_right">0</span></td></tr></table>
+				</p>
+			</div>
+			 
+		</div>
+
+		<div id="box2" style="display: none;" class="box_class">
+			<div class="list_first_triangle" id="box2_title">
+				<p class="text_left">Clinical history<span class="num_right_grey">max. 2</span></p>
+			</div>
+            
+			 <div class="list_middle" id="box2_option1">
+				<table style="margin: 5px 0px 5px 0px;"><tr><td width="85%">Patient with premature (men: &lt;55 years; women: &lt;60 years) coronary artery disease</td><td><span class="num_right">2</span></td></tr></table>
+				</p>
+			</div>
+
+			<div class="list_middle" id="box2_option2">
+				<table style="margin: 5px 0px 5px 0px;"><tr><td width="85%">Patient with premature (men: &lt;55 years; women: &lt;60 years) cerebral or peripheral vascular disease</td><td><span class="num_right">1</span></td></tr></table>
+				</p>
+			</div>
+            <div class="list_last" id="box2_option3">
+				<table style="margin: 5px 0px 5px 0px;"><tr><td width="85%"> None of above</td><td><span class="num_right">0</span></td></tr></table>
+				</p>
+			</div>
+		</div>
+
+		<div id="box3" style="display: none;" class="box_class">
+		
+			<div class="list_first_triangle" id="box3_title">
+				<p class="text_left">Physical examination<sup>a</sup><span class="num_right_grey">max. 6</span>
+				</p>
+			</div>
+            
+			   <div class="list_middle" id="box3_option1">
+				<table style="margin: 5px 0px 5px 0px;"><tr><td width="85%">Tendinous xanthomata</td><td><span class="num_right">6</span></td></tr></table>
+				</p>
+			</div>
+
+			<div class="list_middle" id="box3_option2">
+				<table style="margin: 5px 0px 5px 0px;"><tr><td width="85%">Arcus cornealis before age 45 years</td><td><span class="num_right">4</span></td></tr></table>
+				</p>
+			</div>
+			<div class="list_middle" id="box3_option4">
+				<table style="margin: 5px 0px 5px 0px;"><tr><td width="85%">Both are present</td><td><span class="num_right">6</span></td></tr></table>
+				</p>
+			</div>
+            
+            <div class="list_last" id="box3_option3">
+				<table style="margin: 5px 0px 5px 0px;"><tr><td width="85%"> None of above</td><td><span class="num_right">0</span></td></tr></table>
+				</p>
+			</div>
+			 
+		</div>
+  
+		<div id="box4" style="display: none" class="box_class">
+			<div class="list_first_triangle" id="box4_title">
+				<p class="text_left">LDL-C <span class="num_right_grey">max. 8</span>
+				</p>
+			</div>
+			<div class="list_middle" id="box4_option4">
+				<p class="text_left">&ge; 8.5 mmol/L (325 mg/dL)<span class="num_right">8</span>
+				</p>
+			</div>
+
+			<div class="list_middle" id="box4_option3">
+				<p class="text_left">6.5–8.4 mmol/L (251–325 mg/dL)<span class="num_right">5</span>
+				</p>
+			</div>
+			<div class="list_middle" id="box4_option2">
+				<p class="text_left">5.0–6.4 mmol/L (191–250 mg/dL)<span class="num_right">3</span>
+				</p>
+			</div>
+			<div class="list_middle" id="box4_option1">
+				<p class="text_left">4.0–4.9 mmol/L (155–190 mg/dL)<span class="num_right">1</span>
+				</p>
+			</div>
+            
+            <div class="list_last" id="box4_option5">
+				<p class="text_left">None of above<span class="num_right">0</span>
+				</p>
+			</div>
+</div>
+		
+
+ <div id="box5" style="display: none" class="box_class">
+			<div class="list_first_triangle" id="box5_title">
+				<p class="text_left">DNA analysis: Functional mutation in the LDLR, apoB or PCSK9 gene?<span class="num_right_grey">max. 8</span>
+				</p>
+			</div>
+			<div class="list_middle" id="box5_option1">
+				<p class="text_left">Yes<span class="num_right">8</span>
+				</p>
+			</div>
+            
+            <div class="list_last" id="box5_option2">
+				<p class="text_left">No<span class="num_right">0</span>
+				</p>
+			</div>
+</div>
+		
+
+
+	 
+	 
+		<table class="result_table">
+			<tr>
+				<td><b>Score :</b></td>
+				<td id="total_points" valign="middle">0</td>
+			</tr>
+			<tr>
+				<td id="result" colspan="2"><b>Total Points</b></td>
+			</tr>
+		</table>
+		<br/>
+		<div>
+            <div style="display: inline;"class="points" id="reset">
+ 				                        <input style="width:100%;" type="reset" style="height:30px;" value="Reset" class="resetBtn"  id="reset_text"  >
+
+			</div>
+		</div>
+	  <br/>
+<!--Reference-->
+    <div style="float:right">
+        <table style="width:100% border: 0px solid #ffffff;" >
+            <col style="width:50%"><col style="width:100px"><col style="width:70px">
+                <tr><td>
+                </td>
+                    <td><button id="ref_button"  class="abbBtn" style="width:150px;" >Abbreviations and footnotes</button>  </td>
+                    <td><button id="pdf_button"  class="flip-pdf-button">
+                        <a href="flipView"><img src="pdf.png"  class="pdfImage">
+                        </img></a></button></td>
+                    </tr></table>
+    </div>
+	<div style="float:right">
+         <table style="width:100% border: 0px solid #ffffff;" >
+            <col style="width:20%">
+            <tr>
+               <td>
+               </td>
+               <td>
+                  <button class="abbBtn" style="width:100%;height:60px;" ><a href="ref_ENAS5197_11.1.0.0.html">More Information</a></button> </td>
+            </tr>
+         </table>
+      </div>
+
+    
+    
+        <div id="reference" style="display: none;">
+            <br/>
+            <br/>
+            <br/>
+			 <br/>
+            <br/><br/>
+            <br/>
+            <br/><br/>
+            <div class="info_text_box_abb1">FH = familial hypercholesterolaemia; LDL-C = low-density lipoprotein-cholesterol.  
+            <br>
+                 
+              <sup>a</sup>Exclusive of each other (i.e. maximum 6 points if both are present)
+
+            </div>
+            
+        </div>
+		
+		
+
+        </div>
+    
+    </body>
+</html>

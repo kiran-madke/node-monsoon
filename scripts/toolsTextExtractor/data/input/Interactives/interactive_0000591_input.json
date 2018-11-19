@@ -1,0 +1,38 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "Tobacco use",
+        "text_id": "",
+        "id": "",
+        "unit": "",
+        "unitId":"",
+        "type":"button"
+    },
+	{
+        "text": "Systolic BP",
+        "text_id": "",
+        "id": "BPSelect",
+        "unit": "mmHg",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "Total Cholestrol",
+        "text_id": "",
+        "id": "TotalC",
+        "unit": "dropdown",
+        "unitId":"UnitSelect",
+        "type":"dropdown"
+    }       
+    ],
+"output":[
+	{
+        "text": "Relative CV risk",
+        "id": "result",
+        "unit": "10 years risk in %",
+        "unitId":"UnitSelect",
+        "type":"div"
+    }
+]
+}

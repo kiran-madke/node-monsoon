@@ -1,0 +1,38 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "<b>Patient type</b>",
+        "text_id": "",
+        "id": "patient_type",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>Therapy type</b>",
+        "text_id": "",
+        "id": "therapy_type",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+    {
+        "text": "<b>Drug</b>",
+        "text_id": "",
+        "id": "drug",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "Doses",
+        "id": "result1",
+        "unit": "",
+        "unitId":"",
+        "type":"div"
+    }
+]
+}

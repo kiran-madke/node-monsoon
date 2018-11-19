@@ -1,0 +1,380 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5284_1.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Diagnosis and pathology",
+"tocnametree":"Diagnosis and pathology",
+"htmlpage":"ENAS5284_2.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Staging and risk assessment",
+"tocnametree":"Staging and risk assessment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.1.0.0",
+"id":"4",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5284_3.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.2.0.0",
+"id":"5",
+"nametree":"The AJCC/UICC staging",
+"tocnametree":"The AJCC/UICC staging",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.1.0",
+"id":"6",
+"nametree":"Cholangiocarcinoma",
+"tocnametree":"Cholangiocarcinoma",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.2.1.1",
+"id":"7",
+"nametree":"Intra-hepatic",
+"tocnametree":"Intra-hepatic",
+"htmlpage":"ENAS5284_3.2.1.1",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.2.1.2",
+"id":"8",
+"nametree":"Peri-hilar",
+"tocnametree":"Peri-hilar",
+"htmlpage":"ENAS5284_3.2.1.2",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.2.1.3",
+"id":"9",
+"nametree":"Distal",
+"tocnametree":"Distal",
+"htmlpage":"ENAS5284_3.2.1.3",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.2.2.0",
+"id":"10",
+"nametree":"Gallbladder cancer",
+"tocnametree":"Gallbladder cancer",
+"htmlpage":"ENAS5284_3.2.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.0.0.0",
+"id":"11",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"12",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5284_4.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.2.0.0",
+"id":"13",
+"nametree":"BTC management algorithm",
+"tocnametree":"BTC management algorithm",
+"htmlpage":"ENAS5284_4.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.0.0",
+"id":"14",
+"nametree":"Mgmt. of local/ locoregional disease",
+"tocnametree":"Mgmt. of local/ locoregional disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.3.1.0",
+"id":"15",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5284_4.3.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.2.0",
+"id":"16",
+"nametree":"Intrahepatic cholangiocarcinoma",
+"tocnametree":"Intrahepatic cholangiocarcinoma",
+"htmlpage":"ENAS5284_4.3.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.3.0",
+"id":"17",
+"nametree":"Perihilar cholangiocarcinoma",
+"tocnametree":"Perihilar cholangiocarcinoma",
+"htmlpage":"ENAS5284_4.3.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.4.0",
+"id":"18",
+"nametree":"Distal cholangiocarcinoma (dCCA)",
+"tocnametree":"Distal cholangiocarcinoma (dCCA)",
+"htmlpage":"ENAS5284_4.3.4.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.5.0",
+"id":"19",
+"nametree":"Gallbladder cancer (GBC)",
+"tocnametree":"Gallbladder cancer (GBC)",
+"htmlpage":"ENAS5284_4.3.5.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.6.0",
+"id":"20",
+"nametree":"Adjuvant treatment",
+"tocnametree":"Adjuvant treatment",
+"htmlpage":"ENAS5284_4.3.6.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.4.0.0",
+"id":"21",
+"nametree":"Mgmt. of advanced and/or mets. disease",
+"tocnametree":"Mgmt. of advanced and/or mets. disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.4.1.0",
+"id":"22",
+"nametree":"Systemic chemotherapy",
+"tocnametree":"Systemic chemotherapy",
+"htmlpage":"ENAS5284_4.4.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.4.2.0",
+"id":"23",
+"nametree":"Radiotherapy",
+"tocnametree":"Radiotherapy",
+"htmlpage":"ENAS5284_4.4.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.0.0.0",
+"id":"24",
+"nametree":"Personalised medicine",
+"tocnametree":"Personalised medicine",
+"htmlpage":"ENAS5284_5.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"6.0.0.0",
+"id":"25",
+"nametree":"Follow-up and long-term implications",
+"tocnametree":"Follow-up and long-term implications",
+"htmlpage":"ENAS5284_6.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.0.0.0",
+"id":"26",
+"nametree":"Summary of recommendations",
+"tocnametree":"Summary of recommendations",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"27",
+"nametree":"Diagnosis and pathology",
+"tocnametree":"Diagnosis and pathology",
+"htmlpage":"ENAS5284_7.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.2.0.0",
+"id":"28",
+"nametree":"Staging and risk assessment",
+"tocnametree":"Staging and risk assessment",
+"htmlpage":"ENAS5284_7.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.0.0",
+"id":"29",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.1.0",
+"id":"30",
+"nametree":"Mgmt. of local/ locoregional disease",
+"tocnametree":"Mgmt. of local/ locoregional disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.1.1",
+"id":"31",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5284_7.3.1.1",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.1.2",
+"id":"32",
+"nametree":"Intrahepatic cholangiocarcinoma",
+"tocnametree":"Intrahepatic cholangiocarcinoma",
+"htmlpage":"ENAS5284_7.3.1.2",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.1.3",
+"id":"33",
+"nametree":"Perihilar cholangiocarcinoma",
+"tocnametree":"Perihilar cholangiocarcinoma",
+"htmlpage":"ENAS5284_7.3.1.3",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.1.4",
+"id":"34",
+"nametree":"Distal cholangiocarcinoma",
+"tocnametree":"Distal cholangiocarcinoma",
+"htmlpage":"ENAS5284_7.3.1.4",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.1.5",
+"id":"35",
+"nametree":"Gallbladder cancer (GBC)",
+"tocnametree":"Gallbladder cancer (GBC)",
+"htmlpage":"ENAS5284_7.3.1.5",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.1.6",
+"id":"36",
+"nametree":"Adjuvant treatment",
+"tocnametree":"Adjuvant treatment",
+"htmlpage":"ENAS5284_7.3.1.6",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.2.0",
+"id":"37",
+"nametree":"Mgmt. of advanced and/or mets. disease",
+"tocnametree":"Mgmt. of advanced and/or mets. disease",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.2.1",
+"id":"38",
+"nametree":"Systemic chemotherapy",
+"tocnametree":"Systemic chemotherapy",
+"htmlpage":"ENAS5284_7.3.2.2",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.2.2",
+"id":"39",
+"nametree":"Radiotherapy",
+"tocnametree":"Radiotherapy",
+"htmlpage":"ENAS5284_7.3.2.1",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.4.0.0",
+"id":"40",
+"nametree":"Personalised medicine",
+"tocnametree":"Personalised medicine",
+"htmlpage":"ENAS5284_7.4.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.5.0.0",
+"id":"41",
+"nametree":"Follow-up and long-term implications",
+"tocnametree":"Follow-up and long-term implications",
+"htmlpage":"ENAS5284_7.5.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.0.0.0",
+"id":"42",
+"nametree":"Glossary",
+"tocnametree":"Glossary",
+"htmlpage":"ENAS5284_8.0.0.0",
+"haspdf":false,
+"emailContent":true
+}
+]

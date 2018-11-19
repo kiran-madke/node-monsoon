@@ -1,0 +1,308 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5408_1.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Diagnosis and pathology",
+"tocnametree":"Diagnosis and pathology",
+"htmlpage":"ENAS5408_2.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Staging and risk assessment",
+"tocnametree":"Staging and risk assessment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.1.0.0",
+"id":"4",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5408_3.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.2.0.0",
+"id":"5",
+"nametree":"Lugano classification",
+"tocnametree":"Lugano classification",
+"htmlpage":"ENAS5408_3.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.3.0.0",
+"id":"6",
+"nametree":"Diagnostic work-up",
+"tocnametree":"Diagnostic work-up",
+"htmlpage":"ENAS5408_3.3.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.4.0.0",
+"id":"7",
+"nametree":"MIPI and MIPI-C risk stratification",
+"tocnametree":"MIPI and MIPI-C risk stratification",
+"htmlpage":"ENAS5408_3.4.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.5.0.0",
+"id":"8",
+"nametree":"Leukaemic non-nodal subtype of MCL",
+"tocnametree":"Leukaemic non-nodal subtype of MCL",
+"htmlpage":"ENAS5408_3.5.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.6.0.0",
+"id":"9",
+"nametree":"Molecular Pathogenesis of MCL",
+"tocnametree":"Molecular Pathogenesis of MCL",
+"htmlpage":"ENAS5408_3.6.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.0.0.0",
+"id":"10",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"11",
+"nametree":"First-line: Stages I–II",
+"tocnametree":"First-line: Stages I–II",
+"htmlpage":"ENAS5408_4.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.2.0.0",
+"id":"12",
+"nametree":"First-line: Stages III–IV",
+"tocnametree":"First-line: Stages III–IV",
+"htmlpage":"ENAS5408_4.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.0.0",
+"id":"13",
+"nametree":"Therapeutic recommendations",
+"tocnametree":"Therapeutic recommendations",
+"htmlpage":"ENAS5408_4.3.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.4.0.0",
+"id":"14",
+"nametree":"Elderly patients",
+"tocnametree":"Elderly patients",
+"htmlpage":"ENAS5408_4.4.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.5.0.0",
+"id":"15",
+"nametree":"Younger patients",
+"tocnametree":"Younger patients",
+"htmlpage":"ENAS5408_4.5.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.6.0.0",
+"id":"16",
+"nametree":"Relapsed disease",
+"tocnametree":"Relapsed disease",
+"htmlpage":"ENAS5408_4.6.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.7.0.0",
+"id":"17",
+"nametree":"Response evaluation",
+"tocnametree":"Response evaluation",
+"htmlpage":"ENAS5408_4.7.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.0.0.0",
+"id":"18",
+"nametree":"Personalised medicine",
+"tocnametree":"Personalised medicine",
+"htmlpage":"ENAS5408_5.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"6.0.0.0",
+"id":"19",
+"nametree":"Follow-up, long-term implications",
+"tocnametree":"Follow-up, long-term implications",
+"htmlpage":"ENAS5408_6.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.0.0.0",
+"id":"20",
+"nametree":"Summary of recommendations",
+"tocnametree":"Summary of recommendations",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"21",
+"nametree":"Diagnosis and pathology",
+"tocnametree":"Diagnosis and pathology",
+"htmlpage":"ENAS5408_7.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.2.0.0",
+"id":"22",
+"nametree":"Staging and risk assessment",
+"tocnametree":"Staging and risk assessment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.1.0",
+"id":"23",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5408_7.2.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.2.2.0",
+"id":"24",
+"nametree":"Leukaemic non-nodal subtype of MCL",
+"tocnametree":"Leukaemic non-nodal subtype of MCL",
+"htmlpage":"ENAS5408_7.2.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.0.0",
+"id":"25",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.1.0",
+"id":"26",
+"nametree":"First-line: Stages I–II",
+"tocnametree":"First-line: Stages I–II",
+"htmlpage":"ENAS5408_7.3.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.2.0",
+"id":"27",
+"nametree":"First-line: Stages III–IV",
+"tocnametree":"First-line: Stages III–IV",
+"htmlpage":"ENAS5408_7.3.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.3.0",
+"id":"28",
+"nametree":"Elderly patients",
+"tocnametree":"Elderly patients",
+"htmlpage":"ENAS5408_7.3.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.4.0",
+"id":"29",
+"nametree":"Younger patients",
+"tocnametree":"Younger patients",
+"htmlpage":"ENAS5408_7.3.4.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.5.0",
+"id":"30",
+"nametree":"Relapsed disease",
+"tocnametree":"Relapsed disease",
+"htmlpage":"ENAS5408_7.3.5.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.3.6.0",
+"id":"31",
+"nametree":"Response evaluation",
+"tocnametree":"Response evaluation",
+"htmlpage":"ENAS5408_7.3.6.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.4.0.0",
+"id":"32",
+"nametree":"Personalised medicine",
+"tocnametree":"Personalised medicine",
+"htmlpage":"ENAS5408_7.4.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.5.0.0",
+"id":"33",
+"nametree":"Follow-up, long-term implications",
+"tocnametree":"Follow-up, long-term implications",
+"htmlpage":"ENAS5408_7.5.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.0.0.0",
+"id":"34",
+"nametree":"Glossary",
+"tocnametree":"Glossary",
+"htmlpage":"ENAS5408_8.0.0.0",
+"haspdf":false,
+"emailContent":true
+}
+]

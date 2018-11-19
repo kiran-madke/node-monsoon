@@ -1,0 +1,812 @@
+﻿[
+{
+"old_id":"1",
+"old_nametree":"Authors and legal information",
+"old_numtree":"1.0.0.0",
+"old_htmlpage":"ENAS5304_1.0.0.0",
+"new_id":"1",
+"new_nametree":"Authors and legal information",
+"new_numtree":"1.0.0.0",
+"new_htmlpage":"ENAS5304_1.0.0.0"
+},
+{
+"old_id":"2",
+"old_nametree":"Diagnosis",
+"old_numtree":"2.0.0.0",
+"old_htmlpage":"ENAS5304_2.0.0.0",
+"new_id":"2",
+"new_nametree":"Diagnosis",
+"new_numtree":"2.0.0.0",
+"new_htmlpage":"ENAS5304_2.0.0.0"
+},
+{
+"old_id":"3",
+"old_nametree":"Molecular pathology and biomarkers",
+"old_numtree":"3.0.0.0",
+"old_htmlpage":"null",
+"new_id":"3",
+"new_nametree":"Molecular pathology and biomarkers",
+"new_numtree":"3.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"4",
+"old_nametree":"Overview",
+"old_numtree":"3.1.0.0",
+"old_htmlpage":"ENAS5304_2018032280",
+"new_id":"80",
+"new_nametree":"Overview",
+"new_numtree":"3.1.0.0",
+"new_htmlpage":"ENAS5304_2018032280"
+},
+{
+"old_id":"5",
+"old_nametree":"Tissue handling",
+"old_numtree":"3.2.0.0",
+"old_htmlpage":"ENAS5304_2018032281",
+"new_id":"81",
+"new_nametree":"Tissue handling",
+"new_numtree":"3.2.0.0",
+"new_htmlpage":"ENAS5304_2018032281"
+},
+{
+"old_id":"6",
+"old_nametree":"Selection of specimens",
+"old_numtree":"3.3.0.0",
+"old_htmlpage":"ENAS5304_2018032282",
+"new_id":"82",
+"new_nametree":"Selection of specimens",
+"new_numtree":"3.3.0.0",
+"new_htmlpage":"ENAS5304_2018032282"
+},
+{
+"old_id":"7",
+"old_nametree":"Tissue selection for biomarker testing",
+"old_numtree":"3.8.0.0",
+"old_htmlpage":"ENAS5304_2018042683",
+"new_id":"83",
+"new_nametree":"Tissue selection for biomarker testing",
+"new_numtree":"3.4.0.0",
+"new_htmlpage":"ENAS5304_2018042683"
+},
+{
+"old_id":"8",
+"old_nametree":"RAS/RAF and MSI",
+"old_numtree":"4.2.0.0",
+"old_htmlpage":"null",
+"new_id":"6",
+"new_nametree":"RAS/RAF and MSI",
+"new_numtree":"3.5.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"9",
+"old_nametree":"RAS",
+"old_numtree":"4.2.1.0",
+"old_htmlpage":"ENAS5304_4.2.1.0",
+"new_id":"7",
+"new_nametree":"RAS",
+"new_numtree":"3.5.1.0",
+"new_htmlpage":"ENAS5304_4.2.1.0"
+},
+{
+"old_id":"10",
+"old_nametree":"BRAF",
+"old_numtree":"4.2.2.0",
+"old_htmlpage":"ENAS5304_4.2.2.0",
+"new_id":"8",
+"new_nametree":"BRAF",
+"new_numtree":"3.5.2.0",
+"new_htmlpage":"ENAS5304_4.2.2.0"
+},
+{
+"old_id":"11",
+"old_nametree":"Microsatellite instability",
+"old_numtree":"4.2.3.0",
+"old_htmlpage":"ENAS5304_4.2.3.0",
+"new_id":"9",
+"new_nametree":"Microsatellite instability",
+"new_numtree":"3.5.3.0",
+"new_htmlpage":"ENAS5304_4.2.3.0"
+},
+{
+"old_id":"12",
+"old_nametree":"ChT sensitivity/ toxicity biomarkers",
+"old_numtree":"4.2.4.0",
+"old_htmlpage":"ENAS5304_4.2.4.0",
+"new_id":"10",
+"new_nametree":"ChT sensitivity/toxicity biomarkers",
+"new_numtree":"3.6.0.0",
+"new_htmlpage":"ENAS5304_4.2.4.0"
+},
+{
+"old_id":"13",
+"old_nametree":"Emerging biomarkers",
+"old_numtree":"4.2.5.0",
+"old_htmlpage":"ENAS5304_4.2.5.0",
+"new_id":"11",
+"new_nametree":"Emerging biomarkers",
+"new_numtree":"3.7.0.0",
+"new_htmlpage":"ENAS5304_4.2.5.0"
+},
+{
+"old_id":"14",
+"old_nametree":"Emerging technologies",
+"old_numtree":"4.2.6.0",
+"old_htmlpage":"ENAS5304_4.2.6.0",
+"new_id":"12",
+"new_nametree":"Emerging technologies",
+"new_numtree":"3.8.0.0",
+"new_htmlpage":"ENAS5304_4.2.6.0"
+},
+{
+"old_id":"15",
+"old_nametree":"Treatment",
+"old_numtree":"5.0.0.0",
+"old_htmlpage":"null",
+"new_id":"13",
+"new_nametree":"Treatment",
+"new_numtree":"4.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"16",
+"old_nametree":"Overview",
+"old_numtree":"5.1.0.0",
+"old_htmlpage":"ENAS5304_5.1.0.0",
+"new_id":"14",
+"new_nametree":"Overview",
+"new_numtree":"4.1.0.0",
+"new_htmlpage":"ENAS5304_5.1.0.0"
+},
+{
+"old_id":"17",
+"old_nametree":"Mgmt. of patients with OMD, LAT, surgery",
+"old_numtree":"5.2.0.0",
+"old_htmlpage":"null",
+"new_id":"15",
+"new_nametree":"Mgmt. of patients with OMD, LAT, surgery",
+"new_numtree":"4.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"18",
+"old_nametree":"Oligometastatic disease",
+"old_numtree":"5.2.1.0",
+"old_htmlpage":"ENAS5304_5.2.1.0",
+"new_id":"16",
+"new_nametree":"Oligometastatic disease",
+"new_numtree":"4.2.1.0",
+"new_htmlpage":"ENAS5304_5.2.1.0"
+},
+{
+"old_id":"19",
+"old_nametree":"Liver metastases and surgical resection",
+"old_numtree":"5.2.2.0",
+"old_htmlpage":"ENAS5304_5.2.2.0",
+"new_id":"17",
+"new_nametree":"Liver metastases and surgical resection",
+"new_numtree":"4.2.2.0",
+"new_htmlpage":"ENAS5304_5.2.2.0"
+},
+{
+"old_id":"20",
+"old_nametree":"Toolbox of ablative treatment",
+"old_numtree":"5.3.0.0",
+"old_htmlpage":"ENAS5304_5.3.0.0",
+"new_id":"18",
+"new_nametree":"Toolbox of ablative treatment",
+"new_numtree":"4.3.0.0",
+"new_htmlpage":"ENAS5304_5.3.0.0"
+},
+{
+"old_id":"21",
+"old_nametree":"Categorisation of patients",
+"old_numtree":"5.4.0.0",
+"old_htmlpage":"ENAS5304_5.4.0.0",
+"new_id":"19",
+"new_nametree":"Categorisation of patients",
+"new_numtree":"4.4.0.0",
+"new_htmlpage":"ENAS5304_5.4.0.0"
+},
+{
+"old_id":"22",
+"old_nametree":"Contraindications to hepatic resection",
+"old_numtree":"5.5.0.0",
+"old_htmlpage":"ENAS5304_5.5.0.0",
+"new_id":"20",
+"new_nametree":"Contraindications to hepatic resection",
+"new_numtree":"4.5.0.0",
+"new_htmlpage":"ENAS5304_5.5.0.0"
+},
+{
+"old_id":"23",
+"old_nametree":"Imaging identification",
+"old_numtree":"5.6.0.0",
+"old_htmlpage":"ENAS5304_5.6.0.0",
+"new_id":"21",
+"new_nametree":"Imaging identification",
+"new_numtree":"4.6.0.0",
+"new_htmlpage":"ENAS5304_5.6.0.0"
+},
+{
+"old_id":"24",
+"old_nametree":"Resectable liver metastases",
+"old_numtree":"5.7.0.0",
+"old_htmlpage":"ENAS5304_5.7.0.0",
+"new_id":"22",
+"new_nametree":"Resectable liver metastases",
+"new_numtree":"4.7.0.0",
+"new_htmlpage":"ENAS5304_5.7.0.0"
+},
+{
+"old_id":"25",
+"old_nametree":"Unresectable colorectal liver mets.",
+"old_numtree":"5.8.0.0",
+"old_htmlpage":"ENAS5304_5.8.0.0",
+"new_id":"23",
+"new_nametree":"Unresectable colorectal liver mets.",
+"new_numtree":"4.8.0.0",
+"new_htmlpage":"ENAS5304_5.8.0.0"
+},
+{
+"old_id":"26",
+"old_nametree":"Conversion treatment",
+"old_numtree":"5.9.0.0",
+"old_htmlpage":"ENAS5304_5.9.0.0",
+"new_id":"24",
+"new_nametree":"Conversion treatment",
+"new_numtree":"4.9.0.0",
+"new_htmlpage":"ENAS5304_5.9.0.0"
+},
+{
+"old_id":"27",
+"old_nametree":"Mets. at unfavourable sites",
+"old_numtree":"5.10.0.0",
+"old_htmlpage":"ENAS5304_5.10.0.0",
+"new_id":"25",
+"new_nametree":"Mets. at unfavourable sites",
+"new_numtree":"4.10.0.0",
+"new_htmlpage":"ENAS5304_5.10.0.0"
+},
+{
+"old_id":"28",
+"old_nametree":"Standard treatment algorithm for OMD",
+"old_numtree":"5.11.0.0",
+"old_htmlpage":"ENAS5304_5.11.0.0",
+"new_id":"26",
+"new_nametree":"Standard treatment algorithm for OMD",
+"new_numtree":"4.11.0.0",
+"new_htmlpage":"ENAS5304_5.11.0.0"
+},
+{
+"old_id":"29",
+"old_nametree":"Toolbox of LATs",
+"old_numtree":"5.12.0.0",
+"old_htmlpage":"ENAS5304_5.12.0.0",
+"new_id":"27",
+"new_nametree":"Toolbox of LATs",
+"new_numtree":"4.12.0.0",
+"new_htmlpage":"ENAS5304_5.12.0.0"
+},
+{
+"old_id":"30",
+"old_nametree":"Cytoreductive surgery and HIPEC",
+"old_numtree":"5.13.0.0",
+"old_htmlpage":"ENAS5304_5.13.0.0",
+"new_id":"28",
+"new_nametree":"Cytoreductive surgery and HIPEC",
+"new_numtree":"4.13.0.0",
+"new_htmlpage":"ENAS5304_5.13.0.0"
+},
+{
+"old_id":"31",
+"old_nametree":"Treatment of metastatic disease",
+"old_numtree":"5.14.0.0",
+"old_htmlpage":"null",
+"new_id":"29",
+"new_nametree":"Treatment of metastatic disease",
+"new_numtree":"4.14.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"32",
+"old_nametree":"First-line",
+"old_numtree":"5.14.1.0",
+"old_htmlpage":"ENAS5304_5.14.1.0",
+"new_id":"30",
+"new_nametree":"First-line",
+"new_numtree":"4.14.1.0",
+"new_htmlpage":"ENAS5304_5.14.1.0"
+},
+{
+"old_id":"33",
+"old_nametree":"Determination of the therapeutic strategy",
+"old_numtree":"5.14.2.0",
+"old_htmlpage":"ENAS5304_5.14.2.0",
+"new_id":"31",
+"new_nametree":"Determination of the therapeutic strategy",
+"new_numtree":"4.14.2.0",
+"new_htmlpage":"ENAS5304_5.14.2.0"
+},
+{
+"old_id":"34",
+"old_nametree":"Discont. of Rx. and maint. therapy",
+"old_numtree":"5.14.3.0",
+"old_htmlpage":"ENAS5304_5.14.3.0",
+"new_id":"32",
+"new_nametree":"Discont. of Tx and maint. therapy",
+"new_numtree":"4.14.3.0",
+"new_htmlpage":"ENAS5304_5.14.3.0"
+},
+{
+"old_id":"35",
+"old_nametree":"Second-line",
+"old_numtree":"5.14.4.0",
+"old_htmlpage":"ENAS5304_5.14.4.0",
+"new_id":"33",
+"new_nametree":"Second-line",
+"new_numtree":"4.14.4.0",
+"new_htmlpage":"ENAS5304_5.14.4.0"
+},
+{
+"old_id":"36",
+"old_nametree":"Third-line",
+"old_numtree":"5.14.5.0",
+"old_htmlpage":"ENAS5304_5.14.5.0",
+"new_id":"34",
+"new_nametree":"Third-line",
+"new_numtree":"4.14.5.0",
+"new_htmlpage":"ENAS5304_5.14.5.0"
+},
+{
+"old_id":"37",
+"old_nametree":"Recom. on the use of cytotoxics",
+"old_numtree":"5.14.6.0",
+"old_htmlpage":"ENAS5304_5.14.6.0",
+"new_id":"35",
+"new_nametree":"Recom. on the use of cytotoxics",
+"new_numtree":"4.14.6.0",
+"new_htmlpage":"ENAS5304_5.14.6.0"
+},
+{
+"old_id":"38",
+"old_nametree":"Zurich treatment algorithm",
+"old_numtree":"5.14.7.0",
+"old_htmlpage":"ENAS5304_5.14.7.0",
+"new_id":"36",
+"new_nametree":"Zurich treatment algorithm",
+"new_numtree":"4.14.7.0",
+"new_htmlpage":"ENAS5304_5.14.7.0"
+},
+{
+"old_id":"39",
+"old_nametree":"Systemic therapy choices",
+"old_numtree":"5.14.8.0",
+"old_htmlpage":"ENAS5304_5.14.8.0",
+"new_id":"37",
+"new_nametree":"Systemic therapy choices",
+"new_numtree":"4.14.8.0",
+"new_htmlpage":"ENAS5304_5.14.8.0"
+},
+{
+"old_id":"40",
+"old_nametree":"Further recom. for treatment selection",
+"old_numtree":"5.14.9.0",
+"old_htmlpage":"ENAS5304_5.14.9.0",
+"new_id":"38",
+"new_nametree":"Further recom. for treatment selection",
+"new_numtree":"4.14.9.0",
+"new_htmlpage":"ENAS5304_5.14.9.0"
+},
+{
+"old_id":"41",
+"old_nametree":"Maint. & second-line Rx options",
+"old_numtree":"5.14.10.0",
+"old_htmlpage":"null",
+"new_id":"39",
+"new_nametree":"Maint. & second-line Tx options",
+"new_numtree":"4.14.10.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"42",
+"old_nametree":"Maintenance & 2nd line Rx",
+"old_numtree":"5.14.10.1",
+"old_htmlpage":"ENAS5304_5.14.10.1",
+"new_id":"40",
+"new_nametree":"Maintenance & 2nd line Tx",
+"new_numtree":"4.14.10.1",
+"new_htmlpage":"ENAS5304_5.14.10.1"
+},
+{
+"old_id":"43",
+"old_nametree":"Fit patients with symptomatic disease",
+"old_numtree":"5.14.10.2",
+"old_htmlpage":"ENAS5304_5.14.10.2",
+"new_id":"41",
+"new_nametree":"Fit patients with symptomatic disease",
+"new_numtree":"4.14.10.2",
+"new_htmlpage":"ENAS5304_5.14.10.2"
+},
+{
+"old_id":"44",
+"old_nametree":"Unfit patients",
+"old_numtree":"5.14.10.3",
+"old_htmlpage":"ENAS5304_5.14.10.3",
+"new_id":"42",
+"new_nametree":"Unfit patients",
+"new_numtree":"4.14.10.3",
+"new_htmlpage":"ENAS5304_5.14.10.3"
+},
+{
+"old_id":"45",
+"old_nametree":"Elderly patients",
+"old_numtree":"5.14.10.4",
+"old_htmlpage":"ENAS5304_5.14.10.4",
+"new_id":"43",
+"new_nametree":"Elderly patients",
+"new_numtree":"4.14.10.4",
+"new_htmlpage":"ENAS5304_5.14.10.4"
+},
+{
+"old_id":"46",
+"old_nametree":"Personalised medicine",
+"old_numtree":"6.0.0.0",
+"old_htmlpage":"ENAS5304_6.0.0.0",
+"new_id":"44",
+"new_nametree":"Personalised medicine",
+"new_numtree":"5.0.0.0",
+"new_htmlpage":"ENAS5304_6.0.0.0"
+},
+{
+"old_id":"47",
+"old_nametree":"Response evaluation and follow-up",
+"old_numtree":"7.0.0.0",
+"old_htmlpage":"ENAS5304_7.0.0.0",
+"new_id":"45",
+"new_nametree":"Response evaluation and follow-up",
+"new_numtree":"6.0.0.0",
+"new_htmlpage":"ENAS5304_7.0.0.0"
+},
+{
+"old_id":"48",
+"old_nametree":"Summary of recommendations",
+"old_numtree":"8.0.0.0",
+"old_htmlpage":"null",
+"new_id":"46",
+"new_nametree":"Summary of recommendations",
+"new_numtree":"7.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"49",
+"old_nametree":"Diagnosis",
+"old_numtree":"8.1.0.0",
+"old_htmlpage":"ENAS5304_8.1.0.0",
+"new_id":"47",
+"new_nametree":"Diagnosis",
+"new_numtree":"7.1.0.0",
+"new_htmlpage":"ENAS5304_8.1.0.0"
+},
+{
+"old_id":"50",
+"old_nametree":"Molecular pathology and biomarkers",
+"old_numtree":"8.2.0.0",
+"old_htmlpage":"ENAS5304_8.2.0.0",
+"new_id":"48",
+"new_nametree":"Molecular pathology and biomarkers",
+"new_numtree":"7.2.0.0",
+"new_htmlpage":"ENAS5304_8.2.0.0"
+},
+{
+"old_id":"51",
+"old_nametree":"Tissue handling",
+"old_numtree":"8.3.0.0",
+"old_htmlpage":"ENAS5304_8.3.0.0",
+"new_id":"49",
+"new_nametree":"Tissue handling",
+"new_numtree":"7.3.0.0",
+"new_htmlpage":"ENAS5304_8.3.0.0"
+},
+{
+"old_id":"52",
+"old_nametree":"Tissue selection for biomarker testing",
+"old_numtree":"8.4.0.0",
+"old_htmlpage":"ENAS5304_8.4.0.0",
+"new_id":"50",
+"new_nametree":"Tissue selection for biomarker testing",
+"new_numtree":"7.4.0.0",
+"new_htmlpage":"ENAS5304_8.4.0.0"
+},
+{
+"old_id":"53",
+"old_nametree":"RAS, BRAF and MSI",
+"old_numtree":"8.5.0.0",
+"old_htmlpage":"null",
+"new_id":"51",
+"new_nametree":"RAS, BRAF and MSI",
+"new_numtree":"7.5.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"54",
+"old_nametree":"RAS",
+"old_numtree":"8.5.1.0",
+"old_htmlpage":"ENAS5304_8.5.1.0",
+"new_id":"52",
+"new_nametree":"RAS",
+"new_numtree":"7.5.1.0",
+"new_htmlpage":"ENAS5304_8.5.1.0"
+},
+{
+"old_id":"55",
+"old_nametree":"BRAF",
+"old_numtree":"8.5.2.0",
+"old_htmlpage":"ENAS5304_8.5.2.0",
+"new_id":"53",
+"new_nametree":"BRAF",
+"new_numtree":"7.5.2.0",
+"new_htmlpage":"ENAS5304_8.5.2.0"
+},
+{
+"old_id":"56",
+"old_nametree":"Microsatellite instability",
+"old_numtree":"8.5.3.0",
+"old_htmlpage":"ENAS5304_8.5.3.0",
+"new_id":"54",
+"new_nametree":"Microsatellite instability",
+"new_numtree":"7.5.3.0",
+"new_htmlpage":"ENAS5304_8.5.3.0"
+},
+{
+"old_id":"57",
+"old_nametree":"ChT sensitivity/ toxicity biomarkers",
+"old_numtree":"8.5.4.0",
+"old_htmlpage":"ENAS5304_8.5.4.0",
+"new_id":"55",
+"new_nametree":"ChT sensitivity/toxicity biomarkers",
+"new_numtree":"7.5.4.0",
+"new_htmlpage":"ENAS5304_8.5.4.0"
+},
+{
+"old_id":"58",
+"old_nametree":"Treatment",
+"old_numtree":"8.6.0.0",
+"old_htmlpage":"null",
+"new_id":"56",
+"new_nametree":"Treatment",
+"new_numtree":"7.6.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"59",
+"old_nametree":"Overview",
+"old_numtree":"8.6.1.0",
+"old_htmlpage":"ENAS5304_8.6.1.0",
+"new_id":"57",
+"new_nametree":"Overview",
+"new_numtree":"7.6.1.0",
+"new_htmlpage":"ENAS5304_8.6.1.0"
+},
+{
+"old_id":"60",
+"old_nametree":"Mgmt. of patients with OMD, LAT, surgery",
+"old_numtree":"8.6.2.0",
+"old_htmlpage":"null",
+"new_id":"58",
+"new_nametree":"Mgmt. of patients with OMD, LAT, surgery",
+"new_numtree":"7.6.2.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"61",
+"old_nametree":"Oligometastatic disease",
+"old_numtree":"8.6.2.1",
+"old_htmlpage":"ENAS5304_8.6.2.1",
+"new_id":"59",
+"new_nametree":"Oligometastatic disease",
+"new_numtree":"7.6.2.1",
+"new_htmlpage":"ENAS5304_8.6.2.1"
+},
+{
+"old_id":"62",
+"old_nametree":"Liver metastases and surgical resection",
+"old_numtree":"8.6.2.2",
+"old_htmlpage":"ENAS5304_8.6.2.2",
+"new_id":"60",
+"new_nametree":"Liver metastases and surgical resection",
+"new_numtree":"7.6.2.2",
+"new_htmlpage":"ENAS5304_8.6.2.2"
+},
+{
+"old_id":"63",
+"old_nametree":"Imaging identification",
+"old_numtree":"8.6.2.3",
+"old_htmlpage":"ENAS5304_8.6.2.3",
+"new_id":"61",
+"new_nametree":"Imaging identification",
+"new_numtree":"7.6.2.3",
+"new_htmlpage":"ENAS5304_8.6.2.3"
+},
+{
+"old_id":"64",
+"old_nametree":"Resectable liver metastases",
+"old_numtree":"8.6.2.4",
+"old_htmlpage":"ENAS5304_8.6.2.4",
+"new_id":"62",
+"new_nametree":"Resectable liver metastases",
+"new_numtree":"7.6.2.4",
+"new_htmlpage":"ENAS5304_8.6.2.4"
+},
+{
+"old_id":"65",
+"old_nametree":"Unresectable colorectal liver mets.",
+"old_numtree":"8.6.2.5",
+"old_htmlpage":"ENAS5304_8.6.2.5",
+"new_id":"63",
+"new_nametree":"Unresectable colorectal liver mets.",
+"new_numtree":"7.6.2.5",
+"new_htmlpage":"ENAS5304_8.6.2.5"
+},
+{
+"old_id":"66",
+"old_nametree":"Conversion treatment",
+"old_numtree":"8.6.3.0",
+"old_htmlpage":"ENAS5304_8.6.3.0",
+"new_id":"64",
+"new_nametree":"Conversion treatment",
+"new_numtree":"7.6.3.0",
+"new_htmlpage":"ENAS5304_8.6.3.0"
+},
+{
+"old_id":"67",
+"old_nametree":"Mets. at unfavourable sites",
+"old_numtree":"8.6.4.0",
+"old_htmlpage":"ENAS5304_8.6.4.0",
+"new_id":"65",
+"new_nametree":"Mets. at unfavourable sites",
+"new_numtree":"7.6.4.0",
+"new_htmlpage":"ENAS5304_8.6.4.0"
+},
+{
+"old_id":"68",
+"old_nametree":"Toolbox of LATs",
+"old_numtree":"8.6.5.0",
+"old_htmlpage":"ENAS5304_8.6.5.0",
+"new_id":"66",
+"new_nametree":"Toolbox of LATs",
+"new_numtree":"7.6.5.0",
+"new_htmlpage":"ENAS5304_8.6.5.0"
+},
+{
+"old_id":"69",
+"old_nametree":"Cytoreductive surgery and HIPEC",
+"old_numtree":"8.6.6.0",
+"old_htmlpage":"ENAS5304_8.6.6.0",
+"new_id":"67",
+"new_nametree":"Cytoreductive surgery and HIPEC",
+"new_numtree":"7.6.6.0",
+"new_htmlpage":"ENAS5304_8.6.6.0"
+},
+{
+"old_id":"70",
+"old_nametree":"Treatment of metastatic disease",
+"old_numtree":"8.6.7.0",
+"old_htmlpage":"ENAS5304_8.6.7.0",
+"new_id":"68",
+"new_nametree":"Treatment of metastatic disease",
+"new_numtree":"7.6.7.0",
+"new_htmlpage":"ENAS5304_8.6.7.0"
+},
+{
+"old_id":"71",
+"old_nametree":"Determination of the therapeutic strategy",
+"old_numtree":"8.6.8.0",
+"old_htmlpage":"ENAS5304_8.6.8.0",
+"new_id":"69",
+"new_nametree":"Determination of the therapeutic strategy",
+"new_numtree":"7.6.8.0",
+"new_htmlpage":"ENAS5304_8.6.8.0"
+},
+{
+"old_id":"72",
+"old_nametree":"Discont. of Rx. and maint. therapy",
+"old_numtree":"8.6.9.0",
+"old_htmlpage":"ENAS5304_8.6.9.0",
+"new_id":"70",
+"new_nametree":"Discont. of Tx and maint. therapy",
+"new_numtree":"7.6.9.0",
+"new_htmlpage":"ENAS5304_8.6.9.0"
+},
+{
+"old_id":"73",
+"old_nametree":"Second-line",
+"old_numtree":"8.6.10.0",
+"old_htmlpage":"ENAS5304_8.6.10.0",
+"new_id":"71",
+"new_nametree":"Second-line",
+"new_numtree":"7.6.10.0",
+"new_htmlpage":"ENAS5304_8.6.10.0"
+},
+{
+"old_id":"74",
+"old_nametree":"Third-line",
+"old_numtree":"8.6.11.0",
+"old_htmlpage":"ENAS5304_8.6.11.0",
+"new_id":"72",
+"new_nametree":"Third-line",
+"new_numtree":"7.6.11.0",
+"new_htmlpage":"ENAS5304_8.6.11.0"
+},
+{
+"old_id":"75",
+"old_nametree":"Recom. on the use of cytotoxics",
+"old_numtree":"8.6.12.0",
+"old_htmlpage":"null",
+"new_id":"73",
+"new_nametree":"Recom. on the use of cytotoxics",
+"new_numtree":"7.6.12.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"76",
+"old_nametree":"Allocation to first-line treatment",
+"old_numtree":"8.6.12.1",
+"old_htmlpage":"ENAS5304_8.6.12.1",
+"new_id":"74",
+"new_nametree":"Allocation to first-line treatment",
+"new_numtree":"7.6.12.1",
+"new_htmlpage":"ENAS5304_8.6.12.1"
+},
+{
+"old_id":"77",
+"old_nametree":"Unfit patients",
+"old_numtree":"8.6.12.2",
+"old_htmlpage":"ENAS5304_8.6.12.2",
+"new_id":"75",
+"new_nametree":"Unfit patients",
+"new_numtree":"7.6.12.2",
+"new_htmlpage":"ENAS5304_8.6.12.2"
+},
+{
+"old_id":"78",
+"old_nametree":"Elderly patients",
+"old_numtree":"8.6.12.3",
+"old_htmlpage":"ENAS5304_8.6.12.3",
+"new_id":"76",
+"new_nametree":"Elderly patients",
+"new_numtree":"7.6.12.3",
+"new_htmlpage":"ENAS5304_8.6.12.3"
+},
+{
+"old_id":"79",
+"old_nametree":"Personalised medicine",
+"old_numtree":"8.7.0.0",
+"old_htmlpage":"ENAS5304_8.7.0.0",
+"new_id":"77",
+"new_nametree":"Personalised medicine",
+"new_numtree":"7.7.0.0",
+"new_htmlpage":"ENAS5304_8.7.0.0"
+},
+{
+"old_id":"80",
+"old_nametree":"Response evaluation and follow-up",
+"old_numtree":"8.8.0.0",
+"old_htmlpage":"ENAS5304_8.8.0.0",
+"new_id":"78",
+"new_nametree":"Response evaluation and follow-up",
+"new_numtree":"7.8.0.0",
+"new_htmlpage":"ENAS5304_8.8.0.0"
+},
+{
+"old_id":"81",
+"old_nametree":"Glossary",
+"old_numtree":"9.0.0.0",
+"old_htmlpage":"ENAS5304_9.0.0.0",
+"new_id":"79",
+"new_nametree":"Glossary",
+"new_numtree":"8.0.0.0",
+"new_htmlpage":"ENAS5304_9.0.0.0"
+}
+]

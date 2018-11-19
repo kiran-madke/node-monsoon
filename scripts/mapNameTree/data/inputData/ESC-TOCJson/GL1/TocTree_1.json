@@ -1,0 +1,218 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS247_1.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Definition of MI",
+"tocnametree":"Definition of MI",
+"htmlpage":"ENAS247_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Pathology",
+"tocnametree":"Pathology",
+"htmlpage":"ENAS247_3.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"4",
+"nametree":"Cardiac Biomarkers",
+"tocnametree":"Cardiac Biomarkers",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"5",
+"nametree":"Choice of Biomarker",
+"tocnametree":"Choice of Biomarker",
+"htmlpage":"ENAS247_4.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.2.0.0",
+"id":"6",
+"nametree":"Elevation of troponins",
+"tocnametree":"Elevation of troponins",
+"htmlpage":"ENAS247_4.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.3.0.0",
+"id":"7",
+"nametree":"Illustration",
+"tocnametree":"Illustration",
+"htmlpage":"ENAS247_4.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"8",
+"nametree":"Classification of MI",
+"tocnametree":"Classification of MI",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"9",
+"nametree":"Type 1",
+"tocnametree":"Type 1",
+"htmlpage":"ENAS247_5.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"10",
+"nametree":"Type 2",
+"tocnametree":"Type 2",
+"htmlpage":"ENAS247_5.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.0.0",
+"id":"11",
+"nametree":"Differentiate Type 1 and 2",
+"tocnametree":"Differentiate Type 1 and 2",
+"htmlpage":"ENAS247_5.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.0.0",
+"id":"12",
+"nametree":"Type 3",
+"tocnametree":"Type 3",
+"htmlpage":"ENAS247_5.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.5.0.0",
+"id":"13",
+"nametree":"Type 4a",
+"tocnametree":"Type 4a",
+"htmlpage":"ENAS247_5.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.6.0.0",
+"id":"14",
+"nametree":"Type 4b",
+"tocnametree":"Type 4b",
+"htmlpage":"ENAS247_5.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.7.0.0",
+"id":"15",
+"nametree":"Type 5",
+"tocnametree":"Type 5",
+"htmlpage":"ENAS247_5.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"16",
+"nametree":"ECG detection of MI",
+"tocnametree":"ECG detection of MI",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"17",
+"nametree":"ST Elevation",
+"tocnametree":"ST Elevation",
+"htmlpage":"ENAS247_6.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"18",
+"nametree":"ST Depression/T wave",
+"tocnametree":"ST Depression/T wave",
+"htmlpage":"ENAS247_6.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"19",
+"nametree":"ECG changes of prior MI",
+"tocnametree":"ECG changes of prior MI",
+"htmlpage":"ENAS247_7.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"20",
+"nametree":"Common ECG pitfalls",
+"tocnametree":"Common ECG pitfalls",
+"htmlpage":"ENAS247_8.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"21",
+"nametree":"Imaging evidence of acute MI",
+"tocnametree":"Imaging evidence of acute MI",
+"htmlpage":"ENAS247_9.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"22",
+"nametree":"Special categories of MI",
+"tocnametree":"Special categories of MI",
+"htmlpage":"ENAS247_10.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"23",
+"nametree":"Tabulation in clinical trials",
+"tocnametree":"Tabulation in clinical trials",
+"htmlpage":"ENAS247_11.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.0.0.0",
+"id":"24",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS247_12.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

@@ -1,0 +1,495 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="calci_std.css">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery-algoPlugin.js"></script>
+    <script src="algoFunctions.js"></script>
+
+    <script type="text/JavaScript">
+
+
+        <!--if(screen.width < 768)
+            {
+               changeCSS('calci_bb.css',0);
+            }
+        else
+        {
+            changeCSS('calci_ipad_bb.css',0);
+        }
+		--!>
+		function changeCSS(cssFile, cssLinkIndex) {
+ 
+        var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+ 
+        var newlink = document.createElement("link");
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", cssFile);
+ 
+        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+      }
+		
+            </script>
+
+            <script>
+        function activeResultStyle() {
+            //alert("done1");
+            var classValue = document.getElementsByClassName("output_name_disabled");
+
+            for (var i = 0; i < classValue.length; i + 1) {
+                //alert("done");
+                classValue[i].classList.add("output_name");
+                classValue[i].classList.remove("output_name_disabled");
+            }
+
+            var outputClass = document.getElementsByClassName("output_disabled");
+            for (var j = 0; j < outputClass.length; j + 1) {
+                //alert("done");
+                outputClass[j].classList.add("output");
+                outputClass[j].classList.remove("output_disabled");
+            }
+
+            var textareaOutputClass = document.getElementsByClassName("text-area-output-disabled");
+            for (var k = 0; k < textareaOutputClass.length; k + 1) {
+                //alert("done");
+                textareaOutputClass[k].classList.add("text-area-output");
+                textareaOutputClass[k].classList.remove("text-area-output-disabled");
+            }
+
+            var unitOutputClass = document.getElementsByClassName("unit_label_output_disabled");
+            for (var l = 0; l < unitOutputClass.length; l + 1) {
+                //alert("done");
+                unitOutputClass[l].classList.add("unit_label_output");
+                unitOutputClass[l].classList.remove("unit_label_output_disabled");
+            }
+
+            var activityOutput = document.getElementsByClassName("activity_output_disabled");
+            for (var act1 = 0; act1 < activityOutput.length; act1 + 1) {
+                //alert("done");
+                activityOutput[act1].classList.add("activity_output");
+                activityOutput[act1].classList.remove("activity_output_disabled");
+            }
+
+            var activityTextOutput = document.getElementsByClassName("activity-text-area-output-disabled");
+            for (var act2 = 0; act2 < activityTextOutput.length; act2 + 1) {
+                //alert("done");
+                activityTextOutput[act2].classList.add("activity-text-area-output");
+                activityTextOutput[act2].classList.remove("activity-text-area-output-disabled");
+            }
+
+
+        }
+
+        function deactiveResultStyle() {
+            // alert("done");
+            var classValue = document.getElementsByClassName("output_name");
+            for (var i = 0; i < classValue.length; i + 1) {
+                //alert("done");
+                classValue[i].classList.add("output_name_disabled");
+                classValue[i].classList.remove("output_name");
+            }
+
+            var outputClass = document.getElementsByClassName("output");
+            for (var j = 0; j < outputClass.length; j + 1) {
+                //alert("done");
+                outputClass[j].classList.add("output_disabled");
+                outputClass[j].classList.remove("output");
+            }
+
+            var textareaOutputClass = document.getElementsByClassName("text-area-output");
+            for (var k = 0; k < textareaOutputClass.length; k + 1) {
+                //alert("done");
+                textareaOutputClass[k].classList.add("text-area-output-disabled");
+                textareaOutputClass[k].classList.remove("text-area-output");
+            }
+
+            var unitOutputClass = document.getElementsByClassName("unit_label_output");
+            for (var l = 0; l < unitOutputClass.length; l + 1) {
+                //alert("done");
+                unitOutputClass[l].classList.add("unit_label_output_disabled");
+                unitOutputClass[l].classList.remove("unit_label_output");
+            }
+
+
+            var activityOutput = document.getElementsByClassName("activity_output");
+            for (var act1 = 0; act1 < activityOutput.length; act1 + 1) {
+                //alert("done");
+                activityOutput[act1].classList.add("activity_output_disabled");
+                activityOutput[act1].classList.remove("activity_output");
+            }
+
+            var activityTextOutput = document.getElementsByClassName("activity-text-area-output");
+            for (var act2 = 0; act2 < activityTextOutput.length; act2 + 1) {
+                //alert("done");
+                activityTextOutput[act2].classList.add("activity-text-area-output-disabled");
+                activityTextOutput[act2].classList.remove("activity-text-area-output");
+            }
+
+        }
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#ref_button").click(function() {
+
+                var t = $('#reference').css('display');
+
+                if (t == 'none') {
+                    $('#reference').css('display', "block");
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                } else {
+                    $('#reference').css('display', "none");
+                    t = block;
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                }
+
+            });
+
+            $("#reset").click(function() {
+                //$(".points").hide("slow");
+                $(".result_table").hide("slow");
+                //$("#reftext").hide("slow");
+                $("#reference").hide("slow");
+                totalscore = 0;
+                for (var x = 0; x < isBoxPressed.length; x++) {
+                    isBoxPressed[x] = "false";
+                }
+                isResetPressed = "false";
+
+                for (var x = 1; x < box.length; x++) {
+                    $("#" + box[x]).hide();
+                }
+
+                $("#total_points").text(totalscore);
+                $("#reset_text").text("Reset");
+                $("#reset").css({
+                    "-webkit-border-bottom-right-radius": "7px",
+                    "-webkit-border-bottom-left-radius": "7px"
+                });
+
+                for (var i = 0; i < boxArray.length; i++) {
+                    for (var j = 0; j < boxArray[i].length; j++) {
+                        $("#" + boxArray[i][j]).slideDown("fast");
+                    }
+                }
+
+                $(".list_middle").css({
+                    "-webkit-border-bottom-right-radius": "0px",
+                    "-webkit-border-bottom-left-radius": "0px"
+                });
+            });
+        });
+    </script>
+
+        <script type="text/javascript">
+            var f1,f2,f3,f4;
+           
+            
+            function valcal1(value)
+            {
+                
+                
+                
+                f1=value;
+                calculate();
+            
+            }
+            function valcal2(value)
+            {
+                if(value==2)
+                {
+                    document.getElementById("v11").hidden=true;
+                    document.getElementById("v12").hidden=false;
+                    frm.v12.selectedIndex=frm.v11.selectedIndex;
+                    
+                }
+                if(value==1)
+                {
+                    document.getElementById("v12").hidden=true;
+                    document.getElementById("v11").hidden=false;
+                    frm.v11.selectedIndex=frm.v12.selectedIndex;
+                    
+                }
+                
+                
+                f2=value;
+                  calculate();
+            }
+            function valcal3(value)
+            {
+                f3=value;
+                  calculate();
+            }
+            function valcal4(value)
+            {
+                f4=value;
+                  calculate();
+            }
+            
+            function calculate()
+            {
+                    var r = document.getElementById("intervention");
+                     var r2 = document.getElementById("reccomend");
+                if(isNaN(f1) || isNaN(f3) || f1 == "" || f3 == ""){
+                    r.innerHTML = "<br/>";
+    				r2.innerHTML= "<br/>";
+                deactiveResultStyle();
+                }else{
+                activeResultStyle();
+                }
+
+                
+                // column 1st.
+                if(f1==1 && f3==6)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice, no lipid intervention";
+    				document.getElementById("reccomend").innerHTML="I/C";
+                }
+                else if(f1==1 && f3==7)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice, no lipid intervention";
+    				document.getElementById("reccomend").innerHTML="I/C";
+                }
+                else if(f1==1 && f3==8)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice, no lipid intervention";
+    				document.getElementById("reccomend").innerHTML="IIa/A";
+                }
+                else if(f1==1 && f3==9)
+                {
+                	document.getElementById("intervention").innerHTML="Lifestyle advice/intervention, consider drug<sup>c</sup>";
+    				document.getElementById("reccomend").innerHTML="IIa/A";
+                }
+				// column 2nd
+                else if(f1==2 && f3==6)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice, no lipid intervention";
+    				document.getElementById("reccomend").innerHTML="I/C";
+                }
+                else if(f1==2 && f3==7)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice, no lipid intervention";
+    				document.getElementById("reccomend").innerHTML="I/C";
+                }
+                else if(f1==2 && f3==8)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice/intervention, consider drug if uncontrolled";
+    				document.getElementById("reccomend").innerHTML="IIa/A";
+                }
+                else if(f1==2 && f3==9)
+                {
+                	document.getElementById("intervention").innerHTML="Lifestyle advice/intervention and concomitant drug treatment";
+    				document.getElementById("reccomend").innerHTML="IIa/A";
+                }
+				// column 3rd
+                else if(f1==3 && f3==6)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice, no lipid intervention";
+    				document.getElementById("reccomend").innerHTML="I/C";
+                }
+                else if(f1==3 && f3==7)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice/intervention, consider drug if uncontrolled";
+    				document.getElementById("reccomend").innerHTML="IIa/A";
+                }
+                else if(f1==3 && f3==8)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice/intervention and concomitant drug treatment";
+    				document.getElementById("reccomend").innerHTML="IIa/A";
+                }
+                else if(f1==3 && f3==9)
+                {
+                	document.getElementById("intervention").innerHTML="Lifestyle advice/intervention and concomitant drug treatment";
+    				document.getElementById("reccomend").innerHTML="I/A";
+                }
+				// column 4th
+                else if(f1==4 && f3==6)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice, no lipid intervention";
+    				document.getElementById("reccomend").innerHTML="I/C";
+                }
+                else if(f1==4 && f3==7)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice/intervention, consider drug if uncontrolled";
+    				document.getElementById("reccomend").innerHTML="IIa/A";
+                }
+                else if(f1==4 && f3==8)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice/intervention and concomitant drug treatment";
+    				document.getElementById("reccomend").innerHTML="I/A";
+                }
+                else if(f1==4 && f3==9)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice/intervention and concomitant drug treatment";
+    				document.getElementById("reccomend").innerHTML="I/A";
+                }
+				// column 5th
+                else if(f1==5 && f3==6)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice/intervention, consider drug if uncontrolled";
+    				document.getElementById("reccomend").innerHTML="IIa/A";
+                }
+                else if(f1==5 && f3==7)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice/intervention, consider drug if uncontrolled";
+    				document.getElementById("reccomend").innerHTML="I/A";
+                }
+                else if(f1==5 && f3==8)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice/intervention and concomitant drug treatment";
+    				document.getElementById("reccomend").innerHTML="I/A";
+                }
+                else if(f1==5 && f3==9)
+                {
+                    document.getElementById("intervention").innerHTML="Lifestyle advice/intervention and concomitant drug treatment";
+    				document.getElementById("reccomend").innerHTML="I/A";
+                }
+                    
+            }
+            
+            
+            </script>
+
+</head>
+
+<body>
+
+    <form name="frm">
+        <div class="table_container">
+            <table class="input_table">
+                <colgroup>
+                    <col width="35%">
+                    <col width="45%">
+                    <col width="20%">
+                </colgroup>
+                <tr>
+                    <td class="input_name">
+                        LDL-C Levels
+                    </td>
+                    <td>
+                        <select class="drop_center" id="v11" name="v11" onChange="valcal1(this.value);">
+                            <option></option>
+                            <option value="1">&lt;70</option>
+						<option value="2">70 to &lt;100</option>
+						<option value="3">100 to &lt;155</option>
+						<option value="4">155 to &lt;190</option>
+						<option value="5">&ge;190</option>
+                           
+                          
+                        </select>
+
+                        <select class="drop_center" id="v12" name="v12" onChange="valcal1(this.value);" hidden="true">
+                            <option></option>
+                            <option value="1">&lt;1.8</option>
+                            <option value="2">1.8 to &lt;2.6</option>
+                            <option value="3">2.6 to &lt;4.0</option>
+                            <option value="4">4.0 to &lt;4.9</option>
+                            <option value="5">&ge;4.9</option>
+                            
+                        </select>
+
+                    </td>
+                    <td>
+                        <select class="drop_right" id="unit1" name="unit1" onChange="valcal2(this.value);">
+                            <option value="1" selected="selected">mg/dL</option>
+                            <option value="2">mmol/L</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="input_name">
+                        Total CV Risk (%)
+                    </td>
+                    <td colspan="2">
+                        <select class="drop_center" id="v21" name="v21" onChange="valcal3(this.value);" multiline>
+                            <option></option>
+                            <option value="6">&lt;1</option>
+						<option value="7">&ge;1 to &lt;5</option>
+						<option value="8">&ge;5 to &lt;10 or high risk</option>
+						<option value="9">&ge;10 or very high risk</option>
+						
+                        </select>
+
+            </table>
+        </div>
+
+
+        <div class="table_container">
+            <table class="output_table">
+                <colgroup>
+                    <col width="35%">
+                    <col width="45%">
+                    <col width="20%">
+                </colgroup>
+                <tr>
+                    <td class="output_name_disabled">
+                        Intervention
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="output_disabled" id="intervention" name="intervention" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="output_name_disabled" colspan="3">
+                        Class of recommen&shy;dation/Level of evidence
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=3>
+                        <div type="text" class="output_disabled" id="reccomend" name="reccomend" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </form>
+
+    <div class="footer-div" id="998">
+        <table class="footer-button-table">
+            <tr>
+                
+              <!--   <td class="footer-button"  style="width: 50%;"><a href="flipView"><button class="mfooter-button" id="pdfButton"><img id="algoPdf" src="algo_pdf.png" alt="Static version"></button></a></td> -->
+        </tr>
+        <!-- <tr>
+            <td class="footer-button" colspan="2" style="width: 50%;"><button class="mfooter-button" id="moreInfoButton">For more information <a href="ref_ENAS5197_5.4.0.0">see here</a></button></td>
+        </tr> -->
+		<tr>
+		<td class="footer-button" style="width: 50%;">
+                    <button class="mfooter-button" id="ref_button">Abbreviation(s) and footnote(s)</button>
+                </td>
+		<td class="footer-button"  style="width: 50%;"><button class="mfooter-button" id="moreInfoButton"><a class="more-info-link" href="ref_ENAS5196_11.6.2.0.html">More Information</a></td>
+		</tr>
+		<tr>
+		
+		<td colspan="2" class="footer-button"  style="width: 100%;"><button class="mfooter-button" id="reset" onClick="window.location.href=window.location.href">Reset</button></td>
+		
+		</tr>
+
+        <tr>
+            <td colspan="4">
+                <div class="reference-box" id="reference">
+                    <p class="text-left">CV = cardiovascular; LDL-C = low-density lipoprotein-cholesterol; SCORE = Systemic Coronary Risk Estimation.<br/>
+                        <!--<sup>a</sup>Class of recommendation. <sup>b</sup>Level of evidence.--><br/><sup>c</sup>In patients with myocardial infarction, statin therapy should be considered irrespective of total cholesterol levels</p>
+        </div>
+        </td>
+        </tr>
+        </table>
+        </div>
+        </body>
+
+</html>

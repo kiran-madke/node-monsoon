@@ -1,0 +1,43 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "Class of antihypertensive drug",
+        "text_id": "",
+        "id": "gc",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    ],
+"output":[
+	{
+        "text": "Preferred combinations",
+        "id": "sum_1",
+        "unit": "",
+        "unitId":"",
+        "type":"textarea"
+    },
+    {
+        "text": "Useful combination (with some limitations)",
+        "id": "sum_2",
+        "unit": "",
+        "unitId":"",
+        "type":"textarea"
+    },
+    {
+        "text": "Possible but less well-tested combinations",
+        "id": "sum_3",
+        "unit": "",
+        "unitId":"",
+        "type":"textarea"
+    },
+    {
+        "text": "Not recommended combinations",
+        "id": "sum_4",
+        "unit": "",
+        "unitId":"",
+        "type":"textarea"
+    }
+]
+}

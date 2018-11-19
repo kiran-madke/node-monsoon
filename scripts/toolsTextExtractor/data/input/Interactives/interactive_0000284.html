@@ -1,0 +1,549 @@
+<html>
+
+<head>
+    <meta name="viewport" content="charset=UTF-8" />
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+    <link rel="stylesheet" type="text/css" href="score_esc.css">
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery-tocPlugin.js"></script>
+
+
+    <STYLE TYPE="text/css">
+        body {
+            background-color: #cccccc;
+            background-color: #cccccc;
+        }
+        
+        span.text_left {
+            float: left;
+            margin-left: 2px;
+            font-weight: bold;
+            font-size: 1em;
+            font-family: "Helvetica";
+        }
+        
+        p.text_left {
+            margin-left: 5px;
+        }
+        
+        .resetbox {
+            color: #ffffff;
+            height: 25px;
+            font-weight: normal;
+            font-size: 12pt;
+            width: 100%;
+            height: 80%;
+            border-color: black;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1, #000000), color-stop(0, #ffffff));
+        }
+        
+        td.ref {
+            font-family: Helvetica;
+            font-size: 10pt;
+            font-style: italic;
+            color: #666666;
+            padding: 1px 3px 1px 3px;
+            margin: 1px 1px 1px 1px;
+        }
+        
+        tr.head {
+            background-color: #cccccc;
+        }
+        
+        input.input {
+            width: 100%;
+            height: 23px;
+            border-color: #DBDBDB;
+            font-size: 15px;
+        }
+        
+        select {
+            width: 100%;
+        }
+        
+        input.output {
+            width: 100%;
+            height: 23px;
+            /*border-color: #E08100;*/
+            border-color: #F58324;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1, #FAAB6F), color-stop(0, #ffffff));
+        }
+        
+        td.input_name {
+            font: Helvetica;
+        }
+        
+        input[type=radio] {
+            display: none;
+            margin: 2px 2px 2px 2px;
+            padding: 1px 1px 1px 1px;
+        }
+        /*
+             Change the look'n'feel of labels (which are adjacent to radiobuttons).
+             Add some margin, padding to label
+             */
+        
+        input[type=radio] + label {
+            display: inline-block;
+            margin: 0px 2px 0px 2px;
+            padding: 2px 1px 0px 1px;
+            background-color: #ffffff;
+            border: 2px solid #dfdfdf;
+            width: 102%;
+            height: 23px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            text-align: center;
+            font-size: 15;
+            font-weight: bold;
+            color: #686868;
+        }
+        
+        input[type=radio]:checked + label {
+            background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#662016));
+            border: 2px solid #ececec;
+            color: #ffffff;
+            text-align: center;
+            width: 103%;
+            font-size: 15;
+            font-weight: bold;
+        }
+        /*
+            .abbBtn
+            {
+                
+                width:100px; height: 40px;
+                align:right;
+                font-weight:bold;
+                -webkit-border-top-right-radius: 7px;
+                -webkit-border-top-left-radius: 7px;
+                -webkit-border-bottom-right-radius: 7px;
+                -webkit-border-bottom-left-radius: 7px;
+                background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)),
+                to(#a8adb2));
+            }
+            .abbBtnClick
+            {
+                
+                width:100px; height: 40px;
+                align:right;
+                font-weight:bold;
+                -webkit-border-top-right-radius: 7px;
+                -webkit-border-top-left-radius: 7px;
+                -webkit-border-bottom-right-radius: 7px;
+                -webkit-border-bottom-left-radius: 7px;
+                background: -webkit-gradient(linear, left top, left bottom, from(#7c7c7c),
+                to(#7c7c7c));
+                color:#ffffff;
+            }
+            */
+    </style>
+    <script language="JavaScript">
+        $(function() {
+            $('label').bind('click', function() {
+                $(input, this).click();
+                return false;
+            });
+        });
+    </script>
+    <!-- <link rel="stylesheet" href="SCH.css" type="text/css" />-->
+
+    <script>
+        $(document).ready(function() {
+
+
+
+
+            $("#ref_button").click(function() {
+                var className = $('#ref_button').attr('class');
+                if (className == 'abbBtn')
+                    $('#ref_button').removeClass('abbBtn').addClass('abbBtnClick');
+                else
+                    $('#ref_button').removeClass('abbBtnClick').addClass('abbBtn');
+                $("#reference").slideToggle("fast", function() {
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                });
+            });
+
+            $("#reset").click(function() {
+                //$(".points").hide("slow");
+                $(".result_table").hide("slow");
+                //$("#reftext").hide("slow");
+                $("#reference").hide("slow");
+                totalscore = 0;
+                for (var x = 0; x < isBoxPressed.length; x++) {
+                    isBoxPressed[x] = "false";
+                }
+                isResetPressed = "false";
+
+                for (var x = 1; x < box.length; x++) {
+                    $("#" + box[x]).hide();
+                }
+
+                $("#total_points").text(totalscore);
+                $("#reset_text").text("Reset");
+                $("#reset").css({
+                    "-webkit-border-bottom-right-radius": "7px",
+                    "-webkit-border-bottom-left-radius": "7px"
+                });
+
+                for (var i = 0; i < boxArray.length; i++) {
+                    for (var j = 0; j < boxArray[i].length; j++) {
+                        $("#" + boxArray[i][j]).slideDown("fast");
+                    }
+                }
+
+                $(".list_middle").css({
+                    "-webkit-border-bottom-right-radius": "0px",
+                    "-webkit-border-bottom-left-radius": "0px"
+                });
+            });
+        });
+
+        function boxSlide(id, status, point, mode, whichArray) {
+            if (mode == 1) {
+                for (var j = 0; j < boxArray[whichArray].length; j++) {
+                    if (id != boxArray[whichArray][j]) {
+                        $("#" + boxArray[whichArray][j]).slideUp("fast");
+                    }
+                }
+                $("#" + id).css({
+                    "-webkit-border-bottom-right-radius": "7px",
+                    "-webkit-border-bottom-left-radius": "7px"
+                });
+                isBoxPressed[whichArray] = status;
+                totalscore = totalscore + point;
+                showScore();
+            } else if (mode == 0) {
+                for (var j = 0; j < boxArray[whichArray].length; j++) {
+                    if (id != boxArray[whichArray][j]) {
+                        $("#" + boxArray[whichArray][j]).slideDown("fast");
+                    }
+                }
+                $("#" + id).css({
+                    "-webkit-border-bottom-right-radius": "0px",
+                    "-webkit-border-bottom-left-radius": "0px"
+                });
+                isBoxPressed[whichArray] = status;
+                totalscore = totalscore - point;
+                hideScore();
+            }
+            $("#total_points").text(totalscore);
+            if (whichArray < box.length)
+                $("#" + box[whichArray + 1]).show();
+            $("#" + box[whichArray]).scroll();
+        }
+    </script>
+    <script type="text/javascript">
+        function valcal() {
+
+            var total = 0;
+
+            if (document.getElementById("r1_1").checked == true) {
+                total += 1;
+                one = 1;
+            } else
+            if (document.getElementById("r1_2").checked == true) {
+                total += 0;
+                one = 1;
+            }
+
+
+            if (document.getElementById("r2_1").checked == true) {
+                total += 1;
+                two = 1;
+            } else
+            if (document.getElementById("r2_2").checked == true) {
+                total += 0;
+                two = 1;
+            }
+
+            if (document.getElementById("r3_1").checked == true) {
+                total += 1;
+                three = 1;
+            } else
+            if (document.getElementById("r3_2").checked == true) {
+                total += 0;
+                three = 1;
+            }
+
+            if (document.getElementById("r4_1").checked == true) {
+                total += 1;
+                four = 1;
+            } else
+            if (document.getElementById("r4_2").checked == true) {
+                total += 0;
+                four = 1;
+            }
+
+            if (document.getElementById("r5_1").checked == true) {
+                total += 1;
+                five = 1;
+            } else
+            if (document.getElementById("r5_2").checked == true) {
+                total += 0;
+                five = 1;
+            }
+
+            if (document.getElementById("r6_1").checked == true) {
+                total += 1;
+                six = 1;
+            } else
+            if (document.getElementById("r6_2").checked == true) {
+                total += 0;
+                six = 1;
+            }
+
+            if (document.getElementById("r7_1").checked == true) {
+                total += 1;
+                seven = 1;
+            } else
+            if (document.getElementById("r7_2").checked == true) {
+                total += 0;
+                seven = 1;
+            }
+
+            if (document.getElementById("r8_1").checked == true) {
+                total += 1;
+                eight = 1;
+            } else
+            if (document.getElementById("r8_2").checked == true) {
+                total += 0;
+                eight = 1;
+            }
+
+            if (document.getElementById("r9_1").checked == true) {
+                total += 1;
+                nine = 1;
+            } else
+            if (document.getElementById("r9_2").checked == true) {
+                total += 0;
+                nine = 1;
+            }
+            if (one == 1 && two == 1 && three == 1 && four == 1 && five == 1 && six == 1 && seven == 1 &&
+                eight == 1 && nine == 1) {
+                if (total == 0) {
+                    frm.txtresult.value = 0;
+                    frm.txtresult_text.value = "low risk: no anticoagulation recommended";
+                } else
+                if (total == 1) {
+                    frm.txtresult.value = 1;
+                    frm.txtresult_text.value = "intermediate risk: OAC recommended ";
+                } else
+                if (total == 2) {
+                    frm.txtresult.value = 2;
+                    frm.txtresult_text.value = "high risk: OAC recommended";
+                } else
+                if (total == 3) {
+                    frm.txtresult.value = 3;
+                    frm.txtresult_text.value = "high risk: OAC recommended";
+                } else
+                if (total == 4) {
+                    frm.txtresult.value = 4;
+                    frm.txtresult_text.value = "high risk: OAC recommended";
+                } else
+                if (total == 5) {
+                    frm.txtresult.value = 5;
+                    frm.txtresult_text.value = "high risk: OAC recommended";
+                } else
+                if (total == 6) {
+                    frm.txtresult.value = 6;
+                    frm.txtresult_text.value = "OAC therapy with adjusted-dose VKA (INR 2-3) or with NOACs is recommended, unless contraindicated";
+                } else
+                if (total == 7) {
+                    frm.txtresult.value = 7;
+                    frm.txtresult_text.value = "OAC therapy with adjusted-dose VKA (INR 2-3) or with NOACs is recommended, unless contraindicated";
+                } else
+                if (total == 8) {
+                    frm.txtresult.value = 8;
+                    frm.txtresult_text.value = "OAC therapy with adjusted-dose VKA (INR 2-3) or with NOACs is recommended, unless contraindicated";
+                } else
+                if (total == 9) {
+                    frm.txtresult.value = 9;
+                    frm.txtresult_text.value = "OAC therapy with adjusted-dose VKA (INR 2-3) or with NOACs is recommended, unless contraindicated";
+                } else {
+                    frm.txtresult.value = total;
+                }
+                // }
+            }
+        }
+    </script>
+    <script type="text/javascript" src="HighlightSearch.js"></script>
+</head>
+
+
+<body onload="_geturl1();">
+
+
+    <form name="frm">
+        <table width="100%" cellpadding=3 cellspacing=0 style="border-collapse:collapse;">
+            <col style="width:34%">
+            <col style="width:33%">
+            <col style="width:33%">
+            <tr class="head">
+
+                <td style="border:0px solid #7c7c7c; color:#000000; " align="right"><b>Clinical characteristic </td>
+                    <td width="15%" style="border:0px solid #7c7c7c; color:#000000;" align="center"  ><b>No</b></td>
+                <td width="15%" style="border:0px solid #7c7c7c; color:#000000;" align="center"><b>Yes</b></td>
+            </tr>
+            <tr style="background-color:#F2F2F2;">
+                <td class="info" align="right"><b>Hypertension</td>
+                    <td style="border:0px solid #7c7c7c;"  >
+                        <input type="radio" name="r1" id="r1_2" onChange="valcal()" value="0" >
+                        <label  onclick="" for="r1_2" >0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:15px;"  style="">
+                        <input type="radio" name="r1" id="r1_1" onChange="valcal()" value="1">
+                    <label  onclick="" for="r1_1" >1</label></td>
+                    
+                </tr>
+                <tr style="background-color:#F2F2F2;">
+                    <td class="info" align="right"><b>Abnormal RF</td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r2" id="r2_2" onChange="valcal()" value="0"><label  onclick="" for="r2_2" >0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:15px;"><input type="radio" name="r2" id="r2_1" onChange="valcal()" value="1"><label  onclick="" for="r2_1" >1</label></td>
+                </tr>
+                <tr style="background-color:#F2F2F2;">
+                    <td class="info" align="right"><b>Abnormal LF
+                        
+                    </td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r3" id="r3_2" onChange="valcal()" value="0"><label  onclick="" for="r3_2" >0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:15px;"><input type="radio" name="r3" id="r3_1" onChange="valcal()" value="1"><label  onclick="" for="r3_1" >1</label></td>
+                </tr>
+                <tr style="background-color:#F2F2F2;">
+                    <td class="info" align="right"><b>Stroke
+                    </td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r4" id="r4_2" onChange="valcal()" value="0"><label  onclick="" for="r4_2" >0</label></td>
+                    <td style="border:0px solid #7c7c7c;padding-right:15px;"><input type="radio" name="r4" id="r4_1" onChange="valcal()" value="1"><label  onclick="" for="r4_1" >1</label></td>
+                </tr>
+                <tr style="background-color:#F2F2F2;">
+                    <td class="info" align="right"><b>Bleeding </td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r5" id="r5_2" onChange="valcal()" value="1"><label  onclick="" for="r5_2" >0</label></td>
+                    
+                    <td style="border:0px solid #7c7c7c;padding-right:15px; "><input type="radio" name="r5" id="r5_1" onChange="valcal()" value="1"><label  onclick="" for="r5_1" >1</label></td>
+                </tr>
+                <tr style="background-color:#F2F2F2;">
+                    <td class="info" align="right"><b>Labile INRs<sup>1</sup></b>
+                </td>
+                <td style="border:0px solid #7c7c7c;"><input type="radio" name="r6" id="r6_2" onChange="valcal()" value="0"><label onclick="" for="r6_2">0</label></td>
+
+                <td style="border:0px solid #7c7c7c;padding-right:15px;"><input type="radio" name="r6" id="r6_1" onChange="valcal()" value="0"><label onclick="" for="r6_1">1</label></td>
+            </tr>
+            <tr style="background-color:#F2F2F2;">
+                <td class="info" align="right"><b>Elderly<sup>2</sup></b><br/>(age >65)
+                </td>
+                <td style="border:0px solid #7c7c7c;"><input type="radio" name="r7" id="r7_2" onChange="valcal()" value="0"><label onclick="" for="r7_2">0</label></td>
+
+                <td style="border:0px solid #7c7c7c;padding-right:15px; "><input type="radio" name="r7" id="r7_1" onChange="valcal()" value="1"><label onclick="" for="r7_1">1</label></td>
+            </tr>
+            <tr style="background-color:#F2F2F2;">
+                <td class="info" align="right"><b>Drugs<sup>3</sup></b>
+                </td>
+                <td style="border:0px solid #7c7c7c;"><input type="radio" name="r8" id="r8_2" onChange="valcal()" value="0"><label onclick="" for="r8_2">0</label></td>
+
+                <td style="border:0px solid #7c7c7c;padding-right:15px; "><input type="radio" name="r8" id="r8_1" onChange="valcal()" value="1"><label onclick="" for="r8_1">1</label></td>
+            </tr>
+            <tr style="background-color:#F2F2F2;">
+                <td class="info" align="right"><b>Alcohol
+                    </td>
+                    <td style="border:0px solid #7c7c7c;"><input type="radio" name="r9" id="r9_2" onChange="valcal()" value="0"><label  onclick="" for="r9_2" >0</label></td>
+                    
+                    <td style="border:0px solid #7c7c7c; padding-right:15px;"><input type="radio" name="r9" id="r9_1" onChange="valcal()" value="1"><label  onclick="" for="r9_1" >1</label></td>
+                </tr>
+                
+                <tr style="background-color:cccccc" >
+                    <td  style="border:0px solid #cccccc;  vertical-align: bottom;background-color:cccccc;color:#000000; " align="right" >
+                        <b>Score</b>
+                </td>
+
+                <td style="border:0px solid #7c7c7c; vertical-align: bottom;" colspan="2">
+                    <input type="number" name="txtresult" readonly="readonly" class="resultbox" />
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td colspan="3" style="background-color:#cccccc; vertical-align:bottom;" align="left">
+                    In patients with a HAS-BLED score &ge; 3, caution and regular review are recommended, as well as efforts to correct the potentially reversible risk factors for bleeding. A high HAS-BLED score per se should not be used to exclude patients from OAC therapy.
+                </td>
+            </tr>
+
+            <td colspan="3" style="border:0px solid #7c7c7c;  vertical-align: bottom;background-color:cccccc;color:#000000; ">
+                <input class="resetBtn" style="width:100%" type="reset" value="Reset" id="reset" onClick="window.location.href=window.location.href">
+            </td>
+            </tr>
+
+        </table>
+        </table>
+    </form>
+    <p style="text-align: left; display: inline;" id="reftext">
+
+
+        <div style="float:right">
+            <table style="width:100% border: 0px solid #ffffff;">
+                <col style="width:50%">
+                <col style="width:100px">
+                <col style="width:70px">
+                
+				<tr>
+                    <td>
+                    </td>
+                    <td><button id="ref_button" class="abbBtn">Abbreviations and footnotes</button> </td>
+                    
+                </tr>
+            </table>
+        </div>
+
+
+
+        <div id="reference" style="display: none; width: 93%; float: center;">
+            <br/>
+            <br/>
+            <br/>
+            <div class="info_text_box_abb">
+                <p class="text_left">
+                    'Hypertension' is defined as uncontrolled blood pressure e.g., systolic blood pressure > 160 mmHg. 'Abnormal kidney function' is defined as the presence of chronic dialysis or renal transplantation or serum creatinine &ge; 200 &mu;mol/L. 'Abnormalliverfunction'
+                    is definedas chronichepatic disease (e.g.,cirrhosis) orbio chemical evidence of significant hepatic derangement (e.g., bilirubin > 2x upper limit of normal, in association with AST/ALT/ALP > 3x upper limit normal, etc). 'Bleeding'
+                    refers to previous bleeding history and/or predisposition to bleeding, e.g., bleeding diathesis, anaemia, etc. 'Labile INRs' refers to unstable/high INRs or poor time in therapeutic range (e.g.,
+                    <60%). 'Drugs or alcohol' refers to concomitant use of drugs such as antiplatelet agents, non-steroidal anti-inflammatory drugs, etc., or alcohol abuse. <br/>
+                </p>
+            </div>
+            <div class="info_text_box_abb">
+                <p class="text_left">
+
+
+                    AST/ALT/ALP = aspartate / alanine aminotransferase / alkaline phosphatase; INR = international normalized ratio; NSAID = non-steroidal anti-inflammatory drug; RF = Renal Function; LF = Liver Function.</p>
+    </p>
+    </div>
+    <div class="info_text_box_abb">
+        <p class="text_left">
+            <sup>1</sup> if taking VKA<br>
+            <sup>2</sup> e.g., age >65, frail condition<br>
+            <sup>3</sup> concomitant aspirin, NSAID
+
+
+    </div>
+
+    </div>
+<br/>
+	<br/>
+
+    <div style="float:right">
+        <table style="width:100% border: 0px solid #ffffff;">
+            <col style="width:20%">
+            <tr>
+                <td>
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+</body>
+
+</html>

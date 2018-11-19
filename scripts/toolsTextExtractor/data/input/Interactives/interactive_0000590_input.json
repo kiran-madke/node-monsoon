@@ -1,0 +1,49 @@
+var Data_For_PDF = {
+
+"input":[
+	{
+        "text": "Cancer drug agents",
+        "text_id": "",
+        "id": "methodSelect",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    },
+	{
+        "text": "Drug Name",
+        "text_id": "",
+        "id": "testSelect",
+        "unit": "",
+        "unitId":"",
+        "type":"dropdown"
+    }
+    
+    
+    ],
+"output":[
+	{
+        "text": "Average QT prolongation (ms)",
+        "id": "Mat1",
+        "unit": "",
+        "type":"div"
+    },
+    {
+        "text": "Increase in QTc >60 ms (%)",
+        "id": "Mat2",
+        "unit": "",
+        "type":"div"
+    },
+    {
+        "text": "QTc >500 ms (%)",
+        "id": "Mat3",
+        "unit": "",
+        "type":"div"
+    },
+    {
+        "text": "Torsade de pointes (%)",
+        "id": "Mat4",
+        "unit": "",
+        "type":"div"
+    }
+]
+}

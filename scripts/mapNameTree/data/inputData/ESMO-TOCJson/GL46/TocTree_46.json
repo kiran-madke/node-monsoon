@@ -1,0 +1,425 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5406_1.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Screening",
+"tocnametree":"Screening",
+"htmlpage":"ENAS5406_2.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Diagnosis and pathology",
+"tocnametree":"Diagnosis and pathology",
+"htmlpage":"ENAS5406_3.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.0.0.0",
+"id":"4",
+"nametree":"Staging and risk assessment",
+"tocnametree":"Staging and risk assessment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"5",
+"nametree":"Locoregional staging",
+"tocnametree":"Locoregional staging",
+"htmlpage":"ENAS5406_4.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.2.0.0",
+"id":"6",
+"nametree":"Locoregional LN staging",
+"tocnametree":"Locoregional LN staging",
+"htmlpage":"ENAS5406_4.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.0.0",
+"id":"7",
+"nametree":"Locoregional NSCLC treatment recom.",
+"tocnametree":"Locoregional NSCLC treatment recom.",
+"htmlpage":"ENAS5406_4.3.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.4.0.0",
+"id":"8",
+"nametree":"Staging and stage grouping UICC TNM 8",
+"tocnametree":"Staging and stage grouping UICC TNM 8",
+"htmlpage":"ENAS5406_4.4.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.5.0.0",
+"id":"9",
+"nametree":"Staging for locally adv. (stage III) NSCLC",
+"tocnametree":"Staging for locally adv. (stage III) NSCLC",
+"htmlpage":"ENAS5406_4.5.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.6.0.0",
+"id":"10",
+"nametree":"Pretreatment risk assessment",
+"tocnametree":"Pretreatment risk assessment",
+"htmlpage":"ENAS5406_4.6.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.7.0.0",
+"id":"11",
+"nametree":"Preoperative respiratory evaluation",
+"tocnametree":"Preoperative respiratory evaluation",
+"htmlpage":"ENAS5406_4.7.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.8.0.0",
+"id":"12",
+"nametree":"Stage I lung CA & emphysema",
+"tocnametree":"Stage I lung CA & emphysema",
+"htmlpage":"ENAS5406_4.8.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.9.0.0",
+"id":"13",
+"nametree":"Preoperative cardiac evaluation",
+"tocnametree":"Preoperative cardiac evaluation",
+"htmlpage":"ENAS5406_4.9.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.0.0.0",
+"id":"14",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"15",
+"nametree":"Early (stages I and II) NSCLC",
+"tocnametree":"Early (stages I and II) NSCLC",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.1.0",
+"id":"16",
+"nametree":"Surgery",
+"tocnametree":"Surgery",
+"htmlpage":"ENAS5406_5.1.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.1.2.0",
+"id":"17",
+"nametree":"Systemic therapy",
+"tocnametree":"Systemic therapy",
+"htmlpage":"ENAS5406_5.1.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.1.3.0",
+"id":"18",
+"nametree":"Primary radiotherapy",
+"tocnametree":"Primary radiotherapy",
+"htmlpage":"ENAS5406_5.1.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.1.4.0",
+"id":"19",
+"nametree":"Radiofrequency ablation",
+"tocnametree":"Radiofrequency ablation",
+"htmlpage":"ENAS5406_5.1.4.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.1.5.0",
+"id":"20",
+"nametree":"Postoperative radiotherapy",
+"tocnametree":"Postoperative radiotherapy",
+"htmlpage":"ENAS5406_5.1.5.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.2.0.0",
+"id":"21",
+"nametree":"Locally advanced (stage III) NSCLC",
+"tocnametree":"Locally advanced (stage III) NSCLC",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.1.0",
+"id":"22",
+"nametree":"Systemic therapy",
+"tocnametree":"Systemic therapy",
+"htmlpage":"ENAS5406_5.2.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.2.2.0",
+"id":"23",
+"nametree":"Resectable locally advanced NSCLC",
+"tocnametree":"Resectable locally advanced NSCLC",
+"htmlpage":"ENAS5406_5.2.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.2.3.0",
+"id":"24",
+"nametree":"Unresectable locally advanced NSCLC",
+"tocnametree":"Unresectable locally advanced NSCLC",
+"htmlpage":"ENAS5406_5.2.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"6.0.0.0",
+"id":"25",
+"nametree":"Personalised medicine",
+"tocnametree":"Personalised medicine",
+"htmlpage":"ENAS5406_6.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.0.0.0",
+"id":"26",
+"nametree":"Follow-up, long-term implications",
+"tocnametree":"Follow-up, long-term implications",
+"htmlpage":"ENAS5406_7.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.0.0.0",
+"id":"27",
+"nametree":"Summary of recommendations",
+"tocnametree":"Summary of recommendations",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.1.0.0",
+"id":"28",
+"nametree":"Screening",
+"tocnametree":"Screening",
+"htmlpage":"ENAS5406_8.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.2.0.0",
+"id":"29",
+"nametree":"Diagnosis and pathology",
+"tocnametree":"Diagnosis and pathology",
+"htmlpage":"ENAS5406_8.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.3.0.0",
+"id":"30",
+"nametree":"Staging and risk assessment",
+"tocnametree":"Staging and risk assessment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.3.1.0",
+"id":"31",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5406_8.3.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.3.2.0",
+"id":"32",
+"nametree":"Locoregional staging",
+"tocnametree":"Locoregional staging",
+"htmlpage":"ENAS5406_8.3.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.3.3.0",
+"id":"33",
+"nametree":"Staging for locally adv. (stage III) NSCLC",
+"tocnametree":"Staging for locally adv. (stage III) NSCLC",
+"htmlpage":"ENAS5406_8.3.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.3.4.0",
+"id":"34",
+"nametree":"Pretreatment risk assessment",
+"tocnametree":"Pretreatment risk assessment",
+"htmlpage":"ENAS5406_8.3.4.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.4.0.0",
+"id":"35",
+"nametree":"Treatment of early stages (stages I and II)",
+"tocnametree":"Treatment of early stages (stages I and II)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.4.1.0",
+"id":"36",
+"nametree":"Surgery",
+"tocnametree":"Surgery",
+"htmlpage":"ENAS5406_8.4.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.4.2.0",
+"id":"37",
+"nametree":"Systemic therapy",
+"tocnametree":"Systemic therapy",
+"htmlpage":"ENAS5406_8.4.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.4.3.0",
+"id":"38",
+"nametree":"Primary radiotherapy",
+"tocnametree":"Primary radiotherapy",
+"htmlpage":"ENAS5406_8.4.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.4.4.0",
+"id":"39",
+"nametree":"Radiofrequency ablation",
+"tocnametree":"Radiofrequency ablation",
+"htmlpage":"ENAS5406_8.4.4.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.4.5.0",
+"id":"40",
+"nametree":"Postoperative radiotherapy",
+"tocnametree":"Postoperative radiotherapy",
+"htmlpage":"ENAS5406_8.4.5.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.5.0.0",
+"id":"41",
+"nametree":"Treatment of locally adv. stage (stage III)",
+"tocnametree":"Treatment of locally adv. stage (stage III)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.5.1.0",
+"id":"42",
+"nametree":"Systemic therapy",
+"tocnametree":"Systemic therapy",
+"htmlpage":"ENAS5406_8.5.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.5.2.0",
+"id":"43",
+"nametree":"Resectable locally advanced NSCLC",
+"tocnametree":"Resectable locally advanced NSCLC",
+"htmlpage":"ENAS5406_8.5.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.5.3.0",
+"id":"44",
+"nametree":"Unresectable locally advanced NSCLC",
+"tocnametree":"Unresectable locally advanced NSCLC",
+"htmlpage":"ENAS5406_8.5.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.6.0.0",
+"id":"45",
+"nametree":"Personalised medicine",
+"tocnametree":"Personalised medicine",
+"htmlpage":"ENAS5406_8.6.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.7.0.0",
+"id":"46",
+"nametree":"Follow-up, long-term implications",
+"tocnametree":"Follow-up, long-term implications",
+"htmlpage":"ENAS5406_8.7.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.0.0.0",
+"id":"47",
+"nametree":"Glossary",
+"tocnametree":"Glossary",
+"htmlpage":"ENAS5406_9.0.0.0",
+"haspdf":false,
+"emailContent":true
+}
+]

@@ -1,0 +1,106 @@
+<html>
+
+<head>
+	
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+    <link rel="stylesheet" type="text/css" href="calci_std.css">
+	<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="interactive_0001462.js"></script>
+</head>
+
+<body>
+    <div class="table_container">
+        <table class="input_table">
+            <colgroup>
+                <col width="35%">
+                <col width="45%">
+                <col width="20%">
+            </colgroup>
+			<tr>
+                <td class="input_name"><b>Patient type</b></td>
+
+                <td colspan="2">
+                    <select class="drop_center" id="patient_type" onchange="clear_list();">
+						<option value="Select" selected>Select</option>
+						<option>Undergoing primary PCI*</option>
+					    <option>Not receiving reperfusion therapy**</option>
+					</select>
+                </td>
+            </tr>
+			<tr>
+                <td class="input_name"><b>Therapy type</b></td>
+
+                <td colspan="2">
+                    <select class="drop_center" id="therapy_type" onchange="option();">
+						<option value="Select" selected>Select</option>
+						<option>Antiplatelet therapies</option>
+					    <option>Parenteral anticoagulant therapies</option>
+					</select>
+                </td>
+            </tr>
+			<tr id="row1" >
+                <td class="input_name"><b>Drug</b></td>
+
+                <td colspan="2">
+                    <select class="drop_center" id="drug" onchange="result();">
+						<option value="Select" selected>Select</option>
+					</select>
+                </td>
+            </tr>
+        </table>
+    </div>
+  <div class="table_container">
+    <table class="output_table">
+            <colgroup>
+                <col width="100%">
+            </colgroup>
+            <tbody id="tr_result">
+                <tr id="stage">
+                    <td colspan="2" class="output_name_disabled">Doses</td>
+				</tr>
+				<tr id="stage_result" >
+                    <td>
+                        <div class="activity_output_disabled" id="result1" name="result" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+				
+            </tbody>
+        </table>
+		
+		  <table class="footer-button-table">
+             <tr>
+			<br/><br/>
+			 <td class="footer-button"><button class="mfooter-button" id="ref_button" style="outline:0">Abbreviation(s) and Footnote(s)</button></td>
+			<td class="footer-button" style="width: 50%;">
+        <button class="mfooter-button" id="pdfButton"><a href="flipView"><img id="algoPdf" src="algo_pdf_white.png" alt="Static version"></a></button></td>
+			  
+			   
+			 
+		</tr>
+		<tr>
+                <td class="footer-button" style="width: 50%;">
+                    <button class="mfooter-button" id="resetButton" onClick="window.location.href=window.location.href" style="outline:0">Reset</button></td>
+					 <td class="footer-button"  style="width: 50%;">
+        <a href="ref_ENAS5329_6.2.3.0.html"><button class="mfooter-button" id="moreInfoButton">More Information</button></a></td>
+            </tr>
+			 <tr>
+                <td colspan="2" style="border:0px;">
+                    <div id="reference" style="display: none;">
+                        <div class="info_text_box_abb">
+                            <p class="text_left"><i>b.i.d.</i> = twice a day; GP = glycoprotein; <i>i.v.</i> = intravenous; IU = international units; PCI = percutaneous coronary intervention; UFH = unfractionated heparin.
+                       </p>
+                        </div>
+						  <div class="info_text_box_abb">
+                            <p class="text_left">*Doses of antiplatelet and parenteral anticoagulant co-therapies in primary PCI<br/>**Doses of antiplatelet and parenteral anticoagulant therapies in patients not receiving reperfusion therapy
+                       </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+   </div>
+</body>
+
+</html>

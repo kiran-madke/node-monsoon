@@ -1,0 +1,218 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5061_1.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Risk factors and screening",
+"tocnametree":"Risk factors and screening",
+"htmlpage":"ENAS5061_2.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"ENAS5061_3.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.0.0.0",
+"id":"4",
+"nametree":"Staging and risk assessment",
+"tocnametree":"Staging and risk assessment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.1.0.0",
+"id":"5",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5061_4.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.2.0.0",
+"id":"6",
+"nametree":"TNM clinical classification",
+"tocnametree":"TNM clinical classification",
+"htmlpage":"ENAS5061_4.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"4.3.0.0",
+"id":"7",
+"nametree":"TNM pathological classification",
+"tocnametree":"TNM pathological classification",
+"htmlpage":"ENAS5061_4.3.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.0.0.0",
+"id":"8",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"9",
+"nametree":"Malignant polyps",
+"tocnametree":"Malignant polyps",
+"htmlpage":"ENAS5061_5.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.2.0.0",
+"id":"10",
+"nametree":"Localised disease",
+"tocnametree":"Localised disease",
+"htmlpage":"ENAS5061_5.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"5.3.0.0",
+"id":"11",
+"nametree":"Treatment by disease stage",
+"tocnametree":"Treatment by disease stage",
+"htmlpage":"ENAS5061_5.3.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"6.0.0.0",
+"id":"12",
+"nametree":"Personalised medicine",
+"tocnametree":"Personalised medicine",
+"htmlpage":"ENAS5061_6.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"7.0.0.0",
+"id":"13",
+"nametree":"Follow-up and long term implications",
+"tocnametree":"Follow-up and long term implications",
+"htmlpage":"ENAS5061_7.0.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.0.0.0",
+"id":"14",
+"nametree":"Summary of recommendations",
+"tocnametree":"Summary of recommendations",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.1.0.0",
+"id":"15",
+"nametree":"Risk factors and screening",
+"tocnametree":"Risk factors and screening",
+"htmlpage":"ENAS5061_8.1.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.2.0.0",
+"id":"16",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
+"htmlpage":"ENAS5061_8.2.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.3.0.0",
+"id":"17",
+"nametree":"Staging",
+"tocnametree":"Staging",
+"htmlpage":"ENAS5061_8.3.0.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.4.0.0",
+"id":"18",
+"nametree":"Treatment",
+"tocnametree":"Treatment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.4.1.0",
+"id":"19",
+"nametree":"Malignant polyps",
+"tocnametree":"Malignant polyps",
+"htmlpage":"ENAS5061_8.4.1.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.4.2.0",
+"id":"20",
+"nametree":"Localised disease",
+"tocnametree":"Localised disease",
+"htmlpage":"ENAS5061_8.4.2.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.4.3.0",
+"id":"21",
+"nametree":"Treatment by disease stage",
+"tocnametree":"Treatment by disease stage",
+"htmlpage":"ENAS5061_8.4.3.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.5.0.0",
+"id":"22",
+"nametree":"Personalised medicine",
+"tocnametree":"Personalised medicine",
+"htmlpage":"ENAS5061_8.4.4.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"8.6.0.0",
+"id":"23",
+"nametree":"Follow-up and long term implications",
+"tocnametree":"Follow-up and long term implications",
+"htmlpage":"ENAS5061_8.4.5.0",
+"haspdf":false,
+"emailContent":true
+},
+{
+"numtree":"9.0.0.0",
+"id":"24",
+"nametree":"Glossary",
+"tocnametree":"Glossary",
+"htmlpage":"ENAS5061_9.0.0.0",
+"haspdf":false,
+"emailContent":true
+}
+]

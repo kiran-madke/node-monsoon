@@ -1,0 +1,248 @@
+{
+  "level_0": {
+    "textSize": 16,
+    "textFontFamily": "helvetica",
+    "textColor": [
+      "#191717"
+    ],
+    "textStyle": "bold",
+    "bgColor": [
+      "#C3C3C3"
+    ],
+    "itemDisabledColor": {
+      "text": [
+        "#808080"
+      ],
+      "background": [
+        "#aeaeae"
+      ]
+    },
+    "navigationBarColor": [
+      "#ae1022"
+    ],
+    "navigationBarTextColor": [
+      "#FFFFFF"
+    ],
+    "colorCode": "black",
+    "sticker": {
+      "color": [
+        "#89b8d9"
+      ],
+      "enable": true,
+      "isLeft": false,
+      "isRight": true
+    },
+    "padding": {
+      "left": 4,
+      "right": 17
+    },
+    "dividerColor": [
+      "#FFFFFF"
+    ]
+  },
+  "level_1": {
+    "textSize": 15,
+    "textFontFamily": "helvetica",
+    "textColor": [
+      "#191717"
+    ],
+    "textStyle": "normal",
+    "bgColor": [
+      "#C3C3C3"
+    ],
+    "itemDisabledColor": {
+      "text": [
+        "#808080"
+      ],
+      "background": [
+        "#aeaeae"
+      ]
+    },
+    "navigationBarColor": [
+      "#C3C3C3"
+    ],
+    "navigationBarTextColor": [
+      "#191717"
+    ],
+    "colorCode": "black",
+    "sticker": {
+      "color": [
+        "#d8224d"
+      ],
+      "enable": false,
+      "isLeft": false,
+      "isRight": false
+    },
+    "padding": {
+      "left": 10,
+      "right": 0
+    },
+    "dividerColor": [
+      "#FFFFFF"
+    ]
+  },
+  "level_2": {
+    "textSize": 15,
+    "textFontFamily": "helvetica",
+    "textColor": [
+      "#191717"
+    ],
+    "textStyle": "normal",
+    "bgColor": [
+      "#cdcdce"
+    ],
+    "itemDisabledColor": {
+      "text": [
+        "#808080"
+      ],
+      "background": [
+        "#aeaeae"
+      ]
+    },
+    "navigationBarColor": [
+      "#cdcdce"
+    ],
+    "navigationBarTextColor": [
+      "#191717"
+    ],
+    "colorCode": "black",
+    "sticker": {
+      "color": [
+        "#000000"
+      ],
+      "enable": false,
+      "isLeft": false,
+      "isRight": false
+    },
+    "padding": {
+      "left": 15,
+      "right": 0
+    },
+    "dividerColor": [
+      "#FFFFFF"
+    ]
+  },
+  "level_3": {
+    "textSize": 15,
+    "textFontFamily": "helvetica",
+    "textColor": [
+      "#191717"
+    ],
+    "textStyle": "normal",
+    "bgColor": [
+      "#d7d8d8"
+    ],
+    "itemDisabledColor": {
+      "text": [
+        "#808080"
+      ],
+      "background": [
+        "#aeaeae"
+      ]
+    },
+    "navigationBarColor": [
+      "#d7d8d8"
+    ],
+    "navigationBarTextColor": [
+      "#191717"
+    ],
+    "colorCode": "black",
+    "sticker": {
+      "color": [
+        "#000000"
+      ],
+      "enable": false,
+      "isLeft": false,
+      "isRight": false
+    },
+    "padding": {
+      "left": 20,
+      "right": 0
+    },
+    "dividerColor": [
+      "#FFFFFF"
+    ]
+  },
+  "level_4": {
+    "textSize": 15,
+    "textFontFamily": "helvetica",
+    "textColor": [
+      "#191717"
+    ],
+    "textStyle": "normal",
+    "bgColor": [
+      "#e1e2e3"
+    ],
+    "itemDisabledColor": {
+      "text": [
+        "#808080"
+      ],
+      "background": [
+        "#aeaeae"
+      ]
+    },
+    "navigationBarColor": [
+      "#e1e2e3"
+    ],
+    "navigationBarTextColor": [
+      "#191717"
+    ],
+    "colorCode": "black",
+    "sticker": {
+      "color": [
+        "#000000"
+      ],
+      "enable": false,
+      "isLeft": false,
+      "isRight": false
+    },
+    "padding": {
+      "left": 25,
+      "right": 0
+    },
+    "dividerColor": [
+      "#FFFFFF"
+    ]
+  },
+  "level_5": {
+    "textSize": 15,
+    "textFontFamily": "helvetica",
+    "textColor": [
+      "#191717"
+    ],
+    "textStyle": "normal",
+    "bgColor": [
+      "#ecedee"
+    ],
+    "itemDisabledColor": {
+      "text": [
+        "#808080"
+      ],
+      "background": [
+        "#aeaeae"
+      ]
+    },
+    "navigationBarColor": [
+      "#ecedee"
+    ],
+    "navigationBarTextColor": [
+      "#191717"
+    ],
+    "colorCode": "black",
+    "sticker": {
+      "color": [
+        "#000000"
+      ],
+      "enable": false,
+      "isLeft": false,
+      "isRight": false
+    },
+    "padding": {
+      "left": 30,
+      "right": 0
+    },
+    "dividerColor": [
+      "#FFFFFF"
+    ]
+  }
+}

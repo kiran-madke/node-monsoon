@@ -1,0 +1,371 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and Publication",
+"tocnametree":"Authors and Publication",
+"htmlpage":"ENAS5524_1.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Universal def. of myocardial injury & MI",
+"tocnametree":"Universal definitions of myocardial injury & MI",
+"htmlpage":"ENAS5524_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5524_3.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"4",
+"nametree":"Initiation of the fourth UDMI",
+"tocnametree":"Initiation of the fourth UDMI",
+"htmlpage":"ENAS5524_4.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"5",
+"nametree":"Pathology of myoc. ischaemia & MI",
+"tocnametree":"Pathology of myoc. ischaemia & MI",
+"htmlpage":"ENAS5524_5.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"6",
+"nametree":"Biomark. detection of myocard. injury & MI",
+"tocnametree":"Biomarker detection of myocardial injury & MI",
+"htmlpage":"ENAS5524_6.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"7",
+"nametree":"Clinical presentation & classification of MI",
+"tocnametree":"Clinical presentation & classification of MI",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"8",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5524_7.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.0.0",
+"id":"9",
+"nametree":"Myocardial infarction type 1",
+"tocnametree":"Myocardial infarction type 1",
+"htmlpage":"ENAS5524_7.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.0.0",
+"id":"10",
+"nametree":"Myocardial infarction type 2",
+"tocnametree":"Myocardial infarction type 2",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.1.0",
+"id":"11",
+"nametree":"Pathophysiological mechanisms",
+"tocnametree":"Pathophysiological mechanisms",
+"htmlpage":"ENAS5524_7.3.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.2.0",
+"id":"12",
+"nametree":"MI type 2 & myocardial injury",
+"tocnametree":"MI type 2 & myocardial injury",
+"htmlpage":"ENAS5524_7.3.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.4.0.0",
+"id":"13",
+"nametree":"Myocardial infarction type 3",
+"tocnametree":"Myocardial infarction type 3",
+"htmlpage":"ENAS5524_7.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"14",
+"nametree":"Coronary proced.-related myocard. injury",
+"tocnametree":"Coronary procedure-related myocard. injury",
+"htmlpage":"ENAS5524_8.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"15",
+"nametree":"Myocardial infarction associated with PCI",
+"tocnametree":"Myocardial infarction associated with PCI",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.1.0.0",
+"id":"16",
+"nametree":"MI associated with PCI (type 4a MI)",
+"tocnametree":"MI associated with PCI (type 4a MI)",
+"htmlpage":"ENAS5524_9.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.2.0.0",
+"id":"17",
+"nametree":"Stent/scaffold thrombo. asso. with PCI (4b MI)",
+"tocnametree":"Stent/scaffold thrombosis asso. with PCI (type 4b MI)",
+"htmlpage":"ENAS5524_9.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.3.0.0",
+"id":"18",
+"nametree":"Restenosis asso. with PCI (4c MI)",
+"tocnametree":"Restenosis associated with PCI (type 4c MI)",
+"htmlpage":"ENAS5524_9.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"19",
+"nametree":"MI associated with CABG (type 5 MI)",
+"tocnametree":"MI associated with CABG (type 5 MI)",
+"htmlpage":"ENAS5524_10.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"20",
+"nametree":"Reinfarction",
+"tocnametree":"Reinfarction",
+"htmlpage":"ENAS5524_11.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.0.0.0",
+"id":"21",
+"nametree":"Recurrent myocardial infarction",
+"tocnametree":"Recurrent myocardial infarction",
+"htmlpage":"ENAS5524_12.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.0.0.0",
+"id":"22",
+"nametree":"Myocard. injury & MI with cardiac proced.",
+"tocnametree":"Myocard. injury & MI with cardiac procedures",
+"htmlpage":"ENAS5524_13.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.0.0.0",
+"id":"23",
+"nametree":"Myocard. injury & MI with noncard. proced.",
+"tocnametree":"Myocardial injury & MI with noncardiac proced.",
+"htmlpage":"ENAS5524_14.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.0.0.0",
+"id":"24",
+"nametree":"Myocardial injury or MI with heart failure",
+"tocnametree":"Myocardial injury or MI with heart failure",
+"htmlpage":"ENAS5524_15.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"16.0.0.0",
+"id":"25",
+"nametree":"Takotsubo syndrome",
+"tocnametree":"Takotsubo syndrome",
+"htmlpage":"ENAS5524_16.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"17.0.0.0",
+"id":"26",
+"nametree":"MINOCA",
+"tocnametree":"MINOCA",
+"htmlpage":"ENAS5524_17.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.0.0.0",
+"id":"27",
+"nametree":"Myocardial injury and/or MI with CKD",
+"tocnametree":"Myocardial injury and/or MI with CKD",
+"htmlpage":"ENAS5524_18.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"19.0.0.0",
+"id":"28",
+"nametree":"Biochem. appr. for Dx myocard. injury & MI",
+"tocnametree":"Biochemical appr. for Dx myocard. injury & MI",
+"htmlpage":"ENAS5524_19.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"20.0.0.0",
+"id":"29",
+"nametree":"Analytical issues of cardiac troponins",
+"tocnametree":"Analytical issues of cardiac troponins",
+"htmlpage":"ENAS5524_20.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"21.0.0.0",
+"id":"30",
+"nametree":"Operation. criteria for myocard. injury & MI",
+"tocnametree":"Operationalising criteria for myocard. injury & MI",
+"htmlpage":"ENAS5524_21.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"22.0.0.0",
+"id":"31",
+"nametree":"Electrocardiographic detection of MI",
+"tocnametree":"Electrocardiographic detection of MI",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"22.1.0.0",
+"id":"32",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5524_22.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"22.2.0.0",
+"id":"33",
+"nametree":"ECG manifestations of acute ishcemia",
+"tocnametree":"ECG manifestations of acute ishcemia",
+"htmlpage":"ENAS5524_22.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"22.3.0.0",
+"id":"34",
+"nametree":"Applic. of suppl. ECG leads",
+"tocnametree":"Application of supplemental ECG leads",
+"htmlpage":"ENAS5524_22.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"22.4.0.0",
+"id":"35",
+"nametree":"Prior or silent/unrecognized MI",
+"tocnametree":"Prior or silent/unrecognized MI",
+"htmlpage":"ENAS5524_22.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"23.0.0.0",
+"id":"36",
+"nametree":"Applying imaging in acute MI",
+"tocnametree":"Applying imaging in acute MI",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"23.1.0.0",
+"id":"37",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5524_23.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"23.2.0.0",
+"id":"38",
+"nametree":"Echocardiography",
+"tocnametree":"Echocardiography",
+"htmlpage":"ENAS5524_23.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"23.3.0.0",
+"id":"39",
+"nametree":"Cardiac magnetic resonance imaging",
+"tocnametree":"Cardiac magnetic resonance imaging",
+"htmlpage":"ENAS5524_23.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"23.4.0.0",
+"id":"40",
+"nametree":"Regulatory perspective on MI",
+"tocnametree":"Regulatory perspective on MI in clinical trials",
+"htmlpage":"ENAS5524_23.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"24.0.0.0",
+"id":"41",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS5524_24.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]

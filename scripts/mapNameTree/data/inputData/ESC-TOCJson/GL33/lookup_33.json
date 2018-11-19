@@ -1,0 +1,982 @@
+﻿[
+{
+"old_id":"1",
+"old_nametree":"Authors and legal information",
+"old_numtree":"1.0.0.0",
+"old_htmlpage":"ENAS5328_1.0.0.0",
+"new_id":"1",
+"new_nametree":"Authors and legal information",
+"new_numtree":"1.0.0.0",
+"new_htmlpage":"ENAS5328_1.0.0.0"
+},
+{
+"old_id":"2",
+"old_nametree":"Preamble",
+"old_numtree":"2.0.0.0",
+"old_htmlpage":"ENAS5328_2.0.0.0",
+"new_id":"2",
+"new_nametree":"Preamble",
+"new_numtree":"2.0.0.0",
+"new_htmlpage":"ENAS5328_2.0.0.0"
+},
+{
+"old_id":"3",
+"old_nametree":"Introduction",
+"old_numtree":"3.0.0.0",
+"old_htmlpage":"ENAS5328_3.0.0.0",
+"new_id":"3",
+"new_nametree":"Introduction",
+"new_numtree":"3.0.0.0",
+"new_htmlpage":"ENAS5328_3.0.0.0"
+},
+{
+"old_id":"4",
+"old_nametree":"General comments",
+"old_numtree":"4.0.0.0",
+"old_htmlpage":"null",
+"new_id":"4",
+"new_nametree":"General comments",
+"new_numtree":"4.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"5",
+"old_nametree":"Patient evaluation",
+"old_numtree":"4.2.0.0",
+"old_htmlpage":"null",
+"new_id":"6",
+"new_nametree":"Patient evaluation",
+"new_numtree":"4.1.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"6",
+"old_nametree":"Essential questions in the evaluation",
+"old_numtree":"4.1.0.0",
+"old_htmlpage":"ENAS5328_4.1.0.0",
+"new_id":"5",
+"new_nametree":"Essential questions in the evaluation",
+"new_numtree":"4.1.1.0",
+"new_htmlpage":"ENAS5328_4.1.0.0"
+},
+{
+"old_id":"7",
+"old_nametree":"Overview",
+"old_numtree":"4.2.1.0",
+"old_htmlpage":"ENAS5328_4.2.1.0",
+"new_id":"7",
+"new_nametree":"Overview",
+"new_numtree":"4.1.2.0",
+"new_htmlpage":"ENAS5328_4.2.1.0"
+},
+{
+"old_id":"8",
+"old_nametree":"Echocardiographic criteria",
+"old_numtree":"4.2.2.0",
+"old_htmlpage":"ENAS5328_4.2.2.0",
+"new_id":"8",
+"new_nametree":"Echocardiographic criteria",
+"new_numtree":"4.1.3.0",
+"new_htmlpage":"ENAS5328_4.2.2.0"
+},
+{
+"old_id":"9",
+"old_nametree":"Mgmt. of CAD in VHD",
+"old_numtree":"4.2.3.0",
+"old_htmlpage":"ENAS5328_4.2.3.0",
+"new_id":"9",
+"new_nametree":"Mgmt. of CAD in VHD",
+"new_numtree":"4.1.4.0",
+"new_htmlpage":"ENAS5328_4.2.3.0"
+},
+{
+"old_id":"10",
+"old_nametree":"Risk stratification",
+"old_numtree":"4.3.0.0",
+"old_htmlpage":"ENAS5328_4.3.0.0",
+"new_id":"10",
+"new_nametree":"Risk stratification",
+"new_numtree":"4.2.0.0",
+"new_htmlpage":"ENAS5328_4.3.0.0"
+},
+{
+"old_id":"11",
+"old_nametree":"Special considerations in elderly patients",
+"old_numtree":"4.4.0.0",
+"old_htmlpage":"ENAS5328_4.4.0.0",
+"new_id":"11",
+"new_nametree":"Special considerations in elderly patients",
+"new_numtree":"4.3.0.0",
+"new_htmlpage":"ENAS5328_4.4.0.0"
+},
+{
+"old_id":"12",
+"old_nametree":"Endocarditis prophylaxis",
+"old_numtree":"4.5.0.0",
+"old_htmlpage":"ENAS5328_4.5.0.0",
+"new_id":"12",
+"new_nametree":"Endocarditis prophylaxis",
+"new_numtree":"4.4.0.0",
+"new_htmlpage":"ENAS5328_4.5.0.0"
+},
+{
+"old_id":"13",
+"old_nametree":"Prophylaxis for rheumatic fever",
+"old_numtree":"4.6.0.0",
+"old_htmlpage":"ENAS5328_4.6.0.0",
+"new_id":"13",
+"new_nametree":"Prophylaxis for rheumatic fever",
+"new_numtree":"4.5.0.0",
+"new_htmlpage":"ENAS5328_4.6.0.0"
+},
+{
+"old_id":"14",
+"old_nametree":"Heart Team and heart valve centres",
+"old_numtree":"4.7.0.0",
+"old_htmlpage":"ENAS5328_4.7.0.0",
+"new_id":"14",
+"new_nametree":"Heart Team and heart valve centres",
+"new_numtree":"4.6.0.0",
+"new_htmlpage":"ENAS5328_4.7.0.0"
+},
+{
+"old_id":"15",
+"old_nametree":"Management of associated conditions",
+"old_numtree":"4.8.0.0",
+"old_htmlpage":"ENAS5328_4.8.0.0",
+"new_id":"15",
+"new_nametree":"Management of associated conditions",
+"new_numtree":"4.7.0.0",
+"new_htmlpage":"ENAS5328_4.8.0.0"
+},
+{
+"old_id":"16",
+"old_nametree":"Aortic regurgitation",
+"old_numtree":"5.0.0.0",
+"old_htmlpage":"null",
+"new_id":"16",
+"new_nametree":"Aortic regurgitation",
+"new_numtree":"5.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"17",
+"old_nametree":"Overview",
+"old_numtree":"5.1.0.0",
+"old_htmlpage":"ENAS5328_5.1.0.0",
+"new_id":"17",
+"new_nametree":"Introduction",
+"new_numtree":"5.1.0.0",
+"new_htmlpage":"ENAS5328_5.1.0.0"
+},
+{
+"old_id":"18",
+"old_nametree":"Evaluation",
+"old_numtree":"5.2.0.0",
+"old_htmlpage":"ENAS5328_5.2.0.0",
+"new_id":"18",
+"new_nametree":"Evaluation",
+"new_numtree":"5.2.0.0",
+"new_htmlpage":"ENAS5328_5.2.0.0"
+},
+{
+"old_id":"19",
+"old_nametree":"Indications for intervention",
+"old_numtree":"5.3.0.0",
+"old_htmlpage":"null",
+"new_id":"19",
+"new_nametree":"Indications for intervention",
+"new_numtree":"5.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"20",
+"old_nametree":"Recommendations",
+"old_numtree":"5.3.1.0",
+"old_htmlpage":"ENAS5328_5.3.1.0",
+"new_id":"20",
+"new_nametree":"Recommendations",
+"new_numtree":"5.3.1.0",
+"new_htmlpage":"ENAS5328_5.3.1.0"
+},
+{
+"old_id":"21",
+"old_nametree":"Management of aortic regurgitation",
+"old_numtree":"5.3.2.0",
+"old_htmlpage":"ENAS5328_5.3.2.0",
+"new_id":"21",
+"new_nametree":"Algorithm Mgmt. of aortic regurgitation",
+"new_numtree":"5.3.2.0",
+"new_htmlpage":"ENAS5328_5.3.2.0"
+},
+{
+"old_id":"22",
+"old_nametree":"Medical therapy",
+"old_numtree":"5.4.0.0",
+"old_htmlpage":"ENAS5328_5.4.0.0",
+"new_id":"22",
+"new_nametree":"Medical therapy",
+"new_numtree":"5.4.0.0",
+"new_htmlpage":"ENAS5328_5.4.0.0"
+},
+{
+"old_id":"23",
+"old_nametree":"Serial testing",
+"old_numtree":"5.5.0.0",
+"old_htmlpage":"ENAS5328_5.5.0.0",
+"new_id":"23",
+"new_nametree":"Serial testing",
+"new_numtree":"5.5.0.0",
+"new_htmlpage":"ENAS5328_5.5.0.0"
+},
+{
+"old_id":"24",
+"old_nametree":"Special patient populations",
+"old_numtree":"5.6.0.0",
+"old_htmlpage":"ENAS5328_5.6.0.0",
+"new_id":"24",
+"new_nametree":"Special patient populations",
+"new_numtree":"5.6.0.0",
+"new_htmlpage":"ENAS5328_5.6.0.0"
+},
+{
+"old_id":"25",
+"old_nametree":"Aortic stenosis",
+"old_numtree":"6.0.0.0",
+"old_htmlpage":"null",
+"new_id":"25",
+"new_nametree":"Aortic stenosis",
+"new_numtree":"6.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"26",
+"old_nametree":"Overview",
+"old_numtree":"6.1.0.0",
+"old_htmlpage":"ENAS5328_6.1.0.0",
+"new_id":"26",
+"new_nametree":"Introduction",
+"new_numtree":"6.1.0.0",
+"new_htmlpage":"ENAS5328_6.1.0.0"
+},
+{
+"old_id":"27",
+"old_nametree":"Evaluation",
+"old_numtree":"6.2.0.0",
+"old_htmlpage":"null",
+"new_id":"27",
+"new_nametree":"Evaluation",
+"new_numtree":"6.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"28",
+"old_nametree":"Introduction",
+"old_numtree":"6.2.1.0",
+"old_htmlpage":"ENAS5328_6.2.1.0",
+"new_id":"28",
+"new_nametree":"Introduction",
+"new_numtree":"6.2.1.0",
+"new_htmlpage":"ENAS5328_6.2.1.0"
+},
+{
+"old_id":"29",
+"old_nametree":"Assessment of AS severity",
+"old_numtree":"6.2.2.0",
+"old_htmlpage":"ENAS5328_6.2.2.0",
+"new_id":"29",
+"new_nametree":"Assessment of AS severity",
+"new_numtree":"6.2.2.0",
+"new_htmlpage":"ENAS5328_6.2.2.0"
+},
+{
+"old_id":"30",
+"old_nametree":"Diagnosis of severe AS with low gradients",
+"old_numtree":"6.2.3.0",
+"old_htmlpage":"ENAS5328_6.2.3.0",
+"new_id":"30",
+"new_nametree":"Diagnosis of severe AS with low gradients",
+"new_numtree":"6.2.3.0",
+"new_htmlpage":"ENAS5328_6.2.3.0"
+},
+{
+"old_id":"31",
+"old_nametree":"Additional diagnostic aspects",
+"old_numtree":"6.2.4.0",
+"old_htmlpage":"ENAS5328_6.2.4.0",
+"new_id":"31",
+"new_nametree":"Additional diagnostic aspects",
+"new_numtree":"6.2.4.0",
+"new_htmlpage":"ENAS5328_6.2.4.0"
+},
+{
+"old_id":"32",
+"old_nametree":"Indications for intervention",
+"old_numtree":"6.3.0.0",
+"old_htmlpage":"null",
+"new_id":"32",
+"new_nametree":"Indications for intervention",
+"new_numtree":"6.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"33",
+"old_nametree":"Recommendations",
+"old_numtree":"6.3.1.0",
+"old_htmlpage":"ENAS5328_6.3.1.0",
+"new_id":"33",
+"new_nametree":"Recommendations",
+"new_numtree":"6.3.1.0",
+"new_htmlpage":"ENAS5328_6.3.1.0"
+},
+{
+"old_id":"34",
+"old_nametree":"Management of severe aortic stenosis",
+"old_numtree":"6.3.2.0",
+"old_htmlpage":"ENAS5328_6.3.2.0",
+"new_id":"34",
+"new_nametree":"Algorithm Mgmt. of severe AS",
+"new_numtree":"6.3.2.0",
+"new_htmlpage":"ENAS5328_6.3.2.0"
+},
+{
+"old_id":"35",
+"old_nametree":"SAVR or TAVI: aspects to consider",
+"old_numtree":"6.3.3.0",
+"old_htmlpage":"ENAS5328_6.3.3.0",
+"new_id":"35",
+"new_nametree":"SAVR or TAVI: aspects to consider",
+"new_numtree":"6.3.3.0",
+"new_htmlpage":"ENAS5328_6.3.3.0"
+},
+{
+"old_id":"36",
+"old_nametree":"Medical therapy",
+"old_numtree":"6.4.0.0",
+"old_htmlpage":"ENAS5328_6.4.0.0",
+"new_id":"36",
+"new_nametree":"Medical therapy",
+"new_numtree":"6.4.0.0",
+"new_htmlpage":"ENAS5328_6.4.0.0"
+},
+{
+"old_id":"37",
+"old_nametree":"Serial testing",
+"old_numtree":"6.5.0.0",
+"old_htmlpage":"ENAS5328_6.5.0.0",
+"new_id":"37",
+"new_nametree":"Serial testing",
+"new_numtree":"6.5.0.0",
+"new_htmlpage":"ENAS5328_6.5.0.0"
+},
+{
+"old_id":"38",
+"old_nametree":"Special patient populations",
+"old_numtree":"6.6.0.0",
+"old_htmlpage":"ENAS5328_6.6.0.0",
+"new_id":"38",
+"new_nametree":"Special patient populations",
+"new_numtree":"6.6.0.0",
+"new_htmlpage":"ENAS5328_6.6.0.0"
+},
+{
+"old_id":"39",
+"old_nametree":"Mitral regurgitation",
+"old_numtree":"7.0.0.0",
+"old_htmlpage":"null",
+"new_id":"39",
+"new_nametree":"Mitral regurgitation",
+"new_numtree":"7.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"40",
+"old_nametree":"Overview",
+"old_numtree":"7.1.0.0",
+"old_htmlpage":"ENAS5328_7.1.0.0",
+"new_id":"40",
+"new_nametree":"Introduction",
+"new_numtree":"7.1.0.0",
+"new_htmlpage":"ENAS5328_7.1.0.0"
+},
+{
+"old_id":"41",
+"old_nametree":"Primary mitral regurgitation",
+"old_numtree":"7.2.0.0",
+"old_htmlpage":"null",
+"new_id":"41",
+"new_nametree":"Primary mitral regurgitation",
+"new_numtree":"7.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"42",
+"old_nametree":"Introduction",
+"old_numtree":"7.2.1.0",
+"old_htmlpage":"ENAS5328_7.2.1.0",
+"new_id":"42",
+"new_nametree":"Introduction",
+"new_numtree":"7.2.1.0",
+"new_htmlpage":"ENAS5328_7.2.1.0"
+},
+{
+"old_id":"43",
+"old_nametree":"Evaluation",
+"old_numtree":"7.2.2.0",
+"old_htmlpage":"ENAS5328_7.2.2.0",
+"new_id":"43",
+"new_nametree":"Evaluation",
+"new_numtree":"7.2.2.0",
+"new_htmlpage":"ENAS5328_7.2.2.0"
+},
+{
+"old_id":"44",
+"old_nametree":"Indications for intervention",
+"old_numtree":"7.2.3.0",
+"old_htmlpage":"null",
+"new_id":"44",
+"new_nametree":"Indications for intervention",
+"new_numtree":"7.2.3.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"45",
+"old_nametree":"Recommendations",
+"old_numtree":"7.2.3.1",
+"old_htmlpage":"ENAS5328_7.2.3.1",
+"new_id":"45",
+"new_nametree":"Recommendations",
+"new_numtree":"7.2.3.1",
+"new_htmlpage":"ENAS5328_7.2.3.1"
+},
+{
+"old_id":"46",
+"old_nametree":"Mgmt. of severe chronic primary MR",
+"old_numtree":"7.2.3.2",
+"old_htmlpage":"ENAS5328_7.2.3.2",
+"new_id":"46",
+"new_nametree":"Algorithm Mgmt. of primary MR",
+"new_numtree":"7.2.3.2",
+"new_htmlpage":"ENAS5328_7.2.3.2"
+},
+{
+"old_id":"47",
+"old_nametree":"Medical therapy",
+"old_numtree":"7.2.4.0",
+"old_htmlpage":"ENAS5328_7.2.4.0",
+"new_id":"47",
+"new_nametree":"Medical therapy",
+"new_numtree":"7.2.4.0",
+"new_htmlpage":"ENAS5328_7.2.4.0"
+},
+{
+"old_id":"48",
+"old_nametree":"Serial testing",
+"old_numtree":"7.2.5.0",
+"old_htmlpage":"ENAS5328_7.2.5.0",
+"new_id":"48",
+"new_nametree":"Serial testing",
+"new_numtree":"7.2.5.0",
+"new_htmlpage":"ENAS5328_7.2.5.0"
+},
+{
+"old_id":"49",
+"old_nametree":"Secondary mitral regurgitation",
+"old_numtree":"7.3.0.0",
+"old_htmlpage":"null",
+"new_id":"49",
+"new_nametree":"Secondary mitral regurgitation",
+"new_numtree":"7.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"50",
+"old_nametree":"Introduction",
+"old_numtree":"7.3.1.0",
+"old_htmlpage":"ENAS5328_7.3.1.0",
+"new_id":"50",
+"new_nametree":"Introduction",
+"new_numtree":"7.3.1.0",
+"new_htmlpage":"ENAS5328_7.3.1.0"
+},
+{
+"old_id":"51",
+"old_nametree":"Evaluation",
+"old_numtree":"7.3.2.0",
+"old_htmlpage":"ENAS5328_7.3.2.0",
+"new_id":"51",
+"new_nametree":"Evaluation",
+"new_numtree":"7.3.2.0",
+"new_htmlpage":"ENAS5328_7.3.2.0"
+},
+{
+"old_id":"52",
+"old_nametree":"Indications for intervention",
+"old_numtree":"7.3.3.0",
+"old_htmlpage":"ENAS5328_7.3.3.0",
+"new_id":"52",
+"new_nametree":"Indications for intervention",
+"new_numtree":"7.3.3.0",
+"new_htmlpage":"ENAS5328_7.3.3.0"
+},
+{
+"old_id":"53",
+"old_nametree":"Medical therapy",
+"old_numtree":"7.3.4.0",
+"old_htmlpage":"ENAS5328_7.3.4.0",
+"new_id":"53",
+"new_nametree":"Medical therapy",
+"new_numtree":"7.3.4.0",
+"new_htmlpage":"ENAS5328_7.3.4.0"
+},
+{
+"old_id":"54",
+"old_nametree":"Mitral stenosis",
+"old_numtree":"8.0.0.0",
+"old_htmlpage":"null",
+"new_id":"54",
+"new_nametree":"Mitral stenosis",
+"new_numtree":"8.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"55",
+"old_nametree":"Overview",
+"old_numtree":"8.1.0.0",
+"old_htmlpage":"ENAS5328_8.1.0.0",
+"new_id":"55",
+"new_nametree":"Introduction",
+"new_numtree":"8.1.0.0",
+"new_htmlpage":"ENAS5328_8.1.0.0"
+},
+{
+"old_id":"56",
+"old_nametree":"Evaluation",
+"old_numtree":"8.2.0.0",
+"old_htmlpage":"ENAS5328_8.2.0.0",
+"new_id":"56",
+"new_nametree":"Evaluation",
+"new_numtree":"8.2.0.0",
+"new_htmlpage":"ENAS5328_8.2.0.0"
+},
+{
+"old_id":"57",
+"old_nametree":"Indications for intervention",
+"old_numtree":"8.3.0.0",
+"old_htmlpage":"null",
+"new_id":"57",
+"new_nametree":"Indications for intervention",
+"new_numtree":"8.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"58",
+"old_nametree":"Recommendations",
+"old_numtree":"8.3.1.0",
+"old_htmlpage":"ENAS5328_8.3.1.0",
+"new_id":"58",
+"new_nametree":"Recommendations",
+"new_numtree":"8.3.1.0",
+"new_htmlpage":"ENAS5328_8.3.1.0"
+},
+{
+"old_id":"59",
+"old_nametree":"Mgmt. of clinically significant MS",
+"old_numtree":"8.3.2.0",
+"old_htmlpage":"ENAS5328_8.3.2.0",
+"new_id":"59",
+"new_nametree":"Algorithm Mgmt. of MS",
+"new_numtree":"8.3.2.0",
+"new_htmlpage":"ENAS5328_8.3.2.0"
+},
+{
+"old_id":"60",
+"old_nametree":"Contra-indications for PMC",
+"old_numtree":"8.3.3.0",
+"old_htmlpage":"ENAS5328_8.3.3.0",
+"new_id":"60",
+"new_nametree":"Contra-indications for PMC",
+"new_numtree":"8.3.3.0",
+"new_htmlpage":"ENAS5328_8.3.3.0"
+},
+{
+"old_id":"61",
+"old_nametree":"Echo scores",
+"old_numtree":"8.3.4.0",
+"old_htmlpage":"ENAS5328_8.3.4.0",
+"new_id":"61",
+"new_nametree":"Echo scores",
+"new_numtree":"8.3.4.0",
+"new_htmlpage":"ENAS5328_8.3.4.0"
+},
+{
+"old_id":"62",
+"old_nametree":"Medical therapy",
+"old_numtree":"8.4.0.0",
+"old_htmlpage":"ENAS5328_8.4.0.0",
+"new_id":"62",
+"new_nametree":"Medical therapy",
+"new_numtree":"8.4.0.0",
+"new_htmlpage":"ENAS5328_8.4.0.0"
+},
+{
+"old_id":"63",
+"old_nametree":"Serial testing",
+"old_numtree":"8.5.0.0",
+"old_htmlpage":"ENAS5328_8.5.0.0",
+"new_id":"63",
+"new_nametree":"Serial testing",
+"new_numtree":"8.5.0.0",
+"new_htmlpage":"ENAS5328_8.5.0.0"
+},
+{
+"old_id":"64",
+"old_nametree":"Special patient populations",
+"old_numtree":"8.6.0.0",
+"old_htmlpage":"ENAS5328_8.6.0.0",
+"new_id":"64",
+"new_nametree":"Special patient populations",
+"new_numtree":"8.6.0.0",
+"new_htmlpage":"ENAS5328_8.6.0.0"
+},
+{
+"old_id":"65",
+"old_nametree":"Tricuspid regurgitation",
+"old_numtree":"9.0.0.0",
+"old_htmlpage":"null",
+"new_id":"65",
+"new_nametree":"Tricuspid regurgitation",
+"new_numtree":"9.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"66",
+"old_nametree":"Overview",
+"old_numtree":"9.1.0.0",
+"old_htmlpage":"ENAS5328_9.1.0.0",
+"new_id":"66",
+"new_nametree":"Introduction",
+"new_numtree":"9.1.0.0",
+"new_htmlpage":"ENAS5328_9.1.0.0"
+},
+{
+"old_id":"67",
+"old_nametree":"Evaluation",
+"old_numtree":"9.2.0.0",
+"old_htmlpage":"ENAS5328_9.2.0.0",
+"new_id":"67",
+"new_nametree":"Evaluation",
+"new_numtree":"9.2.0.0",
+"new_htmlpage":"ENAS5328_9.2.0.0"
+},
+{
+"old_id":"68",
+"old_nametree":"Indications for intervention",
+"old_numtree":"9.3.0.0",
+"old_htmlpage":"null",
+"new_id":"68",
+"new_nametree":"Indications for intervention",
+"new_numtree":"9.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"69",
+"old_nametree":"Recommendations",
+"old_numtree":"9.3.1.0",
+"old_htmlpage":"ENAS5328_9.3.1.0",
+"new_id":"69",
+"new_nametree":"Recommendations",
+"new_numtree":"9.3.1.0",
+"new_htmlpage":"ENAS5328_9.3.1.0"
+},
+{
+"old_id":"70",
+"old_nametree":"Indications for surgery in TR",
+"old_numtree":"9.3.2.0",
+"old_htmlpage":"ENAS5328_9.3.2.0",
+"new_id":"70",
+"new_nametree":"Algorithm Indications for surgery in TR",
+"new_numtree":"9.3.2.0",
+"new_htmlpage":"ENAS5328_9.3.2.0"
+},
+{
+"old_id":"71",
+"old_nametree":"Tricuspid stenosis",
+"old_numtree":"10.0.0.0",
+"old_htmlpage":"null",
+"new_id":"71",
+"new_nametree":"Tricuspid stenosis",
+"new_numtree":"10.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"72",
+"old_nametree":"Overview",
+"old_numtree":"10.1.0.0",
+"old_htmlpage":"ENAS5328_10.1.0.0",
+"new_id":"72",
+"new_nametree":"Introduction",
+"new_numtree":"10.1.0.0",
+"new_htmlpage":"ENAS5328_10.1.0.0"
+},
+{
+"old_id":"73",
+"old_nametree":"Evaluation",
+"old_numtree":"10.2.0.0",
+"old_htmlpage":"ENAS5328_10.2.0.0",
+"new_id":"73",
+"new_nametree":"Evaluation",
+"new_numtree":"10.2.0.0",
+"new_htmlpage":"ENAS5328_10.2.0.0"
+},
+{
+"old_id":"74",
+"old_nametree":"Indications for intervention",
+"old_numtree":"10.3.0.0",
+"old_htmlpage":"ENAS5328_10.3.0.0",
+"new_id":"74",
+"new_nametree":"Indications for intervention",
+"new_numtree":"10.3.0.0",
+"new_htmlpage":"ENAS5328_10.3.0.0"
+},
+{
+"old_id":"75",
+"old_nametree":"Medical therapy",
+"old_numtree":"10.4.0.0",
+"old_htmlpage":"ENAS5328_10.4.0.0",
+"new_id":"75",
+"new_nametree":"Medical therapy",
+"new_numtree":"10.4.0.0",
+"new_htmlpage":"ENAS5328_10.4.0.0"
+},
+{
+"old_id":"76",
+"old_nametree":"Combined & multiple valve diseases",
+"old_numtree":"11.0.0.0",
+"old_htmlpage":"ENAS5328_11.0.0.0",
+"new_id":"76",
+"new_nametree":"Combined & multiple valve diseases",
+"new_numtree":"11.0.0.0",
+"new_htmlpage":"ENAS5328_11.0.0.0"
+},
+{
+"old_id":"77",
+"old_nametree":"Prosthetic valves",
+"old_numtree":"12.0.0.0",
+"old_htmlpage":"null",
+"new_id":"77",
+"new_nametree":"Prosthetic valves",
+"new_numtree":"12.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"78",
+"old_nametree":"Choice of prosthetic valve",
+"old_numtree":"12.1.0.0",
+"old_htmlpage":"ENAS5328_12.1.0.0",
+"new_id":"78",
+"new_nametree":"Choice of prosthetic valve",
+"new_numtree":"12.1.0.0",
+"new_htmlpage":"ENAS5328_12.1.0.0"
+},
+{
+"old_id":"79",
+"old_nametree":"Management after valve intervention",
+"old_numtree":"12.2.0.0",
+"old_htmlpage":"null",
+"new_id":"79",
+"new_nametree":"Management after valve intervention",
+"new_numtree":"12.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"80",
+"old_nametree":"Overview",
+"old_numtree":"12.2.1.0",
+"old_htmlpage":"ENAS5328_12.2.1.0",
+"new_id":"80",
+"new_nametree":"General remarks",
+"new_numtree":"12.2.1.0",
+"new_htmlpage":"ENAS5328_12.2.1.0"
+},
+{
+"old_id":"81",
+"old_nametree":"Recommendations",
+"old_numtree":"12.2.2.0",
+"old_htmlpage":"ENAS5328_12.2.2.0",
+"new_id":"81",
+"new_nametree":"Recommendations for antithrombotic Tx",
+"new_numtree":"12.2.2.0",
+"new_htmlpage":"ENAS5328_12.2.2.0"
+},
+{
+"old_id":"82",
+"old_nametree":"Target INR for mech. prostheses",
+"old_numtree":"12.2.3.0",
+"old_htmlpage":"ENAS5328_12.2.3.0",
+"new_id":"82",
+"new_nametree":"Target INR for mech. prostheses",
+"new_numtree":"12.2.3.0",
+"new_htmlpage":"ENAS5328_12.2.3.0"
+},
+{
+"old_id":"83",
+"old_nametree":"Antithrom. Tx after an ACS or elective PCI",
+"old_numtree":"12.2.4.0",
+"old_htmlpage":"ENAS5328_12.2.4.0",
+"new_id":"83",
+"new_nametree":"Antithrom. Tx after an ACS or elective PCI",
+"new_numtree":"12.2.4.0",
+"new_htmlpage":"ENAS5328_12.2.4.0"
+},
+{
+"old_id":"84",
+"old_nametree":"Interruption of OAC for invasive proc.",
+"old_numtree":"12.2.5.0",
+"old_htmlpage":"ENAS5328_12.2.5.0",
+"new_id":"84",
+"new_nametree":"Interruption of OAC for invasive proc.",
+"new_numtree":"12.2.5.0",
+"new_htmlpage":"ENAS5328_12.2.5.0"
+},
+{
+"old_id":"85",
+"old_nametree":"Mgmt. of complications",
+"old_numtree":"12.2.6.0",
+"old_htmlpage":"null",
+"new_id":"85",
+"new_nametree":"Mgmt. of complications",
+"new_numtree":"12.2.6.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"86",
+"old_nametree":"Recommendations",
+"old_numtree":"12.2.6.1",
+"old_htmlpage":"ENAS5328_12.2.6.1",
+"new_id":"86",
+"new_nametree":"Recommendations",
+"new_numtree":"12.2.6.1",
+"new_htmlpage":"ENAS5328_12.2.6.1"
+},
+{
+"old_id":"87",
+"old_nametree":"Mgmt. of left-sided obstructive mech. PVT",
+"old_numtree":"12.2.6.2",
+"old_htmlpage":"ENAS5328_12.2.6.2",
+"new_id":"87",
+"new_nametree":"Mgmt. of obstructive mech. valve thrombosis",
+"new_numtree":"12.2.6.2",
+"new_htmlpage":"ENAS5328_12.2.6.2"
+},
+{
+"old_id":"88",
+"old_nametree":"Mgmt. of non-obstructive mech. PVT",
+"old_numtree":"12.2.6.3",
+"old_htmlpage":"ENAS5328_12.2.6.3",
+"new_id":"88",
+"new_nametree":"Mgmt. of non-obstructive valve thrombosis",
+"new_numtree":"12.2.6.3",
+"new_htmlpage":"ENAS5328_12.2.6.3"
+},
+{
+"old_id":"89",
+"old_nametree":"Management during non-cardiac surgery",
+"old_numtree":"13.0.0.0",
+"old_htmlpage":"null",
+"new_id":"89",
+"new_nametree":"Management during non-cardiac surgery",
+"new_numtree":"13.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"90",
+"old_nametree":"Overview",
+"old_numtree":"13.1.0.0",
+"old_htmlpage":"ENAS5328_13.1.0.0",
+"new_id":"90",
+"new_nametree":"Overview",
+"new_numtree":"13.1.0.0",
+"new_htmlpage":"ENAS5328_13.1.0.0"
+},
+{
+"old_id":"91",
+"old_nametree":"Preoperative evaluation",
+"old_numtree":"13.2.0.0",
+"old_htmlpage":"ENAS5328_13.2.0.0",
+"new_id":"91",
+"new_nametree":"Preoperative evaluation",
+"new_numtree":"13.2.0.0",
+"new_htmlpage":"ENAS5328_13.2.0.0"
+},
+{
+"old_id":"92",
+"old_nametree":"Specific valve lesions",
+"old_numtree":"13.3.0.0",
+"old_htmlpage":"ENAS5328_13.3.0.0",
+"new_id":"92",
+"new_nametree":"Specific valve lesions",
+"new_numtree":"13.3.0.0",
+"new_htmlpage":"ENAS5328_13.3.0.0"
+},
+{
+"old_id":"93",
+"old_nametree":"Perioperative monitoring",
+"old_numtree":"13.4.0.0",
+"old_htmlpage":"ENAS5328_13.4.0.0",
+"new_id":"93",
+"new_nametree":"Perioperative monitoring",
+"new_numtree":"13.4.0.0",
+"new_htmlpage":"ENAS5328_13.4.0.0"
+},
+{
+"old_id":"94",
+"old_nametree":"Management during pregnancy",
+"old_numtree":"14.0.0.0",
+"old_htmlpage":"null",
+"new_id":"94",
+"new_nametree":"Management during pregnancy",
+"new_numtree":"14.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"95",
+"old_nametree":"Overview",
+"old_numtree":"14.1.0.0",
+"old_htmlpage":"ENAS5328_14.1.0.0",
+"new_id":"95",
+"new_nametree":"Overview",
+"new_numtree":"14.1.0.0",
+"new_htmlpage":"ENAS5328_14.1.0.0"
+},
+{
+"old_id":"96",
+"old_nametree":"Native valve disease",
+"old_numtree":"14.2.0.0",
+"old_htmlpage":"ENAS5328_14.2.0.0",
+"new_id":"96",
+"new_nametree":"Native valve disease",
+"new_numtree":"14.2.0.0",
+"new_htmlpage":"ENAS5328_14.2.0.0"
+},
+{
+"old_id":"97",
+"old_nametree":"Prosthetic valves",
+"old_numtree":"14.3.0.0",
+"old_htmlpage":"ENAS5328_14.3.0.0",
+"new_id":"97",
+"new_nametree":"Prosthetic valves",
+"new_numtree":"14.3.0.0",
+"new_htmlpage":"ENAS5328_14.3.0.0"
+},
+{
+"old_id":"98",
+"old_nametree":"Abbreviations and acronyms",
+"old_numtree":"15.0.0.0",
+"old_htmlpage":"ENAS5328_15.0.0.0",
+"new_id":"98",
+"new_nametree":"Abbreviations and acronyms",
+"new_numtree":"15.0.0.0",
+"new_htmlpage":"ENAS5328_15.0.0.0"
+}
+]

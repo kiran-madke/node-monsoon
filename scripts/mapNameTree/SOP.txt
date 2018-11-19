@@ -1,0 +1,14 @@
+IMPORTANT NOTE: 
+Make sure you have already run MergeTocTree Script before this.
+As the output of that script is required as one of the inputs in this script.
+
+1. Archive Folder Creation -  First go to web app's project data. media\data\EN\TOCJson pick all folders from it and go to node-monsoon\scripts\mapNameTree\data\inputData and create an archive folder for it. eg. ESMO-TOCJson.
+2. Copy all contents from archive folder and paste it in main input folder for this script i.e TOCJson
+3. Pick the combinedSearchJSON.json from node-monsoon\scripts\mergeTocTreeGTS\data\outputData\ directory
+4. Paste it into node-monsoon\scripts\mapNameTree\data\inputData\combinedGTS folder.
+5. Rename it as combinedGTS.json
+6. INPUT SETUP IS NOW COMPLETE.
+7. Clear the node-monsoon\scripts\mapNameTree\data\outputData content.
+8. Now go to the main page of node monsoon script.
+9. Now run Map Name Tree script.
+10. You should now see the mappedCombinedGTS.json file generated in the output folder of this script.

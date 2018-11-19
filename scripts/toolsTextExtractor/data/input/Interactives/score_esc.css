@@ -1,0 +1,419 @@
+body {
+    background-color: #f2f2f2;
+    -webkit-user-select: none;
+    margin: 0px;
+    font-family: helvetica;
+}
+
+td {
+    font-family: helvetica;
+}
+
+li {
+    position: relative;
+    margin-left: -25px;
+}
+
+li span {
+    position: relative;
+    left: -6px;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Bignumber {
+    font-size: 16px;
+    font-family: helvetica;
+    font-weight: bold;
+    width: 50%;
+    height: 25px;
+}
+
+.Bignumber1 {
+    font-size: 16px;
+    font-family: helvetica;
+    font-weight: bold;
+    width: 100%;
+    height: 25px;
+}
+
+.flipButton {
+    width: 70px;
+    height: 40px;
+    align: right;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(#a8adb2));
+    padding: 4% 20% 1% 20%;
+}
+
+
+/*
+.abbBtn {
+    width: 100px;
+    height: 40px;
+    align: right;
+    font-weight: bold;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(#a8adb2));
+}*/
+
+img.pdfImage {
+    width: 90%;
+    height: 90%;
+    align: right;
+}
+
+p.text_left {
+    margin-left: 5px;
+}
+
+span.text_left {
+    float: left;
+    margin-left: 2px;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: "Helvetica";
+}
+
+.flipButton {
+    width: 70px;
+    height: 40px;
+    align: right;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(#a8adb2));
+    padding: 4% 20% 1% 20%;
+}
+
+
+/*
+.abbBtn {
+    width: 100px;
+    height: 40px;
+    align: right;
+    font-weight: bold;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(#a8adb2));
+}*/
+
+img.pdfImage {
+    width: 90%;
+    height: 90%;
+    align: right;
+}
+
+input.output {
+    width: 100%;
+    height: 23px;
+    /*border-color: #E08100;*/
+    border-color: #F58324;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1, #FAAB6F), color-stop(0, #ffffff));
+}
+
+td.input_name {
+    font: Helvetica;
+}
+
+.score_table {
+    margin-top: 4%;
+}
+
+.firstTD {}
+
+.secondTD {}
+
+.thirdTD {}
+
+table tr td {
+    border-collapse: collapse;
+    height: 45px;
+}
+
+td.no_height {
+    border-collapse: collapse;
+}
+
+
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+
+input[type=radio] {
+    display: none;
+    margin: 2px 2px 2px 2px;
+    padding: 1px 1px 1px 1px;
+}
+
+input[type=radio] + label {
+    display: inline-block;
+    margin: 0px 2px 0px 2px;
+    padding: 2px 1px 0px 1px;
+    background-color: #ffffff;
+    border: 2px solid #dfdfdf;
+    width: 98%;
+    height: 23px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-align: center;
+    font-size: 15;
+    font-weight: bold;
+    color: #686868;
+}
+
+input[type=radio]:checked + label {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#662016));
+    border: 2px solid #ececec;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    font-size: 15;
+    font-weight: bold;
+}
+
+.resultbox {
+    width: 100%;
+    height: 25px;
+    font-size: 12pt;
+    font-weight: bold;
+    border-color: #F58324;
+    text-align: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1, #FAAB6F), color-stop(0, #ffffff));
+}
+
+.textbox1 {
+    width: 100%;
+    border-color: #F58324;
+    font-size: 12pt;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1, #FAAB6F), color-stop(0, #ffffff));
+}
+
+.resetbox {
+    color: #ffffff;
+    height: 25px;
+    font-weight: normal;
+    font-size: 12pt;
+    width: 100%;
+    height: 80%;
+    border-color: black;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1, #000000), color-stop(0, #ffffff));
+}
+
+.info_text_box_abb1 {
+    margin-top: -7px;
+    margin-left: 3px;
+    width: 98.3%;
+    position: relative;
+    color: #000000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-family: "Helvetica";
+    font-weight: italic;
+    text-align: left;
+    background-color: #e1e1e1;
+    font-size: 13px;
+    color: #52494C;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/*
+.info_text_box_abb {
+    margin-top: -7px;
+    width: 100%;
+    position: relative;
+    color: #000000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-family: "Helvetica";
+    font-weight: italic;
+    text-align: left;
+    background-color: #e1e1e1;
+    font-size: 14px;
+    color: #52494C;
+    font-weight: bold;
+    font-style: italic;
+}*/
+
+table.refTable {
+    font-size: 14px;
+    color: #52494C;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#reftext {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-size: 6pt;
+    vertical-align: top;
+    font-weight: italic;
+}
+
+td.ref {
+    font-family: Arial;
+    font-size: 10pt;
+    font-style: italic;
+    color: #666666;
+    padding: 1px 3px 1px 3px;
+    margin: 1px 1px 1px 1px;
+}
+
+p.ref {
+    font-family: Arial;
+    font-size: 10pt;
+    font-style: italic;
+    color: #666666;
+    padding: 1px 3px 1px 3px;
+    margin: 1px 1px 1px 1px;
+}
+
+.flipButton {
+    width: 70px;
+    height: 40px;
+    align: right;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(#a8adb2));
+    padding: 4% 20% 1% 20%;
+}
+
+
+/*
+.abbBtn {
+    width: 100px;
+    height: 40px;
+    align: right;
+    font-weight: bold;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(#a8adb2));
+}
+.abbBtnClick {
+    width: 100px;
+    height: 40px;
+    align: right;
+    font-weight: bold;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7c7c7c), to(#7c7c7c));
+    color: #ffffff;
+}*/
+
+img.pdfImage {
+    width: 90%;
+    height: 90%;
+    align: right;
+}
+
+.abbBtn {
+    height: 60px;
+    font-weight: bold;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    background: #d0d0d0;
+    border: solid 1px #c0c0c0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    vertical-align: baseline;
+    margin-top: 1px;
+    margin-right: 10px;
+    float: right;
+}
+
+.abbBtnClick {
+    height: 45px;
+    font-weight: bold;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    background: #7c7c7c;
+    border: solid 1px #c0c0c0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    vertical-align: baseline;
+    margin-top: 1px;
+    margin-right: 10px;
+    float: right;
+}
+
+.flip-pdf-button {
+    align: right;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    background: #d0d0d0;
+    border: solid 1px #c0c0c0;
+    vertical-align: baseline;
+    margin: auto;
+    float: right;
+}
+
+.info_text_box_abb {
+    margin-top: -7px;
+    width: 100%;
+    position: relative;
+    color: #000000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-family: "Helvetica";
+    font-weight: italic;
+    text-align: left;
+    background-color: #d5d5d5;
+    font-size: 14px;
+    color: #52494C;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.pdf-image {
+    width: 45px;
+    height: 45px;
+	padding:5px;
+    vertical-align: middle;
+}
+.resetBtn {
+    height: 45px;
+    font-weight: bold;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    background: #d0d0d0;
+    border: solid 1px #c0c0c0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    vertical-align: baseline;
+    margin-top: 1px;
+}

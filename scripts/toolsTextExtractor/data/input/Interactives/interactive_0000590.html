@@ -1,0 +1,456 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="calci_std.css">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=0;' name='viewport' />
+    <script src="jquery-1.9.1.min.js"></script>
+
+    <script>
+        function deleteOption() {
+
+            document.getElementById("testSelect").options.length = 1;
+        }
+
+        function selectMethod() {
+
+            var x = document.getElementById("methodSelect").selectedIndex;
+            //alert("value "+x);
+            var y = document.getElementById("methodSelect").options;
+            var a = y[x].text;
+            //alert("value "+a);
+            //alert("value "+x);
+            if (a == "Anthracyclines") {
+                createOption("Doxorubicin");
+            }
+            if (a == "Histone deacetylase inhibitors") {
+                createOption("Depsipeptide");
+                createOption("Vorinostat");
+            }
+            if (a == "Tyrosine kinase inhibitors") {
+                createOption("Axitinib");
+                createOption("Bosutinib");
+                createOption("Cabozantinib");
+                createOption("Critazinib");
+                createOption("Dasatinib");
+                createOption("Lapatinib");
+                createOption("Nilotinib");
+                createOption("Pazopanib");
+                createOption("Ponatinib");
+                createOption("Sorafenib");
+                createOption("Sunitinib");
+                createOption("Vandetanib");
+                createOption("Vemurafenib");
+
+            }
+            if (a == "Others") {
+                createOption("Arsenic trioxide");
+            }
+            selectTest();
+        }
+
+        function createOption(text) {
+            var z = document.createElement("option");
+            z.setAttribute("value", text);
+            var t = document.createTextNode(text);
+            z.appendChild(t);
+            document.getElementById("testSelect").appendChild(z);
+        }
+
+        function selectTest() {
+            var p = document.getElementById("testSelect").selectedIndex;
+            //alert("value "+x);
+            var q = document.getElementById("testSelect").options;
+            var b = q[p].text;
+            //alert(b);
+
+            if (isNaN(b) && b != "Select") {
+                //alert(b);
+                activeResultStyle();
+
+                if (b == "Doxorubicin") {
+                    document.getElementById("Mat1").innerHTML = "14";
+                    document.getElementById("Mat2").innerHTML = "11-14";
+                    document.getElementById("Mat3").innerHTML = "NA";
+                    document.getElementById("Mat4").innerHTML = "NA";
+                }
+                if (b == "Depsipeptide") {
+                    document.getElementById("Mat1").innerHTML = "14";
+                    document.getElementById("Mat2").innerHTML = "20–23.8";
+                    document.getElementById("Mat3").innerHTML = "NA";
+                    document.getElementById("Mat4").innerHTML = "NA";
+                }
+                if (b == "Vorinostat") {
+                    document.getElementById("Mat1").innerHTML = "&lt;10";
+                    document.getElementById("Mat2").innerHTML = "2.7–6";
+                    document.getElementById("Mat3").innerHTML = "&lt;1";
+                    document.getElementById("Mat4").innerHTML = "NA";
+                }
+                if (b == "Axitinib") {
+                    document.getElementById("Mat1").innerHTML = "&lt;10";
+                    document.getElementById("Mat2").innerHTML = "NA";
+                    document.getElementById("Mat3").innerHTML = "NA";
+                    document.getElementById("Mat4").innerHTML = "NA";
+                }
+                if (b == "Bosutinib") {
+                    document.getElementById("Mat1").innerHTML = "NA";
+                    document.getElementById("Mat2").innerHTML = "0.34";
+                    document.getElementById("Mat3").innerHTML = "0.2";
+                    document.getElementById("Mat4").innerHTML = "NA";
+                }
+                if (b == "Cabozantinib") {
+                    document.getElementById("Mat1").innerHTML = "10–15";
+                    document.getElementById("Mat2").innerHTML = "NA";
+                    document.getElementById("Mat3").innerHTML = "NA";
+                    document.getElementById("Mat4").innerHTML = "NA";
+                }
+                if (b == "Critazinib") {
+                    document.getElementById("Mat1").innerHTML = "9–13";
+                    document.getElementById("Mat2").innerHTML = "3.5";
+                    document.getElementById("Mat3").innerHTML = "1.3";
+                    document.getElementById("Mat4").innerHTML = "NA";
+                }
+                if (b == "Dasatinib") {
+                    document.getElementById("Mat1").innerHTML = "3–13";
+                    document.getElementById("Mat2").innerHTML = "0.6–3";
+                    document.getElementById("Mat3").innerHTML = "&lt;1.4";
+                    document.getElementById("Mat4").innerHTML = "NA";
+                }
+                if (b == "Lapatinib") {
+                    document.getElementById("Mat1").innerHTML = "6–13";
+                    document.getElementById("Mat2").innerHTML = "11";
+                    document.getElementById("Mat3").innerHTML = "6.1";
+                    document.getElementById("Mat4").innerHTML = "NA";
+                }
+                if (b == "Nilotinib") {
+                    document.getElementById("Mat1").innerHTML = "5–15";
+                    document.getElementById("Mat2").innerHTML = "1.9–4.7";
+                    document.getElementById("Mat3").innerHTML = "&lt;1.2";
+                    document.getElementById("Mat4").innerHTML = "NA";
+                }
+                if (b == "Pazopanib") {
+                    document.getElementById("Mat1").innerHTML = "NA";
+                    document.getElementById("Mat2").innerHTML = "NA";
+                    document.getElementById("Mat3").innerHTML = "2";
+                    document.getElementById("Mat4").innerHTML = "&lt;0.3";
+                }
+                if (b == "Ponatinib") {
+                    document.getElementById("Mat1").innerHTML = "&lt;10";
+                    document.getElementById("Mat2").innerHTML = "NA";
+                    document.getElementById("Mat3").innerHTML = "NA";
+                    document.getElementById("Mat4").innerHTML = "NA";
+                }
+                if (b == "Sorafenib") {
+                    document.getElementById("Mat1").innerHTML = "8–13";
+                    document.getElementById("Mat2").innerHTML = "NA";
+                    document.getElementById("Mat3").innerHTML = "NA";
+                    document.getElementById("Mat4").innerHTML = "NA";
+                }
+                if (b == "Sunitinib") {
+                    document.getElementById("Mat1").innerHTML = "9.6–15.4";
+                    document.getElementById("Mat2").innerHTML = "1–4";
+                    document.getElementById("Mat3").innerHTML = "0.5";
+                    document.getElementById("Mat4").innerHTML = "&lt;0.1";
+                }
+                if (b == "Vandetanib") {
+                    document.getElementById("Mat1").innerHTML = "36";
+                    document.getElementById("Mat2").innerHTML = "12–15";
+                    document.getElementById("Mat3").innerHTML = "4.3–8";
+                    document.getElementById("Mat4").innerHTML = "Described, % NA";
+                }
+                if (b == "Vemurafenib") {
+                    document.getElementById("Mat1").innerHTML = "13–15";
+                    document.getElementById("Mat2").innerHTML = "1.6";
+                    document.getElementById("Mat3").innerHTML = "1.6";
+                    document.getElementById("Mat4").innerHTML = "Described, % NA";
+                }
+                if (b == "Arsenic trioxide") {
+                    document.getElementById("Mat1").innerHTML = "35.4";
+                    document.getElementById("Mat2").innerHTML = "35";
+                    document.getElementById("Mat3").innerHTML = "25-60";
+                    document.getElementById("Mat4").innerHTML = "2.5";
+                }
+            } else {
+                document.getElementById("Mat1").innerHTML = "<br/>";
+                document.getElementById("Mat2").innerHTML = "<br/>";
+                document.getElementById("Mat3").innerHTML = "<br/>";
+                document.getElementById("Mat4").innerHTML = "<br/>";
+
+                deactiveResultStyle();
+            }
+        }
+    </script>
+    <script>
+        function activeResultStyle() {
+            //alert("done1");
+            var classValue = document.getElementsByClassName("output_name_disabled");
+
+            for (var i = 0; i < classValue.length; i + 1) {
+                //alert("done");
+                classValue[i].classList.add("output_name");
+                classValue[i].classList.remove("output_name_disabled");
+            }
+
+            var outputClass = document.getElementsByClassName("output_disabled");
+            for (var j = 0; j < outputClass.length; j + 1) {
+                //alert("done");
+                outputClass[j].classList.add("output");
+                outputClass[j].classList.remove("output_disabled");
+            }
+
+            var textareaOutputClass = document.getElementsByClassName("text-area-output-disabled");
+            for (var k = 0; k < textareaOutputClass.length; k + 1) {
+                //alert("done");
+                textareaOutputClass[k].classList.add("text-area-output");
+                textareaOutputClass[k].classList.remove("text-area-output-disabled");
+            }
+
+            var unitOutputClass = document.getElementsByClassName("unit_label_output_disabled");
+            for (var l = 0; l < unitOutputClass.length; l + 1) {
+                //alert("done");
+                unitOutputClass[l].classList.add("unit_label_output");
+                unitOutputClass[l].classList.remove("unit_label_output_disabled");
+            }
+
+            var activityOutput = document.getElementsByClassName("activity_output_disabled");
+            for (var act1 = 0; act1 < activityOutput.length; act1 + 1) {
+                //alert("done");
+                activityOutput[act1].classList.add("activity_output");
+                activityOutput[act1].classList.remove("activity_output_disabled");
+            }
+
+            var activityTextOutput = document.getElementsByClassName("activity-text-area-output-disabled");
+            for (var act2 = 0; act2 < activityTextOutput.length; act2 + 1) {
+                //alert("done");
+                activityTextOutput[act2].classList.add("activity-text-area-output");
+                activityTextOutput[act2].classList.remove("activity-text-area-output-disabled");
+            }
+
+
+        }
+
+        function deactiveResultStyle() {
+            // alert("done");
+            var classValue = document.getElementsByClassName("output_name");
+            for (var i = 0; i < classValue.length; i + 1) {
+                //alert("done");
+                classValue[i].classList.add("output_name_disabled");
+                classValue[i].classList.remove("output_name");
+            }
+
+            var outputClass = document.getElementsByClassName("output");
+            for (var j = 0; j < outputClass.length; j + 1) {
+                //alert("done");
+                outputClass[j].classList.add("output_disabled");
+                outputClass[j].classList.remove("output");
+            }
+
+            var textareaOutputClass = document.getElementsByClassName("text-area-output");
+            for (var k = 0; k < textareaOutputClass.length; k + 1) {
+                //alert("done");
+                textareaOutputClass[k].classList.add("text-area-output-disabled");
+                textareaOutputClass[k].classList.remove("text-area-output");
+            }
+
+            var unitOutputClass = document.getElementsByClassName("unit_label_output");
+            for (var l = 0; l < unitOutputClass.length; l + 1) {
+                //alert("done");
+                unitOutputClass[l].classList.add("unit_label_output_disabled");
+                unitOutputClass[l].classList.remove("unit_label_output");
+            }
+
+
+            var activityOutput = document.getElementsByClassName("activity_output");
+            for (var act1 = 0; act1 < activityOutput.length; act1 + 1) {
+                //alert("done");
+                activityOutput[act1].classList.add("activity_output_disabled");
+                activityOutput[act1].classList.remove("activity_output");
+            }
+
+            var activityTextOutput = document.getElementsByClassName("activity-text-area-output");
+            for (var act2 = 0; act2 < activityTextOutput.length; act2 + 1) {
+                //alert("done");
+                activityTextOutput[act2].classList.add("activity-text-area-output-disabled");
+                activityTextOutput[act2].classList.remove("activity-text-area-output");
+            }
+
+        }
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#ref_button").click(function() {
+
+                var t = $('#reference').css('display');
+
+                if (t == 'none') {
+                    $('#reference').css('display', "block");
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                } else {
+                    $('#reference').css('display', "none");
+                    t = block;
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top
+                    }, 700);
+                }
+
+            });
+
+            $("#reset").click(function() {
+                //$(".points").hide("slow");
+                $(".result_table").hide("slow");
+                //$("#reftext").hide("slow");
+                $("#reference").hide("slow");
+                totalscore = 0;
+                for (var x = 0; x < isBoxPressed.length; x++) {
+                    isBoxPressed[x] = "false";
+                }
+                isResetPressed = "false";
+
+                for (var x = 1; x < box.length; x++) {
+                    $("#" + box[x]).hide();
+                }
+
+                $("#total_points").text(totalscore);
+                $("#reset_text").text("Reset");
+                $("#reset").css({
+                    "-webkit-border-bottom-right-radius": "7px",
+                    "-webkit-border-bottom-left-radius": "7px"
+                });
+
+                for (var i = 0; i < boxArray.length; i++) {
+                    for (var j = 0; j < boxArray[i].length; j++) {
+                        $("#" + boxArray[i][j]).slideDown("fast");
+                    }
+                }
+
+                $(".list_middle").css({
+                    "-webkit-border-bottom-right-radius": "0px",
+                    "-webkit-border-bottom-left-radius": "0px"
+                });
+            });
+        });
+    </script>
+</head>
+
+
+<body onload="onLoad()">
+    <div class="table_container">
+        <table class="input_table">
+            <colgroup>
+                <col width="35%">
+                <col width="45%">
+                <col width="20%">
+            </colgroup>
+            <tr>
+                <td class="input_name">Cancer drug agents</td>
+                <td colspan="1">
+                    <select class="drop_center" name="methodSelect" id="methodSelect" onChange="deleteOption(); selectMethod()">
+                        <option >Select</option>
+                           <option value="Anthracyclines">Anthracyclines</option>
+                            <option value="Histone deacetylase inhibitors">Histone deacetylase inhibitors</option>
+                            <option value="Tyrosine kinase inhibitors">Tyrosine kinase inhibitors</option>
+                            <option value="Others">Others</option>
+                        </select> </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="input_name">Drug Name</td>
+                <td colspan="1">
+                    <select class="drop_center" name="testSelect" id="testSelect" onChange="selectTest()">
+                        <option >Select</option>
+							</select> </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="table_container">
+        <table class="output_table">
+            <colgroup>
+                <col width="35%">
+                <col width="45%">
+                <col width="20%">
+            </colgroup>
+            <tbody id="tr_result">
+                <tr>
+                    <td class="output_name_disabled" colspan="3">Average QT prolongation (ms)</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="output_disabled" name="Mat1" id="Mat1" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="output_name_disabled" colspan="3">Increase in QTc &gt;60 ms (%)</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="output_disabled" name="Mat2" id="Mat2" readonly="readonly"><br/></div>
+                    </td>
+                    <td class="input_unit" rowspan="">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="output_name_disabled" colspan="3">QTc &gt;500 ms (%)</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="output_disabled" id="Mat3" name="Mat3" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="output_name_disabled" colspan="3">Torsade de pointes (%)</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="output_disabled" id="Mat4" name="Mat4" readonly="readonly"><br/></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br/>
+    </div>
+
+
+
+    <br/>
+    <div class="footer-div" id="998">
+        <table class="footer-button-table">
+            <tr>
+                <td class="footer-button" style="width: 50%;">
+                    <button class="mfooter-button" id="ref_button">Abbreviation(s)</button>
+                </td>
+                <td class="footer-button" style="width: 50%;"><a href="flipView"><button class="mfooter-button" id="pdfButton"><img id="algoPdf" src="algo_pdf.png" alt="Static version"></button></a></td>
+            </tr>
+            <tr>
+                <td class="footer-button" style="width: 50%;"><button class="mfooter-button" id="resetButton" onclick="window.location.href=window.location.href">Reset</button></td>
+                <td class="footer-button" style="width: 50%;"><button class="mfooter-button" id="moreInfoButton"><a class="more-info-link" href="ref_ENAS5193_3.4.1.2.html">More information</a></button></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="reference-box" id="reference">
+                        <p class="text-left">NA = not available.</p>
+                        <!--    <p class="text_left">Low-dose corticosteroids are considered when there are contra-indications to other drugs or when there is an incomplete response to aspirin/NSAIDs plus colchicine; in this case physicians should consider adding these drugs instead
+                            of replacing other anti-inflammatory therapies.</p>-->
+                    </div>
+                </td>
+            </tr>
+            <!--  <tr>
+                <td colspan="4">
+                    <div class="reference-box" id="reference">
+                        <p class="text-left"><sup>a</sup>Azathioprine is steroid-sparing and has a slow onset of action compared with IVIG and anakinra. Cost considerations may apply considering the cheaper solution first (e.g. azathioprine) and resorting to more expensive
+                            options (e.g. IVIG and anakinra) for refractory cases.
+                            <br/> *2 of 4 clinical criteria: pericardial chest pain, pericardial rubs, ECG changes; pericardial effusion<br/> **in case of contra-indications to aspirin/NSAID/colchicine and after exclusion of infectious cause</p>
+                    </div>
+                </td>
+            </tr>-->
+        </table>
+
+    </div>
+    
+
+</body>
+
+</html>

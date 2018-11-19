@@ -1,0 +1,10 @@
+1. Pick your index json and guidelines.json from your web app project data.
+Guidelines.json from media\data\EN\TOCJson
+idx.json from media\data\EN\SearchFiles
+2. Paste these 2 files in the input data folder of this script (Create archive folder as well)
+3. INPUT DATA IS NOW READY
+4. Clear the output folder
+5. Now go to the main page of the node monsoon script
+6. Run this script
+7. Now you should see the file idx.json in the output folder.
+8. Create a table in db using this now.

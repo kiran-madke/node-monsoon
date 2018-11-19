@@ -1,0 +1,242 @@
+﻿[
+{
+"old_id":"1",
+"old_nametree":"Authors and legal information",
+"old_numtree":"1.0.0.0",
+"old_htmlpage":"ENAS247_1.0.0.0",
+"new_id":"1",
+"new_nametree":"Authors and legal information",
+"new_numtree":"1.0.0.0",
+"new_htmlpage":"ENAS247_1.0.0.0"
+},
+{
+"old_id":"2",
+"old_nametree":"Definition of MI",
+"old_numtree":"2.0.0.0",
+"old_htmlpage":"ENAS247_2.0.0.0",
+"new_id":"2",
+"new_nametree":"Definition of MI",
+"new_numtree":"2.0.0.0",
+"new_htmlpage":"ENAS247_2.0.0.0"
+},
+{
+"old_id":"3",
+"old_nametree":"Pathology",
+"old_numtree":"3.0.0.0",
+"old_htmlpage":"ENAS247_3.0.0.0",
+"new_id":"3",
+"new_nametree":"Pathology",
+"new_numtree":"3.0.0.0",
+"new_htmlpage":"ENAS247_3.0.0.0"
+},
+{
+"old_id":"4",
+"old_nametree":"Cardiac Biomarkers",
+"old_numtree":"4.0.0.0",
+"old_htmlpage":"null",
+"new_id":"4",
+"new_nametree":"Cardiac Biomarkers",
+"new_numtree":"4.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"5",
+"old_nametree":"Choice of Biomarker",
+"old_numtree":"4.1.0.0",
+"old_htmlpage":"ENAS247_4.1.0.0",
+"new_id":"5",
+"new_nametree":"Choice of Biomarker",
+"new_numtree":"4.1.0.0",
+"new_htmlpage":"ENAS247_4.1.0.0"
+},
+{
+"old_id":"6",
+"old_nametree":"Elevation of troponins",
+"old_numtree":"4.2.0.0",
+"old_htmlpage":"ENAS247_4.2.0.0",
+"new_id":"6",
+"new_nametree":"Elevation of troponins",
+"new_numtree":"4.2.0.0",
+"new_htmlpage":"ENAS247_4.2.0.0"
+},
+{
+"old_id":"7",
+"old_nametree":"Illustration",
+"old_numtree":"4.3.0.0",
+"old_htmlpage":"ENAS247_4.3.0.0",
+"new_id":"7",
+"new_nametree":"Illustration",
+"new_numtree":"4.3.0.0",
+"new_htmlpage":"ENAS247_4.3.0.0"
+},
+{
+"old_id":"8",
+"old_nametree":"Classification of MI",
+"old_numtree":"5.0.0.0",
+"old_htmlpage":"null",
+"new_id":"8",
+"new_nametree":"Classification of MI",
+"new_numtree":"5.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"9",
+"old_nametree":"Type 1",
+"old_numtree":"5.1.0.0",
+"old_htmlpage":"ENAS247_5.1.0.0",
+"new_id":"9",
+"new_nametree":"Type 1",
+"new_numtree":"5.1.0.0",
+"new_htmlpage":"ENAS247_5.1.0.0"
+},
+{
+"old_id":"10",
+"old_nametree":"Type 2",
+"old_numtree":"5.2.0.0",
+"old_htmlpage":"ENAS247_5.2.0.0",
+"new_id":"10",
+"new_nametree":"Type 2",
+"new_numtree":"5.2.0.0",
+"new_htmlpage":"ENAS247_5.2.0.0"
+},
+{
+"old_id":"11",
+"old_nametree":"Differentiate Type 1 and 2",
+"old_numtree":"5.3.0.0",
+"old_htmlpage":"ENAS247_5.3.0.0",
+"new_id":"11",
+"new_nametree":"Differentiate Type 1 and 2",
+"new_numtree":"5.3.0.0",
+"new_htmlpage":"ENAS247_5.3.0.0"
+},
+{
+"old_id":"12",
+"old_nametree":"Type 3",
+"old_numtree":"5.4.0.0",
+"old_htmlpage":"ENAS247_5.4.0.0",
+"new_id":"12",
+"new_nametree":"Type 3",
+"new_numtree":"5.4.0.0",
+"new_htmlpage":"ENAS247_5.4.0.0"
+},
+{
+"old_id":"13",
+"old_nametree":"Type 4a",
+"old_numtree":"5.5.0.0",
+"old_htmlpage":"ENAS247_5.5.0.0",
+"new_id":"13",
+"new_nametree":"Type 4a",
+"new_numtree":"5.5.0.0",
+"new_htmlpage":"ENAS247_5.5.0.0"
+},
+{
+"old_id":"14",
+"old_nametree":"Type 4b",
+"old_numtree":"5.6.0.0",
+"old_htmlpage":"ENAS247_5.6.0.0",
+"new_id":"14",
+"new_nametree":"Type 4b",
+"new_numtree":"5.6.0.0",
+"new_htmlpage":"ENAS247_5.6.0.0"
+},
+{
+"old_id":"15",
+"old_nametree":"Type 5",
+"old_numtree":"5.7.0.0",
+"old_htmlpage":"ENAS247_5.7.0.0",
+"new_id":"15",
+"new_nametree":"Type 5",
+"new_numtree":"5.7.0.0",
+"new_htmlpage":"ENAS247_5.7.0.0"
+},
+{
+"old_id":"16",
+"old_nametree":"ECG detection of MI",
+"old_numtree":"6.0.0.0",
+"old_htmlpage":"null",
+"new_id":"16",
+"new_nametree":"ECG detection of MI",
+"new_numtree":"6.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"17",
+"old_nametree":"ST Elevation",
+"old_numtree":"6.1.0.0",
+"old_htmlpage":"ENAS247_6.1.0.0",
+"new_id":"17",
+"new_nametree":"ST Elevation",
+"new_numtree":"6.1.0.0",
+"new_htmlpage":"ENAS247_6.1.0.0"
+},
+{
+"old_id":"18",
+"old_nametree":"ST Depression/T wave",
+"old_numtree":"6.2.0.0",
+"old_htmlpage":"ENAS247_6.2.0.0",
+"new_id":"18",
+"new_nametree":"ST Depression/T wave",
+"new_numtree":"6.2.0.0",
+"new_htmlpage":"ENAS247_6.2.0.0"
+},
+{
+"old_id":"19",
+"old_nametree":"ECG changes of prior MI",
+"old_numtree":"7.0.0.0",
+"old_htmlpage":"ENAS247_7.0.0.0",
+"new_id":"19",
+"new_nametree":"ECG changes of prior MI",
+"new_numtree":"7.0.0.0",
+"new_htmlpage":"ENAS247_7.0.0.0"
+},
+{
+"old_id":"20",
+"old_nametree":"Common ECG pitfalls",
+"old_numtree":"8.0.0.0",
+"old_htmlpage":"ENAS247_8.0.0.0",
+"new_id":"20",
+"new_nametree":"Common ECG pitfalls",
+"new_numtree":"8.0.0.0",
+"new_htmlpage":"ENAS247_8.0.0.0"
+},
+{
+"old_id":"21",
+"old_nametree":"Imaging evidence of acute MI",
+"old_numtree":"9.0.0.0",
+"old_htmlpage":"ENAS247_9.0.0.0",
+"new_id":"21",
+"new_nametree":"Imaging evidence of acute MI",
+"new_numtree":"9.0.0.0",
+"new_htmlpage":"ENAS247_9.0.0.0"
+},
+{
+"old_id":"22",
+"old_nametree":"Special categories of MI",
+"old_numtree":"10.0.0.0",
+"old_htmlpage":"ENAS247_10.0.0.0",
+"new_id":"22",
+"new_nametree":"Special categories of MI",
+"new_numtree":"10.0.0.0",
+"new_htmlpage":"ENAS247_10.0.0.0"
+},
+{
+"old_id":"23",
+"old_nametree":"Tabulation in clinical trials",
+"old_numtree":"11.0.0.0",
+"old_htmlpage":"ENAS247_11.0.0.0",
+"new_id":"23",
+"new_nametree":"Tabulation in clinical trials",
+"new_numtree":"11.0.0.0",
+"new_htmlpage":"ENAS247_11.0.0.0"
+},
+{
+"old_id":"24",
+"old_nametree":"Abbreviations and acronyms",
+"old_numtree":"12.0.0.0",
+"old_htmlpage":"ENAS247_12.0.0.0",
+"new_id":"24",
+"new_nametree":"Abbreviations and acronyms",
+"new_numtree":"12.0.0.0",
+"new_htmlpage":"ENAS247_12.0.0.0"
+}
+]

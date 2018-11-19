@@ -1,0 +1,425 @@
+[
+{
+"numtree":"1.0.0.0",
+"id":"1",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS258_1.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.0.0.0",
+"id":"2",
+"nametree":"Preamble",
+"tocnametree":"Preamble",
+"htmlpage":"ENAS258_2.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"3.0.0.0",
+"id":"3",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS258_3.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.0.0.0",
+"id":"4",
+"nametree":"Definitions and pathophysiology",
+"tocnametree":"Definitions and pathophysiology",
+"htmlpage":"ENAS258_4.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.0.0.0",
+"id":"5",
+"nametree":"Epidemiology",
+"tocnametree":"Epidemiology",
+"htmlpage":"ENAS258_5.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"6",
+"nametree":"Natural history and prognosis",
+"tocnametree":"Natural history and prognosis",
+"htmlpage":"ENAS258_6.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"7",
+"nametree":"Diagnosis and assessment",
+"tocnametree":"Diagnosis and assessment",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"8",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS258_7.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.0.0",
+"id":"9",
+"nametree":"Symptoms and signs",
+"tocnametree":"Symptoms and signs",
+"htmlpage":"ENAS258_7.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.0.0",
+"id":"10",
+"nametree":"Non-invasive cardiac investigations",
+"tocnametree":"Non-invasive cardiac investigations",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.1.0",
+"id":"11",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS258_7.3.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.2.0",
+"id":"12",
+"nametree":"Basic testing",
+"tocnametree":"Basic testing",
+"htmlpage":"ENAS258_7.3.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.3.0",
+"id":"13",
+"nametree":"3 major decision making steps",
+"tocnametree":"3 major decision making steps",
+"htmlpage":"ENAS258_7.3.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.4.0",
+"id":"14",
+"nametree":"Principles of diagnostic testing",
+"tocnametree":"Principles of diagnostic testing",
+"htmlpage":"ENAS258_7.3.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.5.0",
+"id":"15",
+"nametree":"Initial diagnostic mgmt.",
+"tocnametree":"Initial diagnostic mgmt.",
+"htmlpage":"ENAS258_7.3.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.6.0",
+"id":"16",
+"nametree":"Diagnostics in pts. with intermediate PTP",
+"tocnametree":"Diagnostics in pts. with intermediate PTP",
+"htmlpage":"ENAS258_7.3.6.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.7.0",
+"id":"17",
+"nametree":"Stress testing for diagnosing ischemia",
+"tocnametree":"Stress testing for diagnosing ischemia",
+"htmlpage":"ENAS258_7.3.7.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.8.0",
+"id":"18",
+"nametree":"Non-invasive imaging in coronary anatomy",
+"tocnametree":"Non-invasive imaging in coronary anatomy",
+"htmlpage":"ENAS258_7.3.8.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.4.0.0",
+"id":"19",
+"nametree":"Invasive coronary angiography",
+"tocnametree":"Invasive coronary angiography",
+"htmlpage":"ENAS258_7.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.5.0.0",
+"id":"20",
+"nametree":"Stratification for risk of events",
+"tocnametree":"Stratification for risk of events",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.5.1.0",
+"id":"21",
+"nametree":"Stress testing vs. coronary anatomy",
+"tocnametree":"Stress testing vs. coronary anatomy",
+"htmlpage":"ENAS258_7.5.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.5.2.0",
+"id":"22",
+"nametree":"Mgmt. based on risk determination",
+"tocnametree":"Mgmt. based on risk determination",
+"htmlpage":"ENAS258_7.5.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.5.3.0",
+"id":"23",
+"nametree":"Definition of risk based on test results",
+"tocnametree":"Definition of risk based on test results",
+"htmlpage":"ENAS258_7.5.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.6.0.0",
+"id":"24",
+"nametree":"Diagnostics in asympt. pts. without known CAD",
+"tocnametree":"Diagnostics in asympt. pts. without known CAD",
+"htmlpage":"ENAS258_7.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.7.0.0",
+"id":"25",
+"nametree":"Mgmt. in patients with known CAD",
+"tocnametree":"Mgmt. in patients with known CAD",
+"htmlpage":"ENAS258_7.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.8.0.0",
+"id":"26",
+"nametree":"Angina with normal coronary arteries",
+"tocnametree":"Angina with normal coronary arteries",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.8.1.0",
+"id":"27",
+"nametree":"Microvascular disease",
+"tocnametree":"Microvascular disease",
+"htmlpage":"ENAS258_7.8.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.8.2.0",
+"id":"28",
+"nametree":"Vasospastic angina",
+"tocnametree":"Vasospastic angina",
+"htmlpage":"ENAS258_7.8.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"29",
+"nametree":"Lifestyle and pharmacological management",
+"tocnametree":"Lifestyle and pharmacological management",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.1.0.0",
+"id":"30",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS258_8.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.2.0.0",
+"id":"31",
+"nametree":"Recommended diet intakes",
+"tocnametree":"Recommended diet intakes",
+"htmlpage":"ENAS258_8.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.3.0.0",
+"id":"32",
+"nametree":"Blood pressure thresholds",
+"tocnametree":"Blood pressure thresholds",
+"htmlpage":"ENAS258_8.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.4.0.0",
+"id":"33",
+"nametree":"Pharmacological management",
+"tocnametree":"Pharmacological management",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.4.1.0",
+"id":"34",
+"nametree":"Major side effects, CI and drug interactions",
+"tocnametree":"Major side effects, CI and drug interactions",
+"htmlpage":"ENAS258_8.4.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.4.2.0",
+"id":"35",
+"nametree":"Event prevention",
+"tocnametree":"Event prevention",
+"htmlpage":"ENAS258_8.4.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.4.3.0",
+"id":"36",
+"nametree":"Medical management",
+"tocnametree":"Medical management",
+"htmlpage":"ENAS258_8.4.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.4.4.0",
+"id":"37",
+"nametree":"Pharmacological treatment indication",
+"tocnametree":"Pharmacological treatment indication",
+"htmlpage":"ENAS258_8.4.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.4.5.0",
+"id":"38",
+"nametree":"Treatment in pts. with microvascular angina",
+"tocnametree":"Treatment in pts. with microvascular angina",
+"htmlpage":"ENAS258_8.4.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"39",
+"nametree":"Revascularization",
+"tocnametree":"Revascularization",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.1.0.0",
+"id":"40",
+"nametree":"Stenting/peri-procedural antiplatelet strategies",
+"tocnametree":"Stenting/peri-procedural antiplatelet strategies",
+"htmlpage":"ENAS258_9.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.2.0.0",
+"id":"41",
+"nametree":"FFR/IVUS/OCT",
+"tocnametree":"FFR/IVUS/OCT",
+"htmlpage":"ENAS258_9.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.3.0.0",
+"id":"42",
+"nametree":"Revascularization vs medical therapy",
+"tocnametree":"Revascularization vs medical therapy",
+"htmlpage":"ENAS258_9.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.4.0.0",
+"id":"43",
+"nametree":"Indications for revascularization",
+"tocnametree":"Indications for revascularization",
+"htmlpage":"ENAS258_9.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.5.0.0",
+"id":"44",
+"nametree":"Characteristics of more recent trials",
+"tocnametree":"Characteristics of more recent trials",
+"htmlpage":"ENAS258_9.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.6.0.0",
+"id":"45",
+"nametree":"PCI vs CABG",
+"tocnametree":"PCI vs CABG",
+"htmlpage":"ENAS258_9.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.7.0.0",
+"id":"46",
+"nametree":"The patient after revascularization",
+"tocnametree":"The patient after revascularization",
+"htmlpage":"ENAS258_9.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"47",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS258_10.0.0.0",
+"haspdf":false,
+"emailContent":false
+}
+]
