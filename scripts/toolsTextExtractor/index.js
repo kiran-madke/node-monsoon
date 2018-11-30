@@ -3,6 +3,61 @@ const fs = require('fs');
 const interactivesFolderPath = path.join(__dirname, './data/input/Interactives/');
 const outputFolderPath = path.join(__dirname, './data/output/');
 
+const ScoreStyleClass = {
+        QUESTION_TEXT: "question-text",
+        MAX_VALUE: "max-value",
+        OPTION_TEXT: "option-text",
+        OPTION_VALUE: "option-value",
+        TEXT_BLUR: "text-blur",
+        VALUE_BLUR: "value-blur",
+        SCORE_BLOCK_TOP_OUTER: "score-block-top-outer",
+        SCORE_BLOCK_MIDDLE_OUTER: "score-block-middle-outer",
+        SCORE_BLOCK_TOP_INNER: "score-block-top-inner",
+        SCORE_BLOCK_MIDDLE_INNER: "score-block-middle-inner",
+        SCORE_BLOCK_BLUR: "score-block-blur",
+        SCORE_RESULT_OUTER: "score-result-outer",
+        SCORE_RESULT_INNER: "score-result-inner"
+    },
+    Mode = {
+        FOCUS: "focus",
+        BLUR: "blur"
+    },
+    Dimensions = {
+        INNER: "-inner",
+        OUTER: "-outer"
+    },
+    Scroll = {
+        LENGTH_SHORT: 100,
+        LENGTH_LONG: 700
+    },
+    BoxTypes = {
+        FOOTER: "footer"
+    },
+    FooterButtons = {
+        PDF_BUTTON: "pdfButton",
+        RESET_BUTTON: "resetButton",
+        REF_BUTTON: "refButton",
+        MORE_INFO_BUTTON: "moreInfoButton"
+    },
+    StyleClass = {
+        ABB_BUTTON: "abb-button",
+        PDF_IMAGE: "pdf-image",
+        REFERENCE_BOX: "reference-box",
+        STATIC_REFERENCE_BOX: "static-reference-box",
+        FOOTER: "footer",
+        FLIP_PDF_BUTTON: "flip-pdf-button",
+        EXCEPTION_MESSAGE: "exception-message",
+        RESET_BUTTON: "reset-button",
+        TEXT_LEFT: "text-left"
+    },
+    ResultBoxTypes = {
+        RESULT_BOX: "result-box",
+        SCORE_BOX: "score-box",
+        RESULT_SCORE_BOX: "result-score-box",
+        NONE: "none",
+        FOOTER: "footer"
+    };
+
 class ToolsTextExtractor {
     constructor() {
         this.countDataFiles = 0;
@@ -94,34 +149,47 @@ class ToolsTextExtractor {
         const comment = content.substr(0, content.indexOf('[{'));
         content = content.replace(comment, '');
 
-        content = stringifyBoxTypes(content);
+        // Sanitize the JS constants and variables used in this JS content into string
+        content = this.sanitizeConstants(content);
+        // console.log(content);
+        // console.log(JSON.parse(content));
 
     }
 
-    stringifyBoxTypes(content) {
+    sanitizeConstants(content) {
 
-        const STYLE_CLASSES = {
-            ResultBoxTypes: {
-                RESULT_BOX: "result-box",
-                SCORE_BOX: "score-box",
-                RESULT_SCORE_BOX: "result-score-box",
-                NONE: "none",
-                FOOTER: "footer"
-            },
+        const findAndReplaceArray = {};
+        findAndReplaceArray['ResultBoxTypes.RESULT_SCORE_BOX'] = ResultBoxTypes.RESULT_SCORE_BOX;
+        findAndReplaceArray['BoxTypes.FOOTER'] = BoxTypes.FOOTER;
+        findAndReplaceArray['ResultBoxTypes.RESULT_SCORE_BOX'] = ResultBoxTypes.RESULT_SCORE_BOX;
+        findAndReplaceArray['FooterButtons.REF_BUTTON'] = FooterButtons.REF_BUTTON;
+        findAndReplaceArray['FooterButtons.MORE_INFO_BUTTON'] = FooterButtons.MORE_INFO_BUTTON;
+        findAndReplaceArray['FooterButtons.RESET_BUTTON'] = FooterButtons.RESET_BUTTON;
 
-            BoxTypes: {
-                FOOTER: "footer"
-            },
+        for (var key in arr) {
+            // skip loop if the property is from prototype
+            if (!findAndReplaceArray.hasOwnProperty(key)) continue;
 
-            FooterButtons: {
-                PDF_BUTTON: "pdfButton",
-                RESET_BUTTON: "resetButton",
-                REF_BUTTON: "refButton",
-                MORE_INFO_BUTTON: "moreInfoButton"
-            }
+
         }
 
-        content = content.replace('ResultBoxTypes.RESULT_SCORE_BOX', '');
+        content = content.replace('ResultBoxTypes.RESULT_SCORE_BOX', `"${ResultBoxTypes.RESULT_SCORE_BOX}"`);
+        content = content.replace('BoxTypes.FOOTER', `"${BoxTypes.FOOTER}"`);
+        content = content.replace('FooterButtons.REF_BUTTON', `"${FooterButtons.REF_BUTTON}"`);
+        content = content.replace('FooterButtons.MORE_INFO_BUTTON', `"${FooterButtons.MORE_INFO_BUTTON}"`);
+        content = content.replace('FooterButtons.RESET_BUTTON', `"${FooterButtons.RESET_BUTTON}"`);
+        // content = content.replace('buttonRow', `"buttonRow"`);
+        content = this.findAndReplaceKeyword(content, 'buttonRow', `"buttonRow"`);
+        return content;
+    }
+
+    // This function finds and replaces all occurrences of keywords in content with expected string
+    findAndReplaceKeyword(content, keyword, expected) {
+        var find = keyword;
+        var re = new RegExp(find, 'g');
+
+        content = content.replace(re, expected);
+        return content;
     }
 
     getOutliersList() {

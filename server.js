@@ -4,6 +4,7 @@ const mergeTocTree = require('./scripts/mergeTocTreeGTS');
 const mapNameTree = require('./scripts/mapNameTree');
 const mapIndexGLID = require('./scripts/mapIndexGLID');
 const toolsTextExtractor = require('./scripts/toolsTextExtractor');
+const hyphenation = require('./scripts/hyphenation');
 
 const app = express();
 const port = 9999;
@@ -55,6 +56,17 @@ app.get('/toolsTextExtractor', function(req, res) {
     toolsTextExtractor Script is currently being executed
         <h2>
             Response from script : ${toolsTextExtractor.execute()}
+        </h2>
+    </h1>`);
+});
+
+app.get('/hyphenation', function(req, res) {
+    // res.redirect(__dirname + '/public/test.html');
+    res.send(`
+    <h1>
+    Hyphenation Script is currently being executed
+        <h2>
+            Response from script : ${hyphenation.execute()}
         </h2>
     </h1>`);
 });
