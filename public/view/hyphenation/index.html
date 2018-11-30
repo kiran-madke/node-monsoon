@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hyphenation Script</title>
+</head>
+
+<body>
+    HYPHENATION SCRIPT
+    <button onclick="execute()">Execute</button>
+
+    <form method='post' action='upload' enctype="multipart/form-data">
+        <input type='file' name='fileUploaded' />
+        <input type='submit' />
+</body>
+
+<script>
+    function execute() {
+        window.location = "execute_hyphenation";
+    }
+</script>
+
+</html>

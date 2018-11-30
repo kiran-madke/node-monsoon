@@ -14,6 +14,7 @@
     },
     "dependencies": {
         "express": "^4.16.4",
+        "formidable": "^1.2.1",
         "utf8": "^3.0.0"
     }
 }

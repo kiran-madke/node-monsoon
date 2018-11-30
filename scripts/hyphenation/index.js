@@ -226,6 +226,27 @@ class Hyphenation {
 
         return hyphenatedContent;
     }
+
+    uploadZip(fileUploaded, oldpath, newpath) {
+        try {
+            let data = fs.readFileSync(oldpath);
+            // Write the file
+            var test = fs.writeFileSync(newpath, data);
+
+            // Delete the file
+            fs.unlinkSync(oldpath);
+
+            console.log('File uploaded');
+        } catch (error) {
+
+        }
+
+    }
+
+    unzip(fileDetails) {
+        console.log('Unzipping');
+        console.log(fileDetails);
+    }
 }
 
 let obj = new Hyphenation();
