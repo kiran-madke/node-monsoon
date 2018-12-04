@@ -4,6 +4,10 @@ const express = require('express');
 const app = express();
 var formidable = require('formidable');
 var fs = require('fs');
+const uuidv4 = require('uuid/v4');
+
+// requiring child_process native module for downloading
+const child_process = require('child_process');
 
 const mergeTocTree = require('./scripts/mergeTocTreeGTS');
 const mapNameTree = require('./scripts/mapNameTree');
@@ -12,8 +16,12 @@ const toolsTextExtractor = require('./scripts/toolsTextExtractor');
 const hyphenation = require('./scripts/hyphenation');
 
 routes.get('/', (req, res) => {
+    req.session.destroy();
+    // req.session.ipaddress = req.connection.remoteAddress;
+    console.log(req.session);
     // res.status(200).json({ message: 'Connected!' });
-    res.sendFile(__dirname + '/public/index.html');
+    const data = { jumbo_header: 'Node Monsoon', jumbo_header_description: 'Various scripts for production leanification', page_title: 'Node Monsoon' }
+    res.render(__dirname + '/public/index', data);
 });
 
 routes.get('/mergeTocTree-GTS', function(req, res) {
@@ -59,7 +67,11 @@ routes.get('/toolsTextExtractor', function(req, res) {
 });
 
 routes.get('/hyphenation', function(req, res) {
-    res.sendFile(__dirname + '/public/view/hyphenation/index.html');
+
+    req.session.userFolderName = uuidv4();
+    console.log(req.session);
+    const data = { jumbo_header: 'Hyphenation', jumbo_header_description: 'This script is used for hyphenating html pages', page_title: 'Hyphenation' };
+    res.render(__dirname + '/public/view/hyphenation/index', data);
     /* res.send(`
     <h1>
     Hyphenation Script is currently being executed
@@ -69,14 +81,21 @@ routes.get('/hyphenation', function(req, res) {
     </h1>`); */
 });
 
-routes.get('/hyphenation/execute_hyphenation', function(req, res) {
-    res.send(`
-    <h1>
-    Hyphenation Script is currently being executed
-        <h2>
-            Response from script : ${hyphenation.execute()}
-        </h2>
-    </h1>`);
+routes.get('/hyphenation/execute', function(req, res) {
+    hyphenation.execute();
+
+    const SCRIPT_ANALYTICS = hyphenation.getScriptAnalytics();
+    // console.log(SCRIPT_ANALYTICS);
+
+    const data = { jumbo_header: 'Hyphenation', jumbo_header_description: 'This script is used for hyphenating html pages', page_title: 'Hyphenation', SCRIPT_ANALYTICS: SCRIPT_ANALYTICS };
+    res.render(__dirname + '/public/view/hyphenation/execution_done', data);
+});
+
+routes.get('/hyphenation/download', function(req, res) {
+    hyphenation.download(req, res);
+
+    /* const data = { jumbo_header: 'Hyphenation', jumbo_header_description: 'This script is used for hyphenating html pages', page_title: 'Hyphenation' };
+    res.render(__dirname + '/public/view/hyphenation/download_done', data); */
 });
 
 
@@ -84,13 +103,24 @@ routes.post('/hyphenation/upload', function(req, res) {
     var form = new formidable.IncomingForm();
     form.parse(req, function(err, fields, files) {
         var oldpath = files.fileUploaded.path;
-        var newpath = path.join(__dirname, `./scripts/hyphenation/data/uploaded_zip_data/${files.fileUploaded.name}`);
+        // var newpath = path.join(__dirname, `./scripts/hyphenation/data/uploaded_zip_data/${files.fileUploaded.name}`);
+        var newpath = path.join(__dirname, `./scripts/hyphenation/data/uploaded_zip_data/data.zip`);
 
         // Upload the zip
         hyphenation.uploadZip(files.fileUploaded, oldpath, newpath);
 
         // Unzip the uploaded zip
-        hyphenation.unzip(files.fileUploaded);
+        hyphenation.unzip_data(files.fileUploaded, function() {
+            console.log('callback function executed');
+            // Get the list of files unzipped
+            const listOfFiles = hyphenation.getListOfUnzippedFiles();
+            console.log(listOfFiles);
+
+            const data = { jumbo_header: 'Hyphenation', jumbo_header_description: 'This script is used for hyphenating html pages', page_title: 'Hyphenation', uploadedList: listOfFiles };
+            res.render(__dirname + '/public/view/hyphenation/upload_done', data);
+        });
+
+
 
     });
 

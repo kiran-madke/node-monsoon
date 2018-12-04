@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../../partials/head %>
+</head>
+
+<body>
+    <% include ../../partials/jumbo-header %>
+
+        <div class="container">
+            <h3 class="text-success text-center">
+                Your data is successfully hyphenated
+                <button onclick="download()" type="button" class="btn btn-success">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        Download                    
+                </button>
+            </h3>
+            <h5>Following is the analysis of your hyphenation :</h5>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Analysis</th>
+                        <th>Figure</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Total Execution Time
+                        </td>
+                        <td class="text-success font-weight-bold">
+                            <%= SCRIPT_ANALYTICS.TOTAL_EXECUTION_TIME%> second(s)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total GL Folders
+                        </td>
+                        <td class="font-weight-bold">
+                            <%= SCRIPT_ANALYTICS.TOTAL_GL_FOLDERS_COUNT%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total words hyphenated
+                        </td>
+                        <td class="font-weight-bold">
+                            <%= SCRIPT_ANALYTICS.TOTAL_HYPHENATED_WORDS_COUNT%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total files that were ignored (HTML+CSS+JS+PNG)
+                        </td>
+                        <td class="font-weight-bold">
+                            <%= SCRIPT_ANALYTICS.TOTAL_HYPHENATED_FILES_COUNT%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total Tool HTML Files that were found and ignored
+                        </td>
+                        <td class="font-weight-bold">
+                            <%= SCRIPT_ANALYTICS.TOTAL_TOOL_HTML_FILES_COUNT%>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+</body>
+
+<script>
+    function download() {
+        window.location = '../download';
+    }
+</script>
+
+</html>

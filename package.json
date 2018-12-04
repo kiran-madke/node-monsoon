@@ -13,8 +13,17 @@
         "nodemon": "^1.18.5"
     },
     "dependencies": {
+        "child_process": "^1.0.2",
+        "client-sessions": "^0.8.0",
+        "ejs": "^2.6.1",
         "express": "^4.16.4",
+        "express-session": "^1.15.6",
+        "extract-zip": "^1.6.7",
         "formidable": "^1.2.1",
-        "utf8": "^3.0.0"
+        "is-directory": "^0.3.1",
+        "unzip": "^0.1.11",
+        "unzipper": "^0.9.4",
+        "utf8": "^3.0.0",
+        "uuid": "^3.3.2"
     }
 }
