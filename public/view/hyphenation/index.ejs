@@ -8,24 +8,39 @@
 <body>
     <% include ../../partials/jumbo-header %>
 
-
         <div class="container">
-            <h2>Upload Zip</h2>
-            <form method='post' action='upload' enctype="multipart/form-data">
-                <!--  <div class="form-group">
-                    <input type='file' name='fileUploaded' />
-                </div> -->
-
-                <div class="custom-file mb-3">
-                    <input type="file" class="custom-file-input" id="customFile" name="fileUploaded">
-                    <label class="custom-file-label" for="customFile">Choose your Zip File</label>
-                </div>
-
-                <div class="form-group">
-                    <input class="btn btn-primary" type='submit' />
-                </div>
-            </form>
+            <h5>
+                Your new user session token is :
+                <%= userToken%>
+            </h5>
+            <p>
+                This token will serve as your unique identifier across all pages, as multiple users are currently using this system at the same time.
+            </p>
         </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="container">
+                    <h2>Upload Zip</h2>
+                    <form method='post' action='upload' enctype="multipart/form-data">
+                        <!--  <div class="form-group">
+                            <input type='file' name='fileUploaded' />
+                        </div> -->
+
+                        <div class="custom-file mb-3">
+                            <input type="file" class="custom-file-input" id="customFile" name="fileUploaded">
+                            <label class="custom-file-label" for="customFile">Choose your Zip File</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="btn btn-primary" type='submit' />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
 
 </body>
 

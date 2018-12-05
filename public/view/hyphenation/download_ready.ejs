@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../../partials/head %>
+</head>
+
+<body>
+    <% include ../../partials/jumbo-header %>
+
+        <div class="container">
+            <h3 class="text-success text-center">
+                Your data is ready to be downloaded...
+                <button onclick="download()" type="button" class="btn btn-success">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        Download                    
+                </button>
+            </h3>
+        </div>
+
+</body>
+
+<script>
+    function download() {
+        window.location = 'download';
+    }
+</script>
+
+</html>

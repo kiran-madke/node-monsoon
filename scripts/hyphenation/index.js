@@ -3,119 +3,149 @@ const fs = require('fs');
 const hyphenate = require('./hyphenate');
 var unzipper = require('unzipper');
 const isDirectory = require('is-directory');
+const archiver = require('archiver');
 
 const inputFolderPath = path.join(__dirname, './data/input/');
 const outputFolderPath = path.join(__dirname, './data/output/');
-const zipFilePath = path.join(__dirname, './data/uploaded_zip_data/data.zip');
-
-let scriptLogData = [];
-
-let SET_LANGUAGE = "en";
-let SCRIPT_ANALYTICS = [];
-
-function initializeScriptAnalytics() {
-    SCRIPT_ANALYTICS.TOTAL_EXECUTION_TIME = 0;
-    SCRIPT_ANALYTICS.TOTAL_GL_FOLDERS_COUNT = 0;
-    SCRIPT_ANALYTICS.TOTAL_HYPHENATED_WORDS_COUNT = 0;
-    SCRIPT_ANALYTICS.TOTAL_IGNORED_FILES_COUNT = 0;
-    SCRIPT_ANALYTICS.TOTAL_TOOL_HTML_FILES_COUNT = 0;
-    SCRIPT_ANALYTICS.TOTAL_HYPHENATED_FILES_COUNT = 0;
-}
-
-function scriptLog(msg) {
-    scriptLogData.push(msg);
-}
-
-function displayScriptAnalytics(start) {
-    scriptLog('');
-    scriptLog('');
-    scriptLog('***************SCRIPT ANALYTICS************************');
-    scriptLog(`TOTAL GL FOLDERS = ${SCRIPT_ANALYTICS.TOTAL_GL_FOLDERS_COUNT}`);
-    scriptLog(`TOTAL FILES HYPHENATED = ${SCRIPT_ANALYTICS.TOTAL_HYPHENATED_FILES_COUNT}`);
-    scriptLog(`TOTAL FILES IGNORED (HTML+JS+PNG+CSS) =  ${SCRIPT_ANALYTICS.TOTAL_IGNORED_FILES_COUNT}`);
-    scriptLog(`TOTAL TOOL HTML FILES IGNORED =  ${SCRIPT_ANALYTICS.TOTAL_TOOL_HTML_FILES_COUNT}`);
-    scriptLog(`TOTAL WORDS HYPHENATED =  ${SCRIPT_ANALYTICS.TOTAL_HYPHENATED_WORDS_COUNT}`);
-
-    var duration = clock(start);
-    SCRIPT_ANALYTICS.TOTAL_EXECUTION_TIME = (duration / 1000).toFixed(6);
-    scriptLog("TOTAL EXECUTION TIME = " + (duration / 1000).toFixed(6) + " second(s)");
-    scriptLog('***************************************');
-}
-
-function clock(start) {
-    if (!start) return process.hrtime();
-    var end = process.hrtime(start);
-    return Math.round((end[0] * 1000) + (end[1] / 1000000));
-}
-
+const uploadedZipFolderPath = path.join(__dirname, './data/uploaded_zip_data/');
+const downloadZipFolderPath = path.join(__dirname, './data/download_zip_data/');
 
 class Hyphenation {
 
-    execute() {
-        initializeScriptAnalytics();
-        var start = clock();
+    constructor() {
+        this.USER_TOKEN = '';
+        this.USER_INPUT_FOLDER_PATH = '';
+        this.USER_OUTPUT_FOLDER_PATH = '';
+        this.scriptLogData = [];
+        this.SET_LANGUAGE = "en";
+        this.SCRIPT_ANALYTICS = [];
+
+        // First create required folder structure if not present
+        this.createRequireFolderStructure();
+    }
+
+    createRequireFolderStructure() {
+        const requiredFolders = [];
+        requiredFolders.push(inputFolderPath);
+        requiredFolders.push(outputFolderPath);
+        requiredFolders.push(uploadedZipFolderPath);
+        requiredFolders.push(downloadZipFolderPath);
+
+        requiredFolders.forEach(folder => {
+            if (!fs.existsSync(folder)) {
+                fs.mkdirSync(folder);
+            }
+        });
+    }
+
+    execute(userToken) {
+
+        this.USER_TOKEN = userToken;
+        this.USER_INPUT_FOLDER_PATH = path.join(inputFolderPath, userToken);
+        this.USER_OUTPUT_FOLDER_PATH = path.join(outputFolderPath, userToken);
+        this.initializeScriptAnalytics();
+        var start = this.clock();
         // Initialise the script log array
-        scriptLogData = [];
-        scriptLog('SCRIPT EXECUTION STARTED..');
-        scriptLog(`_________________________________________`);
+        this.scriptLogData = [];
+        this.scriptLog('SCRIPT EXECUTION STARTED..');
+        this.scriptLog(`_________________________________________`);
 
         // Read the input directory folder
         this.readInputFolderSync();
 
-        scriptLog(`_________________________________________`);
-        scriptLog(`SCRIPT EXECUTION COMPLETE!`);
-        displayScriptAnalytics(start);
+        this.scriptLog(`_________________________________________`);
+        this.scriptLog(`SCRIPT EXECUTION COMPLETE!`);
+        this.displayScriptAnalytics(start);
 
-        console.log(JSON.stringify(scriptLogData, null, 2));
-        return JSON.stringify(scriptLogData, null, 2);
+        console.log(JSON.stringify(this.scriptLogData, null, 2));
+
+        // Create a zip of this user output folder and save it in data/download_zip_data
+        this.zipUserOutputData();
+
+        return JSON.stringify(this.scriptLogData, null, 2);
+    }
+
+    initializeScriptAnalytics() {
+        this.SCRIPT_ANALYTICS.TOTAL_EXECUTION_TIME = 0;
+        this.SCRIPT_ANALYTICS.TOTAL_GL_FOLDERS_COUNT = 0;
+        this.SCRIPT_ANALYTICS.TOTAL_HYPHENATED_WORDS_COUNT = 0;
+        this.SCRIPT_ANALYTICS.TOTAL_IGNORED_FILES_COUNT = 0;
+        this.SCRIPT_ANALYTICS.TOTAL_TOOL_HTML_FILES_COUNT = 0;
+        this.SCRIPT_ANALYTICS.TOTAL_HYPHENATED_FILES_COUNT = 0;
+    }
+
+    scriptLog(msg) {
+        this.scriptLogData.push(msg);
+    }
+
+    clock(start) {
+        if (!start) return process.hrtime();
+        var end = process.hrtime(start);
+        return Math.round((end[0] * 1000) + (end[1] / 1000000));
+    }
+
+    displayScriptAnalytics(start) {
+        this.scriptLog('');
+        this.scriptLog('');
+        this.scriptLog('***************SCRIPT ANALYTICS************************');
+        this.scriptLog(`TOTAL GL FOLDERS = ${this.SCRIPT_ANALYTICS.TOTAL_GL_FOLDERS_COUNT}`);
+        this.scriptLog(`TOTAL FILES HYPHENATED = ${this.SCRIPT_ANALYTICS.TOTAL_HYPHENATED_FILES_COUNT}`);
+        this.scriptLog(`TOTAL FILES IGNORED (HTML+JS+PNG+CSS) =  ${this.SCRIPT_ANALYTICS.TOTAL_IGNORED_FILES_COUNT}`);
+        this.scriptLog(`TOTAL TOOL HTML FILES IGNORED =  ${this.SCRIPT_ANALYTICS.TOTAL_TOOL_HTML_FILES_COUNT}`);
+        this.scriptLog(`TOTAL WORDS HYPHENATED =  ${this.SCRIPT_ANALYTICS.TOTAL_HYPHENATED_WORDS_COUNT}`);
+
+        var duration = this.clock(start);
+        this.SCRIPT_ANALYTICS.TOTAL_EXECUTION_TIME = (duration / 1000).toFixed(6);
+        this.scriptLog("TOTAL EXECUTION TIME = " + (duration / 1000).toFixed(6) + " second(s)");
+        this.scriptLog('***************************************');
     }
 
     getHyphenatedWord(word) {
-        return hyphenate.conv(word, SET_LANGUAGE);
+        return hyphenate.conv(word, this.SET_LANGUAGE);
     }
 
     readInputFolderSync() {
         const THIS = this;
 
-        if (fs.existsSync(inputFolderPath)) {
-            scriptLog(`INPUT DIRECTORY FOUND : ${inputFolderPath}`);
-            scriptLog(`Now started reading input folder`);
+        if (fs.existsSync(this.USER_INPUT_FOLDER_PATH)) {
+            this.scriptLog(`USER INPUT DIRECTORY FOUND : ${this.USER_INPUT_FOLDER_PATH}`);
+            this.scriptLog(`Now started reading input folder`);
 
-            if (isDirectory.sync(inputFolderPath)) {
-                const inputFolder = fs.readdirSync(inputFolderPath);
+            if (isDirectory.sync(this.USER_INPUT_FOLDER_PATH)) {
+                const inputFolder = fs.readdirSync(this.USER_INPUT_FOLDER_PATH);
                 inputFolder.forEach(function(fileName) {
 
-                    scriptLog(`_________________________________________`);
+                    THIS.scriptLog(`_________________________________________`);
 
                     // THIS.readInputFileSync(fileName);
                     THIS.readGlFolderSync(fileName);
 
                     // Increment GL folder Count
-                    SCRIPT_ANALYTICS.TOTAL_GL_FOLDERS_COUNT++;
+                    THIS.SCRIPT_ANALYTICS.TOTAL_GL_FOLDERS_COUNT++;
 
                 });
             } else {
                 console.log('Non-directory encountered');
             }
         } else {
-            scriptLog(`DID NOT FIND : ${inputFolderPath}`);
+            this.scriptLog(`DID NOT FIND : ${this.USER_INPUT_FOLDER_PATH}`);
         }
     }
 
     readGlFolderSync(GL_Folder_name) {
         const THIS = this;
-        const GL_Folder_Path = path.join(inputFolderPath, GL_Folder_name);
+        const GL_Folder_Path = path.join(this.USER_INPUT_FOLDER_PATH, GL_Folder_name);
         console.log(GL_Folder_Path);
         if (fs.existsSync(GL_Folder_Path)) {
-            scriptLog(`GL FOLDER DIRECTORY FOUND : ${GL_Folder_Path}`);
-            scriptLog(`Now started reading GL folder`);
+            this.scriptLog(`GL FOLDER DIRECTORY FOUND : ${GL_Folder_Path}`);
+            this.scriptLog(`Now started reading GL folder`);
 
             if (isDirectory.sync(GL_Folder_Path)) {
                 const GL_Folder = fs.readdirSync(GL_Folder_Path);
                 GL_Folder.forEach(function(fileName) {
 
                     THIS.readInputFileSync(GL_Folder_name, GL_Folder_Path, fileName);
-                    // scriptLog(fileName);
+                    // this.scriptLog(fileName);
 
                 });
             } else {
@@ -124,7 +154,7 @@ class Hyphenation {
 
 
         } else {
-            scriptLog(`DID NOT FIND : ${GL_Folder_Path}`);
+            this.scriptLog(`DID NOT FIND : ${GL_Folder_Path}`);
         }
     }
 
@@ -142,26 +172,29 @@ class Hyphenation {
     readInputFileSync(GL_Folder, GL_Folder_Path, fileName) {
         // Make sure we are reading only HTML file
         if (!this.shouldIgnoreFile(fileName)) {
-            // scriptLog(`_________________________________________`);
+            // this.scriptLog(`_________________________________________`);
             // Increment total files count
-            SCRIPT_ANALYTICS.TOTAL_HYPHENATED_FILES_COUNT++;
+            this.SCRIPT_ANALYTICS.TOTAL_HYPHENATED_FILES_COUNT++;
 
             //Read this html file
             const filePath = path.join(GL_Folder_Path, fileName);
             // Check if this path even exists or not
             if (fs.existsSync(filePath)) {
-                // scriptLog(`Reading the html file : ${fileName}`);
+                // this.scriptLog(`Reading the html file : ${fileName}`);
                 // Read the contents of this data file
                 let content = fs.readFileSync(filePath, 'utf8');
 
                 let hyphenatedContent = this.getHyphenatedContent(content);
 
-                // Write the hyphenated content to output folder file
-                // fs.writeFileSync(outputFolderPath + fileName, hyphenatedContent);
-
                 // Write the hyphenated content to the appropriate GL folder inside the output folder.
+
+                // Create user output folder first if it doesn't exist
+                if (!fs.existsSync(this.USER_OUTPUT_FOLDER_PATH)) {
+                    fs.mkdirSync(this.USER_OUTPUT_FOLDER_PATH);
+                }
+
                 // Create a GL folder in output directory
-                const output_GL_folder_path = path.join(outputFolderPath, GL_Folder);
+                const output_GL_folder_path = path.join(this.USER_OUTPUT_FOLDER_PATH, GL_Folder);
                 // Create a GL folder in output if it doesn't exist
                 if (!fs.existsSync(output_GL_folder_path)) {
                     fs.mkdirSync(output_GL_folder_path);
@@ -171,20 +204,121 @@ class Hyphenation {
                 fs.writeFileSync(outputFilePath, hyphenatedContent);
 
             } else {
-                scriptLog(`File not found on location : ${fileName}`);
+                this.scriptLog(`File not found on location : ${fileName}`);
             }
 
         } else {
             // Increment the ignored files count
-            SCRIPT_ANALYTICS.TOTAL_IGNORED_FILES_COUNT++;
-            // scriptLog(`Ignoring the file : ${fileName}`);
+            this.SCRIPT_ANALYTICS.TOTAL_IGNORED_FILES_COUNT++;
+            // this.scriptLog(`Ignoring the file : ${fileName}`);
         }
+    }
+
+    zipUserOutputData() {
+        console.log('Starting to create output zip');
+        const sourcePath = this.USER_OUTPUT_FOLDER_PATH;
+        const destinationPath = path.join(downloadZipFolderPath, `${this.USER_TOKEN}.zip`);
+
+        // Check if Source directory which is set exists or not
+        if (isDirectory.sync(sourcePath)) {
+            this.archiveZip(sourcePath, destinationPath);
+
+            // Check if Destination directory is created or not after archiving
+            if (fs.existsSync(destinationPath)) {
+                // Do something
+                console.log('Output Zip Successfully created');
+
+
+            } else {
+                console.log('Failed to create output zip');
+            }
+        }
+    }
+
+    deleteUserIOFolders() {
+        // Delete the output folder once zip is created
+        this.deleteFolderRecursive(this.USER_OUTPUT_FOLDER_PATH);
+
+        // Check if user output folder is deleted successfully
+        if (!fs.existsSync(this.USER_OUTPUT_FOLDER_PATH)) {
+            console.log('User output folder was deleted successfully');
+        }
+
+        // Delete the user input folder 
+        this.deleteFolderRecursive(this.USER_INPUT_FOLDER_PATH);
+
+        // Check if user output folder is deleted successfully
+        if (!fs.existsSync(this.USER_INPUT_FOLDER_PATH)) {
+            console.log('User input folder was deleted successfully');
+        }
+    }
+
+    deleteFolderRecursive(path) {
+        const THIS = this;
+        if (fs.existsSync(path)) {
+            fs.readdirSync(path).forEach(function(file) {
+                var curPath = path + "/" + file;
+                if (fs.statSync(curPath).isDirectory()) { // recurse
+                    THIS.deleteFolderRecursive(curPath);
+                } else { // delete file
+                    fs.unlinkSync(curPath);
+                }
+            });
+            fs.rmdirSync(path);
+        }
+    };
+
+    archiveZip(sourcePath, destinationPath) {
+        // create a file to stream archive data to.
+        var output = fs.createWriteStream(destinationPath);
+        var archive = archiver('zip', {
+            zlib: { level: 9 } // Sets the compression level.
+        });
+
+        // listen for all archive data to be written
+        // 'close' event is fired only when a file descriptor is involved
+        output.on('close', function() {
+            // console.log(archive.pointer() + ' total bytes');
+            // console.log('archiver has been finalized and the output file descriptor has closed.');
+        });
+
+        // This event is fired when the data source is drained no matter what was the data source.
+        // It is not part of this library but rather from the NodeJS Stream API.
+        // @see: https://nodejs.org/api/stream.html#stream_event_end
+        output.on('end', function() {
+            // console.log('Data has been drained');
+        });
+
+        // good practice to catch warnings (ie stat failures and other non-blocking errors)
+        archive.on('warning', function(err) {
+            if (err.code === 'ENOENT') {
+                // log warning
+            } else {
+                // throw error
+                throw err;
+            }
+        });
+
+        // good practice to catch this error explicitly
+        archive.on('error', function(err) {
+            throw err;
+        });
+
+        // pipe archive data to the file
+        archive.pipe(output);
+
+        // append files from a sub-directory, putting its contents at the root of archive
+        archive.directory(sourcePath, false);
+
+        // finalize the archive (ie we are done appending files but streams have to finish yet)
+        // 'close', 'end' or 'finish' may be fired right after calling this method so register to them beforehand
+        archive.finalize();
     }
 
     getHyphenatedContent(content) {
         const THIS = this;
-        SCRIPT_ANALYTICS.SINGLE_FILE_HYPHENATED_WORDS_COUNT = 0;
-        // scriptLog(`Started hyphenating...`);
+        this.SCRIPT_ANALYTICS.SINGLE_FILE_HYPHENATED_WORDS_COUNT = 0;
+        // this.scriptLog(`Started hyphenating...`);
 
         let hyphenatedContent = '';
 
@@ -208,9 +342,9 @@ class Hyphenation {
                     bodyContent = bodyContent.replace(re, hyphenatedWord);
 
                     // Increment our word counter
-                    SCRIPT_ANALYTICS.SINGLE_FILE_HYPHENATED_WORDS_COUNT++;
+                    THIS.SCRIPT_ANALYTICS.SINGLE_FILE_HYPHENATED_WORDS_COUNT++;
                     // Increment total word counter
-                    SCRIPT_ANALYTICS.TOTAL_HYPHENATED_WORDS_COUNT++;
+                    THIS.SCRIPT_ANALYTICS.TOTAL_HYPHENATED_WORDS_COUNT++;
                 });
 
                 // Hyphenate the body content 
@@ -224,16 +358,16 @@ class Hyphenation {
                 hyphenatedContent = content;
 
                 // Increment TOOL HTML file counter
-                SCRIPT_ANALYTICS.TOTAL_TOOL_HTML_FILES_COUNT++;
+                this.SCRIPT_ANALYTICS.TOTAL_TOOL_HTML_FILES_COUNT++;
             }
-            // scriptLog(`${SCRIPT_ANALYTICS.SINGLE_FILE_HYPHENATED_WORDS_COUNT} words were hyphenated..`)
+            // this.scriptLog(`${this.SCRIPT_ANALYTICS.SINGLE_FILE_HYPHENATED_WORDS_COUNT} words were hyphenated..`)
         } else {
 
             // There's no body tag content in this html file
             // So return the content as it is.
             console.log(content);
             hyphenatedContent = content;
-            scriptLog(content);
+            this.scriptLog(content);
         }
 
         return hyphenatedContent;
@@ -243,10 +377,17 @@ class Hyphenation {
         try {
             let data = fs.readFileSync(oldpath);
             // Write the file
-            var test = fs.writeFileSync(newpath, data);
+            fs.writeFileSync(newpath, data);
 
             // Delete the file
             fs.unlinkSync(oldpath);
+
+            // Check if zip was successfully uploaded
+            if (fs.existsSync(newpath)) {
+                return true;
+            } else {
+                return false;
+            }
 
             console.log('File uploaded');
         } catch (error) {
@@ -255,48 +396,61 @@ class Hyphenation {
 
     }
 
-    getListOfUnzippedFiles() {
+    getListOfUnzippedFiles(userFolderName) {
         const list = [];
 
-        if (fs.existsSync(inputFolderPath)) {
+        const userInputFolderNamePath = this.getUserInputFolderPath(userFolderName);
 
-            const inputFolder = fs.readdirSync(inputFolderPath);
+        if (fs.existsSync(userInputFolderNamePath)) {
+
+            const inputFolder = fs.readdirSync(userInputFolderNamePath);
             inputFolder.forEach(function(fileName) {
-                const filePath = path.join(inputFolderPath, fileName);
+                const filePath = path.join(userInputFolderNamePath, fileName);
                 obj = [];
                 obj.fileName = fileName;
                 obj.isFolder = isDirectory.sync(filePath);
                 list.push(obj);
             });
         } else {
-            scriptLog(`DID NOT FIND : ${inputFolderPath}`);
+            this.scriptLog(`DID NOT FIND : ${userInputFolderNamePath}`);
         }
 
 
-        console.log(JSON.stringify(scriptLogData, null, 2));
+        console.log(JSON.stringify(this.scriptLogData, null, 2));
         return list;
     }
 
+    getUserInputFolderPath(userFolderName) {
+        return path.join(inputFolderPath, userFolderName);
+    }
+
     getScriptAnalytics() {
-        return SCRIPT_ANALYTICS;
+        return this.SCRIPT_ANALYTICS;
     }
 
-    unzip_data(fileDetails, callback_fn) {
+    unzip_data(fileDetails, userFolderName, callback_fn) {
         // console.log(fileDetails);
-        console.log('Unzipping');
+        console.log(userFolderName);
+        // console.log('Unzipping');
+        if (userFolderName !== undefined) {
+            const zipFilePath = path.join(uploadedZipFolderPath, `${userFolderName}.zip`);
+            const userInputFolderNamePath = this.getUserInputFolderPath(userFolderName);
 
-        fs.createReadStream(zipFilePath)
-            .pipe(unzipper.Extract({ path: inputFolderPath })).on('close', function() {
-                console.log('UNZIP SUCCESSFUL');
+            fs.createReadStream(zipFilePath)
+                .pipe(unzipper.Extract({ path: userInputFolderNamePath })).on('close', function() {
+                    console.log('UNZIP SUCCESSFUL');
 
-                // Redirect to upload done page
-                callback_fn();
-            });
+                    // Delete the zip file
+                    fs.unlinkSync(zipFilePath);
+
+                    // Redirect to upload done page
+                    callback_fn();
+                });
+        }
     }
 
-    download(req, res) {
-
-        const downloadPath = path.join(outputFolderPath, 'data.zip');
+    download(res) {
+        const downloadPath = path.join(downloadZipFolderPath, `${this.USER_TOKEN}.zip`);
         res.download(downloadPath);
     }
 

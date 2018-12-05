@@ -11,9 +11,9 @@
         <div class="container">
             <h3 class="text-success text-center">
                 Your data is successfully hyphenated
-                <button onclick="download()" type="button" class="btn btn-success">
-                        <i class="fa fa-download" aria-hidden="true"></i>
-                        Download                    
+                <button onclick="proceed()" type="button" class="btn btn-success">
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        Proceed                    
                 </button>
             </h3>
             <h5>Following is the analysis of your hyphenation :</h5>
@@ -73,8 +73,8 @@
 </body>
 
 <script>
-    function download() {
-        window.location = '../download';
+    function proceed() {
+        window.location = '../download_ready';
     }
 </script>
 

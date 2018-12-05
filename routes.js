@@ -70,7 +70,7 @@ routes.get('/hyphenation', function(req, res) {
 
     req.session.userFolderName = uuidv4();
     console.log(req.session);
-    const data = { jumbo_header: 'Hyphenation', jumbo_header_description: 'This script is used for hyphenating html pages', page_title: 'Hyphenation' };
+    const data = { jumbo_header: 'Hyphenation', jumbo_header_description: 'This script is used for hyphenating html pages', page_title: 'Hyphenation', userToken: req.session.userFolderName };
     res.render(__dirname + '/public/view/hyphenation/index', data);
     /* res.send(`
     <h1>
@@ -82,20 +82,23 @@ routes.get('/hyphenation', function(req, res) {
 });
 
 routes.get('/hyphenation/execute', function(req, res) {
-    hyphenation.execute();
+    hyphenation.execute(req.session.userFolderName);
 
     const SCRIPT_ANALYTICS = hyphenation.getScriptAnalytics();
     // console.log(SCRIPT_ANALYTICS);
 
-    const data = { jumbo_header: 'Hyphenation', jumbo_header_description: 'This script is used for hyphenating html pages', page_title: 'Hyphenation', SCRIPT_ANALYTICS: SCRIPT_ANALYTICS };
+    const data = { jumbo_header: 'Hyphenation', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Hyphenation', SCRIPT_ANALYTICS: SCRIPT_ANALYTICS };
     res.render(__dirname + '/public/view/hyphenation/execution_done', data);
 });
 
 routes.get('/hyphenation/download', function(req, res) {
-    hyphenation.download(req, res);
+    hyphenation.deleteUserIOFolders();
+    hyphenation.download(res);
+});
 
-    /* const data = { jumbo_header: 'Hyphenation', jumbo_header_description: 'This script is used for hyphenating html pages', page_title: 'Hyphenation' };
-    res.render(__dirname + '/public/view/hyphenation/download_done', data); */
+routes.get('/hyphenation/download_ready', function(req, res) {
+    const data = { jumbo_header: 'Hyphenation', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Hyphenation' };
+    res.render(__dirname + '/public/view/hyphenation/download_ready.ejs', data);
 });
 
 
@@ -104,21 +107,31 @@ routes.post('/hyphenation/upload', function(req, res) {
     form.parse(req, function(err, fields, files) {
         var oldpath = files.fileUploaded.path;
         // var newpath = path.join(__dirname, `./scripts/hyphenation/data/uploaded_zip_data/${files.fileUploaded.name}`);
-        var newpath = path.join(__dirname, `./scripts/hyphenation/data/uploaded_zip_data/data.zip`);
+        var newpath = path.join(__dirname, `./scripts/hyphenation/data/uploaded_zip_data/${req.session.userFolderName}.zip`);
 
         // Upload the zip
-        hyphenation.uploadZip(files.fileUploaded, oldpath, newpath);
+        const uploadStatus = hyphenation.uploadZip(files.fileUploaded, oldpath, newpath);
+        console.log(uploadStatus);
 
-        // Unzip the uploaded zip
-        hyphenation.unzip_data(files.fileUploaded, function() {
-            console.log('callback function executed');
-            // Get the list of files unzipped
-            const listOfFiles = hyphenation.getListOfUnzippedFiles();
-            console.log(listOfFiles);
+        // Proceed if file was successfully uploaded
+        if (uploadStatus) {
+            // Unzip the uploaded zip
+            hyphenation.unzip_data(files.fileUploaded, req.session.userFolderName, function() {
+                console.log('unzip callback function executed');
+                // Get the list of files unzipped
+                const listOfFiles = hyphenation.getListOfUnzippedFiles(req.session.userFolderName);
+                console.log(listOfFiles);
 
-            const data = { jumbo_header: 'Hyphenation', jumbo_header_description: 'This script is used for hyphenating html pages', page_title: 'Hyphenation', uploadedList: listOfFiles };
-            res.render(__dirname + '/public/view/hyphenation/upload_done', data);
-        });
+                const data = { jumbo_header: 'Hyphenation', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Hyphenation', uploadedList: listOfFiles };
+                res.render(__dirname + '/public/view/hyphenation/upload_done', data);
+            });
+        } else {
+            // Redirect user to failed operation page with passing appropriate message
+            const data = { jumbo_header: 'Hyphenation Error Encountered', jumbo_header_description: 'We have encountered an issue with an operation', page_title: 'Hyphenation Error', message: `Your zip could not be uploaded. Please ensure you are uploaded the zip in proper format as instructed.` };
+            res.render(__dirname + '/public/view/hyphenation/upload_failed', data);
+        }
+
+
 
 
 

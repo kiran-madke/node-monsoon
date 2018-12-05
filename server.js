@@ -22,8 +22,8 @@ app.use(express.static(publicPath));
 app.use(session({
     cookieName: 'session',
     secret: 'eg[isfd-8yF9-7w2315df{}+Ijsli;;to8',
-    duration: 30 * 60 * 1000,
-    activeDuration: 5 * 60 * 1000,
+    duration: 300 * 60 * 1000,
+    activeDuration: 500 * 60 * 1000,
     httpOnly: true,
     secure: true,
     ephemeral: true
