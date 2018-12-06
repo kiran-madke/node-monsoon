@@ -9,20 +9,37 @@
     <% include ../../partials/jumbo-header %>
 
         <div class="container">
-            <h3 class="text-success text-center">
-                Your data is ready to be downloaded...
-                <button onclick="download()" type="button" class="btn btn-success">
-                        <i class="fa fa-download" aria-hidden="true"></i>
-                        Download                    
-                </button>
-            </h3>
+            <div class="card">
+                <div class="card-body">
+                    <div class="container">
+                        <h3 class="text-success text-center">
+                            Your data is ready to be downloaded...
+                            <button onclick="download()" type="button" class="btn btn-success">
+                                <i class="fa fa-download" aria-hidden="true"></i>
+                                Download                    
+                            </button>
+                        </h3>
+                    </div>
+                    <div class="container">
+                        <h3 class="text-center">
+                            <button onclick="goHome()" type="button" class="btn btn-primary">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                    Go Back Home                    
+                                </button>
+                        </h3>
+                    </div>
+                </div>
+            </div>
         </div>
-
 </body>
 
 <script>
     function download() {
         window.location = 'download';
+    }
+
+    function goHome() {
+        window.location = '../../';
     }
 </script>
 
