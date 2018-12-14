@@ -14,6 +14,7 @@ const mapNameTree = require('./scripts/mapNameTree');
 const mapIndexGLID = require('./scripts/mapIndexGLID');
 const toolsTextExtractor = require('./scripts/toolsTextExtractor');
 const hyphenation = require('./scripts/hyphenation');
+const cutting = require('./scripts/cutting');
 
 routes.get('/', (req, res) => {
     req.session.destroy();
@@ -103,6 +104,7 @@ routes.get('/hyphenation/download_ready', function(req, res) {
 
 
 routes.post('/hyphenation/upload', function(req, res) {
+    // console.log('Uploading for : ', req.session.userFolderName);
     var form = new formidable.IncomingForm();
     form.parse(req, function(err, fields, files) {
         var oldpath = files.fileUploaded.path;
@@ -138,5 +140,55 @@ routes.post('/hyphenation/upload', function(req, res) {
     });
 
 });
+
+routes.get('/cutting', function(req, res) {
+
+    req.session.userFolderName = uuidv4();
+    console.log(req.session);
+    const data = { jumbo_header: 'Cutting Big HTML', jumbo_header_description: 'This script is used for cutting Big HTML file into separate HTML pages by inserting xxxxx values', page_title: 'Cutting Script', userToken: req.session.userFolderName };
+    res.render(__dirname + '/public/view/cutting/index', data);
+});
+
+routes.post('/cutting/upload', function(req, res) {
+    // console.log('Uploading for : ', req.session.userFolderName);
+    var form = new formidable.IncomingForm();
+    form.parse(req, function(err, fields, files) {
+        var oldpath = files.fileUploaded.path;
+
+        var newpath = path.join(__dirname, `./scripts/cutting/data/input/${req.session.userFolderName}.html`);
+
+        // Upload the zip
+        const uploadStatus = hyphenation.uploadZip(files.fileUploaded, oldpath, newpath);
+        console.log(uploadStatus);
+
+        // Proceed if file was successfully uploaded
+        if (uploadStatus) {
+            console.log('upload successfull');
+
+            const data = { jumbo_header: 'Cutting Big HTML', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Cutting Big HTML' };
+            res.render(__dirname + '/public/view/cutting/upload_done', data);
+        } else {
+            // Redirect user to failed operation page with passing appropriate message
+            const data = { jumbo_header: 'Cutting Script Error Encountered', jumbo_header_description: 'We have encountered an issue with an operation', page_title: 'Cutting Error', message: `Your big html file could not be uploaded. Please ensure you are uploaded the zip in proper format as instructed.` };
+            res.render(__dirname + '/public/view/cutting/upload_failed', data);
+        }
+    });
+
+});
+
+routes.get('/cutting/executeCutting', function(req, res) {
+    cutting.executeCutting(req.session.userFolderName);
+
+    const SCRIPT_ANALYTICS = cutting.getScriptAnalytics();
+
+    const data = { jumbo_header: 'Cutting Big HTML', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Cutting Script', SCRIPT_ANALYTICS: SCRIPT_ANALYTICS };
+    res.render(__dirname + '/public/view/cutting/cuttingExecution_done', data);
+
+});
+
+routes.get('/cutting/download', function(req, res) {
+    cutting.download(res);
+});
+
 
 module.exports = routes;

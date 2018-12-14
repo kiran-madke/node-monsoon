@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../../partials/head %>
+        <% include ./include-script-links %>
+</head>
+
+<body>
+    <% include ../../partials/jumbo-header %>
+
+        <div class="container">
+
+            <div class="card shadow p-4 mb-4 bg-white">
+                <div class="card-body">
+                    <h5>
+                        Your new token for this session will be:
+                        <span class="text-primary"><%= userToken%></span>
+                    </h5>
+                    <p class="text-muted">
+                        This token will serve as your unique identifier across all pages, as multiple users are currently using this system at the same time.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card shadow p-4 mb-4 bg-white">
+                <div class="card-body">
+                    <div class="container shadow p-4 mb-4 bg-white">
+                        <h2>Upload Big HTML File</h2>
+                        <form method='post' action='upload' enctype="multipart/form-data">
+                            <!--  <div class="form-group">
+                                <input type='file' name='fileUploaded' />
+                            </div> -->
+
+                            <div class="custom-file mb-3">
+                                <input type="file" class="custom-file-input" id="customFile" name="fileUploaded">
+                                <label class="custom-file-label" for="customFile">Choose your Big HTML File</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="btn btn-primary" type='submit' />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+</body>
+
+<script>
+    $('#customFile').on('change', function() {
+        //get the file name
+        var fileName = $(this).val().split('fakepath')[1];
+        //replace the "Choose a file" label
+        console.log(fileName);
+        $(this).next('.custom-file-label').html(fileName);
+    })
+</script>
+
+
+</html>

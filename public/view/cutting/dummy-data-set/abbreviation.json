@@ -1,0 +1,30 @@
+[
+{
+"abbr":"BMA",
+"description":"Bone-modifying agents"
+},
+{
+"abbr":"CT",
+"description":"Computed tomography"
+},
+{
+"abbr":"FDA",
+"description":"Food and Drug Administration"
+},
+{
+"abbr":"MRI",
+"description":"Magnetic resonance imaging"
+},
+{
+"abbr":"ONJ",
+"description":"Osteonecrosis of the jaw"
+},
+{
+"abbr":"RANKL",
+"description":"Receptor activator of nuclear factor kappa-B ligand"
+},
+{
+"abbr":"US",
+"description":"United States"
+}
+]
