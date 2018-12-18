@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 const routes = require('./routes');
 const session = require('client-sessions');
+const json2xls = require('json2xls');
 
 var ejs = require('ejs');
 ejs.open = '{{';
@@ -18,6 +19,9 @@ app.set('views', __dirname + "/www");
 
 // middleware to set public path
 app.use(express.static(publicPath));
+
+// Use middleware for excel
+app.use(json2xls.middleware);
 
 app.use(session({
     cookieName: 'session',

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../../partials/head %>
+        <% include ./include-script-links %>
+</head>
+
+<body>
+    <% include ../../partials/jumbo-header %>
+
+        <div class="container">
+
+            <div class="card shadow p-4 mb-4 bg-white">
+                <div class="card-body">
+
+                    <h4 class="text-success">
+                        Your Excel File was successfully uploaded <i class="fa fa-check" aria-hidden="true"></i>
+                    </h4>
+
+                    <a href="executeExcelParsing/">
+                        <button type="button" class="btn btn-primary mt-4">Proceed</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card shadow p-4 mb-4 bg-white">
+                <div class="card-body">
+
+                    <h4 class="mb-4">
+                        Following abbreviations were detected/retrieved from your excel
+                    </h4>
+
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Sr no.
+                                </th>
+                                <th>
+                                    Abbreviation
+                                </th>
+                                <th>
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>

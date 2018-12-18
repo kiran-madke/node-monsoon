@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../../partials/head %>
+        <% include ./include-script-links %>
+</head>
+
+<body>
+    <% include ../../partials/jumbo-header %>
+
+        <div class="container">
+
+            <div class="card shadow p-4 mb-4 bg-white">
+                <div class="card-body">
+
+                    <h4 class="text-success">
+                        Your Big HTML File was successfully uploaded <i class="fa fa-check" aria-hidden="true"></i>
+                    </h4>
+
+                    <!-- <h4 class="text-success">Script is now ready to run</h4>
+
+                    <a href="execute/">
+                        <button type="button" class="btn btn-primary">Click to Run</button>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="card shadow p-4 mb-4 bg-white">
+                <div class="card-body">
+
+                    <h3>
+                        Please choose from one of the two options below
+                    </h3>
+
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card shadow p-4 mb-4 bg-white">
+                                <div class="card-body">
+                                    <h4 class="text-center">
+                                        Option-1
+                                    </h4>
+                                    <h4 class="text-primary mt-3">Generate fresh abbreviations list excel file from my Big HTML.</h4>
+                                    <h6 class="mt-4">
+                                        Please note the following points for this option
+                                    </h6>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            You will get to generate a fresh new list of abbreviations from your uploaded Big HTML
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            Finally you can download an excel file containing all abbreviations in my Big HTML File.
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            You will need to edit this excel -> Add your descriptions to abbr -> Upload the edited excel again using the Option 2 of this script
+                                        </li>
+                                    </ul>
+                                    <a href="execute/">
+                                        <button type="button" class="btn btn-primary mt-4">Generate Abbreviations Excel</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="card shadow p-4 mb-4 bg-white">
+                                <div class="card-body">
+                                    <h4 class="text-center">
+                                        Option-2
+                                    </h4>
+                                    <h4 class="text-danger mt-3"> Upload an existing abbreviations excel file for my uploaded Big HTML</h4>
+                                    <h6 class="mt-4">
+                                        Please note the following points for this option
+                                    </h6>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            If you already have an excel file generated from this script previously which you want to upload now
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            You have added descriptions to your excel file which you are uploading
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            Once you upload your excel file, it will be merged with your currently uploaded Big HTML file i.e All abbreviation links will be added inside the content
+                                        </li>
+
+                                    </ul>
+                                    <a href="uploadExcelForm/">
+                                        <button type="button" class="btn btn-danger mt-4">Upload existing excel</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>

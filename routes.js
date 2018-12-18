@@ -15,6 +15,7 @@ const mapIndexGLID = require('./scripts/mapIndexGLID');
 const toolsTextExtractor = require('./scripts/toolsTextExtractor');
 const hyphenation = require('./scripts/hyphenation');
 const cutting = require('./scripts/cutting');
+const abbreviation = require('./scripts/abbreviation');
 
 routes.get('/', (req, res) => {
     req.session.destroy();
@@ -66,6 +67,8 @@ routes.get('/toolsTextExtractor', function(req, res) {
         </h2>
     </h1>`);
 });
+
+// HYPHENATION
 
 routes.get('/hyphenation', function(req, res) {
 
@@ -141,6 +144,8 @@ routes.post('/hyphenation/upload', function(req, res) {
 
 });
 
+// CUTTING SCRIPT
+
 routes.get('/cutting', function(req, res) {
 
     req.session.userFolderName = uuidv4();
@@ -158,7 +163,7 @@ routes.post('/cutting/upload', function(req, res) {
         var newpath = path.join(__dirname, `./scripts/cutting/data/input/${req.session.userFolderName}.html`);
 
         // Upload the zip
-        const uploadStatus = hyphenation.uploadZip(files.fileUploaded, oldpath, newpath);
+        const uploadStatus = cutting.uploadFile(files.fileUploaded, oldpath, newpath);
         console.log(uploadStatus);
 
         // Proceed if file was successfully uploaded
@@ -169,7 +174,7 @@ routes.post('/cutting/upload', function(req, res) {
             res.render(__dirname + '/public/view/cutting/upload_done', data);
         } else {
             // Redirect user to failed operation page with passing appropriate message
-            const data = { jumbo_header: 'Cutting Script Error Encountered', jumbo_header_description: 'We have encountered an issue with an operation', page_title: 'Cutting Error', message: `Your big html file could not be uploaded. Please ensure you are uploaded the zip in proper format as instructed.` };
+            const data = { jumbo_header: 'Cutting Script Error Encountered', jumbo_header_description: 'We have encountered an issue with an operation', page_title: 'Cutting Error', message: `Your big html file could not be uploaded. Please ensure you are uploading in proper format as instructed.` };
             res.render(__dirname + '/public/view/cutting/upload_failed', data);
         }
     });
@@ -181,13 +186,102 @@ routes.get('/cutting/executeCutting', function(req, res) {
 
     const SCRIPT_ANALYTICS = cutting.getScriptAnalytics();
 
-    const data = { jumbo_header: 'Cutting Big HTML', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Cutting Script', SCRIPT_ANALYTICS: SCRIPT_ANALYTICS };
+    const data = { jumbo_header: 'Cutting Big HTML', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Cutting Script', SCRIPT_ANALYTICS: SCRIPT_ANALYTICS, PREVIEW_LINK: "www.google.com" };
     res.render(__dirname + '/public/view/cutting/cuttingExecution_done', data);
 
 });
 
 routes.get('/cutting/download', function(req, res) {
     cutting.download(res);
+});
+routes.get('/cutting/showPreview', function(req, res) {
+    const data = { jumbo_header: 'Cutting Big HTML', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Cutting Script' };
+    res.render(__dirname + `/scripts/cutting/data/output/${req.session.userFolderName}.html`, data);
+});
+
+// ABBREVIATION 
+
+routes.get('/abbreviation', function(req, res) {
+
+    req.session.userFolderName = uuidv4();
+    console.log(req.session);
+    const data = { jumbo_header: 'Abbreviation Script', jumbo_header_description: 'This script is used for extracting abbreviation words from your HTML file', page_title: 'Abbreviation Script', userToken: req.session.userFolderName };
+    res.render(__dirname + '/public/view/abbreviation/index', data);
+});
+
+
+routes.post('/abbreviation/upload', function(req, res) {
+    // console.log('Uploading for : ', req.session.userFolderName);
+    var form = new formidable.IncomingForm();
+    form.parse(req, function(err, fields, files) {
+        var oldpath = files.fileUploaded.path;
+
+        var newpath = path.join(__dirname, `./scripts/abbreviation/data/input/${req.session.userFolderName}.html`);
+
+        // Upload the zip
+        const uploadStatus = abbreviation.uploadFile(files.fileUploaded, oldpath, newpath);
+        console.log(uploadStatus);
+
+        // Proceed if file was successfully uploaded
+        if (uploadStatus) {
+            console.log('upload successfull');
+
+            const data = { jumbo_header: 'Abbreviations of Big HTML', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Abbreviations of Big HTML' };
+            res.render(__dirname + '/public/view/abbreviation/upload_done', data);
+        } else {
+            // Redirect user to failed operation page with passing appropriate message
+            const data = { jumbo_header: 'Abbreviation Script Error Encountered', jumbo_header_description: 'We have encountered an issue with an operation', page_title: 'Abbreviation Error', message: `Your big html file could not be uploaded. Please ensure you are uploading in proper format as instructed.` };
+            res.render(__dirname + '/public/view/abbreviation/upload_failed', data);
+        }
+    });
+});
+
+routes.get('/abbreviation/execute', function(req, res) {
+    abbreviation.execute(req.session.userFolderName);
+
+    let ABBR_LIST = abbreviation.getAbbrList();
+
+    const SCRIPT_ANALYTICS = abbreviation.getScriptAnalytics();
+
+    const data = { jumbo_header: 'Abbreviation of Big HTML', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Abbreviation Script', SCRIPT_ANALYTICS: SCRIPT_ANALYTICS, ABBR_LIST: ABBR_LIST };
+    res.render(__dirname + '/public/view/abbreviation/abbr_retreived', data);
+
+});
+
+routes.get('/abbreviation/download', function(req, res) {
+    let ABBR_LIST = abbreviation.getAbbrJsonFormat();
+    res.xls('data3.xlsx', ABBR_LIST);
+});
+
+routes.get('/abbreviation/uploadExcelForm', function(req, res) {
+    const data = { jumbo_header: 'Abbreviation of Big HTML', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Abbreviation Script' };
+    res.render(__dirname + '/public/view/abbreviation/uploadExcelForm', data);
+});
+
+routes.post('/abbreviation/uploadExcel', function(req, res) {
+    // console.log('Uploading for : ', req.session.userFolderName);
+    var form = new formidable.IncomingForm();
+    form.parse(req, function(err, fields, files) {
+        var oldpath = files.fileUploaded.path;
+
+        var newpath = path.join(__dirname, `./scripts/abbreviation/data/excel_uploads/${req.session.userFolderName}.xlsx`);
+
+        // Upload the file
+        const uploadStatus = abbreviation.uploadFile(files.fileUploaded, oldpath, newpath);
+        console.log(uploadStatus);
+
+        // Proceed if file was successfully uploaded
+        if (uploadStatus) {
+            console.log('upload successful');
+
+            const data = { jumbo_header: 'Abbreviations of Big HTML', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Abbreviations of Big HTML' };
+            res.render(__dirname + '/public/view/abbreviation/uploadExcelDone', data);
+        } else {
+            // Redirect user to failed operation page with passing appropriate message
+            const data = { jumbo_header: 'Abbreviation Script Error Encountered', jumbo_header_description: 'We have encountered an issue with an operation', page_title: 'Abbreviation Error', message: `Your excel file could not be uploaded. Please ensure you are uploading in proper format as instructed.` };
+            res.render(__dirname + '/public/view/abbreviation/upload_failed', data);
+        }
+    });
 });
 
 

@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const cheerio = require('cheerio');
 
 const inputFolderPath = path.join(__dirname, './data/input/');
 const outputFolderPath = path.join(__dirname, './data/output/');
@@ -12,6 +13,9 @@ class Cutting {
         this.USER_TOKEN = '';
         this.USER_INPUT_FILE_PATH = '';
         this.cutInputFileContent = '';
+
+        // create required folder structure if not present
+        this.createRequireFolderStructure();
     }
 
     initializeScriptAnalytics() {
@@ -23,9 +27,25 @@ class Cutting {
         this.scriptLogData.push(msg);
     }
 
+    createRequireFolderStructure() {
+        const requiredFolders = [];
+        requiredFolders.push(inputFolderPath);
+        requiredFolders.push(outputFolderPath);
+
+        requiredFolders.forEach(folder => {
+            if (!fs.existsSync(folder)) {
+                fs.mkdirSync(folder);
+            }
+        });
+    }
+
     executeCutting(userToken) {
         this.scriptLog('Starting execution of script');
         console.log(userToken);
+
+        // initialize
+        this.initializeScriptAnalytics();
+
         // Set user token
         this.USER_TOKEN = userToken;
 
@@ -35,9 +55,11 @@ class Cutting {
 
         //Read input file
         this.inputFileContent = this.readInputFileSync();
+        const $ = cheerio.load(this.inputFileContent);
+        // console.log($.html());
 
         // Process this content to add cutting keys on this content
-        this.cutInputFileContent = this.addCuttingKeysToContent();
+        this.cutInputFileContent = this.addCuttingKeysToContent($);
 
         // Write this cutting keys inserted content to output file
         this.writeCuttingFileToOutput();
@@ -73,12 +95,13 @@ class Cutting {
 
     }
 
-    addCuttingKeysToContent() {
+    addCuttingKeysToContent($) {
         // Check if content is non-empty
         var content = this.inputFileContent;
         if (content !== '') {
+            content = this.parseHTML($);
 
-            // First remove any existing cutting keys present on the file content
+            /* // First remove any existing cutting keys present on the file content
             content = this.removeAllCuttingKeys(content);
 
             this.scriptLog('Adding cutting keys to the content now');
@@ -93,7 +116,7 @@ class Cutting {
             <p class="h1">`);
 
             this.scriptLog('Finished adding cutting keys');
-            this.scriptLog(`Total ${this.SCRIPT_ANALYTICS.TOTAL_CUTTING_KEYS_INSERTED} cutting keys were inserted`);
+            this.scriptLog(`Total ${this.SCRIPT_ANALYTICS.TOTAL_CUTTING_KEYS_INSERTED} cutting keys were inserted`); */
 
             return content;
 
@@ -102,6 +125,70 @@ class Cutting {
             return '';
         }
     }
+
+    parseHTML($) {
+        // Add cutting keys to all h1 elements        
+        // this.cut(".h1", null, $);
+        $(".h1").each((i, h1_element) => {
+            // Step 1 : Add cutting key before this h1 element
+            $(`<h1 class="page_end_Here">xxxxxxxxx</h1>`).insertBefore(h1_element);
+        });
+
+        // Add cutting keys to h2 elements (except the ones which are immediate siblings to the h1 elements)
+        // this.cut(".h2", 'h1', $);
+        $(".h2").each((i, h2_element) => {
+
+            // Check if previous sibling is h1 element
+            if (!$(h2_element).prev().hasClass('h1')) {
+                // Step 2 : Add cutting key before this h2 element
+                $(`<h1 class="page_end_Here">xxxxxxxxx</h1>`).insertBefore(h2_element);
+            }
+
+        });
+
+        // Add cutting keys to h3 elements (except the ones which are immediate siblings to the h2 elements)
+        // this.cut(".h3", 'h2', $);
+        $(".h3").each((i, h3_element) => {
+
+            // Check if previous sibling is h2 element
+            if (!$(h3_element).prev().hasClass('h2')) {
+                // Step 2 : Add cutting key before this h3 element
+                $(`<h1 class="page_end_Here">xxxxxxxxx</h1>`).insertBefore(h3_element);
+            }
+
+        });
+
+        // Add cutting keys to h4 elements (except the ones which are immediate siblings to the h3 elements)
+        // this.cut(".h4", 'h3', $);
+        $(".h4").each((i, h4_element) => {
+
+            // Check if previous sibling is h3 element
+            if (!$(h4_element).prev().hasClass('h3')) {
+                // Step 2 : Add cutting key before this h4 element
+                $(`<h1 class="page_end_Here">xxxxxxxxx</h1>`).insertBefore(h4_element);
+            }
+
+        });
+
+        return $.html();
+    }
+
+    /* cut(findLevelClass, prevLevelElement) {
+        $(findLevelClass).each((i, element) => {
+
+            if (findLevelClass != ".h1") {
+                // Check if previous sibling is h1 element
+                if (!$(element).prev().hasClass(prevLevelElement)) {
+                    // Step 2 : Add cutting key before this h1 element
+
+                }
+            } else {
+                $(`<h1 class="page_end_Here">xxxxxxxxx</h1>`).insertBefore(element);
+            }
+
+        });
+
+} */
 
     removeAllCuttingKeys(content) {
         var re = new RegExp('(<h1 class="page_end_Here">xxxxxxxxx</h1>+)', 'g');
@@ -117,6 +204,31 @@ class Cutting {
             if (err) throw err;
             THIS.scriptLog('Output file successfully created and written');
         });
+    }
+
+
+
+    uploadFile(fileUploaded, oldpath, newpath) {
+        try {
+            let data = fs.readFileSync(oldpath);
+            // Write the file
+            fs.writeFileSync(newpath, data);
+
+            // Delete the file
+            fs.unlinkSync(oldpath);
+
+            // Check if zip was successfully uploaded
+            if (fs.existsSync(newpath)) {
+                return true;
+            } else {
+                return false;
+            }
+
+            console.log('File uploaded');
+        } catch (error) {
+
+        }
+
     }
 
     getScriptAnalytics() {
