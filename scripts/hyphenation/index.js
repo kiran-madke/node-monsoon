@@ -38,16 +38,19 @@ class Hyphenation {
         });
     }
 
-    execute(userToken) {
+    execute(userToken, language) {
 
+        this.initializeScriptAnalytics();
         this.USER_TOKEN = userToken;
+        this.SET_LANGUAGE = language;
+        this.SCRIPT_ANALYTICS.LANGUAGE = this.SET_LANGUAGE;
         this.USER_INPUT_FOLDER_PATH = path.join(inputFolderPath, userToken);
         this.USER_OUTPUT_FOLDER_PATH = path.join(outputFolderPath, userToken);
-        this.initializeScriptAnalytics();
         var start = this.clock();
         // Initialise the script log array
         this.scriptLogData = [];
         this.scriptLog('SCRIPT EXECUTION STARTED..');
+        this.scriptLog(`HYPHENATION LANGUAGE SET AS ${this.SET_LANGUAGE}`);
         this.scriptLog(`_________________________________________`);
 
         // Read the input directory folder
@@ -66,6 +69,7 @@ class Hyphenation {
     }
 
     initializeScriptAnalytics() {
+        this.SCRIPT_ANALYTICS.LANGUAGE = "en";
         this.SCRIPT_ANALYTICS.TOTAL_EXECUTION_TIME = 0;
         this.SCRIPT_ANALYTICS.TOTAL_GL_FOLDERS_COUNT = 0;
         this.SCRIPT_ANALYTICS.TOTAL_HYPHENATED_WORDS_COUNT = 0;
@@ -120,9 +124,6 @@ class Hyphenation {
                     // THIS.readInputFileSync(fileName);
                     THIS.readGlFolderSync(fileName);
 
-                    // Increment GL folder Count
-                    THIS.SCRIPT_ANALYTICS.TOTAL_GL_FOLDERS_COUNT++;
-
                 });
             } else {
                 console.log('Non-directory encountered');
@@ -141,6 +142,9 @@ class Hyphenation {
             this.scriptLog(`Now started reading GL folder`);
 
             if (isDirectory.sync(GL_Folder_Path)) {
+
+                // Increment GL folder Count
+                THIS.SCRIPT_ANALYTICS.TOTAL_GL_FOLDERS_COUNT++;
                 const GL_Folder = fs.readdirSync(GL_Folder_Path);
                 GL_Folder.forEach(function(fileName) {
 

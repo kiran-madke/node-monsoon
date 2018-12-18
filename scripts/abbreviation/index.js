@@ -87,15 +87,15 @@ class Abbreviation {
                 // Remove &shy; hyphenations from the content first
                 bodyContent = this.removeHyphenations(bodyContent);
 
-                console.log(bodyContent);
-
                 // Following regex is used to extract 2 or more lettered CAPTIAL only words; which are not inside any <> html tags
                 var extractWordsPattern = /\b[A-Z]{2,5}\b|\b[A-Z]{5}\b/g;
                 let abbr_list = bodyContent.match(extractWordsPattern);
 
                 // Filter our abbreviations array wrt ignore list array
                 abbr_list = this.filterAbbreviations(abbr_list);
-                console.log(abbr_list);
+
+                // Remove duplicate abbreviations from the ABBR LIST
+                abbr_list = this.filterDuplicates(abbr_list);
 
                 // Set the count of abbreviations retrieved
                 this.SCRIPT_ANALYTICS.TOTAL_ABBREVIATIONS = abbr_list.length;
@@ -152,6 +152,17 @@ class Abbreviation {
 
     }
 
+    readExcel(userToken) {
+        this.USER_TOKEN = userToken;
+
+        // Check if uploaded excel file exists
+        if (fs.existsSync(path.join(excelUploadsFolderPath, `${userToken}.xlsx`))) {
+            console.log('Excel File Fount');
+        } else {
+            console.log('Uploaded Excel file not found');
+        }
+    }
+
     readIgnoreList() {
         const obj = JSON.parse(fs.readFileSync(ignoreListFilePath, 'utf8'));
         return obj;
@@ -183,6 +194,14 @@ class Abbreviation {
         return filtered;
     }
 
+    filterDuplicates(abbr_list) {
+        var uniques = [];
+        abbr_list.forEach(element => {
+            if (uniques.indexOf(element) === -1) uniques.push(element);
+        });
+        return uniques;
+    }
+
     removeHyphenations(content) {
         const re = new RegExp('(&shy;+)', 'g');
         content = content.replace(re, ``);
@@ -191,23 +210,6 @@ class Abbreviation {
 
     getScriptAnalytics() {
         return this.SCRIPT_ANALYTICS;
-    }
-
-    download(res) {
-        var CsvString = "";
-        Results.forEach(function(RowItem, RowIndex) {
-            /* RowItem.forEach(function(ColItem, ColIndex) {
-                CsvString += ColItem + ',';
-            }); */
-            CsvString += RowItem + ',';
-            CsvString += "\r\n";
-        });
-        CsvString = "data:application/csv," + encodeURIComponent(CsvString);
-        var x = document.createElement("A");
-        x.setAttribute("href", CsvString);
-        x.setAttribute("download", "somedata.csv");
-        document.body.appendChild(x);
-        x.click();
     }
 }
 

@@ -86,7 +86,7 @@ routes.get('/hyphenation', function(req, res) {
 });
 
 routes.get('/hyphenation/execute', function(req, res) {
-    hyphenation.execute(req.session.userFolderName);
+    hyphenation.execute(req.session.userFolderName, req.session.language);
 
     const SCRIPT_ANALYTICS = hyphenation.getScriptAnalytics();
     // console.log(SCRIPT_ANALYTICS);
@@ -111,6 +111,9 @@ routes.post('/hyphenation/upload', function(req, res) {
     var form = new formidable.IncomingForm();
     form.parse(req, function(err, fields, files) {
         var oldpath = files.fileUploaded.path;
+
+        // Set the language in session
+        req.session.language = fields.language === "null" ? "en" : fields.language;
         // var newpath = path.join(__dirname, `./scripts/hyphenation/data/uploaded_zip_data/${files.fileUploaded.name}`);
         var newpath = path.join(__dirname, `./scripts/hyphenation/data/uploaded_zip_data/${req.session.userFolderName}.zip`);
 
@@ -250,7 +253,7 @@ routes.get('/abbreviation/execute', function(req, res) {
 
 routes.get('/abbreviation/download', function(req, res) {
     let ABBR_LIST = abbreviation.getAbbrJsonFormat();
-    res.xls('data3.xlsx', ABBR_LIST);
+    res.xls('abbreviations_list.xlsx', ABBR_LIST);
 });
 
 routes.get('/abbreviation/uploadExcelForm', function(req, res) {
@@ -273,6 +276,9 @@ routes.post('/abbreviation/uploadExcel', function(req, res) {
         // Proceed if file was successfully uploaded
         if (uploadStatus) {
             console.log('upload successful');
+
+            // Read the uploaded excel
+            abbreviation.readExcel(req.session.userFolderName);
 
             const data = { jumbo_header: 'Abbreviations of Big HTML', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Abbreviations of Big HTML' };
             res.render(__dirname + '/public/view/abbreviation/uploadExcelDone', data);
