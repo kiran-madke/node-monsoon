@@ -605,87 +605,6 @@
 {
 "numtree":"7.0.0.0",
 "id":"68",
-"nametree":"Summary Card (HTN)",
-"tocnametree":"Summary Card (HTN)",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"7.1.0.0",
-"id":"69",
-"nametree":"Why is prevention & treat. of HTN imp.?",
-"tocnametree":"Why is prevention & treat. of HTN imp.?",
-"htmlpage":"ENAS5189_3.1.0.0",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"7.2.0.0",
-"id":"70",
-"nametree":"How to diagnose hypertension?",
-"tocnametree":"How to diagnose hypertension?",
-"htmlpage":"ENAS5189_3.2.0.0",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"7.3.0.0",
-"id":"71",
-"nametree":"Other measurements to be performed",
-"tocnametree":"Other measurements to be performed",
-"htmlpage":"ENAS5189_3.3.0.0",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"7.4.0.0",
-"id":"72",
-"nametree":"When to initiate anti-HTN treatment?",
-"tocnametree":"When to initiate anti-HTN treatment?",
-"htmlpage":"ENAS5189_3.4.0.0",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"7.5.0.0",
-"id":"73",
-"nametree":"Target BP during anti-HTN treatment",
-"tocnametree":"Target BP during anti-HTN treatment",
-"htmlpage":"ENAS5189_3.5.0.0",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"7.6.0.0",
-"id":"74",
-"nametree":"Which anti-HTN drugs to choose?",
-"tocnametree":"Which anti-HTN drugs to choose?",
-"htmlpage":"ENAS5189_3.6.0.0",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"7.7.0.0",
-"id":"75",
-"nametree":"Treating associated risk factors",
-"tocnametree":"Treating associated risk factors",
-"htmlpage":"ENAS5189_3.7.0.0",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"7.8.0.0",
-"id":"76",
-"nametree":"Follow-up patients with HTN in GP",
-"tocnametree":"Follow-up patients with HTN in GP",
-"htmlpage":"ENAS5189_3.8.0.0",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"8.0.0.0",
-"id":"77",
 "nametree":"Summary Card (Pacing)",
 "tocnametree":"Summary Card (Pacing)",
 "htmlpage":"null",
@@ -693,8 +612,8 @@
 "emailContent":false
 },
 {
-"numtree":"8.1.0.0",
-"id":"78",
+"numtree":"7.1.0.0",
+"id":"69",
 "nametree":"Overview",
 "tocnametree":"Overview",
 "htmlpage":"ENAS5189_4.1.0.0",
@@ -702,8 +621,8 @@
 "emailContent":false
 },
 {
-"numtree":"8.2.0.0",
-"id":"79",
+"numtree":"7.2.0.0",
+"id":"70",
 "nametree":"Patients with persistent bradycardia",
 "tocnametree":"Patients with persistent bradycardia",
 "htmlpage":"ENAS5189_4.2.0.0",
@@ -711,8 +630,8 @@
 "emailContent":false
 },
 {
-"numtree":"8.3.0.0",
-"id":"80",
+"numtree":"7.3.0.0",
+"id":"71",
 "nametree":"Patients with intermit. document. bradycardia",
 "tocnametree":"Patients with intermit. document. bradycardia",
 "htmlpage":"ENAS5189_4.3.0.0",
@@ -720,8 +639,8 @@
 "emailContent":false
 },
 {
-"numtree":"8.4.0.0",
-"id":"81",
+"numtree":"7.4.0.0",
+"id":"72",
 "nametree":"Pats. with syncope and suspected bradycardia",
 "tocnametree":"Pats. with syncope and suspected bradycardia",
 "htmlpage":"ENAS5189_4.4.0.0",
@@ -729,8 +648,8 @@
 "emailContent":false
 },
 {
-"numtree":"8.5.0.0",
-"id":"82",
+"numtree":"7.5.0.0",
+"id":"73",
 "nametree":"Indications for CRT in pat. with HF or low EF",
 "tocnametree":"Indications for CRT in pat. with HF or low EF",
 "htmlpage":"ENAS5189_4.5.0.0",
@@ -738,8 +657,8 @@
 "emailContent":false
 },
 {
-"numtree":"8.6.0.0",
-"id":"83",
+"numtree":"7.6.0.0",
+"id":"74",
 "nametree":"Key evidence supporting recs.",
 "tocnametree":"Key evidence supporting recs.",
 "htmlpage":"ENAS5189_4.6.0.0",
@@ -747,8 +666,8 @@
 "emailContent":false
 },
 {
-"numtree":"8.7.0.0",
-"id":"84",
+"numtree":"7.7.0.0",
+"id":"75",
 "nametree":"CRT indi. in Pat. W HF & low EF in sinus rhythm",
 "tocnametree":"CRT indi. in Pat. W HF & low EF in sinus rhythm",
 "htmlpage":"ENAS5189_4.7.0.0",
@@ -756,8 +675,8 @@
 "emailContent":false
 },
 {
-"numtree":"8.8.0.0",
-"id":"85",
+"numtree":"7.8.0.0",
+"id":"76",
 "nametree":"Indications for CRT in patients in AF",
 "tocnametree":"Indications for CRT in patients in AF",
 "htmlpage":"ENAS5189_4.8.0.0",
@@ -765,8 +684,8 @@
 "emailContent":false
 },
 {
-"numtree":"8.9.0.0",
-"id":"86",
+"numtree":"7.9.0.0",
+"id":"77",
 "nametree":"Indi. for upgraded or “de novo” CRT",
 "tocnametree":"Indi. for upgraded or “de novo” CRT",
 "htmlpage":"ENAS5189_4.9.0.0",
@@ -774,8 +693,8 @@
 "emailContent":false
 },
 {
-"numtree":"8.10.0.0",
-"id":"87",
+"numtree":"7.10.0.0",
+"id":"78",
 "nametree":"Choice of CRT-P or CRT-D in prim. prevention",
 "tocnametree":"Choice of CRT-P or CRT-D in prim. prevention",
 "htmlpage":"ENAS5189_4.10.0.0",

@@ -1,3 +1,5 @@
 node_modules/
 scripts/hyphenation/data
 scripts/mapIndexGLID/data
+scripts/mergeTocTreeGTS/data
+scripts/mapNameTree/data

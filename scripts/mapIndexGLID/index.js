@@ -3,6 +3,8 @@ const fs = require('fs');
 
 const indexJSONPath = path.join(__dirname, './data/input/idx.json');
 const guidelineTocJSONPath = path.join(__dirname, './data/input/guidelinesTOC.json');
+const dataFolderPath = path.join(__dirname, './data/');
+const inputFolderPath = path.join(__dirname, './data/input/');
 const outputFolderPath = path.join(__dirname, './data/output/');
 
 class mapIndexGLID {
@@ -12,6 +14,22 @@ class mapIndexGLID {
         this.outputFolderPath = outputFolderPath;
         this.indexJsonContent = '';
         this.guidelineTOCJsonContent = '';
+
+        // First create required folder structure if not present
+        this.createRequireFolderStructure();
+    }
+
+    createRequireFolderStructure() {
+        const requiredFolders = [];
+        requiredFolders.push(dataFolderPath);
+        requiredFolders.push(inputFolderPath);
+        requiredFolders.push(outputFolderPath);
+
+        requiredFolders.forEach(folder => {
+            if (!fs.existsSync(folder)) {
+                fs.mkdirSync(folder);
+            }
+        });
     }
 
     execute() {

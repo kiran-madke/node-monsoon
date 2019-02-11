@@ -3,6 +3,9 @@ const fs = require('fs');
 
 const combinedJSONPath = path.join(__dirname, './data/inputData/combinedGTS/combinedGTS.json');
 const TOCJSONFolderPath = path.join(__dirname, './data/inputData/TOCJson/');
+
+const dataFolderPath = path.join(__dirname, './data/');
+const inputFolderPath = path.join(__dirname, './data/inputData/');
 const outputFolderPath = path.join(__dirname, './data/outputData/');
 
 class mapNameTree {
@@ -11,6 +14,22 @@ class mapNameTree {
         this.TOCJSONFolderPath = TOCJSONFolderPath;
         this.outputFolderPath = outputFolderPath;
         this.parsedGTSContent = [];
+
+        // First create required folder structure if not present
+        this.createRequireFolderStructure();
+    }
+
+    createRequireFolderStructure() {
+        const requiredFolders = [];
+        requiredFolders.push(dataFolderPath);
+        requiredFolders.push(inputFolderPath);
+        requiredFolders.push(outputFolderPath);
+
+        requiredFolders.forEach(folder => {
+            if (!fs.existsSync(folder)) {
+                fs.mkdirSync(folder);
+            }
+        });
     }
 
     execute() {

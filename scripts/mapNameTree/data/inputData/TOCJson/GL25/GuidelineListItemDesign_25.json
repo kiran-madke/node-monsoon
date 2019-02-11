@@ -1,117 +1,117 @@
 {
   "level_0": {
-    "textSize": "15",
-    "textFontFamily": "Helvetica-condensed-Bold",
+    "textSize": 16,
+    "textFontFamily": "helvetica",
     "textColor": [
-      "#000000"
+      "#191717"
     ],
-    "textStyle": "",
+    "textStyle": "bold",
     "bgColor": [
-      "#cadee6"
+      "#C3C3C3"
     ],
     "itemDisabledColor": {
       "text": [
-        "#b2e0f9"
+        "#808080"
       ],
       "background": [
-        "#EBEBEB"
+        "#aeaeae"
       ]
     },
     "navigationBarColor": [
-      "#ffffff"
+      "#ae1022"
     ],
     "navigationBarTextColor": [
-      "#5391B7"
+      "#FFFFFF"
     ],
     "colorCode": "black",
     "sticker": {
       "color": [
-        "#b9d432"
+        "#ae1f25"
       ],
       "enable": true,
-      "isLeft": true,
-      "isRight": false
+      "isLeft": false,
+      "isRight": true
     },
     "padding": {
-      "left": 5,
-      "right": 0
+      "left": 4,
+      "right": 17
     },
     "dividerColor": [
-      "#ffffff"
+      "#FFFFFF"
     ]
   },
   "level_1": {
-    "textSize": "15",
-    "textFontFamily": "Helvetica-condensed",
+    "textSize": 15,
+    "textFontFamily": "helvetica",
     "textColor": [
-      "#000000"
+      "#191717"
     ],
-    "textStyle": "",
+    "textStyle": "normal",
     "bgColor": [
-      "#cadee6"
+      "#C3C3C3"
     ],
     "itemDisabledColor": {
       "text": [
-        "#b2e0f9"
+        "#808080"
       ],
       "background": [
-        "#EBEBEB"
+        "#aeaeae"
       ]
     },
     "navigationBarColor": [
-      "#cadee6"
+      "#C3C3C3"
     ],
     "navigationBarTextColor": [
-      "#000000"
+      "#191717"
     ],
     "colorCode": "black",
     "sticker": {
       "color": [
-        "#b9d432"
+        "#d8224d"
       ],
       "enable": false,
-      "isLeft": true,
+      "isLeft": false,
       "isRight": false
     },
     "padding": {
-      "left": 5,
+      "left": 10,
       "right": 0
     },
     "dividerColor": [
-      "#ffffff"
+      "#FFFFFF"
     ]
   },
   "level_2": {
-    "textSize": "15",
-    "textFontFamily": "Helvetica-condensed",
+    "textSize": 15,
+    "textFontFamily": "helvetica",
     "textColor": [
-      "#000000"
+      "#191717"
     ],
-    "textStyle": "",
+    "textStyle": "normal",
     "bgColor": [
-      "#d7e6ec"
+      "#cdcdce"
     ],
     "itemDisabledColor": {
       "text": [
-        "#b2e0f9"
+        "#808080"
       ],
       "background": [
-        "#EBEBEB"
+        "#aeaeae"
       ]
     },
     "navigationBarColor": [
-      "#d7e6ec"
+      "#cdcdce"
     ],
     "navigationBarTextColor": [
-      "#000000"
+      "#191717"
     ],
     "colorCode": "black",
     "sticker": {
       "color": [
-        "#b9d432"
+        "#000000"
       ],
       "enable": false,
-      "isLeft": true,
+      "isLeft": false,
       "isRight": false
     },
     "padding": {
@@ -119,40 +119,81 @@
       "right": 0
     },
     "dividerColor": [
-      "#ffffff"
+      "#FFFFFF"
     ]
   },
   "level_3": {
-    "textSize": "15",
-    "textFontFamily": "Helvetica-condensed",
+    "textSize": 15,
+    "textFontFamily": "helvetica",
     "textColor": [
-      "#000000"
+      "#191717"
     ],
-    "textStyle": "",
+    "textStyle": "normal",
     "bgColor": [
-      "#e5eff3"
+      "#d7d8d8"
     ],
     "itemDisabledColor": {
       "text": [
-        "#b2e0f9"
+        "#808080"
       ],
       "background": [
-        "#EBEBEB"
+        "#aeaeae"
       ]
     },
     "navigationBarColor": [
-      "#e5eff3"
+      "#d7d8d8"
     ],
     "navigationBarTextColor": [
-      "#000000"
+      "#191717"
     ],
     "colorCode": "black",
     "sticker": {
       "color": [
-        "#b9d432"
+        "#000000"
       ],
       "enable": false,
-      "isLeft": true,
+      "isLeft": false,
+      "isRight": false
+    },
+    "padding": {
+      "left": 20,
+      "right": 0
+    },
+    "dividerColor": [
+      "#FFFFFF"
+    ]
+  },
+  "level_4": {
+    "textSize": 15,
+    "textFontFamily": "helvetica",
+    "textColor": [
+      "#191717"
+    ],
+    "textStyle": "normal",
+    "bgColor": [
+      "#e1e2e3"
+    ],
+    "itemDisabledColor": {
+      "text": [
+        "#808080"
+      ],
+      "background": [
+        "#aeaeae"
+      ]
+    },
+    "navigationBarColor": [
+      "#e1e2e3"
+    ],
+    "navigationBarTextColor": [
+      "#191717"
+    ],
+    "colorCode": "black",
+    "sticker": {
+      "color": [
+        "#000000"
+      ],
+      "enable": false,
+      "isLeft": false,
       "isRight": false
     },
     "padding": {
@@ -160,89 +201,48 @@
       "right": 0
     },
     "dividerColor": [
-      "#ffffff"
-    ]
-  },
-  "level_4": {
-    "textSize": "15",
-    "textFontFamily": "Helvetica-condensed",
-    "textColor": [
-      "#000000"
-    ],
-    "textStyle": "",
-    "bgColor": [
-      "#f2f7f9"
-    ],
-    "itemDisabledColor": {
-      "text": [
-        "#b2e0f9"
-      ],
-      "background": [
-        "#EBEBEB"
-      ]
-    },
-    "navigationBarColor": [
-      "#f2f7f9"
-    ],
-    "navigationBarTextColor": [
-      "#000000"
-    ],
-    "colorCode": "black",
-    "sticker": {
-      "color": [
-        "#b9d432"
-      ],
-      "enable": false,
-      "isLeft": true,
-      "isRight": false
-    },
-    "padding": {
-      "left": 35,
-      "right": 0
-    },
-    "dividerColor": [
-      "#ffffff"
+      "#FFFFFF"
     ]
   },
   "level_5": {
-    "textSize": "15",
-    "textFontFamily": "Helvetica-condensed",
+    "textSize": 15,
+    "textFontFamily": "helvetica",
     "textColor": [
-      "#000000"
+      "#191717"
     ],
-    "textStyle": "",
+    "textStyle": "normal",
     "bgColor": [
-      "#f2f7f9"
+      "#ecedee"
     ],
     "itemDisabledColor": {
       "text": [
-        "#b2e0f9"
+        "#808080"
       ],
       "background": [
-        "#EBEBEB"
+        "#aeaeae"
       ]
     },
     "navigationBarColor": [
-      "#f2f7f9"
+      "#ecedee"
     ],
     "navigationBarTextColor": [
-      "#000000"
+      "#191717"
     ],
     "colorCode": "black",
     "sticker": {
       "color": [
-        "#z"
+        "#000000"
       ],
       "enable": false,
-      "isLeft": true,
+      "isLeft": false,
       "isRight": false
     },
     "padding": {
-      "left": 45,
+      "left": 30,
       "right": 0
     },
     "dividerColor": [
-      "#ffffff"
+      "#FFFFFF"
     ]
   }
 }

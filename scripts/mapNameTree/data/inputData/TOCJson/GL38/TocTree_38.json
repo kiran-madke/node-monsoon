@@ -2,325 +2,631 @@
 {
 "numtree":"1.0.0.0",
 "id":"1",
+"nametree":"Essential messages",
+"tocnametree":"Essential messages",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.1.0.0",
+"id":"2",
 "nametree":"Authors and legal information",
 "tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5279_1.0.0.0",
+"htmlpage":"ENAS5530_2018112268",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"1.2.0.0",
+"id":"3",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS5530_2018112269",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.3.0.0",
+"id":"4",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS5530_2018112270",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"2.0.0.0",
-"id":"2",
-"nametree":"Diagnosis",
-"tocnametree":"Diagnosis",
-"htmlpage":"ENAS5279_2.0.0.0",
+"id":"5",
+"nametree":"Authors and Publication",
+"tocnametree":"Authors and Publication",
+"htmlpage":"ENAS5530_1.0.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"3.0.0.0",
-"id":"3",
-"nametree":"Staging and risk assessment",
-"tocnametree":"Staging and risk assessment",
-"htmlpage":"null",
+"id":"6",
+"nametree":"Preamble",
+"tocnametree":"Preamble",
+"htmlpage":"ENAS5530_2.0.0.0",
 "haspdf":false,
 "emailContent":false
-},
-{
-"numtree":"3.1.0.0",
-"id":"4",
-"nametree":"Diagnostic and staging work-up",
-"tocnametree":"Diagnostic and staging work-up",
-"htmlpage":"ENAS5279_3.1.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"3.2.0.0",
-"id":"5",
-"nametree":"Staging systems",
-"tocnametree":"Staging systems",
-"htmlpage":"ENAS5279_3.2.0.0",
-"haspdf":false,
-"emailContent":true
 },
 {
 "numtree":"4.0.0.0",
-"id":"6",
-"nametree":"Treatment",
-"tocnametree":"Treatment",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"4.1.0.0",
 "id":"7",
-"nametree":"Early stage disease",
-"tocnametree":"Early-stage disease",
-"htmlpage":"ENAS5279_4.1.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.0.0",
-"id":"8",
-"nametree":"Advanced-stage disease",
-"tocnametree":"Advanced-stage disease",
-"htmlpage":"null",
+"nametree":"Definitions",
+"tocnametree":"Definitions",
+"htmlpage":"ENAS5530_3.0.0.0",
 "haspdf":false,
 "emailContent":false
-},
-{
-"numtree":"4.2.1.0",
-"id":"9",
-"nametree":"Treatment indication",
-"tocnametree":"Treatment indication",
-"htmlpage":"ENAS5279_4.2.1.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.2.0",
-"id":"10",
-"nametree":"Front-line treatment options",
-"tocnametree":"Front-line treatment options",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"4.2.2.1",
-"id":"11",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5279_4.2.2.1",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.2.2",
-"id":"12",
-"nametree":"Front-line treatment algo.",
-"tocnametree":"Front-line treatment algo.",
-"htmlpage":"ENAS5279_4.2.2.2",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.3.0",
-"id":"13",
-"nametree":"Tx of relapsed and refractory disease",
-"tocnametree":"Tx of relapsed and refractory disease",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"4.2.3.1",
-"id":"14",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5279_4.2.3.1",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.3.2",
-"id":"15",
-"nametree":"Relapse treatment",
-"tocnametree":"Relapse treatment",
-"htmlpage":"ENAS5279_4.2.3.2",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.4.0",
-"id":"16",
-"nametree":"Role of HSCT",
-"tocnametree":"Role of HSCT",
-"htmlpage":"ENAS5279_4.2.4.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.5.0",
-"id":"17",
-"nametree":"Treatment of CLL complications",
-"tocnametree":"Treatment of CLL complications",
-"htmlpage":"ENAS5279_4.2.5.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.3.0.0",
-"id":"18",
-"nametree":"Response evaluation",
-"tocnametree":"Response evaluation",
-"htmlpage":"ENAS5279_4.3.0.0",
-"haspdf":false,
-"emailContent":true
 },
 {
 "numtree":"5.0.0.0",
-"id":"19",
-"nametree":"Personalised medicine",
-"tocnametree":"Personalised medicine",
-"htmlpage":"ENAS5279_5.0.0.0",
+"id":"8",
+"nametree":"Classi. & pathophysio. of syncope & TLOCs",
+"tocnametree":"Classi. & pathophysio. of syncope & TLOCs",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"9",
+"nametree":"Classification of syncope",
+"tocnametree":"Classification of syncope",
+"htmlpage":"ENAS5530_4.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"10",
+"nametree":"Remarks",
+"tocnametree":"Remarks",
+"htmlpage":"ENAS5530_4.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.0.0",
+"id":"11",
+"nametree":"Differential diagnosis of syncope",
+"tocnametree":"Differential diagnosis of syncope",
+"htmlpage":"ENAS5530_4.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.4.0.0",
+"id":"12",
+"nametree":"Pathophysiological classif. of syncope",
+"tocnametree":"Pathophysiological classif. of syncope",
+"htmlpage":"ENAS5530_4.4.0.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"6.0.0.0",
-"id":"20",
-"nametree":"Follow-up and long-term implications",
-"tocnametree":"Follow-up and long-term implications",
-"htmlpage":"ENAS5279_6.0.0.0",
+"id":"13",
+"nametree":"The initial evaluation",
+"tocnametree":"The initial evaluation",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"14",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5530_5.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"15",
+"nametree":"Diagnostic criteria with initial evaluation",
+"tocnametree":"Diagnostic criteria with initial evaluation",
+"htmlpage":"ENAS5530_5.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.0.0",
+"id":"16",
+"nametree":"Clin. Features on initial evaluation",
+"tocnametree":"Clin. Features on initial evaluation",
+"htmlpage":"ENAS5530_5.3.0.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"7.0.0.0",
-"id":"21",
-"nametree":"Summary recommendations",
-"tocnametree":"Summary recommendations",
+"id":"17",
+"nametree":"Mgmt. in the ED based on risk stratification",
+"tocnametree":"Mgmt. in the ED based on risk stratification",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"7.1.0.0",
-"id":"22",
-"nametree":"Diagnosis",
-"tocnametree":"Diagnosis",
-"htmlpage":"ENAS5279_7.1.0.0",
+"id":"18",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5530_6.1.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"7.2.0.0",
-"id":"23",
-"nametree":"Staging and risk assessment",
-"tocnametree":"Staging and risk assessment",
-"htmlpage":"ENAS5279_7.2.0.0",
+"id":"19",
+"nametree":"High-risk and low-risk features",
+"tocnametree":"High-risk and low-risk features",
+"htmlpage":"ENAS5530_6.2.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"7.3.0.0",
-"id":"24",
-"nametree":"Treatment",
-"tocnametree":"Treatment",
-"htmlpage":"null",
+"id":"20",
+"nametree":"ED risk stratification",
+"tocnametree":"ED risk stratification",
+"htmlpage":"ENAS5530_6.3.0.0",
 "haspdf":false,
 "emailContent":false
-},
-{
-"numtree":"7.3.1.0",
-"id":"25",
-"nametree":"Early-stage disease",
-"tocnametree":"Early-stage disease",
-"htmlpage":"ENAS5279_7.3.1.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.2.0",
-"id":"26",
-"nametree":"Advanced-stage disease",
-"tocnametree":"Advanced-stage disease",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"7.3.2.1",
-"id":"27",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5279_2018040236",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.2.2",
-"id":"28",
-"nametree":"Treatment indication",
-"tocnametree":"Treatment indication",
-"htmlpage":"ENAS5279_7.3.2.1",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.2.3",
-"id":"29",
-"nametree":"Front-line treatment",
-"tocnametree":"Front-line treatment",
-"htmlpage":"ENAS5279_7.3.2.2",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.2.4",
-"id":"30",
-"nametree":"Tx of relapsed and refractory disease",
-"tocnametree":"Tx of relapsed and refractory disease",
-"htmlpage":"ENAS5279_7.3.2.3",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.2.5",
-"id":"31",
-"nametree":"Role of HSCT",
-"tocnametree":"Role of HSCT",
-"htmlpage":"ENAS5279_7.3.2.4",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.2.6",
-"id":"32",
-"nametree":"Treatment of CLL complications",
-"tocnametree":"Treatment of CLL complications",
-"htmlpage":"ENAS5279_7.3.2.5",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.3.0",
-"id":"33",
-"nametree":"Response revaluation",
-"tocnametree":"Response revaluation",
-"htmlpage":"ENAS5279_7.3.3.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.4.0.0",
-"id":"34",
-"nametree":"Personalised medicine",
-"tocnametree":"Personalised medicine",
-"htmlpage":"ENAS5279_7.4.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.5.0.0",
-"id":"35",
-"nametree":"Follow-up and long-term implications",
-"tocnametree":"Follow-up and long-term implications",
-"htmlpage":"ENAS5279_7.5.0.0",
-"haspdf":false,
-"emailContent":true
 },
 {
 "numtree":"8.0.0.0",
-"id":"36",
-"nametree":"Glossary",
-"tocnametree":"Glossary",
-"htmlpage":"ENAS5279_8.0.0.0",
+"id":"21",
+"nametree":"Should the patient be admitted to hospital?",
+"tocnametree":"Should the patient be admitted to hospital?",
+"htmlpage":"ENAS5530_7.0.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"22",
+"nametree":"Diagnosis unclear after the initial eval.",
+"tocnametree":"Diagnosis unclear after the initial evaluation",
+"htmlpage":"ENAS5530_8.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"23",
+"nametree":"Carotid sinus massage",
+"tocnametree":"Carotid sinus massage",
+"htmlpage":"ENAS5530_9.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"24",
+"nametree":"Active standing",
+"tocnametree":"Active standing",
+"htmlpage":"ENAS5530_10.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.0.0.0",
+"id":"25",
+"nametree":"Tilt testing",
+"tocnametree":"Tilt testing",
+"htmlpage":"ENAS5530_11.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.0.0.0",
+"id":"26",
+"nametree":"Basic autonomic function tests",
+"tocnametree":"Basic autonomic function tests",
+"htmlpage":"ENAS5530_12.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.0.0.0",
+"id":"27",
+"nametree":"Electrocardiographic monitoring",
+"tocnametree":"Electrocardiographic monitoring",
+"htmlpage":"ENAS5530_13.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.0.0.0",
+"id":"28",
+"nametree":"Video recording in suspected syncope",
+"tocnametree":"Video recording in suspected syncope",
+"htmlpage":"ENAS5530_14.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"16.0.0.0",
+"id":"29",
+"nametree":"Electrophysiological study",
+"tocnametree":"Electrophysiological study",
+"htmlpage":"ENAS5530_15.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"17.0.0.0",
+"id":"30",
+"nametree":"Echocardiography",
+"tocnametree":"Echocardiography",
+"htmlpage":"ENAS5530_16.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"18.0.0.0",
+"id":"31",
+"nametree":"Exercise stress testing",
+"tocnametree":"Exercise stress testing",
+"htmlpage":"ENAS5530_17.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"19.0.0.0",
+"id":"32",
+"nametree":"Coronary angiography",
+"tocnametree":"Coronary angiography",
+"htmlpage":"ENAS5530_18.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"20.0.0.0",
+"id":"33",
+"nametree":"General principles of treatment of syncope",
+"tocnametree":"General principles of treatment of syncope",
+"htmlpage":"ENAS5530_19.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"21.0.0.0",
+"id":"34",
+"nametree":"Treatment of reflex syncope",
+"tocnametree":"Treatment of reflex syncope",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"21.1.0.0",
+"id":"35",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5530_20.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"21.2.0.0",
+"id":"36",
+"nametree":"Remarks",
+"tocnametree":"Remarks",
+"htmlpage":"ENAS5530_20.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"21.3.0.0",
+"id":"37",
+"nametree":"Tx of reflex syncope recommendations",
+"tocnametree":"Tx of reflex syncope recommendations",
+"htmlpage":"ENAS5530_20.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"21.4.0.0",
+"id":"38",
+"nametree":"Additional advice and clinical perspectives",
+"tocnametree":"Additional advice and clinical perspectives",
+"htmlpage":"ENAS5530_20.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"22.0.0.0",
+"id":"39",
+"nametree":"Cardiac pacing with reflex syncope",
+"tocnametree":"Cardiac pacing with reflex syncope",
+"htmlpage":"ENAS5530_21.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"23.0.0.0",
+"id":"40",
+"nametree":"Tx of OH & orthost. intolerance syndr.",
+"tocnametree":"Tx of OH & orthostatic intolerance syndromes",
+"htmlpage":"ENAS5530_22.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"24.0.0.0",
+"id":"41",
+"nametree":"Tx of sync. due to SA or AV conduct. disease",
+"tocnametree":"Tx of syncope due to SA or AV conduct. disease",
+"htmlpage":"ENAS5530_23.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"25.0.0.0",
+"id":"42",
+"nametree":"Tx of sync. due to cardiac tachyarrhyth.",
+"tocnametree":"Tx of syncope due to cardiac tachyarrhythmia",
+"htmlpage":"ENAS5530_24.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"26.0.0.0",
+"id":"43",
+"nametree":"Tx of sync. sec. to cardiac, pulm. & vessel dis.",
+"tocnametree":"Tx of syncope sec. to cardiac, pulm. & vessel dis.",
+"htmlpage":"ENAS5530_25.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"27.0.0.0",
+"id":"44",
+"nametree":"Tx of unexpl. syncope in pts. at risk of SCD",
+"tocnametree":"Tx of unexpl. syncope in pts. at risk of SCD",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"27.1.0.0",
+"id":"45",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5530_26.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"27.2.0.0",
+"id":"46",
+"nametree":"ICD with unexplained syncope and LVSD",
+"tocnametree":"ICD with unexplained syncope and LVSD",
+"htmlpage":"ENAS5530_26.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"27.3.0.0",
+"id":"47",
+"nametree":"Hypertrophic cardiomyopathy",
+"tocnametree":"Hypertrophic cardiomyopathy",
+"htmlpage":"ENAS5530_26.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"27.4.0.0",
+"id":"48",
+"nametree":"Arrhythmogenic RV cardiomyopathy",
+"tocnametree":"Arrhythmogenic RV cardiomyopathy",
+"htmlpage":"ENAS5530_26.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"27.5.0.0",
+"id":"49",
+"nametree":"Long QT syndrome",
+"tocnametree":"Long QT syndrome",
+"htmlpage":"ENAS5530_26.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"27.6.0.0",
+"id":"50",
+"nametree":"Brugada syndrome",
+"tocnametree":"Brugada syndrome",
+"htmlpage":"ENAS5530_26.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"28.0.0.0",
+"id":"51",
+"nametree":"Syncope in pts. with comorbidity & frailty",
+"tocnametree":"Syncope in pts. with comorbidity & frailty",
+"htmlpage":"ENAS5530_27.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"29.0.0.0",
+"id":"52",
+"nametree":"Psychogenic TLOC & its evaluation",
+"tocnametree":"Psychogenic TLOC & its evaluation",
+"htmlpage":"ENAS5530_28.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"30.0.0.0",
+"id":"53",
+"nametree":"Neurological causes & mimics of syncope",
+"tocnametree":"Neurological causes & mimics of syncope",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"30.1.0.0",
+"id":"54",
+"nametree":"Epilepsy and ictal asystole",
+"tocnametree":"Epilepsy and ictal asystole",
+"htmlpage":"ENAS5530_29.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"30.2.0.0",
+"id":"55",
+"nametree":"Cerebrovascular disorders",
+"tocnametree":"Cerebrovascular disorders",
+"htmlpage":"ENAS5530_29.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"30.3.0.0",
+"id":"56",
+"nametree":"Migraine",
+"tocnametree":"Migraine",
+"htmlpage":"ENAS5530_29.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"30.4.0.0",
+"id":"57",
+"nametree":"Cataplexy",
+"tocnametree":"Cataplexy",
+"htmlpage":"ENAS5530_29.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"30.5.0.0",
+"id":"58",
+"nametree":"Drop attacks",
+"tocnametree":"Drop attacks",
+"htmlpage":"ENAS5530_29.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"30.6.0.0",
+"id":"59",
+"nametree":"Neurological evaluation",
+"tocnametree":"Neurological evaluation",
+"htmlpage":"ENAS5530_29.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"30.7.0.0",
+"id":"60",
+"nametree":"Dx work-up of CV autonomic failure",
+"tocnametree":"Dx work-up of CV autonomic failure",
+"htmlpage":"ENAS5530_29.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"30.8.0.0",
+"id":"61",
+"nametree":"Neurological tests",
+"tocnametree":"Neurological tests",
+"htmlpage":"ENAS5530_29.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"31.0.0.0",
+"id":"62",
+"nametree":"Syncope (TLOC) management unit",
+"tocnametree":"Syncope (TLOC) management unit",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"31.1.0.0",
+"id":"63",
+"nametree":"Definition of a syncope unit",
+"tocnametree":"Definition of a syncope unit",
+"htmlpage":"ENAS5530_30.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"31.2.0.0",
+"id":"64",
+"nametree":"Definition of syncope specialist",
+"tocnametree":"Definition of syncope specialist",
+"htmlpage":"ENAS5530_30.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"31.3.0.0",
+"id":"65",
+"nametree":"Goal of a syncope unit",
+"tocnametree":"Goal of a syncope unit",
+"htmlpage":"ENAS5530_30.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"31.4.0.0",
+"id":"66",
+"nametree":"Key components of a syncope unit",
+"tocnametree":"Key components of a syncope unit",
+"htmlpage":"ENAS5530_30.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"31.5.0.0",
+"id":"67",
+"nametree":"Structure of the syncope unit",
+"tocnametree":"Structure of the syncope unit",
+"htmlpage":"ENAS5530_30.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"31.6.0.0",
+"id":"68",
+"nametree":"Test & assessments in a syncope unit",
+"tocnametree":"Test & assessments in a syncope unit",
+"htmlpage":"ENAS5530_30.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"31.7.0.0",
+"id":"69",
+"nametree":"The role of physician & staff in proced. & tests",
+"tocnametree":"The role of physician & staff in proced. & tests",
+"htmlpage":"ENAS5530_30.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"32.0.0.0",
+"id":"70",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS5530_31.0.0.0",
+"haspdf":false,
+"emailContent":false
 }
 ]

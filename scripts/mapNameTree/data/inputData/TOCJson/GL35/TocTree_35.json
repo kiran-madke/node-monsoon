@@ -2,289 +2,325 @@
 {
 "numtree":"1.0.0.0",
 "id":"1",
+"nametree":"Essential messages (Syncope)",
+"tocnametree":"Essential messages (Syncope)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.1.0.0",
+"id":"2",
 "nametree":"Authors and legal information",
 "tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5276_1.0.0.0",
+"htmlpage":"ENAS5375_2018112237",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"1.2.0.0",
+"id":"3",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS5375_2018112238",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.3.0.0",
+"id":"4",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS5375_2018112239",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"2.0.0.0",
-"id":"2",
-"nametree":"Diagnosis",
-"tocnametree":"Diagnosis",
-"htmlpage":"ENAS5276_2.0.0.0",
+"id":"5",
+"nametree":"Essential messages(CVD Preg)",
+"tocnametree":"Essential messages(CVD Preg)",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"2.1.0.0",
+"id":"6",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5375_2018112240",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.2.0.0",
+"id":"7",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS5375_2018112241",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.3.0.0",
+"id":"8",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS5375_2018112242",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"3.0.0.0",
-"id":"3",
-"nametree":"Staging",
-"tocnametree":"Staging",
+"id":"9",
+"nametree":"Essential messages (MR)",
+"tocnametree":"Essential messages (MR)",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"3.1.0.0",
-"id":"4",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5276_3.1.0.0",
+"id":"10",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5375_2018112243",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"3.2.0.0",
-"id":"5",
-"nametree":"TNMB classification of MF and SS",
-"tocnametree":"TNMB classification of MF and SS",
-"htmlpage":"ENAS5276_3.2.0.0",
+"id":"11",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS5375_2018112244",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"3.3.0.0",
-"id":"6",
-"nametree":"Revised clinical staging system for MF and SS",
-"tocnametree":"Revised clinical staging system for MF and SS",
-"htmlpage":"ENAS5276_3.3.0.0",
+"id":"12",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS5375_2018112245",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"4.0.0.0",
-"id":"7",
-"nametree":"Treatment",
-"tocnametree":"Treatment",
+"id":"13",
+"nametree":"Essential messages (HTN)",
+"tocnametree":"Essential messages (HTN)",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"4.1.0.0",
-"id":"8",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5276_4.1.0.0",
+"id":"14",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5375_2018112246",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"4.2.0.0",
-"id":"9",
-"nametree":"Mycosis fungoides (MF) and variants",
-"tocnametree":"Mycosis fungoides (MF) and variants",
-"htmlpage":"ENAS5276_4.2.0.0",
+"id":"15",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS5375_2018112247",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"4.3.0.0",
-"id":"10",
-"nametree":"Sézary syndrome (SS)",
-"tocnametree":"Sézary syndrome (SS)",
-"htmlpage":"ENAS5276_4.3.0.0",
+"id":"16",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS5375_2018112248",
 "haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.4.0.0",
-"id":"11",
-"nametree":"Primary cutaneous CD30-positive LPDs",
-"tocnametree":"Primary cutaneous CD30-positive LPDs",
-"htmlpage":"ENAS5276_4.4.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.5.0.0",
-"id":"12",
-"nametree":"SPTCL",
-"tocnametree":"SPTCL",
-"htmlpage":"ENAS5276_4.5.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.6.0.0",
-"id":"13",
-"nametree":"Extranodal NK/T cell lymphoma, nasal type",
-"tocnametree":"Extranodal NK/T cell lymphoma, nasal type",
-"htmlpage":"ENAS5276_4.6.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.7.0.0",
-"id":"14",
-"nametree":"Primary cutaneous PTCL-NOS",
-"tocnametree":"Primary cutaneous PTCL-NOS",
-"htmlpage":"ENAS5276_4.7.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.8.0.0",
-"id":"15",
-"nametree":"Cutaneous B cell lymphoma (CBCL)",
-"tocnametree":"Cutaneous B cell lymphoma (CBCL)",
-"htmlpage":"ENAS5276_4.8.0.0",
-"haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"5.0.0.0",
-"id":"16",
-"nametree":"Personalised medicine",
-"tocnametree":"Personalised medicine",
-"htmlpage":"ENAS5276_5.0.0.0",
+"id":"17",
+"nametree":"Essential messages (Acute PE)",
+"tocnametree":"Essential messages (Acute PE)",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"18",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5375_1.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"19",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS5375_1.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.3.0.0",
+"id":"20",
+"nametree":"Areas of uncertainty",
+"tocnametree":"Areas of uncertainty",
+"htmlpage":"ENAS5375_1.3.0.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"6.0.0.0",
-"id":"17",
-"nametree":"Follow-up",
-"tocnametree":"Follow-up",
-"htmlpage":"ENAS5276_6.0.0.0",
+"id":"21",
+"nametree":"Essential messages (AORTA)",
+"tocnametree":"Essential messages (AORTA)",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"22",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5375_2.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"23",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS5375_2.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.0.0",
+"id":"24",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS5375_2.3.0.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"7.0.0.0",
-"id":"18",
-"nametree":"Summary of recommendations",
-"tocnametree":"Summary of recommendations",
+"id":"25",
+"nametree":"Essential messages (HCM)",
+"tocnametree":"Essential messages (HCM)",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"7.1.0.0",
-"id":"19",
-"nametree":"Diagnosis",
-"tocnametree":"Diagnosis",
-"htmlpage":"ENAS5276_7.1.0.0",
+"id":"26",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5375_3.1.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"7.2.0.0",
-"id":"20",
-"nametree":"Staging",
-"tocnametree":"Staging",
-"htmlpage":"ENAS5276_7.2.0.0",
+"id":"27",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS5375_3.2.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"7.3.0.0",
-"id":"21",
-"nametree":"Treatment",
-"tocnametree":"Treatment",
+"id":"28",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS5375_3.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"29",
+"nametree":"Essential messages (Pacing)",
+"tocnametree":"Essential messages (Pacing)",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
 },
 {
-"numtree":"7.3.1.0",
-"id":"22",
-"nametree":"MF and variants: Stage I",
-"tocnametree":"MF and variants: Stage I",
-"htmlpage":"ENAS5276_7.3.1.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.2.0",
-"id":"23",
-"nametree":"MF and variants: Stage IIB",
-"tocnametree":"MF and variants: Stage IIB",
-"htmlpage":"ENAS5276_7.3.2.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.3.0",
-"id":"24",
-"nametree":"MF and variants: Stage IV",
-"tocnametree":"MF and variants: Stage IV",
-"htmlpage":"ENAS5276_7.3.3.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.4.0",
-"id":"25",
-"nametree":"SS",
-"tocnametree":"SS",
-"htmlpage":"ENAS5276_7.3.4.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.5.0",
-"id":"26",
-"nametree":"Primary cutaneous CD30-positive LPDs",
-"tocnametree":"Primary cutaneous CD30-positive LPDs",
-"htmlpage":"ENAS5276_7.3.5.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.6.0",
-"id":"27",
-"nametree":"SPTCL",
-"tocnametree":"SPTCL",
-"htmlpage":"ENAS5276_7.3.6.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.7.0",
-"id":"28",
-"nametree":"Extranodal NK/T cell lymphoma, nasal type",
-"tocnametree":"Extranodal NK/T cell lymphoma, nasal type",
-"htmlpage":"ENAS5276_7.3.7.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.8.0",
-"id":"29",
-"nametree":"PTCL-NOS",
-"tocnametree":"PTCL-NOS",
-"htmlpage":"ENAS5276_7.3.8.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.9.0",
+"numtree":"8.1.0.0",
 "id":"30",
-"nametree":"CBCL",
-"tocnametree":"CBCL",
-"htmlpage":"ENAS5276_7.3.9.0",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5375_5.1.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
-"numtree":"7.4.0.0",
+"numtree":"8.2.0.0",
 "id":"31",
-"nametree":"Follow-up",
-"tocnametree":"Follow-up",
-"htmlpage":"ENAS5276_7.4.0.0",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS5375_5.2.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
-"numtree":"8.0.0.0",
+"numtree":"8.3.0.0",
 "id":"32",
-"nametree":"Glossary",
-"tocnametree":"Glossary",
-"htmlpage":"ENAS5276_8.0.0.0",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS5375_5.3.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"33",
+"nametree":"Essential messages (DM)",
+"tocnametree":"Essential messages (DM)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.1.0.0",
+"id":"34",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5375_7.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.2.0.0",
+"id":"35",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS5375_7.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.3.0.0",
+"id":"36",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS5375_7.3.0.0",
+"haspdf":false,
+"emailContent":false
 }
 ]

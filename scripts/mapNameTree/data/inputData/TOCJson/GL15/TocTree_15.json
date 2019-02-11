@@ -4,33 +4,33 @@
 "id":"1",
 "nametree":"Authors and legal information",
 "tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5098_1.0.0.0",
+"htmlpage":"ENAS261_1.0.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"2.0.0.0",
 "id":"2",
-"nametree":"Diagnosis",
-"tocnametree":"Diagnosis",
-"htmlpage":"ENAS5098_2.0.0.0",
+"nametree":"Recommendations and LOE",
+"tocnametree":"Table of recommendations and levels of evidence",
+"htmlpage":"ENAS261_2.0.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"3.0.0.0",
 "id":"3",
-"nametree":"Autoimmune disorders asso. with thymoma",
-"tocnametree":"Autoimmune disorders asso. with thymoma",
-"htmlpage":"ENAS5098_3.0.0.0",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS261_3.0.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"4.0.0.0",
 "id":"4",
-"nametree":"Staging and risk assessment",
-"tocnametree":"Staging and risk assessment",
+"nametree":"Pre-operative cardiac risk assessment",
+"tocnametree":"Pre-operative cardiac risk assessment",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
@@ -38,197 +38,197 @@
 {
 "numtree":"4.1.0.0",
 "id":"5",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5098_4.1.0.0",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS261_4.1.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"4.2.0.0",
 "id":"6",
-"nametree":"Staging and survival rates",
-"tocnametree":"Staging and survival rates",
-"htmlpage":"ENAS5098_4.2.0.0",
+"nametree":"Step 1",
+"tocnametree":"Step 1",
+"htmlpage":"ENAS261_4.2.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"4.3.0.0",
 "id":"7",
-"nametree":"TNM staging",
-"tocnametree":"TNM staging",
-"htmlpage":"ENAS5098_4.3.0.0",
+"nametree":"Step 2",
+"tocnametree":"Step 2",
+"htmlpage":"ENAS261_4.3.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"4.4.0.0",
+"id":"8",
+"nametree":"Step 3",
+"tocnametree":"Step 3",
+"htmlpage":"ENAS261_4.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.5.0.0",
+"id":"9",
+"nametree":"Step 4",
+"tocnametree":"Step 4",
+"htmlpage":"ENAS261_4.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.6.0.0",
+"id":"10",
+"nametree":"Step 5",
+"tocnametree":"Step 5",
+"htmlpage":"ENAS261_4.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.7.0.0",
+"id":"11",
+"nametree":"Step 6",
+"tocnametree":"Step 6",
+"htmlpage":"ENAS261_4.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"4.8.0.0",
+"id":"12",
+"nametree":"Step 7",
+"tocnametree":"Step 7",
+"htmlpage":"ENAS261_4.8.0.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"5.0.0.0",
-"id":"8",
-"nametree":"Treatment",
-"tocnametree":"Treatment",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"5.1.0.0",
-"id":"9",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5098_2018032044",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"5.2.0.0",
-"id":"10",
-"nametree":"Treatment algorithms",
-"tocnametree":"Treatment algorithms",
-"htmlpage":"ENAS5098_5.1.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"5.3.0.0",
-"id":"11",
-"nametree":"Stage-matched therapeutic strategies",
-"tocnametree":"Stage-matched therapeutic strategies",
-"htmlpage":"ENAS5098_5.2.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"5.4.0.0",
-"id":"12",
-"nametree":"Resectable disease",
-"tocnametree":"Resectable disease",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"5.4.1.0",
 "id":"13",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5098_2017032440",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"5.4.2.0",
-"id":"14",
-"nametree":"Surgery",
-"tocnametree":"Surgery",
-"htmlpage":"ENAS5098_5.4.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"5.4.3.0",
-"id":"15",
-"nametree":"Postoperative radiotherapy",
-"tocnametree":"Postoperative radiotherapy",
-"htmlpage":"ENAS5098_5.5.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"5.4.4.0",
-"id":"16",
-"nametree":"Postoperative chemotherapy",
-"tocnametree":"Postoperative chemotherapy",
-"htmlpage":"ENAS5098_5.6.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"5.5.0.0",
-"id":"17",
-"nametree":"Advanced disease",
-"tocnametree":"Advanced disease",
-"htmlpage":"ENAS5098_5.7.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"5.6.0.0",
-"id":"18",
-"nametree":"Primary/induction chemotherapy",
-"tocnametree":"Primary/induction chemotherapy",
-"htmlpage":"null",
+"nametree":"Type of surgery",
+"tocnametree":"Type of surgery",
+"htmlpage":"ENAS261_5.0.0.0",
 "haspdf":false,
 "emailContent":false
-},
-{
-"numtree":"5.6.1.0",
-"id":"19",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5098_2017032439",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"5.6.2.0",
-"id":"20",
-"nametree":"Definitive radiotherapy",
-"tocnametree":"Definitive radiotherapy",
-"htmlpage":"ENAS5098_5.9.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"5.6.3.0",
-"id":"21",
-"nametree":"Definitive chemotherapy",
-"tocnametree":"Definitive chemotherapy",
-"htmlpage":"ENAS5098_5.10.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"5.7.0.0",
-"id":"22",
-"nametree":"Recurrences",
-"tocnametree":"Recurrences",
-"htmlpage":"ENAS5098_5.11.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"5.8.0.0",
-"id":"23",
-"nametree":"Chemotherapy regimens for advanced TETs",
-"tocnametree":"Chemotherapy regimens for advanced TETs",
-"htmlpage":"ENAS5098_5.12.0.0",
-"haspdf":false,
-"emailContent":true
 },
 {
 "numtree":"6.0.0.0",
-"id":"24",
-"nametree":"Personalised medicine",
-"tocnametree":"Personalised medicine",
-"htmlpage":"ENAS5098_6.0.0.0",
+"id":"14",
+"nametree":"Pre-operative evaluation",
+"tocnametree":"Pre-operative evaluation",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"15",
+"nametree":"Risk indices",
+"tocnametree":"Risk indices",
+"htmlpage":"ENAS261_6.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"16",
+"nametree":"Electrocardiography",
+"tocnametree":"Electrocardiography",
+"htmlpage":"ENAS261_6.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.0.0",
+"id":"17",
+"nametree":"Non-invasive assessment",
+"tocnametree":"Non-invasive assessment",
+"htmlpage":"ENAS261_6.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.4.0.0",
+"id":"18",
+"nametree":"Invasive coronary angiography",
+"tocnametree":"Invasive coronary angiography",
+"htmlpage":"ENAS261_6.4.0.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"7.0.0.0",
-"id":"25",
-"nametree":"Follow-up",
-"tocnametree":"Follow-up",
-"htmlpage":"ENAS5098_7.0.0.0",
+"id":"19",
+"nametree":"Risk reduction strategies",
+"tocnametree":"Risk reduction strategies",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"7.1.0.0",
+"id":"20",
+"nametree":"Beta-blockers",
+"tocnametree":"Beta-blockers",
+"htmlpage":"ENAS261_7.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.2.0.0",
+"id":"21",
+"nametree":"Statins",
+"tocnametree":"Statins",
+"htmlpage":"ENAS261_7.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.3.0.0",
+"id":"22",
+"nametree":"Angiotensin-converting enzyme inhibitors",
+"tocnametree":"Angiotensin-converting enzyme inhibitors",
+"htmlpage":"ENAS261_7.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.4.0.0",
+"id":"23",
+"nametree":"CCBs, alpha2 receptor agonists and diuretics",
+"tocnametree":"CCBs, alpha2 receptor agonists and diuretics",
+"htmlpage":"ENAS261_7.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.5.0.0",
+"id":"24",
+"nametree":"Antiplatelet agents and anticoagulants",
+"tocnametree":"Antiplatelet agents and anticoagulants",
+"htmlpage":"ENAS261_7.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.6.0.0",
+"id":"25",
+"nametree":"Revascularisation",
+"tocnametree":"Revascularisation",
+"htmlpage":"ENAS261_7.6.0.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"8.0.0.0",
 "id":"26",
-"nametree":"Summary of recommendations",
-"tocnametree":"Summary of recommendations",
+"nametree":"Specific diseases",
+"tocnametree":"Specific diseases",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
@@ -236,163 +236,163 @@
 {
 "numtree":"8.1.0.0",
 "id":"27",
-"nametree":"Diagnosis",
-"tocnametree":"Diagnosis",
-"htmlpage":"ENAS5098_8.1.0.0",
+"nametree":"Chronic heart failure (CHF)",
+"tocnametree":"Chronic heart failure (CHF)",
+"htmlpage":"ENAS261_8.1.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"8.2.0.0",
 "id":"28",
-"nametree":"Staging and risk assessment",
-"tocnametree":"Staging and risk assessment",
-"htmlpage":"ENAS5098_8.2.0.0",
+"nametree":"Arterial hypertension",
+"tocnametree":"Arterial hypertension",
+"htmlpage":"ENAS261_8.2.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"8.3.0.0",
 "id":"29",
-"nametree":"Treatment",
-"tocnametree":"Treatment",
-"htmlpage":"null",
+"nametree":"Valvular heart disease (VHD)",
+"tocnametree":"Valvular heart disease (VHD)",
+"htmlpage":"ENAS261_8.3.0.0",
 "haspdf":false,
 "emailContent":false
-},
-{
-"numtree":"8.3.1.0",
-"id":"30",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5098_2018032045",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"8.3.2.0",
-"id":"31",
-"nametree":"Resectable disease",
-"tocnametree":"Resectable disease",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"8.3.2.1",
-"id":"32",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5098_2017032442",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"8.3.2.2",
-"id":"33",
-"nametree":"Surgery",
-"tocnametree":"Surgery",
-"htmlpage":"ENAS5098_8.3.2.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"8.3.2.3",
-"id":"34",
-"nametree":"Postoperative radiotherapy",
-"tocnametree":"Postoperative radiotherapy",
-"htmlpage":"ENAS5098_8.3.3.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"8.3.2.4",
-"id":"35",
-"nametree":"Postoperative chemotherapy",
-"tocnametree":"Postoperative chemotherapy",
-"htmlpage":"ENAS5098_8.3.4.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"8.3.3.0",
-"id":"36",
-"nametree":"Advanced disease",
-"tocnametree":"Advanced disease",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"8.3.3.1",
-"id":"37",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5098_2017032443",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"8.3.3.2",
-"id":"38",
-"nametree":"Primary/induction chemotherapy",
-"tocnametree":"Primary/induction chemotherapy",
-"htmlpage":"ENAS5098_8.3.6.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"8.3.3.3",
-"id":"39",
-"nametree":"Definitive radiotherapy",
-"tocnametree":"Definitive radiotherapy",
-"htmlpage":"ENAS5098_8.3.7.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"8.3.3.4",
-"id":"40",
-"nametree":"Definitive chemotherapy",
-"tocnametree":"Definitive chemotherapy",
-"htmlpage":"ENAS5098_8.3.8.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"8.3.4.0",
-"id":"41",
-"nametree":"Recurrences",
-"tocnametree":"Recurrences",
-"htmlpage":"ENAS5098_8.3.9.0",
-"haspdf":false,
-"emailContent":true
 },
 {
 "numtree":"8.4.0.0",
-"id":"42",
-"nametree":"Personalised medicine",
-"tocnametree":"Personalised medicine",
-"htmlpage":"ENAS5098_8.4.0.0",
+"id":"30",
+"nametree":"Arrhythmias",
+"tocnametree":"Arrhythmias",
+"htmlpage":"ENAS261_8.4.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"8.5.0.0",
-"id":"43",
-"nametree":"Follow-up",
-"tocnametree":"Follow-up",
-"htmlpage":"ENAS5098_8.5.0.0",
+"id":"31",
+"nametree":"Renal disease",
+"tocnametree":"Renal disease",
+"htmlpage":"ENAS261_8.5.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"8.6.0.0",
+"id":"32",
+"nametree":"Cerebrovascular disease",
+"tocnametree":"Cerebrovascular disease",
+"htmlpage":"ENAS261_8.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.7.0.0",
+"id":"33",
+"nametree":"Peripheral artery disease",
+"tocnametree":"Peripheral artery disease",
+"htmlpage":"ENAS261_8.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.8.0.0",
+"id":"34",
+"nametree":"Pulmonary disease",
+"tocnametree":"Pulmonary disease",
+"htmlpage":"ENAS261_8.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.9.0.0",
+"id":"35",
+"nametree":"Congenital heart disease",
+"tocnametree":"Congenital heart disease",
+"htmlpage":"ENAS261_8.9.0.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"9.0.0.0",
-"id":"44",
-"nametree":"Glossary",
-"tocnametree":"Glossary",
-"htmlpage":"ENAS5098_9.0.0.0",
+"id":"36",
+"nametree":"Peri-operative cardiac monitoring",
+"tocnametree":"Peri-operative cardiac monitoring",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"9.1.0.0",
+"id":"37",
+"nametree":"Electrocardiography",
+"tocnametree":"Electrocardiography",
+"htmlpage":"ENAS261_9.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.2.0.0",
+"id":"38",
+"nametree":"Transoesophageal echocardiography",
+"tocnametree":"Transoesophageal echocardiography",
+"htmlpage":"ENAS261_9.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.3.0.0",
+"id":"39",
+"nametree":"Disturbed glucose metabolism",
+"tocnametree":"Disturbed glucose metabolism",
+"htmlpage":"ENAS261_9.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"40",
+"nametree":"Anaesthesia",
+"tocnametree":"Anaesthesia",
+"htmlpage":"ENAS261_10.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"41",
+"nametree":"Pre-op cardiac risk evaluation",
+"tocnametree":"Pre-op cardiac risk evaluation",
+"htmlpage":"ENAS261_11.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.0.0.0",
+"id":"42",
+"nametree":"Summary of pre-op cardiac risk evaluation",
+"tocnametree":"Summary of pre-op cardiac risk evaluation",
+"htmlpage":"ENAS261_12.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.0.0.0",
+"id":"43",
+"nametree":"References",
+"tocnametree":"References",
+"htmlpage":"ENAS261_13.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.0.0.0",
+"id":"44",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS261_14.0.0.0",
+"haspdf":false,
+"emailContent":false
 }
 ]

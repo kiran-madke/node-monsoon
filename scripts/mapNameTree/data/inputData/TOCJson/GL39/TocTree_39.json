@@ -2,388 +2,802 @@
 {
 "numtree":"1.0.0.0",
 "id":"1",
-"nametree":"Authors and legal information",
-"tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5280_1.0.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"2.0.0.0",
-"id":"2",
-"nametree":"Diagnosis and pathology",
-"tocnametree":"Diagnosis and pathology",
+"nametree":"Essential messages",
+"tocnametree":"Essential messages",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
 },
 {
-"numtree":"2.1.0.0",
+"numtree":"1.1.0.0",
+"id":"2",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5531_2018112287",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.2.0.0",
 "id":"3",
-"nametree":"Introduction",
-"tocnametree":"Introduction",
-"htmlpage":"ENAS5280_2.1.0.0",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS5531_2018112288",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
-"numtree":"2.2.0.0",
+"numtree":"1.3.0.0",
 "id":"4",
-"nametree":"Diagnostic work-up",
-"tocnametree":"Diagnostic work-up",
-"htmlpage":"ENAS5280_2.2.0.0",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS5531_2018112289",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
-"numtree":"2.3.0.0",
+"numtree":"2.0.0.0",
 "id":"5",
-"nametree":"Dx criteria for HCL and HCL-V",
-"tocnametree":"Dx criteria for HCL and HCL-V",
-"htmlpage":"ENAS5280_2.3.0.0",
+"nametree":"Authors and Publication",
+"tocnametree":"Authors and Publication",
+"htmlpage":"ENAS5531_1.0.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"3.0.0.0",
 "id":"6",
-"nametree":"Staging and risk stratification",
-"tocnametree":"Staging and risk stratification",
-"htmlpage":"ENAS5280_3.0.0.0",
+"nametree":"Preamble/Introduction",
+"tocnametree":"Preamble/Introduction",
+"htmlpage":"ENAS5531_2.0.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"4.0.0.0",
 "id":"7",
-"nametree":"Treatment",
-"tocnametree":"Treatment",
-"htmlpage":"null",
+"nametree":"What is new?",
+"tocnametree":"What is new?",
+"htmlpage":"ENAS5531_3.0.0.0",
 "haspdf":false,
 "emailContent":false
-},
-{
-"numtree":"4.1.0.0",
-"id":"8",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5280_4.1.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.0.0",
-"id":"9",
-"nametree":"First-line",
-"tocnametree":"First-line",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"4.2.1.0",
-"id":"10",
-"nametree":"Purine analogues",
-"tocnametree":"Purine analogues",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"4.2.1.1",
-"id":"11",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5280_2018040243",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.1.2",
-"id":"12",
-"nametree":"Cladribine",
-"tocnametree":"Cladribine",
-"htmlpage":"ENAS5280_4.2.2.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.1.3",
-"id":"13",
-"nametree":"Pentostatin",
-"tocnametree":"Pentostatin",
-"htmlpage":"ENAS5280_4.2.3.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.2.0",
-"id":"14",
-"nametree":"Interferon-α",
-"tocnametree":"Interferon-α",
-"htmlpage":"ENAS5280_4.2.4.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.3.0",
-"id":"15",
-"nametree":"Classical HCL: Tx of newly diagnosed",
-"tocnametree":"Classical HCL: Tx of newly diagnosed",
-"htmlpage":"ENAS5280_4.2.5.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.3.0.0",
-"id":"16",
-"nametree":"Response evaluation",
-"tocnametree":"Response evaluation",
-"htmlpage":"ENAS5280_4.3.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.4.0.0",
-"id":"17",
-"nametree":"Tx of replapse & refra. pts.",
-"tocnametree":"Tx of replapse & refra. pts.",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"4.4.1.0",
-"id":"18",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5280_4.4.1.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.4.2.0",
-"id":"19",
-"nametree":"Classical HCL: Tx of relapsed & refractory",
-"tocnametree":"Classical HCL: Tx of relapsed & refractory",
-"htmlpage":"ENAS5280_4.4.2.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.5.0.0",
-"id":"20",
-"nametree":"Splenectomy",
-"tocnametree":"Splenectomy",
-"htmlpage":"ENAS5280_4.5.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.6.0.0",
-"id":"21",
-"nametree":"AlloSCT",
-"tocnametree":"AlloSCT",
-"htmlpage":"ENAS5280_4.6.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.7.0.0",
-"id":"22",
-"nametree":"Treatment during pregnancy",
-"tocnametree":"Treatment during pregnancy",
-"htmlpage":"ENAS5280_4.7.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.8.0.0",
-"id":"23",
-"nametree":"Supportive treatment",
-"tocnametree":"Supportive treatment",
-"htmlpage":"ENAS5280_4.8.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.9.0.0",
-"id":"24",
-"nametree":"Treatment of HCL-V",
-"tocnametree":"Treatment of HCL-V",
-"htmlpage":"ENAS5280_4.9.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.10.0.0",
-"id":"25",
-"nametree":"Therapeutic algo. for HCL-V",
-"tocnametree":"Therapeutic algo. for HCL-V",
-"htmlpage":"ENAS5280_4.10.0.0",
-"haspdf":false,
-"emailContent":true
 },
 {
 "numtree":"5.0.0.0",
-"id":"26",
-"nametree":"Personalised medicine",
-"tocnametree":"Personalised medicine",
-"htmlpage":"ENAS5280_5.0.0.0",
+"id":"8",
+"nametree":"General considerations",
+"tocnametree":"General considerations",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"5.1.0.0",
+"id":"9",
+"nametree":"Epidemiology",
+"tocnametree":"Epidemiology",
+"htmlpage":"ENAS5531_4.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.0.0",
+"id":"10",
+"nametree":"Physio. adaptations to pregnancy",
+"tocnametree":"Physio. adaptations to pregnancy",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.1.0",
+"id":"11",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5531_4.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.2.0",
+"id":"12",
+"nametree":"WHO classification of maternal CV risk",
+"tocnametree":"WHO classification of maternal CV risk",
+"htmlpage":"ENAS5531_4.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.3.0",
+"id":"13",
+"nametree":"Predictors of maternal and neonatal events",
+"tocnametree":"Predictors of maternal and neonatal events",
+"htmlpage":"ENAS5531_4.2.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.4.0",
+"id":"14",
+"nametree":"Pregnancy heart team",
+"tocnametree":"Pregnancy heart team",
+"htmlpage":"ENAS5531_4.2.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.5.0",
+"id":"15",
+"nametree":"Diagnostics",
+"tocnametree":"Diagnostics",
+"htmlpage":"ENAS5531_4.2.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.6.0",
+"id":"16",
+"nametree":"Genetic counselling & prenatal diagnosis",
+"tocnametree":"Genetic counselling and prenatal diagnosis",
+"htmlpage":"ENAS5531_4.2.6.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.7.0",
+"id":"17",
+"nametree":"Interventions during pregnancy",
+"tocnametree":"Interventions during pregnancy",
+"htmlpage":"ENAS5531_4.2.7.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.8.0",
+"id":"18",
+"nametree":"Delivery",
+"tocnametree":"Delivery",
+"htmlpage":"ENAS5531_4.2.8.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.9.0",
+"id":"19",
+"nametree":"Infective endocarditis",
+"tocnametree":"Infective endocarditis",
+"htmlpage":"ENAS5531_4.2.9.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.10.0",
+"id":"20",
+"nametree":"Contraception & assisted reproduct. Tx",
+"tocnametree":"Contraception & assisted reproductive Tx",
+"htmlpage":"ENAS5531_4.2.10.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"5.2.11.0",
+"id":"21",
+"nametree":"General recommendations",
+"tocnametree":"General recommendations",
+"htmlpage":"ENAS5531_4.2.11.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"6.0.0.0",
-"id":"27",
-"nametree":"Follow-up and long-term implications",
-"tocnametree":"Follow-up and long-term implications",
-"htmlpage":"ENAS5280_6.0.0.0",
+"id":"22",
+"nametree":"Congenital heart disease & PH",
+"tocnametree":"Congenital heart disease & PH",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"6.1.0.0",
+"id":"23",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5531_5.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.2.0.0",
+"id":"24",
+"nametree":"Pulmonary hypertension",
+"tocnametree":"Pulmonary hypertension",
+"htmlpage":"ENAS5531_5.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.3.0.0",
+"id":"25",
+"nametree":"Eisenmenger syndrome",
+"tocnametree":"Eisenmenger syndrome",
+"htmlpage":"ENAS5531_5.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.4.0.0",
+"id":"26",
+"nametree":"Cyanotic heart disease without PH",
+"tocnametree":"Cyanotic heart disease without PH",
+"htmlpage":"ENAS5531_5.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.5.0.0",
+"id":"27",
+"nametree":"LV outflow tract obstruction",
+"tocnametree":"Left ventricular outflow tract obstruction",
+"htmlpage":"ENAS5531_5.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.6.0.0",
+"id":"28",
+"nametree":"Atrial septal defect",
+"tocnametree":"Atrial septal defect",
+"htmlpage":"ENAS5531_5.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.7.0.0",
+"id":"29",
+"nametree":"Ventricular septal defect",
+"tocnametree":"Ventricular septal defect",
+"htmlpage":"ENAS5531_5.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.8.0.0",
+"id":"30",
+"nametree":"Atrioventricular septal defect",
+"tocnametree":"Atrioventricular septal defect",
+"htmlpage":"ENAS5531_5.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.9.0.0",
+"id":"31",
+"nametree":"Coarctation of the aorta",
+"tocnametree":"Coarctation of the aorta",
+"htmlpage":"ENAS5531_5.9.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.10.0.0",
+"id":"32",
+"nametree":"Pulmonary valve & RVOT disease",
+"tocnametree":"Pulmonary valve & RVOT disease",
+"htmlpage":"ENAS5531_5.10.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.11.0.0",
+"id":"33",
+"nametree":"Tetralogy of Fallot",
+"tocnametree":"Tetralogy of Fallot",
+"htmlpage":"ENAS5531_5.11.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.12.0.0",
+"id":"34",
+"nametree":"Ebstein’s anomaly",
+"tocnametree":"Ebstein’s anomaly",
+"htmlpage":"ENAS5531_5.12.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.13.0.0",
+"id":"35",
+"nametree":"Transposition of the great arteries",
+"tocnametree":"Transposition of the great arteries",
+"htmlpage":"ENAS5531_5.13.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.14.0.0",
+"id":"36",
+"nametree":"Congenitally corrected TGA",
+"tocnametree":"Congenitally corrected TGA",
+"htmlpage":"ENAS5531_5.14.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.15.0.0",
+"id":"37",
+"nametree":"Fontan circulation",
+"tocnametree":"Fontan circulation",
+"htmlpage":"ENAS5531_5.15.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.16.0.0",
+"id":"38",
+"nametree":"Pregnancy & PAH",
+"tocnametree":"Pregnancy & PAH",
+"htmlpage":"ENAS5531_5.16.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.17.0.0",
+"id":"39",
+"nametree":"Congenital heart disease",
+"tocnametree":"Congenital heart disease",
+"htmlpage":"ENAS5531_5.17.0.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"7.0.0.0",
-"id":"28",
-"nametree":"Summary of recommendations",
-"tocnametree":"Summary of recommendations",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"7.1.0.0",
-"id":"29",
-"nametree":"Diagnosis and pathology",
-"tocnametree":"Diagnosis and pathology",
-"htmlpage":"ENAS5280_7.1.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.2.0.0",
-"id":"30",
-"nametree":"Staging and risk stratification",
-"tocnametree":"Staging and risk stratification",
-"htmlpage":"ENAS5280_7.2.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.0.0",
-"id":"31",
-"nametree":"Treatment",
-"tocnametree":"Treatment",
-"htmlpage":"null",
-"haspdf":false,
-"emailContent":false
-},
-{
-"numtree":"7.3.1.0",
-"id":"32",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5280_7.3.1.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.2.0",
-"id":"33",
-"nametree":"First-line",
-"tocnametree":"First-line",
-"htmlpage":"ENAS5280_7.3.2.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.3.0",
-"id":"34",
-"nametree":"Response evaluation",
-"tocnametree":"Response evaluation",
-"htmlpage":"ENAS5280_7.3.3.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.4.0",
-"id":"35",
-"nametree":"Tx of relapsed & refra. pts.",
-"tocnametree":"Tx of relapsed & refra. pts.",
-"htmlpage":"ENAS5280_7.3.4.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.5.0",
-"id":"36",
-"nametree":"Splenectomy",
-"tocnametree":"Splenectomy",
-"htmlpage":"ENAS5280_7.3.5.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.6.0",
-"id":"37",
-"nametree":"AlloSCT",
-"tocnametree":"AlloSCT",
-"htmlpage":"ENAS5280_7.3.6.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.7.0",
-"id":"38",
-"nametree":"Tx during pregnancy",
-"tocnametree":"Tx during pregnancy",
-"htmlpage":"ENAS5280_7.3.7.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.8.0",
-"id":"39",
-"nametree":"Supportive treatment",
-"tocnametree":"Supportive treatment",
-"htmlpage":"ENAS5280_7.3.8.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.3.9.0",
 "id":"40",
-"nametree":"Treatment of HCL-V",
-"tocnametree":"Treatment of HCL-V",
-"htmlpage":"ENAS5280_7.3.9.0",
+"nametree":"Aortic diseases",
+"tocnametree":"Aortic diseases",
+"htmlpage":"ENAS5531_6.0.0.0",
 "haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.4.0.0",
-"id":"41",
-"nametree":"Personalised medicine",
-"tocnametree":"Personalised medicine",
-"htmlpage":"ENAS5280_7.4.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"7.5.0.0",
-"id":"42",
-"nametree":"Follow-up and long term implications",
-"tocnametree":"Follow-up and long term implications",
-"htmlpage":"ENAS5280_7.5.0.0",
-"haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"8.0.0.0",
-"id":"43",
-"nametree":"Glossary",
-"tocnametree":"Glossary",
-"htmlpage":"ENAS5280_8.0.0.0",
+"id":"41",
+"nametree":"Valvular heart disease",
+"tocnametree":"Valvular heart disease",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"8.1.0.0",
+"id":"42",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5531_7.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.2.0.0",
+"id":"43",
+"nametree":"Mitral stenosis",
+"tocnametree":"Mitral stenosis",
+"htmlpage":"ENAS5531_7.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.3.0.0",
+"id":"44",
+"nametree":"Valvular aortic stenosis",
+"tocnametree":"Valvular aortic stenosis",
+"htmlpage":"ENAS5531_7.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.4.0.0",
+"id":"45",
+"nametree":"Mitral and aortic regurgitation",
+"tocnametree":"Mitral and aortic regurgitation",
+"htmlpage":"ENAS5531_7.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.5.0.0",
+"id":"46",
+"nametree":"AF in native heart valve disease",
+"tocnametree":"AF in native heart valve disease",
+"htmlpage":"ENAS5531_7.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.6.0.0",
+"id":"47",
+"nametree":"Prosthetic valves",
+"tocnametree":"Prosthetic valves",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.6.1.0",
+"id":"48",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5531_7.6.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.6.2.0",
+"id":"49",
+"nametree":"Anticoag. in mech. valves: High dose VKA",
+"tocnametree":"Anticoag. in mechanical valves: High dose VKA",
+"htmlpage":"ENAS5531_7.6.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.6.3.0",
+"id":"50",
+"nametree":"Anticoag. in mech. valves: Low dose VKA",
+"tocnametree":"Anticoag. in mechanical valves: Low dose VKA",
+"htmlpage":"ENAS5531_7.6.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.6.4.0",
+"id":"51",
+"nametree":"Target INR for mech. prostheses",
+"tocnametree":"Target INR for mechanical prostheses",
+"htmlpage":"ENAS5531_7.6.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.7.0.0",
+"id":"52",
+"nametree":"Management of native VHD",
+"tocnametree":"Management of native valvular heart disease",
+"htmlpage":"ENAS5531_7.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.8.0.0",
+"id":"53",
+"nametree":"Mgmt. of prosthetic heart valves",
+"tocnametree":"Management of prosthetic heart valves",
+"htmlpage":"ENAS5531_7.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"54",
+"nametree":"Coronary artery disease",
+"tocnametree":"Coronary artery disease",
+"htmlpage":"ENAS5531_8.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"55",
+"nametree":"Cardiomyopathies and heart failure",
+"tocnametree":"Cardiomyopathies and heart failure",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.1.0.0",
+"id":"56",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5531_9.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.2.0.0",
+"id":"57",
+"nametree":"Peripartum cardiomyopathy",
+"tocnametree":"Peripartum cardiomyopathy",
+"htmlpage":"ENAS5531_9.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.3.0.0",
+"id":"58",
+"nametree":"DCM & CHF",
+"tocnametree":"Dilated cardiomyopathy & CHF",
+"htmlpage":"ENAS5531_9.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.4.0.0",
+"id":"59",
+"nametree":"Management of PPCM and DCM",
+"tocnametree":"Management of PPCM and DCM",
+"htmlpage":"ENAS5531_9.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.5.0.0",
+"id":"60",
+"nametree":"Delivery and breastfeeding",
+"tocnametree":"Delivery and breastfeeding",
+"htmlpage":"ENAS5531_9.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.6.0.0",
+"id":"61",
+"nametree":"Hypertrophic cardiomyopathy",
+"tocnametree":"Hypertrophic cardiomyopathy",
+"htmlpage":"ENAS5531_9.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.7.0.0",
+"id":"62",
+"nametree":"Delivery",
+"tocnametree":"Delivery",
+"htmlpage":"ENAS5531_9.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.8.0.0",
+"id":"63",
+"nametree":"Mgmt. of cardiomyopathies & HF",
+"tocnametree":"Management of cardiomyopathies & HF",
+"htmlpage":"ENAS5531_9.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"64",
+"nametree":"Arrhythmias",
+"tocnametree":"Arrhythmias",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.1.0.0",
+"id":"65",
+"nametree":"Atrial fibrillation, atrial flutter & PSVT",
+"tocnametree":"Atrial fibrillation, atrial flutter & PSVT",
+"htmlpage":"ENAS5531_10.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.2.0.0",
+"id":"66",
+"nametree":"Ventricular tachycardia",
+"tocnametree":"Ventricular tachycardia",
+"htmlpage":"ENAS5531_10.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.3.0.0",
+"id":"67",
+"nametree":"Bradyarrhythmias",
+"tocnametree":"Bradyarrhythmias",
+"htmlpage":"ENAS5531_10.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.4.0.0",
+"id":"68",
+"nametree":"Interventions",
+"tocnametree":"Interventions",
+"htmlpage":"ENAS5531_10.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.5.0.0",
+"id":"69",
+"nametree":"Surveill. at delivery with arrhythmia",
+"tocnametree":"Surveillance levels at delivery with arrhythm.",
+"htmlpage":"ENAS5531_10.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.6.0.0",
+"id":"70",
+"nametree":"Management of arrhythmias",
+"tocnametree":"Management of arrhythmias",
+"htmlpage":"ENAS5531_10.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.0.0.0",
+"id":"71",
+"nametree":"Hypertensive disorders",
+"tocnametree":"Hypertensive disorders",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.1.0.0",
+"id":"72",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5531_11.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.2.0.0",
+"id":"73",
+"nametree":"Diagnosis and risk assessment",
+"tocnametree":"Diagnosis and risk assessment",
+"htmlpage":"ENAS5531_11.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.3.0.0",
+"id":"74",
+"nametree":"Def. & classi. of HTN in pregnancy",
+"tocnametree":"Definition & classi. of HTN in pregnancy",
+"htmlpage":"ENAS5531_11.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.4.0.0",
+"id":"75",
+"nametree":"Prevention of HTN & pre-eclampsia",
+"tocnametree":"Prevention of HTN & pre-eclampsia",
+"htmlpage":"ENAS5531_11.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.5.0.0",
+"id":"76",
+"nametree":"Management of HTN in pregnancy",
+"tocnametree":"Management of HTN in pregnancy",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.5.1.0",
+"id":"77",
+"nametree":"Overview",
+"tocnametree":"Overview",
+"htmlpage":"ENAS5531_11.5.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.5.2.0",
+"id":"78",
+"nametree":"Non-pharmacological management",
+"tocnametree":"Non-pharmacological management",
+"htmlpage":"ENAS5531_11.5.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.5.3.0",
+"id":"79",
+"nametree":"Pharmac. mgmt. of HTN in pregnancy",
+"tocnametree":"Pharmacological mgmt. of HTN in pregnancy",
+"htmlpage":"ENAS5531_11.5.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.6.0.0",
+"id":"80",
+"nametree":"Delivery, breastfeed. & prognosis after preg.",
+"tocnametree":"Delivery, breastfeeding & prognosis after preg.",
+"htmlpage":"ENAS5531_11.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.7.0.0",
+"id":"81",
+"nametree":"Management of hypertension",
+"tocnametree":"Management of hypertension",
+"htmlpage":"ENAS5531_11.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.0.0.0",
+"id":"82",
+"nametree":"VTE during pregnancy & the puerperium",
+"tocnametree":"VTE during pregnancy & the puerperium",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.1.0.0",
+"id":"83",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS5531_12.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.2.0.0",
+"id":"84",
+"nametree":"Risk strat. for pregnancy-related VTE",
+"tocnametree":"Risk stratification for pregnancy-related VTE",
+"htmlpage":"ENAS5531_12.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.3.0.0",
+"id":"85",
+"nametree":"Prevention of venous thromboembolism",
+"tocnametree":"Prevention of venous thromboembolism",
+"htmlpage":"ENAS5531_12.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.4.0.0",
+"id":"86",
+"nametree":"Management of acute VTE",
+"tocnametree":"Management of acute VTE",
+"htmlpage":"ENAS5531_12.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.5.0.0",
+"id":"87",
+"nametree":"Prevention and treatment of VTE",
+"tocnametree":"Prevention and treatment of VTE",
+"htmlpage":"ENAS5531_12.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.0.0.0",
+"id":"88",
+"nametree":"Drugs during pregnancy & breastfeed.",
+"tocnametree":"Drugs during pregnancy and breastfeeding",
+"htmlpage":"ENAS5531_13.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.0.0.0",
+"id":"89",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS5531_14.0.0.0",
+"haspdf":false,
+"emailContent":false
 }
 ]

@@ -1,372 +1,622 @@
 ﻿[
-  {
-    "old_id": "1",
-    "old_nametree": "Authors and legal information",
-    "old_numtree": "1.0.0.0",
-    "old_htmlpage": "ENAS5059_1.0.0.0",
-    "new_id": "1",
-    "new_nametree": "Authors and legal information",
-    "new_numtree": "1.0.0.0",
-    "new_htmlpage": "ENAS5059_1.0.0.0"
-  },
-  {
-    "old_id": "2",
-    "old_nametree": "Diagnosis",
-    "old_numtree": "2.0.0.0",
-    "old_htmlpage": "ENAS5059_2.0.0.0",
-    "new_id": "2",
-    "new_nametree": "Diagnosis",
-    "new_numtree": "2.0.0.0",
-    "new_htmlpage": "ENAS5059_2.0.0.0"
-  },
-  {
-    "old_id": "3",
-    "old_nametree": "Staging and risk assessment",
-    "old_numtree": "3.0.0.0",
-    "old_htmlpage": "null",
-    "new_id": "3",
-    "new_nametree": "Staging and risk assessment",
-    "new_numtree": "3.0.0.0",
-    "new_htmlpage": "null"
-  },
-  {
-    "old_id": "4",
-    "old_nametree": "Overview",
-    "old_numtree": "3.1.0.0",
-    "old_htmlpage": "ENAS5059_3.1.0.0",
-    "new_id": "4",
-    "new_nametree": "Overview",
-    "new_numtree": "3.1.0.0",
-    "new_htmlpage": "ENAS5059_3.1.0.0"
-  },
-  {
-    "old_id": "5",
-    "old_nametree": "TNM staging",
-    "old_numtree": "3.2.0.0",
-    "old_htmlpage": "ENAS5059_3.2.0.0",
-    "new_id": "5",
-    "new_nametree": "TNM staging",
-    "new_numtree": "3.2.0.0",
-    "new_htmlpage": "ENAS5059_3.2.0.0"
-  },
-  {
-    "old_id": "6",
-    "old_nametree": "Stage grouping",
-    "old_numtree": "3.3.0.0",
-    "old_htmlpage": "ENAS5059_3.3.0.0",
-    "new_id": "6",
-    "new_nametree": "Stage grouping",
-    "new_numtree": "3.3.0.0",
-    "new_htmlpage": "ENAS5059_3.3.0.0"
-  },
-  {
-    "old_id": "7",
-    "old_nametree": "Haggitt’s subclass. of polypoid Ca",
-    "old_numtree": "3.4.0.0",
-    "old_htmlpage": "ENAS5059_3.4.0.0",
-    "new_id": "7",
-    "new_nametree": "Haggitt’s subclass. of polypoid Ca",
-    "new_numtree": "3.4.0.0",
-    "new_htmlpage": "ENAS5059_3.4.0.0"
-  },
-  {
-    "old_id": "8",
-    "old_nametree": "Subclassification of T1 Ca",
-    "old_numtree": "3.5.0.0",
-    "old_htmlpage": "ENAS5059_3.5.0.0",
-    "new_id": "8",
-    "new_nametree": "Subclassification of T1 Ca",
-    "new_numtree": "3.5.0.0",
-    "new_htmlpage": "ENAS5059_3.5.0.0"
-  },
-  {
-    "old_id": "9",
-    "old_nametree": "Treatment",
-    "old_numtree": "4.0.0.0",
-    "old_htmlpage": "null",
-    "new_id": "9",
-    "new_nametree": "Treatment",
-    "new_numtree": "4.0.0.0",
-    "new_htmlpage": "null"
-  },
-  {
-    "old_id": "10",
-    "old_nametree": "Management of local/locoregional disease",
-    "old_numtree": "4.1.0.0",
-    "old_htmlpage": "null",
-    "new_id": "10",
-    "new_nametree": "Management of local/locoregional disease",
-    "new_numtree": "4.1.0.0",
-    "new_htmlpage": "null"
-  },
-  {
-    "old_id": "11",
-    "old_nametree": "Overall strategy",
-    "old_numtree": "4.1.1.0",
-    "old_htmlpage": "ENAS5059_4.1.1.0",
-    "new_id": "11",
-    "new_nametree": "Overall strategy",
-    "new_numtree": "4.1.1.0",
-    "new_htmlpage": "ENAS5059_4.1.1.0"
-  },
-  {
-    "old_id": "12",
-    "old_nametree": "Choice of treatment",
-    "old_numtree": "4.1.2.0",
-    "old_htmlpage": "ENAS5059_4.1.2.0",
-    "new_id": "12",
-    "new_nametree": "Choice of treatment",
-    "new_numtree": "4.1.2.0",
-    "new_htmlpage": "ENAS5059_4.1.2.0"
-  },
-  {
-    "old_id": "13",
-    "old_nametree": "Risk-adapted treatment",
-    "old_numtree": "4.1.3.0",
-    "old_htmlpage": "ENAS5059_4.1.3.0",
-    "new_id": "13",
-    "new_nametree": "Risk-adapted treatment",
-    "new_numtree": "4.1.3.0",
-    "new_htmlpage": "ENAS5059_4.1.3.0"
-  },
-  {
-    "old_id": "14",
-    "old_nametree": "Total mesorectal excision (TME)",
-    "old_numtree": "4.1.4.0",
-    "old_htmlpage": "ENAS5059_4.1.4.0",
-    "new_id": "14",
-    "new_nametree": "Total mesorectal excision (TME)",
-    "new_numtree": "4.1.4.0",
-    "new_htmlpage": "ENAS5059_4.1.4.0"
-  },
-  {
-    "old_id": "15",
-    "old_nametree": "Organ preservation",
-    "old_numtree": "4.1.5.0",
-    "old_htmlpage": "ENAS5059_4.1.5.0",
-    "new_id": "15",
-    "new_nametree": "Organ preservation",
-    "new_numtree": "4.1.5.0",
-    "new_htmlpage": "ENAS5059_4.1.5.0"
-  },
-  {
-    "old_id": "16",
-    "old_nametree": "Evaluation of response",
-    "old_numtree": "4.1.6.0",
-    "old_htmlpage": "ENAS5059_4.1.6.0",
-    "new_id": "16",
-    "new_nametree": "Evaluation of response",
-    "new_numtree": "4.1.6.0",
-    "new_htmlpage": "ENAS5059_4.1.6.0"
-  },
-  {
-    "old_id": "17",
-    "old_nametree": "Post-operative therapy",
-    "old_numtree": "4.1.7.0",
-    "old_htmlpage": "ENAS5059_4.1.7.0",
-    "new_id": "17",
-    "new_nametree": "Post-operative therapy",
-    "new_numtree": "4.1.7.0",
-    "new_htmlpage": "ENAS5059_4.1.7.0"
-  },
-  {
-    "old_id": "18",
-    "old_nametree": "Radiation therapy doses and volumes",
-    "old_numtree": "4.1.8.0",
-    "old_htmlpage": "ENAS5059_4.1.8.0",
-    "new_id": "18",
-    "new_nametree": "Radiation therapy doses and volumes",
-    "new_numtree": "4.1.8.0",
-    "new_htmlpage": "ENAS5059_4.1.8.0"
-  },
-  {
-    "old_id": "19",
-    "old_nametree": "Management of local recurrence",
-    "old_numtree": "4.2.0.0",
-    "old_htmlpage": "ENAS5059_4.2.0.0",
-    "new_id": "19",
-    "new_nametree": "Management of local recurrence",
-    "new_numtree": "4.2.0.0",
-    "new_htmlpage": "ENAS5059_4.2.0.0"
-  },
-  {
-    "old_id": "20",
-    "old_nametree": "Management of metastatic disease",
-    "old_numtree": "4.3.0.0",
-    "old_htmlpage": "ENAS5059_4.3.0.0",
-    "new_id": "20",
-    "new_nametree": "Management of metastatic disease",
-    "new_numtree": "4.3.0.0",
-    "new_htmlpage": "ENAS5059_4.3.0.0"
-  },
-  {
-    "old_id": "21",
-    "old_nametree": "Personalised medicine",
-    "old_numtree": "5.0.0.0",
-    "old_htmlpage": "ENAS5059_5.0.0.0",
-    "new_id": "21",
-    "new_nametree": "Personalised medicine",
-    "new_numtree": "5.0.0.0",
-    "new_htmlpage": "ENAS5059_5.0.0.0"
-  },
-  {
-    "old_id": "22",
-    "old_nametree": "Follow-up",
-    "old_numtree": "6.0.0.0",
-    "old_htmlpage": "ENAS5059_6.0.0.0",
-    "new_id": "22",
-    "new_nametree": "Follow-up",
-    "new_numtree": "6.0.0.0",
-    "new_htmlpage": "ENAS5059_6.0.0.0"
-  },
-  {
-    "old_id": "23",
-    "old_nametree": "Summary of recommendations",
-    "old_numtree": "7.0.0.0",
-    "old_htmlpage": "null",
-    "new_id": "23",
-    "new_nametree": "Summary of recommendations",
-    "new_numtree": "7.0.0.0",
-    "new_htmlpage": "null"
-  },
-  {
-    "old_id": "24",
-    "old_nametree": "Diagnosis",
-    "old_numtree": "7.1.0.0",
-    "old_htmlpage": "ENAS5059_7.1.0.0",
-    "new_id": "24",
-    "new_nametree": "Diagnosis",
-    "new_numtree": "7.1.0.0",
-    "new_htmlpage": "ENAS5059_7.1.0.0"
-  },
-  {
-    "old_id": "25",
-    "old_nametree": "Staging and risk assessment",
-    "old_numtree": "7.2.0.0",
-    "old_htmlpage": "ENAS5059_7.2.0.0",
-    "new_id": "25",
-    "new_nametree": "Staging and risk assessment",
-    "new_numtree": "7.2.0.0",
-    "new_htmlpage": "ENAS5059_7.2.0.0"
-  },
-  {
-    "old_id": "26",
-    "old_nametree": "Treatment",
-    "old_numtree": "7.3.0.0",
-    "old_htmlpage": "null",
-    "new_id": "26",
-    "new_nametree": "Treatment",
-    "new_numtree": "7.3.0.0",
-    "new_htmlpage": "null"
-  },
-  {
-    "old_id": "27",
-    "old_nametree": "Overall strategy",
-    "old_numtree": "7.3.1.0",
-    "old_htmlpage": "ENAS5059_7.3.1.0",
-    "new_id": "27",
-    "new_nametree": "Overall strategy",
-    "new_numtree": "7.3.1.0",
-    "new_htmlpage": "ENAS5059_7.3.1.0"
-  },
-  {
-    "old_id": "28",
-    "old_nametree": "Risk-adapted treatment",
-    "old_numtree": "7.3.2.0",
-    "old_htmlpage": "ENAS5059_7.3.2.0",
-    "new_id": "28",
-    "new_nametree": "Risk-adapted treatment",
-    "new_numtree": "7.3.2.0",
-    "new_htmlpage": "ENAS5059_7.3.2.0"
-  },
-  {
-    "old_id": "29",
-    "old_nametree": "Organ preservation",
-    "old_numtree": "7.3.3.0",
-    "old_htmlpage": "ENAS5059_7.3.3.0",
-    "new_id": "29",
-    "new_nametree": "Organ preservation",
-    "new_numtree": "7.3.3.0",
-    "new_htmlpage": "ENAS5059_7.3.3.0"
-  },
-  {
-    "old_id": "30",
-    "old_nametree": "Evaluation of response",
-    "old_numtree": "7.3.4.0",
-    "old_htmlpage": "ENAS5059_7.3.4.0",
-    "new_id": "30",
-    "new_nametree": "Evaluation of response",
-    "new_numtree": "7.3.4.0",
-    "new_htmlpage": "ENAS5059_7.3.4.0"
-  },
-  {
-    "old_id": "31",
-    "old_nametree": "Post-operative therapy",
-    "old_numtree": "7.3.5.0",
-    "old_htmlpage": "ENAS5059_7.3.5.0",
-    "new_id": "31",
-    "new_nametree": "Post-operative therapy",
-    "new_numtree": "7.3.5.0",
-    "new_htmlpage": "ENAS5059_7.3.5.0"
-  },
-  {
-    "old_id": "32",
-    "old_nametree": "Radiation doses and volumes",
-    "old_numtree": "7.3.6.0",
-    "old_htmlpage": "ENAS5059_7.3.6.0",
-    "new_id": "32",
-    "new_nametree": "Radiation doses and volumes",
-    "new_numtree": "7.3.6.0",
-    "new_htmlpage": "ENAS5059_7.3.6.0"
-  },
-  {
-    "old_id": "33",
-    "old_nametree": "Management of local recurrence",
-    "old_numtree": "7.3.7.0",
-    "old_htmlpage": "ENAS5059_7.3.7.0",
-    "new_id": "33",
-    "new_nametree": "Management of local recurrence",
-    "new_numtree": "7.3.7.0",
-    "new_htmlpage": "ENAS5059_7.3.7.0"
-  },
-  {
-    "old_id": "34",
-    "old_nametree": "Management of metastatic disease",
-    "old_numtree": "7.3.8.0",
-    "old_htmlpage": "ENAS5059_7.3.8.0",
-    "new_id": "34",
-    "new_nametree": "Management of metastatic disease",
-    "new_numtree": "7.3.8.0",
-    "new_htmlpage": "ENAS5059_7.3.8.0"
-  },
-  {
-    "old_id": "35",
-    "old_nametree": "Personalised medicine",
-    "old_numtree": "7.4.0.0",
-    "old_htmlpage": "ENAS5059_7.3.9.0",
-    "new_id": "35",
-    "new_nametree": "Personalised medicine",
-    "new_numtree": "7.4.0.0",
-    "new_htmlpage": "ENAS5059_7.3.9.0"
-  },
-  {
-    "old_id": "36",
-    "old_nametree": "Follow-up",
-    "old_numtree": "7.5.0.0",
-    "old_htmlpage": "ENAS5059_7.3.10.0",
-    "new_id": "36",
-    "new_nametree": "Follow-up",
-    "new_numtree": "7.5.0.0",
-    "new_htmlpage": "ENAS5059_7.3.10.0"
-  },
-  {
-    "old_id": "37",
-    "old_nametree": "Glossary",
-    "old_numtree": "8.0.0.0",
-    "old_htmlpage": "ENAS5059_8.0.0.0",
-    "new_id": "37",
-    "new_nametree": "Glossary",
-    "new_numtree": "8.0.0.0",
-    "new_htmlpage": "ENAS5059_8.0.0.0"
-  }
+{
+"old_id":"1",
+"old_nametree":"Essential messages",
+"old_numtree":"1.0.0.0",
+"old_htmlpage":"null",
+"new_id":"1",
+"new_nametree":"Essential messages",
+"new_numtree":"1.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"2",
+"old_nametree":"Authors and legal information",
+"old_numtree":"1.1.0.0",
+"old_htmlpage":"ENAS257_1.1.0.0",
+"new_id":"2",
+"new_nametree":"Authors and legal information",
+"new_numtree":"1.1.0.0",
+"new_htmlpage":"ENAS257_1.1.0.0"
+},
+{
+"old_id":"3",
+"old_nametree":"Take home messages",
+"old_numtree":"1.2.0.0",
+"old_htmlpage":"ENAS257_1.2.0.0",
+"new_id":"3",
+"new_nametree":"Take home messages",
+"new_numtree":"1.2.0.0",
+"new_htmlpage":"ENAS257_1.2.0.0"
+},
+{
+"old_id":"4",
+"old_nametree":"Major gaps in evidence",
+"old_numtree":"1.3.0.0",
+"old_htmlpage":"ENAS257_1.3.0.0",
+"new_id":"4",
+"new_nametree":"Major gaps in evidence",
+"new_numtree":"1.3.0.0",
+"new_htmlpage":"ENAS257_1.3.0.0"
+},
+{
+"old_id":"5",
+"old_nametree":"Summary cards",
+"old_numtree":"2.0.0.0",
+"old_htmlpage":"null",
+"new_id":"5",
+"new_nametree":"Summary cards",
+"new_numtree":"2.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"6",
+"old_nametree":"Overview",
+"old_numtree":"2.1.0.0",
+"old_htmlpage":"ENAS257_54",
+"new_id":"6",
+"new_nametree":"Overview",
+"new_numtree":"2.1.0.0",
+"new_htmlpage":"ENAS257_54"
+},
+{
+"old_id":"7",
+"old_nametree":"Identify. pat. W DM & at risk for dev. DM",
+"old_numtree":"2.2.0.0",
+"old_htmlpage":"ENAS257_55",
+"new_id":"7",
+"new_nametree":"Identify. pat. W DM & at risk for dev. DM",
+"new_numtree":"2.2.0.0",
+"new_htmlpage":"ENAS257_55"
+},
+{
+"old_id":"8",
+"old_nametree":"CV risk assess. in pat. with dysglycaemia",
+"old_numtree":"2.3.0.0",
+"old_htmlpage":"ENAS257_56",
+"new_id":"8",
+"new_nametree":"CV risk assess. in pat. with dysglycaemia",
+"new_numtree":"2.3.0.0",
+"new_htmlpage":"ENAS257_56"
+},
+{
+"old_id":"9",
+"old_nametree":"Recs. on lstyle modif. in diabetes",
+"old_numtree":"2.4.0.0",
+"old_htmlpage":"ENAS257_57",
+"new_id":"9",
+"new_nametree":"Recs. on lstyle modif. in diabetes",
+"new_numtree":"2.4.0.0",
+"new_htmlpage":"ENAS257_57"
+},
+{
+"old_id":"10",
+"old_nametree":"Prevention of diabetes in patients with IGT",
+"old_numtree":"2.5.0.0",
+"old_htmlpage":"ENAS257_58",
+"new_id":"10",
+"new_nametree":"Prevention of diabetes in patients with IGT",
+"new_numtree":"2.5.0.0",
+"new_htmlpage":"ENAS257_58"
+},
+{
+"old_id":"11",
+"old_nametree":"Recommendations for patient with DM & CVD",
+"old_numtree":"2.6.0.0",
+"old_htmlpage":"ENAS257_59",
+"new_id":"11",
+"new_nametree":"Recommendations for patient with DM & CVD",
+"new_numtree":"2.6.0.0",
+"new_htmlpage":"ENAS257_59"
+},
+{
+"old_id":"12",
+"old_nametree":"Glucose and other risk factor control",
+"old_numtree":"2.7.0.0",
+"old_htmlpage":"ENAS257_60",
+"new_id":"12",
+"new_nametree":"Glucose and other risk factor control",
+"new_numtree":"2.7.0.0",
+"new_htmlpage":"ENAS257_60"
+},
+{
+"old_id":"13",
+"old_nametree":"Microvascular complications",
+"old_numtree":"2.8.0.0",
+"old_htmlpage":"ENAS257_61",
+"new_id":"13",
+"new_nametree":"Microvascular complications",
+"new_numtree":"2.8.0.0",
+"new_htmlpage":"ENAS257_61"
+},
+{
+"old_id":"14",
+"old_nametree":"Patient-centred care in DM & CVD",
+"old_numtree":"2.9.0.0",
+"old_htmlpage":"ENAS257_62",
+"new_id":"14",
+"new_nametree":"Patient-centred care in DM & CVD",
+"new_numtree":"2.9.0.0",
+"new_htmlpage":"ENAS257_62"
+},
+{
+"old_id":"15",
+"old_nametree":"Authors and legal information",
+"old_numtree":"3.0.0.0",
+"old_htmlpage":"ENAS257_2.0.0.0",
+"new_id":"15",
+"new_nametree":"Authors and legal information",
+"new_numtree":"3.0.0.0",
+"new_htmlpage":"ENAS257_2.0.0.0"
+},
+{
+"old_id":"16",
+"old_nametree":"Preamble",
+"old_numtree":"4.0.0.0",
+"old_htmlpage":"ENAS257_3.0.0.0",
+"new_id":"16",
+"new_nametree":"Preamble",
+"new_numtree":"4.0.0.0",
+"new_htmlpage":"ENAS257_3.0.0.0"
+},
+{
+"old_id":"17",
+"old_nametree":"Introduction",
+"old_numtree":"5.0.0.0",
+"old_htmlpage":"null",
+"new_id":"17",
+"new_nametree":"Introduction",
+"new_numtree":"5.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"18",
+"old_nametree":"Diabetes and CVD",
+"old_numtree":"5.1.0.0",
+"old_htmlpage":"ENAS257_4.1.0.0",
+"new_id":"18",
+"new_nametree":"Diabetes and CVD",
+"new_numtree":"5.1.0.0",
+"new_htmlpage":"ENAS257_4.1.0.0"
+},
+{
+"old_id":"19",
+"old_nametree":"Treatment targets for diabetes/CVD",
+"old_numtree":"5.2.0.0",
+"old_htmlpage":"ENAS257_4.2.0.0",
+"new_id":"19",
+"new_nametree":"Treatment targets for diabetes/CVD",
+"new_numtree":"5.2.0.0",
+"new_htmlpage":"ENAS257_4.2.0.0"
+},
+{
+"old_id":"20",
+"old_nametree":"Definition, classification and screening",
+"old_numtree":"6.0.0.0",
+"old_htmlpage":"null",
+"new_id":"20",
+"new_nametree":"Definition, classification and screening",
+"new_numtree":"6.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"21",
+"old_nametree":"Diagnosis of disorders of glucose metabolism",
+"old_numtree":"6.1.0.0",
+"old_htmlpage":"ENAS257_5.1.0.0",
+"new_id":"21",
+"new_nametree":"Diagnosis of disorders of glucose metabolism",
+"new_numtree":"6.1.0.0",
+"new_htmlpage":"ENAS257_5.1.0.0"
+},
+{
+"old_id":"22",
+"old_nametree":"Current clinical criteria by WHO and ADA",
+"old_numtree":"6.2.0.0",
+"old_htmlpage":"ENAS257_5.2.0.0",
+"new_id":"22",
+"new_nametree":"Current clinical criteria by WHO and ADA",
+"new_numtree":"6.2.0.0",
+"new_htmlpage":"ENAS257_5.2.0.0"
+},
+{
+"old_id":"23",
+"old_nametree":"Detection of people at high risk for DM",
+"old_numtree":"6.3.0.0",
+"old_htmlpage":"null",
+"new_id":"23",
+"new_nametree":"Detection of people at high risk for DM",
+"new_numtree":"6.3.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"24",
+"old_nametree":"Overview",
+"old_numtree":"6.3.1.0",
+"old_htmlpage":"ENAS257_5.3.1.0",
+"new_id":"24",
+"new_nametree":"Overview",
+"new_numtree":"6.3.1.0",
+"new_htmlpage":"ENAS257_5.3.1.0"
+},
+{
+"old_id":"25",
+"old_nametree":"FINDRISC",
+"old_numtree":"6.3.2.0",
+"old_htmlpage":"ENAS257_5.3.2.0",
+"new_id":"25",
+"new_nametree":"FINDRISC",
+"new_numtree":"6.3.2.0",
+"new_htmlpage":"ENAS257_5.3.2.0"
+},
+{
+"old_id":"26",
+"old_nametree":"Delaying conversion to T2DM",
+"old_numtree":"6.4.0.0",
+"old_htmlpage":"ENAS257_5.4.0.0",
+"new_id":"26",
+"new_nametree":"Delaying conversion to T2DM",
+"new_numtree":"6.4.0.0",
+"new_htmlpage":"ENAS257_5.4.0.0"
+},
+{
+"old_id":"27",
+"old_nametree":"The cardiovascular continuum",
+"old_numtree":"7.0.0.0",
+"old_htmlpage":"ENAS257_6.0.0.0",
+"new_id":"27",
+"new_nametree":"The cardiovascular continuum",
+"new_numtree":"7.0.0.0",
+"new_htmlpage":"ENAS257_6.0.0.0"
+},
+{
+"old_id":"28",
+"old_nametree":"Cardiovascular risk assessment",
+"old_numtree":"8.0.0.0",
+"old_htmlpage":"ENAS257_7.0.0.0",
+"new_id":"28",
+"new_nametree":"Cardiovascular risk assessment",
+"new_numtree":"8.0.0.0",
+"new_htmlpage":"ENAS257_7.0.0.0"
+},
+{
+"old_id":"29",
+"old_nametree":"Prevention of cardiovascular disease",
+"old_numtree":"9.0.0.0",
+"old_htmlpage":"null",
+"new_id":"29",
+"new_nametree":"Prevention of cardiovascular disease",
+"new_numtree":"9.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"30",
+"old_nametree":"Lifestyle",
+"old_numtree":"9.1.0.0",
+"old_htmlpage":"null",
+"new_id":"30",
+"new_nametree":"Lifestyle",
+"new_numtree":"9.1.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"31",
+"old_nametree":"Modifications in diabetes",
+"old_numtree":"9.1.1.0",
+"old_htmlpage":"ENAS257_8.1.1.0",
+"new_id":"31",
+"new_nametree":"Modifications in diabetes",
+"new_numtree":"9.1.1.0",
+"new_htmlpage":"ENAS257_8.1.1.0"
+},
+{
+"old_id":"32",
+"old_nametree":"Life style management",
+"old_numtree":"9.1.2.0",
+"old_htmlpage":"ENAS257_8.1.2.0",
+"new_id":"32",
+"new_nametree":"Life style management",
+"new_numtree":"9.1.2.0",
+"new_htmlpage":"ENAS257_8.1.2.0"
+},
+{
+"old_id":"33",
+"old_nametree":"Glucose control",
+"old_numtree":"9.2.0.0",
+"old_htmlpage":"null",
+"new_id":"33",
+"new_nametree":"Glucose control",
+"new_numtree":"9.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"34",
+"old_nametree":"Glycaemic control in diabetes",
+"old_numtree":"9.2.1.0",
+"old_htmlpage":"ENAS257_8.2.1.0",
+"new_id":"34",
+"new_nametree":"Glycaemic control in diabetes",
+"new_numtree":"9.2.1.0",
+"new_htmlpage":"ENAS257_8.2.1.0"
+},
+{
+"old_id":"35",
+"old_nametree":"Glycaemic targets",
+"old_numtree":"9.2.2.0",
+"old_htmlpage":"ENAS257_8.2.2.0",
+"new_id":"35",
+"new_nametree":"Glycaemic targets",
+"new_numtree":"9.2.2.0",
+"new_htmlpage":"ENAS257_8.2.2.0"
+},
+{
+"old_id":"36",
+"old_nametree":"Glucose-lowering agents",
+"old_numtree":"9.2.3.0",
+"old_htmlpage":"ENAS257_8.2.3.0",
+"new_id":"36",
+"new_nametree":"Glucose-lowering agents",
+"new_numtree":"9.2.3.0",
+"new_htmlpage":"ENAS257_8.2.3.0"
+},
+{
+"old_id":"37",
+"old_nametree":"Blood pressure",
+"old_numtree":"9.3.0.0",
+"old_htmlpage":"ENAS257_8.3.0.0",
+"new_id":"37",
+"new_nametree":"Blood pressure",
+"new_numtree":"9.3.0.0",
+"new_htmlpage":"ENAS257_8.3.0.0"
+},
+{
+"old_id":"38",
+"old_nametree":"Dyslipidaemia",
+"old_numtree":"9.4.0.0",
+"old_htmlpage":"ENAS257_8.4.0.0",
+"new_id":"38",
+"new_nametree":"Dyslipidaemia",
+"new_numtree":"9.4.0.0",
+"new_htmlpage":"ENAS257_8.4.0.0"
+},
+{
+"old_id":"39",
+"old_nametree":"Platelet function",
+"old_numtree":"9.5.0.0",
+"old_htmlpage":"ENAS257_8.5.0.0",
+"new_id":"39",
+"new_nametree":"Platelet function",
+"new_numtree":"9.5.0.0",
+"new_htmlpage":"ENAS257_8.5.0.0"
+},
+{
+"old_id":"40",
+"old_nametree":"Multifactorial approaches",
+"old_numtree":"9.6.0.0",
+"old_htmlpage":"ENAS257_8.6.0.0",
+"new_id":"40",
+"new_nametree":"Multifactorial approaches",
+"new_numtree":"9.6.0.0",
+"new_htmlpage":"ENAS257_8.6.0.0"
+},
+{
+"old_id":"41",
+"old_nametree":"Mgmt. of stable and unstable CAD",
+"old_numtree":"10.0.0.0",
+"old_htmlpage":"null",
+"new_id":"41",
+"new_nametree":"Mgmt. of stable and unstable CAD",
+"new_numtree":"10.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"42",
+"old_nametree":"Optimal medical treatment",
+"old_numtree":"10.1.0.0",
+"old_htmlpage":"ENAS257_9.1.0.0",
+"new_id":"42",
+"new_nametree":"Optimal medical treatment",
+"new_numtree":"10.1.0.0",
+"new_htmlpage":"ENAS257_9.1.0.0"
+},
+{
+"old_id":"43",
+"old_nametree":"Revascularization",
+"old_numtree":"10.2.0.0",
+"old_htmlpage":"ENAS257_9.2.0.0",
+"new_id":"43",
+"new_nametree":"Revascularization",
+"new_numtree":"10.2.0.0",
+"new_htmlpage":"ENAS257_9.2.0.0"
+},
+{
+"old_id":"44",
+"old_nametree":"Management of heart failure",
+"old_numtree":"11.0.0.0",
+"old_htmlpage":"ENAS257_10.0.0.0",
+"new_id":"44",
+"new_nametree":"Management of heart failure",
+"new_numtree":"11.0.0.0",
+"new_htmlpage":"ENAS257_10.0.0.0"
+},
+{
+"old_id":"45",
+"old_nametree":"Management of arrhythmias",
+"old_numtree":"12.0.0.0",
+"old_htmlpage":"null",
+"new_id":"45",
+"new_nametree":"Management of arrhythmias",
+"new_numtree":"12.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"46",
+"old_nametree":"Overview",
+"old_numtree":"12.1.0.0",
+"old_htmlpage":"ENAS257_11.1.0.0",
+"new_id":"46",
+"new_nametree":"Overview",
+"new_numtree":"12.1.0.0",
+"new_htmlpage":"ENAS257_11.1.0.0"
+},
+{
+"old_id":"47",
+"old_nametree":"Atrial fibrillation",
+"old_numtree":"12.2.0.0",
+"old_htmlpage":"ENAS257_11.2.0.0",
+"new_id":"47",
+"new_nametree":"Atrial fibrillation",
+"new_numtree":"12.2.0.0",
+"new_htmlpage":"ENAS257_11.2.0.0"
+},
+{
+"old_id":"48",
+"old_nametree":"Sudden cardiac death",
+"old_numtree":"12.3.0.0",
+"old_htmlpage":"ENAS257_11.3.0.0",
+"new_id":"48",
+"new_nametree":"Sudden cardiac death",
+"new_numtree":"12.3.0.0",
+"new_htmlpage":"ENAS257_11.3.0.0"
+},
+{
+"old_id":"49",
+"old_nametree":"Management of vascular diseases",
+"old_numtree":"13.0.0.0",
+"old_htmlpage":"null",
+"new_id":"49",
+"new_nametree":"Management of vascular diseases",
+"new_numtree":"13.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"50",
+"old_nametree":"Management of PAD in diabetes",
+"old_numtree":"13.1.0.0",
+"old_htmlpage":"ENAS257_12.1.0.0",
+"new_id":"50",
+"new_nametree":"Management of PAD in diabetes",
+"new_numtree":"13.1.0.0",
+"new_htmlpage":"ENAS257_12.1.0.0"
+},
+{
+"old_id":"51",
+"old_nametree":"Peripheral artery disease",
+"old_numtree":"13.2.0.0",
+"old_htmlpage":"null",
+"new_id":"51",
+"new_nametree":"Peripheral artery disease",
+"new_numtree":"13.2.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"52",
+"old_nametree":"Introduction",
+"old_numtree":"13.2.1.0",
+"old_htmlpage":"ENAS257_12.2.1.0",
+"new_id":"52",
+"new_nametree":"Introduction",
+"new_numtree":"13.2.1.0",
+"new_htmlpage":"ENAS257_12.2.1.0"
+},
+{
+"old_id":"53",
+"old_nametree":"Case history",
+"old_numtree":"13.2.2.0",
+"old_htmlpage":"ENAS257_12.2.2.0",
+"new_id":"53",
+"new_nametree":"Case history",
+"new_numtree":"13.2.2.0",
+"new_htmlpage":"ENAS257_12.2.2.0"
+},
+{
+"old_id":"54",
+"old_nametree":"Physical examination",
+"old_numtree":"13.2.3.0",
+"old_htmlpage":"ENAS257_12.2.3.0",
+"new_id":"54",
+"new_nametree":"Physical examination",
+"new_numtree":"13.2.3.0",
+"new_htmlpage":"ENAS257_12.2.3.0"
+},
+{
+"old_id":"55",
+"old_nametree":"Treatment of intermittent claudication",
+"old_numtree":"13.2.4.0",
+"old_htmlpage":"ENAS257_12.2.4.0",
+"new_id":"55",
+"new_nametree":"Treatment of intermittent claudication",
+"new_numtree":"13.2.4.0",
+"new_htmlpage":"ENAS257_12.2.4.0"
+},
+{
+"old_id":"56",
+"old_nametree":"Critical limb ischaemia",
+"old_numtree":"13.2.5.0",
+"old_htmlpage":"ENAS257_12.2.5.0",
+"new_id":"56",
+"new_nametree":"Critical limb ischaemia",
+"new_numtree":"13.2.5.0",
+"new_htmlpage":"ENAS257_12.2.5.0"
+},
+{
+"old_id":"57",
+"old_nametree":"Carotid artery disease",
+"old_numtree":"13.3.0.0",
+"old_htmlpage":"ENAS257_12.3.0.0",
+"new_id":"57",
+"new_nametree":"Carotid artery disease",
+"new_numtree":"13.3.0.0",
+"new_htmlpage":"ENAS257_12.3.0.0"
+},
+{
+"old_id":"58",
+"old_nametree":"Management of microvascular diseases",
+"old_numtree":"14.0.0.0",
+"old_htmlpage":"null",
+"new_id":"58",
+"new_nametree":"Management of microvascular diseases",
+"new_numtree":"14.0.0.0",
+"new_htmlpage":"null"
+},
+{
+"old_id":"59",
+"old_nametree":"In general",
+"old_numtree":"14.1.0.0",
+"old_htmlpage":"ENAS257_13.1.0.0",
+"new_id":"59",
+"new_nametree":"In general",
+"new_numtree":"14.1.0.0",
+"new_htmlpage":"ENAS257_13.1.0.0"
+},
+{
+"old_id":"60",
+"old_nametree":"Treatment and treatment targets",
+"old_numtree":"14.2.0.0",
+"old_htmlpage":"ENAS257_13.2.0.0",
+"new_id":"60",
+"new_nametree":"Treatment and treatment targets",
+"new_numtree":"14.2.0.0",
+"new_htmlpage":"ENAS257_13.2.0.0"
+},
+{
+"old_id":"61",
+"old_nametree":"Patient-centred care",
+"old_numtree":"15.0.0.0",
+"old_htmlpage":"ENAS257_14.0.0.0",
+"new_id":"61",
+"new_nametree":"Patient-centred care",
+"new_numtree":"15.0.0.0",
+"new_htmlpage":"ENAS257_14.0.0.0"
+},
+{
+"old_id":"62",
+"old_nametree":"Abbreviations and acronyms",
+"old_numtree":"16.0.0.0",
+"old_htmlpage":"ENAS257_15.0.0.0",
+"new_id":"62",
+"new_nametree":"Abbreviations and acronyms",
+"new_numtree":"16.0.0.0",
+"new_htmlpage":"ENAS257_15.0.0.0"
+}
 ]

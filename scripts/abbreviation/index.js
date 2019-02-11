@@ -1,6 +1,8 @@
 const path = require('path');
 const fs = require('fs');
+const XLSX = require('xlsx');
 
+const dataFolderPath = path.join(__dirname, './data/');
 const inputFolderPath = path.join(__dirname, './data/input/');
 const outputFolderPath = path.join(__dirname, './data/output/');
 const excelUploadsFolderPath = path.join(__dirname, './data/excel_uploads');
@@ -14,6 +16,7 @@ class Abbreviation {
         this.USER_TOKEN = '';
         this.USER_INPUT_FILE_PATH = '';
         this.ABBR_LIST = [];
+        this.EXCEL_DATA = [];
 
         // Read the ignoreList JSON contents
         this.ignoreList = this.readIgnoreList();
@@ -33,6 +36,7 @@ class Abbreviation {
 
     createRequireFolderStructure() {
         const requiredFolders = [];
+        requiredFolders.push(dataFolderPath);
         requiredFolders.push(inputFolderPath);
         requiredFolders.push(outputFolderPath);
         requiredFolders.push(excelUploadsFolderPath);
@@ -154,13 +158,23 @@ class Abbreviation {
 
     readExcel(userToken) {
         this.USER_TOKEN = userToken;
+        const excelFilePath = path.join(excelUploadsFolderPath, `${userToken}.xlsx`);
 
         // Check if uploaded excel file exists
-        if (fs.existsSync(path.join(excelUploadsFolderPath, `${userToken}.xlsx`))) {
-            console.log('Excel File Fount');
+        if (fs.existsSync(excelFilePath)) {
+            var workbook = XLSX.readFile(excelFilePath);
+            var sheet_name_list = workbook.SheetNames;
+            var xlData = XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]);
+            this.EXCEL_DATA = xlData;
         } else {
             console.log('Uploaded Excel file not found');
         }
+
+        return this.EXCEL_DATA;
+    }
+
+    getExcelData() {
+        return this.EXCEL_DATA;
     }
 
     readIgnoreList() {

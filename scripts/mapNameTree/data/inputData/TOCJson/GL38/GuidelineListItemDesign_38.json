@@ -1,248 +1,152 @@
 {
   "level_0": {
-    "textSize": "15",
-    "textFontFamily": "Helvetica-condensed-Bold",
-    "textColor": [
-      "#000000"
-    ],
+    "textSize": 0,
+    "textFontFamily": "",
+    "textColor": [],
     "textStyle": "",
-    "bgColor": [
-      "#cadee6"
-    ],
+    "bgColor": [],
     "itemDisabledColor": {
-      "text": [
-        "#b2e0f9"
-      ],
-      "background": [
-        "#EBEBEB"
-      ]
+      "text": [],
+      "background": []
     },
-    "navigationBarColor": [
-      "#ffffff"
-    ],
-    "navigationBarTextColor": [
-      "#5391B7"
-    ],
-    "colorCode": "black",
+    "navigationBarColor": [],
+    "navigationBarTextColor": [],
+    "colorCode": "",
     "sticker": {
-      "color": [
-        "#9aca3c"
-      ],
-      "enable": true,
-      "isLeft": true,
+      "color": [],
+      "enable": false,
+      "isLeft": false,
       "isRight": false
     },
     "padding": {
-      "left": 5,
+      "left": 0,
       "right": 0
     },
-    "dividerColor": [
-      "#ffffff"
-    ]
+    "dividerColor": []
   },
   "level_1": {
-    "textSize": "15",
-    "textFontFamily": "Helvetica-condensed",
-    "textColor": [
-      "#000000"
-    ],
+    "textSize": 0,
+    "textFontFamily": "",
+    "textColor": [],
     "textStyle": "",
-    "bgColor": [
-      "#cadee6"
-    ],
+    "bgColor": [],
     "itemDisabledColor": {
-      "text": [
-        "#b2e0f9"
-      ],
-      "background": [
-        "#EBEBEB"
-      ]
+      "text": [],
+      "background": []
     },
-    "navigationBarColor": [
-      "#cadee6"
-    ],
-    "navigationBarTextColor": [
-      "#000000"
-    ],
-    "colorCode": "black",
+    "navigationBarColor": [],
+    "navigationBarTextColor": [],
+    "colorCode": "",
     "sticker": {
-      "color": [
-        "#9aca3c"
-      ],
+      "color": [],
       "enable": false,
-      "isLeft": true,
+      "isLeft": false,
       "isRight": false
     },
     "padding": {
-      "left": 5,
+      "left": 0,
       "right": 0
     },
-    "dividerColor": [
-      "#ffffff"
-    ]
+    "dividerColor": []
   },
   "level_2": {
-    "textSize": "15",
-    "textFontFamily": "Helvetica-condensed",
-    "textColor": [
-      "#000000"
-    ],
+    "textSize": 0,
+    "textFontFamily": "",
+    "textColor": [],
     "textStyle": "",
-    "bgColor": [
-      "#d7e6ec"
-    ],
+    "bgColor": [],
     "itemDisabledColor": {
-      "text": [
-        "#b2e0f9"
-      ],
-      "background": [
-        "#EBEBEB"
-      ]
+      "text": [],
+      "background": []
     },
-    "navigationBarColor": [
-      "#d7e6ec"
-    ],
-    "navigationBarTextColor": [
-      "#000000"
-    ],
-    "colorCode": "black",
+    "navigationBarColor": [],
+    "navigationBarTextColor": [],
+    "colorCode": "",
     "sticker": {
-      "color": [
-        "#9aca3c"
-      ],
+      "color": [],
       "enable": false,
-      "isLeft": true,
+      "isLeft": false,
       "isRight": false
     },
     "padding": {
-      "left": 15,
+      "left": 0,
       "right": 0
     },
-    "dividerColor": [
-      "#ffffff"
-    ]
+    "dividerColor": []
   },
   "level_3": {
-    "textSize": "15",
-    "textFontFamily": "Helvetica-condensed",
-    "textColor": [
-      "#000000"
-    ],
+    "textSize": 0,
+    "textFontFamily": "",
+    "textColor": [],
     "textStyle": "",
-    "bgColor": [
-      "#e5eff3"
-    ],
+    "bgColor": [],
     "itemDisabledColor": {
-      "text": [
-        "#b2e0f9"
-      ],
-      "background": [
-        "#EBEBEB"
-      ]
+      "text": [],
+      "background": []
     },
-    "navigationBarColor": [
-      "#e5eff3"
-    ],
-    "navigationBarTextColor": [
-      "#000000"
-    ],
-    "colorCode": "black",
+    "navigationBarColor": [],
+    "navigationBarTextColor": [],
+    "colorCode": "",
     "sticker": {
-      "color": [
-        "#9aca3c"
-      ],
+      "color": [],
       "enable": false,
-      "isLeft": true,
+      "isLeft": false,
       "isRight": false
     },
     "padding": {
-      "left": 25,
+      "left": 0,
       "right": 0
     },
-    "dividerColor": [
-      "#ffffff"
-    ]
+    "dividerColor": []
   },
   "level_4": {
-    "textSize": "15",
-    "textFontFamily": "Helvetica-condensed",
-    "textColor": [
-      "#000000"
-    ],
+    "textSize": 0,
+    "textFontFamily": "",
+    "textColor": [],
     "textStyle": "",
-    "bgColor": [
-      "#f2f7f9"
-    ],
+    "bgColor": [],
     "itemDisabledColor": {
-      "text": [
-        "#b2e0f9"
-      ],
-      "background": [
-        "#EBEBEB"
-      ]
+      "text": [],
+      "background": []
     },
-    "navigationBarColor": [
-      "#f2f7f9"
-    ],
-    "navigationBarTextColor": [
-      "#000000"
-    ],
-    "colorCode": "black",
+    "navigationBarColor": [],
+    "navigationBarTextColor": [],
+    "colorCode": "",
     "sticker": {
-      "color": [
-        "#9aca3c"
-      ],
+      "color": [],
       "enable": false,
-      "isLeft": true,
+      "isLeft": false,
       "isRight": false
     },
     "padding": {
-      "left": 35,
+      "left": 0,
       "right": 0
     },
-    "dividerColor": [
-      "#ffffff"
-    ]
+    "dividerColor": []
   },
   "level_5": {
-    "textSize": "15",
-    "textFontFamily": "Helvetica-condensed",
-    "textColor": [
-      "#000000"
-    ],
+    "textSize": 0,
+    "textFontFamily": "",
+    "textColor": [],
     "textStyle": "",
-    "bgColor": [
-      "#f2f7f9"
-    ],
+    "bgColor": [],
     "itemDisabledColor": {
-      "text": [
-        "#b2e0f9"
-      ],
-      "background": [
-        "#EBEBEB"
-      ]
+      "text": [],
+      "background": []
     },
-    "navigationBarColor": [
-      "#f2f7f9"
-    ],
-    "navigationBarTextColor": [
-      "#000000"
-    ],
-    "colorCode": "black",
+    "navigationBarColor": [],
+    "navigationBarTextColor": [],
+    "colorCode": "",
     "sticker": {
-      "color": [
-        "#z"
-      ],
+      "color": [],
       "enable": false,
-      "isLeft": true,
+      "isLeft": false,
       "isRight": false
     },
     "padding": {
-      "left": 45,
+      "left": 0,
       "right": 0
     },
-    "dividerColor": [
-      "#ffffff"
-    ]
+    "dividerColor": []
   }
 }

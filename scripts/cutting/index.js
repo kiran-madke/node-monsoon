@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const cheerio = require('cheerio');
 
+const dataFolderPath = path.join(__dirname, './data/');
 const inputFolderPath = path.join(__dirname, './data/input/');
 const outputFolderPath = path.join(__dirname, './data/output/');
 
@@ -29,6 +30,7 @@ class Cutting {
 
     createRequireFolderStructure() {
         const requiredFolders = [];
+        requiredFolders.push(dataFolderPath);
         requiredFolders.push(inputFolderPath);
         requiredFolders.push(outputFolderPath);
 
@@ -101,7 +103,7 @@ class Cutting {
         if (content !== '') {
             content = this.parseHTML($);
 
-            /* // First remove any existing cutting keys present on the file content
+            // First remove any existing cutting keys present on the file content
             content = this.removeAllCuttingKeys(content);
 
             this.scriptLog('Adding cutting keys to the content now');
@@ -116,7 +118,7 @@ class Cutting {
             <p class="h1">`);
 
             this.scriptLog('Finished adding cutting keys');
-            this.scriptLog(`Total ${this.SCRIPT_ANALYTICS.TOTAL_CUTTING_KEYS_INSERTED} cutting keys were inserted`); */
+            this.scriptLog(`Total ${this.SCRIPT_ANALYTICS.TOTAL_CUTTING_KEYS_INSERTED} cutting keys were inserted`);
 
             return content;
 

@@ -2,8 +2,8 @@
 {
 "numtree":"1.0.0.0",
 "id":"1",
-"nametree":"Essential messages (Acute PE)",
-"tocnametree":"Essential messages (Acute PE)",
+"nametree":"Essential messages (Syncope)",
+"tocnametree":"Essential messages (Syncope)",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
@@ -13,7 +13,7 @@
 "id":"2",
 "nametree":"Authors and legal information",
 "tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5375_1.1.0.0",
+"htmlpage":"ENAS5375_2018112237",
 "haspdf":false,
 "emailContent":false
 },
@@ -22,24 +22,24 @@
 "id":"3",
 "nametree":"Take home messages",
 "tocnametree":"Take home messages",
-"htmlpage":"ENAS5375_1.2.0.0",
+"htmlpage":"ENAS5375_2018112238",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"1.3.0.0",
 "id":"4",
-"nametree":"Areas of uncertainty",
-"tocnametree":"Areas of uncertainty",
-"htmlpage":"ENAS5375_1.3.0.0",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS5375_2018112239",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"2.0.0.0",
 "id":"5",
-"nametree":"Essential messages (AORTA)",
-"tocnametree":"Essential messages (AORTA)",
+"nametree":"Essential messages(CVD Preg)",
+"tocnametree":"Essential messages(CVD Preg)",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
@@ -49,7 +49,7 @@
 "id":"6",
 "nametree":"Authors and legal information",
 "tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5375_2.1.0.0",
+"htmlpage":"ENAS5375_2018112240",
 "haspdf":false,
 "emailContent":false
 },
@@ -58,7 +58,7 @@
 "id":"7",
 "nametree":"Take home messages",
 "tocnametree":"Take home messages",
-"htmlpage":"ENAS5375_2.2.0.0",
+"htmlpage":"ENAS5375_2018112241",
 "haspdf":false,
 "emailContent":false
 },
@@ -67,15 +67,15 @@
 "id":"8",
 "nametree":"Major gaps in evidence",
 "tocnametree":"Major gaps in evidence",
-"htmlpage":"ENAS5375_2.3.0.0",
+"htmlpage":"ENAS5375_2018112242",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"3.0.0.0",
 "id":"9",
-"nametree":"Essential messages (HCM)",
-"tocnametree":"Essential messages (HCM)",
+"nametree":"Essential messages (MR)",
+"tocnametree":"Essential messages (MR)",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
@@ -85,7 +85,7 @@
 "id":"10",
 "nametree":"Authors and legal information",
 "tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5375_3.1.0.0",
+"htmlpage":"ENAS5375_2018112243",
 "haspdf":false,
 "emailContent":false
 },
@@ -94,7 +94,7 @@
 "id":"11",
 "nametree":"Take home messages",
 "tocnametree":"Take home messages",
-"htmlpage":"ENAS5375_3.2.0.0",
+"htmlpage":"ENAS5375_2018112244",
 "haspdf":false,
 "emailContent":false
 },
@@ -103,15 +103,15 @@
 "id":"12",
 "nametree":"Major gaps in evidence",
 "tocnametree":"Major gaps in evidence",
-"htmlpage":"ENAS5375_3.3.0.0",
+"htmlpage":"ENAS5375_2018112245",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"4.0.0.0",
 "id":"13",
-"nametree":"Essential messages (MR)",
-"tocnametree":"Essential messages (MR)",
+"nametree":"Essential messages (HTN)",
+"tocnametree":"Essential messages (HTN)",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
@@ -121,7 +121,7 @@
 "id":"14",
 "nametree":"Authors and legal information",
 "tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5375_4.1.0.0",
+"htmlpage":"ENAS5375_2018112246",
 "haspdf":false,
 "emailContent":false
 },
@@ -130,7 +130,7 @@
 "id":"15",
 "nametree":"Take home messages",
 "tocnametree":"Take home messages",
-"htmlpage":"ENAS5375_4.2.0.0",
+"htmlpage":"ENAS5375_2018112247",
 "haspdf":false,
 "emailContent":false
 },
@@ -139,15 +139,15 @@
 "id":"16",
 "nametree":"Major gaps in evidence",
 "tocnametree":"Major gaps in evidence",
-"htmlpage":"ENAS5375_4.3.0.0",
+"htmlpage":"ENAS5375_2018112248",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"5.0.0.0",
 "id":"17",
-"nametree":"Essential messages (Pacing)",
-"tocnametree":"Essential messages (Pacing)",
+"nametree":"Essential messages (Acute PE)",
+"tocnametree":"Essential messages (Acute PE)",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
@@ -157,7 +157,7 @@
 "id":"18",
 "nametree":"Authors and legal information",
 "tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5375_5.1.0.0",
+"htmlpage":"ENAS5375_1.1.0.0",
 "haspdf":false,
 "emailContent":false
 },
@@ -166,24 +166,24 @@
 "id":"19",
 "nametree":"Take home messages",
 "tocnametree":"Take home messages",
-"htmlpage":"ENAS5375_5.2.0.0",
+"htmlpage":"ENAS5375_1.2.0.0",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"5.3.0.0",
 "id":"20",
-"nametree":"Major gaps in evidence",
-"tocnametree":"Major gaps in evidence",
-"htmlpage":"ENAS5375_5.3.0.0",
+"nametree":"Areas of uncertainty",
+"tocnametree":"Areas of uncertainty",
+"htmlpage":"ENAS5375_1.3.0.0",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"6.0.0.0",
 "id":"21",
-"nametree":"Essential messages (HTN)",
-"tocnametree":"Essential messages (HTN)",
+"nametree":"Essential messages (AORTA)",
+"tocnametree":"Essential messages (AORTA)",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
@@ -193,7 +193,7 @@
 "id":"22",
 "nametree":"Authors and legal information",
 "tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5375_6.1.0.0",
+"htmlpage":"ENAS5375_2.1.0.0",
 "haspdf":false,
 "emailContent":false
 },
@@ -202,7 +202,7 @@
 "id":"23",
 "nametree":"Take home messages",
 "tocnametree":"Take home messages",
-"htmlpage":"ENAS5375_6.2.0.0",
+"htmlpage":"ENAS5375_2.2.0.0",
 "haspdf":false,
 "emailContent":false
 },
@@ -211,15 +211,15 @@
 "id":"24",
 "nametree":"Major gaps in evidence",
 "tocnametree":"Major gaps in evidence",
-"htmlpage":"ENAS5375_6.3.0.0",
+"htmlpage":"ENAS5375_2.3.0.0",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"7.0.0.0",
 "id":"25",
-"nametree":"Essential messages (DM)",
-"tocnametree":"Essential messages (DM)",
+"nametree":"Essential messages (HCM)",
+"tocnametree":"Essential messages (HCM)",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
@@ -229,7 +229,7 @@
 "id":"26",
 "nametree":"Authors and legal information",
 "tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5375_7.1.0.0",
+"htmlpage":"ENAS5375_3.1.0.0",
 "haspdf":false,
 "emailContent":false
 },
@@ -238,7 +238,7 @@
 "id":"27",
 "nametree":"Take home messages",
 "tocnametree":"Take home messages",
-"htmlpage":"ENAS5375_7.2.0.0",
+"htmlpage":"ENAS5375_3.2.0.0",
 "haspdf":false,
 "emailContent":false
 },
@@ -247,15 +247,15 @@
 "id":"28",
 "nametree":"Major gaps in evidence",
 "tocnametree":"Major gaps in evidence",
-"htmlpage":"ENAS5375_7.3.0.0",
+"htmlpage":"ENAS5375_3.3.0.0",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"8.0.0.0",
 "id":"29",
-"nametree":"Essential messages (CVD preg.)",
-"tocnametree":"Essential messages (CVD preg.)",
+"nametree":"Essential messages (Pacing)",
+"tocnametree":"Essential messages (Pacing)",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
@@ -265,7 +265,7 @@
 "id":"30",
 "nametree":"Authors and legal information",
 "tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5375_8.1.0.0",
+"htmlpage":"ENAS5375_5.1.0.0",
 "haspdf":false,
 "emailContent":false
 },
@@ -274,7 +274,7 @@
 "id":"31",
 "nametree":"Take home messages",
 "tocnametree":"Take home messages",
-"htmlpage":"ENAS5375_8.2.0.0",
+"htmlpage":"ENAS5375_5.2.0.0",
 "haspdf":false,
 "emailContent":false
 },
@@ -283,7 +283,43 @@
 "id":"32",
 "nametree":"Major gaps in evidence",
 "tocnametree":"Major gaps in evidence",
-"htmlpage":"ENAS5375_8.3.0.0",
+"htmlpage":"ENAS5375_5.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.0.0.0",
+"id":"33",
+"nametree":"Essential messages (DM)",
+"tocnametree":"Essential messages (DM)",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.1.0.0",
+"id":"34",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS5375_7.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.2.0.0",
+"id":"35",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS5375_7.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.3.0.0",
+"id":"36",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS5375_7.3.0.0",
 "haspdf":false,
 "emailContent":false
 }

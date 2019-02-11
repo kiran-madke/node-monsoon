@@ -5,6 +5,7 @@ var unzipper = require('unzipper');
 const isDirectory = require('is-directory');
 const archiver = require('archiver');
 
+const dataFolderPath = path.join(__dirname, './data/');
 const inputFolderPath = path.join(__dirname, './data/input/');
 const outputFolderPath = path.join(__dirname, './data/output/');
 const uploadedZipFolderPath = path.join(__dirname, './data/uploaded_zip_data/');
@@ -20,12 +21,17 @@ class Hyphenation {
         this.SET_LANGUAGE = "en";
         this.SCRIPT_ANALYTICS = [];
 
+        // Collection of REG EX
+        this.REGEX_EXTRACT_BODY_PATTERN = /<body[^>]*>((.|[\n\r])*)<\/body>/im;
+        this.REGEX_EXTRACT_WORD_PATTERN = /(([A-Z]|[a-z])([A-Z]|[a-z])([A-Z]|[a-z])([A-Z]|[a-z])([A-Z]|[a-z])([A-Z]|[a-z])+)(?![^<]*>|[^<>]<\/)/g;
+
         // First create required folder structure if not present
         this.createRequireFolderStructure();
     }
 
     createRequireFolderStructure() {
         const requiredFolders = [];
+        requiredFolders.push(dataFolderPath);
         requiredFolders.push(inputFolderPath);
         requiredFolders.push(outputFolderPath);
         requiredFolders.push(uploadedZipFolderPath);
@@ -326,16 +332,21 @@ class Hyphenation {
 
         let hyphenatedContent = '';
 
+        // Remove all existing &shy; tags from the content
+        content = this.removeExistingShyTags(content);
+
         // Following regex is used to extract the text inside the body tag; including the body tags
-        var extractBodyContentPattern = /<body[^>]*>((.|[\n\r])*)<\/body>/im;
+        var extractBodyContentPattern = this.REGEX_EXTRACT_BODY_PATTERN;
         var array_matches = extractBodyContentPattern.exec(content);
         if (array_matches != null) {
 
             let bodyContent = array_matches[1];
 
+            // Replace forward slashes in content with forward slash+zero width space entity
+            bodyContent = this.addZeroWidthEntity(bodyContent);
+
             // Following regex is used to extract 6+ character words from the text; which are not inside any <> html tags
-            var extractWordsPattern = /(([A-Z]|[a-z])([A-Z]|[a-z])([A-Z]|[a-z])([A-Z]|[a-z])([A-Z]|[a-z])([A-Z]|[a-z])+)(?![^<]*>|[^<>]<\/)/g;
-            var word_matches_array = bodyContent.match(extractWordsPattern);
+            var word_matches_array = bodyContent.match(this.REGEX_EXTRACT_WORD_PATTERN);
             if (word_matches_array != null) {
                 // Find and replace
                 word_matches_array.forEach(element => {
@@ -354,8 +365,14 @@ class Hyphenation {
                 // Hyphenate the body content 
                 hyphenatedContent = bodyContent;
 
-                // Replace demo
+                // First replace all occurrences of $1, $2 with $//1 and $//2. (Escaping before regex replacement)
+                hyphenatedContent = this.getEscapedContent(hyphenatedContent, false);
+
+                // Replace original content with hyphenated content (Notice: this hyphenated content still contains escaped content like $1->$//1, we'll need to revert it later)
                 hyphenatedContent = content.replace(extractBodyContentPattern, `<body onload="_geturl1();">${hyphenatedContent}</body>`);
+
+                // Revert the escaped stuff ($//1 -> $1)
+                hyphenatedContent = this.getEscapedContent(hyphenatedContent, true);
             } else {
                 // This was a tool html file
                 // so we copy content as it is without changing anything
@@ -369,13 +386,48 @@ class Hyphenation {
 
             // There's no body tag content in this html file
             // So return the content as it is.
-            console.log(content);
             hyphenatedContent = content;
             this.scriptLog(content);
         }
 
         return hyphenatedContent;
     }
+
+    addZeroWidthEntity(content) {
+        let re = /(\/)(?![^<]*>|[^<>]<\/)/g;
+
+        return content.replace(re, '/&#8203;');
+    }
+
+    removeExistingShyTags(content) {
+        return content.split('&shy;').join('');
+    }
+
+    getEscapedContent(content, shouldRevert) {
+
+        const replace = {
+            '$1': '$//1',
+            '$2': '$//2',
+            '$3': '$//3',
+            '$4': '$//4',
+            '$5': '$//5',
+            '$6': '$//6',
+            '$7': '$//7',
+            '$8': '$//8',
+            '$9': '$//9'
+        };
+
+        for (const key in replace) {
+            if (replace.hasOwnProperty(key)) {
+                const value = replace[key];
+                const search = key;
+                const replacement = value;
+                content = shouldRevert ? content.split(replacement).join(search) : content.split(search).join(replacement);
+            }
+        }
+        return content;
+    }
+
 
     uploadZip(fileUploaded, oldpath, newpath) {
         try {

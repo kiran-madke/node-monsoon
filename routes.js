@@ -278,9 +278,9 @@ routes.post('/abbreviation/uploadExcel', function(req, res) {
             console.log('upload successful');
 
             // Read the uploaded excel
-            abbreviation.readExcel(req.session.userFolderName);
+            const EXCEL_DATA = abbreviation.readExcel(req.session.userFolderName);
 
-            const data = { jumbo_header: 'Abbreviations of Big HTML', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Abbreviations of Big HTML' };
+            const data = { jumbo_header: 'Abbreviations of Big HTML', jumbo_header_description: `Current Session Token : ${req.session.userFolderName}`, page_title: 'Abbreviations of Big HTML', EXCEL_DATA: EXCEL_DATA };
             res.render(__dirname + '/public/view/abbreviation/uploadExcelDone', data);
         } else {
             // Redirect user to failed operation page with passing appropriate message

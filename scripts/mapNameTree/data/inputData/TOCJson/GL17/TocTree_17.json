@@ -2,271 +2,883 @@
 {
 "numtree":"1.0.0.0",
 "id":"1",
+"nametree":"Essential messages",
+"tocnametree":"Essential messages",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.1.0.0",
+"id":"2",
 "nametree":"Authors and legal information",
 "tocnametree":"Authors and legal information",
-"htmlpage":"ENAS5094_1.0.0.0",
+"htmlpage":"ENAS263_1.1.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"1.2.0.0",
+"id":"3",
+"nametree":"Take home messages",
+"tocnametree":"Take home messages",
+"htmlpage":"ENAS263_1.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"1.3.0.0",
+"id":"4",
+"nametree":"Major gaps in evidence",
+"tocnametree":"Major gaps in evidence",
+"htmlpage":"ENAS263_1.3.0.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"2.0.0.0",
-"id":"2",
-"nametree":"Diagnosis",
-"tocnametree":"Diagnosis",
-"htmlpage":"ENAS5094_2.0.0.0",
+"id":"5",
+"nametree":"Summary cards",
+"tocnametree":"Summary cards",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"2.1.0.0",
+"id":"6",
+"nametree":"Definition",
+"tocnametree":"Definition",
+"htmlpage":"ENAS263_87",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.2.0.0",
+"id":"7",
+"nametree":"Aetiology",
+"tocnametree":"Aetiology",
+"htmlpage":"ENAS263_88",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.3.0.0",
+"id":"8",
+"nametree":"Clinical presentation",
+"tocnametree":"Clinical presentation",
+"htmlpage":"ENAS263_89",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.4.0.0",
+"id":"9",
+"nametree":"Tests in pat. W definite or suspected HCM",
+"tocnametree":"Tests in pat. W definite or suspected HCM",
+"htmlpage":"ENAS263_90",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.5.0.0",
+"id":"10",
+"nametree":"Genetic counselling and testing",
+"tocnametree":"Genetic counselling and testing",
+"htmlpage":"ENAS263_91",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.6.0.0",
+"id":"11",
+"nametree":"Mgmt. & prevention of imp. complications",
+"tocnametree":"Mgmt. & prevention of imp. complications",
+"htmlpage":"ENAS263_92",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.7.0.0",
+"id":"12",
+"nametree":"Mgmt. of LV outflow tract obstruction",
+"tocnametree":"Mgmt. of LV outflow tract obstruction",
+"htmlpage":"ENAS263_93",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.8.0.0",
+"id":"13",
+"nametree":"Management of heart failure symptoms",
+"tocnametree":"Management of heart failure symptoms",
+"htmlpage":"ENAS263_94",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.9.0.0",
+"id":"14",
+"nametree":"Management of atrial tachyarrhythmia",
+"tocnametree":"Management of atrial tachyarrhythmia",
+"htmlpage":"ENAS263_95",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.10.0.0",
+"id":"15",
+"nametree":"Sudden death prevention",
+"tocnametree":"Sudden death prevention",
+"htmlpage":"ENAS263_96",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.11.0.0",
+"id":"16",
+"nametree":"Routine follow-up",
+"tocnametree":"Routine follow-up",
+"htmlpage":"ENAS263_97",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"2.12.0.0",
+"id":"17",
+"nametree":"General lifestyle considerations",
+"tocnametree":"General lifestyle considerations",
+"htmlpage":"ENAS263_98",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"3.0.0.0",
-"id":"3",
-"nametree":"Staging and risk assessment",
-"tocnametree":"Staging and risk assessment",
-"htmlpage":"null",
+"id":"18",
+"nametree":"Authors and legal information",
+"tocnametree":"Authors and legal information",
+"htmlpage":"ENAS263_2.0.0.0",
 "haspdf":false,
 "emailContent":false
-},
-{
-"numtree":"3.1.0.0",
-"id":"4",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5094_3.1.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"3.2.0.0",
-"id":"5",
-"nametree":"TNM staging for urothelial carcinoma",
-"tocnametree":"TNM staging for urothelial carcinoma",
-"htmlpage":"ENAS5094_3.2.0.0",
-"haspdf":false,
-"emailContent":true
 },
 {
 "numtree":"4.0.0.0",
-"id":"6",
-"nametree":"Mgmt. of local/locoregional disease",
-"tocnametree":"Management of local/locoregional disease",
-"htmlpage":"null",
+"id":"19",
+"nametree":"Preamble",
+"tocnametree":"Preamble",
+"htmlpage":"ENAS263_3.0.0.0",
 "haspdf":false,
 "emailContent":false
-},
-{
-"numtree":"4.1.0.0",
-"id":"7",
-"nametree":"Treatment of non-muscle-invasive BC",
-"tocnametree":"Treatment of non-muscle-invasive BC",
-"htmlpage":"ENAS5094_4.1.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.2.0.0",
-"id":"8",
-"nametree":"Treatment of muscle-invasive BC",
-"tocnametree":"Treatment of muscle-invasive BC",
-"htmlpage":"ENAS5094_4.2.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.3.0.0",
-"id":"9",
-"nametree":"Neoadjuvant and adjuvant therapy",
-"tocnametree":"Neoadjuvant and adjuvant therapy",
-"htmlpage":"ENAS5094_4.3.0.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"4.4.0.0",
-"id":"10",
-"nametree":"Organ preservation therapy",
-"tocnametree":"Organ preservation therapy",
-"htmlpage":"ENAS5094_4.4.0.0",
-"haspdf":false,
-"emailContent":true
 },
 {
 "numtree":"5.0.0.0",
-"id":"11",
-"nametree":"Mgmt. of advanced and metastatic disease",
-"tocnametree":"Mgmt. of advanced and metastatic disease",
+"id":"20",
+"nametree":"Definition",
+"tocnametree":"Definition",
+"htmlpage":"ENAS263_4.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"6.0.0.0",
+"id":"21",
+"nametree":"Epidemiology",
+"tocnametree":"Epidemiology",
+"htmlpage":"ENAS263_5.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"7.0.0.0",
+"id":"22",
+"nametree":"Aetiology",
+"tocnametree":"Aetiology",
+"htmlpage":"ENAS263_6.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.0.0.0",
+"id":"23",
+"nametree":"Diagnosis",
+"tocnametree":"Diagnosis",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
 },
 {
-"numtree":"5.1.0.0",
-"id":"12",
-"nametree":"Overview",
-"tocnametree":"Overview",
-"htmlpage":"ENAS5094_5.1.0.0",
+"numtree":"8.1.0.0",
+"id":"24",
+"nametree":"Diagnostic algorithm",
+"tocnametree":"Diagnostic algorithm",
+"htmlpage":"ENAS263_7.1.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
-"numtree":"5.2.0.0",
-"id":"13",
-"nametree":"Treatment of relapse",
-"tocnametree":"Treatment of relapse",
-"htmlpage":"ENAS5094_5.2.0.0",
+"numtree":"8.2.0.0",
+"id":"25",
+"nametree":"Diagnostic criteria",
+"tocnametree":"Diagnostic criteria",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
-"numtree":"6.0.0.0",
-"id":"14",
-"nametree":"Clinical mgmt. of suspected BC",
-"tocnametree":"Clinical mgmt. of suspected BC",
-"htmlpage":"ENAS5094_6.0.0.0",
+"numtree":"8.2.1.0",
+"id":"26",
+"nametree":"Adults",
+"tocnametree":"Adults",
+"htmlpage":"ENAS263_7.2.1.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
-"numtree":"7.0.0.0",
-"id":"15",
-"nametree":"Personalised medicine",
-"tocnametree":"Personalised medicine",
-"htmlpage":"ENAS5094_7.0.0.0",
+"numtree":"8.2.2.0",
+"id":"27",
+"nametree":"Children",
+"tocnametree":"Children",
+"htmlpage":"ENAS263_7.2.2.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
-"numtree":"8.0.0.0",
-"id":"16",
-"nametree":"Follow-up and long term implications",
-"tocnametree":"Follow-up and long term implications",
-"htmlpage":"ENAS5094_8.0.0.0",
+"numtree":"8.2.3.0",
+"id":"28",
+"nametree":"Relatives",
+"tocnametree":"Relatives",
+"htmlpage":"ENAS263_7.2.3.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"8.3.0.0",
+"id":"29",
+"nametree":"History and physical examination",
+"tocnametree":"History and physical examination",
+"htmlpage":"ENAS263_7.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.4.0.0",
+"id":"30",
+"nametree":"Resting and ambulatory electrocardiography",
+"tocnametree":"Resting and ambulatory electrocardiography",
+"htmlpage":"ENAS263_7.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.5.0.0",
+"id":"31",
+"nametree":"Echocardiography",
+"tocnametree":"Echocardiography",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.5.1.0",
+"id":"32",
+"nametree":"Left ventricular hypertrophy",
+"tocnametree":"Left ventricular hypertrophy",
+"htmlpage":"ENAS263_7.5.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.5.2.0",
+"id":"33",
+"nametree":"Assessment of diastolic function",
+"tocnametree":"Assessment of diastolic function",
+"htmlpage":"ENAS263_7.5.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.5.3.0",
+"id":"34",
+"nametree":"Systolic function",
+"tocnametree":"Systolic function",
+"htmlpage":"ENAS263_7.5.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.5.4.0",
+"id":"35",
+"nametree":"Role of echo. in DDx",
+"tocnametree":"Role of echo. in DDx",
+"htmlpage":"ENAS263_7.5.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.5.5.0",
+"id":"36",
+"nametree":"Contrast echocardiography",
+"tocnametree":"Contrast echocardiography",
+"htmlpage":"ENAS263_7.5.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.5.6.0",
+"id":"37",
+"nametree":"Transoesophageal echocardiography",
+"tocnametree":"Transoesophageal echocardiography",
+"htmlpage":"ENAS263_7.5.6.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.6.0.0",
+"id":"38",
+"nametree":"Cardiovascular magnetic resonance imaging",
+"tocnametree":"Cardiovascular magnetic resonance imaging",
+"htmlpage":"ENAS263_7.6.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.7.0.0",
+"id":"39",
+"nametree":"Nuclear imaging and CT",
+"tocnametree":"Nuclear imaging and CT",
+"htmlpage":"ENAS263_7.7.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.8.0.0",
+"id":"40",
+"nametree":"Endomyocardial biopsy",
+"tocnametree":"Endomyocardial biopsy",
+"htmlpage":"ENAS263_7.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"8.9.0.0",
+"id":"41",
+"nametree":"Laboratory tests",
+"tocnametree":"Laboratory tests",
+"htmlpage":"ENAS263_7.9.0.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"9.0.0.0",
-"id":"17",
-"nametree":"Summary of recommendations",
-"tocnametree":"Summary of recommendations",
+"id":"42",
+"nametree":"Genetic testing and family screening",
+"tocnametree":"Genetic testing and family screening",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
 },
 {
 "numtree":"9.1.0.0",
-"id":"18",
-"nametree":"Diagnosis",
-"tocnametree":"Diagnosis",
-"htmlpage":"ENAS5094_9.1.0.0",
+"id":"43",
+"nametree":"Genet. counselling/molecular genet. testing",
+"tocnametree":"Genet. counselling/molecular genet. testing",
+"htmlpage":"ENAS263_8.1.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
 "numtree":"9.2.0.0",
-"id":"19",
-"nametree":"Staging and risk assessment",
-"tocnametree":"Staging and risk assessment",
-"htmlpage":"ENAS5094_9.2.0.0",
+"id":"44",
+"nametree":"Genetic and clinical screening of relatives",
+"tocnametree":"Genetic and clinical screening of relatives",
+"htmlpage":"null",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"9.2.1.0",
+"id":"45",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS263_8.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.2.2.0",
+"id":"46",
+"nametree":"Families with definite dis. causing mutations",
+"tocnametree":"Families with definite dis. causing mutations",
+"htmlpage":"ENAS263_8.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"9.2.3.0",
+"id":"47",
+"nametree":"Families without definite dis. causing mutations",
+"tocnametree":"Families without definite dis. causing mutations",
+"htmlpage":"ENAS263_8.2.3.0",
+"haspdf":false,
+"emailContent":false
 },
 {
 "numtree":"9.3.0.0",
-"id":"20",
-"nametree":"Management of local/ locoregional disease",
-"tocnametree":"Management of local/ locoregional disease",
-"htmlpage":"null",
+"id":"48",
+"nametree":"Clinical and genetic screening of childern",
+"tocnametree":"Clinical and genetic screening of childern",
+"htmlpage":"ENAS263_8.3.0.0",
 "haspdf":false,
 "emailContent":false
-},
-{
-"numtree":"9.3.1.0",
-"id":"21",
-"nametree":"Treatment of non-muscle-invasive BC",
-"tocnametree":"Treatment of non-muscle-invasive BC",
-"htmlpage":"ENAS5094_9.3.1.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"9.3.2.0",
-"id":"22",
-"nametree":"Treatment of muscle-invasive BC",
-"tocnametree":"Treatment of muscle-invasive BC",
-"htmlpage":"ENAS5094_9.3.2.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"9.3.3.0",
-"id":"23",
-"nametree":"Neoadjuvant and adjuvant therapy",
-"tocnametree":"Neoadjuvant and adjuvant therapy",
-"htmlpage":"ENAS5094_9.3.3.0",
-"haspdf":false,
-"emailContent":true
-},
-{
-"numtree":"9.3.4.0",
-"id":"24",
-"nametree":"Organ preservation therapy",
-"tocnametree":"Organ preservation therapy",
-"htmlpage":"ENAS5094_9.3.4.0",
-"haspdf":false,
-"emailContent":true
 },
 {
 "numtree":"9.4.0.0",
-"id":"25",
-"nametree":"Mgmt. of advanced and metastatic disease",
-"tocnametree":"Mgmt. of advanced and metastatic disease",
+"id":"49",
+"nametree":"Mutation carriers without a phenotype",
+"tocnametree":"Mutation carriers without a phenotype",
+"htmlpage":"ENAS263_8.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"10.0.0.0",
+"id":"50",
+"nametree":"Delivery of care",
+"tocnametree":"Delivery of care",
+"htmlpage":"ENAS263_9.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.0.0.0",
+"id":"51",
+"nametree":"Assessment of symptoms",
+"tocnametree":"Assessment of symptoms",
 "htmlpage":"null",
 "haspdf":false,
 "emailContent":false
 },
 {
-"numtree":"9.4.1.0",
-"id":"26",
+"numtree":"11.1.0.0",
+"id":"52",
+"nametree":"Chest pain",
+"tocnametree":"Chest pain",
+"htmlpage":"ENAS263_10.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.2.0.0",
+"id":"53",
+"nametree":"Heart failure",
+"tocnametree":"Heart failure",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.2.1.0",
+"id":"54",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS263_10.2.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.2.2.0",
+"id":"55",
+"nametree":"Invasive pressure studies",
+"tocnametree":"Invasive pressure studies",
+"htmlpage":"ENAS263_10.2.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.2.3.0",
+"id":"56",
+"nametree":"Cardiopulmonary exercise testing",
+"tocnametree":"Cardiopulmonary exercise testing",
+"htmlpage":"ENAS263_10.2.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.3.0.0",
+"id":"57",
+"nametree":"Syncope",
+"tocnametree":"Syncope",
+"htmlpage":"ENAS263_10.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.4.0.0",
+"id":"58",
+"nametree":"Palpitations",
+"tocnametree":"Palpitations",
+"htmlpage":"ENAS263_10.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"11.5.0.0",
+"id":"59",
+"nametree":"Electrophysiological testing",
+"tocnametree":"Electrophysiological testing",
+"htmlpage":"ENAS263_10.5.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.0.0.0",
+"id":"60",
+"nametree":"Mgmt. of symptoms and prev. of complications",
+"tocnametree":"Mgmt. of symptoms and prev. of complications",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.1.0.0",
+"id":"61",
+"nametree":"LV outflow tract obstruction",
+"tocnametree":"LV outflow tract obstruction",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.1.1.0",
+"id":"62",
+"nametree":"Introduction and general measures",
+"tocnametree":"Introduction and general measures",
+"htmlpage":"ENAS263_11.1.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.1.2.0",
+"id":"63",
+"nametree":"Drug therapy",
+"tocnametree":"Drug therapy",
+"htmlpage":"ENAS263_11.1.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.1.3.0",
+"id":"64",
+"nametree":"Invasive treatment of LVOTO",
+"tocnametree":"Invasive treatment of LVOTO",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.1.3.1",
+"id":"65",
+"nametree":"Surgery",
+"tocnametree":"Surgery",
+"htmlpage":"ENAS263_11.1.3.1",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.1.3.2",
+"id":"66",
+"nametree":"Septal alcohol ablation",
+"tocnametree":"Septal alcohol ablation",
+"htmlpage":"ENAS263_11.1.3.2",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.1.3.3",
+"id":"67",
+"nametree":"Surgery Vs. alcohol ablation",
+"tocnametree":"Surgery Vs. alcohol ablation",
+"htmlpage":"ENAS263_11.1.3.3",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.2.0.0",
+"id":"68",
+"nametree":"Mid-cavity obstruction and apical aneurysms",
+"tocnametree":"Mid-cavity obstruction and apical aneurysms",
+"htmlpage":"ENAS263_11.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.3.0.0",
+"id":"69",
+"nametree":"Mgmt. of HF symptoms in pts. without LVOTO",
+"tocnametree":"Mgmt. of HF symptoms in pts. without LVOTO",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.3.1.0",
+"id":"70",
+"nametree":"Drug therapy",
+"tocnametree":"Drug therapy",
+"htmlpage":"ENAS263_11.3.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.3.2.0",
+"id":"71",
+"nametree":"Cardiac resynchronization",
+"tocnametree":"Cardiac resynchronization",
+"htmlpage":"ENAS263_11.3.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.3.3.0",
+"id":"72",
+"nametree":"Cardiac transplant and LV assist device",
+"tocnametree":"Cardiac transplant and LV assist device",
+"htmlpage":"ENAS263_11.3.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.4.0.0",
+"id":"73",
+"nametree":"Treatment of angina in non-obstructive patients",
+"tocnametree":"Treatment of angina in non-obstructive patients",
+"htmlpage":"ENAS263_11.4.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.5.0.0",
+"id":"74",
+"nametree":"Atrial tachyarrhythmia",
+"tocnametree":"Atrial tachyarrhythmia",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.5.1.0",
+"id":"75",
+"nametree":"Introduction",
+"tocnametree":"Introduction",
+"htmlpage":"ENAS263_11.5.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.5.2.0",
+"id":"76",
+"nametree":"Acute treatment",
+"tocnametree":"Acute treatment",
+"htmlpage":"ENAS263_11.5.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.5.3.0",
+"id":"77",
+"nametree":"Thromboembolism prophylaxis",
+"tocnametree":"Thromboembolism prophylaxis",
+"htmlpage":"ENAS263_11.5.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.5.4.0",
+"id":"78",
+"nametree":"Rate control",
+"tocnametree":"Rate control",
+"htmlpage":"ENAS263_11.5.4.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.5.5.0",
+"id":"79",
+"nametree":"Rhythm control",
+"tocnametree":"Rhythm control",
+"htmlpage":"ENAS263_11.5.5.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.6.0.0",
+"id":"80",
+"nametree":"Prevention of sudden cardiac death",
+"tocnametree":"Prevention of sudden cardiac death",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"12.6.1.0",
+"id":"81",
 "nametree":"Overview",
 "tocnametree":"Overview",
-"htmlpage":"ENAS5094_2017032729",
+"htmlpage":"ENAS263_11.6.1.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
-"numtree":"9.4.2.0",
-"id":"27",
-"nametree":"Treatment of relapse",
-"tocnametree":"Treatment of relapse",
-"htmlpage":"ENAS5094_2017032730",
+"numtree":"12.6.2.0",
+"id":"82",
+"nametree":"Exercise recommendations",
+"tocnametree":"Exercise recommendations",
+"htmlpage":"ENAS263_11.6.2.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
-"numtree":"9.5.0.0",
-"id":"28",
-"nametree":"Personalised medicine",
-"tocnametree":"Personalised medicine",
-"htmlpage":"ENAS5094_9.5.0.0",
+"numtree":"12.6.3.0",
+"id":"83",
+"nametree":"Implantable cardioverter defibrillators",
+"tocnametree":"Implantable cardioverter defibrillators",
+"htmlpage":"ENAS263_11.6.3.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
-"numtree":"9.6.0.0",
-"id":"29",
-"nametree":"Follow-up and long term implications",
-"tocnametree":"Follow-up and long term implications",
-"htmlpage":"ENAS5094_9.6.0.0",
+"numtree":"12.6.4.0",
+"id":"84",
+"nametree":"Sudden death risk in children",
+"tocnametree":"Sudden death risk in children",
+"htmlpage":"ENAS263_11.6.4.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
 },
 {
-"numtree":"10.0.0.0",
-"id":"30",
-"nametree":"Glossary",
-"tocnametree":"Glossary",
-"htmlpage":"ENAS5094_10.0.0.0",
+"numtree":"12.7.0.0",
+"id":"85",
+"nametree":"Sympt. bradycardia and AV block",
+"tocnametree":"Sympt. bradycardia and AV block",
+"htmlpage":"ENAS263_11.7.0.0",
 "haspdf":false,
-"emailContent":true
+"emailContent":false
+},
+{
+"numtree":"12.8.0.0",
+"id":"86",
+"nametree":"Ventricular tachycardia",
+"tocnametree":"Ventricular tachycardia",
+"htmlpage":"ENAS263_11.8.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"13.0.0.0",
+"id":"87",
+"nametree":"Routine follow-up",
+"tocnametree":"Routine follow-up",
+"htmlpage":"ENAS263_12.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"14.0.0.0",
+"id":"88",
+"nametree":"Reproduction and contraception",
+"tocnametree":"Reproduction and contraception",
+"htmlpage":"ENAS263_13.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.0.0.0",
+"id":"89",
+"nametree":"Special issues",
+"tocnametree":"Special issues",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.1.0.0",
+"id":"90",
+"nametree":"Diagnosis of HCM in athletes",
+"tocnametree":"Diagnosis of HCM in athletes",
+"htmlpage":"ENAS263_14.1.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.2.0.0",
+"id":"91",
+"nametree":"Hypertension",
+"tocnametree":"Hypertension",
+"htmlpage":"ENAS263_14.2.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.3.0.0",
+"id":"92",
+"nametree":"Isolated basal septal hypertrophy in elderly",
+"tocnametree":"Isolated basal septal hypertrophy in elderly",
+"htmlpage":"ENAS263_14.3.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.4.0.0",
+"id":"93",
+"nametree":"Diag. and mgmt. of valve disease in pts. with HCM",
+"tocnametree":"Diag. and mgmt. of valve disease in pts. with HCM",
+"htmlpage":"null",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.4.1.0",
+"id":"94",
+"nametree":"Aortic valve disease",
+"tocnametree":"Aortic valve disease",
+"htmlpage":"ENAS263_14.4.1.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.4.2.0",
+"id":"95",
+"nametree":"Mitral valve disease",
+"tocnametree":"Mitral valve disease",
+"htmlpage":"ENAS263_14.4.2.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"15.4.3.0",
+"id":"96",
+"nametree":"Endocarditis prophylaxis",
+"tocnametree":"Endocarditis prophylaxis",
+"htmlpage":"ENAS263_14.4.3.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"16.0.0.0",
+"id":"97",
+"nametree":"Advice to patients",
+"tocnametree":"Advice to patients",
+"htmlpage":"ENAS263_15.0.0.0",
+"haspdf":false,
+"emailContent":false
+},
+{
+"numtree":"17.0.0.0",
+"id":"98",
+"nametree":"Abbreviations and acronyms",
+"tocnametree":"Abbreviations and acronyms",
+"htmlpage":"ENAS263_16.0.0.0",
+"haspdf":false,
+"emailContent":false
 }
 ]
